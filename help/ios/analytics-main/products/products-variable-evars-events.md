@@ -1,0 +1,40 @@
+---
+description: Voici un exemple de variable products avec des eVars de marchandisage et des événements spécifiques à un produit.
+seo-description: Voici un exemple de variable products avec des eVars de marchandisage et des événements spécifiques à un produit.
+seo-title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
+solution: Marketing Cloud, Analytics
+title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
+topic: Développeur et mise en œuvre
+uuid: f 913211 e -97 ad -4237-bfe 4-7 ded 01295 caf
+translation-type: tm+mt
+source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+
+---
+
+
+# Products variable with merchandising eVars and product-specific events {#products-variable-with-merchandising-evars-and-product-specific-events}
+
+Voici un exemple de variable products avec des eVars de marchandisage et des événements spécifiques à un produit.
+
+```
+//create a context data dictionary 
+NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
+  
+// add products, a purchase id, a purchase context data key, and any other data you want to collect. 
+// Note the special syntax for products 
+[contextData setObject:@"event1" forKey:@"&&events"]; 
+[contextData setObject:@";Running Shoes;1;69.95;event1=5.5;eVar1=Merchandising,;Running Socks;10;29.99" forKey:@"&&products"]; 
+[contextData setObject:@"1234567890" forKey:@"m.purchaseid"]; 
+[contextData setObject:@"1" forKey:@"m.purchase"]; 
+  
+// send the tracking call - use either a trackAction or TrackState call. 
+// trackAction example: 
+[ADBMobile trackAction:@"purchase" data:contextData]; 
+// trackState example: 
+[ADBMobile trackState:@"Order Confirmation" data:contextData];
+```
+
+>[!TIP]
+>
+>Si vous déclenchez un événement spécifique au produit à l'aide de *`&&products`* la variable, vous devez également définir cet événement dans *`&&events`* la variable. Si vous ne définissez pas cet événement, il est filtré au cours du traitement.
+
