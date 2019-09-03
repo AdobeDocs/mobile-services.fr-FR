@@ -43,6 +43,7 @@ Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 o
 1. Obtenez le jeton/ID d’enregistrement à l’aide de l’API Firebase Cloud Messaging (FCM).
 
    * Pour obtenir plus d’informations sur la configuration FCM, voir [Configuration d’une application cliente FCM sous Android](https://firebase.google.com/docs/cloud-messaging/android/client).
+
    ```js
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
@@ -58,6 +59,7 @@ Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 o
    Vous trouverez ci-dessous les exigences relatives à l’activation de la création de rapports sur les clics publicitaires Push :
 
    * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. Vous pouvez le faire à l'aide de `putExtras` la méthode. For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

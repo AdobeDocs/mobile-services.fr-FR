@@ -145,6 +145,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    Chaque matrice de points ciblés comporte le nom, la latitude, la longitude et le rayon (en mètres) du point ciblé correspondant à la zone du point. Le nom du point ciblé peut être n’importe quelle chaîne. Lorsqu’un appel `trackLocation` est envoyé et que les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelle est renseignée et envoyée avec l’appel `trackLocation`.
 
    * Version minimale du SDK : 4.0
+
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
