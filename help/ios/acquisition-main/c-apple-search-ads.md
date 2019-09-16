@@ -7,7 +7,7 @@ title: Publicités Search Ads d’Apple
 topic: Développeur et mise en œuvre
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 215ad01507a541096e6951a2138c47af50bc1b87
+source-git-commit: cc3313a5874f2bd09cd8ee0a6ad83079fe61fb2f
 
 ---
 
@@ -49,5 +49,5 @@ Pour activer votre application pour l’attribution Search Ad, procédez comme 
    * "`iad-campaign-name`" --&gt; "`a.referrer.campaign.name`"
    * "`iad-adgroup-id`" --&gt; "`a.referrer.campaign.content`"
    * "`iad-keyword`" --&gt; "`a.referrer.campaign.term`"
-   Ce mappage permet de rendre les valeurs disponibles dans nos rapports de données standard.
+   Ce mappage garantit que les valeurs sont disponibles dans nos rapports standard.
 
