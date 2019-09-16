@@ -7,7 +7,7 @@ title: Publicités Search Ads d’Apple
 topic: Développeur et mise en œuvre
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: cc3313a5874f2bd09cd8ee0a6ad83079fe61fb2f
+source-git-commit: 1fba1bafcf43b87b47375f203cdcdcff29e9102e
 
 ---
 
@@ -45,9 +45,9 @@ Pour activer votre application pour l’attribution Search Ad, procédez comme 
 
    De plus, les valeurs suivantes seront mappées à partir du dictionnaire `iad` vers nos champs de données contextuelles de l’acquisition par défaut :
 
-   * "`iad-campaign-id`" --&gt; "`a.referrer.campaign.trackingcode`"
-   * "`iad-campaign-name`" --&gt; "`a.referrer.campaign.name`"
-   * "`iad-adgroup-id`" --&gt; "`a.referrer.campaign.content`"
-   * "`iad-keyword`" --&gt; "`a.referrer.campaign.term`"
+   * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
+   * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` --&gt; `"a.referrer.campaign.content"`
+   * `"iad-keyword"` --&gt; `"a.referrer.campaign.term"`
    Ce mappage garantit que les valeurs sont disponibles dans nos rapports standard.
 
