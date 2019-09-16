@@ -2,12 +2,12 @@
 description: Le SDK Adobe exploite les API d’attribution de l’application Search Ads d’Apple pour permettre aux développeurs et aux marketeurs de suivre et d’identifier les téléchargements d’application issus des campagnes Search Ads dans l’App Store d’Apple.
 seo-description: Le SDK Adobe exploite les API d’attribution de l’application Search Ads d’Apple pour permettre aux développeurs et aux marketeurs de suivre et d’identifier les téléchargements d’application issus des campagnes Search Ads dans l’App Store d’Apple.
 seo-title: Publicités Search Ads d’Apple
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Publicités Search Ads d’Apple
 topic: Développeur et mise en œuvre
-uuid: 790080 e 8-067 e -4 bfd-a 169-0027 db 4 fdff 3
+uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 9c6923d14d1a5f30e5873299def61b0734e52429
+source-git-commit: 215ad01507a541096e6951a2138c47af50bc1b87
 
 ---
 
@@ -27,13 +27,13 @@ L’utilisation d’Apple Ads vous offre les avantages suivants :
 
 >[!TIP]
 >
->Pour mettre en œuvre des publicités Apple, vous devez disposer du SDK ios version 4.13.2 ou ultérieure.
+>Pour mettre en oeuvre des publicités Apple, vous devez disposer du SDK iOS version 4.13.2 ou ultérieure.
 
 Pour activer votre application pour l’attribution Search Ad, procédez comme suit :
 
 1. Effectuez la mise en œuvre du SDK Adobe (version 4.13.2 ou ultérieure).
 
-   Pour plus d’informations, voir [Implémentation et cycle de vie principaux](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
 
 1. Ajoutez la structure iAd au fichier de projet Xcode de votre application.
 
@@ -45,9 +45,9 @@ Pour activer votre application pour l’attribution Search Ad, procédez comme 
 
    De plus, les valeurs suivantes seront mappées à partir du dictionnaire `iad` vers nos champs de données contextuelles de l’acquisition par défaut :
 
-   * " `iad-campaign-id`" --&gt; " `a.referrer.campaign.trackingcode`"
-   * " `iad-campaign-name`" --&gt;" `a.referrer.campaign.name``"
-   * " `iad-adgroup-id`" --&gt; " `a.referrer.campaign.content`"
-   * " `iad-keyword`" --&gt; " `a.referrer.campaign.term`"
+   * "`iad-campaign-id`" --&gt; "`a.referrer.campaign.trackingcode`"
+   * "`iad-campaign-name`" --&gt; "`a.referrer.campaign.name`"
+   * "`iad-adgroup-id`" --&gt; "`a.referrer.campaign.content`"
+   * "`iad-keyword`" --&gt; "`a.referrer.campaign.term`"
    Ce mappage permet de rendre les valeurs disponibles dans nos rapports de données standard.
 
