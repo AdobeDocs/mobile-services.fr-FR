@@ -2,12 +2,12 @@
 description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-title: Mise en œuvre principale et cycle de vie
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic: Développeur et mise en œuvre
-uuid: 96 d 06325-e 424-4770-8659-4 b 5431318 ee 3
+uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
+source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 ---
 
@@ -24,7 +24,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à c
 
 **Condition requise**
 
-Avant de télécharger le SDK, suivez les étapes de la section *Création d'une suite de rapports* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/requirements.md) pour configurer une suite de rapports de développement et télécharger une version prérenseignée du fichier de configuration.
+Avant de télécharger le SDK, suivez les étapes de la section *Création d’une suite* de rapports dans l’implémentation et le cycle de vie [](/help/ios/getting-started/requirements.md) principaux pour configurer une suite de rapports de développement et télécharger une version préremplie du fichier de configuration.
 
 Pour télécharger le kit SDK :
 
@@ -32,7 +32,7 @@ Pour télécharger le kit SDK :
 
    * `ADBMobile.h` : fichier d’en-tête Objective-C utilisé par AppMeasurement pour iOS.
    * `ADBMobileConfig.json` : fichier de configuration du SDK personnalisé pour votre application.
-   * `AdobeMobileLibrary.a`, binaire gras compatible bitcode qui contient les versions de bibliothèque pour les périphériques ios (armv 7, armv 7 s, arm 64) et les simulateurs (i 386, x 86_ 64).
+   * `AdobeMobileLibrary.a`, a bitcode-enabled fat binary that contains the library builds for iOS devices (armv7, armv7s, arm64), and simulators (i386, x86_64).
 
       Ce binaire gras doit être lié lorsque la cible est destinée à une application iOS.
 
@@ -75,6 +75,7 @@ Pour télécharger le kit SDK :
    1. Sous l’onglet **[!UICONTROL Général]**, sélectionnez vos cibles et liez les structures et bibliothèques requises dans les sections **[!UICONTROL Structures liées]et** Bibliothèques **.**
    * **Cibles d’une application iOS**
       * `SystemConfiguration.framework`
+      * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
    * **Cibles d’une extension iOS**
@@ -105,7 +106,7 @@ Pour télécharger le kit SDK :
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-Ajoutez un `collectLifecycleData``collectLifecycleDataWithAdditionalData` /e appel dans `application:didFinishLaunchingWithOptions`:
+Ajoutez un `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` appel dans `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -114,7 +115,7 @@ Ajoutez un `collectLifecycleData``collectLifecycleDataWithAdditionalData` /e app
 }
 ```
 
-### Inclure des données supplémentaires avec des appels de cycle de vie
+### Include additional data with lifecycle calls
 
 Pour ajouter des données aux appels de mesures de cycle de vie, utilisez `collectLifecycleDataWithAdditionalData` :
 
