@@ -7,7 +7,7 @@ title: Publicités Search Ads d’Apple
 topic: Développeur et mise en œuvre
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 1fba1bafcf43b87b47375f203cdcdcff29e9102e
+source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 ---
 
@@ -43,11 +43,10 @@ Pour activer votre application pour l’attribution Search Ad, procédez comme 
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   De plus, les valeurs suivantes seront mappées à partir du dictionnaire `iad` vers nos champs de données contextuelles de l’acquisition par défaut :
+   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
    * `"iad-adgroup-id"` --&gt; `"a.referrer.campaign.content"`
    * `"iad-keyword"` --&gt; `"a.referrer.campaign.term"`
    Ce mappage garantit que les valeurs sont disponibles dans nos rapports standard.
-
