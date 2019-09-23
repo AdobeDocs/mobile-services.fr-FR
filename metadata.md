@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
-product: mobile-services
-solution-title: Mobile Services
+product: services mobiles
+solution-title: Formation et support
 solution-hub-url: https://helpx.adobe.com/fr/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Prise en main
@@ -11,7 +11,7 @@ tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
 translation-type: tm+mt
-source-git-commit: d9cb2a642393a26ee5530beb0491649248b86286
+source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
 
@@ -33,7 +33,7 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui so
 | tutorials-url | Lien vers des tutoriels vidéo : tutoriels helpx ou KT. |
 | mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail de droite. La valeur par défaut est 2. |
 | git-repo | Indique l’emplacement du référentiel de collaboration. Utilisez le miroir github.com pour les documents publics. |
-| index | set index = no for soft launch |
+| index | Définit l’index = pas pour les prélancements |
 
 Dans le fichier TOC.md
 
