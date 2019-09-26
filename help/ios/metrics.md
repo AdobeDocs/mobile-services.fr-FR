@@ -2,32 +2,28 @@
 description: Les tableaux suivants répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
 seo-description: Les tableaux suivants répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
 seo-title: Mesures de cycle de vie
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mesures de cycle de vie
 topic: Développeur et mise en œuvre
-uuid: b 795 e 383-d 59 b -4 a 3 c -9 e 14-ffe 8 fb 58412 c
+uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ---
 
 
 # Lifecycle metrics {#lifecycle-metrics}
 
-Voici les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en œuvre.
+Voici les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## New Adobe Experience Platform Mobile SDK Release
 
 Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur Launch.
+* To get started, go to [Experience Platform Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -38,7 +34,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 >[!TIP]
 >
->Les exceptions sont fournies dans la description.
+>Exceptions are provided in the description.
 
 ### Mesures
 
@@ -93,13 +89,13 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 >[!IMPORTANT]
 >
-> Les mesures Utilisateurs actifs *par jour* et *Utilisateurs* actifs mensuels ne sont pas automatiquement stockées dans une mesure Analytics. Vous devez créer une règle de traitement qui définit un événement personnalisé pour capturer ces mesures.
+> The Daily Engaged Users and Monthly Engaged Users metrics are not automatically stored in an Analytics metric. **** You must create a processing rule that sets a custom event to capture these metrics.
 
-### Dimensions
+#### Dimensions
 
 * **la date d’installation**
 
-   Date du premier lancement après installation.  Le format de date est `MM/DD/YYYY`.
+   Date du premier lancement après installation.  The date format is `MM/DD/YYYY`.
 
    * Données contextuelles Analytics/Paramètre: `a.InstallDate`
    * Gestion de l’audience: `c_a_InstallDate`
@@ -189,12 +185,12 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    * Gestion de l’audience: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >Les *jours depuis la dernière mise à niveau*, *les lancements depuis la dernière mise à niveau**et les dimensions du nom* de l'opérateur ne sont pas automatiquement stockés dans une variable Analytics. Vous devez créer une règle de traitement pour copier les valeurs dans une variable Analytics pour la création de rapports.
+   >The Days since last upgrade, Launches since last upgrade, and the Carrier Name dimensions are not automatically stored in an Analytics variable. ****** You must create a processing rule to copy the values to an Analytics variable for reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Les mesures et dimensions suivantes sont capturées dans les variables de solution mobile par la méthode répertoriée.
+The following metrics and dimensions are captured in mobile solution variables by the listed method.
 
 ### Mesures
 
@@ -226,11 +222,11 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Populated by `trackLocation` methods.
 
-   * Paramètre Données contextuelles Analytics/Target :
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caractéristique de Gestion de l'audience :
+   * Audience Management trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -240,11 +236,11 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Renseigné par les méthodes trackLocation.
 
-   * Paramètre Données contextuelles Analytics/Target :
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -258,7 +254,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
