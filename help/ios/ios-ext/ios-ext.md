@@ -2,12 +2,12 @@
 description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 seo-description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 seo-title: Mise en œuvre de l’extension iOS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
 topic: Développeur et mise en œuvre
-uuid: 8 afc 03 fe -403 e -4643-ada 1-30 e 403 ede 238
+uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -16,24 +16,20 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## Nouvelle version du SDK mobile Adobe Experience Platform
 
 Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur Launch.
+* Pour commencer, accédez à Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services).
 
 ## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
->Nous vous recommandons vivement d'utiliser le SDK ios plutôt que votre enveloppe.
+>Nous vous recommandons vivement d’utiliser le SDK iOS plutôt que votre wrapper.
 
 Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application contenante en envoyant des demandes à l’application contenante et en recevant des réponses. Bien que vous puissiez envoyer les données de suivi en tant que dictionnaire de l’application Watch à l’application contenante et appeler ensuite n’importe quelle méthode de suivi sur l’application contenante pour envoyer les données, cette solution est limitée.
 
@@ -45,7 +41,7 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 
 >[!IMPORTANT]
 >
->Assurez-vous d'avoir un projet avec au moins les cibles suivantes :
+>Vérifiez que vous disposez d’un projet avec au moins les cibles suivantes :
 >
 >* Une cible contenant l’application.
 >* Une cible pour l’extension.
@@ -53,9 +49,9 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 
 
 
-Si vous utilisez une application WatchKit, vous devez avoir une troisième cible. Pour plus d'informations sur le développement pour Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
+Si vous utilisez une application WatchKit, vous devez avoir une troisième cible. Pour plus d’informations sur le développement d’Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
-## Configuration de l'application réceptrice {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Configuration de l’application conteneur {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Procédez comme suit dans votre projet Xcode :
 
@@ -78,7 +74,7 @@ Procédez comme suit dans votre projet Xcode :
 
 1. Vérifiez qu’aucune erreur inattendue n’est générée lors de la création de votre application.
 
-## Configuration de l'extension {#section_28C994B7892340AC8D1F07AF26FF3946}
+## Configuration de l’extension {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
 1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre extension, développez la section **Lier le fichier binaire avec les bibliothèques], puis ajoutez les bibliothèques suivantes :[!UICONTROL **
