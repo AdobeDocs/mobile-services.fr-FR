@@ -1,11 +1,11 @@
 ---
 description: Les SDK Experience Cloud Mobile contiennent des API conformes au règlement général sur la protection des données (RGPD) destinées aux contrôleurs qui autorisent les utilisateurs à récupérer des identités stockées localement et à définir des indicateurs d’état de souscription pour la collecte et la transmission de données.
 seo-description: Les SDK Experience Cloud Mobile contiennent des API conformes au règlement général sur la protection des données (RGPD) destinées aux contrôleurs qui autorisent les utilisateurs à récupérer des identités stockées localement et à définir des indicateurs d’état de souscription pour la collecte et la transmission de données.
-seo-title: Présentation du règlement sur la confidentialité et la protection générale des données
-title: Présentation du règlement sur la confidentialité et la protection générale des données
-uuid: 56 d 6 f 155-efec -4 b 3 f-a 972-a 63155729167
+seo-title: Présentation du Règlement sur la protection des données personnelles et générales
+title: Présentation du Règlement sur la protection des données personnelles et générales
+uuid: 56d6f155-efec-4b3f-a972-a63155729167
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 Les SDK Experience Cloud Mobile contiennent des API conformes au règlement général sur la protection des données (RGPD) destinées aux contrôleurs qui autorisent les utilisateurs à récupérer des identités stockées localement et à définir des indicateurs d’état de souscription pour la collecte et la transmission de données.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## New Adobe Experience Platform Mobile SDK Release
 
 Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
 
->[!IMPORTANT]
->
->Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur [Launch](https://launch.adobe.com/).
+* To get started, go to Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+
+## Aperçu
 
 >[!IMPORTANT]
 >
@@ -37,10 +37,10 @@ Pour les parties du SDK Adobe Mobile de vos applications mobiles, vous pouvez ut
 
 * Pour récupérer les données des SDK et envoyer ces données à vos serveurs, utilisez la méthode `getAllIdentifiersAsync`.
 
-   Pour plus d'informations, voir [Récupération des identifiants stockés](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md).
+   For more information, see Retrieving Stored Identifiers.[](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
 
 * Pour définir votre état de souscription et vous aider en cas de demande de suppression de données en vertu du RGPD, utilisez les paramètres suivants :
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   Pour plus d'informations, voir [Définition de l'état d'exclusion de l'utilisateur](/help/android/c-mob-privacy-gdpr-android/privacy.md).
+   For more information, see Setting the User's Opt Status.[](/help/android/c-mob-privacy-gdpr-android/privacy.md)
