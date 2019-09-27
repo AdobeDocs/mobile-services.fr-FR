@@ -2,7 +2,7 @@
 description: Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 keywords: Xamarin
 seo-description: Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
-seo-title: Méthodes iOS
+seo-title: iOS methods
 solution: Marketing Cloud,Développeur
 title: Méthodes iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
@@ -106,7 +106,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experie
 * **SetPrivacyStatus**
 
    Définit l’état de confidentialité pour l’utilisateur actuel. Valeurs possibles :
-   * `ADBMobilePrivacyStatus.OptIn` - les accès sont envoyés immédiatement.
+   * `ADBMobilePrivacyStatus.OptIn` - hits are sent immediately.
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatus.Unknown` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
@@ -213,7 +213,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experie
    Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans l’application, par exemple « écran de titre », « niveau 1 », « pause », etc. Ces états sont similaires aux pages d’un site Web et `TrackState` les appels incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme "nom de l’application version de l’application (compilation)" dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir state dans chaque appel `TrackState`.
 
    [!TIP]
-   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
+   >This is the only tracking call that increments page views.
    >
    * Voici la syntaxe de cette méthode :
 
