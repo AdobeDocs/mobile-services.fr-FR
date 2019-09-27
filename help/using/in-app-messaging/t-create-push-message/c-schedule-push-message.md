@@ -2,11 +2,11 @@
 description: Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la remise immédiate ou ultérieure d’un message push ou sa diffusion selon un schéma récurrent (quotidien, hebdomadaire ou mensuel).
 keywords: mobile
 seo-description: Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la remise immédiate ou ultérieure d’un message push ou sa diffusion selon un schéma récurrent (quotidien, hebdomadaire ou mensuel).
-seo-title: Planifier un message Push
-solution: Marketing Cloud, Analytics
-title: Planifier un message Push
+seo-title: Schedule  Push Message
+solution: Marketing Cloud,Analytics
+title: Planifier le message push
 topic: Mesures
-uuid: 6810 e 27 a -016 f -4286-8 fe 2-9972 d 85 fa 326
+uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,11 +19,11 @@ Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier
 
 >[!TIP]
 >
->Les utilisateurs peuvent modifier les paramètres de planification d'une tâche de message Push à tout moment. Si aucune date applicable n’est définie pour l’envoi d’un message récurrent (par exemple une tâche mensuelle récurrente tous les 31 du mois, le 28 février ou le cinquième jeudi du mois), aucun message n’est envoyé.
+>Les utilisateurs peuvent modifier les paramètres de planification d’une tâche de message push à tout moment. Si aucune date applicable n’est définie pour l’envoi d’un message récurrent (par exemple une tâche mensuelle récurrente tous les 31 du mois, le 28 février ou le cinquième jeudi du mois), aucun message n’est envoyé.
 
-Gardez à l’esprit les informations suivantes :
+À noter :
 
-* Le format de date et d'heure correct est `hh:mm` et `mm/dd/yyyy`.
+* The correct date and time format is `hh:mm` and `mm/dd/yyyy`.
 
 * Vous pouvez modifier un message programmé des façons suivantes :
 
@@ -32,13 +32,13 @@ Gardez à l’esprit les informations suivantes :
 
       Par exemple, si vous aviez un message envoyé tous les jours, vous pouvez le basculer en envoi hebdomadaire.
 
-## Avant de planifier des messages push périodiques
+## Avant de planifier des messages push récurrents
 
 Vous **devez** comprendre les informations suivantes avant de programmer l’envoi de messages push récurrents :
 
 * Les options affichées dans la liste déroulante **[!UICONTROL Répétition]dépendent de la date que vous avez saisie ou sélectionnée.**
 
-   Par exemple, si vous avez tapé `Saturday, October 7`, les options suivantes s'affichent :
+   For example, if you typed , the following options are displayed:`Saturday, October 7`
 
    * **[!UICONTROL Jamais]**
    * **[!UICONTROL Chaque jour]**
@@ -59,7 +59,7 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
 
 ## Schedule a recurring push message {#section_675BD754E5A04423A1751193698A978F}
 
-1. Dans la page Planifier pour un nouveau message Push, sélectionnez **[!UICONTROL Programmé]** ou **[!UICONTROL Maintenant]**.
+1. On the Schedule page for a new push message, select Scheduled or Now.********
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -74,10 +74,10 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
    * **[!UICONTROL Jamais]**
    * **[!UICONTROL Chaque jour]**
    * **[!UICONTROL Chaque mardi]**
-   * **`<Day x>`du mois**
+   * **`<Day x>`of the month**
 
       Les options affichées changent en fonction du jour sélectionné ou saisi comme jour de début.
-   * **`<nth day>`De chaque mois**
+   * **`<nth day>`de chaque mois**
 
       La valeur affichée change en fonction de la date que vous avez sélectionnée ou saisie comme date de début.
 
@@ -88,7 +88,7 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
 
       Cette option enregistre le message sous la forme de brouillon. Vous pouvez sélectionner cette option pour enregistrer un message qui est inachevé ou afin qu’une autre personne puisse le modifier et l’approuver avant de l’activer.
 
-      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Si vous avez sélectionné une date et une heure pour envoyer le message, le message est envoyé selon ce planning.
+      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. Si vous avez sélectionné une date et une heure pour transmettre le message, le message est envoyé selon cette planification.
 
    * **[!UICONTROL Enregistrement et planification]**
 
