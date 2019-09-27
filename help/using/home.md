@@ -1,10 +1,10 @@
 ---
 description: Documentation technique pour Adobe Mobile Services
-seo-description: Ce guide décrit la documentation technique et le libre-service - Aide pour Adobe Mobile Services, qui réunit les fonctionnalités de marketing mobile pour les applications mobiles d'Adobe Experience Cloud, ce qui vous permet de comprendre et d'améliorer l'engagement des utilisateurs avec les applications mobiles.
+seo-description: Ce guide décrit la documentation technique et l’aide autonome d’Adobe Mobile Services, qui rassemble les fonctionnalités de marketing mobile pour les applications mobiles d’Adobe Experience Cloud, ce qui vous permet de comprendre et d’améliorer l’engagement des utilisateurs avec les applications mobiles.
 seo-title: 'Adobe Mobile Services  '
 solution: Marketing Cloud, Analytics, Experience Cloud
 title: 'Adobe Mobile Services  '
-uuid: e 86 a 77 c 9-4 ff 1-403 f-a 5 a 1-4 afbdc 4 e 6 f 68
+uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
 source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
@@ -13,11 +13,11 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 # Adobe Mobile Services {#adobe-mobile-services}
 
-Ce guide décrit la documentation technique et le libre-service - Aide pour Adobe Mobile Services, qui réunit les fonctionnalités de marketing mobile pour les applications mobiles d'Adobe Experience Cloud, ce qui vous permet de comprendre et d'améliorer l'engagement des utilisateurs avec les applications mobiles.
+Ce guide décrit la documentation technique et l’aide autonome d’Adobe Mobile Services, qui rassemble les fonctionnalités de marketing mobile pour les applications mobiles d’Adobe Experience Cloud, ce qui vous permet de comprendre et d’améliorer l’engagement des utilisateurs avec les applications mobiles.
 
 >[!IMPORTANT]
 >
->Le SKU Adobe Analytics Mobile Marketing Add-on est requis pour permettre aux services mobiles d'accéder aux fonctionnalités d'acquisition mobile, de liens profonds, de géolocalisation et de messagerie mobile. Pour plus d'informations, contactez votre Adobe CSM.
+>Le SKU du module complémentaire de marketing mobile Adobe Analytics est nécessaire pour permettre aux services mobiles d’accéder aux fonctionnalités d’acquisition mobile, de liaison profonde, de géolocalisation et de messagerie mobile. Pour plus d’informations, contactez votre Adobe CSM.
 
 ## Nouvelle mise à jour du SDK Adobe Experience Cloud
 
@@ -34,13 +34,13 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 >[!IMPORTANT]
 >
->Bien que vous puissiez configurer des fonctionnalités dans l'interface utilisateur, ces fonctionnalités ne fonctionneront pas tant que vous ne téléchargez pas le fichier de configuration généré et que vous n'ajouterez pas ce fichier au SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
+>Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
 
 Pour consulter les dernières notes de mise à jour, voir [Notes de mise à jour d’Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 ## Rubriques populaires {#section_AFFBC9EDDE5B4E4493A7C2896121A773}
 
-Voici quelques rubriques populaires dans ce guide :
+Voici quelques sujets populaires dans ce guide :
 
 * [Prise en main](/help/using/gs/gs.md)
 * [Connexion](/help/using/gs/gs-signin.md)
@@ -53,7 +53,7 @@ Voici quelques rubriques populaires dans ce guide :
 
 ## Développeurs
 
-Voici quelques liens vers les développeurs :
+Voici quelques liens pour aider les développeurs :
 
 * [Téléchargement des kits SDK mobiles et des outils](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
 * [Développeur](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
