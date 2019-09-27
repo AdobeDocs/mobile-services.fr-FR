@@ -2,10 +2,10 @@
 description: Voici une liste des méthodes fournies par la bibliothèque iOS.
 seo-description: Voici une liste des méthodes fournies par la bibliothèque iOS.
 seo-title: Méthodes de configuration
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
 topic: Développeur et mise en œuvre
-uuid: 623 c 7 b 07-fbb 3-4 d 39-a 5 c 4-e 64 faec 4 ca 29
+uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -16,15 +16,15 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Voici une liste des méthodes fournies par la bibliothèque iOS.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform.
+The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 * **setAppExtensionType**
 
    Configure le paramètre du SDK Adobe Mobile de façon à déterminer le type d’extension en cours d’exécution.
 
    Valeurs possibles :
-   * `ADBMobileAppExtensionTypeRegular` - extension est fournie avec une application contenant.
-   * `ADBMobileAppExtensionTypeStandAlone` - extension n'est pas fournie avec une application contenant.
+   * `ADBMobileAppExtensionTypeRegular` - extension is bundled with a containing app.
+   * `ADBMobileAppExtensionTypeStandAlone` - n’est pas fournie avec une application contenant.
    >[!TIP]
    >
    >This method should **only** be used if your app has an extension or is a stand-alone extension. For more information, see *ADBMobileAppExtensionType* below.
@@ -86,7 +86,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    Valeurs possibles :
 
-   * `ADBMobilePrivacyStatusOptIn` - les accès sont envoyés immédiatement.
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
@@ -124,7 +124,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau depuis Experience Cloud 3. x vers le SDK 4. x, l'identifiant visiteur personnalisé ou généré automatiquement est récupéré et stocké en tant qu'identificateur d'utilisateur personnalisé. Pour plus d’informations, voir la ligne `userIdentifier` ci-dessous. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` et l’identifiant de suivi est utilisé.
+   >Si votre application effectue une mise à niveau d’Experience Cloud 3.x vers le SDK 4.x, l’identifiant visiteur personnalisé ou généré automatiquement précédent est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Pour plus d’informations, voir la ligne `userIdentifier` ci-dessous. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` et l’identifiant de suivi est utilisé.
 
    * Voici la syntaxe de cette méthode :
 
@@ -144,7 +144,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau depuis le SDK Experience Cloud 3. x vers 4. x, l'identifiant visiteur personnalisé ou généré automatiquement est récupéré et stocké en tant qu'identificateur d'utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK.
+   >Si votre application effectue une mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur personnalisé ou généré automatiquement précédent est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK.
 
    Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` tant qu’il n’a pas été défini.
 
@@ -214,7 +214,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Cette méthode est destinée aux applications qui s'inscrivent aux notifications lorsqu'elles sont en arrière-plan et doivent uniquement être appelées à partir du code qui s'exécute alors que votre application est en arrière-plan.
+   >Cette méthode est conçue pour être utilisée pour les applications qui s’inscrivent aux notifications en arrière-plan et qui doivent uniquement être appelées à partir du code qui s’exécute pendant que votre application est en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -252,7 +252,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    Vous permet de transmettre des données supplémentaires lors de la collecte de mesures de cycle de vie.
 
-   Cette méthode doit être appelée à partir du point d'entrée de votre application. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   Cette méthode doit être appelée à partir du point d’entrée de votre application. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
 
    >[!IMPORTANT]
    >
