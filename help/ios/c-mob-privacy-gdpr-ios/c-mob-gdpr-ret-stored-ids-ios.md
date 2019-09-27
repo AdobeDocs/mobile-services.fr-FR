@@ -3,7 +3,7 @@ description: Consultez ces informations si vous devez récupérer des identités
 seo-description: Consultez ces informations si vous devez récupérer des identités de SDK Experience Cloud stockées localement depuis votre application iOS et conformément aux demandes d’accès aux données en vertu du RGPD.
 seo-title: Récupération des identifiants stockés
 title: Récupération des identifiants stockés
-uuid: 4 fb 2 c 166-6700-4 f 8 b-b 60 b -137 b 199 e 0509
+uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
