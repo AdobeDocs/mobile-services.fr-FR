@@ -1,12 +1,12 @@
 ---
-description: Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing basé sur l'empreinte d'un périphérique.
-keywords: android ; library ; mobile ; sdk
-seo-description: Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing basé sur l'empreinte d'un périphérique.
-seo-title: Test de l'acquisition des liens marketing
-solution: Marketing Cloud, Analytics
-title: Test de l'acquisition des liens marketing
+description: Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
+keywords: android;library;mobile;sdk
+seo-description: Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
+seo-title: Test de l’acquisition de liens marketing
+solution: Marketing Cloud,Analytics
+title: Testing Marketing Link acquisition
 topic: Développeur et mise en œuvre
-uuid: 69503 e 01-182 d -44 c 6-b 0 fb-e 1 c 012 ffa 3 bd
+uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,9 +15,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing basé sur l'empreinte d'un périphérique.
+Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
 
-1. Effectuez les tâches préalables requises dans [l'acquisition d'applications mobiles](/help/ios/acquisition-main/acquisition.md).
+1. Effectuez les tâches préalables requises dans [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md) (Acquisition de l’application mobile).
 1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
 
    Par exemple :
@@ -31,18 +31,18 @@ Les instructions suivantes vous aident à aller chercher une campagne d'acquisit
 
 1. Open the generated link on the iOS device and open `https://c00.adobe.com/v3/<appid>/end`.
 
-   L’élément contextData doit être indiqué dans la réponse JSON :
+   L’élément contextData doit apparaître dans la réponse JSON :
 
    ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
 
-1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects : 
+1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. `appid` doit être égal à *`appid`* dans le lien d'acquisition. |
+   | acquisition | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
    | analytics | La valeur de `referrerTimeout` doit être supérieure à 0. |
 
 1. (Conditionnel) Si le paramètre SSL de votre fichier de configuration d’application est défini sur `false`, mettez votre lien d’acquisition à jour de façon à utiliser le protocole HTTP plutôt que le protocole HTTPS.
@@ -59,9 +59,9 @@ Les instructions suivantes vous aident à aller chercher une campagne d'acquisit
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Si vous ne voyez pas ces journaux, vérifiez que vous avez terminé les étapes 4 et 5.
+   If you do not see these logs, verify that you completed steps 4 and 5.
 
-   Voici quelques informations sur les erreurs possibles :
+   Here is some information about possible errors:
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
 
@@ -77,13 +77,13 @@ Les instructions suivantes vous aident à aller chercher une campagne d'acquisit
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` n'est pas inclus `contextData`dans.
+      `a.referrer.campaign.name` is not included in .`contextData`
 
    * `Analytics - Acquisition referrer timed out`
 
       Échec de récupération de la réponse dans le délai défini dans `referrerTimeout`. Augmentez la valeur et réessayez. Vérifiez également que vous avez ouvert le lien d’acquisition avant d’installer l’application et que vous utilisez le même réseau lorsque vous cliquez sur l’URL et que vous ouvrez l’application.
 
-Prenez note des informations suivantes :
+À noter :
 
 * Le serveur d’acquisition fournit une correspondance d’attribution basée sur l’adresse IP et les informations agent-utilisateur enregistrées lorsque vous cliquez sur le lien (étape 6) et lors du lancement de l’application (étape 7).
 
@@ -91,16 +91,16 @@ Prenez note des informations suivantes :
 
 * En utilisant des outils de surveillance HTTP, les accès envoyés à partir de l’application peuvent être contrôlés pour vérifier l’attribution d’acquisition.
 
-   You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request that are sent to the acquisition server.
+   Vous devriez constater qu’une demande `/v3/<appid>/start` et une demande `/v3/<appid>/end` ont été envoyées au serveur d’acquisition.
 
 * Des variations dans l’agent-utilisateur envoyé peuvent provoquer l’échec de l’attribution.
 
-   Assurez-vous d' `https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end` avoir les mêmes valeurs d'agent utilisateur.
+   Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
 
 * Le lien d’acquisition et l’accès du SDK doivent utiliser le même protocole HTTP/HTTPS.
 
-   Si le lien et l'accès utilisent différents protocoles, où, par exemple, le lien utilise HTTP et que le SDK utilise HTTPS, l'adresse IP peut différer sur certains opérateurs pour chaque requête. Cela peut provoquer l’échec de l’attribution.
+   Si le lien et l’accès utilisent des protocoles différents, où, par exemple, le lien utilise HTTP et le SDK utilise HTTPS, l’adresse IP peut différer sur certains opérateurs pour chaque requête. Cela peut provoquer l’échec de l’attribution.
 
-* Les liens marketing sont mis en cache sur le serveur avec une durée d'expiration de dix minutes.
+* The Marketing Links are cached on the server side with a ten-minutes expiration time.
 
-   Lorsque vous apportez des modifications aux liens marketing, patientez environ 10 minutes avant d'utiliser les liens.
+   Lorsque vous apportez des modifications aux liens marketing, attendez environ 10 minutes avant d’utiliser les liens.
