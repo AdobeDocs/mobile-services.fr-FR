@@ -1,12 +1,12 @@
 ---
 description: Liste des méthodes fournies par la bibliothèque Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes fournies par la bibliothèque Android.
 seo-title: Méthodes de configuration
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
 topic: Développeur et mise en œuvre
-uuid: 663 aeb 6 c -1 b 97-4 a 3 a -8 c 0 e-dd 4 c 2 ec 28 c 01
+uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -37,11 +37,11 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **registerAdobeDataCallback**
 
-   * Enregistre un objet qui implémente l’interface `AdobeDataCallback`. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Pour plus d'informations sur les événements déclenchant ce rappel, voir *mobiledataeventenum* au bas de cette rubrique.
+   * Enregistre un objet qui implémente l’interface `AdobeDataCallback`. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Pour plus d’informations sur les événements qui déclencheront ce rappel, voir *MobileDataEventEnum* au bas de cette rubrique.
 
       >[!TIP]
       >
-      >Cette méthode requiert la version 4.9.0 ou une version ultérieure.
+      >Cette méthode nécessite la version 4.9.0 ou ultérieure.
 
    * Voici la syntaxe de cette méthode :
 
@@ -73,7 +73,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       public static String getVersion();
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Here is a code example for this method:
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -86,7 +86,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       Vous trouverez ci-dessous les valeurs de l’état de confidentialité :
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, où les accès sont envoyés immédiatement.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où elle est ignorée.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où les siens sont ignorés.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
 
          Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ». La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
@@ -96,7 +96,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Here is a code sample for this method:
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -109,7 +109,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
       Vous pouvez définir l’état de confidentialité sur l’une des valeurs suivantes :
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, où les accès sont envoyés immédiatement. Ces accès sont envoyés immédiatement.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où elle est ignorée. Ces accès sont ignorés.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où les siens sont ignorés. Ces accès sont ignorés.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
 Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
    * Voici la syntaxe de cette méthode :
@@ -118,7 +118,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Here is a code sample for this method:
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -135,7 +135,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Here is a code sample for this method:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -147,7 +147,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
 
       >[!TIP]
       >
-      >Si votre application est mise à niveau depuis Experience Cloud 3. x vers le SDK 4. x, l'identifiant visiteur personnalisé ou généré automatiquement est récupéré et stocké en tant qu'identificateur d'utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
+      >Si votre application effectue une mise à niveau d’Experience Cloud 3.x vers le SDK 4.x, l’identifiant visiteur personnalisé ou généré automatiquement précédent est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -155,7 +155,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       public static String&amp getUserIdentifier();
       ```
 
-   * Voici l'exemple de code de cette méthode :
+   * Voici l’exemple de code pour cette méthode :
 
       ```java
       String userId = Config.getUserIdentifier();
