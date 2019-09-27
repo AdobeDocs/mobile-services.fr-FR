@@ -2,10 +2,10 @@
 description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-title: Actions minutées
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Actions minutées
 topic: Développeur et mise en œuvre
-uuid: dbcbac 5 a -6345-49 f 6-b 050-0 db 05292 f 005
+uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -31,7 +31,7 @@ Un rappel facultatif permet d’entreprendre des actions supplémentaires lorsqu
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 1. Importez la bibliothèque :
 
    ```objective-c
@@ -70,7 +70,7 @@ Outre le nom de l’action minutée, vous pouvez envoyer des données contextuel
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Les valeurs de données contextuelles doivent être mises en correspondance avec les variables personnalisées :
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-ltv.png)
 
