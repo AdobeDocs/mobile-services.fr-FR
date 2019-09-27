@@ -3,7 +3,7 @@ description: Une fois l’URL de création de liens profonds configurée dans l�
 seo-description: Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
 seo-title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 title: Mise en œuvre de la messagerie Push avec la création de liens profonds
-uuid: e 24 f 9248-8 d 48-4 e 57-84 af -3 a 05 b 72 e 2 a 09
+uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
 translation-type: tm+mt
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
@@ -14,11 +14,11 @@ source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
 
-Vous pouvez obtenir l'URL en appelant `remoteMessage.getData().get("adb_deeplink")` le `FirebaseMessagingService`.
+Vous pouvez obtenir l’URL en appelant `remoteMessage.getData().get("adb_deeplink")` dans le `FirebaseMessagingService`.
 
 >[!TIP]
 >
->Vous pouvez définir différents modes selon que la charge utile contient une URL de liaison approfondie.
+>Vous pouvez définir différents modes selon que la charge utile comporte une URL de liaison profonde.
 
 1. Procédez de l’une des manières suivantes :
 
