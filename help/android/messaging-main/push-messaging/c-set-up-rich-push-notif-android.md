@@ -3,7 +3,7 @@ description: Vous pouvez joindre des fichiers image aux notifications Android. 
 seo-description: Vous pouvez joindre des fichiers image aux notifications Android. L’ajout de composants visuels peut sensiblement augmenter l’engagement de l’utilisateur avec des notifications Push.
 seo-title: Réception de notifications Push enrichies
 title: Réception de notifications Push enrichies
-uuid: 4 a 0340 a 6-666 b -49 b 6-907 a -9 afc 966 dfdba
+uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
 translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
