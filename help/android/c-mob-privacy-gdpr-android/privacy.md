@@ -1,11 +1,11 @@
 ---
 description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 seo-description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
-seo-title: Définition de l'état d'acceptation de l'utilisateur
-solution: Marketing Cloud, Analytics
-title: Définition de l'état d'acceptation de l'utilisateur
+seo-title: Définition de l’état d’acceptation de l’utilisateur
+solution: Marketing Cloud,Analytics
+title: Définition de l’état d’acceptation de l’utilisateur
 topic: Développeur et mise en œuvre
-uuid: f 8 a 3 e 6 be -44 dd -494 e -9 cda-dbbac 86 d 6772
+uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -22,11 +22,11 @@ Consultez ces informations en cas de demande de suppression de données en vertu
 
 Vous pouvez contrôler si l’activité d’Analytics, de Target et d’Audience Manager est autorisée sur un appareil à l’aide des paramètres suivants :
 
-* `privacyDefault` dans [la configuration JSON adbmobile](/help/android/configuration/json-config/json-config.md).
+* `privacyDefault` in [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md).
 
    Ce paramètre contrôle le paramètre initial qui persiste jusqu’à ce qu’il soit modifié dans le code.
 
-* `Config.setPrivacyStatus` Méthode.
+* The `Config.setPrivacyStatus` method.
 
    Une fois que le paramètre de confidentialité est modifié à l’aide de cette méthode, cette modification reste en vigueur jusqu’à la prochaine modification ou jusqu’à la désinstallation et la réinstallation de l’application. Pour obtenir plus d’informations sur les méthodes, voir [Méthodes de configuration](/help/android/configuration/methods.md).
 
@@ -38,7 +38,7 @@ Le tableau suivant décrit chaque état de confidentialité :
    * **Target** : les demandes de mbox sont envoyées.
    * **Audience Manager** : les signaux et la synchronisation des identifiants sont envoyés.
    * Value in the JSON Config file: `optedin`
-   * Valeur dans `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_IN`
+   * Value in : `setPrivacyStatus``MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **Exclusion**
 
@@ -46,11 +46,11 @@ Le tableau suivant décrit chaque état de confidentialité :
    * **Target** : les demandes de mbox ne sont pas autorisées.
    * **Audience Manager** : les signaux et la synchronisation des identifiants ne sont pas autorisés.
    * Value in the JSON config file: `optedout`
-   * Valeur dans `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_OUT`
+   * Value in : `setPrivacyStatus``MOBILE_PRIVACY_STATUS_OPT_OUT`
 
-* **Inconnu**
+* **Unknown (Inconnu)**
 
-   * **Analytics**: Si le suivi hors ligne **est activé**, les accès sont enregistrés jusqu'à ce que l'état de confidentialité soit remplacé (accès envoyé) ou exclusion (les accès sont ignorés).
+   * **Analytics**: If offline tracking **enabled**, hits are saved until the privacy status changes to opt-in (hits are sent) or opt-out (hits are discarded).
 
       Si le suivi hors ligne <b>n’est pas</b> activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
    * **Target** : les demandes de mbox sont envoyées.
