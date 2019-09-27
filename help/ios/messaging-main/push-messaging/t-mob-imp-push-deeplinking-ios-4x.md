@@ -3,7 +3,7 @@ description: Une fois l’URL de création de liens profonds configurée dans l�
 seo-description: Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
 seo-title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 title: Mise en œuvre de la messagerie Push avec la création de liens profonds
-uuid: ee 9590 fc -8 bd 3-4111-9221-9011 d 9 edbd 84
+uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
