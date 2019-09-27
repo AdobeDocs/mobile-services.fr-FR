@@ -1,12 +1,12 @@
 ---
 description: Liste des méthodes Audience Manager fournies par la bibliothèque Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Audience Manager fournies par la bibliothèque Android.
-seo-title: Méthodes Audience Manager
-solution: Marketing Cloud, Analytics
-title: Méthodes Audience Manager
+seo-title: Méthodes d’Audience Manager
+solution: Marketing Cloud,Analytics
+title: Méthodes d’Audience Manager
 topic: Développeur et mise en œuvre
-uuid: 2 f 6 e 4664-1306-41 d 4-9 fa 7-e 3 a 99 f 1 df 4 ab
+uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -17,7 +17,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Liste des méthodes Audience Manager fournies par la bibliothèque Android.
 
-Le kit SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d’identité Adobe Experience Platform. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
 
 Si Audience Manager est configuré dans le fichier JSON, un signal qui contient des mesures de cycle de vie est envoyé avec l’accès de cycle de vie.
 
@@ -73,7 +73,7 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
 
    Définit le DPID et le DPUUID. Ces valeurs sont envoyées avec chaque signal.
 
-   Si la valeur DPUUID transmise à cette méthode contient des caractères qui ne sont pas compatibles avec l'URL, les clients doivent coder le paramètre avant de le transmettre au SDK.
+   If the DPUUID value that is passed to this method contains characters that are not URL-safe, customers must encode the parameter before passing it to the SDK.
 
    * Voici la syntaxe de cette méthode :
 
