@@ -1,11 +1,11 @@
 ---
 description: Si l’application ouvre un contenu de web mobile, assurez-vous que les visiteurs ne sont pas identifiés séparément lorsqu’ils se déplacent entre le web natif et le web mobile.
 seo-description: Si l’application ouvre un contenu de web mobile, assurez-vous que les visiteurs ne sont pas identifiés séparément lorsqu’ils se déplacent entre le web natif et le web mobile.
-seo-title: Suivi des visiteurs entre une application et un Web mobile
-solution: Marketing Cloud, Analytics
-title: Suivi des visiteurs entre une application et un Web mobile
+seo-title: Suivi des visiteurs entre une application et le Web mobile
+solution: Marketing Cloud,Analytics
+title: Suivi des visiteurs entre une application et le Web mobile
 topic: Développeur et mise en œuvre
-uuid: 073572 e 4-4 c 55-4 b 27-b 4 a 7-e 4349 ccde 7 bf
+uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,9 +22,9 @@ Le SDK Android génère un ID visiteur unique lorsqu’une application est ins
 
 >[!TIP]
 >
->Les identifiants des visiteurs de l'application persistent par le biais de mises à niveau.
+>Les identifiants des visiteurs de l’application persistent grâce aux mises à niveau.
 
-## Identifiants visiteur sur le Web mobile
+## Identifiants des visiteurs sur le Web mobile
 
 Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID visiteur uniques, ce qui engendre la création d’un ID visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
 
@@ -34,7 +34,7 @@ Pour utiliser le même identifiant visiteur pour l’application et le Web mobil
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier Config à votre projet intellij IDEA ou Eclipse* dans [l'implémentation principale et le cycle de vie](/help/android/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* IntelliJ IDEA ou Eclipse dans l’implémentation et le cycle de vie [](/help/android/getting-started/dev-qs.md)principaux.
 
 1. Afin d’ajouter des informations sur les visiteurs à l’URL utilisée pour ouvrir l’affichage web, appelez `visitorAppendToURL` :
 
@@ -90,5 +90,5 @@ Si ces procédures de dépannage ne résolvent pas vos problèmes, contactez le 
 
 >[!IMPORTANT]
 >
->Pour permettre à Adobe de valider l'implémentation, vous devez partager un exemple d'application et le site associé.
+>Pour permettre à Adobe de valider l’implémentation, vous devez partager un exemple d’application et le site associé.
 
