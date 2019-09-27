@@ -3,10 +3,10 @@ description: Ces informations vous aident à comprendre et à utiliser Adobe Mo
 keywords: mobile
 seo-description: Ces informations vous aident à comprendre et à utiliser Adobe Mobile Services.
 seo-title: Prise en main
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Prise en main
 topic: Mesures
-uuid: a 7 ae 7 c 5 a-dab 8-4603-b 4 cd-af 73 a 2 f 09 f 71
+uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -41,7 +41,7 @@ Adobe Mobile Services contribue à stimuler l’engagement des utilisateurs de
 
 Dans *Acquérir*, vous utilisez des supports propriétaires, acquis et payants afin de stimuler l’acquisition des utilisateurs pour les téléchargements d’applications dans les principales boutiques d’applications. Adobe Mobile Services permet d’accélérer le processus d’acquisition des utilisateurs.
 
-Il offre des processus d’acquisition des utilisateurs, notamment le suivi d’acquisition et les liens profonds, qui mesurent l’efficacité de vos canaux en matière d’acquisition d’utilisateurs. Grâce aux liens marketing qui assurent le suivi des utilisateurs qui proviennent du canal, vous pouvez identifier les canaux d'acquisition les plus efficaces pour attirer des utilisateurs rentables et engagés.
+Il offre des processus d’acquisition des utilisateurs, notamment le suivi d’acquisition et les liens profonds, qui mesurent l’efficacité de vos canaux en matière d’acquisition d’utilisateurs. With Marketing Links that track which users came from which channel, you can gain visibility into which acquisition channels are most effective in driving profitable and engaged users.
 
 En outre, les liens profonds permettent d’orienter directement les utilisateurs vers le contenu de votre choix et de les encourager à installer votre application si nécessaire.
 
@@ -82,7 +82,7 @@ Dans *Interagir*, vous pouvez utiliser des notifications push et des messages in
 * Les messages in-app sont déclenchés par les analyses en temps réel, les alertes et les nouveaux contenus/offres.
 * Interagir permet de comprendre les consultations, les taux de clics publicitaires et le comportement des utilisateurs en aval.
 
-### Messagerie Adobe Mobile
+### Adobe Mobile Messaging
 
 Vous pouvez utiliser des notifications push et in-app pour communiquer avec les utilisateurs. Les notifications push sont envoyées via le système d’exploitation sur l’appareil, tandis que les messages in-app s’affichent dans l’application lorsqu’un utilisateur interagit activement avec cette dernière. Les messages in-app peuvent inclure des formats supplémentaires, comme des fenêtres contextuelles et des spots.
 
@@ -121,7 +121,7 @@ Désormais, Adobe Target pour applications mobiles tire pleinement parti de la 
 
 Pour plus d’informations sur l’emplacement, voir le contenu suivant :
 
-* [Emplacement du guide de l'utilisateur Mobile Services](/help/using/location/c-location-overview.md)
+* [Emplacement dans le guide de l’utilisateur de Mobile Services](/help/using/location/c-location-overview.md)
 * [Emplacement dans le guide SDK Android](/help/android/location/location.md)
 * [Emplacement dans le guide SDK iOS](/help/ios/location/location.md)
 
