@@ -1,10 +1,10 @@
 ---
 description: Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
 seo-description: Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
-seo-title: Suivi des liens profonds
-solution: Marketing Cloud, Analytics
+seo-title: Tracking deep links
+solution: Marketing Cloud,Analytics
 title: Suivi des liens profonds
-uuid: 08 dc 2820-7 fd 3-419 f-ac 2 d-dcf 12532578 a
+uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -21,10 +21,10 @@ Pour obtenir plus d’informations sur la façon dont les spécialistes du marke
 
 1. Ajoutez le SDK à votre projet et mettez en œuvre les mesures de cycle de vie.
 
-   Pour plus d’informations, voir *Ajoutez le SDK et le fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
-1. Enregistrez l'application pour traiter les communications inter-applications ou prendre en charge les liens universels.
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
+1. Register the application to handle Inter-App Communications or support Universal Links.
 
-   Pour plus d'informations, voir [Communications inter-applications](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) ou [Prise en charge des liens universels](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
+   Pour plus d’informations, reportez-vous à la section Communications [inter-applications ou](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) [prise en charge des liens universels.](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
 1. Effectuez le suivi du lien profond dans openURL.
 
@@ -48,9 +48,9 @@ Pour obtenir plus d’informations sur la façon dont les spécialistes du marke
    }
    ```
 
-The Adobe Mobile SDK can parse key and value pairs of data appended to any deep or Universal Link, provided that the link contains a key with a `a.deeplink.id` label and a corresponding non-null and user generated value. Toutes les paires clé-valeur de données ajoutées au lien seront analysées, associées à un accès de cycle de vie et envoyées à Adobe Analytics, à condition que le lien contienne une paire clé-valeur `a.deeplink.id`..
+The Adobe Mobile SDK can parse key and value pairs of data appended to any deep or Universal Link, provided that the link contains a key with a `a.deeplink.id` label and a corresponding non-null and user generated value. Toutes les paires clé-valeur de données ajoutées au lien seront analysées, associées à un accès de cycle de vie et envoyées à Adobe Analytics, à condition que le lien contienne une paire clé-valeur `a.deeplink.id`.
 
-Vous pouvez également ajouter une ou plusieurs des clés réservées suivantes (avec les valeurs générées par l'utilisateur) au lien profond ou universel :
+Vous pouvez également choisir d’ajouter une ou plusieurs des clés réservées suivantes (avec des valeurs générées par l’utilisateur) au lien profond ou au lien universel :
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
@@ -69,7 +69,7 @@ Ces clés sont des variables prémappées pour la création de rapports dans Ado
    }];
    ```
 
-1. Poignée `ADBMobileDataEventDeepLink` dans `AdobeDataCallback`.
+1. Manipuler `ADBMobileDataEventDeepLink` à l'intérieur `AdobeDataCallback`.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
