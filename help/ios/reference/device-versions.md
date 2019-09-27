@@ -2,10 +2,10 @@
 description: Le tableau ci-après contient la chaîne de version iOS envoyée par de nombreux appareils iOS.
 seo-description: Le tableau ci-après contient la chaîne de version iOS envoyée par de nombreux appareils iOS.
 seo-title: Versions des appareils iOS
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Versions des appareils iOS
 topic: Développeur et mise en œuvre
-uuid: 8 b 8 a 9 bc 3-0737-4 de 2-9792-0 b 112 aa 4 cf 65
+uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,7 +18,7 @@ Le tableau ci-après contient la chaîne de version iOS envoyée par de nombreux
 
 >[!IMPORTANT]
 >
->Cette liste est basée sur des tests internes et des informations en ligne et peut contenir des imprécisions ou des informations incomplètes.
+>Cette liste est basée sur des tests internes et des informations en ligne et peut contenir des inexactitudes ou des informations incomplètes.
 
 Pour plus d’informations sur les appareils iOS, consultez des sites tels que [The iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
