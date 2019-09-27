@@ -3,10 +3,10 @@ description: Vous pouvez configurer les options du SDK Acquisition sur la page G
 keywords: mobile
 seo-description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 seo-title: Configuration des options du SDK Acquisition
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Configuration des options du SDK Acquisition
 topic: Mesures
-uuid: 50 ce 51 ad -39 bf -4 ac 7-bd 94-757443 d 11 ca 7
+uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
 source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
@@ -27,7 +27,7 @@ Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les par
 
       Spécifiez la valeur du délai d’expiration du référent.
 
-      La valeur par défaut est de 5 secondes et cette valeur spécifie le nombre de secondes d'attente pour les informations d'acquisition avant l'envoi du premier accès au lancement.
+      La valeur par défaut est de 5 secondes et cette valeur indique le nombre de secondes d’attente des informations d’acquisition avant l’envoi de l’accès au premier lancement.
 
    * **[!UICONTROL Plus de détails]**
 
