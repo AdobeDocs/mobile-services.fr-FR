@@ -3,10 +3,10 @@ description: Ces informations vous aideront à résoudre les problèmes liés au
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés aux messages push.
 seo-title: Résolution des problèmes liés aux messages push
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Résolution des problèmes liés aux messages push
 topic: Mesures
-uuid: 87 d 7 dcb 6-82 a 8-46 e 3-a 6 ed -7 f 895 a 22 f 2 af
+uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -33,7 +33,7 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    >[!TIP]
    >
-   >Les services Push ne garantissent pas l'envoi d'un message. Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
+   >The push services do not guarantee a message will be sent. Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
    >
    >* **APNS** : [Qualité de service](https://developer.apple.com/documentation/usernotifications)
       >
