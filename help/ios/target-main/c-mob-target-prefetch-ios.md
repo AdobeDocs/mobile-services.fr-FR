@@ -3,7 +3,7 @@ description: La fonctionnalité de prérécupération d’Adobe Target utilise 
 seo-description: La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS Mobile pour récupérer le contenu des offres aussi peu de fois que possible en mettant en cache les réponses du serveur.
 seo-title: Prérécupération du contenu des offres dans iOS
 title: Prérécupération du contenu des offres dans iOS
-uuid: fef 58042-65 e 2-4579-b 8 f 1-d 21554 d 2 af 57
+uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS 
 
 >[!IMPORTANT]
 >
->La fonctionnalité de prérécupération dans les kits SDK mobiles pour ios n'est pas prise en charge pour les types d'activité Ciblage automatique, Affectation automatique et Personnalisation automatisée dans Adobe Target.
+>Prefetch functionality in the Mobile SDKs for iOS is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 Ce processus réduit le délai de chargement, évite la multiplication des appels réseau et permet d’informer Adobe Target de la mbox que l’utilisateur de l’application mobile a été visitée. L’ensemble du contenu sera récupéré et mis en cache lors de l’appel de prérécupération. Ce contenu sera ensuite récupéré du cache pour tous les appels futurs contenant le contenu mis en cache pour cette mbox spécifique.
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Méthodes de prérécupération {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## Prefetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour la prérécupération dans iOS :
 
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * Voici les paramètres de cette méthode :
+   * Here are the parameters for this method:
 
       * **`targetPrefetchArray`**
 
@@ -84,7 +84,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
                withProfileParameters:(nullableNSDictionary*)profileParameters;
       ```
 
-   * Voici les paramètres de cette méthode :
+   * Here are the parameters for this method:
 
       * **`requests`**
 
@@ -104,7 +104,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       (void) targetPrefetchClearCache; 
       ```
 
-   * Il n'existe aucun paramètre pour cette méthode.
+   * Il n’existe aucun paramètre pour cette méthode.
 
 * **targetRequestObjectWithName**
 
@@ -119,7 +119,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       callback:(nullablevoid(^)(NSString*__nullablecontent))callback;
       ```
 
-   * Il n'existe aucun paramètre pour cette méthode.
+   * There are no parameters for this method.
 
 * **createTargetPrefetchObject**
 
@@ -136,13 +136,13 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
 
 Vous trouverez ci-dessous la liste des classes publiques qui prennent en charge la fonction de prérécupération dans iOS :
 
-### Référence de classe : Targetprefetchobject
+### Référence de classe : TargetPreFetchObject
 
 Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupération de la mbox.
 
 * **`name`**
 
-   Nom de l'emplacement/mbox à récupérer.
+   Name for the location/mbox you want to retrieve.
 
    * **Type** : NSString*
 
@@ -164,7 +164,7 @@ Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupérat
 
    * **Type** : NSDictionary*
 
-### Référence de classe : Targetrequestobject
+### Référence de classe : TargetRequestObject
 
 Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres de mbox et le rappel de renvoi utilisés pour les demandes d’emplacement Target.
 
