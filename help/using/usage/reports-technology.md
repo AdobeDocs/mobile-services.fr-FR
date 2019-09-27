@@ -2,18 +2,18 @@
 description: Le rapport Technologie vous permet de visualiser les différents types d’appareils, systèmes d’exploitation, versions de système d’exploitation et opérateurs de téléphonie mobile sur lesquels votre application est utilisée.
 keywords: mobile
 seo-description: Le rapport Technologie vous permet de visualiser les différents types d’appareils, systèmes d’exploitation, versions de système d’exploitation et opérateurs de téléphonie mobile sur lesquels votre application est utilisée.
-seo-title: Rapport Technologie
-solution: Marketing Cloud, Analytics
-title: Rapport Technologie
+seo-title: Technology report
+solution: Marketing Cloud,Analytics
+title: Technology report
 topic: Rapports, Mesures
-uuid: 4 b 7322 c 4-8920-43 cd-bb 72-5 a 5 bd 515 ae 84
+uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Rapport Technologie {#technology}
+# Technology report {#technology}
 
 Le rapport **[!UICONTROL Technologie]vous permet de visualiser les différents types d’appareils, systèmes d’exploitation, versions de système d’exploitation et opérateurs de téléphonie mobile sur lesquels votre application est utilisée.**
 
@@ -25,7 +25,7 @@ Cette visualisation fournit par exemple le rapport de base et les ventilations, 
 
 >[!TIP]
 >
->Outre ces informations, vous pouvez afficher un didacticiel intégré qui décrit comment interagir avec le graphique radial. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>Outre ces informations, vous pouvez consulter un didacticiel produit qui décrit comment interagir avec le graphique radial. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
 
 ![](assets/report_technology.png)
 
@@ -51,7 +51,7 @@ Le tableau suivant décrit les rapports standards et la manière dont ils sont a
 
 >[!TIP]
 >
->Dans le rapport **[!UICONTROL Opérateurs]** , les utilisateurs du Wi-Fi sont signalés comme `none`des rapports.
+>In the Carriers report, Wi-fi users are reported as .****`none`
 
 
 ## Ajout de ventilations et de mesures {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,7 +60,7 @@ Vous pouvez ajouter des ventilations et des mesures secondaires qui modifient la
 
 >[!IMPORTANT]
 >
->Plus vous ajoutez d'anneaux au soleil, plus le traitement est long.
+>Plus vous ajoutez d'anneaux au soleil, plus le processus prend de temps.
 
 Pour ajouter des ventilations et des mesures secondaires, cliquez sur **[!UICONTROL Ventilation technologique]** dans la barre de titres du rapport, puis sur **[!UICONTROL Personnaliser]**.
 
