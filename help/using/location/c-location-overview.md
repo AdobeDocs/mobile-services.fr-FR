@@ -3,10 +3,10 @@ description: Le rapport d’aperçu de l’emplacement vous permet de visualiser
 keywords: mobile
 seo-description: Le rapport d’aperçu de l’emplacement vous permet de visualiser les pays, régions et points ciblés dans lesquels votre application est utilisée.
 seo-title: Aperçu (emplacement)
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Aperçu (emplacement)
 topic: Rapports, Mesures
-uuid: a 701 abc 3-001 b -4015-843 f -5 fb 2 c 6 c 80 d 17
+uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -27,7 +27,7 @@ Cette visualisation fournit par exemple le rapport de base avec les ventilations
 
 >[!TIP]
 >
->Outre ces informations, vous pouvez afficher un didacticiel intégré qui décrit comment interagir avec le graphique radial. Pour lancer le tutoriel, cliquez sur **[!UICONTROL Ventilation géographique]** dans la barre de titre du rapport, puis cliquez sur l’icône **i[!UICONTROL .]**
+>Outre ces informations, vous pouvez consulter un didacticiel produit qui décrit comment interagir avec le graphique radial. Pour lancer le tutoriel, cliquez sur **[!UICONTROL Ventilation géographique]** dans la barre de titre du rapport, puis cliquez sur l’icône **i[!UICONTROL .]**
 
 ![](assets/location.png)
 
@@ -59,7 +59,7 @@ Vous pouvez ajouter des ventilations et des mesures secondaires qui modifient la
 
 >[!TIP]
 >
->Plus vous ajoutez d'anneaux au soleil, plus le traitement est long.
+>Plus vous ajoutez d'anneaux au soleil, plus le processus prend de temps.
 
 Pour ajouter des ventilations et des mesures secondaires, cliquez sur **[!UICONTROL Ventilation géographique]** dans la barre de titres du rapport, puis cliquez sur **Personnaliser]pour ouvrir le rail de droite.[!UICONTROL **
 
