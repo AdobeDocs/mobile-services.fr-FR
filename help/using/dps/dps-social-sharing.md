@@ -1,12 +1,12 @@
 ---
-description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est disponible uniquement pour les clients Digital Publishing Suite (DPS).
+description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. This report is available to Digital Publishing Suites (DPS) customers only.
 keywords: mobile
-seo-description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est disponible uniquement pour les clients Digital Publishing Suite (DPS).
+seo-description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. This report is available to Digital Publishing Suites (DPS) customers only.
 seo-title: Partage social
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Partage social
 topic: Mesures
-uuid: 900 e 58 aa-c 1 d 3-4590-af 44-df 67575214 a 4
+uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 translation-type: tm+mt
 source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
