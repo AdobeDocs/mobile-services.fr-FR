@@ -3,10 +3,10 @@ description: Le rapport Chemins d’accès des actions est basé sur l’analyse
 keywords: mobile
 seo-description: Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
 seo-title: Rapport Chemins d’accès des actions
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Rapport Chemins d’accès des actions
 topic: Rapports, Mesures
-uuid: a 21 e 5 d 9 e-fd 57-4178-9 d 64-87181 b 7 f 988 b
+uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -56,11 +56,11 @@ Les chemins d’accès suivants ont été empruntés **après** que les utilisat
 * Glissement d’un élément
 * Mise à l’échelle d’un élément
 
-![cible du chemin d'action](assets/action_paths_focus.png)
+![orientation du chemin d'action](assets/action_paths_focus.png)
 
 Vous pouvez effectuer une mise au point ou développer plusieurs nœuds afin d’obtenir une vue détaillée des chemins d’accès empruntés par les utilisateurs dans votre application. Par exemple :
 
-![chemin d'action multi](assets/action_paths_mult.png)
+![action path multi](assets/action_paths_mult.png)
 
 Vous pouvez configurer les options suivantes pour ce rapport :
 
@@ -74,7 +74,7 @@ Vous pouvez configurer les options suivantes pour ce rapport :
 
 * **[!UICONTROL Filtrer]**
 
-   Cliquez sur **[!UICONTROL Filtrer]pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles.** Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. Pour plus d'informations, voir [Ajout d'un filtre bascule](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Cliquez sur **[!UICONTROL Filtrer]pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles.** Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Télécharger]**
 
