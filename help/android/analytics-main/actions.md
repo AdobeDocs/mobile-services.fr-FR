@@ -2,10 +2,10 @@
 description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
 seo-description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
 seo-title: Suivi des actions de l’application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Développeur et mise en œuvre
-uuid: fe 01 c 1 df-f 6 bb -4 b 32-b 3 ef -959 d 2 c 724 af 6
+uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -22,7 +22,7 @@ Chaque action est associée à une ou à plusieurs mesures qui sont incrémenté
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier Config à votre projet intellij IDEA ou Eclipse* dans [l'implémentation principale et le cycle de vie](/help/android/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 1. Importez la bibliothèque :
 
