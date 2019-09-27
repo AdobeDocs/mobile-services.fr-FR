@@ -1,12 +1,12 @@
 ---
 description: Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
 seo-title: 'Chemin '
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: 'Chemin '
 topic: Développeur et mise en œuvre
-uuid: a 137 cc 27-dc 28-48 c 0-b 08 e -2 ca -2 d 2 c 7 e 1 d
+uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -19,30 +19,30 @@ Informations sur la mesure des vidéos sur Android à l’aide de la solution de
 
 >[!TIP]
 >
->Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d'informations sur la solution des mesures vidéo d'Adobe, voir [Mesure de l'audio et de la vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. For more information about Adobe's video measurement solution, see Measuring audio and video in Adobe Analytics.[](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
-Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Ce contenu présente un aperçu des tâches des développeurs avec des exemples de codes. Le tableau suivant répertorie les données multimédias envoyées à Analytics. Les règles de traitement permettent de mapper les données contextuelles à une variable Analytics.
+Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Ce contenu présente un aperçu des tâches des développeurs avec des exemples de codes. Le tableau suivant répertorie les données multimédias envoyées à Analytics. Processing rules are used to map the context data to an Analytics variable.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
-   * Type de variable : Evar
+   * Variable type: eVar
       * Délai d’expiration par défaut : Visite
       * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
    * (**Obligatoire**) Lorsqu’un visiteur affiche une vidéo d’une certaine manière, cette variable de données contextuelles collecte le nom de la vidéo, tel que spécifié dans la mise en œuvre. Vous pouvez ajouter des classifications pour cette variable.
    * (**Facultatif**) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
 
 * **a.media.name**
-   * Type de variable : Custom Insight (s. prop)
+   * Type de variable : Custom Insight (s.prop)
    * **(Facultatif)** Fournit des informations de cheminement vidéo.
 
       >[!IMPORTANT]
       >
-      >Le cheminement doit être activé pour cette variable par expcare.
+      >Le cheminement doit être activé par ExpCare pour cette variable.
    * Type d’événement : Insight personnalisé (s.prop)
 
 * **a.media.segment**
-   * Type de variable : Evar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
    * (**Obligatoire**) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo.
 
@@ -57,7 +57,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 
 
 * **a.contentType**
-   * Type de variable : Evar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
    * Collecte les données sur le type de contenu affiché par un visiteur.
 
@@ -76,7 +76,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
       Cependant, cette variable ne fournit aucune information quant au pourcentage, ni à la portion de la vidéo que le visiteur a visionnée.
 
 * **a.media.segmentView**
-   * Type de variable : Evénement
+   * Variable type: Event
    * Type : compteur
    * Indique qu’un visiteur a visionné une partie d’un segment de vidéo.
 
@@ -248,7 +248,7 @@ Voici les méthodes de la classe Media Measurement :
       public static void stop(String name, double offset); 
       ```
 
-   * Voici l'exemple de code ou cette méthode :
+   * Voici l’exemple de code pour cette méthode :
 
       ```java
       Media.stop("name", 0);
