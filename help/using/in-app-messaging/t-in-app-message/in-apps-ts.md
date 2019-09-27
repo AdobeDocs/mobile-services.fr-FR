@@ -3,10 +3,10 @@ description: Ces informations peuvent vous aider à résoudre les problèmes li�
 keywords: mobile
 seo-description: Ces informations peuvent vous aider à résoudre les problèmes liés à la messagerie in-app.
 seo-title: Dépannage de la messagerie intégrée (in-app)
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
 topic: Mesures
-uuid: 8813 e 8 d 8-bb 1 e -46 ad -83 cd -98 ae 68 f 73 ce 6
+uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -37,13 +37,13 @@ Assurez-vous que le récepteur de diffusion de notifications locales est déclar
 
 Consultez la vue Liste dans la colonne **[!UICONTROL État]** de la page Gérer les messages in-app et vérifiez que le message est actif.
 
-## Observez *l'affichage une fois*, *afficher toujours*, *afficher* les paramètres hors ligne sur la page Audience.
+## Regardez *afficher une fois*, *afficher toujours*, *afficher les paramètres hors ligne* sur la page Audience.
 
 Vérifiez que ces paramètres sont corrects. Sur la page Audience, consultez les options de l’onglet **Déclencheur**, dans lequel vous pouvez indiquer la fréquence d’affichage du message.
 
 ## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
-Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’informations sur le moment où commence une session, voir `lifecycleTimeout` dans [le fichier de configuration](/help/ios/configuration/json-config/json-config.md) JSON adbmobile.
+Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’informations sur le moment où commence une session, voir `lifecycleTimeout` dans le fichier de configuration [JSON](/help/ios/configuration/json-config/json-config.md) ADBMobile.
 
 ## J’ai mis à jour mon message à distance, mais mon application affiche toujours l’ancien message.
 
@@ -77,7 +77,7 @@ Le SDK récupère les messages nouveaux ou mis à jour au moment du lancement d�
 
 Procédez comme suit :
 
-1. Curl your messages URL in your config file to verify the remote message is updated (for example, `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
+1. Traitez l’URL de vos messages dans votre fichier de configuration pour vérifier que le message distant est mis à jour (par exemple, `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`).
 1. Fermez l’application.
 1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
 1. Ouvrez l’application, naviguez jusqu’à l’emplacement où doit s’afficher le message, puis vérifiez qu’il a été mis à jour.
