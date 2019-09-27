@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
-product: services mobiles
-solution-title: Formation et support
+product: mobile-services
+solution-title: Formation et assistance
 solution-hub-url: https://helpx.adobe.com/fr/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: Prise en main
