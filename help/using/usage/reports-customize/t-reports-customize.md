@@ -3,10 +3,10 @@ description: Ces informations vous aident à personnaliser les rapports intégr�
 keywords: mobile
 seo-description: Ces informations vous aident à personnaliser les rapports intégrés par l’ajout de filtres (segments) supplémentaires.
 seo-title: Ajout de filtres aux rapports
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Ajout de filtres aux rapports
 topic: Rapports, Mesures
-uuid: 19 c 395 cc -2 e 07-4588-825 b-f 2 f 8 b 10 a 87 c 1
+uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ Ces informations vous aident à personnaliser les rapports intégrés par l’aj
 
 >[!IMPORTANT]
 >
->Les mesures d'applications mobiles sont également disponibles dans les rapports et analyses marketing, dans les analyses ad hoc, dans l'entrepôt de données et dans d'autres interfaces de création de rapports Analytics. Si un type de rapport ou une ventilation n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
+>Mobile app metrics are also available in marketing reports &amp; analytics, ad hoc analysis, data warehouse, and other Analytics reporting interfaces. Si un type de rapport ou une ventilation n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
 
 Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateurs et sessions], mais ces instructions peuvent s’appliquer à n’importe quel autre rapport.**
 
@@ -39,7 +39,7 @@ Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateur
 
    ![](assets/customize3.png)
 
-   Pour ajouter Android comme filtre, vous devez répéter cette étape.
+   Pour ajouter Android en tant que filtre, vous devez répéter cette étape.
 
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL Android]**.
 
@@ -54,7 +54,7 @@ Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateur
 
    ![](assets/customize5.png)
 
-   Vous pouvez personnaliser davantage ce rapport. Sous ios 8.3, vous pouvez ajouter la mesure Premiers lancements avec un filtre de version de système d'exploitation ios 8.3 afin de voir combien de clients ios 8.3 ont mis à niveau leurs applications et ont lancé un premier lancement.
+   Vous pouvez personnaliser davantage ce rapport. Depuis iOS 8.3, vous pouvez ajouter la mesure Premiers lancements à l’aide d’un filtre de version du système d’exploitation iOS 8.3 pour déterminer le nombre de clients iOS 8.3 qui ont mis à niveau leurs applications et effectué un premier lancement.
 1. Under **[!UICONTROL First Launches]**, click **[!UICONTROL Add Filter]**, click **[!UICONTROL Add Rule]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL iOS]**.
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating System Versions]** from the drop-down list, and select **[!UICONTROL iOS 8.3]**.
 
@@ -68,4 +68,4 @@ Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateur
 
    ![](assets/customize7.png)
 
-   Prenez quelques instants pour tester les différentes options du menu de personnalisation et veillez à marquer vos favoris d’un signet. Les URL de rapport dans Adobe Mobile sont fonctionnelles et peuvent être envoyées par courriel ou ajoutées à vos favoris.
+   Prenez quelques instants pour tester les différentes options du menu de personnalisation et veillez à marquer vos favoris d’un signet. Les URL des rapports dans Adobe Mobile sont fonctionnelles et peuvent être envoyées par courrier électronique ou ajoutées à vos favoris.
