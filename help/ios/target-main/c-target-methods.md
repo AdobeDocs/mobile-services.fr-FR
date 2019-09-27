@@ -1,28 +1,28 @@
 ---
 description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
-seo-title: Méthodes Ios Target pour Adobe Mobile Services
-solution: Marketing Cloud, Analytics
-title: Méthodes Target pour ios
+seo-title: Méthodes Target iOS pour Adobe Mobile Services
+solution: Marketing Cloud,Analytics
+title: Méthodes Target pour iOS
 topic: Développeur et mise en œuvre
-uuid: 692 bcda 1-02 ba -4902-bd 65-15888 adf 1952
+uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
 
-# Méthodes Target pour ios {#target-methods}
+# Méthodes de ciblage pour iOS {#target-methods}
 
 Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform. Un préfixe est ajouté aux méthodes selon la solution. Par exemple, les méthodes sont précédées du préfixe `target`target.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d’identité Adobe Experience Platform. Un préfixe est ajouté aux méthodes selon la solution. Par exemple, les méthodes sont précédées du préfixe `target`target.
 
 >[!TIP]
 >
->Les mesures de cycle de vie sont envoyées sous la forme de paramètres à chaque chargement de mbox. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/ios/metrics.md). Si vous envoyez des requêtes Target à l'intérieur de `didFinishLaunching` la méthode déléguée, ajoutez un `[ADBMobile trackAction:data:]``[ADBMobile trackState:data:]` ou un appel avant le code de mise en œuvre de Target. Ainsi, les requêtes Target contiennent les données de cycle de vie complètes.
+>Les mesures de cycle de vie sont envoyées sous la forme de paramètres à chaque chargement de mbox. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/ios/metrics.md). Si vous envoyez des requêtes Target dans la méthode `didFinishLaunching` déléguée, ajoutez un `[ADBMobile trackAction:data:]` `[ADBMobile trackState:data:]` appel ou un appel avant le code d’implémentation Target. This way, the Target requests will contain the complete lifecycle data.
 
-## Référence de classe : Adbtargetlocationrequest
+## Référence de classe : ADBTargetLocationRequest
 
 ### Propriétés
 
@@ -36,7 +36,7 @@ NSMutableDictionary *parameters;
 
 >[!TIP]
 >
->Les constantes suivantes sont simplifiées : de - utilisées lorsque vous définissez des clés pour les paramètres personnalisés.
+>The following constants are for ease of use when you set keys for custom parameters.
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Pour plus d'informations sur l'API Target sous-jacente, voir [Développeurs Adobe Target](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      For more information about the underlying Target API, see Adobe Target Developers.[](https://docs.adobe.com/dev/products/target/reference/delivery.html)
 
 
 
@@ -191,7 +191,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder&#x200B;ConfirmRequestWithName:&#x200B;orderId:&#x200B;orderTotal:&#x200B;productPurchasedId:&#x200B;parameters**
 
-   Crée une `ADBTargetLocationRequest`.
+   Creates an `ADBTargetLocationRequest`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >Depuis la version 4.10.0 du SDK, Target n'utilise plus de cookies. Cette méthode permet de réinitialiser thirdPartyID et sessionID.
+   >Depuis la version 4.10.0 du SDK, Target n’utilise plus de cookies. Cette méthode permet de réinitialiser thirdPartyID et sessionID.
 
    * Voici la syntaxe de cette méthode :
 
