@@ -1,12 +1,12 @@
 ---
 description: Les informations suivantes vous expliquent comment rediriger un lien de campagne d’acquisition héritée sur un appareil Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Les informations suivantes vous expliquent comment rediriger un lien de campagne d’acquisition héritée sur un appareil Android.
 seo-title: Test de l’acquisition héritée
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Test de l’acquisition héritée
 topic: Développeur et mise en œuvre
-uuid: bb 7 ace 96-68 eb -4 f 43-b 3 cf-af 80730 b 9 cee
+uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
