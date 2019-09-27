@@ -3,10 +3,10 @@ description: Ces informations vous aident à personnaliser les rapports intégr�
 keywords: mobile
 seo-description: Ces informations vous aident à personnaliser les rapports intégrés par l’ajout de séries (mesures) supplémentaires ou d’applications dans différentes suites de rapports aux fins de comparaison des données.
 seo-title: Ajout de séries (mesures) aux rapports
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Ajout de séries (mesures) aux rapports
 topic: Rapports, Mesures
-uuid: 84 fdfb 1 f -70 e 6-4 c 02-9 b 3 b -526 e 9 c 924 f 74
+uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ Ces informations vous aident à personnaliser les rapports intégrés par l’aj
 
 >[!IMPORTANT]
 >
->Les mesures d'applications mobiles sont également disponibles dans les rapports et analyses marketing, dans les analyses ad hoc, dans l'entrepôt de données et dans d'autres interfaces de création de rapports Analytics. Si un type de rapport ou une ventilation n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
+>Les mesures d’applications mobiles sont également disponibles dans les rapports et analyses marketing, les analyses ad hoc, l’entrepôt de données et d’autres interfaces de création de rapports Analytics. Si un type de rapport ou une ventilation n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
 
 In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** report, but the instructions can apply to any report.
 
@@ -43,11 +43,11 @@ In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** rep
 
       ![Résultat de l’étape](assets/add_series.png)
 
-   * Pour ajouter une nouvelle application dans une suite de rapports différente afin de pouvoir comparer les données entre les applications, cliquez sur le nom de l'application dans la série nouvellement créée et sélectionnez l'application souhaitée.
+   * To add a new app in a different report suite so that you can compare data across apps, click the app name in the newly created series, and select the desired app.
 
       ![](assets/add_series_app.png)
 
 1. (Conditionnel) Ajoutez des filtres à la nouvelle série.
 
-   Pour plus d'informations, voir [Ajout de filtres aux rapports](/help/using/usage/reports-customize/t-reports-customize.md).
+   Pour plus d’informations, voir [Ajout de filtres aux rapports](/help/using/usage/reports-customize/t-reports-customize.md).
 1. Click **[!UICONTROL Update]** and **[!UICONTROL Run]**.
