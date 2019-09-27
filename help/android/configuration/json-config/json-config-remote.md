@@ -2,10 +2,10 @@
 description: Vous pouvez charger un fichier de configuration JSON ADBMobile distinct au démarrage de l’application.
 seo-description: Vous pouvez charger un fichier de configuration JSON ADBMobile distinct au démarrage de l’application.
 seo-title: Remplacement du chemin du fichier de configuration JSON ADBMobile
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Remplacement du chemin du fichier de configuration JSON ADBMobile
 topic: Développeur et mise en œuvre
-uuid: 6872 a 5 d 7-0 c 5 a -4 fdc-b 7 bf-ad 1534763 a 6 a
+uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
