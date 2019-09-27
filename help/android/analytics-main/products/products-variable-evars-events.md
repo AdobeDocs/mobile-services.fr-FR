@@ -1,12 +1,12 @@
 ---
 description: Voici un exemple de variable products avec des eVars de marchandisage et des événements spécifiques à un produit.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Voici un exemple de variable products avec des eVars de marchandisage et des événements spécifiques à un produit.
 seo-title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
 topic: Développeur et mise en œuvre
-uuid: 64 f 822 a 0-6 ccf -48 e 7-8886-31 b 93 d 8198 a 3
+uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -37,5 +37,5 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Si vous déclenchez un événement spécifique au produit à l'aide de *`&&products`* la variable, vous devez également définir cet événement dans *`&&events`* la variable. Si vous ne définissez pas cet événement, il est filtré au cours du traitement.
+>Si vous déclenchez un événement spécifique au produit à l’aide de la *`&&products`* variable, vous devez également le définir dans la *`&&events`* variable. Si vous ne définissez pas cet événement, il est filtré au cours du traitement.
 
