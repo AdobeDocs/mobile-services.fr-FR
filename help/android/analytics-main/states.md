@@ -2,10 +2,10 @@
 description: Les états correspondent aux différents écrans ou affichages de votre application.
 seo-description: Les états correspondent aux différents écrans ou affichages de votre application.
 seo-title: Suivi des états de l’application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des états de l’application
 topic: Développeur et mise en œuvre
-uuid: 69 c 99 d 05-5816-4 c 86-97 c 5-d 218 dc 26 c 129
+uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier Config à votre projet intellij IDEA ou Eclipse* dans [l'implémentation principale et le cycle de vie](/help/android/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* IntelliJ IDEA ou Eclipse dans l’implémentation et le cycle de vie [](/help/android/getting-started/dev-qs.md)principaux.
 
 1. Importez la bibliothèque :
 
@@ -73,7 +73,7 @@ Les états sont généralement affichés en utilisant un rapport de cheminement 
 |  |  |
 |--- |--- |
 | Adobe Mobile Services   | Rapport **[!UICONTROL Afficher les états.]** Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
-| Adobe Analytics  | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **Pages**, rapport **[!UICONTROL Pages vues]** et rapport **Chemin[!UICONTROL .]** |
+| Adobe Analytics | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **Pages**, rapport **[!UICONTROL Pages vues]** et rapport **Chemin[!UICONTROL .]** |
 | Analyses ad hoc | Vous pouvez consulter les états sur les différents affichages des Pages au moyen de la dimension **Page**, de la mesure **[!UICONTROL Pages vues]** et des rapports **Chemin[!UICONTROL .]** |
 
 
