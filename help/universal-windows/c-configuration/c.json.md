@@ -1,18 +1,18 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
 seo-description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-seo-title: config adbmobileconfig. json
-solution: Marketing Cloud, Analytics
-title: config adbmobileconfig. json
+seo-title: Configuration ADBMobileConfig.json
+solution: Marketing Cloud,Analytics
+title: Configuration ADBMobileConfig.json
 topic: Développeur et mise en œuvre
-uuid: cbcb 54 a 3-4 b 8 f -4651-8 ce 9-2731 ac 988545
+uuid: cbcb54a3-4b8f-4651-8ce9-2731ac98545
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# Fichier de configuration adbmobileconfig. json {#adbmobileconfig-json-config}
+# Fichier de configuration ADBMobileConfig.json {#adbmobileconfig-json-config}
 
 Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
 
@@ -52,7 +52,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
 
-   En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez le service d'assistance clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé, contactez le service à la clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    La valeur par défaut est `false`.
 
@@ -66,17 +66,17 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    Envoie les accès par lots.
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Obligatoire `offlineEnabled=true`et la valeur par défaut est `0` (pas de traitement par lot).
+   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Nécessite `offlineEnabled=true`et la valeur par défaut est `0` (Pas de traitement par lot).
 
 * **privacyDefault**
 
-   Les options disponibles sont les suivantes :
+   Les options sont les suivantes :
 
    * `optedin` - les accès sont envoyés immédiatement.
    * `optedout` - les accès sont ignorés.
    * `optunknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
-      Cette valeur définit uniquement la valeur par défaut. Si cette valeur est définie ou modifiée dans le code, la valeur définie par le code est enregistrée dans le stockage local et utilisée jusqu’à ce qu’elle soit modifiée ou que l’application soit désinstallée, puis réinstallée.
+      This sets the default value only. Si cette valeur est définie ou modifiée dans le code, la valeur définie par le code est enregistrée dans le stockage local et utilisée jusqu’à ce qu’elle soit modifiée ou que l’application soit désinstallée, puis réinstallée.
 
       La valeur par défaut est `optedin`.
 
@@ -84,7 +84,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    Chaque matrice de points ciblés comporte le nom, la latitude, la longitude et le rayon (en mètres) du point ciblé correspondant à la zone du point. Le nom du point ciblé peut être n’importe quelle chaîne. Lorsqu’un appel `trackLocation` est envoyé, si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `trackLocation`.
 
-   * Voici l'exemple de code de cette variable :
+   * Voici l’exemple de code de cette variable :
 
       ```js
        "poi" [ 
