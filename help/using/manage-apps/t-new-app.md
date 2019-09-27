@@ -3,10 +3,10 @@ description: Utilisez ces informations pour créer une application et configurer
 keywords: mobile
 seo-description: Utilisez ces informations pour créer une application et configurer ses mesures clés ; configurer les options du SDK pour Adobe Analytics et Adobe Audience Manager ; configurer les options d’acquisition et du service d’ID ; et télécharger le fichier de configuration, les SDK et les outils de développement et de test.
 seo-title: Ajout d’une nouvelle application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Ajout d’une nouvelle application
 topic: Mesures
-uuid: 706 b 5 e 4 d -1318-4 a 9 e -8 c 69-ffabf 51 fa 02 c
+uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -26,11 +26,11 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
    * Cliquez sur **[!UICONTROL Créer]pour créer une application.**
    * Pour ajouter des applications supplémentaires, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur **[!UICONTROL Ajouter]**.
 
-      Pour plus d'informations sur la connexion, voir [Connexion](/help/using/gs/gs-signin.md).
+      Pour plus d’informations sur la connexion, voir [Connexion](/help/using/gs/gs-signin.md).
 
       >[!TIP]
       >
-      >Pour gérer les applications existantes, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur l'application que vous souhaitez modifier. Vous pouvez effectuer des modifications sur la page Informations sur l’application.
+      >Pour gérer les applications existantes, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur l’application à modifier. Vous pouvez effectuer des modifications sur la page Informations sur l’application.
 
 1. Renseignez les champs suivants :
 
@@ -44,20 +44,20 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
       Cet identifiant identifie de manière unique la suite de rapports dans Adobe Analytics. Le préfixe de votre société est ajouté automatiquement au début de l’identifiant.
 
-   * **[!UICONTROL Copier les paramètres de]**
+   * **[!UICONTROL Copier les paramètres depuis]**
 
       Les variables, événements, règles de traitement et autres paramètres sont configurés dans la nouvelle suite de rapports exactement comme dans cette suite de rapports. Une suite de rapports créée dans Mobile Services n’est activée en ligne (ou horodatée) que si la suite de rapports **Copier les paramètres de** utilisée était le Modèle d’applications mobiles, ou si vous créez une suite de rapports qui est activée hors ligne.
 
    * **[!UICONTROL Fuseau horaire]**
 
-      Toutes les dates de création de rapports se trouvent dans ce fuseau horaire. Ce paramètre tente d’utiliser un fuseau horaire proche de celui utilisé par votre navigateur.
+      Toutes les dates des rapports se trouvent dans ce fuseau horaire. Ce paramètre tente d’utiliser un fuseau horaire proche de celui utilisé par votre navigateur.
 
    * **[!UICONTROL Devise]**
 
       Les recettes sont suivies et rapportées comme ce type de devise.
    >[!TIP]
    >
-   >Pour utiliser une suite de rapports virtuelle, reportez-vous à [la](/help/using/manage-apps/c-mob-vrs.md)section Suites de rapports virtuelles.
+   >Pour utiliser une suite de rapports virtuelle, voir Suites [de rapports](/help/using/manage-apps/c-mob-vrs.md)virtuelles.
 
    * **[!UICONTROL Icône]**
 
@@ -65,7 +65,7 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
    * **[!UICONTROL Nom]**
 
-      (**Optional**) Type a descriptive name for the app. Ce nom permet de localiser rapidement une application et un nom significatif peut vous aider à comprendre rapidement l'objectif et les paramètres de l'application.
+      (**Optional**) Type a descriptive name for the app. Ce nom vous permet de localiser rapidement une application. Un nom significatif peut vous aider à comprendre rapidement l’objectif et les paramètres de l’application.
 
    * **[!UICONTROL Type]**
 
