@@ -3,9 +3,9 @@ description: Ce module externe permet d’envoyer des appels Adobe Analytics de
 keywords: Unity
 seo-description: Ce module externe permet d’envoyer des appels Adobe Analytics depuis les applications Unity.
 seo-title: Module externe Unity pour SDK iOS et Android 4.x
-solution: Marketing Cloud, développeur
+solution: Marketing Cloud,Développeur
 title: Module externe Unity pour SDK iOS et Android 4.x
-uuid: 83289 a 73-982 d -4472-a 8 c 8-00 b 562 dc 80 f 5
+uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
