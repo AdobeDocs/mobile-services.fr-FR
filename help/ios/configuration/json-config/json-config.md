@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-title: Config JSON adbmobile
-solution: Marketing Cloud, Analytics
-title: Config JSON adbmobile
+seo-title: Configuration ADBMobile JSON
+solution: Marketing Cloud,Analytics
+title: Configuration ADBMobile JSON
 topic: Développeur et mise en œuvre
-uuid: d 9708 d 59-e 30 a -4 f 6 c-ab 1 b-d 9499855 d 0 c 2
+uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -57,7 +57,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Version minimale du SDK : 4.6
    >[!IMPORTANT]
    >
-   >Les informations d'accès de session rétroactives sont envoyées dans un appel de serveur d'informations de session et d'autres appels au serveur peuvent s'appliquer.
+   >Les informations d’accès de session antidatées sont envoyées dans un appel du serveur d’informations de session et d’autres appels du serveur peuvent s’appliquer.
 
 
 * **batchLimit**
@@ -65,7 +65,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    Nombre limite d’accès pouvant faire l’objet d’appels consécutifs. Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès intervient, les 10 accès sont tous envoyés consécutivement.
 
    * Default value is `0`, which means that batching is not enabled.
-   * Obligatoire `offlineEnabled = true`.
+   * Requires .`offlineEnabled = true`
    * Version minimale du SDK : 4.1
 
 * **charset**
@@ -80,7 +80,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   >Cette variable est requise par Target.
+   >This variable is required by Target.
 
    * Version minimale du SDK : 4.0
 
@@ -125,7 +125,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Lorsque cette variable est activée, les accès sont placés en file d’attente pendant que l’appareil est hors ligne et envoyés ultérieurement quand l’appareil est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne. La valeur par défaut est `false`.
 
-   Voici quelques informations importantes :
+   Here is some important information:
 
    * Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur « true ». 
    * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
@@ -136,7 +136,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **org**
 
-   Spécifie l'ID d'entreprise Experience Cloud pour le service d'identité Adobe Experience Platform.
+   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
 
    * Version minimale du SDK : 4.3
 
@@ -145,7 +145,6 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    Chaque matrice de points ciblés comporte le nom, la latitude, la longitude et le rayon (en mètres) du point ciblé correspondant à la zone du point. Le nom du point ciblé peut être n’importe quelle chaîne. Lorsqu’un appel `trackLocation` est envoyé et que les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelle est renseignée et envoyée avec l’appel `trackLocation`.
 
    * Version minimale du SDK : 4.0
-
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
@@ -161,7 +160,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. Pour télécharger un fichier de configuration mis à jour, voir [Avant de commencer](/help/ios/getting-started/requirements.md).
+   Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
 
 * **postback**
 
@@ -197,7 +196,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   >Cette variable est requise par l'acquisition. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >Cette variable est requise par Acquisition. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
 
    * Version minimale du SDK : 4.1
 
@@ -239,7 +238,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   >Cette variable est requise par Analytics et/ou par la gestion de l'audience.
+   >Cette variable est requise par Analytics et/ou la gestion de l’audience.
 
    * Version minimale du SDK : 4.0
 
@@ -257,7 +256,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   `payload` L'objet dans le code est un exemple de charge utile pour une définition de message placée dans `ADBMobileConfig.json` le fichier. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Version minimale du SDK : 4.0
 
