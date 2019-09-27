@@ -2,10 +2,10 @@
 description: Informations relatives aux analyses de vidéos.
 seo-description: Informations relatives aux analyses de vidéos.
 seo-title: 'Chemin '
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: 'Chemin '
 topic: Développeur et mise en œuvre
-uuid: f 45 dac 3 b-cd 2 e -4 fba-a 3 b 2-c 243640 ecfa 4
+uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 translation-type: tm+mt
 source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
@@ -18,7 +18,7 @@ Informations relatives aux analyses de vidéos.
 
 Video measurement is described in detail in the [Measuring video and audio in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide. Le processus général de mesure vidéo se ressemble dans toutes les plates-formes AppMeasurement. Cette section de démarrage rapide donne une vue d’ensemble des tâches du développeur et fournit des exemples de code.
 
-Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez les règles de traitement pour mapper les données contextuelles à une variable Analytics.
+Le tableau suivant répertorie les données multimédias envoyées à Analytics. Use processing rules to map the context data to an Analytics variable.
 
 * **a.media.name**
 
@@ -26,7 +26,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (**Facultatif**) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
 
-   * Type de variable : Evar
+   * Variable type: eVar
    * Délai d’expiration par défaut : Visite
    * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
 
@@ -35,7 +35,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
    (**Facultatif)** Fournit des informations de cheminement vidéo. Le cheminement doit être activé par le service à la clientèle pour cette variable.
 
    * Type d’événement : Insight personnalisé (s.prop).
-   * Type de variable : Custom Insight (s. prop)
+   * Type de variable : Custom Insight (s.prop)
 
 * **a.media.segment**
 
@@ -45,7 +45,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    La méthode par défaut de collecte de données est réalisée aux points suivants : le démarrage de la vidéo (play), le début du segment et la fin de la vidéo (stop). Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
 
-   * Type de variable : Evar
+   * Variable type: eVar
    * Délai d’expiration par défaut : page vue
 
 * **a.contentType**
@@ -54,21 +54,21 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et donc de calculer les taux de conversion vidéo.
 
-   * Type de variable : Evar
+   * Variable type: eVar
    * Délai d’expiration par défaut : page vue
 
 * **a.media.timePlayed**
 
    Compte le temps de lecture vidéo passé, en secondes, depuis le dernier processus de collecte de données (requêtes d’images).
 
-   * Type de variable : Evénement
+   * Variable type: Event
    * Type : compteur
 
 * **a.media.view**
 
    Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardé (ni la partie visionnée).
 
-   * Type de variable : Evénement
+   * Variable type: Event
    * Type : compteur
 
 * **a.media.segmentView**
@@ -82,7 +82,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Indique qu’un utilisateur a visionné une vidéo dans son intégralité. Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et les autres flux qui n’ont pas de fin définie, vous pouvez spécifier un point personnalisé pour mesurer la fin. Par exemple, après un temps de lecture spécifique.
 
-   * Type de variable : Evénement
+   * Variable type: Event
    * Type : compteur
 
 ## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -124,7 +124,7 @@ property bool isMediaAd;
 
 ### Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **Settingswith (winjs : Settingswith)**
+* **SettingsWith (winJS : settingsWith)**
 
    Renvoie un objet `MediaSettings` avec les paramètres spécifiés.
 
@@ -140,7 +140,7 @@ property bool isMediaAd;
       var  mySettings  =  ADB.Media.settingsWith("name", 10,  "playerName", "playerId"); 
       ```
 
-* **Adsettingswith (winjs : Adsettingswith)**
+* **AdSettingsWith (winJS : adSettingsWith)**
 
    Renvoie un objet `MediaSettings` à utiliser pour le suivi d’une vidéo publicitaire.
 
@@ -156,7 +156,7 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **Open (winjs : open)**
+* **Open (winJS : open)**
 
    Effectue le suivi d’un média open en utilisant les paramètres définis dans `settings`.
 
@@ -172,7 +172,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings);
       ```
 
-* **Close (winjs : close)**
+* **Close (winJS : close)**
 
    Effectue le suivi de fermeture d’un média pour l’élément média nommé *`name`*.
 
@@ -188,7 +188,7 @@ property bool isMediaAd;
       ADB.Media.close("mediaName"); 
       ```
 
-* **Play (winjs : play)**
+* **Play (winJS : play)**
 
    Effectue le suivi de lecture d’un média pour l’élément média nommé *`name`* à un décalage *offset* donné (en secondes).
 
@@ -204,7 +204,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName",  0);
       ```
 
-* **Complete (winjs : complete)**
+* **Complete (winJS: complete)**
 
    Marque manuellement l’élément multimédia comme terminé au décalage *offset* donné (en secondes).
 
@@ -220,7 +220,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8);
       ```
 
-* **Stop (winjs : stop)**
+* **Stop (winJS: stop)**
 
    Avertit le module multimédia que la vidéo a été interrompue ou suspendue au décalage *offset* donné.
 
@@ -236,7 +236,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName",  4);
       ```
 
-* **Cliquez sur (winjs : click)**
+* **Click (winJS: click)**
 
    Avertit le module multimédia qu’un utilisateur a cliqué sur l’élément multimédia.
 
@@ -252,7 +252,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName",  3); 
       ```
 
-* **Track (winjs : track)**
+* **Track (winJS : track)**
 
    Envoie un appel d’action de suivi (aucune page vue) pour l’état multimédia en cours.
 
