@@ -2,10 +2,10 @@
 description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 seo-description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 seo-title: Définition de l’état de souscription de l’utilisateur
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
 topic: Développeur et mise en œuvre
-uuid: 44 a 09 a 25-93 c 6-4 e 1 a-b 69 e -710018 e 8 b 6 c 3
+uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -22,7 +22,7 @@ Consultez ces informations en cas de demande de suppression de données en vertu
 
 Vous pouvez décider si l’activité d’Analytics, de Target et d’Audience Manager est autorisée sur un périphérique en utilisant les paramètres suivants :
 
-* `privacyDefault` dans [la configuration JSON adbmobile](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` dans la configuration [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
 
    Ce paramètre contrôle le paramètre initial qui persiste jusqu’à ce qu’il soit modifié dans le code.
 
@@ -32,7 +32,7 @@ Vous pouvez décider si l’activité d’Analytics, de Target et d’Audience 
 
    Pour obtenir plus d’informations sur les méthodes, voir [Méthodes de configuration](/help/ios/configuration/json-config/json-config.md).
 
-Vous trouverez ci-dessous des informations sur chaque état de confidentialité :
+Voici des informations sur chaque état de confidentialité :
 
 * **Inclusion**
 
@@ -50,7 +50,7 @@ Vous trouverez ci-dessous des informations sur chaque état de confidentialité 
    * Value in the JSON config file: `optedout`
    * Valeur dans `setPrivacyStatus`: `ADBMobilePrivacyStatusOptOut`
 
-* **Inconnu**
+* **Unknown (Inconnu)**
 
    * Analytics : Si le suivi hors ligne **est** activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
