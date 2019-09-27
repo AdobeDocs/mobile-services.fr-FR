@@ -2,10 +2,10 @@
 description: Le suivi iBeacon permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth à basse consommation.
 seo-description: Le suivi iBeacon permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth à basse consommation.
 seo-title: Suivi iBeacon
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi iBeacon
 topic: Développeur et mise en œuvre
-uuid: 390883 db -027 e -4 d 12-8 a 16-86 d 514579 db 1
+uuid: 390883db-027e-4d12-8a16-86d514579db1
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Le suivi iBeacon permet de mesurer et de cibler des micro-emplacements à l’ai
 
 Les données de balises suivantes sont envoyées à Analytics et à Target lorsque `trackBeacon` est appelé :
 
-* `a.beacon.uuid` - Proximityuuid de la balise
+* `a.beacon.uuid` - ProximityUUID of the beacon
 * `a.beacon.major` : nombre majeur de la balise, tel que le numéro d’un magasin
 * `a.beacon.minor` : nombre mineur de la balise, tel que le numéro unique dans un magasin
 * `a.beacon.prox` : les valeurs suivantes représentent la proximité de l’utilisateur avec la balise :
@@ -28,11 +28,11 @@ Les données de balises suivantes sont envoyées à Analytics et à Target lorsq
    * `2` = proche
    * `3` = loin
 
-## Suivi des ibeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Suivi des iBalises {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 1. Importez la bibliothèque :
 
    ```objective-c
@@ -59,7 +59,7 @@ Outre le nom de l’action minutée, vous pouvez joindre des données contextuel
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Les valeurs de données contextuelles doivent être mises en correspondance avec les variables personnalisées :
+Les valeurs de données contextuelles doivent être mises en correspondance avec des variables personnalisées :
 
 ![](assets/map-variable-context-ltv.png)
 
