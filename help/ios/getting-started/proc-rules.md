@@ -2,10 +2,10 @@
 description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
 seo-description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
 seo-title: Règles de traitement et données contextuelles.
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Règles de traitement et données contextuelles.
 topic: Développeur et mise en œuvre
-uuid: 51338 ccd-fa 52-4 d 9 c -97 c 4-947 a 4100465 d
+uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -19,9 +19,9 @@ Les règles de traitement sont utilisées pour copier les données que vous envo
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
 * [Processing Rules Training](https://tv.adobe.com/embed/1181/16506/) (Formation aux règles de traitement) – Summit 2013
-* Obtenir l'autorisation d'utiliser des règles de traitement
+* Devenir autorisé à utiliser des règles de traitement
 
-   Pour plus d'informations sur les règles de traitement, voir [Présentation des règles de traitement](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   For more information about processing rules, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 Lors de l’utilisation des règles de traitement, prenez note des informations suivantes :
 
@@ -63,5 +63,5 @@ Lors de l’utilisation des règles de traitement, prenez note des informations 
 
 >[!TIP]
 >
->Adobe réserve l'espace de noms `a.`«  ». À part cette restriction, pour éviter les collisions, la seule exigence est que les variables de données contextuelles soient uniques dans votre société de connexion.
+>Adobe reserves the namespace " ". `a.` À part cette restriction, pour éviter les collisions, la seule exigence est que les variables de données contextuelles soient uniques dans votre société de connexion.
 
