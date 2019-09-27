@@ -2,11 +2,11 @@
 description: Vous pouvez configurer les options d’expérience se rapportant aux messages push et aux messages push enrichis, y compris le nom, le texte du message et la destination. Vous pouvez également configurer des options avancées, notamment les options de données utiles et les options personnalisées pour les appareils iOS.
 keywords: mobile
 seo-description: Vous pouvez configurer les options d’expérience se rapportant aux messages push et aux messages push enrichis, y compris le nom, le texte du message et la destination. Vous pouvez également configurer des options avancées, notamment les options de données utiles et les options personnalisées pour les appareils iOS.
-seo-title: Message Push de l'expérience
-solution: Marketing Cloud, Analytics
-title: Message Push de l'expérience
+seo-title: Message push d’expérience
+solution: Marketing Cloud,Analytics
+title: Experience  Push Message
 topic: Mesures
-uuid: 1 a 8 baf 3 e -9 fea -452 c-b 0 fc -4 ba 8 ac 270861
+uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -17,9 +17,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Vous pouvez configurer les options d’expérience se rapportant aux messages push et aux messages push enrichis, y compris le nom, le texte du message et la destination. Vous pouvez également configurer des options avancées, notamment les options de données utiles et les options personnalisées pour les appareils iOS.
 
-1. Sur la page Public pour un nouveau message Push, cliquez **[!UICONTROL sur Expérience]**.
+1. Sur la page Audience pour un nouveau message push, cliquez sur **[!UICONTROL Expérience]**.
 
-   ![écran de message push de l'expérience](assets/experience-push-message.png)
+   ![écran de message push d’expérience](assets/experience-push-message.png)
 
 1. Saisissez le nom du message.
 1. Dans la section **[!UICONTROL Message], saisissez les informations dans les champs suivants :**
@@ -30,7 +30,7 @@ Vous pouvez configurer les options d’expérience se rapportant aux messages pu
 
    * **[!UICONTROL URL du média]**
 
-      Saisissez l’URL du fichier média que vous souhaitez utiliser dans le message de notification push. Pour connaître les conditions requises pour utiliser des notifications Push riches, voir *Exigences pour les notifications Push riches* ci-dessous.
+      Saisissez l’URL du fichier média que vous souhaitez utiliser dans le message de notification push. Pour connaître les conditions requises pour utiliser les notifications Push enrichies, voir *Conditions requises pour les notifications* Push enrichies ci-dessous.
 
       >[!IMPORTANT]
       >
@@ -47,20 +47,20 @@ Vous pouvez configurer les options d’expérience se rapportant aux messages pu
       >
       >When you use the * **[!UICONTROL Web Link]** or **[!UICONTROL Custom Link]** destination types, the destination type is not tracked. Seuls les **[!UICONTROL liens profonds]font l’objet d’un suivi.**
 
-## Conditions requises pour les notifications Push riches
+## Conditions requises pour les notifications Push complexes
 
-Voici les conditions requises pour envoyer des notifications Push riches :
+Voici les conditions requises pour envoyer des notifications Push enrichies :
 
 * **Versions prises en charge**
 
-   Les notifications Push riches sont prises en charge sur les versions suivantes :
+   Les notifications Push enrichies sont prises en charge sur les versions suivantes :
    * Android 4.1.0 ou version ultérieure
    * iOS 10 ou version ultérieure
 
       >[!IMPORTANT]
       >
       >À noter :
-      >* Les messages Push enrichis envoyés aux versions antérieures seront toujours envoyés, mais seul le texte s'affiche.
+      >* Les messages Push enrichis envoyés aux versions antérieures seront toujours envoyés, mais seul le texte s’affiche.
       >* La lecture de média n’est pour l’instant pas prise en charge.
 
 
@@ -71,18 +71,18 @@ Voici les conditions requises pour envoyer des notifications Push riches :
    * Animations (iOS uniquement) : GIF
    * Vidéos (iOS uniquement) : MP4
 
-* **Formats d'URL**
+* **Formats d’URL**
    * HTTPS uniquement
 
 * **Taille**
-   * Les images doivent être au format 2:1 ou rognées.
+   * Les images doivent être au format 2:1, sinon elles seront rognées.
 
 Pour de plus amples informations concernant la configuration des notifications push enrichies, consultez le contenu suivant :
 
-* [Réception de notifications Push dans Android](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Recevoir des notifications Push riches dans ios](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+* [Recevoir des notifications Push dans Android](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
+* [Recevez des notifications Push enrichies dans iOS](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
 
-Pour configurer un message Push sur la page Expérience :
+Pour configurer un message push sur la page Expérience :
 
 1. (**Optional**) Click the **[!UICONTROL Show Advanced Options]** link to configure additional options:
 
@@ -104,25 +104,25 @@ Pour configurer un message Push sur la page Expérience :
 
 1. (Facultatif) Pour afficher un aperçu de la mise en page de votre message, cliquez sur les icônes ci-après :
 
-   * **[! UICONTROL Summary}**
+   * **[!UICONTROL x Summary}**
 
-      Masque le volet d'aperçu. Cliquez sur ![Aperçu](assets/icon_preview.png) pour afficher à nouveau le volet d'aperçu.
+      Masque le volet d’aperçu. Cliquez sur ![Aperçu](assets/icon_preview.png) pour afficher à nouveau le volet d’aperçu.
 
-   * **[!UICONTROL Modification de l'orientation]**
+   * **[!UICONTROL Modifier l’orientation]**
 
       To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). Pour les montres, l’orientation passe d’un cadran rond à un cadran carré.
 
-   * **[!UICONTROL Aperçu sur la montre d'un utilisateur]**
+   * **[!UICONTROL Aperçu sur la montre d’un utilisateur]**
 
-      Pour prévisualiser votre message tel qu'il apparaîtra sur les montres d'un utilisateur, cliquez sur l'icône ![de visionnage](assets/icon_watch.png).
+      Pour prévisualiser votre message tel qu’il apparaîtra sur les montres d’un utilisateur, cliquez sur l’icône ![de surveillance](assets/icon_watch.png).
 
-   * **[!UICONTROL Aperçu sur le téléphone mobile d'un utilisateur]**
+   * **[!UICONTROL Aperçu sur le téléphone mobile d’un utilisateur]**
 
-      Pour prévisualiser votre message tel qu'il apparaîtra sur les téléphones mobiles d'un utilisateur, cliquez sur l'icône ![Smartphone](assets/icon_phone.png).
+      Pour prévisualiser votre message tel qu’il apparaîtra sur les téléphones mobiles d’un utilisateur, cliquez sur l’icône ![de](assets/icon_phone.png)téléphone.
 
-   * **[!UICONTROL Aperçu sur la tablette d'un utilisateur]**
+   * **[!UICONTROL Aperçu sur la tablette d’un utilisateur]**
 
-      Pour prévisualiser votre message dans la tablette d'un utilisateur, cliquez ![sur l'icône de tablette](assets/icon_tablet.png).
+      Pour prévisualiser votre message dans la tablette d’un utilisateur, cliquez sur l’icône ![de la](assets/icon_tablet.png)tablette.
    En bas du panneau d’aperçu, vous pouvez afficher une description de l’audience que vous avez sélectionnée à l’étape précédente.
 
 1. (**Optional**) Click **[!UICONTROL Test]** to push your message to specified devices for testing purposes.
@@ -132,4 +132,4 @@ Pour configurer un message Push sur la page Expérience :
 
 1. Configurez les les options de planification du message.
 
-   Pour plus d'informations, voir [Planification : message push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+   Pour plus d’informations, voir [Planification : message](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)push.
