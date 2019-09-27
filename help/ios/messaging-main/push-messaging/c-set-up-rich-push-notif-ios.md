@@ -3,7 +3,7 @@ description: Vous pouvez joindre des fichiers image à vos notifications Apple. 
 seo-description: Vous pouvez joindre des fichiers image à vos notifications Apple. L’ajout d’éléments visuels peut augmenter de façon notable l’engagement de vos utilisateurs vis-à-vis des notifications push.
 seo-title: Réception de notifications push enrichies
 title: Réception de notifications Push enrichies
-uuid: 0 dbda 409-cf 49-4 eb 8-90 ee-baf 27911 dc 07
+uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -35,7 +35,7 @@ Pour recevoir des notifications push enrichies dans votre application iOS :
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      Dans cette méthode, vous pouvez obtenir l'URL multimédia à partir `userInfo` de `attachment-url` la clé. Après avoir téléchargé le fichier dans un répertoire local, ajoutez le chemin d'accès local à `bestAttemptContent.attachments`.
+      Dans cette méthode, vous pouvez obtenir l’URL du média à partir de `userInfo` la clé `attachment-url` . Après avoir téléchargé le fichier dans un répertoire local, ajoutez le chemin d’accès local à `bestAttemptContent.attachments`.
 
       Voici un exemple du code de cette méthode :
 
