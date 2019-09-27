@@ -1,12 +1,12 @@
 ---
 description: Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
 seo-title: Test d’Acquisition version 3
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Test d’Acquisition version 3
 topic: Développeur et mise en œuvre
-uuid: 5 e 38 b 43 d -389 e -4412-99 e 5-3 e 6223 b 6 ad 28
+uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -19,13 +19,13 @@ Ces informations vous expliquent comment rediriger un lien de campagne Acquisiti
 
 >[!IMPORTANT]
 >
->L'acquisition dans V 3 fait référence aux liens d'acquisition que vous créez avec le créateur d'acquisitions dans l'interface utilisateur d'Adobe Mobile Services. Pour utiliser cette fonctionnalité, vous devez effectuer la mise à niveau vers le SDK Android 4.x pour solutions Experience Cloud 4.6.0 ou version supérieure.
+>L’acquisition dans V3 fait référence aux liens d’acquisition que vous créez avec le créateur d’acquisitions dans l’interface utilisateur d’Adobe Mobile Services. Pour utiliser cette fonctionnalité, vous devez effectuer la mise à niveau vers le SDK Android 4.x pour solutions Experience Cloud 4.6.0 ou version supérieure.
 
 Si l’application mobile ne figure pas encore dans Google Play, lors de la création du lien de campagne, vous pouvez sélectionner n’importe quelle application mobile comme destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, puis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Le test aller-retour de l’acquisition de l’application mobile requiert la simulation de ce type de diffusion.
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. Ainsi, les mesures initiales de cycle de vie associées aux paramètres des chaînes de requête de la campagne sont envoyées lorsque l’application est lancée pour la première fois.
 
-1. Effectuez les tâches préalables requises dans [l'acquisition](/help/android/acquisition-main/acquisition.md) d'applications mobiles et assurez-vous d'avoir correctement mis en œuvre le destinataire de la diffusion.`INSTALL_REFERRER`
+1. Complete the prerequisite tasks in Mobile App Acquisition and ensure that you have correctly implemented the broadcast receiver for .[](/help/android/acquisition-main/acquisition.md)`INSTALL_REFERRER`
 1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Pour obtenir plus d’informations, voir [Générateur de liens marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -34,7 +34,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >Si vous rencontrez à la fois des applications Android et ios dans le lien d'acquisition, utilisez Google Play comme boutique par défaut.
+   >Si vous faites référence aux applications Android et iOS dans le lien d’acquisition, utilisez Google Play comme magasin par défaut.
 
 1. Ouvrez le lien généré dans un navigateur de bureau.
 
@@ -43,7 +43,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   Dans l'exemple précédent, l'identifiant est `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
+   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
 1. Créez le lien de fin de l’acquisition en utilisant l’identifiant unique de l’étape 3, avec le format suivant : 
 
@@ -59,11 +59,11 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    Si `contextData` n’apparaît pas ou si certaines chaînes sont manquantes, assurez-vous que l’URL d’acquisition adopte le format indiqué dans le document [Création manuelle d’un lien d’acquisition](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
 1. Répétez l’étape 3 pour obtenir un nouvel identifiant unique.
-1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects : 
+1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | The server should be `c00.adobe.com`.   *`appid`* doit être égal à `appid` dans le lien d'acquisition. |
+   | acquisition | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
    | analytics | À des fins de test, définissez le délai d’expiration du référent afin que la durée soit suffisante (60 secondes ou moins) pour permettre l’envoi manuel de la diffusion. Vous pouvez restaurer le délai d’expiration d’origine après le test. |
 
 1. Connectez l’appareil à un ordinateur, désinstallez puis réinstallez l’application.
@@ -97,10 +97,10 @@ Le tableau suivant répertorie les informations supplémentaires sur les erreurs
 | Analytics - Unable to decode response(*String*). | La réponse est incorrecte. |
 | Analytics - Unable to parse response (*a JSON Response*). | La chaîne JSON est incorrecte. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | Absence du paramètre contextData dans la réponse. |
-| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` n'est pas incluse dans contextdata. |
+| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  n’est pas incluse dans contextData. |
 | Analytics - Acquisition referrer timed out. | Échec d’obtention de la réponse dans la durée définie par `referrerTimeout`. Augmentez la valeur et réessayez.  Assurez-vous que vous avez ouvert le lien d’acquisition avant d’installer l’application. |
 
-Gardez à l’esprit les informations suivantes :
+À noter :
 
 * Les accès envoyés depuis l’application peuvent être surveillés à l’aide des outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
 * Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
