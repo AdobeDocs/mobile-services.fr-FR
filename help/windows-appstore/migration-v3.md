@@ -1,18 +1,18 @@
 ---
 description: Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers la version 4.x du SDK Boutique d’applications Windows 8.1 universelle pour les solutions Experience Cloud.
 seo-description: Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers la version 4.x du SDK Boutique d’applications Windows 8.1 universelle pour les solutions Experience Cloud.
-seo-title: Migration vers les SDK 4. x
-solution: Marketing Cloud, Analytics
-title: Migration vers les SDK 4. x
+seo-title: Migrate to the 4.x SDKs
+solution: Marketing Cloud,Analytics
+title: Migrate to the 4.x SDKs
 topic: Développeur et mise en œuvre
-uuid: e 0 fe 3 b 7 b-cda 5-4 a 91-834 c -2 c 7 e 17 a 501 a 3
+uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# Migration vers les SDK 4. x {#migrate-to-the-x-sdks}
+# Migrate to the 4.x SDKs {#migrate-to-the-x-sdks}
 
 Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers la version 4.x du SDK Boutique d’applications Windows 8.1 universelle pour les solutions Experience Cloud.
 
@@ -22,7 +22,7 @@ Les sections suivantes vous expliquent comment migrer de la version 3.x vers la
 
 ## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Vous avez probablement remarqué un nouveau fichier `ADBMobileConfig.json` inclus avec votre téléchargement. Ce fichier contient des paramètres globaux spécifiques à l'application et remplace la plupart des variables de configuration qui ont été utilisées dans les versions précédentes. Voici un exemple de fichier `ADBMobileConfig.json` :
+Vous avez probablement remarqué un nouveau fichier `ADBMobileConfig.json` inclus avec votre téléchargement. Ce fichier contient des paramètres globaux spécifiques à l’application et remplace la plupart des variables de configuration utilisées dans les versions précédentes. Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ```js
 { 
@@ -52,7 +52,7 @@ Vous avez probablement remarqué un nouveau fichier `ADBMobileConfig.json` inclu
 
 Le tableau suivant répertorie les variables de configuration que vous devez déplacer vers le fichier de configuration. Déplacez la valeur définie pour la variable de la première colonne vers la variable de la deuxième colonne, puis supprimez l’ancienne variable de configuration de votre code.
 
-## Migration à partir de 3. x
+## Migration à partir de la version 3.x
 
 | Variable/méthode de configuration | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
@@ -78,7 +78,7 @@ Le paramètre `contextData` pour ces deux méthodes comporte les paires nom-vale
 
 ## Événements, props et eVars
 
-Si vous avez consulté les [méthodes du SDK](/help/windows-appstore/c-configuration/methods.md), vous vous demandez probablement où définir les événements, evars, props, heirs et listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
+If you've looked at the SDK methods, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/windows-appstore/c-configuration/methods.md) Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
 
 Les règles de traitement présentent plusieurs avantages :
 
@@ -100,7 +100,7 @@ Autrement dit, les seules données envoyées avec un appel `TrackState` ou `Trac
 
 Dans votre code, remplacez les méthodes suivantes par un appel à `trackState` ou à `trackAction` :
 
-### Migration à partir de 3. x
+### Migration à partir de la version 3.x
 
 * `TrackAppState` (TrackState)
 * `TrackEvents` (TrackAction)
@@ -113,11 +113,11 @@ Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Le suivi hors ligne est activé dans `ADBMobileConfig.json` le fichier. Toute autre configuration hors ligne est effectuée automatiquement.
+Offline tracking is enabled in the  file. `ADBMobileConfig.json` All other offline configuration is done automatically.
 
 Dans votre code, supprimez les appels aux méthodes suivantes :
 
-### Migration à partir de 3. x
+### Migrating from 3.x
 
 * `SetOnline`
 * `SetOffline`
