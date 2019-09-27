@@ -2,18 +2,18 @@
 description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
-seo-title: Dépannage des messages intégrés
-solution: Marketing Cloud, Analytics
-title: Dépannage des messages intégrés
+seo-title: Troubleshoot In-App Messaging
+solution: Marketing Cloud,Analytics
+title: Troubleshoot In-App Messaging
 topic: Mesures
-uuid: 39 c 3 a 21 d -92 c 2-4004-b 00 f -99 b 6 f 91 d 3696
+uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Dépannage des messages In-App{#troubleshooting-in-app-messaging}
+# Troubleshoot in-app messaging{#troubleshooting-in-app-messaging}
 
 Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 
@@ -35,11 +35,11 @@ Assurez-vous que le récepteur de diffusion de notifications locales est déclar
 
 Pour vérifier si le message est actif, sur la page Manage In-App Message (Gérer le message in-app), dans la colonne **Status** (État), vérifiez la liste des messages.
 
-## Consultez *l'option Afficher une fois*, *afficher toujours*, *afficher* les paramètres hors ligne dans l'onglet Audience.
+## Look at show once, show always, show offline  settings on the Audience tab.******
 
 Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **Déclencheur], qui vous permettent de définir la fréquence d’affichage du message.[!UICONTROL **
 
-## Si vous utilisez un événement de lancement comme déclencheur…
+## Si vous utilisez un événement de lancement comme déclencheur...
 
 Le lancement se déclenche uniquement en cas de nouvelle session. Pour obtenir plus d’informations sur le début d’une session, voir la ligne `lifecycleTimeout` du fichier de configuration [JSON](/help/android/configuration/json-config/json-config.md).
 
