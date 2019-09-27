@@ -1,11 +1,11 @@
 ---
 description: Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
-seo-title: Méthodes Analytics
-solution: Marketing Cloud, Analytics
+seo-title: Analytics methods
+solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Développeur et mise en œuvre
-uuid: d 49 fe 6 de-cb 32-4 b 96-9891-c 567310 e 59 a 6
+uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
 
 Chacune de ces méthodes est utilisée pour envoyer des données dans la suite de rapports Adobe Analytics.
 
@@ -26,7 +26,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!TIP]
    >
-   >Il s'agit du seul appel de suivi qui incrémente les pages vues.
+   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
@@ -86,7 +86,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!TIP]
    >
-   >Cette méthode ne doit être appelée que dans le code qui s'exécute alors que votre application est en arrière-plan.
+   >This method should only be called in code that runs while your app is in the background.
 
    * Voici la syntaxe de cette méthode :
 
@@ -263,7 +263,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackingSendQueuedHits**
 
-   Nécessite SDK 4.1. Quel que soit le nombre d'accès actuellement mis en file d'attente, force la bibliothèque à envoyer tous les accès dans la file d'attente hors ligne.
+   Nécessite SDK 4.1. Quel que soit le nombre d’accès placés en file d’attente, force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne.
 
    * Voici la syntaxe de cette méthode :
 
@@ -299,7 +299,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!CAUTION]
    >
-   >Soyez prudent lorsque vous effacez manuellement la file d'attente. Cette action est irréversible.
+   >Soyez prudent lorsque vous effacez manuellement la file d’attente. Cette action est irréversible.
 
    * Voici la syntaxe de cette méthode :
 
@@ -321,7 +321,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!IMPORTANT]
    >
-   >Cette méthode n'incrémente pas les pages vues.
+   >Cette méthode n’incrémente pas les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
