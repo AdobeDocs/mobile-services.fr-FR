@@ -2,10 +2,10 @@
 description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products directement sur l’appel de serveur.
 seo-description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products directement sur l’appel de serveur.
 seo-title: Variable products
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variable products
 topic: Développeur et mise en œuvre
-uuid: 6 ece 4 d 27-ef 86-435 c-a 6 f 7-bd 76 be 1 c 95 ca
+uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -41,7 +41,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* est définie directement sur la demande d'image et que les autres variables sont définies comme données contextuelles. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide des règles de traitement :
+*`products`* est définie directement sur la demande d’image et les autres variables sont définies comme des données contextuelles. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide des règles de traitement :
 
 ![](assets/map-products.png)
 
