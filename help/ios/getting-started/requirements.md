@@ -2,10 +2,10 @@
 description: Suivez les étapes ci-après pour configurer une suite de rapports afin de collecter des données d’application iOS.
 seo-description: Suivez les étapes ci-après pour configurer une suite de rapports afin de collecter des données d’application iOS.
 seo-title: Avant de commencer
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Avant de commencer
 topic: Développeur et mise en œuvre
-uuid: 04133 f 68-3618-41 fd -8 a 13-aec 5 b 6 f 04 df 6
+uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -31,7 +31,7 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 >[!IMPORTANT]
 >
->Pour créer une suite de rapports et télécharger les kits SDK, vous devez être un administrateur Analytics.
+>Pour créer une suite de rapports et télécharger les SDK, vous devez être un administrateur Analytics.
 
 ### Développeurs d’applications
 
@@ -52,7 +52,7 @@ Vous pouvez vous connecter à Adobe Mobile Services de l’une des façons sui
 
    Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID.
 
-   Cette méthode suppose que votre société a été configurée et que vous avez lié votre compte Analytics. Pour plus d'informations sur la configuration, voir [Gestion des utilisateurs et des produits](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)Experience Cloud. Pour plus d'informations sur la liaison de votre compte, voir [Organisations et liaison de comptes](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   This method assumes that your company has been provisioned and you have linked your Analytics account. Pour plus d’informations sur la mise en service, voir [Gestion des utilisateurs et des produits](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)Experience Cloud. Pour plus d’informations sur la liaison de votre compte, voir [Organisations et liaison](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)de comptes.
 
    >[!TIP]
    >
@@ -85,7 +85,7 @@ Pour créer une suite de rapports permettant de collecter des données d’appli
 
 Pour télécharger le SDK mobile :
 
-1. Connectez-vous à Mobile Services et ouvrez votre application de l'une des manières suivantes :
+1. Connectez-vous à Mobile Services et ouvrez votre application de l’une des manières suivantes :
 
    * Dans la liste déroulante **[!UICONTROL Toutes les applications], sélectionnez votre application.**
    * Dans le volet de droite, recherchez votre application et ouvrez-la.
@@ -97,5 +97,5 @@ Pour télécharger le SDK mobile :
 
 >[!TIP]
 >
->Un fichier de configuration pour votre application est automatiquement inclus dans le téléchargement du SDK. Vous n'avez donc pas besoin de télécharger ce fichier séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
+>A config file for your app is automatically included in the SDK download, so you do not need to download that file separately. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
 
