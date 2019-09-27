@@ -3,10 +3,10 @@ description: Ces informations peuvent vous aider à résoudre les problèmes li�
 keywords: mobile
 seo-description: Ces informations peuvent vous aider à résoudre les problèmes liés aux messages push.
 seo-title: Résolution des problèmes liés aux messages push
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Résolution des problèmes liés aux messages push
 topic: Mesures
-uuid: c 7 be 4 ab 7-0 cfe -4296-84 a 8-01412 f 4 fd 93 f
+uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -33,12 +33,12 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    >[!TIP]
    >
-   >Ce nombre correspond au nombre d'envois réussis au ou aux services Push. Les services push ne garantissent pas qu’un message sera envoyé.
+   >Ce nombre correspond au nombre d’envois réussis au(x) service(s) Push. Les services push ne garantissent pas qu’un message sera envoyé.
 
-   Pour plus d'informations sur la fiabilité du service, voir :
+   Pour plus d’informations sur la fiabilité du service, voir :
 
    * [Qualité du service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Durée de vie d'un message](https://developers.google.com/cloud-messaging/concept-options#lifetime).
+   * [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Pourquoi ma clé d’API GCM Android est-elle incorrecte ?
 
@@ -82,7 +82,7 @@ Votre certificat APNS peut être invalide pour les raisons suivantes :
 
 ## Résolution des dysfonctionnements des messages push
 
-**Un exemple**
+**Exemple**
 
 L’exemple suivant présente comment résoudre un dysfonctionnement des messages push lors de l’utilisation d’une suite de rapports virtuelle.
 
@@ -91,11 +91,11 @@ Le client suivant possède deux applications iOS :
 * Nom de l’application : PhotoShop_app_iOS
    * RSID parent : AllAdobe PhotoShop_apps
    * VRSID : PhotoShop_iOS_app_SF
-   * Segment de définition de VRSID : `a.appid contains “PhotoShop_iOS_app_SF”`
+   * Segment de définition VRSID : `a.appid contains “PhotoShop_iOS_app_SF”`
 * Nom de l’application : PhotoShop_app_iOS
    * RSID parent : AllAdobe PhotoShop_apps
-   * RSID : Photoshop_ ios_ app_ LA
-   * Segment de définition de VRSID : `a.os contains “iOS”`
+   * RSID : PhotoShop_iOS_app_LA
+   * Segment de définition VRSID : `a.os contains “iOS”`
 
 In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
 
@@ -103,4 +103,4 @@ If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Si toutes les applications **ne possèdent pas** de certificat valide, vos segments d’audience pourront être placés définitivement sur liste noire, et vous pourrez ne plus être en mesure de leur envoyer des messages push ultérieurement. Pour plus d'informations sur les segments d'audience, voir [Audience : définissez et configurez les options d'audience pour les messages Push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. Si toutes les applications **ne possèdent pas** de certificat valide, vos segments d’audience pourront être placés définitivement sur liste noire, et vous pourrez ne plus être en mesure de leur envoyer des messages push ultérieurement. Pour plus d’informations sur les segments d’audience, voir [Audience : définissez et configurez les options d’audience pour les messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)push.
