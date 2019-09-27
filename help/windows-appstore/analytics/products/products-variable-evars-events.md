@@ -2,10 +2,10 @@
 description: Voici un exemple de variable products avec eVars de marchandisage et événements spécifiques aux produits.
 seo-description: Voici un exemple de variable products avec eVars de marchandisage et événements spécifiques aux produits.
 seo-title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
 topic: Développeur et mise en œuvre
-uuid: 94 e 882 e 4-b 19 d -4 c 48-9 dfb -331465490347
+uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
 source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
 
@@ -37,5 +37,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Si vous déclenchez un événement spécifique au produit à l'aide de *`&&products`* la variable, vous devez également définir cet événement dans *`&&events`* la variable ; sinon, l'événement est filtré au cours du traitement.
+>Si vous déclenchez un événement spécifique au produit à l’aide de la *`&&products`* variable, vous devez également définir cet événement dans la *`&&events`* variable, sinon l’événement est filtré pendant le traitement.
 
