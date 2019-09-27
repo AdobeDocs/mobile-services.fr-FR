@@ -2,10 +2,10 @@
 description: La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les événements sérialisés directement dans l’appel au serveur.
 seo-description: La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les événements sérialisés directement dans l’appel au serveur.
 seo-title: Sérialisation d’événements
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Sérialisation d’événements
 topic: Développeur et mise en œuvre
-uuid: a 5966 d 05-e 218-446 f -9 f 19-8664 a 84 b 74 cd
+uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 translation-type: tm+mt
 source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
 
@@ -14,7 +14,7 @@ source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
 
 # Sérialisation d’événements{#event-serialization}
 
-La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les événements sérialisés directement sur l'appel serveur.
+La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre des données contextuelles pour définir des événements sérialisés directement sur l’appel au serveur.
 
 ```js
 cdata["&&events"] = "event1:12341234";
