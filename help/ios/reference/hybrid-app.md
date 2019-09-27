@@ -2,10 +2,10 @@
 description: Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
 seo-description: Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
 seo-title: Suivi des visiteurs entre une application et le web mobile
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic: Développeur et mise en œuvre
-uuid: 2 d 951 de 6-3954-4379-a 4 ff -99 b 9695 b 9869
+uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
@@ -22,19 +22,19 @@ Le SDK iOS génère un identifiant visiteur unique à l’installation de l’ap
 
 >[!TIP]
 >
->Les identifiants des visiteurs de l'application persistent par le biais de mises à niveau.
+>Les identifiants des visiteurs de l’application persistent grâce aux mises à niveau.
 
-## Identifiants visiteur sur le Web mobile
+## Identifiants des visiteurs sur le Web mobile
 
 Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID visiteur uniques, ce qui engendre la création d’un ID visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
 
-Pour utiliser le même identifiant visiteur dans l'application et le web mobile et transmettre l'identifiant visiteur de l'application au web mobile dans l'URL :
+Pour utiliser le même identifiant visiteur dans l’application et le Web mobile et transmettre l’identifiant visiteur de l’application au Web mobile dans l’URL :
 
 ## Implement visitor tracking between an app and mobile web {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 1. Afin d’ajouter des informations sur les visiteurs à l’URL utilisée pour ouvrir l’affichage web, appelez `visitorAppendToURL` :
 
    ```objective-c
@@ -60,7 +60,7 @@ Le code du service d’ID sur le domaine de destination extrait le MID de l’UR
 
 Dès les premiers accès depuis le contenu web mobile, vérifiez que le paramètre `mid` est bien présent pour chaque accès et que sa valeur correspond à celle du `mid` envoyé par le code de l’application.
 
-## Dépannage du suivi des visiteurs {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
+## Résolution des problèmes de suivi des visiteurs {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
 ### I do not see `[ADBMobile visitorAppendToURL:]`.
 
