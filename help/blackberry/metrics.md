@@ -1,12 +1,12 @@
 ---
 description: Mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre.
 seo-title: Mesures de cycle de vie
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mesures de cycle de vie
 topic: Développeur et mise en œuvre
-uuid: 5 a 371 f 11-6521-410 f-a 01 f-fc 3 b 285 b 050 f
+uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 translation-type: tm+mt
 source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
@@ -23,7 +23,7 @@ Pour obtenir plus d’informations, accédez à la base de connaissances : [Dé
 
 Une fois configurées, les mesures de cycle de vie sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox et en tant que signal pour la gestion de l’audience. Analytics et Target utilisent le même format, tandis que la gestion de l’audience utilise un préfixe différent pour chaque mesure.
 
-Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi de cycle de vie sont automatiquement capturées et rapportées à l'aide de la mesure ou de la dimension.
+Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi du cycle de vie sont automatiquement capturées dans et signalées à l’aide de la mesure ou de la dimension.
 
 ### Mesures
 
@@ -47,7 +47,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    >[!IMPORTANT]
    >
-   >Cette mesure n'est pas enregistrée automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
+   >Cette mesure n’est pas enregistrée automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
    * Analytics context data/Target parameter: `a.DailyEngUserEvent`
    * Audience Manager signal: `c_a_DailyEngUserEvent`
@@ -58,7 +58,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    >[!IMPORTANT]
    >
-   >Cette mesure n'est pas enregistrée automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
+   >This metric is not automatically stored in an Analytics metric. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
    * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
    * Audience Manager signal: `c_a_MonthlyEngUserEvent`
@@ -140,7 +140,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Version du système d’exploitation**
 
-   Version du système d'exploitation.
+   The version of the OS.
 
    * Analytics context data/Target parameter: `a.OSVersion`
    * Audience Manager signal: `c_a_OSVersion`
@@ -151,7 +151,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    >[!IMPORTANT]
    >
-   >Cette mesure n'est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
+   >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
    * Analytics context data/Target parameter: `a.DaysSinceLastUpgrade`
    * Audience Manager signal: `c_a_DaysSinceLastUpgrade`
@@ -162,7 +162,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    >[!IMPORTANT]
    >
-   >Cette mesure n'est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
+   >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
    * Analytics context data/Target parameter: `a.LaunchesSinceUpgrade`
    * Audience Manager signal: `c_a_LaunchesSinceUpgrade`
@@ -180,7 +180,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    >[!IMPORTANT]
    >
-   >Cette mesure n'est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
+   >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
    * Analytics context data/Target parameter: `a.CarrierName`
    * Audience Manager signal: `c_a_CarrierName`
@@ -204,7 +204,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -218,7 +218,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -232,7 +232,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caractéristique de Gestion de l'audience :
+   * Audience Management trait:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -245,7 +245,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
    * Données contextuelles Analytics/Paramètre Target :
 
       * `a.loc.poi`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_poi`
 
@@ -254,9 +254,9 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans le point ciblé défini.
 
-   * Données contextuelles Analytics/Paramètre Target :
+   * Analytics context data/Target parameter:
 
       * `a.loc.dist`
-   * Caractéristique de Gestion de l'audience :
+   * Caractéristique de la gestion de l’audience :
 
       * `c_a_loc_dist`
