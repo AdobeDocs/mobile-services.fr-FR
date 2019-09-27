@@ -3,7 +3,7 @@ description: La fonctionnalité de prérécupération d’Adobe Target utilise 
 seo-description: La fonctionnalité de prérécupération d’Adobe Target utilise les SDK Android Mobile pour récupérer le contenu des offres aussi peu de fois que possible en mettant en cache les réponses du serveur.
 seo-title: Prérécupération du contenu des offres dans Android
 title: Prérécupération du contenu des offres dans Android
-uuid: 063451 b 8-e 191-4 d 58-8 ed 8-1723 e 310 ad 1 a
+uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ La fonctionnalité de prérécupération d’Adobe Target utilise les SDK Andro
 
 >[!IMPORTANT]
 >
->La fonctionnalité de prérécupération dans les kits SDK mobiles pour Android n'est pas prise en charge pour les types d'activité Ciblage automatique, Affectation automatique et Personnalisation automatisée dans Adobe Target.
+>Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 Ce processus réduit le délai de chargement, évite la multiplication des appels réseau et permet d’informer Adobe Target de la mbox que l’utilisateur de l’application mobile a été visitée. L’ensemble du contenu sera récupéré et mis en cache lors de l’appel de prérécupération. Ce contenu sera ensuite récupéré du cache pour tous les appels futurs contenant le contenu mis en cache pour cette mbox spécifique.
 
@@ -84,7 +84,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * Voici les paramètres de cette méthode :
+   * Here are the parameters for this method:
 
       * **requestArray**
 
@@ -104,7 +104,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       public static void clearPrefetchCache();
       ```
 
-   * Il n'existe aucun paramètre pour cette méthode.
+   * There are no parameters for this method.
 
 * **createTargetRequestObject**
 
@@ -140,7 +140,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
 
 Vous trouverez ci-dessous la liste des classes publiques qui prennent en charge la fonction de prérécupération dans Android :
 
-### Référence de classe : Targetprefetchobject
+### Référence de classe : TargetPrefetchObject
 
 Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupération de la mbox.
 
@@ -152,21 +152,21 @@ Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupérat
 * `mboxParameters`
 
    Collection de paires clé-valeur qui sera jointe en tant que `mboxParameters` pour cette demande de `TargetPrefetchObject`.
-   * **Type**: Carte`<String, Object>`
+   * **Type**: Map`<String, Object>`
 
 * **`orderParameters`**
 
    Collection de paires clé-valeur qui sera jointe à la mbox active sous le nœud order.
-   * **Type**: Carte `<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 * **`productParameters`**
 
    Collection de paires clé-valeur qui sera jointe à la mbox active sous le nœud product.
 
-   * **Type**: Carte `<String, Object>`
+   * **Type**: Map `<String, Object>`
 
 
-### Référence de classe : Targetrequestobject
+### Class reference: TargetRequestObject
 
 Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres de mbox et le rappel de renvoi utilisés pour les demandes d’emplacement Target.
 
@@ -180,19 +180,19 @@ Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres d
 
    Collection de paires clé-valeur qui sera jointe en tant que `mboxParameters` pour cette instance de  `TargetRequestObject`.
 
-   * **Type : Carte`<String, Object>`**
+   * **Type : Map`<String, Object>`**
 
 * **`orderParameters`**
 
    Collection de paires clé-valeur qui sera jointe à la mbox active sous le nœud order.
 
-   * **Type**: Carte `<String, Object>`
+   * **Type**: Map `<String, Object>`
 
 * **`productParameters`**
 
    Collection de paires clé-valeur qui sera jointe à la mbox active sous le nœud product.
 
-   * **Type**: Carte `<String, Object>`
+   * **Type**: Map `<String, Object>`
 
 * **`defaultContent`**
 
@@ -204,7 +204,7 @@ Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres d
 
    Pointeur de fonction qui sera appelé lorsque le contenu de l’instance de `TargetRequestObject` donnée est disponible.
 
-   * **Type**: Target. targetcallback`<String>`
+   * **Type**: Target.TargetCallback`<String>`
 
 
 ## Code sample {#section_BF7F49763D254371B4656E17953D520C}
