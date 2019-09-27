@@ -1,10 +1,10 @@
 ---
-description: 'Les méthodes d''acquisition suivantes sont fournies par la bibliothèque ios '
-seo-description: 'Les méthodes d''acquisition suivantes sont fournies par la bibliothèque ios '
+description: 'The following Acquisition methods are provided by the iOS library '
+seo-description: 'The following Acquisition methods are provided by the iOS library '
 seo-title: Méthodes d’acquisition
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes d’acquisition
-uuid: 6 f 88 de 57-793 d -4 d 33-9 a 54-f 6714289 fd 2 c
+uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
