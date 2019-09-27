@@ -2,10 +2,10 @@
 description: Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 seo-title: Méthodes Audience Manager
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes Audience Manager
 topic: Développeur et mise en œuvre
-uuid: 97658 bd 6-4 c 4 f -4875-abe 9-36 dad 4 ec 8 bae
+uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 
-Le kit SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform. Le préfixe précédant les méthodes varie selon la solution. Les méthodes  Manager sont précédées du préfixe « `audience`audience ».
+The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Le préfixe précédant les méthodes varie selon la solution. Les méthodes  Manager sont précédées du préfixe « `audience`audience ».
 
 Si Audience Manager est configuré dans votre fichier JSON, un signal contenant les mesures de cycle de vie est envoyé avec `application:didFinishLaunchingWithOptions:`.
 
@@ -30,7 +30,7 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Voici l'exemple de code pour ce menu :
+   * Voici un exemple de code pour ce menu :
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
@@ -77,7 +77,7 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
 
       >[!IMPORTANT]
       >
-      >Avant la version 4.13. x, DPUUID n'était pas automatiquement codé. À compter de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis recode cette valeur. Ce processus permet au SDK de préserver la rétrocompatibilité.
+      >Avant la version 4.13.x, le DPUUID n’était pas automatiquement codé. À compter de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis recode cette valeur. Ce processus permet au SDK de préserver la rétrocompatibilité.
 
    * Voici la syntaxe de cette méthode :
 
