@@ -1,15 +1,15 @@
 ---
 title: 'Développeurs : démarrage rapide'
-seo-title: Blackberry Developer Quick Start for Adobe Mobile Services
-description: Le Guide de démarrage rapide de blackberry Developer vous aide à comprendre le processus d'implémentation de la bibliothèque blackberry pour Adobe Mobile Services.
-seo-description: Le Guide de démarrage rapide de blackberry Developer vous aide à comprendre le processus d'implémentation de la bibliothèque blackberry pour Adobe Mobile Services.
+seo-title: BlackBerry Developer Quick Start pour Adobe Mobile Services
+description: Le guide de démarrage rapide du développeur BlackBerry vous aide à comprendre le processus de mise en oeuvre de la bibliothèque BlackBerry pour Adobe Mobile Services.
+seo-description: The BlackBerry Developer Quick Start Guide helps you understand the process to implement the BlackBerry library for Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# Démarrage rapide des développeurs
+# Developer quick start
 
 Ces informations vous permettent de comprendre le processus de mise en œuvre de la bibliothèque BlackBerry.
 
@@ -49,20 +49,20 @@ Après avoir décompressé le SDK téléchargé, vérifiez que les fichiers ci-a
    Copiez ce fichier à la racine du projet.
 1. Cliquez avec le bouton droit de la souris sur le projet, puis sélectionnez **[!UICONTROL Actualiser]**.
 
-   `.json` Le fichier doit maintenant être visible dans l'explorateur **[!UICONTROL de projets]**.
+   The `.json` file should now be visible in your **[!UICONTROL Project Explorer]**.
 1. Ouvrez le fichier `bar-descriptor.xml` correspondant au projet.
 1. Au bas de la fenêtre, sélectionnez l’onglet **[!UICONTROL Ressources].**
 1. Vérifiez que l’option **[!UICONTROL (Toutes les configurations)]** est activée puis, dans la section **[!UICONTROL Ressources]de la fenêtre, cliquez sur** Ajouter des fichiers.****
    >[!TIP]
    >
-   >Un bogue de l'IDE Momentics QNX empêche parfois ces boutons d'être visibles. Si les boutons ne sont pas visibles, redimensionnez les fenêtres jusqu'à ce qu'ils apparaissent.
+   >There is a bug in the QNX Momentics IDE that sometimes prevents those buttons from being visible. Si vous ne voyez pas les boutons, redimensionnez les fenêtres jusqu'à ce qu'elles apparaissent.
 
 1. Cliquez sur **[!UICONTROL Espace de travail]**.
 1. Recherchez le fichier `ADBMobileConfig.json`**dans le projet, puis cliquez sur[!UICONTROL OK]**.
 
 Votre application peut importer les classes/interfaces de la bibliothèque `adobeMobileLibrary.jar` à l'aide de `#include <ADBMobile.hpp>`.
 
-## Ajout d'autorisations d'application
+## Add app permissions
 
 In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
 
@@ -87,6 +87,6 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. Pour plus d'informations, voir [Référence de classe et de méthode Adobe Mobile](/help/blackberry/methods.md).
+You must at least update the `rsids` and `server` parameters. Pour plus d’informations, reportez-vous à la page Référence [de classe et de méthode](/help/blackberry/methods.md)Adobe Mobile.
 
 Vous pouvez désormais mettre en œuvre Analytics dans votre application BlackBerry 10.
