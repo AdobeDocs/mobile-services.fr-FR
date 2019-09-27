@@ -2,10 +2,10 @@
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Développeur et mise en œuvre
-uuid: 1 decf 605-7 bc 3-4 e 73-ad 52-1 prêt 5821599 e
+uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,9 +14,9 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # ADBMobile JSON config file {#adbmobile-json-config}
 
-Ces informations vous aident à comprendre les variables du fichier de configuration adbmobile. json.
+Ces informations vous aident à comprendre les variables du fichier de configuration ADBMobile.json.
 
-## `ADBMobileConfig.json` référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Vous pouvez utiliser le même fichier de configuration pour votre application sur différentes plateformes :
 
@@ -24,17 +24,17 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 >
 >In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
 
-Voici la liste des variables dans le fichier JSON et la version minimale du SDK dont vous avez besoin pour chaque variable :
+Voici la liste des variables du fichier JSON et la version minimale du SDK dont vous avez besoin pour chaque variable :
 
 * **acquisition**
    * Version minimale du SDK : 4.1
    * Permet l’acquisition des applications mobiles.
       * `server` : serveur d’acquisition vérifié lors du lancement initial pour un référent d’acquisition.
       * `appid` : ID généré qui identifie de manière unique cette application sur le serveur d’acquisition.
-   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. Pour plus d'informations, voir *referrertimeout* dans cette liste de variables.
+   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. Pour plus d’informations, voir *referrerTimeout* dans cette liste de variables.
 
 * **analyticsForwardingEnabled**
-   * La version minimale du SDK est 4.8.0.
+   * Version minimale du SDK : 4.8.0.
    * La valeur par défaut est `false`.
 
       Propriété dans l’objet `audienceManager`. Si Audience Manager est configuré et `analyticsForwardingEnabled` est défini sur `true`, tout le trafic Analytics est également transféré vers Audience Manager.
@@ -53,7 +53,7 @@ Voici la liste des variables dans le fichier JSON et la version minimale du SDK 
 
          >[!IMPORTANT]
          >
-         >Les informations d'accès à la session rétrodatée sont envoyées dans un appel de serveur d'informations de session et des appels serveur supplémentaires peuvent s'appliquer.
+         >Les informations d’accès de session antidatées sont envoyées dans un appel du serveur d’informations de session et d’autres appels du serveur peuvent s’appliquer.
 
 * **batchLimit**
    * Version minimale du SDK : 4.1
@@ -61,10 +61,10 @@ Voici la liste des variables dans le fichier JSON et la version minimale du SDK 
 
       Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès se produit, les 10 accès sont tous envoyés consécutivement.
 
-      Gardez à l’esprit les informations suivantes :
+      À noter :
 
       * La valeur par défaut est `0`, ce qui signifie que le traitement par lot n’est pas activé.
-      * Obligatoire `offlineEnabled = true`.
+      * Nécessite `offlineEnabled = true`.
 
 * **charset**
    * Version minimale du SDK : 4.0
@@ -168,7 +168,7 @@ Voici la liste des variables dans le fichier JSON et la version minimale du SDK 
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      `payload` L'objet dans le code est un exemple de charge utile pour une définition de message placée dans `ADBMobileConfig.json` le fichier. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
+      The `payload` object in the code is a sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
 
 * **privacyDefault**
    * Version minimale du SDK : 4.0
@@ -185,7 +185,7 @@ Voici la liste des variables dans le fichier JSON et la version minimale du SDK 
 
       >[!IMPORTANT]
       >
-      >Cette variable est requise par l'acquisition. Si la variable est définie sur `0` ou n’est pas incluse, le SDK n’attend pas les données d’acquisition et le suivi des mesures d’acquisition n’est pas effectué.
+      >This variable is required by Acquisition. Si la variable est définie sur `0` ou n’est pas incluse, le SDK n’attend pas les données d’acquisition et le suivi des mesures d’acquisition n’est pas effectué.
 
 * **remotes**
    * Version minimale du SDK : 4.2
