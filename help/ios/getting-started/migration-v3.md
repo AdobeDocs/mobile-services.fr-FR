@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous aideront à migrer de la version 2.x ou 3.x de la bibliothèque iOS vers la version 4.x.
 seo-description: Ces informations vous aideront à migrer de la version 2.x ou 3.x de la bibliothèque iOS vers la version 4.x.
-seo-title: Migration vers la bibliothèque ios 4. x
-solution: Marketing Cloud, Analytics
-title: Migration vers la bibliothèque ios 4. x
+seo-title: Migrating to the 4.x iOS library
+solution: Marketing Cloud,Analytics
+title: Migration vers la bibliothèque iOS 4.x
 topic: Développeur et mise en œuvre
-uuid: 5668972 b-f 355-4 e 03-9 df 0-8 c 82 ddf 6809 b
+uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -20,7 +20,7 @@ Ces informations vous aideront à migrer de la version 2.x ou 3.x de la biblio
 >
 >The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  Si vous modifiez ou supprimez dans `NSUserDefaults` des valeurs attendues par le SDK, il peut en résulter un comportement inattendu sous la forme de données incohérentes.
 
-Dans la version 4. x de la bibliothèque SDK ios, les méthodes publiques sont consolidées dans un seul en-tête. De plus, la fonctionnalité est maintenant accessible par le biais des méthodes de niveau classe, de sorte que vous n'ayez pas à effectuer le suivi des pointeurs, des instances ou des singletons.
+In the version 4.x of the iOS SDK library, the public methods are consolidated into one header. En outre, la fonctionnalité est désormais accessible par le biais de méthodes de niveau classe. Vous n’avez donc pas besoin de suivre les pointeurs, instances ou singletons.
 
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
@@ -106,7 +106,7 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server", supprimez le `"https://"` préfixe. Le préfixe du protocole est ajouté automatiquement en fonction du paramètre "ssl". |
+| trackingServer | "server", remove the `"https://"` prefix. Le préfixe du protocole est ajouté automatiquement en fonction du paramètre "ssl". |
 | trackingServerSecure | Supprimée. Pour les connexions sécurisées, définissez "server", puis activez "ssl". |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -126,15 +126,15 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 
 Au lieu d’utiliser les appels web `track` et `trackLink`, le SDK version 4 utilise les méthodes suivantes :
 
-* `trackState:data:` sont les vues disponibles dans votre application, telles `home dashboard`que `app settings``cart`, etc.
+* `trackState:data:` states are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on.
 
    Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
 
-* `trackAction:data:` actions, telles `logons`que, `banner taps``feed subscriptions`et d'autres mesures qui se produisent dans votre application et que vous souhaitez mesurer.
+* `trackAction:data:` actions , such as , , , and other metrics that occur in your app and that you want to measure.`logons``banner taps``feed subscriptions`
 
 Le paramètre `data` pour ces deux méthodes est un `NSDictionary` qui contient des paires nom-valeur envoyées en tant que données contextuelles.
 
-### Evénements, props, evars
+### Events, props, eVars
 
 Dans la version 4, vous ne pouvez plus affecter des variables telles que les événements, les eVars, les props, les héritiers et les listes directement dans votre application. Le SDK utilise désormais les données contextuelles et les règles de traitement pour faire correspondre les données de l’application aux variables Analytics pour la création de rapports.
 
@@ -144,11 +144,11 @@ Les avantages des règles de traitement sont les suivants :
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires a très peu d’impact.
 
-   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mappées à l’aide des règles de traitement. Pour plus d'informations, voir [Règles de traitement et données contextuelles](/help/ios/getting-started/proc-rules.md).
+   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mappées à l’aide des règles de traitement. Pour plus d’informations, voir Règles de [traitement et Données](/help/ios/getting-started/proc-rules.md)contextuelles.
 
 Les valeurs que vous avez directement attribuées aux variables doivent être ajoutées au   `data``NSDictionary` à la place. This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
 
-### Appsection/Server, geozip, ID de transaction, Campagne et autres variables standard
+### AppSection/Server, GeoZip, transaction ID, Campaign, and other standard variables
 
 Les données que vous configuriez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées au   `data``NSDictionary` à la place. Les seules données envoyées avec un appel `trackState` ou `trackAction` sont la charge utile dans le paramètre `data`.
 
