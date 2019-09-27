@@ -1,9 +1,9 @@
 ---
 description: Classes et méthodes fournies par la bibliothèque BlackBerry.
 seo-description: Classes et méthodes fournies par la bibliothèque BlackBerry.
-seo-title: Référence de classe et de méthode Adobe Mobile
-title: Référence de classe et de méthode Adobe Mobile
-uuid: 1 e 42 d 759-be 43-4 bb 3-ac 1 a-c 7 d 64133 d 61 c
+seo-title: Classe Adobe Mobile et référence de méthode
+title: Adobe Mobile class and method reference
+uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -14,7 +14,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 Classes et méthodes fournies par la bibliothèque BlackBerry.
 
-Le SDK prend actuellement en charge Adobe Analytics et les méthodes se trouvent dans des classes distinctes basées sur la solution.
+The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
 
 ## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -44,7 +44,7 @@ Le SDK prend actuellement en charge Adobe Analytics et les méthodes se trouvent
 
    Définit l’état de confidentialité pour l’utilisateur actuel sur `status`. Valeurs possibles :
 
-   * `ADBMobilePrivacyStatusOptIn` - les accès sont envoyés immédiatement.
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
@@ -153,7 +153,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!TIP]
    >
-   >Il s'agit du seul appel de suivi qui incrémente les pages vues.
+   >This is the only tracking call that increments page views.
 
    * Voici la syntaxe de cette méthode :
 
@@ -199,7 +199,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` référence au fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
@@ -207,7 +207,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    (Requis) Une ou plusieurs suites de rapports où seront envoyées les données Analytics. Plusieurs identifiants de suite de rapports doivent être séparés par une virgule, sans espace.
 
-   Voici l'exemple de code de cette variable :
+   Voici un exemple de code pour cette variable :
 
    ```js
    "rsids" : "rsid"
@@ -235,7 +235,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Sinon, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez [Prise en charge des entreprises](https://helpx.adobe.com/contact/enterprise-support.ec.html).
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Sinon, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
 
    Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données depuis JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
@@ -249,7 +249,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **batchLimit**
 
-   Nombre maximal d’accès hors ligne stockés dans la file d’attente. La valeur par défaut est 0 (Aucune limite).
+   Nombre maximal d’accès hors ligne stockés dans la file d’attente. The default value is 0 (No limit).
 
 * **privacyDefault**
 
