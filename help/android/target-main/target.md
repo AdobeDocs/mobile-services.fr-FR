@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez fournir un contenu ciblé dans les applications Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Vous pouvez fournir un contenu ciblé dans les applications Android.
-seo-title: Configuration de Target
-solution: Marketing Cloud, Analytics
+seo-title: Target configuration
+solution: Marketing Cloud,Analytics
 title: Configuration de Target
 topic: Développeur et mise en œuvre
-uuid: 09 fe 2 c 9 c -7 b 60-49 c 3-bb 9 d -36 a 30 ce 7 c 350
+uuid: 09fe2c9c-7b60-49c3-bb9d-36a30ce7c350
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -19,7 +19,7 @@ Vous pouvez fournir un contenu ciblé dans les applications Android.
 
 ## Set the application context {#section_37CAE496FF894FCA821F7760605574CA}
 
-**(Obligatoire)** La `setContext()` méthode doit être appelée une fois dans `onCreate()` la méthode de votre activité principale.
+**(Obligatoire)** La `setContext()` méthode doit être appelée une seule fois dans la `onCreate()` méthode de votre activité principale.
 
 Par exemple :
 
