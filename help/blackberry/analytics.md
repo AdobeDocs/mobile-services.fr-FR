@@ -3,7 +3,7 @@ description: Après avoir ajouté la bibliothèque au projet, vous pouvez effect
 seo-description: Après avoir ajouté la bibliothèque au projet, vous pouvez effectuer n’importe quel appel de méthode Analytics, n’importe où dans l’application (assurez-vous d’importer ADBMobile.h dans votre classe).
 seo-title: Analytics
 title: Analytics
-uuid: de 018 eda-b 37 d -4 afe -83 a 0-8011381 d 7 aff
+uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -32,7 +32,7 @@ Avant d’ajouter du code, demandez à votre administrateur Analytics de procéd
 
 Lifecycle metrics are now ready to be captured, and Mobile Application Reports] appear in the **[!UICONTROL Reports]** menu in the marketing reports interface.
 
-## Collecte de mesures de cycle de vie {#task_25D469C62DF84573AEB5E8E950B96205}
+## Collecte des mesures de cycle de vie {#task_25D469C62DF84573AEB5E8E950B96205}
 
 1. To collect lifecycle metrics in your app, call `collectLifecycleData()` in the `ApplicationUI` constructor.
 
@@ -50,7 +50,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 ## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Si vous avez consulté la [référence de classe et de référence adbmobile](/help/blackberry/methods.md), vous vous demandez probablement où définir les événements, evars, props, heirs et listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
+Si vous avez examiné la classe [ADBMobile et la référence](/help/blackberry/methods.md)de méthode, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
 
 Les règles de traitement présentent plusieurs avantages :
 
@@ -68,7 +68,7 @@ Les règles de traitement sont utilisées pour copier les données que vous envo
 
 [Règles de traitement](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Obtenir l'autorisation d'utiliser des règles de traitement](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Devenir autorisé à utiliser des règles de traitement](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 Il est recommandé de regrouper les variables de données contextuelles à l’aide d’espaces de noms, car cela vous aide à conserver un ordre logique. Si, par exemple, vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
 
@@ -106,7 +106,7 @@ Les variables de données contextuelles qui définissent des événements d’in
 
 >[!TIP]
 >
->Adobe réserve l'espace de noms `a.`. En dehors de cette restriction, les variables de données contextuelles doivent être uniques dans votre société de connexion afin éviter les collisions.
+>Adobe réserve l’espace de noms `a.`. En dehors de cette restriction, les variables de données contextuelles doivent être uniques dans votre société de connexion afin éviter les collisions.
 
 ## Activation du suivi hors ligne {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
@@ -114,6 +114,6 @@ To store hits when the device is offline, you can optionally enable offline trac
 
 Faites très attention aux exigences d’horodatage décrites dans la référence du fichier de configuration avant d’activer le suivi hors ligne.
 
-## Méthodes Analytics
+## Analytics methods
 
-Pour obtenir la liste des méthodes Analytics disponibles pour blackberry, reportez-vous *aux méthodes* Analytics dans [Adobe Mobile Class and Method Reference](/help/blackberry/methods.md).
+Pour obtenir la liste des méthodes Analytics disponibles pour BlackBerry, voir Méthodes ** Analytics dans [Adobe Mobile Class and Method Reference](/help/blackberry/methods.md)(en anglais).
