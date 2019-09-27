@@ -1,12 +1,12 @@
 ---
-description: Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing sur un périphérique Android.
-keywords: android ; library ; mobile ; sdk
-seo-description: Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing sur un périphérique Android.
+description: Les instructions suivantes vous aident à effectuer un aller-retour entre une campagne d’acquisition et un lien marketing sur un périphérique Android.
+keywords: android;library;mobile;sdk
+seo-description: The following instructions help you roundtrip an acquisition campaign with a Marketing Link on an Android device.
 seo-title: Évaluation de l’acquisition d’un lien marketing
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Développeur et mise en œuvre
-uuid: d 0933 dcc -8 fc 3-4 f 60-987 f -7 a 54559 aacf 5
+uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,13 +15,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-Les instructions suivantes vous aident à aller chercher une campagne d'acquisition avec un lien marketing sur un périphérique Android.
+The following instructions help you roundtrip an acquisition campaign with a Marketing Link on an Android device.
 
-Si votre application mobile n'est pas encore dans Google Play, vous pouvez sélectionner n'importe quelle application mobile comme destination lors de la création du lien marketing. Une fois que vous avez cliqué sur le lien d’acquisition, seule l’application vers laquelle le serveur d’acquisition vous redirige est affectée, et non la capacité à tester le lien d’acquisition. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, puis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Le test aller-retour de l’acquisition de l’application mobile requiert la simulation de ce type de diffusion.
+Si votre application mobile ne figure pas encore dans Google Play, vous pouvez sélectionner n’importe quelle application mobile comme destination lors de la création du lien marketing. Une fois que vous avez cliqué sur le lien d’acquisition, seule l’application vers laquelle le serveur d’acquisition vous redirige est affectée, et non la capacité à tester le lien d’acquisition. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, puis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Le test aller-retour de l’acquisition de l’application mobile requiert la simulation de ce type de diffusion.
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. Ainsi, les mesures initiales de cycle de vie associées aux paramètres des chaînes de requête de la campagne sont envoyées lorsque l’application est lancée pour la première fois.
 
-1. Effectuez les tâches préalables requises dans [l'acquisition](/help/android/acquisition-main/acquisition.md) d'applications mobiles et assurez-vous d'avoir correctement mis en œuvre le destinataire de la diffusion.`INSTALL_REFERRER`
+1. Effectuez les tâches préalables requises dans l’acquisition [d’applications](/help/android/acquisition-main/acquisition.md) mobiles et assurez-vous que vous avez correctement mis en oeuvre le récepteur de diffusion pour `INSTALL_REFERRER`.
 1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    Pour obtenir plus d’informations, voir [Générateur de liens marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
@@ -38,7 +38,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   Dans l'exemple précédent, l'identifiant est `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
+   Dans l’exemple précédent, l’ID est `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
    Si vous ne parvenez pas à obtenir l’identifiant unique sur l’appareil, exécutez la commande `CURL` suivante sur votre ordinateur pour obtenir l’identifiant unique depuis la chaîne de réponse.
 
@@ -65,11 +65,11 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    ```
 
 1. Répétez l’étape 3 pour obtenir un nouvel identifiant unique.
-1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects : 
+1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | Le serveur doit être et `c00.adobe.com`*`appid`* doit être égal à `appid` dans le lien d'acquisition. |
+   | acquisition | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
    | analytics | À des fins de test, définissez le délai d’expiration du référent afin que la durée soit suffisante (60 secondes ou moins) pour permettre l’envoi manuel de la diffusion. Vous pouvez restaurer le délai d’expiration d’origine après le test. |
 
 1. Connectez l’appareil à un ordinateur, désinstallez puis réinstallez l’application.
@@ -114,16 +114,16 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    | Analytics - Unable to decode response(`<string>`). | La réponse est incorrecte. |
    | Analytics - Unable to parse response (`a JSON Response`). | La chaîne JSON est incorrecte. |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | Absence du paramètre `contextData` dans la réponse. |
-   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` n'est pas incluse dans contextdata. |
+   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` n’est pas incluse dans contextData. |
    | Analytics - Acquisition referrer timed out. | Échec d’obtention de la réponse dans la durée définie par `referrerTimeout`. Augmentez la valeur et réessayez.  Assurez-vous que vous avez ouvert le lien d’acquisition avant d’installer l’application. |
 
-Gardez à l’esprit les informations suivantes :
+À noter :
 
 * Les accès qui sont envoyés depuis l’application peuvent être surveillés à l’aide des outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
 * Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
 * Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 10.
 
-**Installation de l'outil Java**
+**Installation de l’outil Java**
 
 Pour installer l’outil Java, procédez comme suit :
 
@@ -138,4 +138,4 @@ Par exemple :
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-Les liens marketing sont mis en cache sur le serveur avec une durée d'expiration de dix minutes. Lorsque vous modifiez les liens marketing, vous devez attendre environ 10 minutes que les modifications soient prises en compte pour pouvoir à nouveau utiliser les liens.
+Les liens marketing sont mis en cache côté serveur avec un délai d’expiration de dix minutes. Lorsque vous modifiez les liens marketing, vous devez attendre environ 10 minutes que les modifications soient prises en compte pour pouvoir à nouveau utiliser les liens.
