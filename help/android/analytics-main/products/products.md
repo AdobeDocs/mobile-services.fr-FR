@@ -1,12 +1,12 @@
 ---
 description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products sur l’appel de serveur.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products sur l’appel de serveur.
 seo-title: Variable products
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Variable products
 topic: Développeur et mise en œuvre
-uuid: f 4484022-cb 8 b -4 dea -9209-5 a 110 ba 607 df
+uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,4 +46,4 @@ The *products* variable is set on the image request, and the other variables are
 
 ![](assets/map-products.png)
 
-Il n’est pas nécessaire de mettre en correspondance la variable *variable products* à l'aide de règles de traitement, car cette variable est directement définie sur la demande d'image par le SDK.
+Il n’est pas nécessaire de mettre en correspondance la variable *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
