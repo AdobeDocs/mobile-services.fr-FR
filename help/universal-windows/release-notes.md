@@ -2,10 +2,10 @@
 description: Notes de mise à jour et problèmes connus pour le SDK 4.x Plateforme Windows universelle pour solutions Experience Cloud.
 seo-description: Notes de mise à jour et problèmes connus pour le SDK 4.x Plateforme Windows universelle pour solutions Experience Cloud.
 seo-title: Notes de mise à jour
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Développeur et mise en œuvre
-uuid: 9 c 164 e 5 c-ce 2 c -4 eda-bba 6-71324 e 4954 fa
+uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
