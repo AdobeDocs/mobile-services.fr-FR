@@ -2,10 +2,10 @@
 description: La géolocalisation vous permet de déterminer des données de position au moyen de la latitude et de la longitude, et de points ciblés prédéfinis dans vos applications iOS.
 seo-description: La géolocalisation vous permet de déterminer des données de position au moyen de la latitude et de la longitude, et de points ciblés prédéfinis dans vos applications iOS.
 seo-title: Géolocalisation et points ciblés
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Géolocalisation et points ciblés
 topic: Développeur et mise en œuvre
-uuid: c 800 ec 85-a 33 f -425 d-b 28 f-bfe 8 bf 229 ae 8
+uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -34,15 +34,15 @@ Chaque appel `trackLocation` envoie les informations suivantes :
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-Pour plus d'informations, voir [Configuration JSON adbmobile](/help/ios/configuration/json-config/json-config.md).
+Pour plus d’informations, voir Configuration [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
 
-Si ce paramètre n’est pas configuré, une version actualisée du fichier `ADBMobile.json` doit être téléchargée et ajoutée à votre application. Pour plus d'informations et d'instructions, voir *Téléchargement du SDK et Outils* de test avant [démarrage](/help/ios/getting-started/requirements.md).
+Si ce paramètre n’est pas configuré, une version actualisée du fichier `ADBMobile.json` doit être téléchargée et ajoutée à votre application. Pour plus d’informations et d’instructions, voir *Téléchargement du SDK et des outils* de test dans [Avant de commencer](/help/ios/getting-started/requirements.md).
 
-## Suivi des géolocalisation et des POIS {#section_B1616E400A7548F9A672F97FEC75AE27}
+## Suivi des géolocalisations et des points d’intérêt {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 1. Importez la bibliothèque :
 
    ```objective-c
@@ -60,7 +60,7 @@ Si ce paramètre n’est pas configuré, une version actualisée du fichier `ADB
    >
    >Vous pouvez appeler `trackLocation` à tout moment.
 
-   Pour déterminer l'emplacement transmis à `trackLocation` l'appel, utilisez [l'option Obtention de l'emplacement de l'utilisateur](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html).
+   Pour déterminer l’emplacement transmis à l’ `trackLocation` appel, utilisez [Obtention de l’emplacement](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)de l’utilisateur.
 
 Par ailleurs, si l’emplacement se trouve dans le périmètre d’un point ciblé donné, une variable de données contextuelles `a.loc.poi` est envoyée avec l’accès `trackLocation` et consignée comme point ciblé dans les rapports d’emplacement. Une variable contextuelle `a.loc.dist` est également envoyée avec la distance en mètres depuis les coordonnées définies.
 
@@ -74,7 +74,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLocation: currentLocation data:contextData];
 ```
 
-Les valeurs de données contextuelles doivent être mises en correspondance avec les variables personnalisées :
+Les valeurs de données contextuelles doivent être mises en correspondance avec des variables personnalisées :
 
 ![](assets/map-location-context-data.png)
 
