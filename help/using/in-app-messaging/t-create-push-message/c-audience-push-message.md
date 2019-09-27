@@ -2,26 +2,26 @@
 description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 keywords: mobile
 seo-description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
-seo-title: Audience Définissez et configurez les segments d'audience pour les messages Push
-solution: Marketing Cloud, Analytics
-title: Audience Définissez et configurez les segments d'audience pour les messages Push
+seo-title: Audience  Define and Configure Audience Segments for Push Messages
+solution: Marketing Cloud,Analytics
+title: Audience Définir et configurer des segments d’audience pour les messages push
 topic: Mesures
-uuid: efd 410 e 7-3 b 6 c -4 cf 4-a 26 f-b 11688 adc 491
+uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
 source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
 ---
 
 
-# Public : messages push{#audience-define-and-configure-audience-segments-for-push-messages}
+# Audience: push messages{#audience-define-and-configure-audience-segments-for-push-messages}
 
 Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 
 ## Define audience segments {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Suites de rapports virtuelles](/help/using/manage-apps/c-mob-vrs.md).
+Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
 
-Dans Adobe Mobile Services, les marketeurs peuvent uniquement pousser les données vers une seule application par plateforme. Si les marketeurs tentent de les pousser vers des segments qui contiennent des utilisateurs issus de plusieurs applications, un avertissement s’affiche et indique que cette opération peut entraîner de graves dysfonctionnements des messages push, ainsi que l’inscription potentielle de certains utilisateurs sur liste noire. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Résolution des problèmes de messagerie Push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+Dans Adobe Mobile Services, les marketeurs peuvent uniquement pousser les données vers une seule application par plateforme. Si les marketeurs tentent de les pousser vers des segments qui contiennent des utilisateurs issus de plusieurs applications, un avertissement s’affiche et indique que cette opération peut entraîner de graves dysfonctionnements des messages push, ainsi que l’inscription potentielle de certains utilisateurs sur liste noire. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Troubleshooting push messaging](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
@@ -29,9 +29,9 @@ Afin d’utiliser les données Audience Manager dans votre définition de segme
 >
 >If app users are blacklisted, marketers can **never** send push messages to those affected users again.
 
-Si vous sélectionnez un segment d'audience contenant des utilisateurs dans plusieurs applications, l'alerte suivante peut s'afficher :
+If you select an audience segment that contains users across multiple apps, you might see the following alert:
 
-![nom de plusieurs applications](assets/multiple_appname.png)
+![plusieurs noms d’application](assets/multiple_appname.png)
 
 The app name is based on the pared down version of the appId, which is automatically sent to Adobe Analytics by the Mobile Services SDK in the `<app name> <version number> (<bundle id>)` format.
 
@@ -43,10 +43,10 @@ Au maximum, six ensembles de chiffres pour la version et cinq ensembles pour l�
 
 Par exemple :
 
-* `Bea[rd]cons 1.0 (123)` apparaîtra comme `Bea[rd]cons`
-* `Bea[rd]cons 1.2 (1.2)` apparaîtra comme `Bea[rd]cons`
-* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` apparaîtra comme `Bea[rd]cons .7`
-* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` apparaîtra comme `Bea[rd]cons (.6)`
+* `Bea[rd]cons 1.0 (123)` will appear as `Bea[rd]cons`
+* `Bea[rd]cons 1.2 (1.2)` apparaît comme `Bea[rd]cons`
+* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` will appear as `Bea[rd]cons .7`
+* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` will appear as `Bea[rd]cons (.6)`
 
 Pour continuer à envoyer des messages push aux applications énumérées, cochez la case **Oui, je souhaite poursuivre.** puis cliquez sur **[!UICONTROL Envoyer]**.
 
@@ -68,7 +68,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
 ## Configure audience segments {#section_A92C60885A30421B8150820EC1CCBF13}
 
-1. Accédez à la page Public pour un nouveau message Push.
+1. Go to the Audience page for a new push message.
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -84,13 +84,13 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
       This means that the SDK has sent a value of `True` for the Push Message Opt-In evar.
 
-   * Même si le périphérique dispose d'un jeton de périphérique valide, sauf si Adobe Analytics a défini l'indicateur choisi, le message n'est pas transmis à l'appareil.
+   * Même si le périphérique dispose d’un jeton de périphérique valide, à moins qu’Adobe Analytics n’ait défini l’indicateur d’inclusion, le message n’est pas envoyé au périphérique.
 
    * Pour de plus amples informations sur la résolution des problèmes liés aux messages push, consultez ceci :
 
-      * [Messagerie Push dans ios](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Push messaging in iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
 
-      * [Messagerie Push dans Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
+      * [Push messaging in Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
 
 1. Renseignez les champs suivants :
 
@@ -108,7 +108,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
    * **[!UICONTROL Segments Analytics]**
 
-      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. For more information, see [Build segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Select an existing Adobe Analytics segment from the drop-down list. For more information, see [Build segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
    * **[!UICONTROL Segments personnalisés]**
 
