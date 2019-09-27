@@ -2,10 +2,10 @@
 description: Les actions sont des événements mesurables qui se produisent dans l’application. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées à chaque fois que l’événement se produit. Vous pouvez par exemple effectuer le suivi de chaque nouvel abonnement, chaque consultation d’un article ou chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées comme abonnements, articles lus et niveaux atteints.
 seo-description: Les actions sont des événements mesurables qui se produisent dans l’application. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées à chaque fois que l’événement se produit. Vous pouvez par exemple effectuer le suivi de chaque nouvel abonnement, chaque consultation d’un article ou chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées comme abonnements, articles lus et niveaux atteints.
 seo-title: Suivi des actions de l’application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Développeur et mise en œuvre
-uuid: 62017 be 1-5395-4 d 16-bde 3-4 c 40 a 2 c 012 d 4
+uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ Le suivi des actions n’est pas automatique. Pour effectuer le suivi d’un év
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importez la bibliothèque.
 
    ```objective-c
@@ -62,7 +62,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackAction:@"myapp.SocialShare" data:contextData];
 ```
 
-Les valeurs de données contextuelles doivent être mises en correspondance avec les variables personnalisées :
+Les valeurs de données contextuelles doivent être mises en correspondance avec des variables personnalisées :
 
 ![](assets/map-variable-context-action.png)
 
