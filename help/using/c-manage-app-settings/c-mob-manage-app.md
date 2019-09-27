@@ -3,10 +3,10 @@ description: Vous pouvez suivre et gérer les données que vous recevez de l’a
 keywords: mobile
 seo-description: Vous pouvez suivre et gérer les données que vous recevez de l’application en configurant un ensemble de variables et de mesures.
 seo-title: Gestion de votre application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Gestion de votre application
 topic: Mesures
-uuid: 0 cc 356 c 3-8457-40 a 7-8 c 97-7 cbc 68 a 5 dc 0 c
+uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -21,12 +21,12 @@ Vous pouvez suivre et gérer les données que vous recevez de l’application en
 
 * **Variables et mesures standard**
 
-   Toute application comporte des variables et des mesures pour suivre les activités du panier et des achats. Some purchase information cannot be handled with processing rules, so the SDK exposes the special `"&&products"` context data. Par exemple, vous pouvez avoir des variables telles que les ajouts au panier, les suppressions du panier, les enregistrements, les commandes, etc. Les données contextuelles doivent être mappées aux données dans Adobe Analytics. Si cette variable est renseignée par un mappage simple des données contextuelles, il s’agit de la clé qui mappe sur celui-ci. Laissez ce champ vide si la variable est renseignée par des règles plus complexes dans les outils d'administration Analytics.
+   Toute application comporte des variables et des mesures pour suivre les activités du panier et des achats. Some purchase information cannot be handled with processing rules, so the SDK exposes the special `"&&products"` context data. Par exemple, vous pouvez avoir des variables telles que les ajouts au panier, les suppressions du panier, les enregistrements, les commandes, etc. Les données contextuelles doivent être mappées aux données dans Adobe Analytics. Si cette variable est renseignée par un mappage simple des données contextuelles, il s’agit de la clé qui mappe sur celui-ci. Laissez ce champ vide si la variable est renseignée par des règles plus complexes dans les outils d’administration Analytics.
 
    Pour de plus amples informations sur les variables et mesures, veuillez consulter :
 
-   * [Variables de produit dans Android](/help/android/analytics-main/products/products.md)
-   * [Variables de produit dans ios](/help/ios/analytics-main/products/products.md)
+   * [Variables de produit sous Android](/help/android/analytics-main/products/products.md)
+   * [Variables de produit dans iOS](/help/ios/analytics-main/products/products.md)
 
 * **Variables personnalisées**
 
@@ -38,7 +38,7 @@ Click **[!UICONTROL Manage App Settings]** &gt; **[!UICONTROL Manage Variables &
 
 These mappings call the same API that is used in [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-![Correspondance des données contextuelles](assets/custom_data_content.png)
+![Mappage des données contextuelles](assets/custom_data_content.png)
 
 Voici une liste des variables personnalisées que vous pouvez configurer :
 
@@ -47,9 +47,9 @@ Voici une liste des variables personnalisées que vous pouvez configurer :
    Lorsqu’une valeur est définie pour une propriété dans un appel de suivi (ou accès), elle s’applique uniquement à cet appel.
 
 * The **[!UICONTROL Custom Variables]** (or evars) also answer the question "which one?" Toutefois, une valeur d’eVar peut s’appliquer non seulement à l’accès dans lequel elle est envoyée, mais aussi aux variables et mesures envoyées dans les accès consécutifs jusqu’à ce que la valeur expire ou qu’une nouvelle valeur soit définie.
-* The **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** behave the same as variables except they allow you to capture multiple values on one hit. Pour plus d'informations, voir [Variables de liste](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
+* The **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** behave the same as variables except they allow you to capture multiple values on one hit. Pour plus d’informations, voir Variables [de](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html)liste.
 
-Les mappages suivants s'affichent dans Analytics comme étant créés dans Mobile Services.
+The following mappings display in Analytics as being created in Mobile Services.
 
 * **[!UICONTROL Nom]**
 
@@ -69,28 +69,28 @@ Les mappages suivants s'affichent dans Analytics comme étant créés dans Mobil
 
    * **[!UICONTROL Session]**
 
-      La valeur evar persiste pendant la durée de la visite Analytics.
+      La valeur eVar persiste pendant la durée de la visite Analytics.
 
    * **[!UICONTROL Appel de suivi]**
 
-      La valeur evar persiste uniquement pour l'appel de suivi ou l'accès dans lequel elle était incluse.
+      The eVar value persists only for the tracking call or hit it in which it was included.
 
    * **[!UICONTROL Ne jamais expirer]**
 
-      La valeur evar persiste pour tous les appels de suivi suivants.
+      La valeur eVar persiste pour tous les appels de suivi suivants.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics dispose d’une interface utilisateur avancée pour configurer la persistance des eVar. Si une valeur de persistance est définie pour l'evar qui n'est pas prise en charge dans Mobile Services, cette valeur s'affiche dans l'interface utilisateur des services mobiles.
+      Adobe Analytics dispose d’une interface utilisateur avancée pour configurer la persistance des eVar. Si une valeur de persistance est définie pour l’eVar qui n’est pas prise en charge dans Mobile Services, cette valeur s’affiche dans l’interface utilisateur de Mobile Services.
 
       To manage eVars, click **[!UICONTROL Adobe Analytics Report Suite Manager]** &gt; **[!UICONTROL Conversion Variables UI]**.
 
    * **[!UICONTROL Prise en charge des listes]**
 
-      Permet de transmettre plusieurs valeurs à associer à la propriété dans un seul appel de suivi. Le délimiteur doit être un caractère et ne peut pas être nul ou un espace.
+      Permet de transmettre plusieurs valeurs à associer à la propriété dans un appel de suivi. Le délimiteur doit être un caractère et ne peut pas être un zéro ou un espace.
 
    * **[!UICONTROL Délimiteur]**
 
-      Le délimiteur doit être un caractère et ne peut pas être nul ou un espace.
+      The delimiter must be one character and cannot be a zero or a space.
 
 ### Variable Analytics supplémentaires
 
@@ -102,9 +102,9 @@ Sélectionnez un numéro de variable inutilisé et saisissez un nom. Vous pouvez
 
 * **Mesures personnalisées**
 
-   Les mesures (ou événements) répondent aux questions *?* ou *combien ?*. Les événements peuvent incrémenter à chaque action de l’utilisateur ou conserver des valeurs numériques telles que le prix. Les mesures personnalisées peuvent comprendre la date de création d’une application, le téléchargement ou l’export d’un fichier PDF ou CSV, le téléchargement du SDK, la réalisation d’un rapport, l’ajout d’un lien vers la boutique d’applications, l’activation d’un message in-app, etc.
+   *Metrics (or events) answer the questions how much? or how many?***. Les événements peuvent incrémenter à chaque action de l’utilisateur ou conserver des valeurs numériques telles que le prix. Les mesures personnalisées peuvent comprendre la date de création d’une application, le téléchargement ou l’export d’un fichier PDF ou CSV, le téléchargement du SDK, la réalisation d’un rapport, l’ajout d’un lien vers la boutique d’applications, l’activation d’un message in-app, etc.
 
-   Sélectionnez l'un des types de mesure personnalisés suivants :
+   Select one of the following custom metric types:
 
    * **[!UICONTROL Nombre entier]**
    * **[!UICONTROL Nombre décimal]**
@@ -116,7 +116,7 @@ Les points ciblés vous permettent de définir des emplacements géographiques q
 
 ## Gestion des destinations de lien {#section_F722A387E22A430187B063D358A87711}
 
-Vous pouvez créer, modifier, archiver/ne plus archiver et supprimer des destinations de lien. Ces destinations peuvent ensuite être appelées en ligne lors de la création de liens marketing, de notifications Push ou de messages in-app. Pour plus d'informations sur les destinations de lien, voir [Gestion des destinations de lien](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md).
+Vous pouvez créer, modifier, archiver/ne plus archiver et supprimer des destinations de lien. Ces destinations peuvent ensuite être appelées en ligne lors de la création de liens marketing, de notifications Push ou de messages in-app. For more information about link destinations, see Manage Link Destinations.[](/help/using/acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
 
 ## Gestion des postbacks {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
