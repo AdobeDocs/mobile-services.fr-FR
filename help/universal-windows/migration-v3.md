@@ -1,22 +1,22 @@
 ---
 description: Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers la version 4.x du SDK Plateforme Windows universelle pour les solutions Experience Cloud.
 seo-description: Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers la version 4.x du SDK Plateforme Windows universelle pour les solutions Experience Cloud.
-seo-title: Migrer vers 4. x
-solution: Marketing Cloud, Analytics
-title: Migrer vers 4. x
+seo-title: Migrer vers la version 4.x
+solution: Marketing Cloud,Analytics
+title: Migrer vers la version 4.x
 topic: Développeur et mise en œuvre
-uuid: bdd 6 c 5 cd -3892-4 e 99-b 69 e -77105 ad 66 e 25
+uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# Migration vers les SDK 4. x{#migrate-to-x}
+# Migration vers les SDK 4.x{#migrate-to-x}
 
-Cette section décrit la migration de la version 3. x du SDK mobile Windows vers le SDK Windows Platform 4. x universelle pour les solutions Experience Cloud.
+This section describes how to migrate from the 3.x version of the Windows mobile SDK to the Universal Windows Platform 4.x SDK for Experience Cloud Solutions.
 
-Avec la version 4. x, toutes les fonctionnalités sont désormais accessibles par le biais de méthodes statiques. Vous n'avez plus besoin de suivre vos propres objets.
+Avec le passage à la version 4.x, toutes les fonctionnalités sont désormais accessibles via des méthodes statiques. Vous n’avez plus besoin de suivre vos propres objets.
 
 Les sections suivantes vous expliquent comment migrer de la version 3.x vers la version 4.x.
 
@@ -54,9 +54,9 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 
 Le tableau suivant répertorie les variables de configuration que vous devez déplacer vers le fichier de configuration. Déplacez la valeur définie pour la variable de la première colonne vers la variable de la deuxième colonne, puis supprimez l’ancienne variable de configuration de votre code.
 
-### Migration à partir de 3. x
+### Migration à partir de la version 3.x
 
-Le tableau suivant répertorie les variables des SDK 3. x et le nouveau nom dans les SDK 4. x :
+Le tableau suivant fournit une liste de variables dans les SDK 3.x et le nouveau nom dans les SDK 4.x :
 
 | Variable/méthode de configuration | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
@@ -80,9 +80,9 @@ Au lieu d’utiliser les appels `Track` et `TrackLink` axés sur le web, la vers
 
 Le paramètre `contextData` pour ces deux méthodes comporte les paires nom-valeur envoyées en tant que données contextuelles.
 
-### Evénements, props, evars
+### Events, props, eVars
 
-Si vous avez consulté les [méthodes du SDK](/help/universal-windows/c-configuration/methods.md), vous vous demandez probablement où définir les événements, evars, props, heirs et listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
+Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
 
 Les avantages des règles de traitement sont les suivants :
 
@@ -90,13 +90,13 @@ Les avantages des règles de traitement sont les suivants :
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires a très peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mappées à l’aide des règles de traitement.
 
-Pour plus d'informations, reportez-vous à *la section Règles* de traitement de [la présentation d'Analytics](/help/universal-windows/analytics/analytics.md).
+Pour plus d’informations, voir la section Règles *de* traitement dans l’aperçu [d’](/help/universal-windows/analytics/analytics.md)Analytics.
 
 Les valeurs que vous avez affectées directement aux variables doivent plutôt être ajoutées aux données contextuelles. This means that calls to `SetProp`, `SetEvar`, and assignments to persistent context data should all be removed and the values added to context data.
 
-### Appsection/Server, geozip, ID de transaction, Campagne et autres variables standard
+### AppSection/Server, GeoZip, ID de transaction, Campagne et autres variables standard
 
-Toutes les autres données que vous configuriez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées à la place aux données contextuelles. Autrement dit, les seules données envoyées avec un `TrackState` appel ou `TrackAction` appel sont la charge utile dans `data` le paramètre.
+Toutes les autres données que vous configuriez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées à la place aux données contextuelles. En d’autres termes, les seules données envoyées avec un `TrackState` appel ou `TrackAction` un appel sont la charge utile dans le `data` paramètre.
 
 **Remplacement des appels de suivi**
 
@@ -115,7 +115,7 @@ Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Le suivi hors ligne est activé dans `ADBMobileConfig.json` le fichier. Toute autre configuration hors ligne est effectuée automatiquement.
+Le suivi hors ligne est activé dans le `ADBMobileConfig.json` fichier. Toute autre configuration hors ligne est effectuée automatiquement.
 
 Dans votre code, supprimez les appels aux méthodes suivantes :
 
