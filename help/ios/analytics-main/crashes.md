@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
-seo-title: Suivi des blocages d'application
-solution: Marketing Cloud, Analytics
+seo-title: Suivi des blocages d’application
+solution: Marketing Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Développeur et mise en œuvre
-uuid: 4 f 81988 b -198 a -4 ba 9-ad 53-78 af 90 e 43856
+uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Ces informations vous aident à comprendre le mode de suivi des blocages ainsi q
 
 >[!IMPORTANT]
 >
->Vous devez effectuer la mise à niveau vers le SDK ios version 4.8.6, qui contient des modifications critiques qui empêchent la création de rapports de faux plantages.
+>Vous devez effectuer la mise à niveau vers la version 4.8.6 du SDK iOS, qui contient des modifications essentielles qui empêchent les faux blocages d’être signalés.
 
 ## À quel moment Adobe signale-t-il un plantage ?
 
@@ -44,7 +44,7 @@ Les scénarios suivants sont connus pour causer par erreur le signalement d’un
 
    >[!TIP]
    >
-   >Vous pouvez éviter un blocage dans ce scénario en arrière-plan de l'application avant de relancer l'application à partir de Xcode.
+   >Vous pouvez éviter un plantage dans ce scénario en mettant l’application en arrière-plan avant de la relancer à partir de Xcode.
 
 * If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
 
@@ -66,5 +66,5 @@ Les procédures suivantes peuvent vous aider à empêcher que de faux plantages 
 * Veillez à procéder à votre développement avec des suites de rapports hors production, ce qui devrait empêcher que le plantage nº 1 ne survienne.
 * Ne supprimez et ne modifiez aucune valeur placée dans `NSUserDefaults` par le SDK Adobe Mobile.
 
-   Si ces valeurs sont modifiées en dehors du SDK, les données indiquées ne seront pas valides.
+   Si ces valeurs sont modifiées en dehors du SDK, les données rapportées ne sont pas valides.
 
