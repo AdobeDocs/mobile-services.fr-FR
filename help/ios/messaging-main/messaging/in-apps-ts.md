@@ -3,10 +3,10 @@ description: Ces informations vous aideront à résoudre les problèmes liés à
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 seo-title: Dépannage de la messagerie intégrée (in-app)
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
 topic: Mesures
-uuid: 58533 aa 3-2 eb 2-4597-8525-77 e 4 e 5975 e 56
+uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
@@ -35,13 +35,13 @@ Assurez-vous que le récepteur de diffusion de notifications locales est déclar
 
 Consultez la vue Liste de la page Gérer les messages in-app, dans la colonne État, et vérifiez que le message est actif.
 
-## Consultez *l'option Afficher une fois*, *afficher toujours*, *afficher* les paramètres hors ligne dans l'onglet Audience.
+## Regardez *afficher une fois*, *afficher toujours*, *afficher les paramètres hors ligne* sur l’onglet Audience.
 
 Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **Déclencheur], qui vous permettent de définir la fréquence d’affichage du message.[!UICONTROL **
 
 ## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
-Le lancement se déclenche uniquement en cas de nouvelle session. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. Pour plus d'informations, voir [Configuration JSON adbmobile](/help/ios/configuration/json-config/json-config.md).
+Le lancement se déclenche uniquement en cas de nouvelle session. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. For more information, see  ADBMobile JSON Config.[](/help/ios/configuration/json-config/json-config.md)
 
 ## J’ai mis à jour mon message à distance, mais mon application affiche toujours l’ancien message.
 
