@@ -20,16 +20,16 @@ Le SDK Adobe exploite les API d’attribution de l’application Search Ads d�
 
 L’utilisation d’Apple Ads vous offre les avantages suivants :
 
-* Mesurez facilement l’efficacité de vos campagnes de téléchargement d’application Search Ads en ajoutant quelques lignes de code à votre application.
+* Mesurez facilement l’efficacité de vos campagnes de téléchargement d’application Search Ads en ajoutant quelques lignes de code à votre application.
 * Les développeurs peuvent accéder à la date/l’heure du téléchargement et au mot-clé avec enchère ayant permis la conversion.
 
-## Mise en œuvre des Search Ads d’Apple {#section_F1094676793540CFA1DBB540174EEB6A}
+## Mise en œuvre des Search Ads d’Apple {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
 >Pour mettre en oeuvre des publicités Apple, vous devez disposer du SDK iOS version 4.13.2 ou ultérieure.
 
-Pour activer votre application pour l’attribution Search Ad, procédez comme suit :
+Pour activer votre application pour l’attribution Search Ads, procédez comme suit :
 
 1. Effectuez la mise en œuvre du SDK Adobe (version 4.13.2 ou ultérieure).
 
@@ -37,13 +37,13 @@ Pour activer votre application pour l’attribution Search Ad, procédez comme 
 
 1. Ajoutez la structure iAd au fichier de projet Xcode de votre application.
 
-## Rapport de données dans l’attribution Search Ads {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Rapport de données dans l’attribution Search Ads {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
-1. Les données d’attribution Search Ads d’Apple sont fournies dans le nom, la source et les valeurs de terme de l’acquisition.
+1. Les données d’attribution Search Ads d’Apple sont fournies dans le nom, la source et les valeurs de terme de l’acquisition.
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
+   De plus, les valeurs suivantes seront mappées à partir du dictionnaire `"iad"` vers nos champs de données contextuelles de l’acquisition par défaut :
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
