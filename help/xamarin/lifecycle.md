@@ -2,10 +2,10 @@
 description: Informations relatives à la mise en œuvre des mesures de cycle de vie pour Android. Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
 keywords: Xamarin
 seo-description: Informations relatives à la mise en œuvre des mesures de cycle de vie pour Android. Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
-seo-title: Mise en œuvre du cycle de vie
-solution: Marketing Cloud, développeur
-title: Mise en œuvre du cycle de vie
-uuid: 6 dccc 12 e -8 b 57-4231-9 c 74-d 47 bc 0 ac 93 ba
+seo-title: Mettre en oeuvre le cycle de vie
+solution: Marketing Cloud,Developer
+title: Mettre en oeuvre le cycle de vie
+uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -14,7 +14,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # Implement lifecycle {#implement-lifecycle}
 
-Ces informations vous aident à mettre en œuvre des mesures de cycle de vie pour Android.
+Ces informations vous aident à mettre en oeuvre des mesures de cycle de vie pour Android.
 
 >[!TIP]
 >
@@ -24,11 +24,11 @@ For the metrics and dimensions that can be measured automatically by the mobile 
 
 ## iOS
 
-Dans ios, les mesures de cycle de vie sont automatiquement collectées.
+Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
 
 ## Android
 
-Dans votre activité principale, définissez le contexte de l'application pour le SDK Android.
+Dans votre activité principale, définissez le contexte de l’application pour le SDK Android.
 
 ```java
 protected override void OnCreate (Bundle bundle) 
@@ -39,7 +39,7 @@ protected override void OnCreate (Bundle bundle)
 }
 ```
 
-Dans chaque activité, implémentez les appels du cycle de vie.
+In every activity, implement lifecycle calls.
 
 ```java
 protected override void OnResume()
