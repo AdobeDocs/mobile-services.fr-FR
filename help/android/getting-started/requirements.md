@@ -1,11 +1,11 @@
 ---
-description: 'Avant de configurer une suite de rapports et de collecter des données d''application Android, effectuez les tâches préalables suivantes '
-seo-description: 'Avant de configurer une suite de rapports et de collecter des données d''application Android, effectuez les tâches préalables suivantes '
+description: 'Avant de configurer une suite de rapports et de collecter les données d’application Android, effectuez les tâches préalables suivantes : '
+seo-description: 'Avant de configurer une suite de rapports et de collecter les données d’application Android, effectuez les tâches préalables suivantes : '
 seo-title: Avant de commencer
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Avant de commencer
 topic: Développeur et mise en œuvre
-uuid: 0 ca 9 e 937-8 d 40-4570-9 dbf -9 aecc 6 ecedf 6
+uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -31,7 +31,7 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 >[!IMPORTANT]
 >
->Pour créer une suite de rapports et télécharger les kits SDK, vous devez être un administrateur Analytics.
+>To create a new report suite and download the SDKs, you must be an Analytics Administrator.
 
 ### Développeurs d’applications
 
@@ -50,13 +50,13 @@ Vous pouvez vous connecter à l’interface utilisateur Adobe Mobile Services 
 
 ### Experience Cloud
 
-Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d'informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)Experience Cloud.
 
 >[!TIP]
 >
 >Si vous ne savez pas si votre société a été configurée dans Experience Cloud, utilisez votre compte Adobe Analytics existant.
 
-### Adobe Analytics 
+### Adobe Analytics
 
 Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
 
@@ -95,7 +95,7 @@ Pour télécharger le SDK mobile :
 
 >[!TIP]
 >
->Un fichier de configuration pour votre application est automatiquement inclus dans le téléchargement du SDK. Vous n'avez donc pas besoin de télécharger ce fichier séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
+>Un fichier de configuration pour votre application est automatiquement inclus dans le téléchargement du SDK. Il n’est donc pas nécessaire de le télécharger séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
 
 Si vous utilisez Android Studio, vous pouvez également ajouter l’instruction suivante au fichier `build.gradle` de votre application :
 
@@ -103,7 +103,7 @@ Si vous utilisez Android Studio, vous pouvez également ajouter l’instruction
 compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 ```
 
-Gardez à l’esprit les informations suivantes :
+À noter :
 
 * Remplacez le numéro de version de l’exemple de code par la version appropriée des SDK Android.
 * Téléchargez le fichier de configuration et incluez-le dans votre projet.
