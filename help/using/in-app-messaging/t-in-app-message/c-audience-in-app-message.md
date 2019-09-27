@@ -2,11 +2,11 @@
 description: Vous pouvez configurer les options d’audience pour les messages in-app, y compris les options d’affichage, de déclenchement et de caractéristiques.
 keywords: mobile
 seo-description: Vous pouvez configurer les options d’audience pour les messages in-app, y compris les options d’affichage, de déclenchement et de caractéristiques.
-seo-title: Message in-app d'audience
-solution: Marketing Cloud, Analytics
-title: Message in-app d'audience
+seo-title: Message in-app du public
+solution: Marketing Cloud,Analytics
+title: Message in-app du public
 topic: Mesures
-uuid: 6 c 815 d 4 c -7626-4 cf 4-9158-3 f 059 c 79317 a
+uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -41,10 +41,10 @@ Vous pouvez configurer les options d’audience pour les messages in-app, y comp
 
       >[!IMPORTANT]
       >
-      >Si vous sélectionnez plusieurs déclencheurs, pour que le message s'affiche, tous les déclencheurs doivent survenir sur le même accès.
+      >Si vous sélectionnez plusieurs déclencheurs, pour que le message s’affiche, tous les déclencheurs doivent se produire sur le même accès.
 
-   * **[!UICONTROL Caractéristiques]**
-Vous pouvez déterminer qui doit voir le message in-app lorsqu'il est déclenché et filtrer (segmenter) l'audience vers les accès qui possèdent des données spécifiées. Par exemple, vous pouvez définir une règle selon laquelle les points ciblés contiennent Denver. Ce filtre vous permet d’afficher le message aux clients inclus dans l’un de vos points ciblés contenant Denver dans le nom, au moment du déclenchement.
+   * **[!UICONTROL Traits
+You can determine who should see the in-app message when it is triggered and filter (segment) the audience to hits that have specified data.]** Par exemple, vous pouvez définir une règle selon laquelle les points ciblés contiennent Denver. Ce filtre vous permet d’afficher le message aux clients inclus dans l’un de vos points ciblés contenant Denver dans le nom, au moment du déclenchement.
 
 
 
@@ -52,7 +52,7 @@ Vous pouvez déterminer qui doit voir le message in-app lorsqu'il est déclench�
 
 >[!IMPORTANT]
 >
->Les déclencheurs et caractéristiques utilisent les données transmises à Analytics à partir de votre application. Ces valeurs sont transférées en tant que données contextuelles, variables mappées et mesures. Une variable est une valeur basée sur du texte alors qu’une mesure est une valeur numérique.
+>Les déclencheurs et les caractéristiques utilisent des données transmises à Analytics à partir de votre application. Ces valeurs sont transférées en tant que données contextuelles, variables mappées et mesures. Une variable est une valeur basée sur du texte alors qu’une mesure est une valeur numérique.
 
 To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** &gt;  **[!UICONTROL Manage Variables &amp; Metrics]** &gt;, which displays the following tabs:
 
@@ -66,7 +66,7 @@ Une fois le mappage validé, sélectionnez le comparateur approprié ou un opér
 
 ![options de déclenchement](assets/custom_trigger_matcher_options.png)
 
-Les scénarios suivants vous aident à déterminer si une mesure ou une variable est sélectionnée comme déclencheur :
+Les scénarios suivants vous aident à déterminer si une mesure ou une variable doit être sélectionnée comme déclencheur :
 
 ### Mesures
 
