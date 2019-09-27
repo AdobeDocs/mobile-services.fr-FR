@@ -1,18 +1,18 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
 seo-description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-seo-title: Fichier de configuration adbmobileconfig. json
-solution: Marketing Cloud, Analytics
-title: Fichier de configuration adbmobileconfig. json
+seo-title: Fichier de configuration ADBMobileConfig.json
+solution: Marketing Cloud,Analytics
+title: Fichier de configuration ADBMobileConfig.json
 topic: Développeur et mise en œuvre
-uuid: a 45 b 91 cc -982 e -4 d 6 c-a 4 e 4-d 2 e 4 b 4 fa 7556
+uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
 source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 ---
 
 
-# `ADBMobileConfig.json` config, fichier {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` fichier de configuration {#adbmobileconfig-json-config}
 
 Information to help you use the `ADBMobile.json` config file.
 
@@ -22,7 +22,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    (Requis par Analytics) Une ou plusieurs suites de rapports permettant de recevoir des données Analytics. Plusieurs identifiants de suite de rapports doivent être séparés par une virgule, sans espace.
 
-   * Voici les exemples de code pour cette variable :
+   * Voici des exemples de code pour cette variable :
 
       ```js
       "rsids" : "rsid"
@@ -60,7 +60,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
 * **batchLimit**
 
-   Envoie les accès par lots. Par exemple, si la variable est définie sur 50, les accès sont mis en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès mis en file d’attente sont envoyés. Obligatoire `offlineEnabled=true`. La valeur par défaut est `0` (pas de traitement par lot).
+   Envoie les accès par lots. Par exemple, si la variable est définie sur 50, les accès sont mis en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès mis en file d’attente sont envoyés. Nécessite `offlineEnabled=true`. La valeur par défaut est `0` (Pas de traitement par lot).
 
 * **privacyDefault**
 
@@ -72,13 +72,13 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
       >[!TIP]
       >
-      >Cette valeur définit uniquement la valeur par défaut. Si cette valeur est définie ou modifiée dans le code, la valeur définie par le code est enregistrée dans le stockage local et utilisée jusqu’à ce qu’elle soit modifiée ou que l’application soit désinstallée, puis réinstallée.
+      >Cette option définit uniquement la valeur par défaut. Si cette valeur est définie ou modifiée dans le code, la valeur définie par le code est enregistrée dans le stockage local et utilisée jusqu’à ce qu’elle soit modifiée ou que l’application soit désinstallée, puis réinstallée.
 
 * **poi**
 
    Chaque matrice de points ciblés comporte le nom, la latitude, la longitude et le rayon (en mètres) du point ciblé correspondant à la zone du point. Le nom du point ciblé peut être n’importe quelle chaîne. Lorsqu’un appel `trackLocation` est envoyé, si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `trackLocation`.
 
-   * Voici l'exemple de code de cette variable :
+   * Voici l’exemple de code de cette variable :
 
       ```js
       "poi": [
