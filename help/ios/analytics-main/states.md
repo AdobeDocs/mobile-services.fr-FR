@@ -2,10 +2,10 @@
 description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), vous devez envoyer un appel de suivi d’état. Dans iOS, le suivi des états se fait généralement au moyen de la méthode viewDidLoad de chaque affichage.
 seo-description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), vous devez envoyer un appel de suivi d’état. Dans iOS, le suivi des états se fait généralement au moyen de la méthode viewDidLoad de chaque affichage.
 seo-title: Suivi des états de l’application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des états de l’application
 topic: Développeur et mise en œuvre
-uuid: 12 cca 4 eb -1 f 15-4 cec-a 58 f -76 b 69 eaff 99 d
+uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,7 +24,7 @@ Les états correspondent aux différents écrans ou affichages de votre applicat
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d'informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [l'implémentation principale et le cycle de vie](/help/ios/getting-started/dev-qs.md).
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. Importez la bibliothèque.
 
    ```objective-c
@@ -50,7 +50,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Home Screen" data:contextData];
 ```
 
-Les valeurs de données contextuelles doivent être mises en correspondance avec les variables personnalisées :
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-state.png)
 
@@ -61,5 +61,5 @@ Les états sont généralement consultés au moyen d’un rapport de cheminement
 |  |  |
 |--- |--- |
 | Adobe Mobile Services   | Rapport **[!UICONTROL Afficher les états.]** Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
-| Adobe Analytics  | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **Pages**, rapport **[!UICONTROL Pages vues]** et rapport **Chemin[!UICONTROL .]** |
+| Adobe Analytics | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **Pages**, rapport **[!UICONTROL Pages vues]** et rapport **Chemin[!UICONTROL .]** |
 | Analyses ad hoc | Vous pouvez consulter les états sur les différents affichages des Pages au moyen de la dimension **Page**, de la mesure **[!UICONTROL Pages vues]** et des rapports **Chemin[!UICONTROL .]** |
