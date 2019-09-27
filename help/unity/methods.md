@@ -2,10 +2,10 @@
 description: valeur nulle
 keywords: Unity
 seo-description: valeur nulle
-seo-title: Méthodes adbmobile. cs
-solution: Marketing Cloud, développeur
-title: Méthodes adbmobile. cs
-uuid: af 504934-febd -45 d 9-81 e 2-2 a 310 f 4 c 65 dc
+seo-title: Méthodes ADBMobile.cs
+solution: Marketing Cloud,Développeur
+title: Méthodes ADBMobile.cs
+uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -84,7 +84,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: Les accès sont envoyés immédiatement.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Les accès sont ignorés.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
       Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in). La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
@@ -139,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Cette méthode est destinée aux applications qui s'inscrivent aux notifications lorsqu'elles sont en arrière-plan et doivent uniquement être appelées à partir de votre code qui s'exécute alors que votre application est en arrière-plan.
+   >Cette méthode est conçue pour être utilisée pour les applications qui s’inscrivent aux notifications en arrière-plan et qui doivent uniquement être appelées à partir du code qui s’exécute pendant que votre application est en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -171,7 +171,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **SetContext (Android seulement)**
 
-   Indique au SDK qu'il doit définir son contexte d'application à partir de l'activité actuelle d'unityplayer.
+   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
 
    * Voici la syntaxe de cette méthode :
 
@@ -205,7 +205,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    Définit l’état de confidentialité pour l’utilisateur actuel. Valeurs possibles :
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Les accès sont envoyés immédiatement.
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Hits are sent immediately.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Les accès sont ignorés.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
@@ -215,7 +215,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
       ```
 
-   * Voici l'exemple de code pour cette syntaxe :
+   * Voici l’exemple de code pour cette syntaxe :
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -263,7 +263,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Il s'agit du seul appel de suivi qui incrémente les pages vues.
+   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
@@ -305,7 +305,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Cette méthode ne doit être appelée que dans le code qui s'exécute alors que votre application est en arrière-plan.
+   >Cette méthode ne doit être appelée que dans le code qui s’exécute pendant que votre application est en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -499,7 +499,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Méthodes Experience Cloud ID
+## Méthodes d’ID Experience Cloud
 
 * **GetMarketingCloudID**
 
