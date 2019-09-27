@@ -2,11 +2,11 @@
 description: Vous pouvez afficher des rapports sur les messages in-app et push.
 keywords: mobile
 seo-description: Vous pouvez afficher des rapports sur les messages in-app et push.
-seo-title: Affichage des rapports de messages
-solution: Marketing Cloud, Analytics
-title: Affichage des rapports de messages
+seo-title: Afficher les rapports sur les messages
+solution: Marketing Cloud,Analytics
+title: Afficher les rapports sur les messages
 topic: Mesures
-uuid: 0 ac 73 a 81-388 f -4 dfd -84 d 5-21 b 8 db 4 b 8 c 83
+uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
 source-git-commit: 44f531ad140827d563255fad197811185c5337c9
 
@@ -20,11 +20,11 @@ Vous pouvez afficher des rapports sur les messages in-app et push.
 1. Click ![report icon](assets/icon_report.png) in the **[!UICONTROL Report]** column for a message.
 1. (**Optional**) Create a sticky filter for the report or change the time period by clicking the **[!UICONTROL Calendar]** icon.
 
-   Pour plus d'informations sur la création d'un filtre bascule, voir [Ajout d'un filtre bascule](/help/using/usage/reports-customize/t-sticky-filter.md).
+   For more information about creating a sticky filter, see Add a sticky filter.[](/help/using/usage/reports-customize/t-sticky-filter.md)
 
 >[!TIP]
 >
->Selon le type de message que vous affichez, le rapport peut varier.
+>Selon le type de message affiché, le rapport peut varier.
 
 ## Les messages in-app {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
@@ -36,13 +36,13 @@ Si vous affichez des rapports pour un message in-app, le rapport ressemble à l�
 
 Voici la liste des mesures disponibles pour les messages in-app :
 
-* **[!UICONTROL Impression]** lorsqu'un message est déclenché.
+* **[!UICONTROL Impression]**, lorsqu’un message est déclenché.
 
-* **[!UICONTROL Lorsque l'utilisateur]** clique sur le bouton **[!UICONTROL Clic publicitaire]** d'une alerte ou d'un message plein écran, et lorsqu'un utilisateur ouvre l'application à partir d'une notification locale.
+* **[!UICONTROL Clic publicitaire]**, lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Clic publicitaire]** d’une alerte ou d’un message en plein écran et lorsqu’un utilisateur ouvre l’application à partir d’une notification locale.
 
-* **[!UICONTROL Annuler]** lorsqu'un utilisateur appuie sur le bouton **[!UICONTROL Annuler]** d'une alerte ou d'un message plein écran.
+* **[!UICONTROL Annuler]**, lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Annuler]** d’une alerte ou d’un message en plein écran.
 
-* **[!UICONTROL Taux d'engagement]**, une mesure calculée d'Adobe Analytics qui résulte du nombre de clics publicitaires divisé par le nombre d'impressions.
+* **[!UICONTROL Engagement Rate]**, a calculated metric from Adobe Analytics and is the result of the number of click throughs divided by the number of impressions.
 
 ## Push messages {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -52,9 +52,9 @@ Si vous affichez des rapports pour un message push, le rapport ressemble à l’
 
 Le graphique de la partie supérieure affiche le nombre d’utilisateurs qui ont ouvert le message.
 
-### Mesures de message Push
+### Mesures des messages push
 
-Voici la liste des mesures disponibles pour les messages Push :
+Voici la liste des mesures disponibles pour les messages push :
 
 * **[!UICONTROL Heure]**
 
@@ -62,24 +62,24 @@ Voici la liste des mesures disponibles pour les messages Push :
 
 * **[!UICONTROL État]**
 
-   L'état du message et les états disponibles sont les suivants :
+   L’état du message et les états disponibles sont les suivants :
 
    * **[!UICONTROL Annulé]**
-   * **[!UICONTROL Planifié]**
+   * **[!UICONTROL Planifiée]**
    * **[!UICONTROL Exécution]**
    * **[!UICONTROL Exécuté]**
 
-* **[!UICONTROL Publié]**
+* **[!UICONTROL Published](Publié)**
 
-   Nombre de jetons de périphérique envoyés à Apple Push Notification Service/Firebase Cloud Messaging (APNS/FCM) pour envoyer le message aux périphériques des utilisateurs.
+   Nombre de jetons de périphérique envoyés avec succès à Apple Push Notification Service/Firebase Cloud Messaging (APNS/FCM) pour envoyer le message aux périphériques des utilisateurs.
 
 * **[!UICONTROL Échec]**
 
-   Nombre de jetons de périphérique qui n'ont pas été envoyés avec succès à APNS/FCM. Voici quelques raisons possibles :
+   Nombre de jetons de périphérique non envoyés à APNS/FCM. Quelques raisons possibles d'échec :
 
    * pushID non valide
 
-   * La plateforme Push (APNS, FCM, etc.) qui a été attribuée à la transmission n'existe pas pour l'application de la tâche. Par exemple, la plateforme peut collecter des jetons push iOS, mais aucun service APNS n’est configuré.
+   * The push platform (APNS, FCM, and so on) that was given to push to does not exist for the job's application. Par exemple, la plateforme peut collecter des jetons push iOS, mais aucun service APNS n’est configuré.
 
    * L’échec du message peut être dû à la configuration incorrecte du service push ou à l’indisponibilité du système Mobile Services.
    >[!IMPORTANT]
