@@ -1,12 +1,12 @@
 ---
 description: Liste des méthodes Adobe Target fournies par la bibliothèque Android.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Adobe Target fournies par la bibliothèque Android.
 seo-title: Méthodes Target pour Android
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes Target pour Android
 topic: Développeur et mise en œuvre
-uuid: 8 e 9808 b 2-ba 80-4646-ba 05-8 e 62 d 4 fde 065
+uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,7 +17,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Liste des méthodes Adobe Target fournies par la bibliothèque Android.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d'identité Adobe Experience Platform. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d’identité Adobe Experience Platform]. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 ## Class reference : TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
-**Propriétés :**
+**Propriétés:**
 
 ```java
 public String name; 
@@ -37,7 +37,7 @@ public HashMap<String, Object> parameters;
 
 >[!TIP]
 >
->Les constantes suivantes sont simplifiées : de - utilisées lorsque vous définissez des clés pour les paramètres personnalisés.
+>The following constants are for ease of use when you set keys for custom parameters.
 
 ```java
 public static final String TARGET_PARAMETER_ORDER_ID   = "orderId"; 
@@ -116,44 +116,44 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    * **Paramètres :**
 
-      Voici les paramètres de cette méthode :
+      Here are the parameters for this method:
 
       * **name**
 
          Nom de la mbox/l’emplacement Target que vous voulez récupérer.
 
-         * **Type :** Chaîne
+         * **** Type : Chaîne
       * **defaultContent**
 
          Valeur renvoyée dans le rappel si le serveur Target n’est pas accessible ou si l’utilisateur n’est pas admissible pour la campagne.
 
-         * **Type :** Chaîne
+         * **** Type: String
       * **profileParameters**
 
          Les valeurs de ce dictionnaire seront placées dans l’objet "profileParameters" dans la demande à Target.
 
-         * **Type :** Carte `<String, Object>`
+         * **** Type : Map `<String, Object>`
       * **orderParameters**
 
          Les valeurs de ce dictionnaire seront placées dans l’objet "order" dans la demande à Target.
 
-         * **Type :** Carte `<String, Object>`
+         * **** Type : Map `<String, Object>`
       * **mboxParameters**
 
-         Les valeurs de ce dictionnaire seront envoyées à Target.
+         Les valeurs de ce dictionnaire seront transférées dans la requête à Target.
 
-         * **Type :** Carte `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **requestLocationParameters**
 
          Les valeurs de ce dictionnaire seront placées dans l’objet "requestLocation" dans la demande à Target.
 
-         * **Type :** Carte `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **callback**
 
          Cette méthode est appelée avec le contenu de l’offre depuis le serveur Target. Si le serveur Target n’est pas accessible ou si l’utilisateur n’est pas admissible pour la campagne, la valeur defaultContent est renvoyée.
 
-         * **Type :** Targetcallback `<String>`
-   * Voici un exemple de code pour cette méthode :
+         * **Type:** TargetCallback `<String>`
+   * Here is sample code for this method:
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
