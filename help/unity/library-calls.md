@@ -3,9 +3,9 @@ description: valeur nulle
 keywords: Unity
 seo-description: valeur nulle
 seo-title: Appels à la bibliothèque
-solution: Marketing Cloud, développeur
+solution: Marketing Cloud,Développeur
 title: Appels à la bibliothèque
-uuid: 74 c 30379-6 cdf -4318-9 db 8-e 14 fb 63 aa 18 a
+uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
 source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
 
@@ -14,7 +14,7 @@ source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
 
 # Making calls to the library{#making-calls-to-the-library}
 
-Lorsque vous souhaitez invoquer le module externe à partir de vos scripts, importez l'espace de noms :
+Lorsque vous souhaitez appeler le module externe à partir de vos scripts, importez l’espace de noms :
 
 * **C# :** utilisation de `com.adobe.mobile;`
 
@@ -22,4 +22,4 @@ Lorsque vous souhaitez invoquer le module externe à partir de vos scripts, impo
 
 * **boo :** importation de `com.adobe.mobile;`
 
-Après avoir importé l'namespace de noms, vous pouvez invoquer directement le module au moyen des méthodes statiques de la classe adbmobile.
+Après avoir importé l’espace de noms, vous pouvez invoquer directement le module externe au moyen des méthodes statiques de la classe ADBMobile.
