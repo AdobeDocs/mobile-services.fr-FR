@@ -3,10 +3,10 @@ description: Affichez la liste de vos messages in-app et push avec des informati
 keywords: mobile
 seo-description: Affichez la liste de vos messages in-app et push avec des informations relatives au moment où chaque message a été actualisé, ainsi que son statut (actif ou désactivé).
 seo-title: Gestion des messages
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Gestion des messages
 topic: Mesures
-uuid: 4 d 934 ede -0 c 68-4 dd 5-ba 37-9 caf 727 cc 717
+uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -15,11 +15,11 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 # Gestion des messages{#manage-messages}
 
-Affichez la liste de vos messages in-app et push avec des détails sur la date à laquelle chaque message a été mis à jour et si les messages sont activés ou désactivés.
+Affichez la liste de vos messages in-app et push avec des détails sur la date de la dernière mise à jour de chaque message et sur la façon dont les messages sont en direct ou ont été désactivés.
 
 Vous pouvez dupliquer, activer/désactiver et archiver/ne plus archiver des messages. Vous pouvez également afficher un rapport indiquant le nombre d’utilisateurs ayant visualisé le message et le nombre de ceux qui ont cliqué dessus.
 
-Pour gérer les messages, cliquez sur ***votre_ app_ name*** &gt; **[!UICONTROL Messagerie]** &gt; **[!UICONTROL Gérer les messages]**.
+Pour gérer les messages, cliquez sur ***your_app_name*** &gt; **[!UICONTROL Messagerie]** &gt; **[!UICONTROL Gérer les messages]**.
 
 ![](assets/manage_messages.png)
 
@@ -27,9 +27,9 @@ Voici des informations supplémentaires sur les tâches pouvant être exécutée
 
 * **Recherche et filtrage des messages**
 
-   Utilisez la zone de recherche située en haut de la liste pour rechercher et filtrer des messages. Au fur et à mesure que vous saisissez du texte dans le champ de recherche, les messages correspondants de la liste s’affichent. La recherche fonctionne à l’échelle de toutes les colonnes du tableau. Par exemple, vous pouvez saisir `Draft` pour afficher uniquement les messages associés à cet état. Pour afficher seulement les messages mis à jour par un utilisateur, saisissez le nom de ce dernier.
+   Utilisez la zone de recherche en haut de la liste pour rechercher et filtrer les messages. Au fur et à mesure que vous saisissez du texte dans le champ de recherche, les messages correspondants de la liste s’affichent. La recherche fonctionne à l’échelle de toutes les colonnes du tableau. Par exemple, vous pouvez saisir `Draft` pour afficher uniquement les messages associés à cet état. Pour afficher seulement les messages mis à jour par un utilisateur, saisissez le nom de ce dernier.
 
-   Outre la zone de recherche, vous pouvez aussi cliquer sur un en-tête de colonne pour trier la liste par ordre croissant ou décroissant selon le contenu de cette colonne.
+   Outre la zone de recherche, vous pouvez également cliquer sur un en-tête de colonne pour trier la liste par ordre croissant ou décroissant en fonction du contenu de cette colonne.
 
    Par exemple, si vous triez la colonne **[!UICONTROL Type de message]dans un ordre croissant, tous les messages in-app s’affichent avant les messages push.** Si vous triez la colonne **[!UICONTROL Dernière mise à jour]par ordre décroissant, les derniers messages mis à jour apparaissent en haut de la liste.**
 
