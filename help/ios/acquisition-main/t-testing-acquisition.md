@@ -2,9 +2,9 @@
 description: Les informations suivantes expliquent comment rediriger un lien de campagne d’acquisition héritée basé sur l’empreinte numérique d’un périphérique.
 seo-description: Les informations suivantes expliquent comment rediriger un lien de campagne d’acquisition héritée basé sur l’empreinte numérique d’un périphérique.
 seo-title: Évaluation de l’acquisition héritée
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Test de l’acquisition héritée
-uuid: e 0591 f 4 a-e 26 b -4 fe 4-97 c 1-a 6831 a 926 fa 5
+uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -17,7 +17,7 @@ Les informations suivantes expliquent comment rediriger un lien de campagne d’
 
 Si l’application mobile n’est pas encore sur Google Play, vous pouvez sélectionner n’importe quelle destination lors de la création du lien de campagne. Cela a uniquement une incidence sur l’application utilisée par le serveur pour vous rediriger lorsque vous cliquez sur le lien d’acquisition. Le lien d’acquisition pourra toujours être testé.
 
-1. Navigate to **[!UICONTROL Use Legacy Acquisition Links]** in Adobe Mobile Services and generate an acquisition campaign URL.
+1. Accédez à **[!UICONTROL Utilisation de liens d’acquisition hérités]dans Adobe Mobile Services et créez une URL de campagne d’acquisition.**
 
    Pour plus d’informations, voir [Utilisation de liens d’acquisition hérités](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md).
 
@@ -29,7 +29,7 @@ Si l’application mobile n’est pas encore sur Google Play, vous pouvez séle
 
    Pour vous assurer d’effectuer correctement l’opération, supprimez puis réinstallez l’application.
 
-Prenez note des informations suivantes :
+À noter :
 
 * Le serveur d’acquisition fournit une correspondance d’attribution basée sur l’adresse IP et les informations agent-utilisateur enregistrées lorsque vous cliquez sur le lien (étape 2) et lors du lancement de l’application (étape 3).
 * En utilisant des outils de surveillance HTTP, les accès envoyés à partir de l’application peuvent être contrôlés pour vérifier l’attribution d’acquisition.
