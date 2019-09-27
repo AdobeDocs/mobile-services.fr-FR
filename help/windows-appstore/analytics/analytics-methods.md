@@ -2,10 +2,10 @@
 description: Informations relatives à l’utilisation du SDK Boutique d’applications Windows 8.1 universelle avec Adobe Analytics.
 seo-description: Informations relatives à l’utilisation du SDK Boutique d’applications Windows 8.1 universelle avec Adobe Analytics.
 seo-title: Méthodes Analytics
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Développeur et mise en œuvre
-uuid: 79 db 105 c -216 c -4061-97 f 3-a 55954995 e 67
+uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,13 +24,13 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **Trackstate (winjs : Trackstate)**
+* **TrackState (winJS : trackState)**
 
    Effectue le suivi de l’état d’une application avec les données contextuelles facultatives. Les états correspondent aux affichages disponibles dans l’application : tableau de bord d’accueil, paramètres d’application, panier, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si `state` est vide, il est présenté comme « app name app version (build) » dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
 
    >[!TIP]
    >
-   >Il s'agit du seul appel de suivi qui incrémente les pages vues.
+   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
@@ -45,7 +45,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **Trackaction (winjs : Trackaction)**
+* **TrackAction (winJS : trackAction)**
 
    Effectue le suivi d’une action dans l’application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple les connexions, les appuis sur la bannière, les abonnements aux flux, etc.
 
@@ -62,7 +62,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackAction("Button Click", null); 
       ```
 
-* **Gettrackingidentifierasync (winjs : Gettrackingidentifierasync)**
+* **GetTrackingIdentifierAsync (winJS : getTrackingIdentifierAsync)**
 
    Renvoie l’identifiant visiteur automatiquement généré pour Analytics. Il s’agit d’un identifiant visiteur unique spécifique à l’application généré au lancement initial puis stocké et utilisé à partir de ce lancement. Cet identifiant est conservé d’une mise à niveau de l’application à l’autre, puis supprimé à la désinstallation.
 
@@ -81,7 +81,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       });
       ```
 
-* **Tracklocation (winjs : Tracklocation)**
+* **TrackLocation (winJS : trackLocation)**
 
    Envoie les coordonnées x et y actuelles. Utilise également les points ciblés définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelle est renseignée et envoyée avec l’appel `trackLocation`.
 
@@ -98,7 +98,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackLocation(47.60621, -122.33207, null);
       ```
 
-* **Tracklifetimevalueincrease (winjs : Tracklifetimevalueincrease)**
+* **TrackLifetime &#x200B; ValueAugmentation (winJS : trackLifetime &#x200B; ValueAugmentation)**
 
    Ajoute `amount` à la valeur de durée de vie de l’utilisateur.
 
@@ -115,7 +115,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackLifetimeValueIncrease(10, null); 
       ```
 
-* **Tracktimedactionstart (winjs : Tracktimedactionstart)**
+* **TrackTimed &#x200B; ActionStart (winJS : trackTimed &#x200B; ActionStart)**
 
    Commence une minutée portant le nom `action`action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
 
@@ -136,9 +136,9 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackTimedActionStart("cartToCheckout", null); 
       ```
 
-* **Tracktimedactionupdate (winjs : Tracktimedactionupdate)**
+* **TrackTimed &#x200B; ActionUpdate (winJS : trackTimed &#x200B; ActionUpdate)**
 
-   Transmet `contextData` afin de mettre à jour les données contextuelles associées à l’`action` donnée. `data` Le transmis est ajouté aux données existantes pour l'action donnée et remplace les données si la même clé est déjà définie pour `action`.
+   Transmet `contextData` afin de mettre à jour les données contextuelles associées à l’`action` donnée. The `data` passed is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
 
    >[!TIP]
    >
@@ -159,7 +159,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout", contextData); 
       ```
 
-* **Tracktimedactionexissasync (winjs : Tracktimedactionexissasync)**
+* **TrackTimedActionExistsAsync (winJS : trackTimedActionExistsAsync)**
 
    Renvoie true si l’action minutée donnée existe et false si ce n’est pas le cas.
 
@@ -177,7 +177,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       });
       ```
 
-* **Tracktimedactionend (winjs : Tracktimedactionend)**
+* **TrackTimed &#x200B; ActionEnd (winJS : trackTimed &#x200B; ActionEnd)**
 
    Termine une action minutée.
 
@@ -194,23 +194,23 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
       ADB.Analytics.trackTimedActionEnd("cartToCheckout"); 
       ```
 
-* **Cleartrackingqueue (winjs : Cleartrackingqueue)**
+* **ClearTrackingQueue (winJS : clearTrackingQueue)**
 
    Efface tous les accès stockés de la file d’attente de suivi Analytics.
 
-   * Voici la syntaxe de ce message :
+   * Here is the syntax for this message:
 
       ```csharp
       static void ClearTrackingQueue();
       ```
 
-   * Voici l'exemple de code :
+   * Voici l’exemple de code :
 
       ```js
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **Getqueuesizeasync (winjs : Getqueuesizeasync)**
+* **GetQueueSizeAsync (winJS : getQueueSizeAsync)**
 
    Renvoie le nombre d’accès actuellement stockés dans la file d’attente Analytics.
 
