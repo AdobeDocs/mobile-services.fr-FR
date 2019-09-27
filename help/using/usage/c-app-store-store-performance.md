@@ -3,10 +3,10 @@ description: Le rapport Aperçu de la boutique d’applications vous donne un ap
 keywords: mobile
 seo-description: Le rapport Aperçu de la boutique d’applications vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.
 seo-title: Rapport Aperçu de la boutique d’applications
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Rapport Aperçu de la boutique d’applications
 topic: Mesures
-uuid: ac 066 f 31-ec 4 b -4 b 67-b 839-780 c 2 cd 1574 e
+uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -29,11 +29,11 @@ Vous pouvez cliquer sur les mesures pour masquer ou afficher la ligne correspond
 
 >[!IMPORTANT]
 >
->Les mesures de boutique d'applications, telles que les téléchargements, le classement, les recettes, la notation, etc. dans Adobe Analytics nécessitent une intégration de Connecteur de données avec un fournisseur approprié. `appFigures` propose actuellement une intégration qui nécessite l’achat du produit et/ou du service approprié à partir de `appFigures`**pour que** vous puissiez activer l’intégration. Pour plus d’informations sur les intégrations à Data Connector, voir [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
+>App store metrics, such as downloads, rank, revenue, rating, and so on in Adobe Analytics require a Data Connector integration with an appropriate vendor. `appFigures` propose actuellement une intégration qui nécessite l’achat du produit et/ou du service approprié à partir de `appFigures`**pour que** vous puissiez activer l’intégration. Pour plus d’informations sur les intégrations à Data Connector, voir [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Outre la possibilité de modifier la plage de dates du rapport en cliquant sur l'icône de calendrier en haut à droite, vous pouvez personnaliser certains rapports d'analyse, ajouter des filtres et des séries (mesures), ajouter des filtres bascules et télécharger le rapport au format PDF ou CSV. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>Outre la modification de la plage de dates du rapport en cliquant sur l’icône de calendrier dans le coin supérieur droit, vous pouvez personnaliser certains rapports d’analyse, ajouter des filtres et des séries (mesures), ajouter des filtres bascules et télécharger le rapport au format PDF ou CSV. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
 
 ## Note moyenne de la boutique d’applications {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
