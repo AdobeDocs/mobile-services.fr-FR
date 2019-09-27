@@ -3,7 +3,7 @@ description: Contactez votre représentant Adobe pour commencer à utiliser Expe
 seo-description: Contactez votre représentant Adobe pour commencer à utiliser Experience Cloud Device Co-op.
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
-uuid: 7 bb 8 a 19 c -4 b 80-4911-879 d-f 9941 baa 3 b 62
+uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,19 +18,19 @@ Afin d’activer les applications mobiles destinées à Experience Cloud Devic
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité requiert le SDK Android version 4.8.3 ou ultérieure.
+>Cette fonctionnalité nécessite le SDK Android version 4.8.3 ou ultérieure.
 
 À partir de la version 4.16.1 du SDK, les membres de Device Co-op peuvent exclure les données de leur appareil mobile de la solution Device Co-op d’Experience Cloud. Pour plus d’informations, voir [Fichier de configuration JSON ADBMobile](/help/android/configuration/json-config/json-config.md) et la méthode `visitorAPI.js` pour [isCoopSafe](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-coopsafe.html).
 
 1. Implémentez le SDK Adobe Mobile.
 
-   Pour plus d'informations, voir [Mise en œuvre principale et Cycle de vie](/help/android/getting-started/dev-qs.md).
+   Pour plus d’informations, voir Mise en oeuvre [principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 1. Activez votre Experience Cloud ID.
 
    For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 1. Transférez les identités authentifiées, par exemple les identifiants de gestion de la relation client ou les courriers électroniques hachés, à l’aide de l’une des méthodes de synchronisation.
 
-   Pour plus d'informations, voir [Méthodes du service d'identité Adobe Experience Platform](/help/android/c-marketing-cloud/mc-methods.md).
+   Pour plus d’informations, voir Méthodes [](/help/android/c-marketing-cloud/mc-methods.md)d’Adobe Experience Platform Identity Service.
 
 ## `coopUnsafe` indicateur
 
