@@ -3,7 +3,7 @@ description: Les postbacks permettent d’envoyer les données collectées par A
 seo-description: Les postbacks permettent d’envoyer les données collectées par Adobe Mobile à un serveur tiers distinct. En utilisant les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer Mobile Services pour envoyer des données personnalisées vers une destination tierce.
 seo-title: Configuration des postbacks
 title: Configuration des postbacks
-uuid: a 026575 c -057 b -4868-b 6 c 8-9514 cbc 32 b 4 d
+uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -16,7 +16,7 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
 
 >[!IMPORTANT]
 >
->Pour utiliser les postbacks, vous devez installer le kit SDK 4.6 ou version ultérieure. Pour plus d’informations, voir [Android - Postbacks](/help/android/analytics-main/postbacks/postbacks.md) ou [iOS - Postbacks](/help/ios/analytics-main/postback/postback.md).
+>Pour utiliser les postbacks, vous devez installer le SDK 4.6 ou version ultérieure. Pour plus d’informations, voir [Android - Postbacks](/help/android/analytics-main/postbacks/postbacks.md) ou [iOS - Postbacks](/help/ios/analytics-main/postback/postback.md).
 
 1. Cliquez sur le nom de l’application souhaitée pour accéder à sa page Gérer les paramètres de l’application, puis cliquez sur le lien **Gérer les postbacks** en haut à droite.
 1. Cliquez sur **[!UICONTROL Créer un postback]**.
@@ -32,15 +32,15 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
 
    * **[!UICONTROL URL]**
 
-      Spécifiez une URL de endpoint de terminaison valide (avec les paramètres de requête appropriés si nécessaire pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point de terminaison). For example `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Spécifiez une URL de point de fin valide (avec les paramètres de requête appropriés, le cas échéant, pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point de terminaison). For example `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Variable contextuelle]**
 
-      Mettez en évidence certaines parties de l’adresse URL et sélectionnez la variable contextuelle souhaitée dans la liste déroulante. Vous pouvez également insérer des variables contextuelles dans l'URL et l'URL remplace toutes les variables de modèle par les valeurs de l'accès.
+      Mettez en évidence certaines parties de l’adresse URL et sélectionnez la variable contextuelle souhaitée dans la liste déroulante. Vous pouvez également insérer des variables contextuelles dans l’URL et l’URL remplace toutes les variables de modèle par les valeurs de l’accès.
 
    * **[!UICONTROL Ajouter un corps de publication]**
 
-      Spécifiez le contenu du corps de publication complémentaire, par exemple dans une requête Post. Si vous spécifiez le texte du corps de publication, indiquez le type de contenu du corps de publication. Par exemple : `application/json`.
+      Spécifiez le contenu du corps de publication complémentaire, par exemple dans une requête Post. Si vous spécifiez le texte du corps de la publication, spécifiez le type de contenu du corps de la publication. Par exemple : `application/json`.
 
    * **[!UICONTROL Délai d’expiration (en secondes)]**
 
