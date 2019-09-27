@@ -1,12 +1,12 @@
 ---
 description: Ces informations peuvent vous aider à télécharger les SDK et les outils de Mobile Services et à mettre en œuvre Mobile Services.
-keywords: mobile ; android ; ios ; sdk
+keywords: mobile;android;ios;sdk
 seo-description: Ces informations peuvent vous aider à télécharger les SDK et les outils de Mobile Services et à mettre en œuvre Mobile Services.
 seo-title: Téléchargement des SDK et des outils Mobile Services
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Téléchargement des SDK et des outils Mobile Services
 topic: Développeur et implémentation, Mesures
-uuid: 4 af 757 f 7-4 e 4 d -4939-9 b 6 a -49 a 29 c 220192
+uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -29,8 +29,8 @@ Vous pouvez télécharger un fichier `ADBMobileConfig.json` qui est personnalis�
 
 Configurez votre application dans Adobe Mobile Services afin de pouvoir télécharger un module personnalisé qui comprend une version prérenseignée du fichier de configuration:
 
-* [Instructions ios](/help/ios/getting-started/requirements.md)
-* [Instructions Android](/help/android/getting-started/requirements.md)
+* [iOS instructions](/help/ios/getting-started/requirements.md)
+* [Android instructions](/help/android/getting-started/requirements.md)
 
-Pour consulter la documentation relative aux bibliothèques natives, dont Windows Phone 8, Blackberry, Xamarin et d'autres exemples, reportez-vous à *la section Documentation* SDK d' [Adobe Mobile Services](/help/using/home.md).
+Pour consulter la documentation des bibliothèques natives, notamment Windows Phone 8, Blackberry, Xamarin et d’autres, reportez-vous à la section Documentation *du* SDK dans [Adobe Mobile Services](/help/using/home.md).
 
