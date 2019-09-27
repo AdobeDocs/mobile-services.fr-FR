@@ -1,12 +1,12 @@
 ---
 description: Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-title: Mise en œuvre principale et cycle de vie
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic: Développeur et mise en œuvre
-uuid: af 4 d 11 ac -8245-46 a 0-9 b 3 a -4 a 0 a 29 cfbbb 2
+uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbb2
 translation-type: tm+mt
 source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
@@ -21,7 +21,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque Android et 
 
 >[!IMPORTANT]
 >
->Pour télécharger le SDK, vous devez utiliser Android 2.2 ou une version ultérieure.
+>To download the SDK, you must use Android 2.2 or later.
 
 1. Suivez les procédures décrites dans les sections ci-après pour configurer une suite de rapports de développement et télécharger une version prérenseignée du fichier de configuration :
 
@@ -30,7 +30,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque Android et 
 
 1. Téléchargez et décompressez le `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` fichier et vérifiez que les composants logiciels suivants existent :
 
-   * `adobeMobileLibrary.jar`, qui est la bibliothèque qui sera utilisée avec les périphériques et simulateurs Android.
+   * `adobeMobileLibrary.jar`, qui est la bibliothèque qui sera utilisée avec les appareils et simulateurs Android.
 
    * `ADBMobileConfig.json` : fichier de configuration du SDK personnalisé pour votre application.
    >[!IMPORTANT]
@@ -39,7 +39,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque Android et 
 
 ## Add the SDK and config file to your IntelliJ IDEA or Eclipse project {#section_B89510FBB4C646AEA73A185B966E54D3}
 
-**Projet intellij IDEA**
+**Projet IntelliJ IDEA**
 
 Pour ajouter le SDK et le fichier de configuration au projet, procédez comme suit :
 
@@ -60,7 +60,7 @@ Pour ajouter le SDK et le fichier de configuration au projet, procédez comme su
 1. Add the `ADBMobileConfig.json` file to the `assets` folder in your project.
 1. In **[!UICONTROL Eclipse IDE]**, right-click the project name.
 1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]**.
-1. Sélectionner `adobeMobileLibrary.jar`.
+1. Select `adobeMobileLibrary.jar`.
 1. Cliquez sur **[!UICONTROL Ouvrir]**.
 1. Right-click the project again and select **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]**.
 1. Dans l’onglet **[!UICONTROL Ordonner et exporter]**, assurez-vous que le fichier **`adobeMobileLibrary.jar`est sélectionné.**
@@ -81,7 +81,7 @@ Pour ajouter ces autorisations, ajoutez les lignes suivantes au fichier `Android
 
 ## Set the application context {#set-application-context}
 
-Le code suivant doit être ajouté à `onCreate` la méthode de votre activité principale :
+Le code suivant doit être ajouté à la `onCreate` méthode de votre activité principale :
 
 ```java
    @Override
@@ -125,9 +125,9 @@ Une fois que vous avez activé le cycle de vie, chaque fois que l’application 
 
 >[!IMPORTANT]
 >
->Vous devez ajouter ces appels à chaque activité afin de garantir des rapports de plantage précis. Pour plus d'informations, voir [Suivi des blocages d'application](/help/android/analytics-main/crashes.md).
+>Vous devez ajouter ces appels à chaque activité pour garantir la précision des rapports de plantage. Pour plus d’informations, voir [Suivi des blocages](/help/android/analytics-main/crashes.md)d’application.
 
-## Inclure des données supplémentaires avec des appels de cycle de vie
+## Inclure des données supplémentaires avec les appels de cycle de vie
 
 Pour inclure des données supplémentaires aux appels de mesures de cycle de vie, transmettez un paramètre supplémentaire à `collectLifecycleData` qui contient les données contextuelles :
 
