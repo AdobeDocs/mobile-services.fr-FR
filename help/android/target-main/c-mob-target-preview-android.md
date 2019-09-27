@@ -3,7 +3,7 @@ description: Target Preview permet d’effectuer facilement un contrôle qualit
 seo-description: Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
 seo-title: Target Preview sous Android
 title: Target Preview sous Android
-uuid: f 3 c 82 d 64-009 c -4929-a 5 e 6-3677 b 2977889
+uuid: f3c82d64-009c-4929-a5e6-3677b2977889
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -18,7 +18,7 @@ Pour plus d’informations sur la configuration et l’utilisation de Target Pr
 
 >[!IMPORTANT]
 >
->Pour utiliser l'aperçu de Target, vous avez besoin de SDK version 4.14.0 ou ultérieure.
+>Pour utiliser Target Preview, vous devez disposer du SDK version 4.14.0 ou ultérieure.
 
 * **setPreviewRestartDeeplink**
 
