@@ -1,10 +1,10 @@
 ---
-description: Cette rubrique fournit des informations sur la résolution des problèmes que vous pourriez rencontrer lors du test de l'acquisition.
-keywords: android ; library ; mobile ; sdk
-seo-description: Cette rubrique fournit des informations sur la résolution des problèmes que vous pourriez rencontrer lors du test de l'acquisition.
-seo-title: Résolution des problèmes liés aux tests d'acquisition
-solution: Marketing Cloud, Analytics
-title: Résolution des problèmes liés aux tests d'acquisition
+description: This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
+keywords: android;library;mobile;sdk
+seo-description: This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
+seo-title: Troubleshoot Acquisition testing
+solution: Marketing Cloud,Analytics
+title: Troubleshoot Acquisition testing
 topic: Développeur et mise en œuvre
 translation-type: tm+mt
 source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
@@ -12,19 +12,19 @@ source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
 ---
 
 
-# Résolution des problèmes liés aux tests d'acquisition {#troubleshoot-acquisition-testing}
+# Troubleshoot Acquisition testing {#troubleshoot-acquisition-testing}
 
-Cette rubrique fournit des informations sur la résolution des problèmes que vous pourriez rencontrer lors du test de l'acquisition.
+This topic provides information about how to troubleshoot issues you might face during Acquisition testing.
 
-* S'il n'est pas spécifié autrement, le fichier adbmobileconfig. json doit être placé dans `assets` le dossier.
+* If not otherwise specified, the ADBMobileConfig.json file should be placed in the  folder.`assets`
 
-   Le nom est sensible à la casse ; n'utilisez donc pas de lettres majuscules ou minuscules.
+   The name is case sensitive, so do not use upper or lower case letters.
 
-* Vérifiez que `Config.setContext(this.getApplicationContext())` l'appel est effectué à partir de votre activité principale.
+* Assurez-vous que `Config.setContext(this.getApplicationContext())` l’appel est effectué à partir de votre activité principale.
 
-   Pour plus d'informations, voir [Méthodes de configuration](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html).
+   For more information, see Configuration methods.[](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)
 
-* Assurez-vous que les autorisations requises pour le kit SDK Mobile sont présentes dans `AndroidManifest.xml` le fichier :
+* Ensure that the required permissions for the Mobile SDK are present in the  file:`AndroidManifest.xml`
 
    ```html
    <manifest ..>
@@ -34,11 +34,11 @@ Cette rubrique fournit des informations sur la résolution des problèmes que vo
    </manifest>
    ```
 
-* Si le `referrerTimeout` paramètre est défini sur 5 dans le fichier admobileconfig. json, vous devez envoyer l'intention d'installation dans un délai de 5 secondes après avoir installé et lancé pour la première fois les informations de référent ajoutées à l'accès à l'installation.
+* Si le paramètre `referrerTimeout` est défini sur 5 dans le fichier ADMobileConfig.json, vous devez envoyer le mode d’installation dans un délai de 5 secondes après l’installation et le lancement de l’application pour la première fois afin que les informations du référent soient ajoutées à l’accès à l’installation.
 
-   Pour des tests manuels, nous vous recommandons d'augmenter `referrerTimeout` le délai de 10 à 15 secondes afin d'avoir suffisamment de temps pour envoyer les informations du référent avant le traitement de l'accès à l'installation.
+   For manual testing, we recommend that you increase the  to 10-15 seconds, so that you have sufficient time to send the referrer information before the install hit is processed.`referrerTimeout`
 
-* Exécutez toutes les étapes de [Test de l'acquisition des liens marketing](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) et assurez-vous d'exécuter la `adb shell` commande d'abord, puis les éléments suivants :
+* Run all the steps in Testing Marketing Link acquisition and ensure that you execute the  command first and then the following:[](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html)`adb shell`
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"
@@ -46,5 +46,5 @@ Cette rubrique fournit des informations sur la résolution des problèmes que vo
 
 >[!IMPORTANT]
 >
->Pour traiter correctement le mode de référent, vous devez exécuter ces deux commandes indépendamment. Sinon `adb` , double d'échappement les informations du référent et les données reçues par le destinataire de la diffusion seront incomplètes.
+>To process the referrer intent correctly, you must run these two commands independently. Otherwise  will double escape the referrer information and the data received by the broadcast receiver will be incomplete.`adb`
 
