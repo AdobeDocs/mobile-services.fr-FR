@@ -3,7 +3,7 @@ description: Target Preview permet d’effectuer facilement un contrôle qualit
 seo-description: Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
 seo-title: Target Preview sous iOS
 title: Target Preview sous iOS
-uuid: d 92867 a 4-0569-4732-a 928-28 f 9 e 2 f 8 b 21 e
+uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,9 +18,9 @@ For more information on how to set up and use Target Preview, see [Target Mobile
 
 >[!IMPORTANT]
 >
->Pour utiliser l'aperçu de Target, vous avez besoin de SDK version 4.14.0 ou ultérieure.
+>Pour utiliser Target Preview, vous devez disposer du SDK version 4.14.0 ou ultérieure.
 
-## Méthode d'aperçu cible
+## Méthode d’aperçu de Target
 
 * **setPreviewRestartDeeplink**
 
