@@ -1,32 +1,32 @@
 ---
-description: Voici les méthodes Adobe Experience Platform Identity Service fournies par la bibliothèque ios.
-seo-description: Voici les méthodes Adobe Experience Platform Identity Service fournies par la bibliothèque ios.
-seo-title: Méthodes du service d'identité Adobe Experience Platform
-solution: Marketing Cloud, Analytics
-title: Méthodes du service d'identité Adobe Experience Platform
+description: Voici les méthodes du service d’identité Adobe Experience Platform fournies par la bibliothèque iOS.
+seo-description: Voici les méthodes du service d’identité Adobe Experience Platform fournies par la bibliothèque iOS.
+seo-title: Adobe Experience Platform Identity Service methods
+solution: Marketing Cloud,Analytics
+title: Adobe Experience Platform Identity Service methods
 topic: Développeur et mise en œuvre
-uuid: cdd 307 bc -8 b 7 d -47 a 8-b 77 e -00902 b 9 e 2968
+uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 ---
 
 
-# Méthodes du service d'identité Adobe Experience Platform {#experience-cloud-id-service-methods}
+# Méthodes d’Adobe Experience Platform Identity Service {#experience-cloud-id-service-methods}
 
-Voici les méthodes Adobe Experience Platform Identity Service fournies par la bibliothèque ios.
+Here are the Adobe Experience Platform Identity Service methods that are provided by the iOS library.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification des visiteurs d’Experience Cloud.
 
 Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. Pour plus d’informations, voir [Activation de l’Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(NSURL NSURL)`*`visitorappendtourl : (NSURL NSURL)`*`;**
+* **`+`(NSURL nullable`*`)visitorAppendToURL:(NSURL nullable`*`)url;**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer du kit Mobile SDK version 4.12 ou ultérieure. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. To use this method, you must have Mobile SDK version 4.12 or higher. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
 
    >[!IMPORTANT]
    >
-   >Cette méthode peut entraîner un blocage réseau de blocage. N’appelez pas cette méthode pour des fils soumis à des contraintes de temps.
+   >Cette méthode peut provoquer un appel réseau de blocage. N’appelez pas cette méthode pour des fils soumis à des contraintes de temps.
 
    * Input: `URL<NSURL>`
 A required URL string that the visitor information will be appended to.
@@ -136,9 +136,9 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
       NSArray *myVisitorIDs = [ADBMobile visitorGetIDs];
       ```
 
-* **Visitorgeturlvariablesasync**
+* **visitorgetUrlVariablesAsync**
 
-   Introduit dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée qui contient les variables URL du service d'identification des visiteurs. Pour plus d'informations sur la manière dont cette méthode est utilisée, voir [Méthodes du service d'identité Adobe Experience Platform](/help/ios/reference/hybrid-app.md).
+   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. For more information about how this method is used, see Adobe Experience Platform Identity Service methods.[](/help/ios/reference/hybrid-app.md)
 
    * Voici la syntaxe de cette méthode :
 
