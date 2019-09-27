@@ -3,10 +3,10 @@ description: Lorsque vous personnalisez des rapports, la grande flexibilité qui
 keywords: mobiles
 seo-description: Lorsque vous personnalisez des rapports, la grande flexibilité qui s’offre à vous peut rendre plus complexe le choix du type de rapport adapté à la collecte des données dont vous avez besoin.
 seo-title: Types de rapports
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Types de rapports
 topic: Rapports, Mesures
-uuid: 8747 b 11 e -31 b 1-47 bc-ad 55-db 5 ab 4 ef 7078
+uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,11 +21,11 @@ Avant de personnaliser des rapports, vous devez comprendre la différence entre 
 
 * Mesure
 
-   Une mesure sert à mesurer vos données. Les mesures sont des valeurs qui peuvent être comptabilisées et ajoutées. Elles servent à déterminer la fréquence d’actions spécifiques dans votre application. Les mesures courantes comprennent les installations, les lancements, les recettes, les valeurs de durée de vie et les connexions. Par exemple, à chaque lancement de votre application, la valeur _ launches_ value est augmenté d'un.
+   Une mesure sert à mesurer vos données. Les mesures sont des valeurs qui peuvent être comptabilisées et ajoutées. Elles servent à déterminer la fréquence d’actions spécifiques dans votre application. Les mesures courantes comprennent les installations, les lancements, les recettes, les valeurs de durée de vie et les connexions. Par exemple, à chaque lancement de votre application, la valeur _launches_value est augmenté de 1.
 
 * Dimension
 
-   Une dimension sert à décrire vos données. Les dimensions sont représentées par une chaîne ou un nombre qui joue le rôle d'une chaîne (telle qu'un code postal) qui sert à organiser et segmenter vos données. Les dimensions courantes comprennent la version du système d’exploitation, le nom de la campagne, le nom du produit et l’opérateur de téléphonie mobile. Chaque dimension est associée à des valeurs spécifiques. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   Une dimension sert à décrire vos données. Les dimensions sont représentées à l’aide d’une chaîne ou d’un nombre qui agit comme une chaîne (par exemple, un code postal) et qui est utilisé pour organiser et segmenter vos données. Les dimensions courantes comprennent la version du système d’exploitation, le nom de la campagne, le nom du produit et l’opérateur de téléphonie mobile. Chaque dimension est associée à des valeurs spécifiques. For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
 
 Voici les types de rapports que vous pouvez générer dans l’interface utilisateur d’Adobe Mobile :
 
