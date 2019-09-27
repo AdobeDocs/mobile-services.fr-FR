@@ -3,7 +3,7 @@ description: Vous pouvez exploiter Adobe Target dans vos applications TVML/TVJS
 seo-description: Vous pouvez exploiter Adobe Target dans vos applications TVML/TVJS en effectuant des remplacements directs dans vos fichiers .xml. Indiquez les zones de votre page à remplacer par du contenu Target en utilisant l’élément XML ADBTarget personnalisé.
 seo-title: Adobe Target pour TVML/TVJS
 title: Adobe Target pour TVML/TVJS
-uuid: afd 5 a 583-5266-43 f 2-8 cb 0-0 ace 89 c 53 a 57
+uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -16,7 +16,7 @@ Vous pouvez exploiter Adobe Target dans vos applications TVML/TVJS en effectuan
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. Pour plus d'informations, voir [Mise en œuvre Apple TV avec tvos](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
+>Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. For more information, see Apple TV Implementation with tvOS.[](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
 
 ## Prise en main {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -30,11 +30,11 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
 >[!TIP]
 >
->Planifiez ce que vous souhaitez remplacer en conséquence.
+>Vous devriez planifier ce que vous voulez remplacer en conséquence.
 
 Votre cas peut se résumer à un simple remplacement de la valeur de chaîne dans une balise ou impliquer une opération plus complexe, comme le remplacement d’une page entière.
 
-## Configuration de l'élément adbtarget {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## Configure your ADBTarget element {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
 Indiquez le nom de dans la propriété `ADBTarget`mbox de l’élément `mbox`. You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
 
@@ -42,56 +42,56 @@ Indiquez le nom de dans la propriété `ADBTarget`mbox de l’élément `mbox`. 
 
    Nom de l’emplacement de la mbox.
 
-   * Type de propriété : Chaîne
-   * Cette propriété est obligatoire.
+   * Property type: String
+   * This property is required.
 
 * **`id`**
 
-   ID de commande.
+   The Order ID.
 
-   * Type de propriété : Chaîne
-   * Cette propriété **n** 'est pas obligatoire.
+   * Property type: String
+   * This property is not required.****
 
 * **`total`**
 
-   Total de la commande.
+   The order total.
 
-   * Type de propriété : Chaîne
-   * Cette propriété **n** 'est pas obligatoire.
+   * Property type: String
+   * Cette propriété **n’est pas** requise.
 
 * **`purchasedProductIds`**
 
    Liste séparée par des virgules des identifiants de produit pour cette commande.
 
-   * Voici l'exemple de code de cette propriété :
+   * Voici l’exemple de code de cette propriété :
 
 
       ```objective-c
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * Type de propriété : Chaîne
-   * Cette propriété **n** 'est pas obligatoire.
+   * Property type: String
+   * Cette propriété **n’est pas** requise.
 
 * **`mboxParameters`**
 
-   Liste de paires clé-valeur pour `mboxParameters`. Chaque entrée de cette chaîne est séparée par un point-virgule et les valeurs clés sont séparées par deux points.
+   Liste de paires clé-valeur pour `mboxParameters`. Chaque entrée de cette chaîne est séparée par un point-virgule et les valeurs-clés par un deux-points.
 
-   * Voici l'exemple de code de cette propriété :
+   * Voici l’exemple de code de cette propriété :
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
    * Type de propriété : Chaîne
-   * Cette propriété **n** 'est pas obligatoire.
+   * Cette propriété **n’est pas** requise.
 
 * **`customParameterName`**
 
    La valeur de cette propriété est `customParameterValue`.
 
    * Type de propriété : Chaîne
-   * Cette propriété **n** 'est pas obligatoire.
+   * Cette propriété **n’est pas** requise.
 
 
 ## Exemples {#section_6D6D6E8C7FE147168FC30D83CBC06985}
