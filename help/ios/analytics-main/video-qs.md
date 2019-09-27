@@ -2,10 +2,10 @@
 description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 seo-description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 seo-title: 'Chemin '
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: 'Chemin '
 topic: Développeur et mise en œuvre
-uuid: d 75 fa 415-78 f 6-4 f 50-a 563-76949 f 040138
+uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,13 +18,13 @@ Cette section contient des informations sur la mesure des vidéos sous iOS au mo
 
 >[!TIP]
 >
->Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d'informations, voir [Mesure audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesure des données audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
 Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Cette section donne une vue d’ensemble des tâches du développeur et fournit des exemples de code.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez les règles de traitement pour mapper les données contextuelles à une variable Analytics.
+Le tableau suivant répertorie les données multimédias envoyées à Analytics. Use processing rules to map the context data to an Analytics variable.
 
 * **a.media.name**
 
@@ -32,7 +32,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Facultatif) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
 
-   * Type de variable : Evar
+   * Variable type: eVar
    * Délai d’expiration par défaut : Visite
    * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
 
@@ -40,7 +40,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Facultatif) Fournit des informations de cheminement vidéo. Le cheminement doit être activé par le service à la clientèle pour cette variable.
 
-   * Type de variable : Custom Insight (s. prop)
+   * Type de variable : Custom Insight (s.prop)
    * Type d’événement : Insight personnalisé (s.prop)
 
 * **a.media.segment**
@@ -54,7 +54,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
    * fin de la vidéo (arrêt)
    Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
 
-   * Type de variable : Evar
+   * Variable type: eVar
    * Délai d’expiration par défaut : page vue
 
 
@@ -62,7 +62,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Collecte les données sur le type de contenu affiché par un visiteur. Les envois d’accès par mesures vidéo se voient attribuer un type de contenu `video`. Cette variable ne doit pas être exclusivement réservée au suivi vidéo. Les autres types de contenu des rapports de contenu utilisant la même variable vous permettent d’analyser la distribution des visiteurs par rapport aux différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
 
-   * Type de variable : Evar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
 
 * **a.media.timePlayed**
@@ -76,7 +76,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardé (ni la partie visionnée).
 
-   * Type de variable : Evénement
+   * Variable type: Event
    * Type : compteur
 
 * **a.media.segmentView**
