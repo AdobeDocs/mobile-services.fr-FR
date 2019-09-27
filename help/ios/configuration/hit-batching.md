@@ -2,10 +2,10 @@
 description: Le traitement par lot des accès permet aux applications dont le suivi hors ligne est activé de bloquer l’envoi d’accès tant que le nombre d’accès de la file d’attente n’a pas dépassé une limite configurable.
 seo-description: Le traitement par lot des accès permet aux applications dont le suivi hors ligne est activé de bloquer l’envoi d’accès tant que le nombre d’accès de la file d’attente n’a pas dépassé une limite configurable.
 seo-title: Traitement par lot des accès
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Traitement par lot des accès
 topic: Développeur et mise en œuvre
-uuid: 3 dda 7372-0695-4 cb 7-b 779-6 abca 2 d 6 e 0 d 9
+uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Le traitement par lot des accès permet aux applications dont le suivi hors lign
 
 >[!IMPORTANT]
 >
->Le traitement par lot des accès nécessite le SDK version 4.1 ou ultérieure.
+>Le traitement par lot d’accès requiert le SDK version 4.1 ou ultérieure.
 
 To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
 
