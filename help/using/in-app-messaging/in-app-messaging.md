@@ -3,10 +3,10 @@ description: Créez et gérez les messages in-app et push, puis créez des rappo
 keywords: mobile
 seo-description: Créez et gérez les messages in-app et push, puis créez des rapports sur ces derniers.
 seo-title: Messagerie
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Messagerie
 topic: Mesures
-uuid: e 32 d 3 e 35-2 d 09-4 ddf -8919-75 dc 895 abcb 3
+uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -15,7 +15,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 # Messagerie {#messaging}
 
-Vous pouvez créer, gérer et créer des rapports sur les messages in-app et push.
+Vous pouvez créer, gérer et générer des rapports sur les messages in-app et push.
 
 ## Nouvelle mise à jour du SDK Adobe Experience Cloud
 
@@ -41,12 +41,12 @@ Les types de messages suivants sont pris en charge :
 * Alertes natives
 * Notifications locales
 
-Voici quelques informations supplémentaires :
+To help you understand how in-app messaging works, here is some additional information:
 
-* Les messages in-app nécessitent le SDK version 4.2 ou ultérieure.
-* Vous devez indiquer qui possède les droits d'administrateur des applications mobiles.
+* In-app messages require SDK version 4.2 or later.
+* You must specify who has Mobile App Admin rights.
 
-   Ces droits permettent d'accéder aux liens d'acquisition et aux messages in-app. Pour plus d'informations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
+   Ces droits permettent d’accéder aux liens d’acquisition et aux messages in-app. For more information, see Roles and permissions.[](/help/using/gs/c-mob-roles-and-permissions.md)
 * Une fois un message approuvé, il est publié automatiquement dans l’application.
 * Le SDK présente le message aux utilisateurs lorsque les paramètres du message (caractéristiques, déclencheur et planification) sont satisfaits.
 * Les messages peuvent contenir du code HTML personnalisé ou une image, en utilisant une URL en ligne.
@@ -59,4 +59,4 @@ Voici quelques informations supplémentaires :
 
 Les messages push sont envoyés aux utilisateurs qui ont accepté de recevoir des notifications. Vous pouvez cibler ces messages push envoyés aux utilisateurs dans les segments d’Analytics ou des segments personnalisés. Vous pouvez utiliser des messages push pour remotiver des utilisateurs passifs ou transmettre des informations temporelles et géographiques précises, car les messages s’affichent en dehors de votre application.
 
-Avant de pouvoir configurer la messagerie Push, reportez-vous à [la section Conditions préalables pour activer la messagerie Push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). Après avoir accompli ces tâches, vous devez configurer la messagerie push dans les paramètres de votre application. For more information, see [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Before you can configure push messaging, see Prerequisites to enable push messaging. [](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md) Après avoir accompli ces tâches, vous devez configurer la messagerie push dans les paramètres de votre application. For more information, see [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
