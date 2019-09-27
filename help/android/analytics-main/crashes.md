@@ -2,10 +2,10 @@
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-title: Suivi des blocages d’application
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Développeur et mise en œuvre
-uuid: 3 ab 98 c 14-ccdf -4060-ad 88-ec 07 c 1 c 6 bf 07
+uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ Ces informations vous aident à comprendre le mode de suivi des blocages ainsi q
 
 >[!TIP]
 >
->Les blocages d'application font l'objet d'un suivi dans le cadre des mesures de cycle de vie. Avant de pouvoir effectuer le suivi des blocages, ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie. Pour plus d'informations, voir *Ajout du SDK et du fichier Config à votre projet intellij IDEA ou Eclipse* dans [l'implémentation principale et le cycle de vie](/help/android/getting-started/dev-qs.md).
+>Les blocages d’application sont suivis dans le cadre des mesures de cycle de vie. Avant de pouvoir effectuer le suivi des blocages, ajoutez la bibliothèque à votre projet et mettez en oeuvre le cycle de vie. For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 Lors de la mise en œuvre des mesures de cycle de vie, un appel est effectué à `Config.collectLifecycleData` dans la méthode `OnResume` de chaque activité. In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur le cycle de vie des activités Android, voir [Act
 
    >[!TIP]
    >
-   >Vous pouvez éviter ce blocage en arrière-plan de l'application avant de procéder à une nouvelle exécution depuis l'IDE.
+   >Vous pouvez éviter ce blocage en mettant l’application en arrière-plan avant de lancer à nouveau à partir de l’IDE.
 
 1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
 
@@ -48,9 +48,9 @@ Les fragments disposent d’événements de cycle de vie des applications simila
 
 >[!IMPORTANT]
 >
->Vous devez vous fier aux événements de cycle de vie auxquels les activités qui contiennent peuvent exécuter votre code. Cet aspect est géré par l’affichage parent du fragment.
+>You need to rely on the lifecycle events against which the containing activities can run your code. Cet aspect est géré par l’affichage parent du fragment.
 
-## (Facultatif) Implémentation des rappels de cycle de vie d'activité
+## (Facultatif) Mise en oeuvre des rappels de cycle de vie des activités
 
 À compter du niveau 14 de l’API, Android autorise les rappels globaux de cycle de vie pour les activités. For more information, see [Application](https://developer.android.com/reference/android/app/Application).
 
