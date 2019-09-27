@@ -2,7 +2,7 @@
 description: Notes de mise à jour et problèmes connus du SDK Android 4.x pour les solutions Experience Cloud.
 seo-description: Notes de mise à jour et problèmes connus du SDK Android 4.x pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
-solution: Marketing Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Développeur et mise en œuvre
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
@@ -14,13 +14,13 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 # Notes de mise à jour {#release-notes}
 
-Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour le SDK Android 4.x pour les solutions Experience Cloud :
+Here is the release notes, known issues, and hot fix information for Android SDK 4.x for Experience Cloud Solutions:
 
-**20 septembre 2019 : Version 4.17.10**
+**September 20, 2019: Version 4.17.10**
 
-* Général : Correction de la génération de chaînes de paramètres régionaux pour certaines régions sur l’API Android de niveau 21 ou plus récent.
+* General: Fixed locale string generation for some regions on Android API level 21 or newer.
 
-**18 juillet 2019 : Version 4.17.8**
+**July 18, 2019: Version 4.17.8**
 
 * Adobe Target : Toutes les requêtes incluent désormais le client et l’ID de session dans les paramètres de requête d’URL.
 * Messagerie In-App : correction d’un problème en raison duquel les applications Android se bloquaient lorsqu’un message était déclenché avec une URL de taux de clics vide.
@@ -28,7 +28,7 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
    Le double codage entraînait le marquage des valeurs renvoyées de ces API par certaines révisions de sécurité.
 
-**6 juin 2019 : Version 4.17.7**
+**June 6, 2019: Version 4.17.7**
 
 * Général - Les appels de mise en réseau sur les niveaux d'API Android inférieurs à 20 utilisent désormais TLS 1.1 ou TLS 1.2.
 * Analytics - Ajout de l’état d’inclusion Push aux données de cycle de vie lorsque les notifications Push sont activées.
