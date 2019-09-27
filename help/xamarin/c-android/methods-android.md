@@ -3,9 +3,9 @@ description: Méthodes Android pour les composants Xamarin pour le SDK 4.x des 
 keywords: Xamarin
 seo-description: Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 seo-title: Méthodes Android
-solution: Marketing Cloud, développeur
+solution: Marketing Cloud,Developer
 title: Méthodes Android
-uuid: 860 af 1 c 4-f 57 e -4 bcb -8308-4 e 316 da 9 a 27 b
+uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,9 +18,9 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 ## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
-* **Debuglogging**
+* **DebugLogging**
 
-   Renvoie la préférence de consignation de débogage actuelle et la valeur par défaut est false.
+   Returns the current debug logging preference, and the default is false.
 
    * Voici la syntaxe de cette méthode :
 
@@ -75,7 +75,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **UserIdentifier**
 
-   Si un identifiant personnalisé a été défini, renvoie cet identifiant. Si un identifiant personnalisé n'est pas défini, renvoie null. La valeur par défaut est `null`.
+   If a custom identifier has been set, returns this identifier. Si aucun identifiant personnalisé n’est défini, renvoie null. La valeur par défaut est `null`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -176,7 +176,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 ou version ultérieure) Définit la grande icône utilisée pour les notifications créées par le SDK. Cette icône est l'image principale affichée lorsque l'utilisateur voit la notification complète dans le centre de notification.
+   (4.2 or later) Sets the large icon that is used for notifications created by the SDK. Cette icône est l’image principale qui s’affiche lorsque l’utilisateur voit la notification complète dans le centre de notification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -192,7 +192,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 ou version ultérieure) Définit la petite icône utilisée pour les notifications créées par le SDK. Cette icône s'affiche dans la barre d'état et est l'image secondaire affichée lorsque l'utilisateur voit la notification complète dans le centre de notification.
+   (4.2 ou version ultérieure) Définit la petite icône utilisée pour les notifications créées par le SDK. This icon displays in the status bar and is the secondary image shown when the user sees the complete notification in the notification center.
 
    * Voici la syntaxe de cette méthode :
 
@@ -210,7 +210,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **TrackingIdentifier**
 
-   Renvoie l’identifiant automatiquement généré pour Analytics. Il s'agit d'un identifiant unique spécifique à l'application généré au lancement initial et stocké et utilisé à partir de ce moment. Cet ID est conservé entre les mises à niveau de l'application et est supprimé à la désinstallation.
+   Renvoie l’identifiant automatiquement généré pour Analytics. Il s’agit d’un identifiant unique spécifique à l’application qui est généré au lancement initial et stocké et utilisé à partir de ce moment. Cet ID est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
 
    * Voici la syntaxe de cette méthode :
 
@@ -230,7 +230,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
    >[!TIP]
    >
-   >Il s'agit du seul appel de suivi qui incrémente les pages vues.
+   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
@@ -354,7 +354,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Here is code sample for this method:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -424,7 +424,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SendQueuedHits**
 
-   Force la bibliothèque à envoyer tous les accès dans la file d'attente hors ligne, quel que soit le nombre d'accès mis en file d'attente.
+   Force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne, quel que soit le nombre d’accès en file d’attente.
 
    * Voici la syntaxe de cette méthode :
 
@@ -456,7 +456,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **QueueSize**
 
-   Récupère le nombre d'accès actuellement présents dans la file d'attente hors ligne.
+   Récupère le nombre d’accès actuellement dans la file d’attente hors ligne.
 
    * Voici la syntaxe de cette méthode :
 
@@ -551,7 +551,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **CreateOrderConfirmRequest**
 
-   Crée une `ADBTargetLocationRequest`.
+   Creates an `ADBTargetLocationRequest`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -567,7 +567,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **ClearCookies**
 
-   Efface les cookies Target de votre application.
+   Clears Target cookies from your app.
 
    * Voici la syntaxe de cette méthode :
 
@@ -633,7 +633,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **AudienceSetDpidAndDpuuid**
 
-   Définit `dpid` la valeur et `dpuuid`. If `dpid` and `dpuuid` are set, they are sent with each signal.
+   Sets the  and . `dpid``dpuuid` If `dpid` and `dpuuid` are set, they are sent with each signal.
 
    * Voici la syntaxe de cette méthode :
 
@@ -691,7 +691,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 ## Vidéo {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Pour plus d'informations sur les analyses vidéo, voir [Analyses vidéo](/help/android/analytics-main/video-qs.md).
+For more information about Video Analytics, see Video Analytics.[](/help/android/analytics-main/video-qs.md)
 
 * **MediaSettings**
 
@@ -727,7 +727,7 @@ Pour plus d'informations sur les analyses vidéo, voir [Analyses vidéo](/help/a
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
       ```
 
-* **Open**
+* **Open (Ouvrir)**
 
    Ouvre un objet `ADBMediaSettings` pour le suivi.
 
