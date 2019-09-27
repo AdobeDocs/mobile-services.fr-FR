@@ -2,7 +2,7 @@
 description: Notes de mise à jour et problèmes connus des SDK iOS 4.x pour les solutions Experience Cloud.
 seo-description: Notes de mise à jour et problèmes connus des SDK iOS 4.x pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
-solution: Marketing Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Développeur et mise en œuvre
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
@@ -29,11 +29,11 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 **2 août 2019 : Version 4.18.7**
 
-* Reprise d’une modification introduite dans la version 4.18.6, qui, dans certains environnements, provoquait un blocage sur les périphériques exécutant une version iOS antérieure à 11.0.
+* Reverted a change that was introduced in version 4.18.6 which, in some environments, caused a crash on devices that were running an iOS version older than 11.0.
 
-* Adobe Target : Ajout de la `requestLocationParameters` propriété dans `ADBTargetRequestObject`, qui permet l’envoi de l’ID d’impression avec les requêtes Target.
+* Adobe Target: Added the  property in , which enables the impressionId to be sent with Target requests.`requestLocationParameters``ADBTargetRequestObject`
 
-**18 juillet 2019 : Version 4.18.6**
+**July 18, 2019: Version 4.18.6**
 
 * Adobe Target : toutes les demandes comprennent désormais le client et `sessionId` dans les paramètres de requête d’URL.
 * Adobe Target : correction d’une fuite de mémoire.
@@ -43,13 +43,13 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 **5 juin 2019 : Version 4.18.5**
 
-* Analytics - Ajoutez l’état d’inclusion Push aux données de cycle de vie lorsque les notifications Push sont activées.
+* Analytics - Append push opt-in status to Lifecycle data when push notifications are enabled.
 
-**24 mai 2019 : Version 4.18.4**
+**May 24, 2019: Version 4.18.4**
 
-* Service d’identification des visiteurs - Augmentation du délai d’expiration des retours pour la variable
-   `visitorGetUrlVariablesAsync` API à 30 secondes.
+* Visitor ID Service - Increased the return timeout for the
+   `visitorGetUrlVariablesAsync` API to 30 seconds.
 
-* Service d’identification des visiteurs : l’appel `setPushIdentifier` API envoie désormais un appel de synchronisation au service d’identification des visiteurs à chaque appel.
+* Visitor ID Service - The  API call now sends a sync call to the Visitor ID Service every time it is called.`setPushIdentifier`
 
 Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
