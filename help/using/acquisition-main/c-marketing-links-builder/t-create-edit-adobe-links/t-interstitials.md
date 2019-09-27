@@ -3,10 +3,10 @@ description: Vous pouvez orienter les utilisateurs vers une destination donnée 
 keywords: mobile
 seo-description: Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications).
 seo-title: Spots
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Spots
 topic: Mesures
-uuid: 7 dce 8 ab 2-2 a 5 d -4384-ac 1 e-e 31 dfaa 33654
+uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -17,11 +17,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications). Il est préférable de laisser aux utilisateurs le choix de leur destination. Les marketeurs peuvent configurer une page de spots qui présente aux utilisateurs les destinations possibles.
 
-Pour configurer un spot en création d'un lien marketing :
+Pour configurer un spot en création d’un lien marketing :
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]**.
 
-   ![Spot de lien profond](assets/interstitial2.png)
+   ![Interstitiel de lien profond](assets/interstitial2.png)
 
 1. Renseignez les champs suivants :
 
@@ -29,7 +29,7 @@ Pour configurer un spot en création d'un lien marketing :
 
       Sélectionnez votre page HTML de spots personnalisés.
 
-      En utilisant des spots personnalisés, les marketeurs peuvent personnaliser les pages d'entrée de spots à l'aide de code HTML/CSS/JS personnalisé, ce qui vous permet de personnaliser vos pages.
+      En utilisant des spots personnalisés, les spécialistes du marketing peuvent personnaliser les pages d’entrée interstitielles à l’aide de code HTML/CSS/JS personnalisé, ce qui vous permet de personnaliser vos pages.
 
       Voici les exigences relatives à la page HTML :
 
@@ -41,7 +41,7 @@ Pour configurer un spot en création d'un lien marketing :
 
          >[!TIP]
          >
-         >Si vous téléchargez du code HTML personnalisé, les quatre autres options de ce tableau ne seront pas utilisées, sauf si vous supprimez le fichier téléchargé.
+         >Si vous transférez du code HTML personnalisé, les quatre autres options du tableau ne seront pas utilisées, sauf si vous supprimez le fichier téléchargé.
    * **[!UICONTROL URL d’image]**
 
       Spécifiez l’URL vers un fichier image.
