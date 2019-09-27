@@ -1,12 +1,12 @@
 ---
 description: Les postbacks permettent d’envoyer vers un serveur tiers des données collectées par le SDK. En utilisant les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
-keywords: android ; library ; mobile ; sdk
+keywords: android;library;mobile;sdk
 seo-description: Les postbacks permettent d’envoyer vers un serveur tiers des données collectées par le SDK. En utilisant les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
 seo-title: Postbacks
-solution: Marketing Cloud, Analytics
+solution: Marketing Cloud,Analytics
 title: Présentation des postbacks
 topic: Développeur et mise en œuvre
-uuid: 8 bfd 4374-2767-421 d -891 d-e 1 e 9 a 99 b 6977
+uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
 translation-type: tm+mt
 source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
 
@@ -19,7 +19,7 @@ Les postbacks permettent d’envoyer vers un serveur tiers des données collect�
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité requiert le SDK version 4.6.0 ou ultérieure.
+>This functionality requires SDK version 4.6.0 or later.
 
 Les messages postback sont placés en file d’attente et suivent toutes les règles en ligne/hors ligne existantes qui régissent la collecte des données d’analyse. Lorsqu’un message correspond (comme c’est le cas des messages affichés), les messages postback n’annulent pas le reste des messages. Cela permet à plusieurs postbacks de se produire sur le même accès Analytics. Pour consulter une définition, voir la ligne *postbacks* dans la section [Fichier de configuration JSON ADBMobile](/help/android/configuration/json-config/json-config.md).
 
