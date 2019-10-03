@@ -7,7 +7,7 @@ title: Mise en œuvre principale et cycle de vie
 topic: Développeur et mise en œuvre
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
+source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
@@ -24,7 +24,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à c
 
 **Condition requise**
 
-Avant de télécharger le SDK, suivez les étapes de la section *Création d’une suite* de rapports dans l’implémentation et le cycle de vie [](/help/ios/getting-started/requirements.md) principaux pour configurer une suite de rapports de développement et télécharger une version préremplie du fichier de configuration.
+Before you download the SDK, complete the steps in *Create a Report Suite* in [Core implementation and lifecycle](/help/ios/getting-started/requirements.md) to set up a development report suite and download a pre-populated version of the configuration file.
 
 Pour télécharger le kit SDK :
 
@@ -32,7 +32,7 @@ Pour télécharger le kit SDK :
 
    * `ADBMobile.h` : fichier d’en-tête Objective-C utilisé par AppMeasurement pour iOS.
    * `ADBMobileConfig.json` : fichier de configuration du SDK personnalisé pour votre application.
-   * `AdobeMobileLibrary.a`, a bitcode-enabled fat binary that contains the library builds for iOS devices (armv7, armv7s, arm64), and simulators (i386, x86_64).
+   * `AdobeMobileLibrary.a`, binaire gras prenant en charge le code bitmap qui contient les versions de bibliothèque pour les périphériques iOS (armv7, armv7s, arm64) et les simulateurs (i386, x86_64).
 
       Ce binaire gras doit être lié lorsque la cible est destinée à une application iOS.
 
@@ -78,6 +78,7 @@ Pour télécharger le kit SDK :
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
+      * `CoreLocation.framework` (facultatif, mais requis pour les fonctionnalités de géolocalisation)
    * **Cibles d’une extension iOS**
 
       * `SystemConfiguration.framework`
