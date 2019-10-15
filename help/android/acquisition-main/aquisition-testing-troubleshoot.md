@@ -6,7 +6,7 @@ seo-title: Dépannage des tests d’acquisition
 solution: Marketing Cloud,Analytics
 title: Dépannage des tests d’acquisition
 translation-type: tm+mt
-source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
