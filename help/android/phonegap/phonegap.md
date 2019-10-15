@@ -8,7 +8,7 @@ title: Présentation du module PhoneGap
 topic: Développeur et mise en œuvre
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -75,7 +75,7 @@ cordova plugin add adobe-mobile-services
 
    Pour déplacer ce fichier, cliquez sur **[!UICONTROL OK]**.
 
-## Add app permissions
+## Ajout d’autorisations d’application
 
 La bibliothèque AppMeasurement nécessite les autorisations suivantes pour envoyer des données et enregistrer les appels de suivi hors ligne :
 
