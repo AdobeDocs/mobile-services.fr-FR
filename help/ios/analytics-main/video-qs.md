@@ -7,7 +7,7 @@ title: 'Chemin '
 topic: Développeur et mise en œuvre
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -24,7 +24,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-Le tableau suivant répertorie les données multimédias envoyées à Analytics. Use processing rules to map the context data to an Analytics variable.
+Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez des règles de traitement pour mapper les données contextuelles à une variable Analytics.
 
 * **a.media.name**
 
@@ -32,7 +32,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Facultatif) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
 
-   * Variable type: eVar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : Visite
    * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
 
@@ -54,7 +54,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
    * fin de la vidéo (arrêt)
    Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
 
-   * Variable type: eVar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
 
 
@@ -76,7 +76,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardé (ni la partie visionnée).
 
-   * Variable type: Event
+   * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.segmentView**
@@ -116,7 +116,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 [ADBMobile mediaOpenWithSettings:mediaSettings callback:nil]; 
  
 // You are now ready to play the video, for example, [movieViewController.moviePlayer play]; 
-// Note the the mediaPlay, mediaStop and mediaClose methods are called in the 
+// Note the mediaPlay, mediaStop and mediaClose methods are called in the 
 // event handlers described in the next section
 ```
 
