@@ -4,13 +4,13 @@ seo-description: Vous pouvez joindre des fichiers image à vos notifications App
 seo-title: Réception de notifications push enrichies
 title: Réception de notifications Push enrichies
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# Réception de notifications push enrichies{#receive-rich-push-notifications}
 
 Vous pouvez joindre des fichiers image à vos notifications Apple. L’ajout d’éléments visuels peut augmenter de façon notable l’engagement de vos utilisateurs vis-à-vis des notifications push.
 
@@ -20,7 +20,7 @@ Pour recevoir des notifications push enrichies dans votre application iOS :
 1. Assurez-vous que vous pouvez envoyer un message texte push à votre application.
 1. Ajoutez une extension de service de notification en suivant la procédure suivante :
 
-   1. In your Xcode project, select  **[!UICONTROL File]** &gt; **[!UICONTROL New]** &gt; **[!UICONTROL Target]**.
+   1. Dans votre projet Xcode, sélectionnez **[!UICONTROL Fichier]** &gt; **[!UICONTROL Nouveau]** &gt; **[!UICONTROL Target]**.
    1. Sélectionnez **[!UICONTROL Extension de service de notification]**.
    1. Vérifiez que le fichier `NotificationService.m` existe.
 
@@ -35,7 +35,7 @@ Pour recevoir des notifications push enrichies dans votre application iOS :
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      Dans cette méthode, vous pouvez obtenir l’URL du média à partir de `userInfo` la clé `attachment-url` . Après avoir téléchargé le fichier dans un répertoire local, ajoutez le chemin d’accès local à `bestAttemptContent.attachments`.
+      Dans cette méthode, vous pouvez obtenir l’URL du média à partir de `userInfo` en utilisant la clé `attachment-url`. Après avoir téléchargé le fichier dans un répertoire local, ajoutez le chemin d’accès local à `bestAttemptContent.attachments`.
 
       Voici un exemple du code de cette méthode :
 
