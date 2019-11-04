@@ -1,10 +1,10 @@
 ---
-description: 'Sur la page Gérer les paramètres d’application, vous pouvez effectuer les types de modifications suivants : '
-seo-description: 'On the Manage App Settings page, you can make the following types of changes '
+description: 'Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les types de modifications suivants '
+seo-description: 'Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les types de modifications suivants '
 seo-title: Configuration de votre application
 title: Configuration de votre application
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -28,7 +28,7 @@ Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les
 
       * **Acquisition**
 
-         Suivez les URL de référence pour les campagnes de téléchargement d’applications. Pour plus d’informations, voir [Acquisition](/help/using/acquisition-main/acquisition-main.md).
+         Suivez les URL de référence pour les campagnes de téléchargement d’applications. Pour en savoir plus, consultez la rubrique [Acquisition](/help/using/acquisition-main/acquisition-main.md).
 
       * **Cycle de vie**
 
@@ -59,7 +59,7 @@ Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les
 
    >[!IMPORTANT]
    >
-   >Avant de télécharger les kits SDK et les outils, vous devez configurer les options du kit SDK Analytics. Pour plus d’informations, voir [Configuration des options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)SDK Analytics.
+   >Avant de télécharger les SDK et les outils, vous devez configurer les options du SDK Analytics. Pour plus d’informations, voir [Configuration des options du SDK Analytics](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    Si vous êtes prêt à mettre à niveau vers les SDK 4.x, ou si vous travaillez sur une nouvelle application, téléchargez les derniers SDK et outils de développement depuis le bas de la page Gérer les paramètres de l’application.
 
