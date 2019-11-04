@@ -1,28 +1,28 @@
 ---
-description: Ces informations expliquent comment rediriger un lien de campagne d’Acquisition V3 basé sur l’empreinte numérique d’un périphérique.
-seo-description: Ces informations expliquent comment rediriger un lien de campagne d’Acquisition V3 basé sur l’empreinte numérique d’un périphérique.
+description: Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
+seo-description: Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
 seo-title: Test de l’acquisition de V3
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Test de l’acquisition de V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Testing V3 acquisition{#testing-v-acquisition}
+# Test de l’acquisition de V3{#testing-v-acquisition}
 
-Ces informations expliquent comment rediriger un lien de campagne d’Acquisition V3 basé sur l’empreinte numérique d’un périphérique.
+Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
 
 >[!IMPORTANT]
 >
-> Acquisition V3 se rapporte aux liens d’acquisition que vous créez dans le Créateur d’acquisitions de l’interface utilisateur d’Adobe Mobile Services. Pour utiliser cette fonctionnalité, votre SDK iOS doit être mis à niveau vers la version 4.6.0 ou une version ultérieure.
+>L’acquisition V3 se rapporte aux liens d’acquisition que vous créez dans le Créateur d’acquisitions de l’interface utilisateur d’Adobe Mobile Services. Pour utiliser cette fonctionnalité, votre SDK iOS doit être mis à niveau vers la version 4.6.0 ou une version ultérieure.
 
 Si l’application mobile n’est pas encore dans l’App Store, lorsque vous créez un lien de campagne, sélectionnez n’importe quelle application mobile en tant que destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé.
 
-1. Effectuez les tâches préalables requises dans [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md) (Acquisition de l’application mobile).
-1. Accédez au **[!UICONTROL Créateur d’acquisitions]de l’interface utilisateur d’Adobe Mobile Services et créez une URL de campagne d’acquisition.**
+1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/ios/acquisition-main/acquisition.md).
+1. Accédez au **[!UICONTROL Créateur d’acquisitions]** de l’interface utilisateur d’Adobe Mobile Services et créez une URL de campagne d’acquisition.
 
    Par exemple :
 
@@ -40,17 +40,17 @@ Si l’application mobile n’est pas encore dans l’App Store, lorsque vous c
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   If you do not see `contextData`, or some of it is missing, ensure that the acquisition URL follows the format that is specified in [Create Acquisition Link Manually](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
+   Si `contextData` n’est pas indiqué ou si une partie de cet élément est manquante, vérifiez que l’URL d’acquisition respecte le format indiqué dans [Création manuelle d’un lien d’acquisition](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
 1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
+   | acquisition | Le serveur doit être `c00.adobe.com`. *`appid`* doit être égal à l’*`appid`* de votre lien d’acquisition. |
    | analytics | La valeur de `referrerTimeout` doit être supérieure à 0. |
 
 
 1. (Conditionnel) Si le paramètre `ssl` de votre fichier de configuration d’application est défini sur true, mettez votre lien d’acquisition à jour de façon à utiliser le protocole HTTPS.
-1. Cliquez sur le lien généré à partir du périphérique mobile sur lequel vous prévoyez d’installer l’application.
+1. Cliquez sur le lien créé sur le périphérique mobile sur lequel vous envisagez d’installer l’application.
 
    Les serveurs d’Adobe (`c00.adobe.com`) enregistrent l’empreinte numérique et vous redirigent vers l’App Store. Il n’est pas nécessaire de télécharger l’application pour effectuer les tests.
 1. Lancez l’application pour la première fois à partir du même périphérique mobile que celui utilisé à l’étape 6.
@@ -58,14 +58,14 @@ Si l’application mobile n’est pas encore dans l’App Store, lorsque vous c
    Si nécessaire, supprimez puis réinstallez l’application.
 1. (Facultatif) Vous pouvez activer la journalisation du débogage du SDK pour obtenir des informations supplémentaires.
 
-   Si tout fonctionne correctement, vous devriez voir les journaux suivants :
+   Si tout fonctionne correctement, les journaux suivants devraient être disponibles :
 
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
    Si les journaux ci-dessus ne s’affichent pas, assurez-vous que vous avez bien effectué les étapes 4 et 5 de la procédure.
 
-   Here is some information about possible errors:
+   Voici quelques informations sur les erreurs possibles :
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 Une erreur de réseau s’est produite.
@@ -80,7 +80,7 @@ Une erreur de réseau s’est produite.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` n’est pas incluse dans `contextData`.
+      `a.referrer.campaign.name` n’est pas inclus dans `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -98,7 +98,7 @@ Une erreur de réseau s’est produite.
 
          >[!TIP]
          >
-         >Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
+         >Assurez-vous que `https://c00.adobe.com/v3/<appid>/start` et `https://c00.adobe.com/v3/<appid>/end` ont les mêmes valeurs agent-utilisateur.
 
       * Le lien d’acquisition et l’accès du SDK doivent utiliser le même protocole HTTP/HTTPS.
 
