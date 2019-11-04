@@ -3,25 +3,25 @@ description: Le rapport Aperçu de la boutique d’applications vous donne un ap
 keywords: mobile
 seo-description: Le rapport Aperçu de la boutique d’applications vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.
 seo-title: Rapport Aperçu de la boutique d’applications
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport Aperçu de la boutique d’applications
 topic: Mesures
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ---
 
 
-# App Store Overview report{#app-store-overview-report}
+# Rapport Aperçu de la boutique d’applications{#app-store-overview-report}
 
-Le rapport **[!UICONTROL Aperçu de la boutique d’applications]vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.**
+Le rapport **[!UICONTROL Aperçu de la boutique d’applications]** vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.
 
 >[!TIP]
 >
->In the Mobile Services UI, the **[!UICONTROL App Store]** menu item and **[!UICONTROL Overview]** report appear in the left navigation menu after you configure the integration.
+>Dans l’interface utilisateur de Mobile Services, l’élément de menu de la **[!UICONTROL boutique d’applications]** et le rapport **[!UICONTROL Aperçu]** associé s’affichent dans le menu de navigation gauche après la configuration de l’intégration.
 
-Le rapport **[!UICONTROL Aperçu]comprend un graphique dans le temps qui présente des informations sur le nombre de téléchargements de la boutique d’applications, les achats in-app effectués à l’aide de votre application et la note moyenne de votre application.**
+Le rapport **[!UICONTROL Aperçu]** comprend un graphique dans le temps qui présente des informations sur le nombre de téléchargements de la boutique d’applications, les achats in-app effectués à l’aide de votre application et la note moyenne de votre application.
 
 ![](assets/app_store_metrics.png)
 
@@ -29,11 +29,11 @@ Vous pouvez cliquer sur les mesures pour masquer ou afficher la ligne correspond
 
 >[!IMPORTANT]
 >
->App store metrics, such as downloads, rank, revenue, rating, and so on in Adobe Analytics require a Data Connector integration with an appropriate vendor. `appFigures` propose actuellement une intégration qui nécessite l’achat du produit et/ou du service approprié à partir de `appFigures`**pour que** vous puissiez activer l’intégration. Pour plus d’informations sur les intégrations à Data Connector, voir [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
+>Les mesures relatives aux boutiques d’applications, telles que les téléchargements, le classement, les recettes, la classification, etc. dans Adobe Analytics nécessitent une intégration à Data Connector avec un fournisseur approprié. `appFigures` propose actuellement une intégration qui nécessite l’achat du produit et/ou du service approprié à partir de `appFigures`**pour que** vous puissiez activer l’intégration. Pour plus d’informations sur les intégrations à Data Connector, voir [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >
->Outre la modification de la plage de dates du rapport en cliquant sur l’icône de calendrier dans le coin supérieur droit, vous pouvez personnaliser certains rapports d’analyse, ajouter des filtres et des séries (mesures), ajouter des filtres bascules et télécharger le rapport au format PDF ou CSV. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>En plus de modifier la plage de dates du rapport en cliquant sur l’icône de calendrier dans le coin supérieur droit, vous pouvez personnaliser les rapports détaillés, ajouter des filtres et des séries (mesures), ajouter des filtres bascules et télécharger le rapport aux formats PDF ou CSV. Pour en savoir plus, voir [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md).
 
 ## Note moyenne de la boutique d’applications {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
@@ -41,7 +41,7 @@ Ce rapport présente la note moyenne donnée par les utilisateurs à votre appli
 
 ![](assets/app_store_rating.png)
 
-You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget to display a graph and chart that displays the average rating by date. Pour afficher les données d’une journée précise, survolez le jour en question.
+Vous pouvez cliquer n’importe où sur le widget **[!UICONTROL Note moyenne de la boutique d’applications]** pour afficher un graphique et un diagramme avec la note moyenne par date. Pour afficher les données d’une journée précise, survolez le jour en question.
 
 ![](assets/app_store_downloads_detail.png)
 
