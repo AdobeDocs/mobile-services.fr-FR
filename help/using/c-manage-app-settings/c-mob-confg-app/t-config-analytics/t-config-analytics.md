@@ -3,21 +3,21 @@ description: Vous pouvez configurer les options du SDK Analytics sur la page Gé
 keywords: mobile
 seo-description: Vous pouvez configurer les options du SDK Analytics sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 seo-title: Configuration des options du SDK Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Configuration des options du SDK Analytics
 topic: Mesures
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Configure SDK Analytics options {#configure-sdk-analytics-options}
+# Configuration des options du SDK Analytics{#configure-sdk-analytics-options}
 
 Vous pouvez configurer les options du SDK Analytics sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 
-Type information in the following fields under **[!UICONTROL SDK Analytics Options]**:
+Renseignez les champs suivants sous les **[!UICONTROL Options du SDK Analytics]** :
 
 * **[!UICONTROL Utiliser HTTPS]**
 
@@ -25,7 +25,7 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Accès rétroactifs à la session]**
 
-   Activez ou désactivez la possibilité pour le SDK Adobe d’antidater les accès aux informations de session. Les correspondances avec les informations de session se composent actuellement des blocages et de la durée des sessions. Lorsque l’option est activée, le kit SDK Adobe crée un accès rétroactif aux informations de session à raison de 1 seconde après la dernière correspondance intervenue dans la session qui précède. Ceci signifie que les données de blocage et de session sont corrélées avec la date correcte à laquelle ces événements se sont produits. Un accès est antidaté à chaque nouveau lancement de l’application. Lorsque l’option est désactivée, le SDK Adobe rattache les informations de session au cycle de vie en cours.
+   Activez ou désactivez la capacité qu’a le SDK Adobe d’antidater les correspondances avec les informations de session. Les correspondances avec les informations de session se composent actuellement des blocages et de la durée des sessions. Lorsque l’option est activée, le kit SDK Adobe crée un accès rétroactif aux informations de session à raison de 1 seconde après la dernière correspondance intervenue dans la session qui précède. Ceci signifie que les données de blocage et de session sont corrélées avec la date correcte à laquelle ces événements se sont produits. Un accès est antidaté à chaque nouveau lancement de l’application. Lorsque l’option est désactivée, le SDK Adobe rattache les informations de session au cycle de vie en cours.
 
 * **[!UICONTROL Confidentialité]**
 
@@ -48,6 +48,6 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL Plus de détails]**
 
-   Cliquez sur le lien **[!UICONTROL Plus de détails]pour afficher l’identifiant de la suite de rapports et le serveur de suivi, activer ou désactiver le suivi hors ligne et afficher le modèle d’encodage de caractères utilisé (par exemple, UTF-8).**
+   Cliquez sur le lien **[!UICONTROL Plus de détails]** pour afficher l’identifiant de la suite de rapports et le serveur de suivi, activer ou désactiver le suivi hors ligne et afficher le modèle d’encodage de caractères utilisé (par exemple, UTF-8).
 
    Lorsque le suivi hors ligne est activé, les données générées par le périphérique en mode hors ligne sont horodatées et envoyées ultérieurement. Si cette option est désactivée, les données hors ligne sont ignorées.
