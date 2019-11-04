@@ -3,21 +3,21 @@ description: La variable products ne peut pas être définie à l’aide des rè
 keywords: android;library;mobile;sdk
 seo-description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products sur l’appel de serveur.
 seo-title: Variable products
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variable products
 topic: Développeur et mise en œuvre
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# Variable products{#products-variable}
 
 La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products sur l’appel de serveur.
 
-To set the *products* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *products* variable:
+Pour définir la variable *products*, définissez une clé de données contextuelles sur `"&&products"`, puis définissez la valeur en utilisant la syntaxe définie pour la variable *products* :
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *products* variable is set on the image request, and the other variables are set as context data. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide des règles de traitement :
+La variable *products* est définie sur la demande d’image ; les autres variables sont définies comme données contextuelles. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide des règles de traitement :
 
 ![](assets/map-products.png)
 
-Il n’est pas nécessaire de mettre en correspondance la variable *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
+Il n’est pas nécessaire de mettre en correspondance la variable *products* en utilisant les règles de traitement, car cette variable est définie directement sur la demande d’image par le SDK.
