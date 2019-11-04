@@ -4,13 +4,13 @@ seo-description: Vous pouvez définir l’ID de message push envoyé lorsqu’un
 seo-title: Déclencher un message in-app lorsque l’application est ouverte à partir d’un message push
 title: Déclencher un message in-app lorsque l’application est ouverte à partir d’un message push
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
 ---
 
 
-# Trigger an in-app message when the app is opened from a push message{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+# Déclenchement d’un message in-app lorsque l’application est ouverte à partir d’un message push{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
 Vous pouvez définir l’ID de message push envoyé lorsqu’un utilisateur ouvre l’application à partir d’un message push en tant que déclencheur de message in-app.
 
@@ -22,13 +22,13 @@ Vous pouvez définir l’ID de message push envoyé lorsqu’un utilisateur ouvr
 
    ![](assets/brandon_task1.png)
 
-1. Sauvegardez et activez le message in-app avec le déclencheur suivant : 
+1. Sauvegardez et activez le message in-app avec le déclencheur suivant :
 
    `“a.push.payloadID” =`
 
    >[!TIP]
    >
-   >L’ID du message push est l’identifiant que vous avez trouvé à l’étape 1.
+   >L’ID de message push est l’ID que vous avez identifié à l’étape 1.
 
    Ce déclencheur doit être ajouté manuellement car il ne se trouve pas dans la liste déroulante **[!UICONTROL Déclencheur].**
 
