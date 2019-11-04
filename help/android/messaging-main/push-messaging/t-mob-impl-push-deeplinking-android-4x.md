@@ -4,13 +4,13 @@ seo-description: Une fois l’URL de création de liens profonds configurée dan
 seo-title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# Mise en œuvre de la messagerie push avec la création de liens profonds{#implement-push-messaging-with-deep-linking}
 
 Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
 
@@ -18,7 +18,7 @@ Vous pouvez obtenir l’URL en appelant `remoteMessage.getData().get("adb_deepli
 
 >[!TIP]
 >
->Vous pouvez définir différents modes selon que la charge utile comporte une URL de liaison profonde.
+>Vous pouvez définir différentes intentions selon que la charge utile comporte ou non une URL de création de liens profonds.
 
 1. Procédez de l’une des manières suivantes :
 
@@ -30,7 +30,7 @@ Vous pouvez obtenir l’URL en appelant `remoteMessage.getData().get("adb_deepli
 
 ## Exemple
 
-Here is a sample implementation for the class extending from `FirebaseMessagingService`:
+Voici un exemple de mise en œuvre pour la classe étendue à partir de `FirebaseMessagingService` :
 
 ```java
 public void onMessageReceived(RemoteMessage message) { 
