@@ -1,28 +1,28 @@
 ---
 description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 seo-description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
-seo-title: 'Chemin '
-solution: Marketing Cloud,Analytics
-title: 'Chemin '
+seo-title: Chemin
+solution: Experience Cloud,Analytics
+title: Chemin
 topic: Développeur et mise en œuvre
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# Chemin    {#video-analytics}
+# Chemin {#video-analytics}
 
 Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 
 >[!TIP]
 >
->Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesure des données audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesures audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html).
 
 Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Cette section donne une vue d’ensemble des tâches du développeur et fournit des exemples de code.
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## Mise en correspondance des événements du lecteur avec les variables Analytics {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez des règles de traitement pour mapper les données contextuelles à une variable Analytics.
 
@@ -32,7 +32,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Facultatif) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
 
-   * Type de variable : eVar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : Visite
    * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
 
@@ -40,12 +40,12 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Facultatif) Fournit des informations de cheminement vidéo. Le cheminement doit être activé par le service à la clientèle pour cette variable.
 
-   * Type de variable : Custom Insight (s.prop)
+   * Type de variable : Insight personnalisé (s.prop)
    * Type d’événement : Insight personnalisé (s.prop)
 
 * **a.media.segment**
 
-   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` Segments evar.
+   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, il est possible que SiteCatalyst collecte les `1:M:0-25` dans l’eVar Segments :
 
    La méthode par défaut de collecte des données sur les vidéos collecte les données aux points suivants :
 
@@ -54,7 +54,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
    * fin de la vidéo (arrêt)
    Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
 
-   * Type de variable : eVar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
 
 
@@ -62,38 +62,38 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    Collecte les données sur le type de contenu affiché par un visiteur. Les envois d’accès par mesures vidéo se voient attribuer un type de contenu `video`. Cette variable ne doit pas être exclusivement réservée au suivi vidéo. Les autres types de contenu des rapports de contenu utilisant la même variable vous permettent d’analyser la distribution des visiteurs par rapport aux différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
 
-   * Type de variable : eVar
+   * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
 
 * **a.media.timePlayed**
 
    Compte le temps de lecture vidéo passé, en secondes, depuis le dernier processus de collecte de données (requêtes d’images).
 
-   * Type de variable : Evénement
+   * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.view**
 
    Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardé (ni la partie visionnée).
 
-   * Type de variable : Evénement
+   * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.segmentView**
 
    Indique qu’un visiteur a visionné une partie d’un segment de vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardée (ni la partie visionnée).
 
-   * Type de variable : Evénement
+   * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.complete**
 
    Indique qu’un utilisateur a visionné une vidéo dans son intégralité. Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et d’autres diffusions sans fin définie, vous pouvez indiquer un point personnalisé auquel la mesure se termine, par exemple, une durée spécifique visionnée.
 
-   * Type de variable : Evénement
+   * Type de variable : Evénement
    * Type : compteur
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## Configuration des paramètres multimédias {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Configurez un objet `ADBMediaSettings` avec les paramètres que vous souhaitez pour suivre les vidéos :
 
@@ -120,9 +120,9 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## Suivi des événements du lecteur {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. Par exemple, lorsque le lecteur est en pause : `mediaStop`. `mediaPlay` est appelé lorsque la lecture démarre ou reprend.
+Pour mesurer la lecture de vidéos, appelez les méthodes `mediaPlay`, `mediaStop`, et `mediaClose` aux moments opportuns. Par exemple, lorsque le lecteur est en pause : `mediaStop`. `mediaPlay` est appelé lorsque la lecture démarre ou reprend.
 
 L’exemple suivant montre comment configurer des notifications et appeler des méthodes multimédias pour mesurer les vidéos :
 
@@ -220,7 +220,7 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Références pour les méthodes et classes de mesure d’éléments multimédias {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings&#x200B;WithName:&#x200B;length:&#x200B;playerName:&#x200B;playerID:**
 
