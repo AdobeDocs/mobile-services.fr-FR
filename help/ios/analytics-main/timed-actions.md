@@ -2,17 +2,17 @@
 description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-title: Actions minutées
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Actions minutées
 topic: Développeur et mise en œuvre
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Timed actions {#timed-actions}
+# Actions minutées{#timed-actions}
 
 Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 
@@ -27,11 +27,11 @@ Un rappel facultatif permet d’entreprendre des actions supplémentaires lorsqu
 * Ajoutez des données contextuelles avant de transmettre des durées.
 * Annulez des accès et des durées qui n’ont pas encore été envoyés.
 
-## Tracking timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## Suivi des actions minutées {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans Mise en oeuvre [principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* dans [Mise en œuvre principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 1. Importez la bibliothèque :
 
    ```objective-c
@@ -61,7 +61,7 @@ Un rappel facultatif permet d’entreprendre des actions supplémentaires lorsqu
                             logic:nil];
    ```
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Envoi de données supplémentaires {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Outre le nom de l’action minutée, vous pouvez envoyer des données contextuelles supplémentaires avec les appels de début et de mise à jour d’action :
 
@@ -70,7 +70,7 @@ Outre le nom de l’action minutée, vous pouvez envoyer des données contextuel
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Context data values must be mapped to custom variables:
+Les valeurs des données contextuelles doivent être mises en correspondance avec des variables personnalisées :
 
 ![](assets/map-variable-context-ltv.png)
 
