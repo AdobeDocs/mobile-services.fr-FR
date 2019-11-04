@@ -1,13 +1,13 @@
 ---
 description: Vous pouvez vous connecter à Adobe Mobile Services à l’aide d’un navigateur Web.
-keywords: mobile;changer de mot de passe;connexion;déconnexion;connexion;déconnexion;connexion;connexion;connexion;connexion
+keywords: mobile;change password;log in;log out;login;logout;sign in;signin
 seo-description: Vous pouvez vous connecter à Adobe Mobile Services à l’aide d’un navigateur Web.
 seo-title: Connexion
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Connexion
 topic: Mesures
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 ---
@@ -47,7 +47,7 @@ Pour vous connecter à l’interface utilisateur d’Adobe Mobile Services à 
 
    >[!IMPORTANT]
    >
-   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. Si vos informations d’identification de messagerie Facebook ou Google ne correspondent pas à votre adresse électronique d’utilisateur Adobe ou Enterprise ID, contactez votre administrateur.
+   >Si vous cliquez sur **[!UICONTROL Facebook]** ou **[!UICONTROL Google]** pour vous connecter, l’adresse électronique associée à votre compte Facebook ou Google doit correspondre à l’adresse électronique associée à votre Adobe ID ou à votre Enterprise ID qui a accès à Adobe Analytics. Si ce n’est pas le cas, contactez votre administrateur.
 
 ### Analytics ID
 
@@ -62,14 +62,14 @@ Pour vous connecter à l’interface utilisateur d’Adobe Mobile Services à 
 
 Procédez de l’une des manières suivantes pour réinitialiser votre mot de passe :
 
-* **Adobe Experience Cloud** If you use your Adobe ID:
+* **Adobe Experience Cloud** Si vous utilisez votre Adobe ID :
 
-   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID], puis sur le lien** Mot de passe oublié ?**** link.
+   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID]**, puis sur le lien **[!UICONTROL Mot de passe oublié ?]**
    1. Saisissez l’adresse électronique du compte associé à votre Adobe ID, puis cliquez sur **[!UICONTROL Envoyer]**.
    1. Suivez les instructions figurant dans le courrier électronique que vous avez reçu pour réinitialiser votre mot de passe.
 
 * **Adobe Analytics** Si vous utilisez votre société, votre nom d’utilisateur et votre mot de passe, procédez comme suit :
 
-   1. Cliquez sur le lien **Mot de passe oublié ?** link.
+   1. Cliquez sur le lien **[!UICONTROL Mot de passe oublié ?]**
    1. Saisissez le nom de votre société et votre nom d’utilisateur, puis cliquez sur **[!UICONTROL Continuer]**.
    1. Suivez les instructions figurant dans le courrier électronique que vous avez reçu.
