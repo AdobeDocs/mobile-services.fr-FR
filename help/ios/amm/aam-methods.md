@@ -2,21 +2,21 @@
 description: Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 seo-title: Méthodes Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Audience Manager
 topic: Développeur et mise en œuvre
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Méthodes Audience Manager{#audience-manager-methods}
 
 Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Le préfixe précédant les méthodes varie selon la solution. Les méthodes  Manager sont précédées du préfixe « `audience`audience ».
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Le préfixe précédant les méthodes varie selon la solution. Les méthodes Audience Manager sont précédées du préfixe « `audience`audience ».
 
 Si Audience Manager est configuré dans votre fichier JSON, un signal contenant les mesures de cycle de vie est envoyé avec `application:didFinishLaunchingWithOptions:`.
 
@@ -30,13 +30,13 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * Voici un exemple de code pour ce menu :
+   * Voici l’exemple de code pour ce menu :
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
       ```
 
-* **audienceDpid** 
+* **audienceDpid**
 
    Renvoie le DPID en cours.
 
@@ -77,7 +77,7 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
 
       >[!IMPORTANT]
       >
-      >Avant la version 4.13.x, le DPUUID n’était pas automatiquement codé. À compter de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis recode cette valeur. Ce processus permet au SDK de préserver la rétrocompatibilité.
+      >Avant la version 4.13.x, le DPUUID n’était pas codé automatiquement. À compter de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis recode cette valeur. Ce processus permet au SDK de préserver la rétrocompatibilité.
 
    * Voici la syntaxe de cette méthode :
 
