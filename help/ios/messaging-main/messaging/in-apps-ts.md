@@ -3,17 +3,17 @@ description: Ces informations vous aideront à résoudre les problèmes liés à
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 seo-title: Dépannage de la messagerie intégrée (in-app)
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
 topic: Mesures
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# Dépannage de la messagerie intégrée (in-app){#troubleshooting-in-app-messaging}
 
 Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 
@@ -29,32 +29,32 @@ Avez-vous mis à jour votre fichier de manifeste afin de définir l’activité 
 
 ## Mon message de notification locale ne fonctionne pas sous Android.
 
-Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. For more information, see step 2 in [Enabling In-App Messages](/help/android/messaging-main/messaging/messaging.md).
+Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. Pour obtenir plus d’informations, voir l’étape 2 [Activation des messages in-app](/help/android/messaging-main/messaging/messaging.md).
 
 ## Le message est-il actif ?
 
 Consultez la vue Liste de la page Gérer les messages in-app, dans la colonne État, et vérifiez que le message est actif.
 
-## Regardez *afficher une fois*, *afficher toujours*, *afficher les paramètres hors ligne* sur l’onglet Audience.
+## Consultez les paramètres *afficher une fois*, *afficher toujours*, *afficher hors ligne* dans l’onglet Audience.
 
-Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **Déclencheur], qui vous permettent de définir la fréquence d’affichage du message.[!UICONTROL **
+Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **[!UICONTROL Déclencheur]**, qui vous permettent de définir la fréquence d’affichage du message.
 
 ## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
-Le lancement se déclenche uniquement en cas de nouvelle session. For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. For more information, see  ADBMobile JSON Config.[](/help/ios/configuration/json-config/json-config.md)
+Le lancement se déclenche uniquement en cas de nouvelle session. Pour obtenir plus d’informations sur le début d’une session, voir la ligne `lifecycleTimeout` du fichier de configuration JSON. Pour plus d’informations, voir [Configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
 
 ## J’ai mis à jour mon message à distance, mais mon application affiche toujours l’ancien message.
 
-Effectuez l’une des tâches suivantes :
+Procédez de l’une des manières suivantes :
 
-* Il peut s’écouler quelques minutes avant que la gestion dynamique des balises ne mette à jour son point de terminaison avec votre nouvelle définition.
+* La gestion dynamique des balises peut nécessiter quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition.
 
    Patientez quelques minutes et réessayez.
 
-* La configuration se mettra à jour uniquement lors d’un nouveau lancement.
+* La configuration se mettra à jour uniquement lors d’un nouveau lancement. 
 Si l’application a été redémarrée pendant le délai d’expiration de la session du cycle de vie, la nouvelle configuration n’a peut-être pas été téléchargée.
 
-   Pour plus d’informations, voir [Mesures de cycle de vie](/help/ios/metrics.md).
+   Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/ios/metrics.md).
 
 ## Mon image ne correspond pas exactement à l’espace fourni par le modèle.
 
@@ -64,13 +64,13 @@ Puisque les écrans des appareils peuvent être de taille très variable, l’im
 
 Les règles de dimensionnement et de placement exactes pour chaque orientation sont les suivantes :
 
-* **Portrait**:
-   * Hauteur de 195 px pour les téléphones.
-   * Hauteur de 529 px pour les tablettes.
+* **Portrait** :
+   * Hauteur de 195 px pour les téléphones
+   * Hauteur de 529 px pour les tablettes
    * Centrée si la largeur de l’image est plus petite que la largeur de l’appareil.
    * Rognée si la largeur de l’image est plus grande que la largeur de l’appareil.
 
-* **Paysage**:
+* **Paysage** :
    * L’image s’adapte à 100 % à la hauteur de l’appareil.
    * La largeur correspond à 75 % à celle de l’appareil, avec un fondu sur la droite.
 
@@ -80,7 +80,7 @@ Si vous rencontrez des problèmes avec le modèle Plein écran, vous pouvez tél
 
 Pour afficher les messages in-app en mode Plein écran sur un iPhone X, procédez comme suit :
 
-1. Add `viewport-fit=cover` in the meta tag.
+1. Ajoutez `viewport-fit=cover` dans la balise meta.
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
