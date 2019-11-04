@@ -1,24 +1,24 @@
 ---
-description: Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
+description: Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing basé sur l’empreinte numérique d’un périphérique.
 keywords: android;library;mobile;sdk
-seo-description: Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
-seo-title: Test de l’acquisition de liens marketing
-solution: Marketing Cloud,Analytics
-title: Testing Marketing Link acquisition
+seo-description: Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing basé sur l’empreinte numérique d’un périphérique.
+seo-title: Évaluation de l’acquisition d’un lien marketing
+solution: Experience Cloud,Analytics
+title: Évaluation de l’acquisition d’un lien marketing
 topic: Développeur et mise en œuvre
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
+# Évaluation de l’acquisition d’un lien marketing {#testing-marketing-link-acquisition}
 
-Les instructions suivantes vous aident à effectuer des allers-retours dans une campagne d’acquisition à l’aide d’un lien marketing basé sur l’empreinte digitale d’un périphérique.
+Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing basé sur l’empreinte numérique d’un périphérique.
 
-1. Effectuez les tâches préalables requises dans [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md) (Acquisition de l’application mobile).
-1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
+1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/ios/acquisition-main/acquisition.md).
+1. Dans l’interface utilisateur Adobe Mobile Services, cliquez sur **[!UICONTROL Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition définissant l’App Store en tant que destination pour les appareils iOS.
 
    Par exemple :
 
@@ -29,9 +29,9 @@ Les instructions suivantes vous aident à effectuer des allers-retours dans une 
    Pour obtenir plus d’informations, voir [Générateur de liens marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
 
-1. Open the generated link on the iOS device and open `https://c00.adobe.com/v3/<appid>/end`.
+1. Ouvrez le lien créé sur un appareil iOS, puis ouvrez `https://c00.adobe.com/v3/<appid>/end`.
 
-   L’élément contextData doit apparaître dans la réponse JSON :
+   L’élément contextData doit être indiqué dans la réponse JSON :
 
    ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
@@ -42,7 +42,7 @@ Les instructions suivantes vous aident à effectuer des allers-retours dans une 
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
+   | acquisition | Le serveur doit être `c00.adobe.com`. `appid` doit être égal à l’*`appid`* de votre lien d’acquisition. |
    | analytics | La valeur de `referrerTimeout` doit être supérieure à 0. |
 
 1. (Conditionnel) Si le paramètre SSL de votre fichier de configuration d’application est défini sur `false`, mettez votre lien d’acquisition à jour de façon à utiliser le protocole HTTP plutôt que le protocole HTTPS.
@@ -59,11 +59,11 @@ Les instructions suivantes vous aident à effectuer des allers-retours dans une 
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   If you do not see these logs, verify that you completed steps 4 and 5.
+   Si ces journaux ne s’affichent pas, vérifiez que vous avez bien effectué les étapes 4 et 5 de la procédure.
 
-   Here is some information about possible errors:
+   Voici quelques informations sur les erreurs possibles :
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)` :
 
       Une erreur de réseau s’est produite.
 
@@ -77,7 +77,7 @@ Les instructions suivantes vous aident à effectuer des allers-retours dans une 
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` is not included in .`contextData`
+      `a.referrer.campaign.name` n’est pas inclus dans `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -95,12 +95,12 @@ Les instructions suivantes vous aident à effectuer des allers-retours dans une 
 
 * Des variations dans l’agent-utilisateur envoyé peuvent provoquer l’échec de l’attribution.
 
-   Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
+   Assurez-vous que `https://c00.adobe.com/v3/<appid>/start` et `https://c00.adobe.com/v3/<appid>/end` ont les mêmes valeurs agent-utilisateur.
 
 * Le lien d’acquisition et l’accès du SDK doivent utiliser le même protocole HTTP/HTTPS.
 
-   Si le lien et l’accès utilisent des protocoles différents, où, par exemple, le lien utilise HTTP et le SDK utilise HTTPS, l’adresse IP peut différer sur certains opérateurs pour chaque requête. Cela peut provoquer l’échec de l’attribution.
+   Si le lien et l’accès utilisent des protocoles différents, où, par exemple, le lien utilise HTTP et le SDK utilise HTTPS, l’adresse IP peut différer pour certains opérateurs pour chaque demande. Cela peut provoquer l’échec de l’attribution.
 
-* The Marketing Links are cached on the server side with a ten-minutes expiration time.
+* Les liens marketing sont mis en mémoire cache côté serveur et ont un délai d’expiration de 10 minutes.
 
-   Lorsque vous apportez des modifications aux liens marketing, attendez environ 10 minutes avant d’utiliser les liens.
+   Lorsque vous modifiez des liens marketing, attendez environ 10 minutes avant de les utiliser.
