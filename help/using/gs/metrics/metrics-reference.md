@@ -3,27 +3,27 @@ description: Voici les informations de référence sur les dimensions et les mes
 keywords: mobile
 seo-description: Voici les informations de référence sur les dimensions et les mesures mobiles par défaut.
 seo-title: Référence sur les dimensions et les mesures mobiles
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Référence sur les dimensions et les mesures mobiles
 topic: Mesures
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 ---
 
 
-# Mobile metrics and dimensions reference {#mobile-metrics-and-dimensions-reference}
+# Référence sur les dimensions et les mesures mobiles{#mobile-metrics-and-dimensions-reference}
 
 Ces informations vous aident à mieux comprendre les mesures et dimensions mobiles par défaut.
 
 >[!TIP]
 >
->Les autorisations de dimension et de mesure définies dans Adobe Analytics s’appliquent à Mobile Services. When you try to run a report without the proper permissions, an error occurs.
+>Les droits d’accès aux dimensions et aux mesures configurés dans Adobe Analytics s’appliquent à Mobile Services. Lorsque vous essayez d’exécuter un rapport sans les autorisations appropriées, une erreur se produit.
 
 ## Mesures {#section_6704C815147D44AF96151D626BEB813C}
 
-Here is the list of default mobile metrics:
+Voici la liste des mesures mobiles par défaut :
 
 * **Premiers lancements**
 
@@ -38,28 +38,28 @@ Here is the list of default mobile metrics:
    Déclenché lorsque l’application est utilisée un jour spécifique.
 
    >[!TIP]
-   >The Daily Engaged Users event is not automatically stored in an Analytics metric. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
+   >L’événement Utilisateurs actifs/jour n’est pas enregistré automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
 * **Utilisateurs actifs par mois**
 
    Déclenché lorsque l’application est utilisée pendant un mois.
 
    >[!TIP]
-   >L’événement Utilisateurs actifs mensuels n’est pas stocké automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
+   >L’événement Utilisateurs actifs par mois n’est pas enregistré automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
 * **Lancements**
 
-   Déclenché à l’exécution (qui ne fait pas suite à une installation ou à une mise à niveau). Cet événement se déclenche également lorsque l’application est mise en premier plan. Par défaut, un nouveau lancement se déclenche lorsque l’application est mise en arrière-plan pendant cinq minutes ou plus. The amount of background time before triggering a new launch can be configured in **[!UICONTROL SDK Analytics Options]** on the Manage App Settings page. Pour plus d’informations, voir la ligne Délai d’expiration de *session (secondes)* dans [Configuration des options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)SDK Analytics.
+   Déclenché à l’exécution (qui ne fait pas suite à une installation ou à une mise à niveau). Cet événement se déclenche également lorsque l’application est mise en premier plan. Par défaut, un nouveau lancement se déclenche lorsque l’application est mise en arrière-plan pendant cinq minutes ou plus. La durée de mise en arrière-plan écoulée avant le déclenchement d’un nouveau lancement peut être configurée dans les **[!UICONTROL Options du SDK Analytics]** sur la page Gestion des paramètres de l’application. Pour plus d’informations, voir la ligne *Délai d’expiration de session (secondes)* dans [Configuration des options SDK Analytics](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    >[!IMPORTANT]
-   >Because how visits in [!UICONTROL Adobe Analytics] and mobile app launches in [!UICONTROL Adobe Mobile Services] are calculated, you might see different results in reporting. Pour plus d’informations, voir [Comparaison des visites et des lancements d’applications mobiles](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
+   >En raison du mode de calcul des visites dans [!UICONTROL Adobe Analytics] et des lancements d’applications mobiles dans [!UICONTROL Adobe Mobile Services], il est possible d’obtenir des résultats différents dans les rapports. Pour plus d’informations, voir [Comparaison des visites et des lancements d’applications mobiles](https://helpx.adobe.com/fr/analytics/kb/compare-visits-and-mobile-app-launches.html).
 
 * **Blocages**
 
    Déclenché lorsque l’application ne se ferme pas correctement. Cet événement est envoyé au démarrage de l’application après un blocage.
 
    >[!TIP]
-   >The application is considered to crash if quit is not called.
+   >L’application est considérée comme bloquée si la sortie n’est pas appelée.
 
 * **Durée totale de la session**
 
@@ -67,15 +67,15 @@ Here is the list of default mobile metrics:
 
 ## Dimensions {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
 
-Voici la liste des dimensions mobiles par défaut :
+Voici la liste des mesures mobiles par défaut :
 
-* **la date d’installation**
+* **La date d’installation**
 
    Date du premier lancement après installation. La date est au format *MM/JJ/AAAA*.
 
 * **ID d’application**
 
-   Stores the Application name and version in the following format: `[AppName] [BundleVersion]`. Par exemple : `myapp 1.1`.
+   Stocke le nom et la version de l’application au format suivant : `[AppName] [BundleVersion]` Par exemple : `myapp 1.1`.
 
 * **Numéro de lancement**
 
@@ -97,7 +97,7 @@ Voici la liste des dimensions mobiles par défaut :
 
    Numéro du jour de la semaine où l’application a été lancée.
 
-* **Operating System** (Système d’exploitation)
+* **Système d’exploitation**
 
    Système d’exploitation de l’appareil.
 
@@ -111,7 +111,7 @@ Voici la liste des dimensions mobiles par défaut :
 
    >[!TIP]
    >
-   >Jours depuis la dernière mise à niveau n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
+   >La mesure du nombre de jours depuis la dernière mise à niveau n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
 * **Lancements depuis la dernière mise à niveau**
 
@@ -119,11 +119,11 @@ Voici la liste des dimensions mobiles par défaut :
 
    >[!TIP]
    >
-   >Les lancements depuis la dernière mise à niveau ne sont pas automatiquement stockés dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
+   >La mesure du nombre de lancements depuis la dernière mise à niveau n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
 * **Nom de l’appareil**
 
-   Stocke le nom de l’appareil. Sous iOS, une chaîne de deux chiffres séparée par des virgules identifie le périphérique iOS. Le premier chiffre représente la génération du périphérique et le second nombre convertit différents membres de la famille du périphérique. Pour obtenir la liste complète des noms d’appareils courants, voir [Versions des appareils iOS](/help/ios/reference/device-versions.md).
+   Stocke le nom de l’appareil. Sous iOS, une chaîne de deux chiffres séparée par une virgule identifie l’appareil iOS. Le premier chiffre représente généralement la génération de l’appareil, le second les différents membres de la famille d’appareils. Pour obtenir la liste complète des noms d’appareils courants, voir [Versions des appareils iOS](/help/ios/reference/device-versions.md).
 
 * **Nom de l’opérateur**
 
