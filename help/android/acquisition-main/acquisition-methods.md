@@ -1,21 +1,21 @@
 ---
-description: 'The following Acquisition methods are provided by the Android library '
+description: 'Les méthodes d’acquisition suivantes sont fournies par la bibliothèque Android : '
 keywords: android;library;mobile;sdk
-seo-description: 'Les méthodes d’acquisition suivantes sont fournies par la bibliothèque Android. '
+seo-description: 'Les méthodes d’acquisition suivantes sont fournies par la bibliothèque Android : '
 seo-title: Méthodes d’acquisition
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes d’acquisition
 topic: Développeur et mise en œuvre
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Acquisition methods{#acquisition-methods}
+# Méthodes d’acquisition{#acquisition-methods}
 
-La méthode d’acquisition suivante est fournie par la bibliothèque Android :
+La méthode d’acquisition suivante est fournie par la bibliothèque Android :
 
 * **campaignStartForApp**
 
