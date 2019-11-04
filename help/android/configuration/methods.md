@@ -3,21 +3,21 @@ description: Liste des méthodes fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes fournies par la bibliothèque Android.
 seo-title: Méthodes de configuration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes de configuration
 topic: Développeur et mise en œuvre
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Configuration methods{#configuration-methods}
+# Méthodes de configuration{#configuration-methods}
 
 Liste des méthodes fournies par la bibliothèque Android.
 
-## Initial configuration {#section_9169243ECC4744A899A8271F92090ECD}
+## Configuration initiale {#section_9169243ECC4744A899A8271F92090ECD}
 
 La méthode suivante doit être appelée une fois dans la méthode `onCreate` de l’activité principale :
 
@@ -33,15 +33,15 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
    ````
 
 
-## SDK settings (Config Class) {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## Paramètres du SDK (Classe de configuration) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
-   * Enregistre un objet qui implémente l’interface `AdobeDataCallback`. The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. Pour plus d’informations sur les événements qui déclencheront ce rappel, voir *MobileDataEventEnum* au bas de cette rubrique.
+   * Enregistre un objet qui implémente l’interface `AdobeDataCallback`. La méthode « call » remplacée est appelée avec une valeur `Config.MobileDataEvent` et les données associées dans `Map<String, Object>` pour l’événement de déclenchement. Pour plus d’informations sur les événements qui déclencheront ce rappel, voir *MobileDataEventEnum* en bas de cette rubrique.
 
       >[!TIP]
       >
-      >Cette méthode nécessite la version 4.9.0 ou ultérieure.
+      >Cette méthode requiert la version 4.9.0 ou supérieure.
 
    * Voici la syntaxe de cette méthode :
 
@@ -73,7 +73,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       public static String getVersion();
       ```
 
-   * Here is a code example for this method:
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -85,8 +85,8 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
       Vous trouverez ci-dessous les valeurs de l’état de confidentialité :
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, où les accès sont envoyés immédiatement.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où les siens sont ignorés.
+      * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont envoyés immédiatement.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
 
          Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ». La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
@@ -96,7 +96,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * Here is a code sample for this method:
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -108,17 +108,16 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
    * Définit l’état de confidentialité pour l’utilisateur actuel sur `status`.
 
       Vous pouvez définir l’état de confidentialité sur l’une des valeurs suivantes :
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, où les accès sont envoyés immédiatement. Ces accès sont envoyés immédiatement.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`, où les siens sont ignorés. Ces accès sont ignorés.
-      * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
-Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+      * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont envoyés immédiatement. Ces accès sont envoyés immédiatement.
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés. Ces accès sont ignorés.
+      * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
    * Voici la syntaxe de cette méthode :
 
       ```java
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * Here is a code sample for this method:
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -135,7 +134,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Here is a code sample for this method:
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -147,7 +146,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
 
       >[!TIP]
       >
-      >Si votre application effectue une mise à niveau d’Experience Cloud 3.x vers le SDK 4.x, l’identifiant visiteur personnalisé ou généré automatiquement précédent est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
+      >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -155,7 +154,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       public static String&amp getUserIdentifier();
       ```
 
-   * Voici l’exemple de code pour cette méthode :
+   * Voici l’exemple de code pour cette méthode :
 
       ```java
       String userId = Config.getUserIdentifier();
@@ -253,7 +252,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
       
 * **pauseCollecting&#x200B;LifecycleData**
 
-   * Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, `onPause` collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache que l’application n’a pas planté. Pour plus d’informations, voir [Mesures de cycle de vie](/help/android/metrics.md).
+   * Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, `onPause` collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -344,7 +343,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
 
       >[!IMPORTANT]
       > 
-      >If you want to use the Advertising Identifier in Acquisition or Lifecycle, call it before calling `Config.collectLifecycleData`.
+      >Si vous voulez utiliser l’identifiant de publicité dans l’acquisition ou le cycle de vie, vous devez l’appeler avant d’appeler `Config.collectLifecycleData`.
 
       * Voici la syntaxe de cette méthode :
 
