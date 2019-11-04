@@ -2,23 +2,23 @@
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-title: Suivi des blocages d’application
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Développeur et mise en œuvre
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Track app crashes {#track-app-crashes}
+# Suivi des blocages d’application{#track-app-crashes}
 
 Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 
 >[!IMPORTANT]
 >
->Vous devez effectuer la mise à niveau vers la version 4.8.6 du SDK iOS, qui contient des modifications essentielles qui empêchent les faux blocages d’être signalés.
+>Il est recommandé d’effectuer une mise à niveau vers la version 4.8.6 du SDK iOS : celle-ci contient d’importantes modifications qui empêchent le signalement de faux plantages.
 
 ## À quel moment Adobe signale-t-il un plantage ?
 
@@ -44,13 +44,13 @@ Les scénarios suivants sont connus pour causer par erreur le signalement d’un
 
    >[!TIP]
    >
-   >Vous pouvez éviter un plantage dans ce scénario en mettant l’application en arrière-plan avant de la relancer à partir de Xcode.
+   >Dans ce scénario, vous pouvez éviter un plantage en mettant l’application en arrière-plan avant de la lancer de nouveau à partir de Xcode.
 
-* If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
+* Si votre application est en arrière-plan et envoie des accès Analytics par l’intermédiaire d’un appel qui n’est pas `trackActionFromBackground`, `trackLocation` ou `trackBeacon` et que celle-ci est arrêtée (manuellement ou par le système d’exploitation) alors qu’elle est en arrière-plan, un plantage survient lors du prochain lancement.
 
    >[!TIP]
    >
-   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
+   >Une activité en arrière-plan dépassant le seuil du délai d’expiration du cycle de vie `lifecycleTimeout` peut également provoquer un faux lancement.
 
 * Si votre application est lancée en arrière-plan (en raison d’une récupération en arrière-plan, d’une mise à jour d’emplacement, etc.) et qu’elle est arrêtée généralement par le système d’exploitation sans jamais s’afficher en avant-plan, un plantage survient au lancement suivant (à l’arrière-plan ou à l’avant-plan).
 * Si vous supprimez l’indicateur de pause par programmation à partir de `NSUserDefaults` alors que l’application est en arrière-plan, un plantage survient lors du prochain lancement ou de la reprise.
@@ -66,5 +66,5 @@ Les procédures suivantes peuvent vous aider à empêcher que de faux plantages 
 * Veillez à procéder à votre développement avec des suites de rapports hors production, ce qui devrait empêcher que le plantage nº 1 ne survienne.
 * Ne supprimez et ne modifiez aucune valeur placée dans `NSUserDefaults` par le SDK Adobe Mobile.
 
-   Si ces valeurs sont modifiées en dehors du SDK, les données rapportées ne sont pas valides.
+   Si ces valeurs sont modifiées en dehors du SDK, les données reportées seront invalides.
 
