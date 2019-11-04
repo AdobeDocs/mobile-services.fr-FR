@@ -2,22 +2,22 @@
 description: Liste des méthodes Audience Manager fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Audience Manager fournies par la bibliothèque Android.
-seo-title: Méthodes d’Audience Manager
-solution: Marketing Cloud,Analytics
-title: Méthodes d’Audience Manager
+seo-title: Méthodes Audience Manager
+solution: Experience Cloud,Analytics
+title: Méthodes Audience Manager
 topic: Développeur et mise en œuvre
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Méthodes Audience Manager{#audience-manager-methods}
 
 Liste des méthodes Audience Manager fournies par la bibliothèque Android.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager et le service d’identité Adobe Experience Platform. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `audience manager`.
 
 Si Audience Manager est configuré dans le fichier JSON, un signal qui contient des mesures de cycle de vie est envoyé avec l’accès de cycle de vie.
 
@@ -73,7 +73,7 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
 
    Définit le DPID et le DPUUID. Ces valeurs sont envoyées avec chaque signal.
 
-   If the DPUUID value that is passed to this method contains characters that are not URL-safe, customers must encode the parameter before passing it to the SDK.
+   Si la valeur DPUUID transmise à cette méthode contient des caractères qui ne sont pas sécurisés contre les URL, les clients doivent coder le paramètre avant de le transmettre au SDK.
 
    * Voici la syntaxe de cette méthode :
 
