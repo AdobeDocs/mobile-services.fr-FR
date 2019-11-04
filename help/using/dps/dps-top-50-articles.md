@@ -1,23 +1,23 @@
 ---
-description: Le rapport sur les 50 premiers articles contient un histogramme et un compte-rendu classifié indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est uniquement disponible pour les clients Digital Publishing Suites (DPS).
+description: Le rapport sur les 50 premiers articles contient un histogramme et un rapport de classement indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
 keywords: mobile
-seo-description: Le rapport sur les 50 premiers articles contient un histogramme et un compte-rendu classifié indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est uniquement disponible pour les clients Digital Publishing Suites (DPS).
+seo-description: Le rapport sur les 50 premiers articles contient un histogramme et un rapport de classement indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
 seo-title: 50 premiers articles
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 50 premiers articles
 topic: Mesures
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
 ---
 
 
-# Rapport des 50 premiers articles{#top-articles}
+# Rapport sur les 50 premiers articles{#top-articles}
 
-The **[!UICONTROL Top 50 Articles]** report displays a bar chart and ranked report displays the most-read articles using the app. This report is available only to DPS customers.
+Le rapport sur les **[!UICONTROL 50 premiers articles]** contient un histogramme et un rapport de classement affichant les articles les plus consultés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS.
 
-Bien que le rapport par défaut affiche les données des 30 derniers jours par nombre de lecteurs, vous pouvez le personnaliser.
+Bien que le rapport par défaut affiche les données relatives aux 30 jours qui précèdent par nombre de lecteurs, vous pouvez le personnaliser.
 
 ![](assets/dps_top_50.png)
 
@@ -25,17 +25,17 @@ Par défaut, ce rapport indique le titre de l’article et le nombre de lecteurs
 
 Vous pouvez configurer les options suivantes pour ce rapport :
 
-* **[!UICONTROL Time Period]**
-Click the **[!UICONTROL Calendar]** icon to select a custom period or to select a preset time period from the drop-down list.
+* **[!UICONTROL Période]**
+Cliquez sur l’icône **[!UICONTROL Calendrier]** pour sélectionner une période personnalisée ou prédéfinie dans la liste déroulante
 
 * **[!UICONTROL Personnaliser]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+   Personnalisez vos rapports en modifiant les options **[!UICONTROL Afficher par]**, en ajoutant des mesures et des filtres, en ajoutant des séries (mesures) supplémentaires, etc. Pour en savoir plus, voir [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md).
 
 * **[!UICONTROL Filtrer]**
 
-   Cliquez sur **[!UICONTROL Filtrer]pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles.** Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Cliquez sur **[!UICONTROL Filtrer]** pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. Pour plus d’informations, voir [Ajout d’un filtre bascule](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Télécharger]**
 
-   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
+   Cliquez sur **[!UICONTROL PDF]** ou **[!UICONTROL CSV]** pour télécharger ou ouvrir les documents et les partager avec des utilisateurs qui n’ont pas accès à Mobile Services, ou pour utiliser le fichier dans des présentations.
