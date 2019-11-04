@@ -3,29 +3,29 @@ description: Liste des méthodes Adobe Analytics fournies par la bibliothèque�
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 seo-title: Méthodes Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Analytics
 topic: Développeur et mise en œuvre
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Méthodes Analytics{#analytics-methods}
 
 Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud], y compris Analytics], Target], Audience Manager] et Adobe Experience Platform Identity Service]. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `analytics`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `analytics`.
 
 Chacune des méthodes suivantes est utilisée pour envoyer des données vers la suite de rapports Adobe Analytics :
 
 * **trackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les affichages disponibles dans l’application, par exemple `home dashboard`, `app settings`, `cart`, etc. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
 
-   If `state` is empty, `app name app version (build)` is displayed in reports. Si cette valeur s’affiche dans les rapports, assurez-vous que vous avez défini `state` dans chaque appel `trackState`.
+   Si `state` est vide, `app name app version (build)` s’affiche dans les rapports. Si cette valeur s’affiche dans les rapports, assurez-vous que vous avez défini `state` dans chaque appel `trackState`.
 
    >[!TIP]
    >
@@ -43,9 +43,10 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackAction** effectue le suivi d’une action dans votre application.
+* **trackAction**
+Effectue le suivi d’une action dans votre application.
 
-   Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
+   Actions que vous voulez mesurer, par exemple `logons`, `banner taps`, `feed subscriptions`, et d’autres mesures, qui se produisent dans l’application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -59,7 +60,8 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier** Renvoie l’identifiant visiteur généré automatiquement pour Analytics.
+* **getTrackingIdentifier**
+envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
    Il s’agit d’un identifiant visiteur unique spécifique à l’application, généré au lancement initial, puis stocké et utilisé à partir de ce lancement. L’identifiant est conservé d’une mise à niveau à l’autre, puis supprimé lorsque l’application est désinstallée.
 
@@ -77,7 +79,7 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
 
 * **trackLocation**
 
-   Envoie la latitude, la longitude et l’emplacement actuels dans un point ciblé défini. For more information, see Geo-location and points of interest.[](/help/android/location/geo-poi.md)
+   Envoie la latitude, la longitude et la position actuelles dans un point ciblé défini. Pour plus d’informations, voir [Géolocalisation et points ciblés](/help/android/location/geo-poi.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -143,7 +145,7 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Voici un exemple de code pour cette méthode :
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
@@ -157,7 +159,7 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `true` to send a hit. Passing `null` for `block` sends the final hit.
+   >Si vous fournissez un `block`, vous devez renvoyer `true` (OUI) pour envoyer un accès. La transmission de `null` pour `block` envoie l’accès final.
 
    * Voici la syntaxe de cette méthode :
 
@@ -181,7 +183,7 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
 
 * **sendQueuedHits**
 
-   **Requires SDK 4.1.**
+   **Requiert le SDK 4.1.**
 
    Quel que soit le nombre d’accès mis en file d’attente, cette méthode force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne.
 
