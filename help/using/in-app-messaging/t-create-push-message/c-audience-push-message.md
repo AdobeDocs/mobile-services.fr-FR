@@ -2,38 +2,38 @@
 description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 keywords: mobile
 seo-description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
-seo-title: Audience  Define and Configure Audience Segments for Push Messages
-solution: Marketing Cloud,Analytics
-title: Audience Définir et configurer des segments d’audience pour les messages push
+seo-title: 'Audience : définition et configuration de segments d’audience pour les messages push'
+solution: Experience Cloud,Analytics
+title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 topic: Mesures
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
 ---
 
 
-# Audience: push messages{#audience-define-and-configure-audience-segments-for-push-messages}
+# Audience : messages push{#audience-define-and-configure-audience-segments-for-push-messages}
 
 Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 
-## Define audience segments {#section_7C4D2393CF7441959FE2381A02867CAC}
+## Définition des segments d’audience {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
+Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Suites de rapports virtuelles](/help/using/manage-apps/c-mob-vrs.md)
 
-Dans Adobe Mobile Services, les marketeurs peuvent uniquement pousser les données vers une seule application par plateforme. Si les marketeurs tentent de les pousser vers des segments qui contiennent des utilisateurs issus de plusieurs applications, un avertissement s’affiche et indique que cette opération peut entraîner de graves dysfonctionnements des messages push, ainsi que l’inscription potentielle de certains utilisateurs sur liste noire. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Troubleshooting push messaging](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+Dans Adobe Mobile Services, les marketeurs peuvent uniquement pousser les données vers une seule application par plateforme. Si les marketeurs tentent de les pousser vers des segments qui contiennent des utilisateurs issus de plusieurs applications, un avertissement s’affiche et indique que cette opération peut entraîner de graves dysfonctionnements des messages push, ainsi que l’inscription potentielle de certains utilisateurs sur liste noire. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
 
-Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->If app users are blacklisted, marketers can **never** send push messages to those affected users again.
+>Si les utilisateurs de l’application sont sur liste noire, les marketeurs ne peuvent plus **jamais** leur envoyer de messages push.
 
-If you select an audience segment that contains users across multiple apps, you might see the following alert:
+Si vous sélectionnez un segment d’audience qui contient des utilisateurs de plusieurs applications, vous pouvez lire le message suivant :
 
 ![plusieurs noms d’application](assets/multiple_appname.png)
 
-The app name is based on the pared down version of the appId, which is automatically sent to Adobe Analytics by the Mobile Services SDK in the `<app name> <version number> (<bundle id>)` format.
+Le nom de l’application est basé sur une version réduite de l’appid, qui est automatiquement envoyée à Adobe Analytics par le SDK Mobile Services au format `<app name> <version number> (<bundle id>)`.
 
 >[!TIP]
 >
@@ -43,19 +43,19 @@ Au maximum, six ensembles de chiffres pour la version et cinq ensembles pour l�
 
 Par exemple :
 
-* `Bea[rd]cons 1.0 (123)` will appear as `Bea[rd]cons`
+* `Bea[rd]cons 1.0 (123)` apparaît comme `Bea[rd]cons`
 * `Bea[rd]cons 1.2 (1.2)` apparaît comme `Bea[rd]cons`
-* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` will appear as `Bea[rd]cons .7`
-* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` will appear as `Bea[rd]cons (.6)`
+* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` apparaît comme `Bea[rd]cons .7`
+* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` apparaît comme `Bea[rd]cons (.6)`
 
-Pour continuer à envoyer des messages push aux applications énumérées, cochez la case **Oui, je souhaite poursuivre.** puis cliquez sur **[!UICONTROL Envoyer]**.
+Pour continuer à envoyer des messages push aux applications énumérées, cochez la case **[!UICONTROL Oui, je souhaite poursuivre.]** puis cliquez sur **[!UICONTROL Envoyer]**.
 
 ## Bonnes pratiques
 
-Voici quelques bonnes pratiques à retenir :
+Voici quelques bonnes pratiques à retenir :
 
 * Pour diminuer les risques de confusion, **évitez** de définir des suites de rapports virtuelles pour application mobile qui contiennent des données issues de plusieurs applications.
-* Utilisez un ID d’application unique intégré à un segment d’audience **à chaque fois** que vous souhaitez envoyer un message push.
+* Utilisez un ID d’application unique intégré à un segment d’audience **à chaque fois** que vous souhaitez envoyer un message push. 
 Cette méthode garantit que les notifications push sont envoyées à un segment d’audience qui n’appartient qu’à **une seule** application.
 
 ### Exemples
@@ -66,37 +66,37 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
 **À ne pas faire** : le marketeur fournit des certificats push pour les versions iOS et Android d’une application, par exemple, pour Adobe Photoshop. Si le marketeur crée et envoie un message à *tous les utilisateurs actifs au cours des 30 derniers jours*, seuls les utilisateurs de l’application Adobe Photoshop sur iOS et Android recevront le message push, tous les utilisateurs de l’application Adobe Illustrator sur iOS et Android seront inscrits sur liste noire. Pour de plus amples informations et exemples, consultez *Résoudre les dysfonctionnements des messages push* dans [Résolution des problèmes liés aux messages push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
-## Configure audience segments {#section_A92C60885A30421B8150820EC1CCBF13}
+## Configuration des segments d’audience {#section_A92C60885A30421B8150820EC1CCBF13}
 
-1. Go to the Audience page for a new push message.
+1. Accédez à la page Audience pour obtenir un nouveau message push.
 
-   For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
+   Pour plus d’informations, voir [Création d’un message push](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
-   As you configure the audience options, remember the following **important** information:
+   Pendant que vous configurez les options d’audience, prenez note des informations **importantes** :
 
    * L’**[!UICONTROL Audience estimée ayant souscrit]** est le nombre d’appareils qui correspondent au segment Adobe Analytics **et** le nombre d’appareils ayant accepté les messages.
 
       Vous pouvez afficher une estimation du nombre d’utilisateurs membres de vos segments sélectionnés qui ont choisi de recevoir des messages et qui recevront le message push. Le nombre total d’utilisateurs de l’application s’affiche en dessous de l’estimation, indépendamment du statut de souscription.
 
-   * Le **[!UICONTROL Total]est le nombre d’appareils qui correspondent au segment Adobe Analytics.**
+   * Le **[!UICONTROL Total]** est le nombre d’appareils qui correspondent au segment Adobe Analytics.
 
-   * Push messages are sent to the devices that are part of a defined Adobe Analytics segment **and** that have opted-in for push messages.
+   * Les messages push sont envoyés aux appareils appartenant au segment Adobe Analytics défini **et** qui ont accepté les messages push.
 
-      This means that the SDK has sent a value of `True` for the Push Message Opt-In evar.
+      En d’autres termes, le SDK a renvoyé une valeur `True` pour l’eVar de souscription des messages push.
 
-   * Même si le périphérique dispose d’un jeton de périphérique valide, à moins qu’Adobe Analytics n’ait défini l’indicateur d’inclusion, le message n’est pas envoyé au périphérique.
+   * Même si l’appareil dispose d’un jeton d’appareil valide, le message n’est pas envoyé à l’appareil, sauf si Adobe Analytics a défini le drapeau de souscription.
 
    * Pour de plus amples informations sur la résolution des problèmes liés aux messages push, consultez ceci :
 
-      * [Push messaging in iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Messagerie push dans iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
 
-      * [Push messaging in Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
+      * [Messagerie push dans Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
 
 1. Renseignez les champs suivants :
 
    * **[!UICONTROL Durant :]**
 
-      Spécifiez la plage temporelle à utiliser pour l’audience estimée. Sélectionnez une option dans la liste déroulante **[!UICONTROL Durant] :**
+      Spécifiez la plage temporelle à utiliser pour l’audience estimée. Sélectionnez une option dans la liste déroulante **[!UICONTROL Durant]** :
 
    * **[!UICONTROL L’option Dernier(s)]** vous permet de sélectionner une plage temporelle relative (par exemple, les 7 derniers jours, les 30 derniers jours ou les 60 derniers jours) à partir du moment où l’envoi du message push est programmé.
 
@@ -108,11 +108,11 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
    * **[!UICONTROL Segments Analytics]**
 
-      Select an existing Adobe Analytics segment from the drop-down list. For more information, see [Build segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. Pour en savoir plus, voir [Création de segments](https://docs.adobe.com/content/help/fr-FR/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
    * **[!UICONTROL Segments personnalisés]**
 
-      Select a metric or variable from the drop-down list (for example, **[!UICONTROL Days Since Last Use]** or **[!UICONTROL Point of Interest]**) and configure the filter as desired. À titre d’exemple, le segment personnalisé suivant cible les utilisateurs possesseurs d’un téléphone mobile exécutant iOS et situés dans la région de la Californie (États-Unis).
+      Sélectionnez une mesure ou une variable dans la liste déroulante (par exemple, **[!UICONTROL Jours depuis la dernière utilisation]** ou **[!UICONTROL Point ciblé]**), et configurez le filtre comme vous le souhaitez. À titre d’exemple, le segment personnalisé suivant cible les utilisateurs possesseurs d’un téléphone mobile exécutant iOS et situés dans la région de la Californie (États-Unis).
    >[!IMPORTANT]
    >
-   >In the **[!UICONTROL Create Audience]** section, if you click **[!UICONTROL And]**, a dialog box appears that reminds you to ensure that each app that is listed **must** have a valid certificate. If you clicked **[!UICONTROL Or]**, the default dialog box appears. For more information about valid certificates and report suites, see [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
+   >Dans la section **[!UICONTROL Créer une audience]**, si vous cliquez sur **[!UICONTROL Et]**, une boîte de dialogue s’affiche pour vous rappeler que chaque application répertoriée **doit** disposer d’un certificat valide. Si vous avez cliqué sur **[!UICONTROL Ou]**, la boîte de dialogue par défaut apparaît. Pour plus d’informations sur les certificats valides et les suites de rapports, voir [Suites de rapports virtuelles.](/help/using/manage-apps/c-mob-vrs.md)
