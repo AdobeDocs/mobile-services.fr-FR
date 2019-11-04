@@ -2,26 +2,26 @@
 description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
 seo-description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
 seo-title: Règles de traitement et données contextuelles.
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Règles de traitement et données contextuelles.
 topic: Développeur et mise en œuvre
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Processing rules and context data{#processing-rules-and-context-data}
+# Règles de traitement et données contextuelles{#processing-rules-and-context-data}
 
 Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
 
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
 * [Processing Rules Training](https://tv.adobe.com/embed/1181/16506/) (Formation aux règles de traitement) – Summit 2013
-* Devenir autorisé à utiliser des règles de traitement
+* Obtention de l’autorisation d’utiliser des règles de traitement
 
-   For more information about processing rules, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+   Pour plus d’informations sur les règles de traitement, voir l’[Aperçu des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Lors de l’utilisation des règles de traitement, prenez note des informations suivantes :
 
@@ -63,5 +63,5 @@ Lors de l’utilisation des règles de traitement, prenez note des informations 
 
 >[!TIP]
 >
->Adobe reserves the namespace " ". `a.` À part cette restriction, pour éviter les collisions, la seule exigence est que les variables de données contextuelles soient uniques dans votre société de connexion.
+>Adobe réserve l’espace de noms « `a.` ». À part cette restriction, pour éviter les collisions, la seule exigence est que les variables de données contextuelles soient uniques dans votre société de connexion.
 
