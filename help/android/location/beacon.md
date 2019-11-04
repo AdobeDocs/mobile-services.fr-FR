@@ -3,11 +3,11 @@ description: Le suivi des balises permet de mesurer et de cibler des micro-empla
 keywords: android;library;mobile;sdk
 seo-description: Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth basse énergie (Bluetooth Low Energy).
 seo-title: Suivi des balises
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Suivi des balises
 topic: Développeur et mise en œuvre
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -19,7 +19,7 @@ Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l�
 
 Les données de balises suivantes sont envoyées à Analytics et à Target lorsque `trackBeacon` est appelé :
 
-* `a.beacon.uuid` - ProximityUUID de la balise
+* `a.beacon.uuid` : ProximityUUID de la balise
 * `a.beacon.major` : numéro majeur de la balise (par exemple, le numéro de la boutique)
 * `a.beacon.minor` : numéro mineur de la balise (par exemple, un numéro unique dans une boutique)
 * `a.beacon.prox` : valeurs 0 à 3 représentant la distance de l’utilisateur par rapport à la balise.
@@ -37,7 +37,7 @@ Ces données de balise sont capturées dans les variables des solutions mobiles.
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* IntelliJ IDEA ou Eclipse dans l’implémentation et le cycle de vie [](/help/android/getting-started/dev-qs.md)principaux.
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration au projet IntelliJ IDEA ou Eclipse* dans [Mise en œuvre principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 
 1. Importez la bibliothèque :
 
@@ -67,7 +67,7 @@ Ces données de balise sont capturées dans les variables des solutions mobiles.
    Analytics.clearBeacon();
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Envoi de données supplémentaires {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 Outre les données de balises, vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel `trackBeacon` :
 
@@ -77,7 +77,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-Context data values must be mapped to custom variables in the Adobe Mobile services:
+Les valeurs des données contextuelles doivent être mises en correspondance avec des variables personnalisées dans Adobe Mobile Services :
 
 ![](assets/map-variable-context-ltv.png)
 
