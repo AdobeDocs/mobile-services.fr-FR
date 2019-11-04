@@ -1,21 +1,21 @@
 ---
-description: 'The following Acquisition methods are provided by the iOS library '
-seo-description: 'The following Acquisition methods are provided by the iOS library '
+description: 'Les méthodes d’acquisition suivantes sont fournies par la bibliothèque iOS : '
+seo-description: 'Les méthodes d’acquisition suivantes sont fournies par la bibliothèque iOS : '
 seo-title: Méthodes d’acquisition
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes d’acquisition
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Acquisition methods {#acquisition-methods}
+# Méthodes d’acquisition{#acquisition-methods}
 
 Les méthodes d’acquisition suivantes sont fournies par la bibliothèque iOS :
 
-La méthode suivante est prise en charge :
+La méthode suivante est prise en charge :
 
 * **acquisitionCampaignStartForApp:data:**
 
