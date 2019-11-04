@@ -4,29 +4,29 @@ seo-description: Une fois l’URL de création de liens profonds configurée dan
 seo-title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 title: Mise en œuvre de la messagerie Push avec la création de liens profonds
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# Mise en œuvre de la messagerie push avec la création de liens profonds{#implement-push-messaging-with-deep-linking}
 
 Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé `adb_deeplink`.
 
 1. Dans AppDelegate, vous pouvez récupérer l’URL de lien profond et la gérer par vous-même dans les emplacements suivants :
 
-   * Dans `application:didFinishLaunchingWithOptions`:
+   * Dans `application:didFinishLaunchingWithOptions` :
 
       Si l’application n’est pas en cours d’exécution lorsqu’un clic publicitaire push se produit, vous pouvez récupérer les données utiles à partir de `launchOptions`. L’URL de lien profond se situe dans le dictionnaire des données utiles à côté de la clé `adb_deeplink`.
 
    * Méthodes déléguées pour les notifications distantes
 
-      In the `didReceiveRemoteNotification:` application or in the `didReceiveRemoteNotification:fetchCompletionHandler:` application, you can get the URL by accessing the `userInfo` dictionary with the `adb_deeplink` key.
+      Dans l’application `didReceiveRemoteNotification:` ou `didReceiveRemoteNotification:fetchCompletionHandler:`, vous pouvez récupérer l’URL en accédant au dictionnaire `userInfo` à l’aide de la clé `adb_deeplink`.
 
-   * The delegate methods for `UNUserNotificationCenter`
+   * Méthodes déléguées pour `UNUserNotificationCenter`
 
-      In the `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` method, you can get the push payload from the `userInfo` dictionary, in the `adb_deeplink` key.
+      Dans la méthode `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:`, vous pouvez obtenir la charge utile push à partir du dictionnaire `userInfo`, dans la clé `adb_deeplink`.
 
 Par exemple :
 
