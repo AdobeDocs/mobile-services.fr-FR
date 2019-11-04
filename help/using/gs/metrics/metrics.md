@@ -3,17 +3,17 @@ description: Vous pouvez effectuer différentes mesures en utilisant Adobe Mobi
 keywords: mobile
 seo-description: Vous pouvez effectuer différentes mesures en utilisant Adobe Mobile et en collectant les mesures que vous souhaitez suivre pour votre application.
 seo-title: Mesures mobiles
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mesures mobiles
 topic: Mesures
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Mobile metrics{#mobile-metrics}
+# Mesures mobiles{#mobile-metrics}
 
 Vous pouvez effectuer différentes mesures en utilisant Adobe Mobile et en collectant les mesures que vous souhaitez suivre pour votre application.
 
@@ -31,7 +31,7 @@ Les types de mesures suivants sont pris en charge :
 
 * **Recettes**
 
-   Vous pouvez afficher les recettes collectées par boutique d’applications et les recettes mesurées directement à l’aide des événements d’achat In-App. Other cart metrics are available by [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   Vous pouvez consulter les recettes collectées par boutique d’applications et les recettes mesurées directement à l’aide des événements d’achat in-app. D’autres mesures de panier sont disponibles dans [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md).
 
 * **Événements d’application**
 
@@ -43,7 +43,7 @@ Les types de mesures suivants sont pris en charge :
 
 * **Emplacement et points ciblés**
 
-   Si la création de rapports de géolocalisation est activée dans la suite de rapports Analytics, plusieurs rapports basés sur l’emplacement sont disponibles. On Wi-Fi, GeoReporting accuracy is similar to that of a desktop web browser. Pour une connexion de données, la précision varie selon le fournisseur et le mode de cheminement des demandes.
+   Si la création de rapports de géolocalisation est activée dans la suite de rapports Analytics, plusieurs rapports basés sur l’emplacement sont disponibles. En ce qui concerne le Wi-Fi, la précision de la création de rapports de géolocalisation est similaire à celle d’un navigateur Web de bureau. Pour une connexion de données, la précision varie selon le fournisseur et le mode de cheminement des demandes.
 
    Pour plus de précision, vous pouvez également ajouter le suivi de l’emplacement et des points ciblés à votre application. Ces options vous permettent de créer des rapports qui contiennent des données de longitude et de latitude et d’utiliser les géo-barrières pour déterminer à quel moment un utilisateur se trouve dans un rayon d’un point ciblé prédéfini.
 
