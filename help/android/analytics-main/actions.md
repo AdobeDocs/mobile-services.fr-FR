@@ -2,11 +2,11 @@
 description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
 seo-description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
 seo-title: Suivi des actions de l’application
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Développeur et mise en œuvre
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -18,11 +18,11 @@ Les actions sont les événements qui se produisent dans votre application Andro
 
 Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez envoyer un appel `trackAction` à chaque nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Le suivi des actions n’est pas automatique. Par conséquent, vous devez appeler `trackAction` lorsqu’un événement dont vous souhaitez effectuer le suivi se produit, puis mettre en correspondance l’action avec un événement personnalisé.
 
-## Tracking actions {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Suivi des actions{#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration au projet IntelliJ IDEA ou Eclipse* dans [Mise en œuvre principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 
 1. Importez la bibliothèque :
 
@@ -30,14 +30,14 @@ Chaque action est associée à une ou à plusieurs mesures qui sont incrémenté
    import com.adobe.mobile.*;
    ```
 
-1. Lorsque l’action dont vous souhaitez effectuer le suivi se produit dans votre application, appelez `trackAction` pour envoyer un accès pour cette action:
+1. Lorsque l’action dont vous souhaitez effectuer le suivi se produit dans votre application, appelez `trackAction` pour envoyer un accès pour cette action :
 
    ```java
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
 1. Dans l’interface utilisateur Adobe Mobile Services, sélectionnez l’application souhaitée, puis cliquez sur **[!UICONTROL Gérer les paramètres d’application]**.
-1. Cliquez sur **[!UICONTROL Gérer les variables et les mesures]**, puis sur l’onglet **Mesures personnalisées[!UICONTROL .]**
+1. Cliquez sur **[!UICONTROL Gérer les variables et les mesures]**, puis sur l’onglet **[!UICONTROL Mesures personnalisées]**.
 
 1. Mappez le nom des données contextuelles utilisé dans votre code, par exemple `myapp.ActionName`, à un événement personnalisé.
 
@@ -47,9 +47,9 @@ Vous pouvez également définir une prop qui contiendra toutes les valeurs d’a
 
 ![](assets/map-custom-prop.png)
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## Envoi de données supplémentaires {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
-Outre le nom de l’action, vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel d’action de suivi :
+En plus du nom de l’action, vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel d’action de suivi :
 
 ```java
 HashMap<String, Object> exampleContextData = new HashMap<String, Object>(); 
@@ -61,11 +61,11 @@ Les valeurs de données contextuelles doivent être mappées à des variables pe
 
 ![](assets/map-variable-context-action.png)
 
-## Action reporting {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## Création de rapports sur les actions {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 | Interface | Rapport |
 |--- |--- |
-| Adobe Mobile Services   | **** Rapport Chemins d’accès des actions.  Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier.** |
-| Rapports et analyses marketing | **[!UICONTROL Rapport Événement personnalisé.]**  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
-| Analyses ad hoc | **[!UICONTROL Rapport Événement personnalisé.]**  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Adobe Mobile Services | Rapport **[!UICONTROL Chemins d’accès des actions]**.  Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]** dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier. |
+| Rapports et analyses marketing | Rapport [!UICONTROL **Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Analyses ad hoc | Rapport [!UICONTROL **Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
 
