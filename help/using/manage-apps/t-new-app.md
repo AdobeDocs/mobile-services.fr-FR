@@ -3,11 +3,11 @@ description: Utilisez ces informations pour créer une application et configurer
 keywords: mobile
 seo-description: Utilisez ces informations pour créer une application et configurer ses mesures clés ; configurer les options du SDK pour Adobe Analytics et Adobe Audience Manager ; configurer les options d’acquisition et du service d’ID ; et télécharger le fichier de configuration, les SDK et les outils de développement et de test.
 seo-title: Ajout d’une nouvelle application
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Ajout d’une nouvelle application
 topic: Mesures
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -21,16 +21,16 @@ Ces instructions indiquent comment ajouter une nouvelle application et configure
 
 Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’interface utilisateur de Adobe Mobile Services. Une fois l’application créée, la configuration appropriée est générée afin d’être fournie aux développeurs qui mettent en œuvre le SDK Mobile pour l’application.
 
-1. Connectez-vous à Adobe Mobile Services et effectuez l’une des tâches suivantes : 
+1. Connectez-vous à Adobe Mobile Services et effectuez l’une des tâches suivantes :
 
-   * Cliquez sur **[!UICONTROL Créer]pour créer une application.**
+   * Cliquez sur **[!UICONTROL Créer]** pour créer une application.
    * Pour ajouter des applications supplémentaires, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur **[!UICONTROL Ajouter]**.
 
       Pour plus d’informations sur la connexion, voir [Connexion](/help/using/gs/gs-signin.md).
 
       >[!TIP]
       >
-      >Pour gérer les applications existantes, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur l’application à modifier. Vous pouvez effectuer des modifications sur la page Informations sur l’application.
+      >Pour gérer des applications existantes, cliquez sur Gérer les applications dans le menu de navigation de gauche, puis cliquez sur l’application que vous souhaitez modifier. Vous pouvez effectuer des modifications sur la page Informations sur l’application.
 
 1. Renseignez les champs suivants :
 
@@ -38,7 +38,7 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
    Indiquez la suite de rapports dans laquelle les données de rapport seront collectées et stockées dans Adobe Analytics. Chaque application est connectée à une seule suite de rapports Analytics. Si vous envoyez des données d’application à plusieurs suites de rapports, ajoutez une nouvelle application pour chaque suite de rapports. Chaque application est connectée à une seule suite de rapports Analytics. Si vous envoyez des données d’application à plusieurs suites de rapports, ajoutez une nouvelle application pour chaque suite de rapports.
 
-   Si vous avez hérité des droits d’administrateur Analytics dans Adobe Mobile, vous pouvez créer une suite de rapports dans Adobe Mobile. To create a new report suite, select **[!UICONTROL New Report Suite]** and type information into the following fields:
+   Si vous avez hérité des droits d’administrateur Analytics dans Adobe Mobile, vous pouvez créer une suite de rapports dans Adobe Mobile. Pour créer une suite de rapports, sélectionnez **[!UICONTROL Nouvelle suite de rapports]** et renseignez les champs suivants :
 
    * **[!UICONTROL Identifiant de Report Suite]**
 
@@ -46,7 +46,7 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
    * **[!UICONTROL Copier les paramètres depuis]**
 
-      Les variables, événements, règles de traitement et autres paramètres sont configurés dans la nouvelle suite de rapports exactement comme dans cette suite de rapports. Une suite de rapports créée dans Mobile Services n’est activée en ligne (ou horodatée) que si la suite de rapports **Copier les paramètres de** utilisée était le Modèle d’applications mobiles, ou si vous créez une suite de rapports qui est activée hors ligne.
+      Les variables, événements, règles de traitement et autres paramètres sont configurés dans la nouvelle suite de rapports exactement comme dans cette suite de rapports. Une suite de rapports créée dans Mobile Services n’est activée en ligne (ou horodatée) que si la suite de rapports **[!UICONTROL Copier les paramètres de]** utilisée était le Modèle d’applications mobiles, ou si vous créez une suite de rapports qui est activée hors ligne.
 
    * **[!UICONTROL Fuseau horaire]**
 
@@ -54,18 +54,18 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
    * **[!UICONTROL Devise]**
 
-      Les recettes sont suivies et rapportées comme ce type de devise.
+      Les recettes sont suivies et affichées dans cette devise.
    >[!TIP]
    >
-   >Pour utiliser une suite de rapports virtuelle, voir Suites [de rapports](/help/using/manage-apps/c-mob-vrs.md)virtuelles.
+   >Pour utiliser une suite de rapports virtuelle, voir [Aperçu des suites de rapports](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Icône]**
 
-      (**Optional**) To browse to and select an icon for your app, click **[!UICONTROL Icon]**.
+      (**Facultatif**) Pour rechercher et sélectionner une icône pour votre application, cliquez sur **[!UICONTROL Icône]**.
 
    * **[!UICONTROL Nom]**
 
-      (**Optional**) Type a descriptive name for the app. Ce nom vous permet de localiser rapidement une application. Un nom significatif peut vous aider à comprendre rapidement l’objectif et les paramètres de l’application.
+      (**Facultatif**) Saisissez un nom explicite pour l’application. Ce nom vous permet de localiser rapidement une application. Un nom significatif peut vous aider à comprendre rapidement l’objectif et les paramètres de l’application.
 
    * **[!UICONTROL Type]**
 
@@ -75,7 +75,7 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
       * **[!UICONTROL Standard]**
 
-         You can leave the **[!UICONTROL Standard}** option selected for most apps.
+         Vous pouvez laisser l’option **[!UICONTROL Standard}** sélectionnée pour la plupart des applications.
 
       * **[!UICONTROL Publication]**
 
@@ -83,13 +83,13 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
       * **[!UICONTROL Game]**
 
-         Cette option est similaire à l’option **[!UICONTROL Standard]**, sauf que **Game]remplace la terminologie employée dans les rapports par des termes relatifs aux jeux.[!UICONTROL ** Par exemple, les utilisateurs deviennent des lecteurs. Les rapports propres aux jeux sont automatiquement affichés pour les applications de jeu.
+         Cette option est similaire à l’option **[!UICONTROL Standard]**, sauf que **[!UICONTROL Game]** remplace la terminologie employée dans les rapports par des termes relatifs aux jeux. Par exemple, les utilisateurs deviennent des lecteurs. Les rapports propres aux jeux sont automatiquement affichés pour les applications de jeu.
    * **[!UICONTROL Description]**
 
-      (**Optional**) Type a description for the app.
+      (**Facultatif**) Saisissez une description pour l’application.
 
 
 
-1. Click **[!UICONTROL Save]** to add the new app.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour ajouter la nouvelle application.
 
-   Une fois l’application ajoutée, vous pouvez consulter la page Informations sur l’application pour connaître les autres options de configuration. For more information, see [Manage App Settings](/help/using/c-manage-app-settings/c-manage-app-settings.md).
+   Une fois l’application ajoutée, vous pouvez consulter la page Informations sur l’application pour connaître les autres options de configuration. Pour plus d’informations, voir [Gérer les paramètres d’application](/help/using/c-manage-app-settings/c-manage-app-settings.md).
