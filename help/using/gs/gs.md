@@ -3,11 +3,11 @@ description: Ces informations vous aident à comprendre et à utiliser Adobe Mo
 keywords: mobile
 seo-description: Ces informations vous aident à comprendre et à utiliser Adobe Mobile Services.
 seo-title: Prise en main
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Prise en main
 topic: Mesures
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -41,7 +41,7 @@ Adobe Mobile Services contribue à stimuler l’engagement des utilisateurs de
 
 Dans *Acquérir*, vous utilisez des supports propriétaires, acquis et payants afin de stimuler l’acquisition des utilisateurs pour les téléchargements d’applications dans les principales boutiques d’applications. Adobe Mobile Services permet d’accélérer le processus d’acquisition des utilisateurs.
 
-Il offre des processus d’acquisition des utilisateurs, notamment le suivi d’acquisition et les liens profonds, qui mesurent l’efficacité de vos canaux en matière d’acquisition d’utilisateurs. With Marketing Links that track which users came from which channel, you can gain visibility into which acquisition channels are most effective in driving profitable and engaged users.
+Il offre des processus d’acquisition des utilisateurs, notamment le suivi d’acquisition et les liens profonds, qui mesurent l’efficacité de vos canaux en matière d’acquisition d’utilisateurs. Grâce aux liens marketing qui effectuent le suivi des utilisateurs issus de chaque canal, vous pouvez bénéficier d’une bonne visibilité sur les canaux les plus efficaces pour stimuler l’acquisition d’utilisateurs rentables et engagés.
 
 En outre, les liens profonds permettent d’orienter directement les utilisateurs vers le contenu de votre choix et de les encourager à installer votre application si nécessaire.
 
@@ -82,7 +82,7 @@ Dans *Interagir*, vous pouvez utiliser des notifications push et des messages in
 * Les messages in-app sont déclenchés par les analyses en temps réel, les alertes et les nouveaux contenus/offres.
 * Interagir permet de comprendre les consultations, les taux de clics publicitaires et le comportement des utilisateurs en aval.
 
-### Adobe Mobile Messaging
+### Messagerie Adobe Mobile
 
 Vous pouvez utiliser des notifications push et in-app pour communiquer avec les utilisateurs. Les notifications push sont envoyées via le système d’exploitation sur l’appareil, tandis que les messages in-app s’affichent dans l’application lorsqu’un utilisateur interagit activement avec cette dernière. Les messages in-app peuvent inclure des formats supplémentaires, comme des fenêtres contextuelles et des spots.
 
@@ -111,7 +111,7 @@ Pour plus d’informations sur la création de messages in-app, voir [Création 
 
 Dans *Optimiser*, vous pouvez optimiser des conversions (abonnements, commerce, recettes publicitaires, etc.) et améliorer la rétention des clients. Optimiser l’expérience client dans votre application peut vous aider à personnaliser votre contenu pour accroître votre retour sur investissement et votre taux de conversion.
 
-Pour plus d’informations sur les tests et sur Adobe Target, consultez la section [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html).
+Pour plus d’informations sur les tests et sur Adobe Target, consultez la section [Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/target-home.html).
 
 ### Géociblage
 
@@ -121,7 +121,7 @@ Désormais, Adobe Target pour applications mobiles tire pleinement parti de la 
 
 Pour plus d’informations sur l’emplacement, voir le contenu suivant :
 
-* [Emplacement dans le guide de l’utilisateur de Mobile Services](/help/using/location/c-location-overview.md)
+* [Emplacement dans le guide de l’utilisateur Mobile Services](/help/using/location/c-location-overview.md)
 * [Emplacement dans le guide SDK Android](/help/android/location/location.md)
 * [Emplacement dans le guide SDK iOS](/help/ios/location/location.md)
 
@@ -158,4 +158,4 @@ Le SDK Adobe Mobile offre les fonctionnalités suivantes :
    * Il minimise la charge de traitement des appareils pour l’envoi de données aux serveurs Adobe et aux systèmes tiers.
    * Son empreinte légère réduit la taille du package d’application soumis aux boutiques d’applications.
 
-Pour en savoir plus sur les SDK Adobe Mobile, voir [SDK Android 4.x pour solutions Experience Cloud](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) et [SDK iOS 4.x pour solutions Experience Cloud](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html).
+Pour en savoir plus sur les SDK Adobe Mobile, voir [SDK Android 4.x pour solutions Experience Cloud](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/overview.html) et [SDK iOS 4.x pour solutions Experience Cloud](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/rel-notes.html).
