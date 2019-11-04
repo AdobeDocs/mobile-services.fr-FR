@@ -1,22 +1,22 @@
 ---
-description: 'Avant de configurer une suite de rapports et de collecter les données d’application Android, effectuez les tâches préalables suivantes : '
-seo-description: 'Avant de configurer une suite de rapports et de collecter les données d’application Android, effectuez les tâches préalables suivantes : '
+description: 'Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes '
+seo-description: 'Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes '
 seo-title: Avant de commencer
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Avant de commencer
 topic: Développeur et mise en œuvre
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Before you start {#before-you-start}
+# Avant de commencer{#before-you-start}
 
 Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes :
 
-## Role-specific tasks {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
+## Tâches spécifiques à un rôle {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
 
 Les administrateurs d’Analytics et les développeurs d’applications doivent procéder comme suit :
 
@@ -31,7 +31,7 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 >[!IMPORTANT]
 >
->To create a new report suite and download the SDKs, you must be an Analytics Administrator.
+>Pour créer une suite de rapports et télécharger les SDK, vous devez être un administrateur d’Analytics.
 
 ### Développeurs d’applications
 
@@ -50,11 +50,11 @@ Vous pouvez vous connecter à l’interface utilisateur Adobe Mobile Services 
 
 ### Experience Cloud
 
-Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)Experience Cloud.
+Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
->Si vous ne savez pas si votre société a été configurée dans Experience Cloud, utilisez votre compte Adobe Analytics existant.
+>Si vous ne savez pas si votre entreprise dispose de privilèges d’accès dans Experience Cloud, utilisez votre compte Adobe Analytics existant.
 
 ### Adobe Analytics
 
@@ -66,15 +66,15 @@ Pour créer une suite de rapports permettant de collecter des données d’appli
 
 1. Cliquez sur **[!UICONTROL Créer une application]**.
 
-   If you do not see this button, click **[!UICONTROL Manage Apps]** &gt; **[!UICONTROL Add]**.
+   Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** &gt; **[!UICONTROL Ajouter]**.
 
 1. Dans la liste déroulante **[!UICONTROL Suite de rapports]**, sélectionnez **[!UICONTROL Nouvelle suite de rapports]**.
 
 1. Saisissez le nom de l’application et sélectionnez un type de suite de rapports.
 
    Exemple d’identifiant de suite de rapports : `mycomobileappdev`. Vous devez configurer des suites de rapports et des applications distinctes pour les versions de développement et de production, afin de pouvoir répéter ces étapes lorsque vous êtes prêt à configurer la version de production.
-1. In **[!UICONTROL Report Suite ID]**, verify that your report suite name is displayed.
-1. Dans **[!UICONTROL Copier les paramètres de]**, vérifiez que **Modèle d’applications mobiles]est sélectionné.[!UICONTROL **
+1. Dans **[!UICONTROL Identifiant de suite de rapports]**, vérifiez que le nom de votre suite de rapports est affiché.
+1. Dans **[!UICONTROL Copier les paramètres de]**, vérifiez que **[!UICONTROL Modèle d’applications mobiles]** est sélectionné.
 
    Ce modèle active les horodatages afin de collecter les données hors ligne et active les variables de la solution mobile permettant de capturer les mesures de cycle de vie.
 
@@ -86,16 +86,16 @@ Pour télécharger le SDK mobile :
 
 1. Connectez-vous à l’interface utilisateur Mobile Services et ouvrez votre application de l’une des façons suivantes :
 
-   * Dans la liste déroulante **[!UICONTROL Toutes les applications], sélectionnez votre application.**
+   * Dans la liste déroulante **[!UICONTROL Toutes les applications]**, sélectionnez votre application.
    * Dans le volet de droite, recherchez votre application et ouvrez-la.
 
 1. Cliquez sur **[!UICONTROL Gérer les paramètres de l’application]**.
-1. Accédez à la section **[!UICONTROL Téléchargements de SDK d’application].**
+1. Accédez à la section **[!UICONTROL Téléchargements de SDK d’application]**.
 1. Téléchargez le SDK et l’exemple d’application correspondant à votre plateforme.
 
 >[!TIP]
 >
->Un fichier de configuration pour votre application est automatiquement inclus dans le téléchargement du SDK. Il n’est donc pas nécessaire de le télécharger séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
+>Un fichier de configuration correspondant à votre application est automatiquement inclus dans le téléchargement du SDK : ainsi, vous n’avez pas besoin de télécharger ce fichier séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
 
 Si vous utilisez Android Studio, vous pouvez également ajouter l’instruction suivante au fichier `build.gradle` de votre application :
 
