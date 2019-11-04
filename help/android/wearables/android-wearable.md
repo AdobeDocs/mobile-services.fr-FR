@@ -1,31 +1,31 @@
 ---
 description: À compter de la version 4.5 du SDK Android, une nouvelle extension Android a été ajoutée pour permettre la collecte des données à partir de l’application Android Wearable.
 seo-description: À compter de la version 4.5 du SDK Android, une nouvelle extension Android a été ajoutée pour permettre la collecte des données à partir de l’application Android Wearable.
-seo-title: Prise en main d’Android Wearables
-solution: Marketing Cloud,Analytics
-title: Prise en main d’Android Wearables
+seo-title: 'Android Wearables : Prise en main'
+solution: Experience Cloud,Analytics
+title: 'Android Wearables : Prise en main'
 topic: Développeur et mise en œuvre
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: getting started{#android-wearables-getting-started}
+# Android Wearables : Prise en main{#android-wearables-getting-started}
 
 À compter de la version 4.5 du SDK Android, une nouvelle extension Android a été ajoutée pour permettre la collecte des données à partir de l’application Android Wearable.
 
-## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
+## Configuration du SDK pour une application pour portables (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-For more information about importing the SDK into your project, see Core Implementation and Lifecycle.[](/help/android/getting-started/dev-qs.md)
+Pour plus d’informations sur l’importation du SDK dans votre projet, voir [Mise en œuvre principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 
 1. Ajoutez le fichier `ADBMobileConfig.json` au dossier assets du projet.
 1. Ajoutez le fichier `adobeMobileLibrary-*.jar` au dossier libs ou assurez-vous que ce fichier est référencé par le projet.
 
    >[!TIP]
    >
-   >You might need to sync the gradle project after adding the `.jar` file.
+   >Vous devrez peut-être synchroniser le projet gradle après l’ajout du fichier `.jar`.
 
 1. Pour la méthode `onCreate`, autorisez le SDK à accéder au contexte de l’application à l’aide de `Config.setContext` :
 
@@ -40,7 +40,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add the following code to the  file:`AndroidManifest.xml`
+1. Ajoutez le code suivant au `AndroidManifest.xml` fichier :
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -55,7 +55,7 @@ For more information about importing the SDK into your project, see Core Impleme
    ```
 
 1. Assurez-vous que votre projet comprend la bibliothèque des services Google Play.
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. Mettez en œuvre `WearableListenerService` ou ajoutez le code correspondant à `WearableListenerService` :
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. Ajouter `WearListenerService` au fichier `AndroidManifest.xml` :
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -117,7 +117,7 @@ For more information about importing the SDK into your project, see Core Impleme
    Permalink Edit
    ```
 
-## Configuring the SDK for a Wearable app (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## Configuration du SDK pour une application pour wearables (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. Procédez de l’une des manières suivantes :
 
@@ -162,7 +162,7 @@ For more information about importing the SDK into your project, see Core Impleme
    ```
 
 1. Assurez-vous que votre projet comprend la bibliothèque de services de Google Play.
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. Mettez en œuvre `WearableListenerService` ou ajoutez le code correspondant à `WearableListenerService` :
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. Ajouter `WearListenerService` au fichier `AndroidManifest.xml` :
 
    ```java
    If you are using Google Play Services  < 8.2 
