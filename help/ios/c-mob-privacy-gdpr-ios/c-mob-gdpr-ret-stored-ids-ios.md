@@ -4,27 +4,27 @@ seo-description: Consultez ces informations si vous devez récupérer des identi
 seo-title: Récupération des identifiants stockés
 title: Récupération des identifiants stockés
 uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Retrieving stored identifiers{#retrieving-stored-identifiers}
+# Récupération des identifiants stockés{#retrieving-stored-identifiers}
 
 Consultez ces informations si vous devez récupérer des identités de SDK Experience Cloud stockées localement depuis votre application iOS et conformément aux demandes d’accès aux données en vertu du RGPD.
 
-Pour plus d’informations sur le RGPD, voir [Le RGPD et votre entreprise](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Pour plus d’informations sur le RGPD, voir [Le RGPD et votre entreprise](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
 >[!IMPORTANT]
 >
->The `getAllIdentifiersAsync` method retrieves identities that are stored in the Experience Cloud SDKs. Vous devez l’invoquer **avant** que l’utilisateur ne se désinscrive.
+>La méthode `getAllIdentifiersAsync` récupère les identités qui sont stockées dans les SDK Experience Cloud. Vous devez l’invoquer **avant** que l’utilisateur ne se désinscrive.
 
 Les identités de SDK Experience Cloud (le cas échéant) sont stockées localement et renvoyées dans une chaîne JSON, qui peut contenir les éléments suivants :
 
 * Contexte de la société – ID d’organisation IMS
 * Identifiants d’utilisateurs
-* Experience Cloud ID (MID), précédemment Marketing Cloud ID
+* Experience Cloud ID (MID), précédemment Experience Cloud ID
 * Codes d’intégration (ADID, ID Push)
 * ID de sources de données (DPID, DPUUID)
 * Analytics ID (AVID, AID, VID et RSID associés)
