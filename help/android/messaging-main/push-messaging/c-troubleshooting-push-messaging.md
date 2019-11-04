@@ -2,18 +2,18 @@
 description: Ces informations vous aideront à résoudre les problèmes liés aux messages push.
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés aux messages push.
-seo-title: Résolution des problèmes de messagerie Push
-solution: Marketing Cloud,Analytics
-title: Résolution des problèmes de messagerie Push
+seo-title: Dépannage de la messagerie Push
+solution: Experience Cloud,Analytics
+title: Dépannage de la messagerie Push
 topic: Mesures
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Résolution des problèmes de messagerie push {#troubleshooting-push-messaging}
+# Résolution des problèmes liés aux messages push{#troubleshooting-push-messaging}
 
 Ces informations vous aideront à résoudre les problèmes liés aux messages push.
 
@@ -27,16 +27,16 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
 * Attente du service Push
 
-   The push service (APNS or FCM) might not immediately send out the message. Bien que cela soit rare, nous avons constaté un retard de 5 à 10 minutes. Sur la page Messages, vous pouvez vérifier que le message push a été envoyé au service Push en cliquant sur le lien **Afficher** du message. Dans le rapport, le nombre d’envois vers le service Push réussis est indiqué dans la colonne **[!UICONTROL Publié].**
+   Le service Push (APNS ou FCM) n’envoie pas toujours immédiatement le message. Bien que cela soit rare, nous avons constaté un retard de 5 à 10 minutes. Sur la page Messages, vous pouvez vérifier que le message push a été envoyé au service Push en cliquant sur le lien **[!UICONTROL Afficher]** du message. Dans le rapport, le nombre d’envois vers le service Push réussis est indiqué dans la colonne **[!UICONTROL Publié]**.
 
    >[!TIP]
    >
-   >The push services do not guarantee that a message will be sent.
+   >Les services push ne garantissent pas qu’un message sera envoyé.
 
    Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
 
    * **APNS** : [Qualité de service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: Durée de [vie d’un message](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM** : [Durée de vie d’un message](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Pourquoi mes messages push sont-ils coupés ou ne se développent-ils pas ?
 
