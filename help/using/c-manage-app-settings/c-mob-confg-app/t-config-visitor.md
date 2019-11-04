@@ -1,13 +1,13 @@
 ---
-description: Vous pouvez configurer les options d’Adobe Experience Platform Identity Service sur la page Gérer les paramètres de l’application lors de la création d’une nouvelle application ou de la modification d’une application existante.
+description: Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres de l’application.
 keywords: mobile
-seo-description: You can configure the Adobe Experience Platform Identity Service options on the Manage App Settings page while creating a new app or editing an existing app.
+seo-description: Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres de l’application.
 seo-title: Configuration des options du service d’identification du SDK
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Configuration des options du service d’identification du SDK
 topic: Mesures
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
@@ -15,11 +15,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # Configuration des options du service d’identification du SDK {#configure-sdk-id-service-options}
 
-Vous pouvez configurer les options d’Adobe Experience Platform Identity Service sur la page Gérer les paramètres de l’application lors de la création d’une nouvelle application ou de la modification d’une application existante.
+Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres de l’application.
 
-1. Type information in the following fields under **[!UICONTROL ID Services Options]**:
+1. Renseignez les champs suivants sous les **[!UICONTROL Options des services d’identification]** :
 
-   * **[!UICONTROL Activez]** cette option pour utiliser le service d’ID. Pour plus d’informations, accédez à [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).<!-- REKHA - don't know where this content has been migrated to. -->
+   * **[!UICONTROL Activer]**
+Activez cette option pour utiliser le service d’identification. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/fr_FR/mcvid/).<!-- REKHA - don't know where this content has been migrated to. -->
 
-   * **[!UICONTROL Organisation]**Sélectionnez votre organisation dans la liste déroulante.
-An [!UICONTROL Experience Cloud] organization is the entity that enables an administrator to configure groups and users, and to control single sign-on in the [!UICONTROL Experience Cloud]. L’organisation fonctionne comme une société de connexion qui couvre tous les produits et solutions Experience Cloud. En général, l’organisation est le nom de votre entreprise ; toutefois, une entreprise peut avoir plusieurs organisations. For more information, see [Organizations and account linking](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   * **[!UICONTROL Organisation]**
+Sélectionnez votre organisation dans la liste déroulante. 
+Une organisation [!UICONTROL Experience Cloud] est l’entité qui permet à un administrateur de configurer des groupes et des utilisateurs et de contrôler l’authentification unique dans [!UICONTROL Experience Cloud]. L’organisation fonctionne comme une société de connexion qui couvre tous les produits et solutions Experience Cloud. En général, l’organisation est le nom de votre entreprise ; toutefois, une entreprise peut avoir plusieurs organisations. Pour plus d’informations, voir [Liaisons d’organisations et de comptes](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html).
