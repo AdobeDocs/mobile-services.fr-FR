@@ -1,22 +1,22 @@
 ---
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-title: Configuration ADBMobile JSON
-solution: Marketing Cloud,Analytics
-title: Configuration ADBMobile JSON
+seo-title: Fichier de configuration JSON ADBMobile
+solution: Experience Cloud,Analytics
+title: Fichier de configuration JSON ADBMobile
 topic: Développeur et mise en œuvre
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config {#adbmobile-json-config}
+# Fichier de configuration JSON ADBMobile{#adbmobile-json-config}
 
 Ces informations vous aideront à utiliser le fichier de configuration `ADBMobile.json`.
 
-## ADBMobileConfig.json config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## Référence du fichier de configuration ADBMobileConfig.json {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Vous pouvez utiliser le même fichier de configuration pour votre application sur différentes plateformes :
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **analyticsForwardingEnabled**
 
-   Propriété dans l’objet `audienceManager`. If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. La valeur par défaut est `false`.
+   Propriété dans l’objet `audienceManager`. Si `Audience Manager` est configuré et que `analyticsForwardingEnabled` est défini sur `true`, tout le trafic Analytics est également transféré à Audience Manager. La valeur par défaut est `false`.
 
    * Version minimale du SDK : 4.8.0
 
@@ -57,20 +57,20 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Version minimale du SDK : 4.6
    >[!IMPORTANT]
    >
-   >Les informations d’accès de session antidatées sont envoyées dans un appel du serveur d’informations de session et d’autres appels du serveur peuvent s’appliquer.
+   >Les informations d’accès aux sessions antidatées sont envoyées dans un appel de serveur d’informations de session et des appels de serveur supplémentaires peuvent être requis.
 
 
 * **batchLimit**
 
    Nombre limite d’accès pouvant faire l’objet d’appels consécutifs. Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès intervient, les 10 accès sont tous envoyés consécutivement.
 
-   * Default value is `0`, which means that batching is not enabled.
-   * Requires .`offlineEnabled = true`
+   * La valeur par défaut est `0`, ce qui signifie que le traitement par lot n’est pas activé.
+   * Nécessite `offlineEnabled = true`.
    * Version minimale du SDK : 4.1
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/charset.html).
 
    * Version minimale du SDK : 4.0
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   >This variable is required by Target.
+   >Cette variable est requise par Target.
 
    * Version minimale du SDK : 4.0
 
@@ -90,13 +90,13 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    À noter :
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
+   * Si `coopUnsafe` est défini sur `coop_unsafe=1``true`, sera toujours annexé aux accès Audience Manager et identifiants visiteur.
    * Si vous activez le transfert côté serveur Analytics vers Audience Manager, `coop_unsafe=1` sera également annexé aux accès Analytics.
    Voici quelques informations supplémentaires :
 
    * Version minimale du SDK : 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
-   * Default value is `false`.
+   * Propriété booléenne de l’objet `marketingCloud` qui, lorsqu’elle est définie sur `true`, entraîne l’exclusion du périphérique de la solution Device Co-op d’Experience Cloud.
+   * La valeur par défaut est `false`.
    * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
 
 
@@ -125,10 +125,10 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Lorsque cette variable est activée, les accès sont placés en file d’attente pendant que l’appareil est hors ligne et envoyés ultérieurement quand l’appareil est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne. La valeur par défaut est `false`.
 
-   Here is some important information:
+   Voici quelques informations importantes :
 
-   * Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur « true ». 
-   * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
+   * Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur « true ».
+   * Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ».
 
       En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez l’assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
@@ -136,7 +136,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **org**
 
-   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
+   Indique l’ID d’organisation Experience Cloud pour le service d’identification Adobe Experience Platform.
 
    * Version minimale du SDK : 4.3
 
@@ -160,7 +160,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
+   Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. Pour télécharger un fichier de configuration mis à jour, voir [Avant de démarrer](/help/ios/getting-started/requirements.md).
 
 * **postback**
 
@@ -174,7 +174,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   L’objet `payload` présent dans le code est un exemple de charge utile pour la définition d’un message qui irait dans la fichier `ADBMobileConfig.json`. Pour en savoir plus, consultez la rubrique [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Version minimale du SDK : 4.6
 
@@ -184,7 +184,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Pour `optedout`, les accès sont ignorés.
    * Pour `optunknown`, si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
 
-      Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+      Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
       Cela ne définit que la valeur initiale. Si cette valeur est définie ou modifiée dans le code, la nouvelle valeur est utilisée jusqu’à ce qu’elle soit à nouveau modifiée, ou lorsque l’application est désinstallée et réinstallée. La valeur par défaut est `optedin`.
 
@@ -196,7 +196,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   >Cette variable est requise par Acquisition. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >Cette variable est requise par Acquisition. Si la variable est définie sur `0` ou n’est pas incluse, le SDK n’attend pas les données d’acquisition et le suivi des mesures d’acquisition n’est pas effectué.
 
    * Version minimale du SDK : 4.1
 
@@ -232,7 +232,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Serveur Analytics ou de la gestion de l’audience, en fonction du nœud parent.
 
-   This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Ce préfixe est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
+   Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Ce préfixe est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
 
    Si `ssl` est défini sur `true`, une connexion sécurisée est établie avec le serveur. Si `ssl` est défini sur `false`, une connexion non sécurisée est établie avec le serveur.
 
@@ -256,7 +256,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   L’objet `payload` du code est un exemple de charge utile pour une définition de message qui va dans le fichier `ADBMobileConfig.json`. Pour en savoir plus, consultez la rubrique [Postbacks](/help/ios/analytics-main/postback/postback.md).
 
    * Version minimale du SDK : 4.0
 
@@ -267,7 +267,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Version minimale du SDK : 4.0
 
 
-## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exemple de fichier `ADBMobileConfig.json` :{#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Voici un exemple de fichier `ADBMobileConfig.json` :
 
@@ -417,15 +417,15 @@ Le nœud des messages est généré automatiquement par Adobe Mobile Services 
    * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 0.
 
-* « audiences »
+* "audiences"
 
    Ensemble d’objets qui définit comment le message doit être affiché :
 
-   * « key »
+   * "key"
 
       Nom de variable à rechercher dans l’accès (requis).
 
-   * « matches »
+   * "matches"
 
       Type de correspondance utilisé lors de la comparaison :
 
