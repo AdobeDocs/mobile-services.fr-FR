@@ -2,11 +2,11 @@
 description: Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 seo-description: Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 seo-title: Méthodes TVJS
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes TVJS
 topic: Développeur et mise en œuvre
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
-## Configuration methods {#section_5F82FD2F6A0546B3B4E80DF832E11634}
+## Méthodes de configuration{#section_5F82FD2F6A0546B3B4E80DF832E11634}
 
 * **version**
 
@@ -34,7 +34,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       var sdkVersion = ADBMobile.version();
       ```
 
-   * Retours: `String`
+   * Retours : `String`
 
 * **privacyStatus**
 
@@ -42,11 +42,11 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Options disponibles :
 
-   * `ADBMobilePrivacyStatusOptIn`: Les accès sont envoyés immédiatement.
-   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
+   * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
+   * `ADBMobilePrivacyStatusOptOut` : les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` : Si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
-      Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion. THe default value is set in the `ADBMobileConfig.json` file.
+      Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion. La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -60,15 +60,15 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       var privacyStatus = ADBMobile.privacyStatus();
       ```
 
-   * Retours: `Number`
+   * Retours : `Number`
 
 * **setPrivacyStatus**
 
    Définit l’état de confidentialité de l’utilisateur actuel sur l’une des valeurs suivantes :
 
-   * `ADBMobilePrivacyStatusOptIn`: Les accès sont envoyés immédiatement.
-   * `ADBMobilePrivacyStatusOptOut`: Les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown`: Si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou exclusion (les accès sont ignorés).
+   * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
+   * `ADBMobilePrivacyStatusOptOut` : les accès sont ignorés.
+   * `ADBMobilePrivacyStatusUnknown` : Si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
    Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
 
    * Voici la syntaxe de cette méthode :
@@ -100,15 +100,15 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       var ltv = ADBMobile.lifetimeValue();
       ```
 
-   * Retours: `Number`
+   * Retours : `Number`
 
 * **userIdentifier**
 
-   Renvoie l’identifiant d’utilisateur si un identifiant personnalisé a été défini. Renvoie une valeur nil si aucun identifiant personnalisé n’est défini. The default is `nil`.
+   Renvoie l’identifiant d’utilisateur si un identifiant personnalisé a été défini. Renvoie une valeur nil si aucun identifiant personnalisé n’est défini. La valeur par défaut est de `nil`
 
    >[!IMPORTANT]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est nil tant qu’il n’a pas été défini.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est nil tant qu’il n’a pas été défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -122,7 +122,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       var uid = ADBMobile.userIdentifier();
       ```
 
-   * Retours: `String`
+   * Retours : `String`
 
 * **setUserIdentifier**
 
@@ -142,18 +142,18 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    * Renvoie : S/O
 
-   * Paramètre:  `userID`
+   * Paramètre :  `userID`
 
       * Type : String
       * Nouvel identifiant pour cet utilisateur.
 
 * **setAdvertisingIdentifier**
 
-   Sets the IDFA in the SDK, and if it has been set in the SDK, the IDFA is sent in lifecycle. L’IDFA est également accessible dans Signals (Postbacks).
+   Définit l’IDFA dans le SDK et, s’il a été défini dans le SDK, l’IDFA est envoyé dans le cycle de vie. L’IDFA est également accessible dans Signals (Postbacks).
 
    >[!IMPORTANT]
    >
-   >Retrieve the IDFA from Apple APIs only if you are using an ad service. Si vous récupérez l’IDFA, mais ne l’utilisez pas correctement, il est possible que votre application soit rejetée.
+   >Vous devez récupérer l’IDFA d’API Apple uniquement si vous utilisez un service publicitaire. Si vous récupérez l’IDFA, mais ne l’utilisez pas correctement, il est possible que votre application soit rejetée.
 
    * Voici la syntaxe de cette méthode :
 
@@ -168,8 +168,8 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
    * Renvoie : S/O
-   * Paramètre: `idfa`
-      * Type: `String`
+   * Paramètre : `idfa`
+      * Type : `String`
       * IDFA récupéré d’un API Apple.
 
 * **setDebugLogging**
@@ -189,12 +189,12 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
    * Renvoie : S/O
-   * Paramètres: `logging`
-      * Type: `Bool`
+   * Paramètres : `logging`
+      * Type : `Bool`
       * Valeur indiquant si le SDK Adobe doit se connecter à la console de débogage.
 
 
-## Analytics methods {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Méthodes Analytics{#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 
@@ -213,10 +213,10 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `stateName`
-         * Type: `String`
+      * Paramètre : `stateName`
+         * Type : `String`
          * Nom d’état de la page
-      * Paramètre: `contextData`
+      * Paramètre : `contextData`
          * Type : Object
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
@@ -239,10 +239,10 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètres: `actionName`
+      * Paramètres : `actionName`
          * Type : String
          * Nom de l’action suivie.
-      * Paramètre: `contextData`
+      * Paramètre : `contextData`
          * Type : Object
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
@@ -257,7 +257,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Envoie les coordonnées de latitude et de longitude actuelles.
 
-   Also uses points of interest (POI) that are defined in the `ADBMobileConfig.json` file to determine whether the location that you entered as a parameter is in any of your POIs. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `trackLocation`.
+   Utilise en outre les points ciblés (POI) définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `trackLocation`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -266,13 +266,13 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `lat`
+      * Paramètre : `lat`
          * Type : nombre
          * Latitude de l’emplacement.
-      * Paramètre: `lon`
+      * Paramètre : `lon`
          * Type : nombre
          * Longitude de l’emplacement.
-      * Paramètre: `contextData`
+      * Paramètre : `contextData`
          * Type : Object
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
@@ -295,7 +295,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `increaseAmount`
+      * Paramètre : `increaseAmount`
          * Type : nombre
          * Quantité à ajouter à la valeur de durée de vie de l’utilisateur actuel.
    * Voici l’exemple de code pour cette méthode :
@@ -320,10 +320,10 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `name`
+      * Paramètre : `name`
          * Type : String
          * Nom de l’action minutée lancée.
-      * Paramètre: `contextData`
+      * Paramètre : `contextData`
          * Type : Object
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
@@ -350,10 +350,10 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `name`
+      * Paramètre : `name`
          * Type : String
          * Nom de l’action minutée mise à jour.
-      * Paramètre: `contextData`
+      * Paramètre : `contextData`
          * Type : Object
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
@@ -368,7 +368,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Termine une action minutée.
 
-   Si vous spécifiez une fonction de rappel, vous pouvez accéder aux valeurs temporelles finales. Si aucun rappel n’est spécifié ou si le rappel renvoie « true », le SDK Adobe envoie automatiquement un accès. When a false is returned from the callback, the timed action hit is suppressed.
+   Si vous spécifiez une fonction de rappel, vous pouvez accéder aux valeurs temporelles finales. Si aucun rappel n’est spécifié ou si le rappel renvoie « true », le SDK Adobe envoie automatiquement un accès. Lorsque que false est renvoyé par le rappel, l’accès de l’action minutée est supprimé.
 
    * Voici la syntaxe de cette méthode :
 
@@ -377,14 +377,14 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètres: `name`
+      * Paramètres : `name`
          * Type : String
          * Nom de l’action minutée terminée.
-      * Paramètre: `callback`
-         * Type: `function(inAppDuration, totalDuration, data)`
-         * Callback method that will have `inAppDuration` (number), `totalDuration` (number), and `data` (context data object) in its parameters.
+      * Paramètre : `callback`
+         * Type : `function(inAppDuration, totalDuration, data)`
+         * Méthode de rappel qui aura `inAppDuration` (nombre), `totalDuration` (nombre), et `data` (objet de données contextuelles) dans ses paramètres.
 
-            You can suppress the final hit from being sent by the SDK by returning `false` in your callback function.
+            Vous pouvez empêcher l’envoi de l’accès final par le SDK en renvoyant `false` dans votre fonction de rappel.
       * Voici l’exemple de code pour cette méthode :
 
          ```objective-c
@@ -408,9 +408,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : Bool
-      * Paramètre: `name`
-         * Type: `String`
-         * Name of the timed action for which you need to check existence.
+      * Paramètre : `name`
+         * Type : `String`
+         * Nom de l’action minutée pour laquelle vous devez vérifier l’existence.
    * Voici l’exemple de code pour cette méthode :
 
 
@@ -427,7 +427,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    >[!TIP]
    >
-   >Si votre application effectue une mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur personnalisé ou généré automatiquement précédent est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `nil` et l’identifiant de suivi est utilisé. Pour plus d’informations, voir la ligne userIdentifier ci-dessous.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `nil` et l’identifiant de suivi est utilisé. Pour plus d’informations, voir la ligne userIdentifier ci-dessous.
 
    * Voici la syntaxe de cette méthode :
 
@@ -435,7 +435,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       trackingIdentifier()
       ```
 
-      * Retours: `String`
+      * Retours : `String`
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
 
@@ -502,7 +502,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
 
-## Audience Manager methods {#section_0155C4DF04644EDAAF6159C420A158DE}
+## Méthodes Audience Manager{#section_0155C4DF04644EDAAF6159C420A158DE}
 
 * **audienceVisitorProfile**
 
@@ -525,7 +525,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
 
-* **audienceDpid** 
+* **audienceDpid**
 
    Renvoie le DPID en cours.
 
@@ -554,7 +554,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       audienceDpuuid()
       ```
 
-      * Retours: `String`
+      * Retours : `String`
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
 
@@ -574,11 +574,11 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `dpid`
-         * Type: `String`
+      * Paramètre : `dpid`
+         * Type : `String`
          * Identifiant du fournisseur de données Audience Manager.
-      * Paramètre: `dpuuid`
-         * Type: `String`
+      * Paramètre : `dpuuid`
+         * Type : `String`
          * Identifiant pour la combinaison utilisateur / fournisseur de données.
    * Voici l’exemple de code pour cette méthode :
 
@@ -597,10 +597,10 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       audienceSignalWithDataJsCallback(traits [, callback])
       ```
 
-      * Paramètre: `traits`
+      * Paramètre : `traits`
          * Type : Object
          * Dictionnaire des caractéristiques pour cet utilisateur.
-      * Paramètre: `callback`
+      * Paramètre : `callback`
          * Type : function(profile)
          * Profil renvoyé depuis Audience Manager dans le paramètre de la fonction de rappel.
    * Voici l’exemple de code pour cette méthode :
@@ -625,7 +625,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre : Aucun
+      * Paramètre : Aucun
    * Voici l’exemple de code pour cette méthode :
 
       ```objective-c
@@ -633,7 +633,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
 
-## ID Service methods {#section_BEB6DA612EA4423FB354B65ECC941335}
+## Méthodes du service d’identification {#section_BEB6DA612EA4423FB354B65ECC941335}
 
 * **visitorMarketingCloudID**
 
@@ -665,9 +665,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètre: `identifiers`
+      * Paramètre : `identifiers`
 
-         * Type: `Object`
+         * Type : `Object`
          * Identifiants à synchroniser avec le service d’identification pour cet utilisateur.
    * Voici l’exemple de code pour cette méthode :
 
@@ -687,12 +687,12 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Renvoie : S/O
-      * Paramètres: `identifiers`
-         * Type: `Object`
+      * Paramètres : `identifiers`
+         * Type : `Object`
          * Identifiants à synchroniser avec le service d’identification pour cet utilisateur.
-      * Paramètre: `authState`
+      * Paramètre : `authState`
          * Type : ADBMobileVisitorAuthenticationState
-         * Etat d’authentification de l’utilisateur et valeurs possibles :
+         * État d’authentification de l’utilisateur et valeurs possibles :
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -714,16 +714,16 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * Return: N/A
-      * Paramètre: `idType`
-         * Type: `String`
+      * Renvoie : S/O
+      * Paramètre : `idType`
+         * Type : `String`
          * Type d’identifiant que vous synchronisez.
-      * Paramètre: `identifier`
-         * Type: `String`
+      * Paramètre : `identifier`
+         * Type : `String`
          * Valeur de l’identifiant que vous synchronisez.
-      * Paramètre: `authState`
-         * Type: ADBMobileVisitorAuthenticationState
-Authentication state of the user. Valeurs possibles :
+      * Paramètre : `authState`
+         * Type : ADBMobileVisitorAuthenticationState
+État d’authentification de l’utilisateur. Valeurs possibles :
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -753,7 +753,7 @@ Authentication state of the user. Valeurs possibles :
       visitorGetIDsJs()
       ```
 
-      * Retours: `Array [Object]`
+      * Retours : `Array [Object]`
 
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
@@ -775,7 +775,7 @@ Authentication state of the user. Valeurs possibles :
       targetThirdPartyID()
       ```
 
-      * Retours: `String`
+      * Retours : `String`
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
 
@@ -795,8 +795,8 @@ Authentication state of the user. Valeurs possibles :
       ```
 
       * Renvoie : S/O
-      * Paramètres: `thirdPartyID`
-         * Type: `String`
+      * Paramètres : `thirdPartyID`
+         * Type : `String`
          * Identifiant tiers à utiliser pour les demandes cibles.
    * Voici l’exemple de code pour cette méthode :
    ```objective-c
@@ -813,7 +813,7 @@ Authentication state of the user. Valeurs possibles :
       targetPcID()
       ```
 
-      * Retours: `String`
+      * Retours : `String`
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
 
@@ -832,7 +832,7 @@ Authentication state of the user. Valeurs possibles :
       targetSessionID()
       ```
 
-      * Retours: `String`
+      * Retours : `String`
       * Paramètres : aucun
    * Voici l’exemple de code pour cette méthode :
 
