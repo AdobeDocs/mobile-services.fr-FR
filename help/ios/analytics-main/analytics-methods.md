@@ -1,28 +1,28 @@
 ---
 description: Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
-seo-title: Analytics methods
-solution: Marketing Cloud,Analytics
+seo-title: Méthodes Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Analytics
 topic: Développeur et mise en œuvre
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Méthodes Analytics{#analytics-methods}
 
 Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
 
-The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experience Cloud ID sont précédées du préfixe `track`.
 
 Chacune de ces méthodes est utilisée pour envoyer des données dans la suite de rapports Adobe Analytics.
 
 * **trackState:&#x200B;data:**
 
-   States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues. If `state` is empty, it displays as *app name app version (build)* in reports. If you see this value in reports, ensure you are setting `state` in each `trackState` call.
+   Les états sont les affichages disponibles dans l’application, par exemple `home dashboard`, `app settings`, `cart`, etc. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues. Si `state` est vide, il est présenté comme *app name app version (build)* dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir `state` dans chaque appel `trackState`.
 
    >[!TIP]
    >
@@ -44,11 +44,11 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackAction:&#x200B;data:**
 
-   Effectue le suivi d’une action dans votre application. Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, occur in your app.
+   Effectue le suivi d’une action dans votre application. Actions que vous voulez mesurer, par exemple `logons`, `banner taps`, `feed subscriptions`, et autres mesures, qui se produisent dans l’application.
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Si vous avez du code qui peut s’exécuter pendant que l’application est en arrière-plan (par exemple, une récupération de données en arrière-plan), utilisez plutôt `trackActionFromBackground`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -86,7 +86,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
    >[!TIP]
    >
-   >This method should only be called in code that runs while your app is in the background.
+   >Invoquez cette méthode uniquement dans le code qui s’exécute pendant que l’application est en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -218,11 +218,11 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackTimedActionEnd:&#x200B;logic:**
 
-   Termine une action minutée. If you provide `block`, you will have access to the final time values and be able to manipulate `data` prior to sending the final hit.
+   Termine une action minutée. Si vous fournissez un `block`, vous pourrez accéder aux valeurs de délai final et manipuler `data`avant d’envoyer l’accès final.
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
+   >Si vous fournissez un `block`, vous devez renvoyer `YES` (OUI) pour envoyer un accès. Le transfert de `nil` pour `block` envoie l’accès final.
 
    * Voici la syntaxe de cette méthode :
 
@@ -263,7 +263,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackingSendQueuedHits**
 
-   Nécessite SDK 4.1. Quel que soit le nombre d’accès placés en file d’attente, force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne.
+   Requiert le SDK 4.1. Quel que soit le nombre d’accès déjà en file d’attente, permet de forcer la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne.
 
    * Voici la syntaxe de cette méthode :
 
