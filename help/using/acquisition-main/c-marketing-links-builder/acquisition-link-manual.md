@@ -1,27 +1,27 @@
 ---
-description: Vous pouvez créer des liens marketing afin d’acquérir de nouveaux utilisateurs d’applications mobiles à la volée en configurant manuellement les paramètres d’URL.
+description: En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
 keywords: mobile
-seo-description: Vous pouvez créer des liens marketing afin d’acquérir de nouveaux utilisateurs d’applications mobiles à la volée en configurant manuellement les paramètres d’URL.
-seo-title: Création manuelle de liens d’acquisition
-solution: Marketing Cloud,Analytics
-title: Création manuelle de liens d’acquisition
+seo-description: En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
+seo-title: Création manuelle de liens Acquisition
+solution: Experience Cloud,Analytics
+title: Création manuelle de liens Acquisition
 topic: Mesures
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# Manually create Acquisition links {#create-acquisition-link-manually}
+# Création manuelle de liens Acquisition {#create-acquisition-link-manually}
 
-You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
 
 >[!IMPORTANT]
 >
->This feature requires SDK version 4.6 or later. Pour plus d’informations, voir Conditions préalables [à l’](/help/using/acquisition-main/c-acquisition-prerequisites.md)acquisition.
+>Le SDK version 4.6 ou ultérieure est requis pour cette fonctionnalité. Pour plus d’informations, voir [Conditions préalables requises pour Acquisition](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
-Le diagramme suivant illustre les composants d’un lien de suivi créé manuellement et affiche les différents paramètres d’URL que vous devez configurer correctement lors de la création manuelle de liens d’acquisition.
+Le schéma suivant illustre les composants d’un lien de suivi créé manuellement et présente les différents paramètres d’URL que vous devez configurer correctement lors de la création manuelle de liens d’acquisition.
 
 ![](assets/acquisition_url.png)
 
@@ -33,22 +33,22 @@ Pour créer des liens manuellement, utilisez le format d’URL suivant :
 
 >[!TIP]
 >
->La version du SDK Android que vous utilisez n’a aucune incidence sur ce processus.
+>La version du SDK Android que vous utilisez n’a aucune incidence sur ce paramètre.
 
 Assurez-vous d’utiliser le bon protocole pour les appareils iOS :
 
-* Use **HTTP** if you are using the iOS SDKs before version 4.7.0, or if you are using iOS SDK 4.7.0 or later, and if **[!UICONTROL Use HTTPS]** is **not** selected on the Manage App Settings page.
-* Use **HTTPS** if you are using iOS SDK 4.7.0 or later and **[!UICONTROL Use HTTPS]** **is** selected on the Manage App Settings page.
+* Appliquez le protocole **HTTP** si vous utilisez un SDK iOS antérieur à la version 4.7.0 ou si vous utilisez un SDK iOS version 4.7.0 ou ultérieure et que l’option **[!UICONTROL Utiliser HTTPS]** n’est **pas** sélectionnée sur la page Gérer les paramètres de l’application.
+* Appliquez le protocole **HTTPS** si vous utilisez un SDK iOS version 4.7.0 ou ultérieure et que l’option **[!UICONTROL Utiliser HTTPS]** **est** sélectionnée sur la page Gérer les paramètres de l’application.
 
 Les conditions suivantes ont été respectées :
 
-* `{mobile-services-app-hash}` correspond à l’identifiant de l’application dans le `acquisition:appid ` fichier de configuration.
+* `{mobile-services-app-hash}` correspond à l’identificateur d’application dans le fichier `acquisition:appid ` de configuration.
 
-   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   `{mobile-services-app-hash}` se trouve dans la page Gérer les paramètres de l’application sous les options du SDK d’acquisition, dans le champ ID de suivi.
 
    ![](assets/tracking-id.png)
 
-* `{parameters}` est une liste de paramètres de requête d’URL spécifiquement nommés.
+* `{parameters}` est une liste de paramètres de requête URL standard spécifiquement nommés.
 
 Voici la liste des paramètres :
 
@@ -56,43 +56,43 @@ Voici la liste des paramètres :
 
    Identifiant d’application dans le Google Play Store.
 
-   * Exemple de valeur : `com.adobe.beardcons`
+   * Exemple de valeur : `com.adobe.beardcons`
 
 * **`a_g_lo`**
 
    Remplacement de l’environnement local du Google Play Store.
 
-   * Exemple de valeur : `ko`
+   * Exemple de valeur : `ko`
 
 * **`a_i_id`**
 
    Identifiant d’application iTunes.
 
-   * Exemple de valeur : `835196493`
+   * Exemple de valeur : `835196493`
 
 * **`a_i_lo`**
 
    Remplacement de l’environnement local iTunes.
 
-   * Exemple de valeur : `jp`
+   * Exemple de valeur : `jp`
 
 * **`a_dd`**
 
    Boutique par défaut pour la redirection automatique.
 
-   * Exemple de valeur : `i | g`
+   * Exemple de valeur : `i | g`
 
 * **`a_cid`**
 
    Remplacement d’identifiant personnalisé (généralement IDFA pour iOS ou ADID pour Android).
 
-   * Exemple de valeur : `Any String < 255 characters (UTF-8 encoded)`
+   * Exemple de valeur : `Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
-   Keys prefixed with `ctx` will be in the context data of the resulting launch hit.
+   Les clés affectées du préfixe `ctx` sont incluses dans les données contextuelles de l’accès au lancement résultant.
 
-   * Sample value: `ctxmy.custom.key=myValue`
+   * Exemple de valeur : `ctxmy.custom.key=myValue`
 
 * **`ctxa.referrer.campaign.name`**
 
@@ -100,7 +100,7 @@ Voici la liste des paramètres :
 
    Ce paramètre est indispensable à la génération de rapports lorsque vous souhaitez comparer les performances de différents liens d’acquisition.
 
-   * Exemple de valeur : Conférence au sommet de 2015
+   * Exemple de valeur : Conférence au sommet 2015
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -108,39 +108,39 @@ Voici la liste des paramètres :
 
    Ce paramètre est indispensable à la génération de rapports lorsque vous souhaitez comparer les performances de différents liens d’acquisition.
 
-   * Exemple de valeur : `lexsxouj`
+   * Exemple de valeur : `lexsxouj`
 
 * **`ctxa.referrer.campaign.source`**
 
    La source.
 
-   * Exemple de valeur : Réseau publicitaire
+   * Exemple de valeur : Réseau publicitaire
 
 * **`ctxa.referrer.campaign.medium`**
 
    Méthode
 
-   * Sample value: Email
+   * Exemple de valeur : Email
 
 * **`ctxa.referrer.campaign.content`**
 
    Contenu
 
-   * Exemple de valeur : Image # 325689
+   * Exemple de valeur : Image # 325689
 
 * **`ctxa.referrer.campaign.term`**
 
    Terme
 
-   * Exemple de valeur : randonnée+bottes
+   * Exemple de valeur : randonnée+bottes
 
 
-Lorsque vous créez manuellement des liens d’acquisition, tenez compte des informations suivantes :
+Lorsque vous créez manuellement des liens d’acquisition, tenez compte des informations suivantes :
 
 * Tous les paramètres qui ne correspondent pas à ceux du tableau sont transmis lors de la redirection vers la boutique d’applications.
-* Tous les paramètres sont techniquement facultatifs, bien que le lien ne soit pas fonctionnel, si au moins un ID de magasin est spécifié.
+* D’un point de vue technique, tous les paramètres sont facultatifs, bien que le lien soit inopérant si au moins un identifiant de boutique n’a pas été spécifié.
 
-   An example of a store ID is `a_g_id`/ `a_i_id`.
+   Exemple d’identifiant de boutique : `a_g_id`/ `a_i_id`.
 
 * Si la boutique de destination ne peut être déterminée de façon automatique, et qu’aucune boutique n’est définie par défaut, le lien renvoie une erreur 404.
 
