@@ -2,18 +2,18 @@
 description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
-seo-title: Troubleshoot In-App Messaging
-solution: Marketing Cloud,Analytics
-title: Troubleshoot In-App Messaging
+seo-title: Dépannage de la messagerie intégrée (in-app)
+solution: Experience Cloud,Analytics
+title: Dépannage de la messagerie intégrée (in-app)
 topic: Mesures
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# Troubleshoot in-app messaging{#troubleshooting-in-app-messaging}
+# Dépannage de la messagerie intégrée (in-app){#troubleshooting-in-app-messaging}
 
 Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 
@@ -21,7 +21,7 @@ Si vous avez respecté toutes les exigences relatives à la messagerie intégré
 
 ## Placez-vous la nouvelle configuration et le nouveau SDK dans l’application ?
 
-Ensure that you have an [In-App Messaging](/help/android/messaging-main/messaging/messaging.md) section in your configuration (downloaded JSON file) or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+Assurez-vous que votre configuration comporte une section [Messagerie](/help/android/messaging-main/messaging/messaging.md) (fichier JSON téléchargé) ou un point de terminaison distant Message afin qu’il puisse être récupéré depuis la gestion dynamique des balises.
 
 ## Mon message en plein écran ne s’affiche pas sous Android. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
 
@@ -29,17 +29,17 @@ Avez-vous mis à jour votre fichier de manifeste afin de définir l’activité 
 
 ## Mon message de notification locale ne fonctionne pas sous Android.
 
-Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. For more information, see step 2 in *Enabling In-App Messaging* in [In-App Messaging](/help/android/messaging-main/messaging/messaging.md).
+Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. Pour obtenir plus d’informations, voir l’étape 2 *Activation de la messagerie in-app* dans [Messagerie in-app](/help/android/messaging-main/messaging/messaging.md).
 
 ## Le message est-il actif ?
 
-Pour vérifier si le message est actif, sur la page Manage In-App Message (Gérer le message in-app), dans la colonne **Status** (État), vérifiez la liste des messages.
+Pour vérifier si le message est actif, sur la page Manage In-App Message (Gérer le message in-app), dans la colonne **[!UICONTROL Status]** (État), vérifiez la liste des messages.
 
-## Look at show once, show always, show offline  settings on the Audience tab.******
+## Consultez les paramètres *afficher une fois*, *afficher toujours*, *afficher hors ligne* dans l’onglet Audience.
 
-Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **Déclencheur], qui vous permettent de définir la fréquence d’affichage du message.[!UICONTROL **
+Vérifiez que ces paramètres sont définis comme vous le souhaitez. Sous l’onglet **[!UICONTROL Audience]**, vérifiez vos options **[!UICONTROL Déclencheur]**, qui vous permettent de définir la fréquence d’affichage du message.
 
-## Si vous utilisez un événement de lancement comme déclencheur...
+## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
 Le lancement se déclenche uniquement en cas de nouvelle session. Pour obtenir plus d’informations sur le début d’une session, voir la ligne `lifecycleTimeout` du fichier de configuration [JSON](/help/android/configuration/json-config/json-config.md).
 
@@ -50,7 +50,7 @@ Le lancement se déclenche uniquement en cas de nouvelle session. Pour obtenir p
 * La gestion dynamique des balises peut nécessiter quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition. Patientez quelques minutes et réessayez.
 * La configuration ne se mettra à jour que lors d’un nouveau lancement. Si l’application a été redémarrée pendant le délai d’expiration de la session du cycle de vie, la nouvelle configuration n’a peut-être pas été téléchargée.
 
-Pour plus d’informations, voir [Mesures de cycle de vie](/help/android/metrics.md).
+Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
 ## Mon image ne correspond pas exactement à l’espace fourni par le modèle.
 
