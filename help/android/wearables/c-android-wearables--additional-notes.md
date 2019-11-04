@@ -1,18 +1,18 @@
 ---
 description: Informations destinées à vous aider à configurer l’extension Android qui permet de collecter des données depuis l’application Android Wearable.
 seo-description: Informations destinées à vous aider à configurer l’extension Android qui permet de collecter des données depuis l’application Android Wearable.
-seo-title: Android Wearables - Notes supplémentaires
-solution: Marketing Cloud,Analytics
-title: Android Wearables  Additional Notes
+seo-title: 'Android Wearables : Remarques supplémentaires'
+solution: Experience Cloud,Analytics
+title: 'Android Wearables : Remarques supplémentaires'
 topic: Développeur et mise en œuvre
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: additional notes{#android-wearables-additional-notes}
+# Android Wearables : Remarques supplémentaires{#android-wearables-additional-notes}
 
 Informations destinées à vous aider à configurer l’extension Android qui permet de collecter des données depuis l’application Android Wearable.
 
@@ -21,12 +21,12 @@ Informations destinées à vous aider à configurer l’extension Android qui p
 
    * `RunMode` = `Application`
 
-      L’accès provient de l’application portable.
+      L’accès provient de l’application pour portables.
 
    * `RunMode` = `Extension`
 
-      The hit comes from the wearable app.
+      L’accès provient de l’application portable.
 
-* The SDK automatically syncs the `aid`/`vid`/`visitor` `service id`/`privacy` status from the handheld app to the wearable app, so do not call `setPrivacyStatus`/`setUserIdentifier`/`idSync` from the wearable app.
-* [Les messages](/help/android/messaging-main/messaging/messaging.md)in-app, [Target](/help/android/target-main/target.md)et [Audience Manager](/help/android/audience-manager/audiencemgmt.md) sont désactivés pour l’application portable.
+* Le SDK synchronise automatiquement l’état `aid`/`vid`/`visitor`/`service id` depuis l’application pour portables vers l’application pour wearables. Il ne convient, par conséquent, pas d’appeler `privacy`/`setPrivacyStatus`/`setUserIdentifier`/`idSync` depuis l’application pour wearables.
+* [Les messagesin-app](/help/android/messaging-main/messaging/messaging.md), [Target](/help/android/target-main/target.md) et [Audience Manager](/help/android/audience-manager/audiencemgmt.md) sont désactivés pour l’application portable.
 
