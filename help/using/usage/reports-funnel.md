@@ -3,29 +3,29 @@ description: Le rapport Entonnoir identifie le moment où les clients abandonnen
 keywords: mobile
 seo-description: Le rapport Entonnoir identifie le moment où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport Entonnoir pour comparer les actions de différents segments.
 seo-title: Rapport Entonnoir
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport Entonnoir
 topic: Rapports, Mesures
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Funnel report{#funnel}
+# Rapport Entonnoir{#funnel}
 
-Le rapport **[!UICONTROL Entonnoir]identifie le moment où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile.** Vous pouvez également utiliser le rapport **[!UICONTROL Entonnoir]pour comparer les actions de différents segments.**
+Le rapport **[!UICONTROL Entonnoir]** identifie le moment où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport **[!UICONTROL Entonnoir]** pour comparer les actions de différents segments.
 
 L’obtention d’une bonne visibilité sur les décisions des clients à chaque étape vous permet de comprendre à quel moment ils ont été dissuadés, quel chemin ils ont tendance à emprunter, ainsi que le moment où les visiteurs quittent votre application.
 
-Lorsque vous ouvrez le rapport **[!UICONTROL Entonnoir], vous devez créer un entonnoir personnalisé.** For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+Lorsque vous ouvrez le rapport **[!UICONTROL Entonnoir]**, vous devez créer un entonnoir personnalisé. Pour en savoir plus, voir [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md).
 
 >[!TIP]
 >
->To save your custom funnel, save the URL after you configure its settings and run the report. Vous pouvez partager l’URL ou l’enregistrer dans un document.
+>Pour enregistrer votre entonnoir personnalisé, enregistrez l’URL après avoir configuré les paramètres et exécuté le rapport. Vous pouvez partager l’URL ou l’enregistrer dans un document.
 
-Voici un exemple de rapport Entonnoir :
+Voici un exemple de rapport Versions :
 
 ![](assets/funnel_create.png)
 
@@ -47,13 +47,13 @@ Vous pouvez configurer les options suivantes pour ce rapport :
 
 * **[!UICONTROL Période]**
 
-   Cliquez sur l’icône **[!UICONTROL Calendrier]pour sélectionner une période personnalisée ou prédéfinie dans la liste déroulante.**
+   Cliquez sur l’icône **[!UICONTROL Calendrier]** pour sélectionner une période personnalisée ou prédéfinie dans la liste déroulante.
 * **[!UICONTROL Personnaliser]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   Personnalisez vos rapports en modifiant les options **[!UICONTROL Afficher par]**, en ajoutant des mesures et des filtres, en ajoutant des séries (mesures) supplémentaires, etc. Pour en savoir plus, voir [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filtrer]**
 
-   Cliquez sur **[!UICONTROL Filtrer]pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles.** Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. For more information, see Add Sticky Filter.[](/help/using/usage/reports-customize/t-sticky-filter.md)
+   Cliquez sur **[!UICONTROL Filtrer]** pour créer un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. Pour plus d’informations, voir [Ajout d’un filtre bascule](/help/using/usage/reports-customize/t-sticky-filter.md).
 * **[!UICONTROL Télécharger]**
 
-   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
+   Cliquez sur **[!UICONTROL PDF]** ou **[!UICONTROL CSV]** pour télécharger ou ouvrir les documents et les partager avec des utilisateurs qui n’ont pas accès à Mobile Services, ou pour utiliser le fichier dans des présentations.
