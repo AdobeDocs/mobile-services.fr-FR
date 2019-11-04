@@ -3,11 +3,11 @@ description: Le rapport Versions est un compte-rendu temporel qui affiche des in
 keywords: mobile
 seo-description: Le rapport Versions est un compte-rendu temporel qui affiche des informations sur les différentes versions de votre application exécutées sur les appareils des utilisateurs.
 seo-title: Rapport Versions
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport Versions
 topic: Rapports, Mesures
 uuid: 67e759d3-7e4f-4985-9e74-61c782f0fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
