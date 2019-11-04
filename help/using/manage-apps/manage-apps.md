@@ -3,11 +3,11 @@ description: La page Gérer les applications vous permet de créer, gérer et su
 keywords: mobile
 seo-description: La page Gérer les applications vous permet de créer, gérer et supprimer des applications.
 seo-title: Présentation de la gestion des applications
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Présentation de la gestion des applications
 topic: Mesures
 uuid: 5949f549-172e-417e-b668-71fec628586a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ---
