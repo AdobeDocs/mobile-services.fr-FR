@@ -1,88 +1,91 @@
 ---
-description: Vous pouvez créer ou modifier des liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
+description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
 keywords: mobile
-seo-description: You can create or edit Marketing Links to provide deep linking into your mobile app or your website.
+seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
 seo-title: Création ou modification de liens marketing
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Création ou modification de liens marketing
 topic: Mesures
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Create or edit marketing links{#create-or-edit-marketing-links}
+# Création ou modification de liens marketing{#create-or-edit-marketing-links}
 
-Vous pouvez créer ou modifier des liens marketing pour fournir un lien profond vers votre application mobile ou votre site Web. Pour plus d’informations, voir Liens universels [Apple et Liens](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)d’application Android.
+Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web. Pour plus d’informations, voir [Liens universels Apple et liens d’application Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
-1. In your app, in the left navigation pane, expand **[!UICONTROL Acquisition]** and click **[!UICONTROL Marketing Link Builder]**.
+1. Dans votre application, dans le volet de navigation de gauche, développez **[!UICONTROL Acquisition]** et cliquez sur **[!UICONTROL Générateur de liens marketing]**.
 1. Procédez de l’une des manières suivantes :
 
-   * To create a Marketing Link, click **[!UICONTROL Create New]**.
+   * Pour créer un lien marketing, cliquez sur **[!UICONTROL Créer]**.
    * Pour modifier un lien, cliquez sur son nom dans la colonne **[!UICONTROL Titre].**
 
 1. Renseignez les champs suivants :
 
-   * **[!UICONTROL Nom du lien marketing]**:
+   * **[!UICONTROL Nom du lien marketing]** :
 
-      (**Required**) Specify a descriptive name for your Marketing Link. Le nom s’affiche seulement sur la page Liens marketing dans l’interface utilisateur de Adobe Mobile Services. En spécifiant un nom explicite, vous et d’autres personnes de votre organisation pouvez trouver rapidement un lien spécifique et des informations à son sujet.
+      (**Obligatoire**) Spécifiez un nom explicite pour votre lien marketing. Le nom s’affiche seulement sur la page Liens marketing dans l’interface utilisateur de Adobe Mobile Services. En spécifiant un nom explicite, vous et d’autres personnes de votre organisation pouvez trouver rapidement un lien spécifique et des informations à son sujet.
 
-   * **[!UICONTROL Code de suivi unique]**:
+   * **[!UICONTROL Code de suivi unique]** :
 
-      (**Required**) Specify the desired tracking code or click (![generate icon](assets/icon_generate.png) to create a new tracking code. Vous pouvez afficher les rapports qui détaillent l’utilisation du code de suivi.
+      (**Obligatoire**) Spécifiez le code de suivi souhaité ou cliquez sur ![générer une icône](assets/icon_generate.png) pour créer un nouveau code de suivi. Vous pouvez afficher les rapports qui détaillent l’utilisation du code de suivi.
 
-   * **[!UICONTROL Ajouter les données contextuelles de suivi]**:
+   * **[!UICONTROL Ajouter les données contextuelles de suivi]** :
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées], sélectionnez une balise prédéfinie ou l’une de vos propres balises.** Les données contextuelles sont utilisées pour la création de rapports lorsque le lien marketing est déployé.
+      (**Facultatif**) Cliquez sur l’icône **[!UICONTROL +]** et saisissez les informations pertinentes pour suivre votre campagne à l’aide des données contextuelles. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées]**, sélectionnez une balise prédéfinie ou l’une de vos propres balises. Les données contextuelles servent à la création de rapports lorsque le lien marketing est déployé.
 
       Les balises prédéfinies suivantes sont disponibles :
 
-      * **Custom Context Data**
-Specify the key and value. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir Présentation [des règles de](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)traitement.
+      * **Données contextuelles personnalisées**
+Indiquez la clé et la valeur. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir [Aperçu des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-      * **Source
-Specify the original referrer, such as "newsletter" or "homepage."**
+      * **Source**
+Spécifiez le référent original, tel que « newsletter » ou « page d’accueil ».
 
-      * **Moyen** Spécifiez le support marketing, tel que "bannière" ou "courriel".
+      * **Moyen**
+Spécifiez la méthode marketing, telle que « bannière » ou « courrier électronique ».
 
-      * **Contenu** Indiquez le nom ou l’ID de la publicité avec le lien.
+      * **Contenu**
+Spécifiez le nom ou l’identifiant de l’annonce avec le lien.
 
-      * **Terme** Spécifiez les termes payants ou d’autres termes de recherche pour la publicité.
+      * **Terme**
+Spécifiez les termes rémunérés ou les autres termes de recherche de l’annonce considérée.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Renseignez les champs suivants :
 
-   * **(Required) In Fallback URL, specify the URL that users are directed to when a destination cannot be matched (for example, if the user is on a desktop or another platform that does not match a destination rule).******
-   * In **[!UICONTROL Marketing Link Options]**, select **[!UICONTROL Interstitials]** or **[!UICONTROL Universal and App Links]**.
+   * **(Obligatoire)** Dans **[!UICONTROL URL de secours]**, spécifiez l’URL vers laquelle sont dirigés les utilisateurs quand une destination ne peut pas être atteinte (par exemple, si l’utilisateur a recours à un ordinateur ou à une autre plateforme qui ne correspond pas à une règle de destination)
+   * Dans **[!UICONTROL Options de lien marketing]**, sélectionnez **[!UICONTROL Spots]** ou **[!UICONTROL Liens universels et d’application]**.
 
-      Pour plus d’informations, reportez-vous à la page [Spots](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) ou liens universels [Apple et liens](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)d’application Android.
+      Pour plus d’informations, reportez-vous à la page [Spots](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) ou [Liens universels Apple et liens d’application Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
-   * **(Conditionnel)** Si l’option Liens **** universels ou d’application est sélectionnée, les utilisateurs peuvent, dans Chemin **** personnalisé, définir le chemin d’accès URL après le domaine à l’aide de n’importe quel paramètre de requête. For more information, see Apple Universal Links and Android App Links.[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
+   * **(Conditionnel)** Si **[!UICONTROL Liens universels ou d’application]** est sélectionné, dans **[!UICONTROL Chemin d’accès personnalisé]**, les utilisateurs peuvent définir le chemin de l’URL suivant le domaine avec les paramètres de requête appropriés. Pour plus d’informations, voir [Liens universels Apple et liens d’application Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
-1. Click **[!UICONTROL Edit Deep Link Interstitial]** and configure the link.
+1. Cliquez sur **[!UICONTROL Modifier le spot de lien profond]** et configurez le lien.
 
-   (**Optional**) When there are multiple destinations, users can be routed depending on whether they have a mobile app installed. Si l’application est installée, une page d’entrée de spots s’affiche.
+   (**Facultatif**) Quand il existe plusieurs destinations, les utilisateurs peuvent être orientés selon qu’une application mobile est installée sur leur appareil. Si l’application est installée, une page d’entrée de spots s’affiche.
 
    Pour plus d’informations, voir [Spots](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
-1. Click **[!UICONTROL Save]** and click **[!UICONTROL Next]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]** puis sur **[!UICONTROL Suivant]**.
 1. Sur la page Destination, configurez le lien.
 
-   1. Click the **[!UICONTROL Decision]** icon (![decision icon](assets/icon_decision.png)) and select one of the following decision locations:
+   1. Cliquez sur l’icône **[!UICONTROL Décision]** (![icône décision](assets/icon_decision.png)) et sélectionnez l’un des emplacements de décision suivants :
 
       * **[!UICONTROL Ajouter une décision]**
       * **[!UICONTROL Ajouter un chemin d’accès]**
-   1. If you selected **[!UICONTROL Add Decision]**, select one of the following decision types:
+   1. Si vous avez sélectionné **[!UICONTROL Ajouter une décision]**, sélectionnez l’un des types de décisions suivants :
 
       * **[!UICONTROL Système d’exploitation]**
 
          Les systèmes d’exploitation pris en charge comprennent iOS, Android, AMX, etc.
 
-      * **[!UICONTROL Device Type (Type de périphérique)]**
+      * **[!UICONTROL Type de périphérique]**
 
          Les types d’appareils incluent les ordinateurs de bureau, les liseuses électroniques, les consoles de jeux, les téléphones mobiles, les décodeurs, etc.
-   1. Click the **[!UICONTROL Destination]** icon ( ![square icon](assets/icon_square.png) ) and select one of the following destination types:
+   1. Cliquez sur l’icône **[!UICONTROL Destination]** (![icône carrée](assets/icon_square.png) ) et sélectionnez l’un des types de destinations suivants :
 
       * **[!UICONTROL Boutique d’applications]**
       * **[!UICONTROL Lien Web]**
@@ -90,11 +93,11 @@ Specify the original referrer, such as "newsletter" or "homepage."**
       * **[!UICONTROL Lien hybride]**
       >[!TIP]
       >
-      >When you use the **[!UICONTROL Web Link]** destination type with a link to the app store, acquisition is not tracked. Pour suivre les acquisitions, utilisez le type de destination **[!UICONTROL Boutique d’applications].**
+      >Lorsque vous utilisez le type de destination **[!UICONTROL Lien Web]** avec un lien vers la boutique d’applications, l’acquisition n’est pas suivie. Pour suivre les acquisitions, utilisez le type de destination **[!UICONTROL Boutique d’applications].**
 
-      For more information, see Create a new link destination.[](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
-
-
+      Pour plus d’informations, voir [Création d’une destination de lien](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
 
-1. To save the Marketing Link, click elipses and then Save.![](assets/icon_elipses.png)****
+
+
+1. Pour enregistrer le lien marketing, cliquez sur ![les trois points](assets/icon_elipses.png), puis sur **[!UICONTROL Enregistrer]**.
