@@ -3,11 +3,11 @@ description: Le traitement par lot des accès permet aux applications de différ
 keywords: android;library;mobile;sdk
 seo-description: Le traitement par lot des accès permet aux applications de différer l’envoi d’accès jusqu’à ce que le nombre d’accès dans la file d’attente dépasse la limite configurée.
 seo-title: Traitement par lot des accès
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Traitement par lot des accès
 topic: Développeur et mise en œuvre
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -19,9 +19,9 @@ Le traitement par lot des accès permet aux applications de différer l’envoi 
 
 >[!IMPORTANT]
 >
->Pour utiliser le traitement par lot d’accès, vous **devez** activer le suivi hors ligne et disposer du SDK version 4.1 ou ultérieure
+>Pour utiliser le traitement par lot des accès, vous **devez** activer le suivi hors ligne et disposer du SDK version 4.1 ou ultérieure
 
-To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
+Pour activer le traitement par lot des accès, mettez à jour le fichier `ADBMobileConfig.json` et indiquez une valeur pour `batchLimit` :
 
 ```js
 "analytics": {
@@ -30,7 +30,7 @@ To enable hit batching, update your `ADBMobileConfig.json` file and specify a va
 }
 ```
 
-When the value is set to a number greater than 0, the SDK queues the number of hits equal to the *`batchLimit`* value. Une fois ce seuil atteint, tous les accès de la file d’attente sont envoyés.
+Lorsque la valeur est définie sur un nombre supérieur à 0, le SDK place les accès en file d’attente tant que leur nombre est inférieur ou égal à la valeur *`batchLimit`*. Une fois ce seuil atteint, tous les accès de la file d’attente sont envoyés.
 
 Les méthodes suivantes sont utilisées avec le traitement par lot des accès :
 
