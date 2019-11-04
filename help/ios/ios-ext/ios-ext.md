@@ -2,38 +2,38 @@
 description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 seo-description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 seo-title: Mise en œuvre de l’extension iOS
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
 topic: Développeur et mise en œuvre
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
 
-# iOS extension implementation {#ios-extension-implementation}
+# Mise en œuvre de l’extension iOS {#ios-extension-implementation}
 
 L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 
-## Nouvelle version du SDK mobile Adobe Experience Platform
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
 Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
 * Pour commencer, accédez à Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## Recommandations d’utilisation du SDK iOS plutôt que votre propre wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
->Nous vous recommandons vivement d’utiliser le SDK iOS plutôt que votre wrapper.
+>Il est vivement recommandé d’utiliser le SDK iOS plutôt que votre propre wrapper.
 
 Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application contenante en envoyant des demandes à l’application contenante et en recevant des réponses. Bien que vous puissiez envoyer les données de suivi en tant que dictionnaire de l’application Watch à l’application contenante et appeler ensuite n’importe quelle méthode de suivi sur l’application contenante pour envoyer les données, cette solution est limitée.
 
-In most cases when a user is using the Watch app, the containing app is running in the background, and it is only safe to call `TrackActionInBackground`, `TrackLocation`, and `TrackBeacon`. L’appel d’autres méthodes de suivi interfère avec les données de cycle de vie. Vous devez donc utiliser uniquement ces trois méthodes pour envoyer les données depuis l’application Watch.
+Dans la plupart des cas, lorsqu’un utilisateur a recours à l’application Watch, l’application contenante s’exécute en arrière-plan et seules les méthodes `TrackActionInBackground`, `TrackLocation` et `TrackBeacon` peuvent être appelées en toute sécurité. L’appel d’autres méthodes de suivi interfère avec les données de cycle de vie. Vous devez donc utiliser uniquement ces trois méthodes pour envoyer les données depuis l’application Watch.
 
 Même si ces trois méthodes de suivi répondent à vos besoins, il est recommandé d’utiliser le SDK iOS, car le SDK pour l’application Watch contient toutes les fonctionnalités mobiles, à l’exception des messages intégrés (in-app).
 
@@ -41,7 +41,7 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 
 >[!IMPORTANT]
 >
->Vérifiez que vous disposez d’un projet avec au moins les cibles suivantes :
+>Vérifiez que l’un de vos projets comprend au minimum les cibles suivantes :
 >
 >* Une cible contenant l’application.
 >* Une cible pour l’extension.
@@ -49,21 +49,21 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 
 
 
-Si vous utilisez une application WatchKit, vous devez avoir une troisième cible. Pour plus d’informations sur le développement d’Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
+Si vous utilisez une application WatchKit, vous devez avoir une troisième cible. Pour plus d’informations sur le développement pour Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
 ## Configuration de l’application conteneur {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Procédez comme suit dans votre projet Xcode :
 
 1. Glissez-déposez le dossier AdobeMobileLibrary dans votre projet.
-1. Ensure that the `ADBMobileConfig.json` file is a member of the containing app's target.
-1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre application contenante, développez la section **Lier le fichier binaire avec les bibliothèques], puis ajoutez les bibliothèques suivantes :[!UICONTROL **
+1. Assurez-vous que le fichier `ADBMobileConfig.json` est membre de la cible de l’application contenante.
+1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre application contenante, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]**, puis ajoutez les bibliothèques suivantes :
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. Open the **[!UICONTROL Capabilities]** tab of the containing app's target, enable **[!UICONTROL App Groups]**, and add a new app group (for example, `group.com.adobe.testAp`).
+1. Ouvrez l’onglet **[!UICONTROL Fonctionnalités]** de la cible de l’application contenante, activez l’option **[!UICONTROL Groupes d’applications]** et ajoutez un nouveau groupe d’applications (par exemple, `group.com.adobe.testAp`).
 
 1. Dans le délégué de votre application, définissez le groupe d’applications dans `application:didFinishLaunchingWithOptions` avant toute interaction avec la bibliothèque Adobe Mobile :
 
@@ -76,16 +76,16 @@ Procédez comme suit dans votre projet Xcode :
 
 ## Configuration de l’extension {#section_28C994B7892340AC8D1F07AF26FF3946}
 
-1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
-1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre extension, développez la section **Lier le fichier binaire avec les bibliothèques], puis ajoutez les bibliothèques suivantes :[!UICONTROL **
+1. Vérifiez que le fichier `ADBMobileConfig.json` est un membre de la cible de votre extension.
+1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre extension, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]**, puis ajoutez les bibliothèques suivantes :
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. Open the **[!UICONTROL Capabilities]** tab of the extension's target, enable **[!UICONTROL App Groups]**, and select the app group that you added in step 4 of *Configuring the Containing App* above.
+1. Ouvrez l’onglet **[!UICONTROL Fonctionnalités]** de la cible de l’extension, activez l’option **[!UICONTROL Groupes d’applications]** et sélectionnez le groupe d’applications ajouté à l’étape 4 de la section *Configuration de l’application contenante* ci-dessus.
 
-1. In your InterfaceController, set the app group in `awakeWithContext:` before making any other interactions with the Adobe Mobile library:
+1. Dans votre InterfaceController, définissez le groupe d’applications dans `awakeWithContext:` avant toute interaction avec la bibliothèque Adobe Mobile :
 
    ```objective-c
    [ADBMobile 
@@ -94,7 +94,7 @@ Procédez comme suit dans votre projet Xcode :
 
 1. Vérifiez qu’aucune erreur inattendue n’est générée lors de la création de votre application.
 
-## Additional notes {#section_21497E81231549CB9F164DEECFF5BA0D}
+## Remarques supplémentaires {#section_21497E81231549CB9F164DEECFF5BA0D}
 
 Prenez note des informations suivantes :
 
