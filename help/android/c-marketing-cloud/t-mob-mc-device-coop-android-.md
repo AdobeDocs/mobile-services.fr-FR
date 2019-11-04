@@ -4,7 +4,7 @@ seo-description: Contactez votre représentant Adobe pour commencer à utiliser 
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
@@ -18,32 +18,32 @@ Afin d’activer les applications mobiles destinées à Experience Cloud Devic
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité nécessite le SDK Android version 4.8.3 ou ultérieure.
+>Le SDK Android version 4.8.3 ou ultérieure est requis pour cette fonctionnalité.
 
-À partir de la version 4.16.1 du SDK, les membres de Device Co-op peuvent exclure les données de leur appareil mobile de la solution Device Co-op d’Experience Cloud. Pour plus d’informations, voir [Fichier de configuration JSON ADBMobile](/help/android/configuration/json-config/json-config.md) et la méthode `visitorAPI.js` pour [isCoopSafe](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-coopsafe.html).
+À partir de la version 4.16.1 du SDK, les membres de Device Co-op peuvent exclure les données de leur appareil mobile de la solution Device Co-op d’Experience Cloud. Pour plus d’informations, voir [Fichier de configuration JSON ADBMobile](/help/android/configuration/json-config/json-config.md) et la méthode `visitorAPI.js` pour [isCoopSafe](https://marketing.adobe.com/resources/help/fr_FR/mcvid/mcvid-coopsafe.html).
 
 1. Implémentez le SDK Adobe Mobile.
 
-   Pour plus d’informations, voir Mise en oeuvre [principale et cycle de vie](/help/android/getting-started/dev-qs.md).
+   Pour plus d’informations, voir [Mise en œuvre principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 1. Activez votre Experience Cloud ID.
 
-   For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
+   Pour plus d’informations, voir [Service d’Experience Cloud ID](/help/android/c-marketing-cloud/mcvid.md).
 1. Transférez les identités authentifiées, par exemple les identifiants de gestion de la relation client ou les courriers électroniques hachés, à l’aide de l’une des méthodes de synchronisation.
 
-   Pour plus d’informations, voir Méthodes [](/help/android/c-marketing-cloud/mc-methods.md)d’Adobe Experience Platform Identity Service.
+   Pour plus d’informations, voir [Service Adobe Experience Platform Identity](/help/android/c-marketing-cloud/mc-methods.md).
 
-## `coopUnsafe` indicateur
+## Indicateur `coopUnsafe`
 
 Voici quelques informations supplémentaires sur l’indicateur `coopUnsafe` :
 
 * Version minimale du SDK : 4.16.1
-* The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
-* Default value is `false`.
+* Propriété booléenne de l’objet `marketingCloud` qui, lorsqu’elle est définie sur `true`, entraîne l’exclusion du périphérique de la solution Device Co-op d’Experience Cloud.
+* La valeur par défaut est `false`.
 * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
 
 Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste noire sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
 À noter :
 
-* When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
-* If you enable Analytics server-side forwarding to Audience Manager, you will also see `coop_unsafe=1` Analytics hits.
+* Si `coopUnsafe` est défini sur `coop_unsafe=1``true`, sera toujours annexé aux accès Audience Manager et identifiants visiteur.
+* Si vous activez le transfert côté serveur Analytics vers Audience Manager, `coop_unsafe=1` sera également annexé aux accès Analytics.
