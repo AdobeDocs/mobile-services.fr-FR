@@ -3,55 +3,55 @@ description: Avant de pouvoir configurer la messagerie push dans les application
 keywords: mobile
 seo-description: Avant de pouvoir configurer la messagerie push dans les applications, vous devez effectuer certaines tâches.
 seo-title: Conditions préalables requises pour activer la messagerie push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic: Mesures
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 ---
 
 
-# Prerequisites to enable push messaging {#prerequisites-to-enable-push-messaging}
+# Conditions préalables requises pour activer la messagerie push{#prerequisites-to-enable-push-messaging}
 
-Vous devez effectuer ces tâches avant de configurer la messagerie Push dans vos applications.
+Avant de pouvoir configurer la messagerie push dans vos applications, vous devez effectuer certaines tâches.
 
-## Activation d’Experience Cloud pour votre entreprise
+## Activez Experience Cloud pour votre entreprise
 
-Experience Cloud doit être activé pour votre entreprise Adobe Analytics. Vous pouvez vérifier l’état de votre gestionnaire de compte Adobe.
+Experience Cloud doit être activé pour votre entreprise Adobe Analytics. Vous pouvez vérifier le statut auprès de votre gestionnaire de compte Adobe.
 
-## Install and configure the Mobile SDK
+## Installation et configuration du SDK Mobile
 
 * **Installation du SDK Mobile**
 
-   Pour configurer la messagerie Push, vous devez télécharger et installer au moins la version 4.6 ou ultérieure du kit SDK Mobile. For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
+   Pour configurer la messagerie push, vous devez télécharger et installer la version 4.6 ou ultérieure du SDK Mobile. Pour obtenir plus d’informations, voir [Téléchargement des SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
 
-* **Configuration des services Push**
+* **Configuration des services push**
 
-   Vous devez configurer les services push dans le SDK Mobile.
+   Vous devez configurer les services push dans le SDK Mobile. 
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
    * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-   * [Messagerie Push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+   * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
 ## Connectez-vous au service principal Mobile à l’aide de votre Adobe ID
 
 >[!IMPORTANT]
 >
->Pour utiliser la fonctionnalité Services Push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID et leur compte Analytics doit être lié à leurs Adobe ID. La fonctionnalité de services push est indisponible si les utilisateurs se connectent par le biais de leur compte Adobe Analytics existant.
+>Pour pouvoir exploiter la fonctionnalité de services push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID, et leur compte Analytics doit être associé à leur Adobe ID. La fonctionnalité de services push est indisponible si les utilisateurs se connectent par le biais de leur compte Adobe Analytics existant.
 
 Si certains utilisateurs ne possèdent pas d’Adobe ID, effectuez les étapes suivantes :
 
-1. (**Experience Cloud Administrator**) Invite users to the Experience Cloud.
+1. (**L’administrateur Experience Cloud**) invite les utilisateurs à s’inscrire à Experience Cloud.
 
-1. (**User**) Create a personal Adobe ID using the instructions that you received from the Experience Cloud administrator.
+1. (**L’utilisateur**) crée un Adobe ID individuel en suivant les instructions que vous avez reçues de l’administrateur Experience Cloud.
 
    Un message électronique est automatiquement envoyé à chaque utilisateur une fois que l’administrateur a accompli l’étape précédente.
 
-1. (**Users**) Log in to Mobile using their Adobe ID.
+1. (**Utilisateurs**) Connexion à Mobile à l’aide de leur Adobe ID.
 
-## Liaison des comptes d’utilisateurs dans Experience Cloud
+## Liaison des comptes d’utilisateur dans Experience Cloud
 
 Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organisation Experience Cloud.
 
@@ -59,19 +59,19 @@ Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organ
 
 1. Dans le coin supérieur droit, sélectionnez le nom de la société Analytics.
 
-1. Cliquez sur **[!UICONTROL Ajouter l’organisation]**, puis sélectionnez **Adobe SiteCatalyst/Adobe Social]dans la liste déroulante.[!UICONTROL **
+1. Cliquez sur **[!UICONTROL Ajouter l’organisation]**, puis sélectionnez **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** dans la liste déroulante.
 
 1. Saisissez le nom de la société et vos anciennes informations d’identification pour la société en question, puis cliquez sur **[!UICONTROL Lier le compte]**.
 
    L’Adobe ID est maintenant associé à votre compte Analytics, votre société et vos informations de connexion.
 
-Pour plus d’informations, voir [Dépannage de la liaison de compte](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
+Pour plus d’informations, voir [Dépannage de la liaison de compte](https://marketing.adobe.com/resources/help/fr_FR/mcloud/organizations.html).
 
-## Configure push services and the SDK ID service in the Mobile User Interface
+## Configuration des services push et du service d’identification du SDK dans l’interface utilisateur de Mobile
 
-La section **[!UICONTROL Services push]est désactivée tant que vous n’avez pas activé le service d’identification pour votre application.** Mais une fois le service d’ID activé, la section Services Push est activée. Pour plus d’informations sur l’activation des services Push, voir [Configuration des options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)du service d’ID de SDK.
+La section **[!UICONTROL Services push]** est désactivée tant que vous n’avez pas activé le service d’identification pour votre application. Mais une fois le service d’identification activé, la section des services push est activée. Pour plus d’informations sur l’activation des services push, voir [Configuration des options du service d’identification du SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
->[!IMPORTANT]: Vous devez cliquer sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et actualiser les services Push.
+>[!IMPORTANT] : vous devez cliquer sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et actualiser les services push.
 >
 >Vous pouvez configurer une application de la boutique d’applications pour Apple et une pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour l’environnement de production et une pour l’environnement de développement, configurez une nouvelle application de la boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
@@ -79,15 +79,15 @@ La section **[!UICONTROL Services push]est désactivée tant que vous n’avez p
 
    * Pour la **clé privée**, effectuez un glisser-déposer de votre clé privée dans la case.
 
-      Vous pouvez également cliquer sur **[!UICONTROL Parcourir]pour sélectionner le fichier.** Ce fichier contient la clé privée. The certificate might also be included in this file (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
+      Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce fichier contient la clé privée. Le certificat peut également être inclus dans ce fichier (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
    * Pour le **mot de passe de clé privée**, si votre fichier de clé privée est chiffré, saisissez le mot de passe.
 
-      (Conditionnel) Pour le **certificat**, effectuez un glisser-déposer de votre fichier de certificat dans la case. Vous pouvez également cliquer sur **[!UICONTROL Parcourir]pour sélectionner le fichier.** This field is not required if the private-key file also contains the certificate ( `.cert`, `.cer`, `.crt`, `.pem`).
+      (Conditionnel) Pour le **certificat**, effectuez un glisser-déposer de votre fichier de certificat dans la case. Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce champ n’est pas obligatoire si le fichier de clé privée contient également le certificat ( `.cert`, `.cer`, `.crt`, `.pem`).
 
 * Pour **Google**, spécifiez la clé d’API de l’application.
 
-   Cliquez sur **[!UICONTROL Tester]pour vérifier que l’application et Mobile Services sont configurés correctement.** Cette option est utile en cas de débogage et de dépannage.
+   Cliquez sur **[!UICONTROL Tester]** pour vérifier que l’application et Mobile Services sont configurés correctement. Cette option est utile en cas de débogage et de dépannage.
 
    Saisissez les jetons push des appareils auxquels vous souhaitez envoyer le message. Vous pouvez envoyer le message vers plusieurs périphériques en spécifiant les jetons dans une liste séparée par des virgules.
 
