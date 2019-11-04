@@ -2,17 +2,17 @@
 description: Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
 seo-description: Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
 seo-title: Messagerie in-app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Messagerie in-app
 topic: Développeur et mise en œuvre
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# In-app messaging {#in-app-messaging}
+# Messagerie in-app{#in-app-messaging}
 
 Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
 
@@ -22,14 +22,14 @@ Vous recherchez des informations et de la documentation à propos du SDK Adobe 
 
 >[!IMPORTANT]
 >
->Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+>Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
 * Pour commencer, cliquez sur [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-app messaging and push notifications. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). For more information about using push messaging and in-app messaging with the Experience Cloud SDKs, see [Set up push messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) and [Set up in-app messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme la messagerie intégrée (in-app) et les notifications Push. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation de la messagerie push et de la messagerie in-app avec les SDK Experience Cloud, voir [Configuration de la messagerie push](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) et [Configuration de la messagerie in-app](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
@@ -37,13 +37,13 @@ Vous recherchez des informations et de la documentation à propos du SDK Adobe 
 
 Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui définissent le moment où les messages s’affichent. Pour obtenir plus d’informations, voir [Création d’un message in-app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Pour afficher des messages in-app, des mises à jour doivent être apportées au SDK. Vous pouvez terminer ces étapes même si vous n’avez pas encore défini de messages. Une fois que vous avez défini les messages, ils sont envoyés dynamiquement à l’application et affichés sans mise à jour de la boutique d’applications.
 
-## Enabling in-app messaging {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Activation de la messagerie in-app {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
-   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration à votre projet* IntelliJ IDEA ou Eclipse dans l’implémentation et le cycle de vie [](/help/android/getting-started/dev-qs.md)principaux.
+   Pour plus d’informations, voir *Ajout du SDK et du fichier de configuration au projet IntelliJ IDEA ou Eclipse* dans [Mise en œuvre principale et cycle de vie](/help/android/getting-started/dev-qs.md).
 
-1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
+1. Mettez à jour le fichier `AndroidManifest.xml` pour déclarer l’activité Plein écran et activer le gestionnaire de notifications de messages :
 
    ```java
    <activity  
@@ -82,11 +82,11 @@ Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui 
    }
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for in-app messaging.
+1. Vérifiez que le fichier `ADBMobileConfig.json` contient les paramètres requis pour la messagerie intégrée (in-app).
 
    >[!IMPORTANT]
    >
-   >`messages` or  is required.`remotes`
+   >`messages` ou `remotes` est obligatoire.
 
    Pour que les messages in-app soient mis à jour dynamiquement au lancement, l’objet `remotes` doit être présent et correctement configuré :
 
@@ -113,36 +113,36 @@ Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui 
    }
    ```
 
-   If this object is not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. Pour obtenir plus d’informations, voir [Avant de commencer](/help/android/getting-started/requirements.md).
+   Si cet objet n’est pas configuré, téléchargez un fichier `ADBMobileConfig.json` mis à jour depuis Adobe Mobile Services. Pour obtenir plus d’informations, voir [Avant de commencer](/help/android/getting-started/requirements.md).
 
-## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## Suivi des messages in-app {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 Les SDK Android Mobile Services effectuent le suivi des mesures suivantes pour vos messages in-app :
 
 * Pour les messages in-app en plein écran et de type alerte :
 
    * **Impressions** : lorsque l’utilisateur déclenche un message in-app.
-   * **Clics publicitaires**: lorsque l’utilisateur appuie sur **[!UICONTROL Clic publicitaire]**.
-   * **Annule**: lorsque l’utilisateur appuie sur **[!UICONTROL Annuler]**.
+   * **Clics publicitaires** : lorsque l’utilisateur appuie sur **[!UICONTROL Clic publicitaire]**.
+   * **Annulations** : lorsque l’utilisateur appuie sur **[!UICONTROL Annuler]**.
 
 * Pour les messages in-app personnalisés en plein écran, le contenu HTML du message doit contenir le code approprié pour notifier le suivi du SDK concernant les boutons suivants :
 
-   * **Exemple de suivi des clics publicitaires** (redirection) :
+   * Exemple de suivi des **Clics publicitaires** (redirections) :
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Annuler** (fermer) l'exemple de suivi :
+   * Exemple de suivi - **Annuler** (fermer) :
 
       `adbinapp://cancel`
 
-## Local fallback image {#section_DEACC1CE549B4573B556A44A52409941}
+## Image de secours locale {#section_DEACC1CE549B4573B556A44A52409941}
 
 Lors de la création d’un message Plein écran, vous avez la possibilité, si vous le souhaitez, de spécifier une image de secours. Si le message ne peut pas récupérer l’image prévue depuis le web, le SDK tente de charger l’image portant le même nom depuis le dossier assets de l’application. Cela permet d’afficher le message dans son format d’origine, même si l’utilisateur est hors ligne ou si l’image prédéterminée n’est pas accessible.
 
 >[!IMPORTANT]
 >
->The fallback image asset name is specified when you configure the message in Adobe Mobile services, and you need to ensure that the specified resource is available.
+>Le nom de ressource de l’image de secours est spécifié lors de la configuration du message dans Adobe Mobile Services. Vous devez vous assurer que la ressource spécifiée est disponible.
 
-## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
+## Configuration des icônes de notification {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 Les méthodes suivantes permettent de configurer la petite icône et la grande icône qui apparaissent dans la zone de notification ainsi que la grande icône affichée lorsque des notifications apparaissent dans le tiroir de notification.
 
@@ -156,7 +156,7 @@ Les méthodes suivantes permettent de configurer la petite icône et la grande i
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * Voici l’exemple de code de cette méthode :
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -164,7 +164,7 @@ Les méthodes suivantes permettent de configurer la petite icône et la grande i
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   Définit la grande icône qui sera utilisée pour les notifications créées par le SDK. Cette icône est l’image principale qui s’affiche lorsque l’utilisateur voit la notification complète dans le centre de notification.
+   Définit la grande icône qui sera utilisée pour les notifications créées par le SDK. Cette icône est l’image principale affichée lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
 
    * Voici la syntaxe de cette méthode :
 
