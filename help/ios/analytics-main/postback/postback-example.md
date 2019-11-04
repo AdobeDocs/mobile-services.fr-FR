@@ -2,17 +2,17 @@
 description: Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
 seo-description: Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
 seo-title: Exemple de postback
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Exemple de postback
 topic: Développeur et mise en œuvre
 uuid: 809c5646-7a80-40df-984b-0af89d854259
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Postback example {#postback-example}
+# Exemple de postback{#postback-example}
 
 Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
 
@@ -20,7 +20,7 @@ Exemples de définitions et de codes source pour la fonctionnalité des postback
 >
 >Cet exemple est fourni à titre d’information uniquement. Le fichier `ADBMobileConfig.json` doit être configuré dans l’interface utilisateur Adobe Mobile et ne doit pas être modifié manuellement. En effet, un fichier de configuration modifié manuellement peut s’avérer problématique lorsque la configuration des messages à distance est activée.
 
-## ADBMobileConfig.json definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
+## Définition du fichier ADBMobileConfig.json {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
 ```js
 "messages": [ 
@@ -51,13 +51,13 @@ Exemples de définitions et de codes source pour la fonctionnalité des postback
 ] 
 ```
 
-## Code sample {#section_8169B88A2C634CB788DA574EE8C4B1DC}
+## Exemple de code {#section_8169B88A2C634CB788DA574EE8C4B1DC}
 
 ```objective-c
 NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"}; 
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L’URL remplace toutes les variables de modèle par les valeurs de l’accès. En supposant que la session précédente de l’utilisateur ait duré 132 secondes et qu’il se trouve sur le SDK iOS version 4.6.0, voici un exemple de l’URL qui en résulte :
+Comme son état est `“MainMenu”`, cet appel de suivi déclenche le message de postback ci-dessus. L’URL remplace toutes les variables du modèle par les valeurs issues de l’accès. En supposant que la session précédente de l’utilisateur a duré 132 secondes et que l’utilisateur utilise une version 4.6.0 du SDK iOS, voici un exemple de l’URL résultante :
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
