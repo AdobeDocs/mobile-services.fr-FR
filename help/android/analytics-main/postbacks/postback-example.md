@@ -2,20 +2,20 @@
 description: Vous pouvez utiliser ces informations pour vous aider à comprendre les postbacks et leur fonctionnement.
 keywords: android;library;mobile;sdk
 seo-description: Vous pouvez utiliser ces informations pour vous aider à comprendre les postbacks et leur fonctionnement.
-seo-title: Exemple de postbacks
-solution: Marketing Cloud,Analytics
-title: Exemple de postbacks
+seo-title: Exemple de postback
+solution: Experience Cloud,Analytics
+title: Exemple de postback
 topic: Développeur et mise en œuvre
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Postbacks example {#postbacks-example}
+# Exemple de postback{#postbacks-example}
 
-Vous pouvez utiliser ces informations pour vous aider à comprendre ce que sont les postbacks et comment ils fonctionnent.
+Vous pouvez utiliser ces informations pour vous aider à comprendre les postbacks et leur fonctionnement.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Vous pouvez utiliser ces informations pour vous aider à comprendre ce que sont 
 ] 
 ```
 
-## Code sample {#section_D063DE82976D4EDEA97E804BD1C4718F}
+## Exemple de code {#section_D063DE82976D4EDEA97E804BD1C4718F}
 
 ```js
 HashMap<String, Object> contextData = new HashMap<String, Object>(); 
@@ -61,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. L’URL remplacera toutes les variables du modèle par les valeurs issues de l’accès. En supposant que la session précédente de l’utilisateur ait duré 132 secondes et qu’il se trouve sur le SDK Android version 4.6.0, l’URL résultante se présente comme suit :
+Comme son état est `“MainMenu”`, cet appel de suivi déclenche le message de postback ci-dessus. L’URL remplacera toutes les variables du modèle par les valeurs issues de l’accès. En présumant que la session précédente de l’utilisateur a duré 132 secondes et que ce dernier utilise le SDK Android version 4.6.0, l’URL résultante ressemble à :
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`
