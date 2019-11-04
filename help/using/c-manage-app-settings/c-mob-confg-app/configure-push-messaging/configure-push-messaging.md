@@ -3,21 +3,21 @@ description: Vous pouvez utiliser ces informations pour configurer les options d
 keywords: mobile
 seo-description: Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 seo-title: Configuration de la messagerie push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Configuration de la messagerie push
 topic: Mesures
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
 ---
 
 
-# Configure push messaging{#configure-push-messaging}
+# Configuration de la messagerie push{#configure-push-messaging}
 
-Vous pouvez utiliser ces informations pour vous aider à configurer les options des services Push sur la page Gérer les paramètres d’application lors de la création d’une application ou de la modification d’une application existante.
+Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 
-Avant de configurer la messagerie Push, effectuez les tâches préalables requises dans [Conditions préalables requises pour activer la messagerie](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)Push.
+Avant de configurer la messagerie push, effectuez les tâches préalables requises dans [Conditions préalables requises pour activer la messagerie push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
 
 * **Étude de la suite de rapports**
 
@@ -25,32 +25,32 @@ Avant de configurer la messagerie Push, effectuez les tâches préalables requis
 
 >[!IMPORTANT]
 >
->Moving your app to a new report suite is not supported. Si vous migrez vers une nouvelle suite de rapports, votre configuration push peut devenir défaillante et les messages peuvent ne pas être envoyés.
+>Vous ne pouvez pas déplacer votre application vers une nouvelle suite de rapports. Si vous migrez vers une nouvelle suite de rapports, votre configuration push peut devenir défaillante et les messages peuvent ne pas être envoyés.
 
-1. Type information in the following fields under **[!UICONTROL Push Services]**:
+1. Renseignez les champs suivants sous **[!UICONTROL Services push]** :
 
    * Apple
 
       **[!UICONTROL Clé privée]**
 
-      Browse to and select your valid private key `.p12`, `.key`, or `.pen`.
+      Recherchez et sélectionnez votre clé privée valide `.p12`, `.key`, ou `.pen`.
 
       >[!IMPORTANT]
-      >If the file that you select for the **[!UICONTROL Private Key]** input also contains a certificate, you do not need to specify the certificate.
+      >Si le fichier que vous sélectionnez pour la saisie de la **[!UICONTROL Clé privée]** contient également un certificat, il n’est pas nécessaire de spécifier ce dernier.
 
    * **[!UICONTROL Certificat]**
 
-      Spécifiez un certificat valide. Cette information est requise uniquement si la saisie **[!UICONTROL Clé privée]** ne contient **aucun** certificat. For more information about obtaining the SSL certificate and private key, see [Configure App to use APNS or FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Spécifiez un certificat valide. Cette information est requise uniquement si la saisie **[!UICONTROL Clé privée]** ne contient **aucun** certificat. Pour plus d’informations sur l’obtention du certificat SSL et de la clé privée, voir [Configuration d’une application pour l’utilisation du service APNS ou FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
    * Google
 
       **[!UICONTROL Clé API]**
 
-      Spécifier une clé API valide. For more information about obtaining the API key, see [Configure App to use APNS or FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Spécifier une clé API valide. Pour plus d’informations sur l’obtention de la clé d’API, voir [Configuration d’une application pour l’utilisation du service APNS ou FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
       Pour plus d’informations, voir les rubriques suivantes :
 
-      * [Push Messaging in Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [Messagerie Push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
+      * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
