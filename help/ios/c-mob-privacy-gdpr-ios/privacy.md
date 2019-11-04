@@ -2,27 +2,27 @@
 description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 seo-description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 seo-title: Définition de l’état de souscription de l’utilisateur
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
 topic: Développeur et mise en œuvre
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Setting the user's opt status {#setting-the-user-s-opt-status}
+# Définition de l’état de souscription de l’utilisateur{#setting-the-user-s-opt-status}
 
 Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 
 >[!IMPORTANT]
 >
->Starting with Experience Cloud iOS SDKs 4.15, setting the privacy status to `unknown` holds Audience Manager and Experience Cloud ID hits.
+>À compter des SDK Experience Cloud pour iOS version 4.15, la définition de l’état de confidentialité sur `unknown` inclut les accès Audience Manager ID et Experience Cloud ID.
 
 Vous pouvez décider si l’activité d’Analytics, de Target et d’Audience Manager est autorisée sur un périphérique en utilisant les paramètres suivants :
 
-* `privacyDefault` dans la configuration [JSON](/help/ios/configuration/json-config/json-config.md)ADBMobile.
+* `privacyDefault` dans la [configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
 
    Ce paramètre contrôle le paramètre initial qui persiste jusqu’à ce qu’il soit modifié dans le code.
 
@@ -32,25 +32,25 @@ Vous pouvez décider si l’activité d’Analytics, de Target et d’Audience 
 
    Pour obtenir plus d’informations sur les méthodes, voir [Méthodes de configuration](/help/ios/configuration/json-config/json-config.md).
 
-Voici des informations sur chaque état de confidentialité :
+Voici des informations sur chaque état de confidentialité :
 
 * **Inclusion**
 
    * Analytics : les accès sont envoyés.
    * Target : les demandes de mbox sont envoyées.
    * Audience Manager : les signaux et la synchronisation des identifiants sont envoyés.
-   * Value in the JSON config file: `optedin`
-   * Valeur dans `setPrivacyStatus`: `ADBMobilePrivacyStatusOptIn`
+   * Valeur dans le fichier JSON Config : `optedin`
+   * Valeur dans `setPrivacyStatus` : `ADBMobilePrivacyStatusOptIn`
 
 * **Exclusion**
 
    * Analytics : les accès sont ignorés.
    * Target : les demandes de mbox ne sont pas autorisées.
    * Audience Manager : les signaux et la synchronisation des identifiants ne sont pas autorisés.
-   * Value in the JSON config file: `optedout`
-   * Valeur dans `setPrivacyStatus`: `ADBMobilePrivacyStatusOptOut`
+   * Valeur dans le fichier JSON Config : `optedout`
+   * Valeur dans `setPrivacyStatus` : `ADBMobilePrivacyStatusOptOut`
 
-* **Unknown (Inconnu)**
+* **Inconnu**
 
    * Analytics : Si le suivi hors ligne **est** activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
@@ -58,8 +58,8 @@ Voici des informations sur chaque état de confidentialité :
 
    * Target : les demandes de mbox sont envoyées.
    * Audience Manager : les signaux et la synchronisation des identifiants sont envoyés.
-   * Value in the JSON config file: `optunknown`
-   * Valeur dans `setPrivacyStatus`: `ADBMobilePrivacyStatusUnknown`
+   * Valeur dans le fichier JSON Config : `optunknown`
+   * Valeur dans `setPrivacyStatus` : `ADBMobilePrivacyStatusUnknown`
 
 ## Exemples {#section_128AC455EE024193B5D4E5A565B53D00}
 
