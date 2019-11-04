@@ -4,7 +4,7 @@ seo-description: La fonctionnalité de prérécupération d’Adobe Target util
 seo-title: Prérécupération du contenu des offres dans iOS
 title: Prérécupération du contenu des offres dans iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,15 +16,15 @@ La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS 
 
 >[!IMPORTANT]
 >
->Prefetch functionality in the Mobile SDKs for iOS is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
+>La fonctionnalité de prérécupération dans les SDK mobiles pour iOS n’est pas prise en charge pour les types d’activité Cible automatique, Allocation automatique et Personnalisation automatisée dans Adobe Target.
 
 Ce processus réduit le délai de chargement, évite la multiplication des appels réseau et permet d’informer Adobe Target de la mbox que l’utilisateur de l’application mobile a été visitée. L’ensemble du contenu sera récupéré et mis en cache lors de l’appel de prérécupération. Ce contenu sera ensuite récupéré du cache pour tous les appels futurs contenant le contenu mis en cache pour cette mbox spécifique.
 
-Le contenu de la prérécupération n’est pas conservé d’une exécution à l’autre. The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+Le contenu de la prérécupération n’est pas conservé d’une exécution à l’autre. Il reste dans le cache tant que l’application est active ou jusqu’à ce que la méthode `clearPrefetchCache()` soit appelée.
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Les API de prérécupération de Target sont disponibles depuis la version 4.14.0 du SDK. Pour plus d’informations sur les restrictions des paramètres, voir [Paramètres d’entrée de lot](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 Dans le SDK version 4.14 ou ultérieure l’identifiant `environmentId``ADBMobileConfig.json`, si spécifié, est sélectionné dans le fichier lors de l’initialisation d’un appel mBox en lots TnT v2. Si aucun `environmentId` n’est spécifié dans ce fichier, aucun paramètre d’environnement n’est envoyé dans l’appel mBox en lots TnT, et l’offre est fournie pour l’environnement par défaut.
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Prefetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## Méthodes de prérécupération {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour la prérécupération dans iOS :
 
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * Here are the parameters for this method:
+   * Voici les paramètres pour cette méthode :
 
       * **`targetPrefetchArray`**
 
@@ -67,7 +67,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
 
       * **`callback`**
 
-         Appelé une fois la prérécupération terminée. Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         Appelé une fois la prérécupération terminée. Renvoie `true` si la prérécupération a réussi et `false` si la prérécupération a échoué.
 
 * **targetLoadRequests**
 
@@ -75,7 +75,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
 
    >[!IMPORTANT]
    >
-   >Si le contenu des emplacements demandés est déjà mis en cache, il est renvoyé immédiatement dans le rappel fourni. Dans le cas contraire, le SDK envoie une demande de réseau aux serveurs Target afin de récupérer le contenu.
+   >Si le contenu des emplacements demandés a déjà été mis en cache, il est renvoyé immédiatement dans le rappel fourni. Dans le cas contraire, le SDK envoie une demande de réseau aux serveurs Target afin de récupérer le contenu.
 
    * Voici la syntaxe de cette méthode :
 
@@ -84,7 +84,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
                withProfileParameters:(nullableNSDictionary*)profileParameters;
       ```
 
-   * Here are the parameters for this method:
+   * Voici les paramètres pour cette méthode :
 
       * **`requests`**
 
@@ -119,7 +119,7 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       callback:(nullablevoid(^)(NSString*__nullablecontent))callback;
       ```
 
-   * There are no parameters for this method.
+   * Il n’existe aucun paramètre pour cette méthode.
 
 * **createTargetPrefetchObject**
 
@@ -132,17 +132,17 @@ Vous trouverez ci-dessous la liste des méthodes pouvant être utilisées pour l
       mboxParameters:(nullableNSDictionary *)mboxParameters;
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## Classes publiques {#section_A273E53F069E4327BBC8CE4910B37888}
 
 Vous trouverez ci-dessous la liste des classes publiques qui prennent en charge la fonction de prérécupération dans iOS :
 
-### Référence de classe : TargetPreFetchObject
+### Référence de classe : TargetPreFetchObject
 
 Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupération de la mbox.
 
 * **`name`**
 
-   Name for the location/mbox you want to retrieve.
+   Nom de l’emplacement/de la mbox à récupérer.
 
    * **Type** : NSString*
 
@@ -164,7 +164,7 @@ Encapsule le nom de la mbox et les paramètres utilisés pour la prérécupérat
 
    * **Type** : NSDictionary*
 
-### Référence de classe : TargetRequestObject
+### Référence de classe : TargetRequestObject
 
 Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres de mbox et le rappel de renvoi utilisés pour les demandes d’emplacement Target.
 
@@ -192,7 +192,7 @@ Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres d
 
    * **Type** : fonction
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## Exemple de code {#section_BF7F49763D254371B4656E17953D520C}
 
 Vous trouverez ci-dessous un exemple de procédure de prérécupération de contenu à l’aide des SDK iOS :
 
