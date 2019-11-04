@@ -1,35 +1,35 @@
 ---
-description: Voici les méthodes du service d’identité Adobe Experience Platform fournies par la bibliothèque iOS.
-seo-description: Voici les méthodes du service d’identité Adobe Experience Platform fournies par la bibliothèque iOS.
-seo-title: Adobe Experience Platform Identity Service methods
-solution: Marketing Cloud,Analytics
-title: Adobe Experience Platform Identity Service methods
+description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
+seo-description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
+seo-title: Méthodes de services d’identification Adobe Experience Platform
+solution: Experience Cloud,Analytics
+title: Méthodes de services d’identification Adobe Experience Platform
 topic: Développeur et mise en œuvre
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 ---
 
 
-# Méthodes d’Adobe Experience Platform Identity Service {#experience-cloud-id-service-methods}
+# Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
 
-Here are the Adobe Experience Platform Identity Service methods that are provided by the iOS library.
+Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification des visiteurs d’Experience Cloud.
 
-Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. Pour plus d’informations, voir [Activation de l’Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
+Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experience Cloud ID sont précédées du préfixe `visitor`. Pour plus d’informations, voir [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(NSURL nullable`*`)visitorAppendToURL:(NSURL nullable`*`)url;**
+* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. To use this method, you must have Mobile SDK version 4.12 or higher. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, il vous faut le SDK mobile version 4.12 ou ultérieure. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://marketing.adobe.com/resources/help/fr_FR/mcvid/mcvid-appendvisitorid.html).
 
    >[!IMPORTANT]
    >
-   >Cette méthode peut provoquer un appel réseau de blocage. N’appelez pas cette méthode pour des fils soumis à des contraintes de temps.
+   >Cette méthode peut entraîner un appel de blocage réseau. N’appelez pas cette méthode pour des fils soumis à des contraintes de temps.
 
-   * Input: `URL<NSURL>`
-A required URL string that the visitor information will be appended to.
+   * Entrée : `URL<NSURL>`
+Chaîne URL à laquelle les données du visiteur seront ajoutées.
    * `URL<NSURL>`
 Chaîne comportant les informations sur les visiteurs ajoutées.
 
@@ -59,7 +59,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >Cette méthode peut provoquer un appel réseau bloquant et **ne doit pas** être appelée depuis un fil d’interface utilisateur.
 
 * **visitorSyncIdentifiers:**
 
@@ -99,7 +99,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 
 * **visitorSyncIdentifierWithType:identifier:authenticationState:**
 
-   Synchronise le type d’identifiant et la valeur fournis au service d’identification. Pass in the `authState` one of the following values:
+   Synchronise le type d’identifiant et la valeur fournis au service d’identification. Transmettez `authState` sous la forme d’une des valeurs suivantes :
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -138,7 +138,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 
 * **visitorgetUrlVariablesAsync**
 
-   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. For more information about how this method is used, see Adobe Experience Platform Identity Service methods.[](/help/ios/reference/hybrid-app.md)
+   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. Pour plus d’informations sur l’utilisation de cette méthode [Méthodes de services d’identification Adobe Experience Platform](/help/ios/reference/hybrid-app.md).
 
    * Voici la syntaxe de cette méthode :
 
