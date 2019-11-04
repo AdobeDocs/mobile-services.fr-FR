@@ -2,37 +2,37 @@
 description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK permet également de repérer facilement les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message Push.
 seo-description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK permet également de repérer facilement les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message Push.
 seo-title: Messagerie Push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Messagerie Push
 topic: Développeur et mise en œuvre
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 17cb91a28966cf32f955a2cb724e89ab228de5b8
 
 ---
 
 
-# Push messaging {#push-messaging}
+# Messagerie Push{#push-messaging}
 
 Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK permet également de repérer facilement les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message Push.
 
-Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 ou supérieure.
+Pour utiliser les messages push, vous **devez** disposer du SDK version 4.6 ou supérieure.
 
 >[!IMPORTANT]
 >
->Ne définissez pas manuellement l’ID Experience Cloud dans votre application. Cela provoque la création d’un nouvel utilisateur unique qui ne recevra pas les messages Push en raison de son état d’inclusion. Par exemple, un utilisateur qui a choisi de recevoir des messages push se connecte à votre application. Après la connexion, si vous définissez manuellement l’identifiant dans l’application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir les messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
+>Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Cela provoque la création d’un nouvel utilisateur unique qui ne recevra pas les messages Push en raison de son état d’inclusion. Par exemple, un utilisateur qui a choisi de recevoir des messages push se connecte à votre application. Après la connexion, si vous définissez manuellement l’identifiant dans l’application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir les messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
 >
->Le déplacement de votre application vers une nouvelle suite de rapports n’est pas pris en charge. Si vous migrez vers une nouvelle suite de rapports, votre configuration push peut devenir défaillante et les messages peuvent ne pas être envoyés.
+>Vous ne pouvez pas déplacer votre application vers une nouvelle suite de rapports. Si vous migrez vers une nouvelle suite de rapports, votre configuration push peut devenir défaillante et les messages peuvent ne pas être envoyés.
 
-## Enable push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## Activation de la messagerie push {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
 >[!TIP]
 >
->Si votre application est déjà configurée pour utiliser la messagerie via Firebase Cloud Messaging (FCM), certaines des étapes suivantes peuvent déjà être effectuées.
+>Si votre application est déjà configurée pour utiliser la messagerie par l’intermédiaire de Firebase Cloud Messaging (FCM), certaines étapes sont peut-être déjà terminées.
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for push messaging.
+1. Vérifiez que le fichier `ADBMobileConfig.json` contient les paramètres requis pour la messagerie push.
 
-   The `"marketingCloud"` object must have its `"org"` property configured for push messaging.
+   La propriété `"marketingCloud"` de l’objet `"org"` doit être configurée pour la messagerie push.
 
    ```js
    "marketingCloud": { 
@@ -47,7 +47,7 @@ Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 o
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
 
-1. The registration ID/token must be passed to the SDK by using the `Config.setPushIdentifier(final String registrationId)` method.
+1. L’identifiant/le jeton d’enregistrement doit être transmis au SDK à l’aide de la méthode `Config.setPushIdentifier(final String registrationId)`.
 
    ```js
    Config.setPushIdentifier(token); // token was obtained in step 2
@@ -57,7 +57,7 @@ Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 o
 
    Vous trouverez ci-dessous les exigences relatives à l’activation de la création de rapports sur les clics publicitaires Push :
 
-   * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. Vous pouvez le faire à l’aide de la `putExtras` méthode. For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
+   * Dans la mise en œuvre de `FireBaseMessageService`, l’objet Bundle qui comporte les données de message, qui sont transmises à la méthode `onMessageReceived` avec l’objet RemoteMessage, doit être ajouté à l’intention qui est utilisée pour ouvrir l’activité cible lors d’un clic publicitaire. Vous pouvez le faire à l’aide de la `putExtras` méthode. Pour en savoir plus, consultez la rubrique [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle)).
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -71,7 +71,7 @@ Pour utiliser la messagerie Push, vous **devez** disposer du SDK version 4.6 o
 
       * Utilisez `Config.collectLifecycleData(this)` ou `Config.collectLifecycleData(this, contextData)`.
 
-      * Do **not** use `Config.collectLifecycleData()`.
+      * **N’utilisez pas** `Config.collectLifecycleData()`.
 
 
 
