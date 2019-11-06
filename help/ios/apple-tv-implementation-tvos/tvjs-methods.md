@@ -799,6 +799,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
          * Type : `String`
          * Identifiant tiers à utiliser pour les demandes cibles.
    * Voici l’exemple de code pour cette méthode :
+
    ```objective-c
    ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
    ```
