@@ -6,13 +6,13 @@ solution: Experience Cloud,Analytics
 title: SDK iOS 4.x pour solutions Experience Cloud
 topic: Développeur et mise en œuvre
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 ---
 
 
-# SDK iOS 4.x pour solutions Experience Cloud{#ios-sdk-x-for-experience-cloud-solutions}
+# SDK iOS 4.x pour solutions Experience Cloud {#ios-sdk-x-for-experience-cloud-solutions}
 
 Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applications iPhone et iPad Apple natives, de diffuser du contenu ciblé dans vos applications, ainsi que d’exploiter et de collecter des données d’audience grâce à Audience Manager.
 
@@ -28,14 +28,14 @@ Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applicati
 
 Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
 * Pour commencer, accédez à Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 Informations à retenir :
 
-* iOS 8 ou version ultérieure compatible
+* iOS 8 ou version ultérieure compatible.
 
    Pour iOS 11 ou version ultérieure, vous **devez** disposer de la version 4.13.8 ou ultérieure du SDK.
 
