@@ -7,7 +7,7 @@ solution: Marketing Cloud,Développeur
 title: Module externe Unity pour SDK iOS et Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: df4ff7128357a18c56d840eb5697f9c8813ad751
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 Ce module externe permet d’envoyer des appels Adobe Analytics depuis les applications Unity.
 
-Dernière mise à jour : **20 octobre 2016**
+Last Updated: **November 12, 2019**
 
 ## Prise en main {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
@@ -28,16 +28,6 @@ Voici le contenu du `ADBMobile.unitypackage` fichier :
 
    * ADBMobile
 
-      * Démonstration
-
-         * ADBMobileDemo.cs
-         * BooDemo.boo
-         * BooScene.unity
-         * CSharpScene.unity
-         * JavaScriptDemo.js
-         * JavaScriptScene.unity
-         * SecondScene.unity
-         * SecondSceneScript.cs
    * Modules externes
 
       * ADBMobile.cs
@@ -55,7 +45,6 @@ Voici le contenu du `ADBMobile.unitypackage` fichier :
          * ADBMobileWrapper.h
          * ADBMobileWrapper.mm
          * AdobeMobileLibrary.a
-
 
 
 Dossiers facultatifs : le dossier Démo contient des scènes et un exemple de code Unity pour chacune des langues de script prises en charge.
