@@ -2,12 +2,12 @@
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
 
@@ -70,7 +70,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
 
    * Version minimale du SDK : 4.0
 
@@ -245,7 +245,11 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **ssl**
 
-   La valeur par défaut est `false`. Active (`true`) ou désactive (`false`) la fonctionnalité d’envoi des données de mesure en utilisant SSL (HTTPS).
+   >[!IMPORTANT]
+   >
+   > Depuis la version 4.10.0, SSL prend la valeur true par défaut si l’indicateur n’est pas défini.
+
+   Active (`true`) ou désactive (`false`) la fonctionnalité d’envoi des données de mesure en utilisant SSL (HTTPS).
 
    La définition du modèle de message « callback » est présentée ci-dessous :
 
@@ -448,7 +452,7 @@ Le nœud des messages est généré automatiquement par Adobe Mobile Services 
 
       * key
       * avec le type de comparateur dans
-      * correspond à
+      * matches
 
 
 * « triggers »
