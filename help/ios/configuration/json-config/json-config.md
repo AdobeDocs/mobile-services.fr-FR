@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
@@ -70,7 +70,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/charset.html).
 
    * Version minimale du SDK : 4.0
 
@@ -90,7 +90,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    À noter :
 
-   * Si `coopUnsafe` est défini sur `coop_unsafe=1``true`, sera toujours annexé aux accès Audience Manager et identifiants visiteur.
+   * Si `coopUnsafe` est défini sur `true`, `coop_unsafe=1` sera toujours annexé aux accès Audience Manager et identifiants visiteur.
    * Si vous activez le transfert côté serveur Analytics vers Audience Manager, `coop_unsafe=1` sera également annexé aux accès Analytics.
    Voici quelques informations supplémentaires :
 
@@ -247,7 +247,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    >[!IMPORTANT]
    >
-   > Depuis la version 4.10.0, SSL prend la valeur true par défaut si l’indicateur n’est pas défini.
+   > Depuis la version 4.10.0, SSL prend la valeur true (vrai) par défaut si l’indicateur n’est pas défini.
 
    Active (`true`) ou désactive (`false`) la fonctionnalité d’envoi des données de mesure en utilisant SSL (HTTPS).
 
