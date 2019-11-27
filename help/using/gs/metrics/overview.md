@@ -3,12 +3,12 @@ description: Vous pouvez afficher les mesures de performances clés des applicat
 keywords: mobile
 seo-description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées récemment. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la plage de dates et créer des filtres pour segmenter les données et modifier n’importe quelle application sur la page Aperçu.
 seo-title: Affichage des mesures mobiles
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Affichage des mesures mobiles
-topic: Mesures
+topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -53,7 +53,7 @@ Vous pouvez exécuter les tâches suivantes sur la page Aperçu :
 
 * **Affichage des indicateurs clés de performance**
 
-   Cliquez sur le nom de l’application pour afficher des informations sur les indicateurs clés de performance. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour afficher les statistiques pour des dates spécifiques. Pour effectuer une analyse plus approfondie, cliquez sur l’icône **** &gt; près de **[!UICONTROL Indicateurs de performance clés]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
+   Cliquez sur le nom de l’application pour afficher des informations sur les indicateurs clés de performance. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour afficher les statistiques pour des dates spécifiques. To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
 
 ## Modification des paramètres d’une application {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
