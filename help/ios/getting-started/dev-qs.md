@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
 
-# Mise en œuvre principale et cycle de vie{#core-implementation-and-lifecycle}
+# Mise en œuvre principale et cycle de vie {#core-implementation-and-lifecycle}
 
 Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 
@@ -58,13 +58,13 @@ Pour télécharger le kit SDK :
 1. Dans Navigateur de projets, faites glisser le répertoire `AdobeMobileLibrary` sous votre projet.
 1. Vérifiez les éléments suivants :
 
-   * La case à cocher **[!UICONTROL Copier les éléments si nécessaire]est sélectionnée.**
+   * La case à cocher **[!UICONTROL Copier les éléments si nécessaire]** est sélectionnée.
    * **[!UICONTROL L’option Créer des groupes]** est sélectionnée.
-   * Aucune des cases à cocher de la section **[!UICONTROL Ajouter aux cibles]n’est sélectionnée.**
+   * Aucune des cases à cocher de la section **[!UICONTROL Ajouter aux cibles]** n’est sélectionnée.
    ![](assets/step_3.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]**.
-1. Dans **[!UICONTROL Navigateur de projets]**, sélectionnez **`ADBMobileConfig.json`**.
+1. Dans le **[!UICONTROL Navigateur de projets]**, sélectionnez **`ADBMobileConfig.json`**.
 1. Dans **[!UICONTROL Inspecteur de fichiers]**, ajoutez le fichier JSON à toute cible de votre projet qui utilisera le SDK Adobe.
 
    ![](assets/step_4.png)
