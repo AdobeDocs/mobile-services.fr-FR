@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: Avant de commencer
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
 
 
-# Avant de commencer{#before-you-start}
+# Avant de commencer {#before-you-start}
 
 Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes :
 
@@ -37,7 +37,7 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 1. Assurez-vous que votre administrateur d’Analytics a suivi les étapes de la *Administrateurs d’Analytics* dans [Tâches spécifiques à un rôle](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
 1. Assurez-vous que votre administrateur d’Analytics a suivi les instructions d’une des sections dans [Connexion à l’interface utilisateur Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8).
-1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
+1. Une fois la suite de rapports configurée, suivez les étapes de la rubrique [Téléchargement du SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
 
 Pour plus d’informations sur les rôles et les autorisations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -49,7 +49,7 @@ Vous pouvez vous connecter à l’interface utilisateur Adobe Mobile Services 
 
 ### Experience Cloud
 
-Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -57,24 +57,24 @@ Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide d
 
 ### Adobe Analytics
 
-Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
+Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
 
 ## Création d’une suite de rapports {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
 Pour créer une suite de rapports permettant de collecter des données d’application et de définir une application, procédez comme suit :
 
-1. Connectez-vous à l’interface utilisateur de Mobile Services en saisissant [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) dans un navigateur.
-1. Click **[!UICONTROL Create an App]**.
+1. Connectez-vous à l’interface utilisateur Mobile Services en saisissant [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) dans un navigateur.
+1. Cliquez sur **[!UICONTROL Créer une application]**.
 
-   Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** > **[!UICONTROL  Ajouter]**.
+   Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** > **[!UICONTROL  Ajouter]**.
 
-1. Dans la liste déroulante **[!UICONTROL Suite de rapports]**, sélectionnez **[!UICONTROL  Nouvelle suite de rapports]**.
+1. Dans la liste déroulante **[!UICONTROL Suite de rapports]**, sélectionnez **[!UICONTROL  Nouvelle suite de rapports]**.
 
 1. Saisissez le nom de l’application et sélectionnez un type de suite de rapports.
 
    Exemple d’identifiant de suite de rapports : `mycomobileappdev`. Vous devez configurer des suites de rapports et des applications distinctes pour les versions de développement et de production, afin de pouvoir répéter ces étapes lorsque vous êtes prêt à configurer la version de production.
 1. Dans **[!UICONTROL Identifiant de suite de rapports]**, vérifiez que le nom de votre suite de rapports est affiché.
-1. Dans **[!UICONTROL Copier les paramètres de]**, vérifiez que **[!UICONTROL  Modèle d’applications mobiles]** est sélectionné.
+1. Dans **[!UICONTROL Copier les paramètres de]**, vérifiez que **[!UICONTROL  Modèle d’applications mobiles]** est sélectionné.
 
    Ce modèle active les horodatages afin de collecter les données hors ligne et active les variables de la solution mobile permettant de capturer les mesures de cycle de vie.
 
@@ -84,21 +84,21 @@ Pour créer une suite de rapports permettant de collecter des données d’appli
 
 Pour télécharger le SDK mobile :
 
-1. connectez-vous à l’interface utilisateur de Mobile Services en saisissant [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) dans un navigateur.
-1. Dans le volet de gauche, cliquez sur la liste déroulante **[!UICONTROL Toutes les applications]** et sélectionnez votre application.
+1. Connectez-vous à l’interface utilisateur Mobile Services en saisissant [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) dans un navigateur.
+1. Dans le volet de gauche, cliquez sur la liste déroulante **[!UICONTROL Toutes les applications]** et sélectionnez votre application.
 Vous pouvez également sélectionner votre application dans le volet de droite.
 
    >[!IMPORTANT]
    >
-   >Pour afficher votre application dans le volet de droite, vous devez d’abord créer une application. Pour plus d’informations sur la création d’une application, voir [Ajout d’une nouvelle application.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Pour afficher votre application dans le volet de droite, vous devez d’abord créer une application. Pour plus d’informations sur la création d’une application, voir [Ajout d’une nouvelle application.](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/manage-apps-ug/t-new-app.html)
 
-1. Dans votre application, dans le volet de gauche, cliquez sur **[!UICONTROL Gérer les paramètres]** de l’application.
+1. Dans votre application, dans le volet de gauche, cliquez sur **[!UICONTROL Gérer les paramètres de l’application]**.
 
    >[!IMPORTANT]
    >
-   >Si vous ne voyez pas l’option **[!UICONTROL Gérer les paramètres]** de l’application, vérifiez que vous êtes connecté à Adobe Mobile Services. Pour vérifier, cliquez sur l’icône du sélecteur![de](assets/solution-switcher.png)solution dans le coin supérieur droit de la page et assurez-vous qu’ **[!UICONTROL  Adobe Mobile Services]** s’affiche dans le coin supérieur gauche.
+   >Si vous ne voyez pas l’option **[!UICONTROL Gérer les paramètres de l’application]**, vérifiez que vous êtes connecté à Adobe Mobile Services. Pour vérifier, cliquez sur l’icône du ![sélecteur de solution](assets/solution-switcher.png) dans le coin supérieur droit de la page et assurez-vous qu’**[!UICONTROL  Adobe Mobile Services]** s’affiche dans le coin supérieur gauche.
 
-1. Au bas de la page Gérer les paramètres de l’application, dans la section Téléchargements **[!UICONTROL du SDK]** d’application, téléchargez le SDK et l’exemple d’application pour votre plateforme.
+1. Au bas de la page Gestion des paramètres de l’application, dans la section **[!UICONTROL Téléchargements du SDK d’application]**, téléchargez le SDK et l’exemple d’application pour votre plateforme.
 
 >[!TIP]
 >
