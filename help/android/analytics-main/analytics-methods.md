@@ -3,12 +3,12 @@ description: Liste des méthodes Adobe Analytics fournies par la bibliothèque�
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 seo-title: Méthodes Analytics
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
@@ -34,13 +34,13 @@ Chacune des méthodes suivantes est utilisée pour envoyer des données vers la 
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public staticvoidtrackState(Stringstate, Map<String,Object> contextData);
+      public static void trackState(String state, Map<String, Object> contextData);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      Analytics.trackState("loginScreen",null);
+      Analytics.trackState("loginScreen", null);
       ```
 
 * **trackAction**
@@ -51,13 +51,13 @@ Effectue le suivi d’une action dans votre application.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      publicstaticvoidtrackAction(Stringstate,Map<String,Object> contextData);
+      public static void trackAction(String state, Map<String, Object> contextData);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      Analytics.trackAction("heroBannerTouched",null);
+      Analytics.trackAction("heroBannerTouched", null);
       ```
 
 * **getTrackingIdentifier**
@@ -68,13 +68,13 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static String getTrackingIdentifier(); 
+      public static String getTrackingIdentifier();
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      String trackingId = Analytics.getTrackingIdentifier(); 
+      String trackingId = Analytics.getTrackingIdentifier();
       ```
 
 * **trackLocation**
@@ -84,7 +84,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void trackLocation(Location location, Map<String,Object> contextData); 
+      public static void trackLocation(Location location, Map<String, Object> contextData);
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -100,7 +100,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      publicstaticvoidtrackLifetimeValueIncrease(BigDecimalamount,Map<String,Object>contextData);
+      public static void trackLifetimeValueIncrease(BigDecimal amount, Map<String, Object> contextData);
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -122,13 +122,13 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
    ```java
-   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+   public static void trackTimedActionStart(String action, Map<String, Object> contextData);
    ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      Analytics.trackTimedActionStart("cartToCheckout",null)
+      Analytics.trackTimedActionStart("cartToCheckout", null)
       ```
 
 
@@ -143,14 +143,14 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
+      public static void trackTimedActionUpdate(String action, Map<String, Object> contextData);
       ```
 
    * Voici un exemple de code pour cette méthode :
 
       ```java
-      HashMap cdata = new HashMap<String Object> (); 
-      cdata.put("quantity",3); 
+      HashMap cdata = new HashMap<String Object> ();
+      cdata.put("quantity",3);
       Analytics.trackTimedActionUpdate("cartToCheckout", cdata);
       ```
 
@@ -165,7 +165,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void trackTimedActionEnd(Stringaction,TimedActionBlock<Boolean> logic); 
+      public static void trackTimedActionEnd(String action, TimedActionBlock<Boolean> logic);
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -173,12 +173,11 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
       ```java
       Analytics.trackTimedActionEnd("cartToCheckout",new
       Analytics.TimedActionBlock<Boolean>(){
-        @Override
-        public Booleancall(long inAppDuration,long totalDuration, Map<String,
-      Object> contextData) {
+          @Override
+          public Boolean call(long inAppDuration, long totalDuration, Map<String, Object> contextData) {
               contextData.put("price", 49.95);
               return true;
-         }
+          }
       });
       ```
 
@@ -191,7 +190,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      voidsendQueuedHits()
+      public static void sendQueuedHits();
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -207,13 +206,13 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      long getQueueSize()
+      public static long getQueueSize();
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      long queueSize = Analytics.getQueueSize(); 
+      long queueSize = Analytics.getQueueSize();
       ```
 
 * **clearQueue**
@@ -223,7 +222,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
    * Voici la syntaxe de cette méthode :
 
       ```java
-      voidclearQueue()
+      public static void clearQueue();
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -235,3 +234,45 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
       >[!WARNING]
       >
       > Soyez prudent lorsque vous effacez manuellement la file d’attente. Cette action est irréversible.
+
+* **processReferrer**
+
+   Traite les données de campagne des référents du Google Play Store pour une utilisation ultérieure.
+
+   * Voici la syntaxe de cette méthode :
+
+      ```java
+      public static void processReferrer(final Context context, final Intent intent);
+      ```
+
+   * Voici l’exemple de code pour cette méthode :
+
+      ```java
+      Analytics.processReferrer(getApplicationContext(), intent);
+      ```
+
+* **processGooglePlayInstallReferrerUrl**
+
+   >[!IMPORTANT]
+   >
+   > Cette API est disponible à partir de la version 4.18.0 du SDK
+
+   Récupère les données d’acquisition à partir de l’URL du référent d’installation Google Play fournie.
+
+   Les données collectées à partir de cette API seront envoyées lors des accès d’installation envoyés à Analytics et seront disponibles dans le rappel de données Adobe.
+
+   Si les données du référent ont déjà été collectées par le SDK, l’appel de cette méthode entraînera une absence d’opération.
+
+   Pour plus d’informations sur la récupération de l’URL du référent, voir la documentation de Google : https://developer.android.com/google/play/installreferrer/library.
+
+   * Voici la syntaxe de cette méthode :
+
+      ```java
+      public static void processGooglePlayInstallReferrerUrl(final String referrerUrl);
+      ```
+
+   * Voici l’exemple de code pour cette méthode :
+
+      ```java
+      Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);
+      ```
