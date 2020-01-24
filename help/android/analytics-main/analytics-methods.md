@@ -1,21 +1,21 @@
 ---
-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
+description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
+seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 seo-title: Méthodes Analytics
 solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
 
-# Méthodes Analytics{#analytics-methods}
+# Méthodes Analytics {#analytics-methods}
 
-Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
+Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `analytics`.
 
@@ -237,7 +237,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
 * **processReferrer**
 
-   Traite les données de campagne des référents du Google Play Store pour une utilisation ultérieure.
+   Traite les données de campagne des référents de la boutique Google Play pour une utilisation ultérieure.
 
    * Voici la syntaxe de cette méthode :
 
@@ -255,15 +255,15 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
    >[!IMPORTANT]
    >
-   > Cette API est disponible à partir de la version 4.18.0 du SDK
+   > Cette API est disponible à partir de la version 4.18.0 du SDK.
 
    Récupère les données d’acquisition à partir de l’URL du référent d’installation Google Play fournie.
 
    Les données collectées à partir de cette API seront envoyées lors des accès d’installation envoyés à Analytics et seront disponibles dans le rappel de données Adobe.
 
-   Si les données du référent ont déjà été collectées par le SDK, l’appel de cette méthode entraînera une absence d’opération.
+   Si les données du référent ont déjà été collectées par le SDK, l’appel de cette méthode n’aboutira pas.
 
-   Pour plus d’informations sur la récupération de l’URL du référent, voir la documentation de Google : https://developer.android.com/google/play/installreferrer/library.
+   Pour plus d’informations sur la récupération de l’URL du référent, consultez la documentation Google : https://developer.android.com/google/play/installreferrer/library (documentation en anglais).
 
    * Voici la syntaxe de cette méthode :
 
