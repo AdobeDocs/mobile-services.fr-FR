@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: Test d’Acquisition version 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
 
-# Test de l’acquisition de V3{#testing-version-acquisition}
+# Test de l’acquisition de V3 {#testing-version-acquisition}
 
 Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
 
@@ -25,13 +25,13 @@ Si l’application mobile ne figure pas encore dans Google Play, lors de la cr�
 
 >[!IMPORTANT]
 >
->Si vous effectuez une mise en oeuvre à l’aide des API de référents d’installation de Google Play, vous ne pouvez pas tester l’acquisition avant que votre application ne figure dans le Google Play Store.
+>Si vous effectuez une implémentation à l’aide des API de référents d’installation de Google Play, vous ne pouvez pas tester l’acquisition avant que votre application ne se trouve dans la boutique Google Play.
 
 Chaque fois qu’un test est exécuté, l’application doit avoir été installée depuis peu ou ses données doivent être effacées sous **[!UICONTROL Paramètres]**. Ainsi, les mesures initiales de cycle de vie associées aux paramètres des chaînes de requête de la campagne sont envoyées lorsque l’application est lancée pour la première fois.
 
 1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/android/acquisition-main/acquisition.md) et assurez-vous que vous avez correctement mis en œuvre le récepteur de diffusion pour `INSTALL_REFERRER`.
 
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Dans l’interface utilisateur d’Adobe Mobile Services, cliquez sur **[!UICONTROL Acquisition]** >**[!UICONTROL  Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition qui définit Google Play comme destination des appareils Android.
 
    Pour obtenir plus d’informations, voir [Générateur de liens marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -68,7 +68,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | Le serveur doit être `c00.adobe.com`.   *`appid`*doit être égal à l’`appid`de votre lien d’acquisition. |
+   | acquisition | Le serveur doit être `c00.adobe.com`. *`appid`*doit être égal à l’`appid`de votre lien d’acquisition. |
    | analytics | À des fins de test, définissez le délai d’expiration du référent afin que la durée soit suffisante (60 secondes ou moins) pour permettre l’envoi manuel de la diffusion. Vous pouvez restaurer le délai d’expiration d’origine après le test. |
 
 1. Connectez l’appareil à un ordinateur, désinstallez puis réinstallez l’application.
@@ -120,7 +120,7 @@ Le tableau suivant répertorie les informations supplémentaires sur les erreurs
 
 Pour installer l’outil Java, procédez comme suit :
 
-1. [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) Téléchargez le fichier.
+1. Téléchargez le fichier [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip).
 
 1. Extrayez le fichier .jar.
 
