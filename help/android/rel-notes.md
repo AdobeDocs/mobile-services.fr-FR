@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 ---
@@ -16,11 +16,11 @@ source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour le SDK Android 4.x pour les solutions Experience Cloud :
 
-**16 janvier 2020 : 4.18.0**
+**16 janvier 2020 : 4.18.0**
 
-* Acquisition : ajout d’une nouvelle API `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, pour la prise en charge des API de référents d’installation de Google Play.
+* Acquisition : ajout d’une nouvelle API, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, afin de prendre en charge les API Install Referrer de Google Play.
 
-   Pour plus d’informations sur l’installation des API de référents, voir [Toujours utiliser InstallBroadcast ? Passez à l’API de référent de lecture d’ici le 1er mars 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
+   Pour plus d’informations sur les API Install Referrer, voir [Still Using InstallBroadcast? Switch to the Play Referrer API by March 1, 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) (article en anglais). 
 
 **20 septembre 2019 : Version 4.17.10**
 
@@ -47,4 +47,4 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 * Service d’identification des visiteurs - Augmentation du délai d’attente de la connexion et des lectures de 2 à 5 secondes.
 
 
-Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
+Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/).
