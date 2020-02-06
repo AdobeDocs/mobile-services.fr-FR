@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
 
 
-# Méthodes de configuration{#configuration-methods}
+# Méthodes de configuration {#configuration-methods}
 
 Voici une liste des méthodes fournies par la bibliothèque iOS.
 
@@ -63,9 +63,10 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel :
 
-   * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in). La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
+   * `ADBMobilePrivacyStatusUnknown` - si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -85,9 +86,9 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
    Valeurs possibles :
 
-   * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `ADBMobilePrivacyStatusUnknown` - si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
    * Voici la syntaxe de cette méthode :
 
@@ -271,13 +272,13 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
 * **pauseCollectingLifecycleData**
 
-   Utilisez cette API pour suspendre la collecte des données de cycle de vie. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/ios/metrics.md).
+   Utilisez cette API pour suspendre la collecte de données de cycle de vie. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/ios/metrics.md).
 
    >[!IMPORTANT]
    >
-   >Dans la méthode `applicationDidEnterBackground` delegate, vous devez d’abord appeler la `pauseCollectingLifecycleData` méthode.
+   >Dans la méthode `applicationDidEnterBackground` déléguée, vous devez d’abord appeler la méthode `pauseCollectingLifecycleData`.
    >
-   >L’API est fournie pour atténuer le problème sur les iPhone 7/7 ou les périphériques plus anciens avec iOS 13 où la mesure de durée de session est devenue anormale. Cela est dû à des modifications inconnues survenues dans iOS 13, où iOS ne laisse pas assez de temps pour que la tâche en arrière-plan se termine lorsque vous arrivez à l’application.
+   >L’API est fournie pour atténuer le problème sur les iPhone 7/7s ou sur les appareils plus anciens dotés d’iOS 13, où la mesure de durée de session est devenue anormale. Cela est dû à des modifications inconnues survenues dans iOS 13, où iOS ne laisse pas assez de temps pour que la tâche en arrière-plan se termine lorsque vous mettez l’application en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
