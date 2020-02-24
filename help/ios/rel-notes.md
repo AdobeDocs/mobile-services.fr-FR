@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
+translation-type: tm+mt
+source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 
 ---
 
@@ -18,7 +18,7 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 **4 février 2020 : version 4.19.0**
 
-* Cycle de vie : Ajout d’une nouvelle API, pauseCollectingLifecycleData, afin d’atténuer les données de durée de session anormale signalées par certains appareils iOS anciens.
+* Lifecycle - Ajout d’une nouvelle API, pauseCollectingLifecycleData, afin d’atténuer les données anormales de durée de session qui étaient rapportées à partir de certains anciens périphériques iOS.
 
 **8 novembre 2019 : version 4.18.9**
 
@@ -60,4 +60,4 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 * Service d’identification des visiteurs : l’appel API `setPushIdentifier` envoie désormais un appel de synchronisation au service d’identification des visiteurs à chaque appel.
 
-Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/).
+Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/).
