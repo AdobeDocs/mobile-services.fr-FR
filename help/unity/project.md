@@ -2,12 +2,12 @@
 description: valeur nulle
 keywords: Unity
 seo-description: valeur nulle
-seo-title: Building your project
+seo-title: Création de votre projet
 solution: Marketing Cloud,Developer
-title: Building your project
+title: Création de votre projet
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -25,7 +25,7 @@ Lorsque vous créez une application pour iOS, un projet Xcode est créé. Par d�
 1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
 
    * `SystemConfiguration.framework`
-(This library might be linked already.)
+(Cette bibliothèque peut déjà être liée.)
 
    * `libsqlite3.0.dylib`
 
@@ -45,24 +45,14 @@ Ajoutez des autorisations pour :
 * `ACCESS_NETWORK_STATE`
 
 ```java
-<uses-permission android:name="android.permission.INTERNET" /> 
+<uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-If you are using In-app messaging, add the following activity and receiver:
+Si vous utilisez la messagerie in-app, ajoutez le et le destinataire  suivants :
 
 ```java
 <activity android:name="com.adobe.mobile.MessageFullScreenActivity"  
-android:theme="@android:style/Theme.Translucent.NoTitleBar" /> 
-<receiver android:name="com.adobe.mobile.MessageNotificationHandler" /> 
-```
-
-If you are using acquisition, add the following receiver:
-
-```java
-<receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
-   <intent-filter> 
-      <action android:name="com.android.vending.INSTALL_REFERRER" /> 
-   </intent-filter> 
-</receiver>
+android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
