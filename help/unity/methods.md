@@ -3,11 +3,11 @@ description: valeur nulle
 keywords: Unity
 seo-description: valeur nulle
 seo-title: Méthodes ADBMobile.cs
-solution: Marketing Cloud,Développeur
+solution: Marketing Cloud,Developer
 title: Méthodes ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.CollectLifecycleData(); 
+      ADBMobile.CollectLifecycleData();
       ```
 
 * **EnableLocalNotifications (iOS seulement)**
@@ -45,7 +45,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.EnableLocalNotifications(); 
+      ADBMobile.EnableLocalNotifications();
       ```
 
 * **GetDebugLogging**
@@ -83,11 +83,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 * **GetPrivacyStatus**
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Les accès sont envoyés immédiatement.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
+   * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont immédiatement envoyés.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
-      Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in). La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+      Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -114,7 +115,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      var userId = ADBMobile.GetUserIdentifier(); 
+      var userId = ADBMobile.GetUserIdentifier();
       ```
 
 * **GetVersion**
@@ -144,13 +145,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void KeepLifecycleSessionAlive(); 
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.KeepLifecycleSessionAlive(); 
+      ADBMobile.KeepLifecycleSessionAlive();
       ```
 
 * **PauseCollectingLifecycleData (Android seulement)**
@@ -166,12 +167,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.PauseCollectingLifecycleData(); 
+      ADBMobile.PauseCollectingLifecycleData();
       ```
 
 * **SetContext (Android seulement)**
 
-   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
+   Indique au SDK qu’il doit définir son contexte d’application à partir du  actuel du lecteur UnityPlayer.
 
    * Voici la syntaxe de cette méthode :
 
@@ -182,7 +183,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.SetContext(); 
+      ADBMobile.SetContext();
       ```
 
 * **SetDebugLogging**
@@ -192,27 +193,27 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void SetDebugLogging (bool enabled); 
+      public static void SetDebugLogging (bool enabled);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.SetDebugLogging(true); 
+      ADBMobile.SetDebugLogging(true);
       ```
 
 * **SetPrivacyStatus**
 
    Définit l’état de confidentialité pour l’utilisateur actuel. Valeurs possibles :
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Hits are sent immediately.
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Les accès sont ignorés.
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont immédiatement envoyés.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
+      public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
    * Voici l’exemple de code pour cette syntaxe :
@@ -228,13 +229,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void SetUserIdentifier(string userId); 
+      public static void SetUserIdentifier(string userId);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.SetUserIdentifier("myCustomUserId"); 
+      ADBMobile.SetUserIdentifier("myCustomUserId");
       ```
 
 ## Méthodes Analytics
@@ -252,7 +253,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      var trackingId = ADBMobile.GetTrackingIdentifier(); 
+      var trackingId = ADBMobile.GetTrackingIdentifier();
       ```
 
 * **TrackState**
@@ -274,29 +275,29 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      var contextData = new Dictionary<string, object>); 
+      var contextData = new Dictionary<string, object>);
       contextData.Add ("user", "jim");
       ADBMobile.TrackState("title screen", contextData);
       ```
 
 * **TrackAction**
 
-   Effectue le suivi d’une action dans l’application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple « décès », « niveau atteint », « abonnements aux flux » et autres mesures.
+   Effectue le suivi d’une action dans votre application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple « décès », « niveau atteint », « abonnements aux flux » et autres mesures.
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Si vous avez du code qui peut s’exécuter pendant que l’application est en arrière-plan (par exemple, une récupération de données en arrière-plan), utilisez plutôt `trackActionFromBackground`.
 
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackAction(string action, Dictionary<string, object> cdata); 
+      public static void TrackAction(string action, Dictionary<string, object> cdata);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackAction("level gained", null); 
+      ADBMobile.TrackAction("level gained", null);
       ```
 
 * **TrackActionFromBackground (iOS seulement)**
@@ -305,12 +306,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >Cette méthode ne doit être appelée que dans le code qui s’exécute pendant que votre application est en arrière-plan.
+   >Invoquez cette méthode uniquement dans le code qui s’exécute pendant que l’application est en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata); 
+      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata);
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -326,13 +327,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata); 
+      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackLocation(28.418649, -81.581324, null); 
+      ADBMobile.TrackLocation(28.418649, -81.581324, null);
       ```
 
 * **TrackBeacon**
@@ -342,7 +343,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata); 
+      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata);
       ```
 
 * **TrackingClearCurrentBeacon**
@@ -352,7 +353,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackingClearCurrentBeacon(); 
+      public static void TrackingClearCurrentBeacon();
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -374,7 +375,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackLifetimeValueIncrease(5, null); 
+      ADBMobile.TrackLifetimeValueIncrease(5, null);
       ```
 
 * **TrackTimedActionStart**
@@ -388,7 +389,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata); 
+      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata);
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -408,14 +409,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata); 
+      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      var contextData = new Dictionary<string, object>; 
-      contextData.Add("checkpoint", "1:32"); 
+      var contextData = new Dictionary<string, object>;
+      contextData.Add("checkpoint", "1:32");
          ADBMobile.TrackTimedActionUpdate("level2", contextData);
       ```
 
@@ -426,13 +427,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void TrackTimedActionEnd(string action); 
+      public static void TrackTimedActionEnd(string action);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackTimedActionEnd("level2"); 
+      ADBMobile.TrackTimedActionEnd("level2");
       ```
 
 * **TrackingTimedActionExists**
@@ -442,13 +443,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static bool TrackingTimedActionExists(string action); 
+      public static bool TrackingTimedActionExists(string action);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2"); 
+       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2");
       ```
 
 * **TrackingSendQueuedHits**
@@ -464,7 +465,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackingSendQueuedHits(); 
+      ADBMobile.TrackingSendQueuedHits();
       ```
 
 * **TrackingClearQueue**
@@ -480,7 +481,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      ADBMobile.TrackingClearQueue(); 
+      ADBMobile.TrackingClearQueue();
       ```
 
 * **TrackingGetQueueSize**
@@ -499,7 +500,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Méthodes d’ID Experience Cloud
+## Méthodes d’identification Experience Cloud
 
 * **GetMarketingCloudID**
 
@@ -508,7 +509,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static string GetMarketingCloudID(); 
+      public static string GetMarketingCloudID();
       ```
 
    * Voici l’exemple de code pour cette méthode :
@@ -524,14 +525,34 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * Voici la syntaxe de cette méthode :
 
       ```java
-      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers); 
+      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers);
       ```
 
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      var ids = new Dictionary<string, object> (); 
-      ids.Add ("player1", "jimbob"); 
+      var ids = new Dictionary<string, object> ();
+      ids.Add ("player1", "jimbob");
       ADBMobile.VisitorSyncIdentifiers(ids);
       ```
 
+## Méthodes d’acquisition
+
+* **ProcessGooglePlayInstallReferrerUrl** *(Android uniquement)*
+
+   Transférez l’URL de  renvoyée d’un appel à l’API de d’installation de Google Play à cette méthode.
+
+   * Voici la syntaxe de cette méthode :
+
+      ```java
+      public static void ProcessGooglePlayInstallReferrerUrl(string referrerUrl);
+      ```
+
+   * Voici l’exemple de code pour cette méthode :
+
+      ```java
+      // in actual implementation, the referrer url should be retrieved
+      // from the Google Play Install Referrer API.
+      var myReferrer = "utm_source=unityTestSource&utm_content=unityTestContent&utm_campaign=unityTestCampaign";
+      ADBMobile.ProcessGooglePlayInstallReferrerUrl(myReferrer);
+      ```
