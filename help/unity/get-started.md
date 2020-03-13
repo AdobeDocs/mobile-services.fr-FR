@@ -6,7 +6,7 @@ seo-title: Module externe Unity pour SDK iOS et Android 4.x
 solution: Marketing Cloud,Developer
 title: Module externe Unity pour SDK iOS et Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
@@ -16,14 +16,14 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 Ce module externe permet d’envoyer des appels Adobe Analytics depuis les applications Unity.
 
-Last Update: **March 10, 2020**
+Dernière mise à jour : **10 mars 2020**
 * [Unity-v4.19.0](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases/tag/v4.19.0-Unity)
 
 ## Prise en main {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
-Téléchargez le fichier ADBMobile.unitypackage depuis GitHub.
+Téléchargez le fichier ADBMobile.unitypackage sur GitHub.
 
-Below are the contents of the `ADBMobile.unitypackage` file:
+Voici le contenu du fichier `ADBMobile.unitypackage` :
 
 * Ressources (racine)
 
@@ -48,9 +48,9 @@ Below are the contents of the `ADBMobile.unitypackage` file:
          * AdobeMobileLibrary.a
 
 
-**Dossiers** facultatifs : Le dossier *Démo* contient des scènes Unity et un exemple de code.
+**Dossiers facultatifs** : le dossier *Demo* contient des scènes Unity et un exemple de code.
 
-## Importation du module externe ADBMobile dans un projet Unity  {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
+## Importation du module externe ADBMobile dans un projet Unity {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Ouvrez le projet Unity.
 1. Double-cliquez sur **[!UICONTROL ADBMobile.unitypackage]**.
