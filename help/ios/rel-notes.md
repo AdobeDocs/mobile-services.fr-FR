@@ -1,13 +1,13 @@
 ---
-description: Notes de mise à jour et problèmes connus des SDK iOS 4.x pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus des SDK iOS 4.x pour les solutions Experience Cloud.
+description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
+seo-description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
 solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+translation-type: tm+mt
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
@@ -15,6 +15,15 @@ source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 # Notes de mise à jour {#release-notes}
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
+
+**24 mars 2020 : Version 4.19.2**
+
+* Général - Correction de certaines fuites dans le code  du.
+
+**12 mars 2020 : Version 4.19.1**
+
+* Général - Résolution d’un blocage potentiel qui survenait lorsque les énumérations Swift étaient incluses dans les données contextuelles pour les appels de suivi.
+* - L’ID de session  sera désormais ajouté en tant que paramètre de données contextuelles &quot;a..sessionId&quot; dans Analytics interne pour l’accès au envoyé à Adobe Analytics.
 
 **4 février 2020 : version 4.19.0**
 
