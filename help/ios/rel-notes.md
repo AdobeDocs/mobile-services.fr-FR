@@ -1,12 +1,12 @@
 ---
-description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
+description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
+seo-description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
 solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
@@ -16,14 +16,14 @@ source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
 
-**24 mars 2020 : Version 4.19.2**
+**24 mars 2020 : Version 4.19.2**
 
-* Général - Correction de certaines fuites dans le code  du.
+* Général : correction de certaines failles dans le code Target.
 
-**12 mars 2020 : Version 4.19.1**
+**12 mars 2020 : Version 4.19.1**
 
-* Général - Résolution d’un blocage potentiel qui survenait lorsque les énumérations Swift étaient incluses dans les données contextuelles pour les appels de suivi.
-* - L’ID de session  sera désormais ajouté en tant que paramètre de données contextuelles &quot;a..sessionId&quot; dans Analytics interne pour l’accès au envoyé à Adobe Analytics.
+* Général : Résolution d’un blocage potentiel lorsque des énumérations Swift sont incluses dans les données contextuelles des appels de suivi.
+* Target : L’ID de session Target sera désormais ajouté comme paramètre de données contextuelles ‘a.target.sessionId’ dans l’accès interne Analytics for Target envoyé à Adobe Analytics.
 
 **4 février 2020 : version 4.19.0**
 
@@ -42,7 +42,7 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
    * Correction d’un bogue en raison duquel la charge utile des clics publicitaires ne pouvait pas être utilisée comme caractéristiques pour la messagerie intégrée (in-app).
    * Correction d’un problème de blocage.
 
-* Général - Correction d’un bogue en raison duquel les données du SDK étaient synchronisées avec l’application watchOS couplée à chaque appel Analytics.
+* Général : Correction d’un bogue en raison duquel les données du SDK étaient synchronisées avec l’application watchOS couplée à chaque appel Analytics.
 
 **2 août 2019 : Version 4.18.7**
 
@@ -60,11 +60,11 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 **5 juin 2019 : Version 4.18.5**
 
-* Analytics - Ajoutez l’état d’inclusion push aux données de cycle de vie lorsque les notifications push sont activées.
+* Analytics : Ajoutez l’état d’inclusion push aux données de cycle de vie lorsque les notifications push sont activées.
 
 **24 mai 2019 : Version 4.18.4**
 
-* Service d’identification des visiteurs - Augmentation du délai d’attente des retours pour la variable
+* Service d’identification des visiteurs : Augmentation du délai d’attente des retours pour la variable
    `visitorGetUrlVariablesAsync` API à 30 secondes.
 
 * Service d’identification des visiteurs : l’appel API `setPushIdentifier` envoie désormais un appel de synchronisation au service d’identification des visiteurs à chaque appel.
