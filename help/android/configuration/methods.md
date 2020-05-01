@@ -3,12 +3,12 @@ description: Liste des méthodes fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes fournies par la bibliothèque Android.
 seo-title: Méthodes de configuration
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -30,8 +30,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## Paramètres du SDK (Classe de configuration) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -83,7 +82,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
    * Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
-      Vous trouverez ci-dessous les valeurs de l’état de confidentialité :
+      Voici les valeurs d’état de confidentialité :
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont envoyés immédiatement.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
@@ -272,7 +271,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Version 4.2 ou supérieure**) Définit la petite icône qui sera utilisée pour les notifications créées par le SDK. Cette icône apparaît dans la barre d’état et sera l’image secondaire qui s’affiche lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
+   * (**Version 4.2 ou ultérieure**) Définit la petite icône qui sera utilisée pour les notifications qui ont été créées par le SDK. Cette icône apparaîtra dans la barre d’état et sera l’image secondaire qui s’affichera lorsque l’utilisateur verra la notification complète dans le centre de notification.
    * Voici la syntaxe de cette méthode :
 
       ```java
@@ -287,7 +286,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Version 4.2 ou supérieure**) Définit la grande icône qui sera utilisée pour les notifications créées par le SDK. Cette icône sera l’image principale affichée lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
+   * (**Version 4.2 ou ultérieure**) Définit la grande icône qui sera utilisée pour les notifications créées par le SDK. Cette icône sera l’image principale affichée lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
    * Voici la syntaxe de cette méthode :
 
       ```java
@@ -302,7 +301,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Version 4.2 ou supérieure**) Permet de charger un fichier de configuration JSON ADBMobile distinct au démarrage de l’application. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
+   * (**Version 4.2 ou ultérieure**) Permet de charger un fichier de configuration JSON ADBMobile différent lorsque l’application début. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
    * Voici la syntaxe de cette méthode :
 
       ```java
