@@ -3,17 +3,17 @@ description: Ces informations vous aideront à mettre en œuvre la bibliothèque
 keywords: android;library;mobile;sdk
 seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-title: Mise en œuvre principale et cycle de vie
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
 
-# Mise en œuvre principale et cycle de vie{#core-implementation-and-lifecycle}
+# Mise en œuvre principale et cycle de vie {#core-implementation-and-lifecycle}
 
 Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 
@@ -23,7 +23,7 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque Android et 
 >
 >Pour télécharger le SDK, vous devez utiliser Android 2.2 ou une version supérieure.
 
-1. Suivez les procédures décrites dans les sections ci-après pour configurer une suite de rapports de développement et télécharger une version prérenseignée du fichier de configuration :
+1. Suivez les étapes décrites dans les sections suivantes pour configurer une suite de rapports de développement et télécharger une version prérenseignée du fichier de configuration :
 
    * [Création d’une suite de rapports](/help/android/getting-started/requirements.md)
    * [Téléchargement du kit SDK](/help/android/getting-started/requirements.md)
@@ -48,7 +48,7 @@ Pour ajouter le SDK et le fichier de configuration au projet, procédez comme su
 1. Cliquez avec le bouton droit sur le projet dans le volet de navigation du projet.
 1. Sélectionnez **[!UICONTROL Ouvrir les paramètres du module]**.
 1. Sous **[!UICONTROL Paramètres du projet]**, sélectionnez **[!UICONTROL Bibliothèques]**.
-1. Cliquez sur l’icône **[!UICONTROL +]** pour ajouter une nouvelle bibliothèque.
+1. Click the **[!UICONTROL +]** icon to add a new library.
 1. Sélectionnez **[!UICONTROL Java]** et accédez au fichier `adobeMobileLibrary.jar`.
 1. Sélectionnez les modules dans lesquels vous prévoyez d’utiliser la bibliothèque mobile.
 1. Cliquez sur **[!UICONTROL Appliquer]**, puis sur **[!UICONTROL OK]** pour fermer la fenêtre Paramètres du module.
@@ -59,10 +59,10 @@ Pour ajouter le SDK et le fichier de configuration au projet, procédez comme su
 
 1. Ajoutez le fichier `ADBMobileConfig.json` au dossier `assets` du projet.
 1. Dans **[!UICONTROL Eclipse IDE]**, cliquez avec le bouton droit sur le nom du projet.
-1. Cliquez sur **[!UICONTROL Créer chemin]** &gt; **[!UICONTROL Ajouter archives externes]**.
+1. Cliquez sur **[!UICONTROL Créer un chemin]** > **[!UICONTROL Ajouter des archives externes]**.
 1. Sélectionner `adobeMobileLibrary.jar`.
 1. Cliquez sur **[!UICONTROL Ouvrir]**.
-1. Cliquez de nouveau avec le bouton droit sur le projet, puis sélectionnez **[!UICONTROL Créer chemin]** &gt; **[!UICONTROL Configurer création chemin]**.
+1. Right-click the project again and select **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
 1. Dans l’onglet **[!UICONTROL Ordonner et exporter]**, assurez-vous que le fichier **`adobeMobileLibrary.jar`** est sélectionné.
 
 ## Ajout des autorisations des applications {#section_2EAF73ABF6424647B219A63B33B02CD5}
@@ -90,13 +90,13 @@ Le code suivant doit être ajouté à la méthode `onCreate` de votre activité 
      setContentView(R.layout.main);
      Config.setContext(this.getApplicationContext());
    }
-````
+```
 
 ## Mise en œuvre des mesures de cycle de vie {#section_BA686C09021F474AADDE8690BBB910F7}
 
 Une fois que vous avez activé le cycle de vie, chaque fois que l’application est lancée, un accès est envoyé permettant de mesurer les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
-**Procédez comme suit pour chaque activité de votre application :**
+**Effectuez les étapes suivantes dans chaque activité de votre application :**
 
 1. Importez la bibliothèque :
 
