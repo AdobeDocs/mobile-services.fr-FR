@@ -3,12 +3,12 @@ description: Avant de pouvoir configurer la messagerie push dans les application
 keywords: mobile
 seo-description: Avant de pouvoir configurer la messagerie push dans les applications, vous devez effectuer certaines tâches.
 seo-title: Conditions préalables requises pour activer la messagerie push
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
-topic: Mesures
+topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -39,9 +39,9 @@ Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
 >[!IMPORTANT]
 >
->Pour pouvoir exploiter la fonctionnalité de services push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID, et leur compte Analytics doit être associé à leur Adobe ID. La fonctionnalité de services push est indisponible si les utilisateurs se connectent par le biais de leur compte Adobe Analytics existant.
+>Pour pouvoir exploiter la fonctionnalité de services push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID, et leur compte Analytics doit être associé à leur Adobe ID. La fonctionnalité Services Push n’est pas disponible si les utilisateurs se connectent à l’aide de leurs comptes Adobe Analytics existants.
 
-Si certains utilisateurs ne possèdent pas d’Adobe ID, effectuez les étapes suivantes :
+Si les utilisateurs ne disposent pas d’Adobe ID, procédez comme suit :
 
 1. (**L’administrateur Experience Cloud**) invite les utilisateurs à s’inscrire à Experience Cloud.
 
@@ -65,7 +65,7 @@ Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organ
 
    L’Adobe ID est maintenant associé à votre compte Analytics, votre société et vos informations de connexion.
 
-Pour plus d’informations, voir [Dépannage de la liaison de compte](https://marketing.adobe.com/resources/help/fr_FR/mcloud/organizations.html).
+Pour plus d’informations, voir [Dépannage de la liaison de compte](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Configuration des services push et du service d’identification du SDK dans l’interface utilisateur de Mobile
 
@@ -73,22 +73,22 @@ La section **[!UICONTROL Services push]** est désactivée tant que vous n’ave
 
 >[!IMPORTANT] : vous devez cliquer sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et actualiser les services push.
 >
->Vous pouvez configurer une application de la boutique d’applications pour Apple et une pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour l’environnement de production et une pour l’environnement de développement, configurez une nouvelle application de la boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
+>Vous pouvez configurer une application de boutique d’applications pour Apple et une application pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour un environnement de production et une pour un environnement de développement, configurez une nouvelle application de boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
-* Pour **Apple**, effectuez un glisser-déposer de votre clé privée et/ou de votre certificat. Si votre clé privée est chiffrée par un mot de passe, saisissez ce dernier.
+* Pour **Apple**, faites glisser votre clé privée et/ou votre certificat. Si votre clé privée est chiffrée par mot de passe, entrez son mot de passe.
 
    * Pour la **clé privée**, effectuez un glisser-déposer de votre clé privée dans la case.
 
       Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce fichier contient la clé privée. Le certificat peut également être inclus dans ce fichier (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
-   * Pour le **mot de passe de clé privée**, si votre fichier de clé privée est chiffré, saisissez le mot de passe.
+   * Pour le mot de passe **de la clé** privée, si votre fichier de clé privée est chiffré, saisissez le mot de passe.
 
-      (Conditionnel) Pour le **certificat**, effectuez un glisser-déposer de votre fichier de certificat dans la case. Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce champ n’est pas obligatoire si le fichier de clé privée contient également le certificat ( `.cert`, `.cer`, `.crt`, `.pem`).
+      (Conditionnel) Pour le **certificat**, faites glisser et déposez votre fichier de certificat dans la zone. Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce champ n’est pas obligatoire si le fichier de clé privée contient également le certificat ( `.cert`, `.cer`, `.crt`, `.pem`).
 
 * Pour **Google**, spécifiez la clé d’API de l’application.
 
-   Cliquez sur **[!UICONTROL Tester]** pour vérifier que l’application et Mobile Services sont configurés correctement. Cette option est utile en cas de débogage et de dépannage.
+   Cliquez sur **[!UICONTROL Tester]** pour vérifier que l’application et Mobile Services sont configurés correctement. Cette option est utile pour le débogage et le dépannage.
 
-   Saisissez les jetons push des appareils auxquels vous souhaitez envoyer le message. Vous pouvez envoyer le message vers plusieurs périphériques en spécifiant les jetons dans une liste séparée par des virgules.
+   Tapez les jetons Push du périphérique que vous souhaitez envoyer au message. Vous pouvez envoyer le message vers plusieurs périphériques en spécifiant les jetons dans une liste séparée par des virgules.
 
    ![message de test push](assets/push_test_list.png)
