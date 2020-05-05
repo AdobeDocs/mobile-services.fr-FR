@@ -1,13 +1,13 @@
 ---
-description: Notes de mise à jour et problèmes connus du SDK Android 4.x pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus du SDK Android 4.x pour les solutions Experience Cloud.
+description: Notes de mise à jour et problèmes connus du SDK 4.x Android pour les solutions Experience Cloud.
+seo-description: Notes de mise à jour et problèmes connus du SDK 4.x Android pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
 solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -47,4 +47,4 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 * Service d’identification des visiteurs - Augmentation du délai d’attente de la connexion et des lectures de 2 à 5 secondes.
 
 
-Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://marketing.adobe.com/resources/help/fr_FR/whatsnew/).
+Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
