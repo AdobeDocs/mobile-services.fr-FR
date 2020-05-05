@@ -1,13 +1,13 @@
 ---
-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
+description: Ces informations vous aident à utiliser le fichier de configuration ADBMobile.json.
+seo-description: Ces informations vous aident à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
 solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Permet l’acquisition des applications mobiles.
 
-   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. Pour plus d’informations, voir *referrerTimeout* ci-dessous.
+   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. For more information, see *referrerTimeout* below.
 
    * `server` : serveur d’acquisition vérifié au lancement initial et devant contenir un référent d’acquisition.
    * `appid` : identifiant généré qui permet d’identifier de manière unique cette application sur le serveur d’acquisition.
@@ -44,15 +44,15 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Active/désactive la capacité pour le SDK Adobe d’antidater les accès aux informations de session.
 
-   Actuellement, les accès aux informations de session comprennent les blocages et les durées de session. Ils peuvent être activés ou désactivés.
+   Les accès aux informations de session se composent actuellement de blocages et de durée de session et peuvent être activés ou désactivés.
 
    * Si vous définissez la valeur sur `false`, les accès sont **désactivés**.
 
-      Le SDK revient à son comportement pré-4.1, c’est-à-dire qu’il regroupe les informations de la session précédente avec le premier accès de la session suivante. Le SDK Adobe joint également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite gonflée. Puisque plus aucune visite gonflée n’est créée, on constate une baisse immédiate du nombre de visites.
+      Le SDK reprend son comportement d’avant la version 4.1, consistant à regrouper les informations de session de la session précédente avec le premier accès de la session suivante. Le SDK Adobe associe également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite exagérée. Comme les visites exagérées ne sont plus créées, le nombre de visites diminue immédiatement.
 
    * Si vous ne spécifiez aucune valeur, la valeur par défaut est `true` et les accès sont **activés**.
 
-      Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session d’une seconde après le dernier accès à la session précédente. Ceci signifie que les données de blocage et de session sont corrélées avec la date correcte à laquelle ces événements se sont produits. Néanmoins, un inconvénient peut se produire : le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
+      Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session à 1 seconde après l’accès final de la session précédente. Cela signifie que les données de blocage et de session seront corrélées avec la date correcte à laquelle elles se sont produites. Un effet secondaire est que le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
 
    * Version minimale du SDK : 4.6
    >[!IMPORTANT]
@@ -70,7 +70,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
    * Version minimale du SDK : 4.0
 
@@ -109,15 +109,15 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **lifecycleTimeout**
 
-   La valeur par défaut est de 300 secondes.
+   La valeur par défaut est de 300 secondes.
 
-   Spécifie la durée, en secondes, qui doit s’écouler entre les lancements de l’application pour qu’un lancement soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque l’application est placée en arrière-plan et réactivée. La durée passée en arrière-plan n’est pas prise en compte dans la durée de la session.
+   Indique la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le lancement considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de la session.
 
    * Version minimale du SDK : 4.0
 
 * **messages**
 
-   Générée automatiquement par Adobe Mobile Services. Définit les paramètres pour la messagerie in-app. Pour obtenir plus d’informations, voir la section *Description des messages* ci-dessous.
+   Généré automatiquement par les services Adobe Mobile, définit les paramètres de la messagerie in-app. Pour plus d&#39;informations, consultez la section Description *des* messages ci-dessous.
 
    * Version minimale du SDK : 4.2
 
@@ -193,7 +193,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **referrerTimeout**
 
-   Durée (en secondes) pendant laquelle le SDK attend les données du référent d’acquisition lors du lancement initial avant l’expiration de la session. Si vous utilisez Acquisition, un délai de 5 secondes est recommandé.
+   Nombre de secondes pendant lesquelles le SDK attend les données du parrain d’acquisition lors du lancement initial avant d’expirer. Si vous utilisez l’acquisition, nous vous recommandons un délai d’attente de 5 secondes.
 
    >[!IMPORTANT]
    >
@@ -213,7 +213,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **rsids**
 
-   Une ou plusieurs suites de rapports où seront envoyées les données Analytics. Plusieurs identifiants de suite de rapports doivent être séparés par une virgule, sans espace.
+   Une ou plusieurs suites de rapports pour recevoir des données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
 
    ```js
    "rsids": "rsid"
@@ -343,58 +343,56 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ## Description des messages {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Le nœud des messages est généré automatiquement par Adobe Mobile Services et, en général, ne requiert pas de modification manuelle. La description suivante est fournie à des fins de dépannage :
+Le noeud de messages est généré automatiquement par les services Adobe Mobile et n’a généralement pas besoin d’être modifié manuellement. La description suivante est fournie à des fins de dépannage :
 
-* "messageId"
+* &quot;messageId&quot;
 
-   * ID généré, requis
+   * ID généré, obligatoire
 
-* "template"
+* &quot;le modèle&quot;
 
-   * "alert", "fullscreen" ou "local"
+   * &quot;alert&quot;, &quot;fullscreen&quot; ou &quot;local&quot;
    * requis
 
-* "payload"
+* &quot;charge utile&quot;
 
-   * "html"
+   * &quot;html&quot;
 
-      * modèle Plein écran uniquement, requis
-      * html définissant le message
-   * "image"
-
-      * plein écran uniquement, facultatif
-      * URL vers l’image à utiliser pour une image Plein écran
-   * "altImage"
+      * modèle plein écran uniquement, obligatoire
+      * html définition du message
+   * &quot;image&quot;
 
       * plein écran uniquement, facultatif
-      * nom de l’image en lot à utiliser si l’URL spécifiée dans
+      * URL de l’image à utiliser pour une image plein écran
+   * &quot;altImage&quot;
+
+      * plein écran uniquement, facultatif
+      * nom de l’image assemblée à utiliser si l’URL spécifiée dans
          `image` n’est pas accessible
-   * "title"
+   * &quot;title&quot;
 
-      * plein écran et alerte, requis
-      * texte du titre pour un message Plein écran ou d’alerte
-   * "content"
+      * plein écran et alerte, obligatoire
+      * texte de titre d’un message d’alerte ou d’écran complet
+   * &quot;content&quot;
 
-      * alerte et notification locale, requis
-      * sous-texte pour un message d’alerte ou texte de notification pour un message de notification locale
-   * "confirm"
+      * alerte et notification locale requise
+      * sous-texte d’un message d’alerte ou texte de notification d’un message de notification local
+   * &quot;confirmer&quot;
 
-      * alerte, facultatif
-      * texte du bouton de confirmation
-   * "cancel"
+      * alert, facultatif
+      * texte utilisé dans le bouton de confirmation
+   * &quot;cancel&quot;
 
-      * alerte, requis
-      * texte du bouton d’annulation
-   * "url"
+      * alerte, obligatoire
+      * texte utilisé dans le bouton d’annulation
+   * &quot;url&quot;
 
-      * alerte, facultatif
-      * action d’url à charger si un clic a été effectué sur le bouton de confirmation
-   * "wait"
+      * alert, facultatif
+      * action d’URL à charger en cas de clic sur le bouton de confirmation
+   * &quot;wait&quot;
 
-      * notification locale, requis
-      * durée d’attente (en secondes) avant la publication de la notification locale après la correspondance de ses critères
-
-
+      * notification locale requise
+      * durée d’attente (en secondes) pour la publication de la notification locale après la correspondance avec ses critères
 
 
 
@@ -402,56 +400,58 @@ Le nœud des messages est généré automatiquement par Adobe Mobile Services 
 
 
 
-* "showOffline"
+
+
+* &quot;showOffline&quot;
 
    * true ou false
-   * la valeur par défaut est false
+   * false par défaut
 
-* "showRule"
+* &quot;showRule&quot;
 
-   * "always", "once" ou "untilClick"
+   * &quot;always&quot;, &quot;once&quot; ou &quot;untilClick&quot;
    * requis
 
-* "endDate"
+* &quot;endDate&quot;
 
-   * nombre de secondes depuis le 1er janvier 1970
+   * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 2524730400.
 
-* "startDate"
+* &quot;startDate&quot;
 
-   * nombre de secondes depuis le 1er janvier 1970
+   * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 0.
 
-* "audiences"
+* &quot;audiences&quot;
 
    Ensemble d’objets qui définit comment le message doit être affiché :
 
-   * "key"
+   * &quot;key&quot;
 
       Nom de variable à rechercher dans l’accès (requis).
 
-   * "matches"
+   * &quot;matches&quot;
 
       Type de correspondance utilisé lors de la comparaison :
 
-      * eq = est égal à
-      * ne = n’est pas égal
-      * co = contient
-      * nc = ne contient pas
-      * sw = commence par
-      * ew = se termine par
-      * ex = existe
-      * nx = n’existe pas
-      * lt = inférieur à
-      * le = inférieur à ou est égal à
-      * gt = supérieur à
-      * ge = supérieur à ou est égal à
+      * eq = est égal à
+      * ne = n’est pas égal à
+      * co = contient
+      * nc = ne contient pas
+      * sw = débuts avec
+      * ew = se termine par
+      * ex = existe
+      * nx = n&#39;existe pas
+      * lt = inférieur à
+      * le = inférieur ou égal à
+      * gt = supérieur à
+      * ge = supérieur ou égal à
    * « values »
 
       Tableau de valeurs utilisées pour correspondre à la valeur de la variable nommée dans ce qui suit :
 
       * key
-      * avec le type de comparateur dans
+      * avec le type de correspondance dans
       * matches
 
 
