@@ -2,12 +2,12 @@
 description: Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
 seo-description: Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
 seo-title: Configuration de l’Experience Cloud ID
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Configuration de l’Experience Cloud ID
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Le service d’identification Adobe Experience Platform fournit un identifiant v
 
 >[!TIP]
 >
->Il n’est pas nécessaire de renseigner cet ID, sauf si vous utilisez le service d’identification Adobe Experience Platform. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/fr_FR/mcvid/).
+>Il n’est pas nécessaire de renseigner cet ID, sauf si vous utilisez le service d’identification Adobe Experience Platform. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html).
 
 >[!IMPORTANT]
 >
@@ -56,4 +56,4 @@ Pour activer l’Experience Cloud ID, procédez comme suit :
 
    Si ces ID ne sont pas configurés, téléchargez un fichier `ADBMobileConfig.json` mis à jour depuis Adobe Mobile Services. Pour obtenir plus d’informations, voir [Avant de commencer](/help/android/getting-started/requirements.md).
 
-Une fois la configuration terminée, un Experience Cloud ID est généré et inclus sur tous les accès. D’autres identifiants, tels que les identifiants personnalisés et générés automatiquement, continuent à être envoyés avec chaque accès.
+Une fois la configuration terminée, un ID Experience Cloud est généré et inclus dans tous les accès. D’autres identifiants, tels que des identifiants personnalisés et générés automatiquement, continuent d’être envoyés avec chaque accès.
