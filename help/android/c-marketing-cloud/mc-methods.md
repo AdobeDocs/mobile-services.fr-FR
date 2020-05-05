@@ -3,12 +3,12 @@ description: Voici les méthodes du service d’Experience Cloud ID fournies par
 keywords: android;library;mobile;sdk
 seo-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 seo-title: Méthodes de services d’identification Adobe Experience Platform
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: ht
-source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -23,7 +23,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **public static String appendToURL(final String URL)**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Vous devez disposer de la version 4.12 ou supérieure du SDK Mobile pour utiliser cette méthode. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://marketing.adobe.com/resources/help/fr_FR/mcvid/mcvid-appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer de Mobile SDK 4.12+. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -70,7 +70,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **syncIdentifiers**
 
-   Avec l’Experience Cloud ID, vous pouvez définir des identifiants de client supplémentaires pouvant être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour le même visiteur, ainsi qu’un identifiant de type Client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
+   Avec l’ID Experience Cloud, vous pouvez définir d’autres ID de client qui peuvent être associés à chaque visiteur. L’API du Visiteur accepte plusieurs identifiants de client pour le même visiteur, avec un identifiant de type de client pour séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
