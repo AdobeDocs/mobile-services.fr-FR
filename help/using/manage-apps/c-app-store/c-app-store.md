@@ -3,12 +3,12 @@ description: L’intégration du connecteur de données appFigures associe la pu
 keywords: mobile
 seo-description: L’intégration du connecteur de données appFigures associe la puissance de l’analyse de données intégrée pour les boutiques d’applications mobiles appFigures avec le suivi direct des applications par le biais d’Adobe Analytics, afin d’offrir de puissantes capacités d’analyse et d’optimisation à votre organisation.
 seo-title: Boutique d’applications
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Boutique d’applications
-topic: Mesures
+topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -21,19 +21,18 @@ L’intégration du connecteur de données `appFigures` associe la puissance de 
 >
 >Dans l’interface utilisateur de Mobile Services, une fois l’intégration configurée, l’option de menu **[!UICONTROL Boutique d’applications]** et les rapports associés s’affichent dans le volet de navigation de gauche.
 
-Le [connecteur de données appFigures pour Adobe Analytics](https://marketing.adobe.com/resources/help/fr_FR/connectors/appfigures/) contient les informations suivantes :
-<!--REKHA: no idea where this guide lives-->
+[Le connecteur de données appFigures pour Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/appfigures/appfigures-overview.html) contient les informations suivantes :
 
-* Avantages et fonctionnalités principaux de l’intégration
-* Implémentation de l’intégration, y compris :
+* Principaux avantages et caractéristiques de l&#39;intégration
+* Mise en oeuvre de l&#39;intégration, notamment :
 
-   * Exigences d’Adobe Analytics
+   * Conditions requises pour Adobe Analytics
    * Exigences d’appFigures
    * Tarifs
-   * Variable d’intégration d’Analytics
+   * Variables d’intégration Analytics
 
-* Configuration de l’intégration
+* Configuration de l&#39;intégration
 * Mesures et dimensions incluses dans l’intégration
-* Segmentation des données d’application
+* Segmenter les données de l’application
 
 Pour de plus amples informations sur les rapports de la boutique d’applications, voir [Rapport Aperçu de la boutique d’applications](/help/using/usage/c-app-store-store-performance.md).
