@@ -1,26 +1,26 @@
 ---
-description: Contactez votre représentant Adobe pour commencer à utiliser Experience Cloud Device Co-op.
-seo-description: Contactez votre représentant Adobe pour commencer à utiliser Experience Cloud Device Co-op.
+description: Pour début à l’aide de l’application Experience Cloud Device Co-op, contactez votre représentant Adobe.
+seo-description: Pour début à l’aide de l’application Experience Cloud Device Co-op, contactez votre représentant Adobe.
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
 # Experience Cloud Device Co-op {#experience-cloud-device-co-op}
 
-Contactez votre représentant Adobe pour commencer à utiliser Experience Cloud Device Co-op.
+Pour début à l’aide de l’application Experience Cloud Device Co-op, contactez votre représentant Adobe.
 
-Afin d’activer les applications mobiles destinées à Experience Cloud Device Co-op, procédez comme suit pour les SDK Android Experience Cloud :
+Pour activer vos applications mobiles pour Experience Cloud Device Co-op, procédez comme suit pour les SDK Android Experience Cloud :
 
 >[!IMPORTANT]
 >
 >Le SDK Android version 4.8.3 ou ultérieure est requis pour cette fonctionnalité.
 
-À partir de la version 4.16.1 du SDK, les membres de Device Co-op peuvent exclure les données de leur appareil mobile de la solution Device Co-op d’Experience Cloud. Pour plus d’informations, voir [Fichier de configuration JSON ADBMobile](/help/android/configuration/json-config/json-config.md) et la méthode `visitorAPI.js` pour [isCoopSafe](https://marketing.adobe.com/resources/help/fr_FR/mcvid/mcvid-coopsafe.html).
+À partir de la version 4.16.1 du SDK, les membres Device Co-op peuvent exclure leurs données de périphériques mobiles de la version Experience Cloud Device Co-op. Pour plus d’informations, voir Configuration [JSON](/help/android/configuration/json-config/json-config.md) ADBMobile et la `visitorAPI.js` méthode pour [isCoopSafe](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html).
 
 1. Implémentez le SDK Adobe Mobile.
 
