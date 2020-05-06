@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
 
-# Méthodes de configuration{#configuration-methods}
+# Méthodes de configuration {#configuration-methods}
 
 Liste des méthodes fournies par la bibliothèque Android.
 
@@ -82,7 +82,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
    * Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
-      Voici les valeurs d’état de confidentialité :
+      Voici les valeurs d’état de confidentialité :
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont envoyés immédiatement.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
@@ -109,7 +109,8 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
       Vous pouvez définir l’état de confidentialité sur l’une des valeurs suivantes :
       * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont envoyés immédiatement. Ces accès sont envoyés immédiatement.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés. Ces accès sont ignorés.
-      * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+      * `MOBILE_PRIVACY_STATUS_UNKNOWN` : si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
+Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
    * Voici la syntaxe de cette méthode :
 
       ```java
@@ -271,7 +272,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Version 4.2 ou ultérieure**) Définit la petite icône qui sera utilisée pour les notifications qui ont été créées par le SDK. Cette icône apparaîtra dans la barre d’état et sera l’image secondaire qui s’affichera lorsque l’utilisateur verra la notification complète dans le centre de notification.
+   * (**Version 4.2 ou ultérieure**) Définit la petite icône qui sera utilisée pour les notifications qui ont été créées par le SDK. Cette icône apparaîtra dans la barre d’état et sera l’image secondaire qui s’affichera lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notification.
    * Voici la syntaxe de cette méthode :
 
       ```java
@@ -301,7 +302,7 @@ La méthode suivante doit être appelée une fois dans la méthode `onCreate` de
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**Version 4.2 ou ultérieure**) Permet de charger un fichier de configuration JSON ADBMobile différent lorsque l’application début. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
+   * (**Version 4.2 ou ultérieure**) Permet de charger un fichier de configuration JSON ADBMobile différent lorsque l’application démarre. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
    * Voici la syntaxe de cette méthode :
 
       ```java
