@@ -7,7 +7,10 @@ title: Notes de mise à jour
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 76%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # Notes de mise à jour {#release-notes}
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour le SDK Android 4.x pour les solutions Experience Cloud :
+
+**3 avril 2020 : 4.18.2**
+
+* Dans la messagerie de l’application - Pour des raisons de sécurité, les WebViews créés par le SDK définissent désormais la propriété &quot;setAllowFileAccess&quot; sur false.
+
+**12 mars 2020 : 4.18.1**
+
+* Cible - L’ID de session de Cible sera désormais ajouté en tant que paramètre de données contextuelles &quot;a.cible.sessionId&quot; dans l’accès Analytics pour Cible interne envoyé à Adobe Analytics.
 
 **16 janvier 2020 : 4.18.0**
 
