@@ -7,13 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Metrics
 uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '80'
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour{#release-notes}
+# Notes de mise à jour {#release-notes}
 
 Informations sur les nouvelles mises à jour d’Adobe Mobile Services.
 
