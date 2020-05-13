@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -49,4 +52,4 @@ Le service d’identification Adobe Experience Platform fournit un identifiant v
 
    Si ces valeurs ne sont pas présentes, téléchargez un fichier `ADBMobileConfig.json` mis à jour depuis Adobe Mobile Services. Pour plus d’informations, voir [Configuration JSON ADBMobile](/help/ios/getting-started/requirements.md).
 
-Après la configuration, un ID Experience Cloud est généré et inclus dans tous les accès. D’autres identifiants visiteur, comme les identifiants personnalisés et générés automatiquement, continueront à être envoyés avec chaque accès.
+Après la configuration, un Experience Cloud ID est généré et inclus sur tous les accès. D’autres identifiants visiteur, comme les identifiants personnalisés et générés automatiquement, continueront à être envoyés avec chaque accès.
