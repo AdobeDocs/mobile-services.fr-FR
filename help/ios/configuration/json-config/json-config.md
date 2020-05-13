@@ -1,18 +1,21 @@
 ---
-description: Ces informations vous aident à utiliser le fichier de configuration ADBMobile.json.
-seo-description: Ces informations vous aident à utiliser le fichier de configuration ADBMobile.json.
+description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
+seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
 solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '1715'
+ht-degree: 100%
 
 ---
 
 
-# Fichier de configuration JSON ADBMobile{#adbmobile-json-config}
+# Fichier de configuration JSON ADBMobile {#adbmobile-json-config}
 
 Ces informations vous aideront à utiliser le fichier de configuration `ADBMobile.json`.
 
@@ -28,7 +31,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Permet l’acquisition des applications mobiles.
 
-   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. For more information, see *referrerTimeout* below.
+   Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. Pour plus d’informations, voir *referrerTimeout* ci-dessous.
 
    * `server` : serveur d’acquisition vérifié au lancement initial et devant contenir un référent d’acquisition.
    * `appid` : identifiant généré qui permet d’identifier de manière unique cette application sur le serveur d’acquisition.
@@ -44,15 +47,15 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Active/désactive la capacité pour le SDK Adobe d’antidater les accès aux informations de session.
 
-   Les accès aux informations de session se composent actuellement de blocages et de durée de session et peuvent être activés ou désactivés.
+   Les accès aux informations de session comprennent actuellement les blocages et la durée de session et peuvent être activés ou désactivés.
 
    * Si vous définissez la valeur sur `false`, les accès sont **désactivés**.
 
-      Le SDK reprend son comportement d’avant la version 4.1, consistant à regrouper les informations de session de la session précédente avec le premier accès de la session suivante. Le SDK Adobe associe également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite exagérée. Comme les visites exagérées ne sont plus créées, le nombre de visites diminue immédiatement.
+      Le SDK reprend le même comportement qu’avant la version 4.1, ce qui consiste à regrouper les informations de session de la session précédente avec le premier accès de la session suivante. Le SDK Adobe associe également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite exagérée. Comme les visites exagérées ne sont plus créées, le nombre de visites diminue immédiatement.
 
    * Si vous ne spécifiez aucune valeur, la valeur par défaut est `true` et les accès sont **activés**.
 
-      Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session à 1 seconde après l’accès final de la session précédente. Cela signifie que les données de blocage et de session seront corrélées avec la date correcte à laquelle elles se sont produites. Un effet secondaire est que le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
+      Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session à 1 seconde après l’accès final de la session précédente. Cela signifie que les données de blocage et de session seront corrélées avec la date correcte à laquelle elles se sont produites. Un effet secondaire est que le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
 
    * Version minimale du SDK : 4.6
    >[!IMPORTANT]
@@ -70,7 +73,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/charset.translate.html).
 
    * Version minimale du SDK : 4.0
 
@@ -109,15 +112,15 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **lifecycleTimeout**
 
-   La valeur par défaut est de 300 secondes.
+   La valeur par défaut est de 300 secondes.
 
-   Indique la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le lancement considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de la session.
+   Spécifie la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le moment où le lancement est considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
 
    * Version minimale du SDK : 4.0
 
 * **messages**
 
-   Généré automatiquement par les services Adobe Mobile, définit les paramètres de la messagerie in-app. Pour plus d&#39;informations, consultez la section Description *des* messages ci-dessous.
+   Généré automatiquement par Adobe Mobile Services, définit les paramètres de la messagerie in-app. Pour plus d’informations, consultez la section *Description des messages* ci-dessous.
 
    * Version minimale du SDK : 4.2
 
@@ -130,7 +133,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur « true ».
    * Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ».
 
-      En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez l’assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
+      En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,  contactez  l’assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
    * Version minimale du SDK : 4.0
 
@@ -193,7 +196,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **referrerTimeout**
 
-   Nombre de secondes pendant lesquelles le SDK attend les données du parrain d’acquisition lors du lancement initial avant d’expirer. Si vous utilisez l’acquisition, nous vous recommandons un délai d’attente de 5 secondes.
+   Nombre de secondes pendant lesquelles le SDK attend les données du référent d’acquisition lors du lancement initial avant d’expirer. Si vous utilisez l’acquisition, nous vous recommandons un délai d’attente de 5 secondes.
 
    >[!IMPORTANT]
    >
@@ -272,7 +275,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Version minimale du SDK : 4.0
 
 
-## Exemple de fichier `ADBMobileConfig.json` :{#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exemple de fichier `ADBMobileConfig.json` : {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Voici un exemple de fichier `ADBMobileConfig.json` :
 
@@ -343,23 +346,23 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ## Description des messages {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Le noeud de messages est généré automatiquement par les services Adobe Mobile et n’a généralement pas besoin d’être modifié manuellement. La description suivante est fournie à des fins de dépannage :
+Le nœud de messages est généré automatiquement par Adobe Mobile Services et n’a généralement pas besoin d’être modifié manuellement. La description suivante est fournie à des fins de dépannage :
 
 * &quot;messageId&quot;
 
    * ID généré, obligatoire
 
-* &quot;le modèle&quot;
+* &quot;template&quot;
 
-   * &quot;alert&quot;, &quot;fullscreen&quot; ou &quot;local&quot;
-   * requis
+   * &quot;alert&quot;, &quot;fullscreen&quot;, ou &quot;local&quot;
+   * obligatoire
 
-* &quot;charge utile&quot;
+* &quot;payload&quot;
 
    * &quot;html&quot;
 
       * modèle plein écran uniquement, obligatoire
-      * html définition du message
+      * définition du message par html
    * &quot;image&quot;
 
       * plein écran uniquement, facultatif
@@ -367,19 +370,19 @@ Le noeud de messages est généré automatiquement par les services Adobe Mobile
    * &quot;altImage&quot;
 
       * plein écran uniquement, facultatif
-      * nom de l’image assemblée à utiliser si l’URL spécifiée dans
+      * nom de l’image regroupée à utiliser si l’URL spécifiée dans
          `image` n’est pas accessible
    * &quot;title&quot;
 
       * plein écran et alerte, obligatoire
-      * texte de titre d’un message d’alerte ou d’écran complet
+      * texte de titre d’un message d’alerte ou plein écran
    * &quot;content&quot;
 
-      * alerte et notification locale requise
+      * alerte et notification locale, obligatoire
       * sous-texte d’un message d’alerte ou texte de notification d’un message de notification local
-   * &quot;confirmer&quot;
+   * &quot;confirm&quot;
 
-      * alert, facultatif
+      * alerte, facultatif
       * texte utilisé dans le bouton de confirmation
    * &quot;cancel&quot;
 
@@ -387,12 +390,12 @@ Le noeud de messages est généré automatiquement par les services Adobe Mobile
       * texte utilisé dans le bouton d’annulation
    * &quot;url&quot;
 
-      * alert, facultatif
+      * alerte, facultatif
       * action d’URL à charger en cas de clic sur le bouton de confirmation
    * &quot;wait&quot;
 
-      * notification locale requise
-      * durée d’attente (en secondes) pour la publication de la notification locale après la correspondance avec ses critères
+      * notification locale, obligatoire
+      * durée d’attente (en secondes) avant de publier la notification locale après la correspondance avec ses critères
 
 
 
@@ -409,17 +412,17 @@ Le noeud de messages est généré automatiquement par les services Adobe Mobile
 
 * &quot;showRule&quot;
 
-   * &quot;always&quot;, &quot;once&quot; ou &quot;untilClick&quot;
-   * requis
+   * &quot;always&quot;, &quot;once&quot;, ou &quot;untilClick&quot;
+   * obligatoire
 
 * &quot;endDate&quot;
 
-   * nombre de secondes depuis le 1er janvier 1970
+   * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 2524730400.
 
 * &quot;startDate&quot;
 
-   * nombre de secondes depuis le 1er janvier 1970
+   * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 0.
 
 * &quot;audiences&quot;
@@ -428,7 +431,7 @@ Le noeud de messages est généré automatiquement par les services Adobe Mobile
 
    * &quot;key&quot;
 
-      Nom de variable à rechercher dans l’accès (requis).
+      Nom de variable à rechercher dans l’accès (obligatoire).
 
    * &quot;matches&quot;
 
@@ -438,10 +441,10 @@ Le noeud de messages est généré automatiquement par les services Adobe Mobile
       * ne = n’est pas égal à
       * co = contient
       * nc = ne contient pas
-      * sw = débuts avec
-      * ew = se termine par
+      * sw = commence par
+      * ew = finit par
       * ex = existe
-      * nx = n&#39;existe pas
+      * nx = n’existe pas
       * lt = inférieur à
       * le = inférieur ou égal à
       * gt = supérieur à
