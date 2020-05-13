@@ -6,13 +6,16 @@ solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82c8e82ce5ce333c2482252e96f928829d322e7e
+workflow-type: ht
+source-wordcount: '784'
+ht-degree: 100%
 
 ---
 
 
-# Méthodes Analytics{#analytics-methods}
+# Méthodes Analytics {#analytics-methods}
 
 Cette section répertorie les méthodes Adobe Analytics fournies par la bibliothèque iOS.
 
