@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Avant de commencer
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -24,10 +27,10 @@ Les administrateurs d’Analytics et les développeurs d’applications doivent 
 
 Pour configurer une suite de rapports et collecter les données de l’application mobile :
 
-1. Renseignez l’une des sections de la section [Connexion à l’interface utilisateur](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)d’Adobe Mobile Services.
+1. Renseignez l’une des sections dans [Connexion à l’interface utilisateur d’Adobe Mobile Services](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8).
 1. Créez un compte Analytics pour chaque développeur d’applications.
 
-Les développeurs d’applications ont désormais accès à la vue des suites de rapports que vous avez créées.
+Les développeurs d’applications ont désormais accès à l’affichage des suites de rapports que vous avez créées.
 
 >[!IMPORTANT]
 >
@@ -41,11 +44,11 @@ Les développeurs d’applications ont désormais accès à la vue des suites de
 
 Pour plus d’informations sur les rôles et les autorisations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Connexion à l’interface utilisateur Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
+## Connexion à l’interface utilisateur d’Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
 
-Les services Adobe Mobile sont la principale interface de rapports pour l’analyse et le ciblage des applications mobiles. Une fois ces étapes terminées, vous pouvez télécharger un fichier de configuration préconfiguré avec votre serveur de collecte de données, votre suite de rapports et de nombreux autres paramètres.
+Adobe Mobile Services est la principale interface de rapports pour l’analyse et le ciblage des applications mobiles. Une fois ces étapes terminées, vous pouvez télécharger un fichier de configuration préconfiguré avec votre serveur de collecte de données, votre suite de rapports et de nombreux autres paramètres.
 
-Vous pouvez vous connecter à l’interface utilisateur d’Adobe Mobile Services de l’une des manières suivantes :
+Vous pouvez vous connecter à l’interface utilisateur d’Adobe Mobile Services de l’une des manières suivantes :
 
 ### Experience Cloud
 
@@ -112,5 +115,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 À noter :
 
-* Remplacez le numéro de version de l’exemple de code par la version appropriée des SDK Android.
+* Remplacez le numéro de version de l’exemple de code par la version appropriée des SDK Android.
 * Téléchargez le fichier de configuration et incluez-le dans votre projet.
