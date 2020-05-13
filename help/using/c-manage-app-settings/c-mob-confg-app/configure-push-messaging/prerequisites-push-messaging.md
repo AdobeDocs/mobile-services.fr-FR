@@ -7,13 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '646'
+ht-degree: 100%
 
 ---
 
 
-# Conditions préalables requises pour activer la messagerie push{#prerequisites-to-enable-push-messaging}
+# Conditions préalables requises pour activer la messagerie push {#prerequisites-to-enable-push-messaging}
 
 Avant de pouvoir configurer la messagerie push dans vos applications, vous devez effectuer certaines tâches.
 
@@ -39,9 +42,9 @@ Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
 >[!IMPORTANT]
 >
->Pour pouvoir exploiter la fonctionnalité de services push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID, et leur compte Analytics doit être associé à leur Adobe ID. La fonctionnalité Services Push n’est pas disponible si les utilisateurs se connectent à l’aide de leurs comptes Adobe Analytics existants.
+>Pour pouvoir exploiter la fonctionnalité de services push, les utilisateurs doivent se connecter au service principal Mobile en utilisant leur Adobe ID, et leur compte Analytics doit être associé à leur Adobe ID. La fonctionnalité de services push n’est pas disponible si les utilisateurs se connectent à l’aide de leurs comptes Adobe Analytics existants.
 
-Si les utilisateurs ne disposent pas d’Adobe ID, procédez comme suit :
+Si les utilisateurs n’ont pas d’Adobe ID, procédez comme suit :
 
 1. (**L’administrateur Experience Cloud**) invite les utilisateurs à s’inscrire à Experience Cloud.
 
@@ -63,7 +66,7 @@ Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organ
 
 1. Saisissez le nom de la société et vos anciennes informations d’identification pour la société en question, puis cliquez sur **[!UICONTROL Lier le compte]**.
 
-   L’Adobe ID est maintenant associé à votre compte Analytics, votre société et vos informations de connexion.
+   L’Adobe ID est maintenant associé à votre compte, votre société et vos informations de connexion Analytics.
 
 Pour plus d’informations, voir [Dépannage de la liaison de compte](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html).
 
@@ -81,7 +84,7 @@ La section **[!UICONTROL Services push]** est désactivée tant que vous n’ave
 
       Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce fichier contient la clé privée. Le certificat peut également être inclus dans ce fichier (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
-   * Pour le mot de passe **de la clé** privée, si votre fichier de clé privée est chiffré, saisissez le mot de passe.
+   * Pour le **mot de passe de la clé privée**, si votre fichier de clé privée est chiffré, saisissez le mot de passe.
 
       (Conditionnel) Pour le **certificat**, faites glisser et déposez votre fichier de certificat dans la zone. Vous pouvez également cliquer sur **[!UICONTROL Parcourir]** pour sélectionner le fichier. Ce champ n’est pas obligatoire si le fichier de clé privée contient également le certificat ( `.cert`, `.cer`, `.crt`, `.pem`).
 
@@ -89,6 +92,6 @@ La section **[!UICONTROL Services push]** est désactivée tant que vous n’ave
 
    Cliquez sur **[!UICONTROL Tester]** pour vérifier que l’application et Mobile Services sont configurés correctement. Cette option est utile pour le débogage et le dépannage.
 
-   Tapez les jetons Push du périphérique que vous souhaitez envoyer au message. Vous pouvez envoyer le message vers plusieurs périphériques en spécifiant les jetons dans une liste séparée par des virgules.
+   Tapez les jetons push du périphérique auquel vous souhaitez envoyer le message. Vous pouvez envoyer le message vers plusieurs périphériques en spécifiant les jetons dans une liste séparée par des virgules.
 
    ![message de test push](assets/push_test_list.png)
