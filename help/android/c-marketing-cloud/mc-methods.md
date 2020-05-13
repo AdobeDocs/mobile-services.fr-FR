@@ -1,21 +1,24 @@
 ---
-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-seo-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
-seo-title: Méthodes de services d’identification Adobe Experience Platform
+seo-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+seo-title: Méthodes de services d’identification Adobe Experience Platform
 solution: Marketing Cloud,Analytics
-title: Méthodes de services d’identification Adobe Experience Platform
+title: Méthodes de services d’identification Adobe Experience Platform
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
 
-# Méthodes de services d’identification Adobe Experience Platform{#experience-cloud-id-service-methods}
+# Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
 
-Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform.
 
@@ -23,7 +26,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **public static String appendToURL(final String URL)**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer de Mobile SDK 4.12+. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer du SDK Mobile 4.12+. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -70,7 +73,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **syncIdentifiers**
 
-   Avec l’ID Experience Cloud, vous pouvez définir d’autres ID de client qui peuvent être associés à chaque visiteur. L’API du Visiteur accepte plusieurs identifiants de client pour le même visiteur, avec un identifiant de type de client pour séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
+   Avec l’Experience Cloud ID, vous pouvez définir d’autres identifiants de client qui peuvent être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
