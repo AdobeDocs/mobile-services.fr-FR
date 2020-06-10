@@ -4,11 +4,11 @@ seo-description: Pour commencer à utiliser la solution Experience Cloud Device
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '290'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,7 @@ Voici quelques informations supplémentaires sur l’indicateur `coopUnsafe` :
 * La valeur par défaut est `false`.
 * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
 
-Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste noire sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
 À noter :
 
