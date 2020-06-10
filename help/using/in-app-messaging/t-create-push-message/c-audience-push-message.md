@@ -3,12 +3,15 @@ description: Vous pouvez définir et configurer les options d’audience se rapp
 keywords: mobile
 seo-description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 seo-title: 'Audience : définition et configuration de segments d’audience pour les messages push'
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: 'Audience : définition et configuration de segments d’audience pour les messages push'
-topic: Mesures
+topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 76%
 
 ---
 
@@ -21,13 +24,13 @@ Vous pouvez définir et configurer les options d’audience se rapportant aux me
 
 Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Suites de rapports virtuelles](/help/using/manage-apps/c-mob-vrs.md)
 
-Dans Adobe Mobile Services, les marketeurs peuvent uniquement pousser les données vers une seule application par plateforme. Si les marketeurs tentent de les pousser vers des segments qui contiennent des utilisateurs issus de plusieurs applications, un avertissement s’affiche et indique que cette opération peut entraîner de graves dysfonctionnements des messages push, ainsi que l’inscription potentielle de certains utilisateurs sur liste noire. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
+Dans Adobe Mobile Services, les spécialistes du marketing peuvent uniquement pousser vers une application par plate-forme. Si les spécialistes du marketing tentent de cibler des segments qui contiennent des utilisateurs provenant de plusieurs applications, un avertissement s’affiche indiquant que le traitement peut entraîner de graves échecs de notification Push et que la liste des utilisateurs peut être refusée. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
 
 Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Si les utilisateurs de l’application sont sur liste noire, les marketeurs ne peuvent plus **jamais** leur envoyer de messages push.
+>If app users are deny listed, marketers can **never** send push messages to those affected users again.
 
 Si vous sélectionnez un segment d’audience qui contient des utilisateurs de plusieurs applications, vous pouvez lire le message suivant :
 
@@ -39,7 +42,7 @@ Le nom de l’application est basé sur une version réduite de l’appid, qui e
 >
 >Le numéro de version est facultatif.
 
-Au maximum, six ensembles de chiffres pour la version et cinq ensembles pour l’identification du lot sont supprimés.
+Jusqu’à 6 jeux de numéros pour la version et 5 jeux de numéros pour l’ID d’assemblage sont supprimés.
 
 Par exemple :
 
@@ -60,11 +63,11 @@ Cette méthode garantit que les notifications push sont envoyées à un segment 
 
 ### Exemples
 
-Voici quelques exemples pour vous aider à comprendre comment définir des segments correctement :
+Voici quelques exemples pour vous aider à comprendre comment définir correctement des segments :
 
-**À faire** : le marketeur fournit des certificats push pour les versions iOS et Android d’une application, par exemple, pour Adobe Photoshop. Le marketeur peut envoyer une notification push à un segment d’utilisateurs qui concerne les deux plateformes.
+**Do**: Marketer fournit des certificats Push pour les versions iOS et Android d’une application, par exemple pour Adobe Photoshop. Le marketeur peut envoyer une notification Push à un segment d’utilisateurs qui s’étend sur les deux plates-formes.
 
-**À ne pas faire** : le marketeur fournit des certificats push pour les versions iOS et Android d’une application, par exemple, pour Adobe Photoshop. Si le marketeur crée et envoie un message à *tous les utilisateurs actifs au cours des 30 derniers jours*, seuls les utilisateurs de l’application Adobe Photoshop sur iOS et Android recevront le message push, tous les utilisateurs de l’application Adobe Illustrator sur iOS et Android seront inscrits sur liste noire. Pour de plus amples informations et exemples, consultez *Résoudre les dysfonctionnements des messages push* dans [Résolution des problèmes liés aux messages push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Ne pas**: Les marketeurs fournissent des certificats Push pour les versions iOS et Android d’une application, par exemple pour Adobe Photoshop. Si le spécialiste du marketing crée et pousse vers un segment de *tous les utilisateurs actifs au cours des 30 derniers jours*, seuls les utilisateurs de l’application Adobe Photoshop iOS et Android reçoivent la notification Push, et tous les utilisateurs de l’application Adobe Illustrator iOS et Android sont refusés. Pour de plus amples informations et exemples, consultez *Résoudre les dysfonctionnements des messages push* dans [Résolution des problèmes liés aux messages push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Configuration des segments d’audience {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -76,7 +79,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir des segme
 
    * L’**[!UICONTROL Audience estimée ayant souscrit]** est le nombre d’appareils qui correspondent au segment Adobe Analytics **et** le nombre d’appareils ayant accepté les messages.
 
-      Vous pouvez afficher une estimation du nombre d’utilisateurs membres de vos segments sélectionnés qui ont choisi de recevoir des messages et qui recevront le message push. Le nombre total d’utilisateurs de l’application s’affiche en dessous de l’estimation, indépendamment du statut de souscription.
+      Vous pouvez vue une estimation du nombre d’utilisateurs de votre ou vos segments sélectionnés qui ont choisi de recevoir des messages et qui recevront le message push. Le nombre total d’utilisateurs de l’application s’affiche en dessous de l’estimation, quel que soit l’état d’inclusion.
 
    * Le **[!UICONTROL Total]** est le nombre d’appareils qui correspondent au segment Adobe Analytics.
 
