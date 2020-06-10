@@ -3,12 +3,15 @@ description: Vous pouvez afficher des rapports sur les messages in-app et push.
 keywords: mobile
 seo-description: Vous pouvez afficher des rapports sur les messages in-app et push.
 seo-title: Affichage des rapports sur les messages
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Affichage des rapports sur les messages
-topic: Mesures
+topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: ht
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 81%
 
 ---
 
@@ -79,13 +82,13 @@ Voici la liste des mesures disponibles pour les messages push :
 
    * pushID non valide
 
-   * La plateforme push (APNS, FCM, etc.) spécifiée n’existe pas pour l’application de la tâche. Par exemple, la plateforme peut collecter des jetons push iOS, mais aucun service APNS n’est configuré.
+   * La plateforme push (APNS, FCM, etc.) spécifiée n’existe pas pour l’application de la tâche. Par exemple, la plate-forme peut collecter des jetons Push iOS, mais le service APNS n’est pas configuré.
 
-   * L’échec du message peut être dû à la configuration incorrecte du service push ou à l’indisponibilité du système Mobile Services.
+   * Le message a peut-être échoué car le service Push n&#39;a pas été configuré correctement ou que le système Mobile Services est hors service.
    >[!IMPORTANT]
    >
-   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services Push semblent configurés correctement, contactez le service clientèle d’Adobe.
+   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services Push semblent être correctement configurés, contactez le service d’assistance clientèle Adobe.
 
 * **[!UICONTROL Bloqué sur liste noire]**
 
-   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Le moment où les jetons sont considérés comme étant sur liste noire dépend selon qu’il s’agit d’une plateforme Android ou iOS. Les jetons Android sont immédiatement pris en compte comme figurant dans la liste noire. Les jetons iOS apparaissent tout d’abord comme étant publiés, mais selon le retour d’APNS, ils apparaissent ensuite comme étant sur liste noire dans les messages suivants.
+   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Android et iOS diffèrent quant au moment où les jetons sont comptés comme des jetons refusés répertoriés. Les jetons Android sont immédiatement affichés dans le nombre de listes refusées. Les jetons iOS s’affichent initialement comme étant publiés, mais en fonction des commentaires d’APNS, ils s’affichent comme étant refusés sur la liste des messages suivants.
