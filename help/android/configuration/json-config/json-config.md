@@ -1,13 +1,16 @@
 ---
-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
+description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
+seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 94%
 
 ---
 
@@ -31,6 +34,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Permet l’acquisition des applications mobiles.
       * `server` : serveur d’acquisition vérifié lors du lancement initial pour un référent d’acquisition.
       * `appid` : ID généré qui identifie de manière unique cette application sur le serveur d’acquisition.
+
    Si cette section manque, activez l’acquisition de l’application mobile et téléchargez à nouveau le fichier de configuration du SDK. Pour plus d’informations, voir *referrerTimeout* dans cette liste de variables.
 
 * **analyticsForwardingEnabled**
@@ -43,13 +47,13 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Version minimale du SDK : 4.6.
    * Active/désactive la capacité pour le SDK Adobe d’antidater les accès aux informations de session.
 
-      Actuellement, les accès aux informations de session comprennent les blocages et les durées de session. Ils peuvent être activés ou désactivés.
+      Les accès aux informations de session comprennent actuellement les blocages et la durée de session et peuvent être activés ou désactivés.
 
       **Activation ou désactivation des accès**
 
-      * Si vous définissez la valeur sur `false`, les accès sont **désactivés**. Le SDK revient à son comportement pré-4.1, c’est-à-dire qu’il regroupe les informations de la session précédente avec le premier accès de la session suivante. Le SDK Adobe joint également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite gonflée. Puisque plus aucune visite gonflée n’est créée, on constate une baisse immédiate du nombre de visites.
+      * Si vous définissez la valeur sur `false`, les accès sont **désactivés**. Le SDK reprend le même comportement qu’avant la version 4.1, ce qui consiste à regrouper les informations de session de la session précédente avec le premier accès de la session suivante. Le SDK Adobe associe également les informations de session au cycle de vie actuel, ce qui évite la création d’une visite exagérée. Comme les visites exagérées ne sont plus créées, le nombre de visites diminue immédiatement.
 
-      * Si vous ne spécifiez aucune valeur, la valeur par défaut est `true` et les accès sont **activés**. Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session d’une seconde après le dernier accès à la session précédente. Ceci signifie que les données de blocage et de session sont corrélées avec la date correcte à laquelle ces événements se sont produits. Néanmoins, un inconvénient peut se produire : le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
+      * Si vous ne spécifiez aucune valeur, la valeur par défaut est `true` et les accès sont **activés**. Lorsque les accès sont activés, le SDK Adobe antidate l’accès aux informations de session à 1 seconde après l’accès final de la session précédente. Cela signifie que les données de blocage et de session seront corrélées avec la date correcte à laquelle elles se sont produites. Un effet secondaire est que le SDK peut créer une visite pour l’accès antidaté. Une correspondance subit un effet rétroactif à chaque nouveau lancement de l’application.
 
          >[!IMPORTANT]
          >
@@ -59,7 +63,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Version minimale du SDK : 4.1
    * Nombre limite d’accès pouvant faire l’objet d’appels consécutifs.
 
-      Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès se produit, les 10 accès sont tous envoyés consécutivement.
+      Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès arrive, les 10 accès sont envoyés consécutivement.
 
       À noter :
 
@@ -85,11 +89,12 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Propriété booléenne de l’objet `marketingCloud` qui, lorsqu’elle est définie sur `true`, entraîne l’exclusion du périphérique de la solution Device Co-op d’Experience Cloud.
    * La valeur par défaut est `false`.
    * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
-   Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste noire sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+
+   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
    À noter :
 
-   * Si `coopUnsafe` est défini sur `coop_unsafe=1``true`, sera toujours annexé aux accès Audience Manager et identifiants visiteur.
+   * Si `coopUnsafe` est défini sur `true`, `coop_unsafe=1` sera toujours annexé aux accès Audience Manager et identifiants visiteur.
    * Si vous activez le transfert côté serveur Analytics vers Audience Manager, `coop_unsafe=1` sera également annexé aux accès Analytics.
 
 
@@ -103,14 +108,14 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Version minimale du SDK : 4.0
    * La valeur par défaut est de 300 secondes.
 
-      Spécifie la durée, en secondes, qui doit s’écouler entre les lancements de l’application pour qu’un lancement soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque l’application est placée en arrière-plan et réactivée.
+      Spécifie la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le moment où le lancement est considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée.
 
-      La durée passée en arrière-plan n’est pas prise en compte dans la durée de la session.
+      Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
 
 * **messages**
 
    * Version minimale du SDK : 4.2
-   * Générée automatiquement par Adobe Mobile Services. Définit les paramètres pour la messagerie in-app. Pour obtenir plus d’informations, voir la section *Description des messages* ci-dessous.
+   * Généré automatiquement par Adobe Mobile Services, définit les paramètres de la messagerie in-app. Pour plus d’informations, consultez la section *Description des messages* ci-dessous.
 
 * **offlineEnabled**
 
@@ -176,12 +181,13 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
       * Pour `optedin`, les accès sont envoyés immédiatement.
       * Pour `optedout`, les accès sont ignorés.
       * Pour `optunknown`, si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés).
+
       Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur `optedin`.  Cela ne définit que la valeur initiale. Si cette valeur est définie ou modifiée dans le code, la nouvelle valeur est utilisée jusqu’à ce qu’elle soit à nouveau modifiée, ou lorsque l’application est désinstallée et réinstallée.
 
 
 * **referrerTimeout**
    * Version minimale du SDK : 4.1
-   * Durée (en secondes) pendant laquelle le SDK attend les données du référent d’acquisition lors du lancement initial avant l’expiration de la session. Si vous utilisez Acquisition, un délai de 5 secondes est recommandé.
+   * Nombre de secondes pendant lesquelles le SDK attend les données du référent d’acquisition lors du lancement initial avant d’expirer. Si vous utilisez l’acquisition, nous vous recommandons un délai d’attente de 5 secondes.
 
       >[!IMPORTANT]
       >
@@ -197,7 +203,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
 
 * **rsids**
    * Version minimale du SDK : 4.0
-   * Une ou plusieurs suites de rapports où seront envoyées les données Analytics. Plusieurs identifiants de suite de rapports doivent être séparés par une virgule, sans espace.
+   * Une ou plusieurs suites de rapports pour recevoir des données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
 
       ```javascript
         "rsids" "rsid"
@@ -307,88 +313,88 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ## Description des messages {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Le nœud des messages est généré automatiquement par Adobe Mobile Services et, en général, ne requiert pas de modification manuelle. La description suivante est fournie à des fins de dépannage :
+Le nœud de messages est généré automatiquement par Adobe Mobile Services et n’a généralement pas besoin d’être modifié manuellement. La description suivante est fournie à des fins de dépannage :
 
-* "messageId"
-* ID généré, requis
-* "template"
-   * "alert", "fullscreen" ou "local"
-   * requis
+* &quot;messageId&quot;
+* ID généré, obligatoire
+* &quot;template&quot;
+   * &quot;alert&quot;, &quot;fullscreen&quot;, ou &quot;local&quot;
+   * obligatoire
 
-* "showOffline"
+* &quot;showOffline&quot;
    * true ou false
-   * la valeur par défaut est false
+   * false par défaut
 
-* "showRule"
-   * "always", "once" ou "untilClick"
-   * requis
+* &quot;showRule&quot;
+   * &quot;always&quot;, &quot;once&quot;, ou &quot;untilClick&quot;
+   * obligatoire
 
-* "endDate"
+* &quot;endDate&quot;
    * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 2524730400.
 
-* "startDate"
+* &quot;startDate&quot;
    * nombre de secondes depuis le 1er janvier 1970
    * La valeur par défaut est 0.
 
-* "payload"
-   * "html"
-      * modèle Plein écran uniquement, requis
-      * html définissant le message
-   * "image"
+* &quot;payload&quot;
+   * &quot;html&quot;
+      * modèle plein écran uniquement, obligatoire
+      * définition du message par html
+   * &quot;image&quot;
       * plein écran uniquement, facultatif
-      * URL vers l’image à utiliser pour une image Plein écran
-   * "altImage"
+      * URL de l’image à utiliser pour une image plein écran
+   * &quot;altImage&quot;
       * plein écran uniquement, facultatif
-      * nom de l’image en lot à utiliser si l’URL spécifiée dans
+      * nom de l’image regroupée à utiliser si l’URL spécifiée dans
          * image
          * n’est pas accessible
-   * "title"
-      * plein écran et alerte, requis
-      * texte du titre pour un message Plein écran ou d’alerte
-   * "content"
-      * alerte et notification locale, requis
-      * sous-texte pour un message d’alerte ou texte de notification pour un message de notification locale
-   * "confirm"
+   * &quot;title&quot;
+      * plein écran et alerte, obligatoire
+      * texte de titre d’un message d’alerte ou plein écran
+   * &quot;content&quot;
+      * alerte et notification locale, obligatoire
+      * sous-texte d’un message d’alerte ou texte de notification d’un message de notification local
+   * &quot;confirm&quot;
       * alerte, facultatif
-      * texte du bouton de confirmation
-   * "cancel"
-      * alerte, requis
-      * texte du bouton d’annulation
-   * "url"
+      * texte utilisé dans le bouton de confirmation
+   * &quot;cancel&quot;
+      * alerte, obligatoire
+      * texte utilisé dans le bouton d’annulation
+   * &quot;url&quot;
       * alerte, facultatif
-      * action d’url à charger si un clic a été effectué sur le bouton de confirmation
-   * "wait"
-      * notification locale, requis
-      * durée d’attente (en secondes) avant la publication de la notification locale après la correspondance de ses critères
+      * action d’URL à charger en cas de clic sur le bouton de confirmation
+   * &quot;wait&quot;
+      * notification locale, obligatoire
+      * durée d’attente (en secondes) avant de publier la notification locale après la correspondance avec ses critères
 
 
 
 * « audiences »
-   * tableau d’objets qui définit le mode d’affichage du message
+   * tableau d’objets qui définit comment le message doit être affiché
    * « key »
-      * nom de variable à rechercher dans l’accès, requis
+      * nom de variable à rechercher dans l’accès, obligatoire
 * « matches »
-   * type de comparateur utilisé lors de la comparaison
-   * eq = est égal à
-   * ne = n’est pas égal
-   * co = contient
-   * nc = ne contient pas
-   * sw = commence par
-   * ew = se termine par
-   * ex = existe
-   * nx = n’existe pas
-   * lt = inférieur à
-   * le = inférieur à ou est égal à
-   * gt = supérieur à
-   * ge = supérieur à ou est égal à
+   * type de correspondance utilisé lors de la comparaison
+   * eq = est égal à
+   * ne = n’est pas égal à
+   * co = contient
+   * nc = ne contient pas
+   * sw = commence par
+   * ew = finit par
+   * ex = existe
+   * nx = n’existe pas
+   * lt = inférieur à
+   * le = inférieur ou égal à
+   * gt = supérieur à
+   * ge = supérieur ou égal à
 * « values »
-   * tableau de valeurs utilisé pour effectuer une correspondance par rapport à la valeur de la variable nommée dans
+   * tableau de valeurs utilisées pour établir une correspondance avec la valeur de la variable nommée dans
       * key
-      * avec le type de comparateur dans
-      * correspond à
+      * avec le type de correspondance dans
+      * matches
 * « triggers »
-   * identique à audiences, mais il s’agit de l’action au lieu de l’audience
+   * identique aux audiences, mais il s&#39;agit de l&#39;action au lieu de l&#39;audience
    * « key »
    * « matches »
    * « values »
