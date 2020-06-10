@@ -3,12 +3,15 @@ description: Ces informations peuvent vous aider à résoudre les problèmes li�
 keywords: mobile
 seo-description: Ces informations peuvent vous aider à résoudre les problèmes liés aux messages push.
 seo-title: Résolution des problèmes liés aux messages push
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Résolution des problèmes liés aux messages push
-topic: Mesures
+topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '736'
+ht-degree: 59%
 
 ---
 
@@ -25,11 +28,11 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    Chaque suite de rapports comporte un paramètre permettant de déterminer le moment du traitement des accès Analytics entrants. Par défaut, ce traitement a lieu toutes les heures.
 
-   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. À titre d’exemple, une suite de rapports traite les accès toutes les heures. En factorisant le temps de traitement nécessaire de 30 minutes maximum, il peut s’écouler jusque 90 minutes avant que l’accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur de Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
+   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. Par exemple, une suite de rapports traite les accès toutes les heures. Lorsque vous prenez en compte le temps de traitement requis de 30 minutes au maximum, il peut s’écouler jusqu’à 90 minutes avant qu’un accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur de Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
 
-* **Attente du service push**
+* **En attente du service Push**
 
-   Le service push (APNS ou GCM) n’envoie pas toujours immédiatement le message. Bien qu’inhabituel, il arrive que les délais d’attente soient de 5 à 10 minutes. Vous pouvez vérifier que le message push est envoyé vers le service push en regardant l’affichage **[!UICONTROL Rapport]** du message push, en trouvant le message dans le tableau **[!UICONTROL Historique du message]** et en regardant le nombre de **[!UICONTROL Publié]**.
+   Le service Push (APNS ou GCM) n’envoie pas immédiatement le message. Bien qu’inhabituel, il arrive que les délais d’attente soient de 5 à 10 minutes. Vous pouvez vérifier que le message push est envoyé vers le service push en regardant l’affichage **[!UICONTROL Rapport]** du message push, en trouvant le message dans le tableau **[!UICONTROL Historique du message]** et en regardant le nombre de **[!UICONTROL Publié]**.
 
    >[!TIP]
    >
@@ -40,18 +43,18 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
    * [Qualité de service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
-## Pourquoi ma clé d’API GCM Android est-elle incorrecte ?
+## Pourquoi ma clé d’API GCM Android est-elle non valide ?
 
-* **Clé API non valide**
+* **Clé d&#39;API non valide**
 
-   Votre clé API peut être invalide pour les raisons suivantes :
+   Votre clé d&#39;API n&#39;est peut-être pas valide pour les raisons suivantes :
 
-   * La clé API que vous avez saisie n’est pas une clé de serveur correspondant à la valeur API GCM correcte.
-   * La clé de serveur a mis les IP sur liste blanche et empêche les serveurs Adobe d’envoyer un message push.
+   * La clé d’API que vous avez fournie n’est pas une clé de serveur avec la valeur de clé d’API GCM correcte.
+   * La clé de serveur a autorisé les adresses IP et empêche les serveurs Adobe d&#39;envoyer un message push.
 
-* **Détermination de la validité d’une clé API**
+* **Déterminer la validité de la clé d&#39;API**
 
-   Pour déterminer la validité de la clé d’API, exécutez la commande suivante :
+   Pour déterminer la validité de votre clé d&#39;API, exécutez la commande suivante :
 
    **Android**
 
@@ -63,7 +66,7 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
        -d"{\"registration_ids\":[\"ABC\"]}"
    ```
 
-   Si le code d’état HTTP 401 est renvoyé, votre clé d’API est invalide. Sinon, le code ressemble à ce qui suit :
+   Un code d&#39;état HTTP 401 renvoyé signifie que votre clé d&#39;API n&#39;est pas valide. Sinon, vous verrez quelque chose de similaire :
 
    ```java
    {"multicast_id":6782339717028231855,"success":0,"failure":1,
@@ -74,33 +77,33 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
 ## Pourquoi mon certificat APNS ne fonctionne-t-il pas ?
 
-Votre certificat APNS peut être invalide pour les raisons suivantes :
+Votre certificat APNS peut être non valide pour les raisons suivantes :
 
-* Vous pouvez utiliser un certificat de test Sandbox plutôt qu’un certificat de production.
-* Vous utilisez un nouveau certificat de production/test Sandbox qui n’est pas pris en charge.
+* Vous pouvez utiliser un certificat sandbox au lieu du certificat de production.
+* Vous utilisez un nouveau certificat de production/sandbox qui n’est pas pris en charge.
 * Vous utilisez un fichier `.p8` au lieu d’un fichier `.p12`.
 
 ## Résolution des dysfonctionnements des messages push
 
 **Un exemple**
 
-L’exemple suivant présente comment résoudre un dysfonctionnement des messages push lors de l’utilisation d’une suite de rapports virtuelle.
+L’exemple suivant illustre comment résoudre un échec de type Push lors de l’utilisation d’une suite de rapports virtuelle.
 
-Le client suivant possède deux applications iOS :
+Le client suivant possède deux applications iOS :
 
-* Nom de l’application : PhotoShop_app_iOS
-   * RSID parent : AllAdobe PhotoShop_apps
-   * VRSID : PhotoShop_iOS_app_SF
+* Nom de l’application : PhotoShop_app_iOS
+   * RSID parent : AllAdobe PhotoShop_apps
+   * VRSID : PhotoShop_iOS_app_SF
    * Segment de définition VRSID : `a.appid contains “PhotoShop_iOS_app_SF”`
-* Nom de l’application : PhotoShop_app_iOS
-   * RSID parent : AllAdobe PhotoShop_apps
+* Nom de l’application : PhotoShop_app_iOS
+   * RSID parent : AllAdobe PhotoShop_apps
    * RSID : PhotoShop_iOS_app_LA
    * Segment de définition VRSID : `a.os contains “iOS”`
 
-Dans cet exemple, si un employé Photoshop envoie un message push à l’application *PhotoShop_iOS_app_SF*, tous les *utilisateurs de l’application PhotoShop_iOS_app_SF* recevront le message push, comme attendu. Mais si l’employé envoie un message à l’application *PhotoShop_iOS_app_LA*, car son segment de définition VRSID est incorrect (`iOS` au lieu de `a.os contains "PhotoShop_iOS_app_LA"`), le message est envoyé à **tous** les utilisateurs iOS dans *AllAdobe PhotoShop_apps*. Bien que le message soit toujours adressé aux utilisateurs de *PhotoShop_iOS_app_LA*, il met également sur liste noire les ID push pour les utilisateurs de *PhotoShop_iOS_app_SF* car l’application *PhotoShop_iOS_app_SF* a un certificat différent. Si le segment avait été défini comme `a.os contains “PhotoShop_iOS_app_LA”`, le message push aurait été envoyé uniquement aux utilisateurs de l’application *PhotoShop_iOS_app_LA*.
+Dans cet exemple, si un employé Photoshop envoie un message push à l’application *PhotoShop_iOS_app_SF*, tous les *utilisateurs de l’application PhotoShop_iOS_app_SF* recevront le message push, comme attendu. Mais si l’employé envoie un message à l’application *PhotoShop_iOS_app_LA*, car son segment de définition VRSID est incorrect (`iOS` au lieu de `a.os contains "PhotoShop_iOS_app_LA"`), le message est envoyé à **tous** les utilisateurs iOS dans *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also deny-lists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Si le segment avait été défini comme `a.os contains “PhotoShop_iOS_app_LA”`, le message push aurait été envoyé uniquement aux utilisateurs de l’application *PhotoShop_iOS_app_LA*.
 
 Si le message est envoyé avec le certificat push de l’application *PhotoShop_IOS_app_LA*, les identifiants push pour *PhotoShop_iOS_app_SF* reviendront comme `invalid`.
 
 >[!CAUTION]
 >
->Après avoir créé un message push pour une application qui utilise une suite de rapports virtuelle et cliqué sur **[!UICONTROL Enregistrer et envoyer]**, une alerte s’affiche pour vous rappeler que chaque application listée **doit** disposer d’un certificat valide. Si toutes les applications **ne possèdent pas** de certificat valide, vos segments d’audience pourront être placés définitivement sur liste noire, et vous pourrez ne plus être en mesure de leur envoyer des messages push ultérieurement. Pour plus d’informations sur les segments d’audience, voir [Audience : Définition et configuration des options d’audience pour les messages push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>Après avoir créé un message push pour une application qui utilise une suite de rapports virtuelle et cliqué sur **[!UICONTROL Enregistrer et envoyer]**, une alerte s’affiche pour vous rappeler que chaque application listée **doit** disposer d’un certificat valide. If each app does **not** have a valid certificate, your audience segments might be indefinitely deny listed, and you might not be able to send future push messages to the affected users. Pour plus d’informations sur les segments d’audience, voir [Audience : Définition et configuration des options d’audience pour les messages push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
