@@ -7,9 +7,9 @@ title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 94%
 
 ---
@@ -90,7 +90,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * La valeur par défaut est `false`.
    * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
 
-   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
    À noter :
 
