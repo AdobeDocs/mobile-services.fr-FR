@@ -8,9 +8,9 @@ title: Affichage des rapports sur les messages
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '493'
 ht-degree: 81%
 
 ---
@@ -87,8 +87,8 @@ Voici la liste des mesures disponibles pour les messages push :
    * Le message a peut-être échoué car le service Push n&#39;a pas été configuré correctement ou que le système Mobile Services est hors service.
    >[!IMPORTANT]
    >
-   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services Push semblent être correctement configurés, contactez le service à la clientèle Adobe.
+   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services Push semblent être correctement configurés, contactez le service d’assistance clientèle Adobe.
 
-* **[!UICONTROL Blocage]**
+* **[!UICONTROL Liste bloquée]**
 
-   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Android et iOS diffèrent quant au moment où les jetons sont comptés comme étant bloqués. Les jetons Android sont immédiatement affichés dans le nombre de listes à blocage. Les jetons iOS sont initialement affichés comme publiés, mais en fonction des commentaires d’APNS, ils sont affichés comme bloqués sur les messages suivants.
+   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Android et iOS diffèrent quant au moment où les jetons sont comptés comme Placés sur l&#39;liste bloquée. Les jetons Android sont immédiatement affichés dans le nombre de listes bloquées (liste bloquée). Les jetons iOS s’affichent au départ comme étant publiés, mais en fonction des commentaires d’APNS, ils s’affichent comme placés sur l&#39;liste bloquée sur les messages suivants.
