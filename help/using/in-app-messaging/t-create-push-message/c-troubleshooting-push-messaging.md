@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 59%
+ht-degree: 91%
 
 ---
 
 
-# Dépannage de la messagerie push{#troubleshooting-push-messaging}
+# Dépannage de la messagerie push {#troubleshooting-push-messaging}
 
 Ces informations peuvent vous aider à résoudre les problèmes liés aux messages push.
 
@@ -28,11 +28,11 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    Chaque suite de rapports comporte un paramètre permettant de déterminer le moment du traitement des accès Analytics entrants. Par défaut, ce traitement a lieu toutes les heures.
 
-   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. Par exemple, une suite de rapports traite les accès toutes les heures. Lorsque vous prenez en compte le temps de traitement requis de 30 minutes au maximum, il peut s’écouler jusqu’à 90 minutes avant qu’un accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur de Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
+   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. À titre d’exemple, une suite de rapports traite les correspondances toutes les heures. En tenant compte du temps de traitement requis de 30 minutes au maximum, il peut s’écouler jusqu’à 90 minutes avant qu’un accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur de Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
 
-* **En attente du service Push**
+* **Attente du service push**
 
-   Le service Push (APNS ou GCM) n’envoie pas immédiatement le message. Bien qu’inhabituel, il arrive que les délais d’attente soient de 5 à 10 minutes. Vous pouvez vérifier que le message push est envoyé vers le service push en regardant l’affichage **[!UICONTROL Rapport]** du message push, en trouvant le message dans le tableau **[!UICONTROL Historique du message]** et en regardant le nombre de **[!UICONTROL Publié]**.
+   Le service push (APNS ou GCM) n’envoie pas toujours le message immédiatement. Bien qu’inhabituel, il arrive que les délais d’attente soient de 5 à 10 minutes. Vous pouvez vérifier que le message push est envoyé vers le service push en regardant l’affichage **[!UICONTROL Rapport]** du message push, en trouvant le message dans le tableau **[!UICONTROL Historique du message]** et en regardant le nombre de **[!UICONTROL Publié]**.
 
    >[!TIP]
    >
@@ -43,18 +43,18 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
    * [Qualité de service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
-## Pourquoi ma clé d’API GCM Android est-elle non valide ?
+## Pourquoi ma clé API GCM Android est-elle incorrecte ?
 
-* **Clé d&#39;API non valide**
+* **Clé API non valide**
 
-   Votre clé d&#39;API n&#39;est peut-être pas valide pour les raisons suivantes :
+   Votre clé API n’est peut-être pas valide pour les raisons suivantes :
 
-   * La clé d’API que vous avez fournie n’est pas une clé de serveur avec la valeur de clé d’API GCM correcte.
-   * La clé de serveur a autorisé les adresses IP et empêche les serveurs Adobe d&#39;envoyer un message push.
+   * La clé que vous avez fournie n’est pas une clé de serveur avec la valeur de clé API GCM correcte.
+   * La clé de serveur a autorisé les adresses IP et empêche les serveurs Adobe d’envoyer un message push.
 
-* **Déterminer la validité de la clé d&#39;API**
+* **Vérification de la validité de la clé API**
 
-   Pour déterminer la validité de votre clé d&#39;API, exécutez la commande suivante :
+   Pour vérifier la validité de la clé d’API, exécutez la commande suivante :
 
    **Android**
 
@@ -66,7 +66,7 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
        -d"{\"registration_ids\":[\"ABC\"]}"
    ```
 
-   Un code d&#39;état HTTP 401 renvoyé signifie que votre clé d&#39;API n&#39;est pas valide. Sinon, vous verrez quelque chose de similaire :
+   Si le code d’état HTTP 401 est renvoyé, votre clé API est incorrecte. Sinon, le code ressemble à ce qui suit :
 
    ```java
    {"multicast_id":6782339717028231855,"success":0,"failure":1,
@@ -77,26 +77,26 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
 ## Pourquoi mon certificat APNS ne fonctionne-t-il pas ?
 
-Votre certificat APNS peut être non valide pour les raisons suivantes :
+Votre certificat APNS n’est peut-être pas valide pour les raisons suivantes :
 
-* Vous pouvez utiliser un certificat sandbox au lieu du certificat de production.
-* Vous utilisez un nouveau certificat de production/sandbox qui n’est pas pris en charge.
+* Il est possible que vous utilisiez un certificat de test au lieu du certificat de production.
+* Vous utilisez un nouveau certificat de production ou de test qui n’est pas pris en charge.
 * Vous utilisez un fichier `.p8` au lieu d’un fichier `.p12`.
 
 ## Résolution des dysfonctionnements des messages push
 
 **Un exemple**
 
-L’exemple suivant illustre comment résoudre un échec de type Push lors de l’utilisation d’une suite de rapports virtuelle.
+L’exemple suivant explique comment résoudre un échec de message push lors de l’utilisation d’une suite de rapports virtuelle.
 
-Le client suivant possède deux applications iOS :
+Le client suivant possède deux applications iOS :
 
-* Nom de l’application : PhotoShop_app_iOS
-   * RSID parent : AllAdobe PhotoShop_apps
-   * VRSID : PhotoShop_iOS_app_SF
+* Nom de l’application : PhotoShop_app_iOS
+   * RSID parent : AllAdobe PhotoShop_apps
+   * VRSID : PhotoShop_iOS_app_SF
    * Segment de définition VRSID : `a.appid contains “PhotoShop_iOS_app_SF”`
-* Nom de l’application : PhotoShop_app_iOS
-   * RSID parent : AllAdobe PhotoShop_apps
+* Nom de l’application : PhotoShop_app_iOS
+   * RSID parent : AllAdobe PhotoShop_apps
    * RSID : PhotoShop_iOS_app_LA
    * Segment de définition VRSID : `a.os contains “iOS”`
 
