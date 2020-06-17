@@ -10,16 +10,16 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
 
-# Fichier de configuration ADBMobile JSON{#adbmobile-json-config}
+# Fichier de configuration ADBMobile JSON {#adbmobile-json-config}
 
 Ces informations vous aident à comprendre les variables du fichier de configuration ADBMobile.json.
 
-## `ADBMobileConfig.json`Référence du fichier de configuration{#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json`Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Vous pouvez utiliser le même fichier de configuration pour votre application sur différentes plateformes :
 
@@ -63,7 +63,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Version minimale du SDK : 4.1
    * Nombre limite d’accès pouvant faire l’objet d’appels consécutifs.
 
-      Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès arrive, les 10 accès sont envoyés consécutivement.
+      Si, par exemple, `batchLimit` est défini sur 10, chaque accès précédant le 10e accès est placé en file d’attente. Lorsque le 10e accès intervient, les 10 accès sont tous envoyés consécutivement.
 
       À noter :
 
@@ -128,7 +128,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
 
       >[!IMPORTANT]
       >
-      >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` **doit** être définie sur « true ». Sinon, la propriété de configuration `offlineEnabled` **doit** être définie sur « false ».
+      >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` **doit** être définie sur « true ». Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` **doit** être définie sur « false ».
       >
       >En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé, contactez l’Assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services.
 
@@ -371,7 +371,7 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
 
 
 * « audiences »
-   * tableau d’objets qui définit comment le message doit être affiché
+   * ensemble d’objets qui définit comment le message doit être affiché
    * « key »
       * nom de variable à rechercher dans l’accès, obligatoire
 * « matches »
@@ -389,12 +389,12 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
    * gt = supérieur à
    * ge = supérieur ou égal à
 * « values »
-   * tableau de valeurs utilisées pour établir une correspondance avec la valeur de la variable nommée dans
+   * tableau de valeurs utilisées pour correspondre à la valeur de la variable nommée dans
       * key
       * avec le type de correspondance dans
       * matches
 * « triggers »
-   * identique aux audiences, mais il s&#39;agit de l&#39;action au lieu de l&#39;audience
+   * identique aux audiences, mais il s’agit de l’action au lieu de l’audience
    * « key »
    * « matches »
    * « values »
