@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 81%
+ht-degree: 91%
 
 ---
 
 
-# Affichage des rapports sur les messages{#view-message-reports}
+# Affichage des rapports sur les messages {#view-message-reports}
 
 Vous pouvez afficher des rapports sur les messages in-app et push.
 
@@ -39,13 +39,13 @@ Si vous affichez des rapports pour un message in-app, le rapport ressemble à l�
 
 Voici la liste des mesures disponibles pour les messages in-app :
 
-* **[!UICONTROL Impression]**, lorsqu’un message est déclenché
+* **[!UICONTROL Impression]**, lorsqu’un message est déclenché.
 
-* **[!UICONTROL Clic publicitaire]** Lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Clic publicitaire]** dans une alerte ou un message plein écran, et lorsqu’un utilisateur ouvre l’application à partir d’une notification locale.
+* **[!UICONTROL Clic publicitaire]**, lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Clic publicitaire]** dans une alerte ou un message plein écran, et lorsqu’un utilisateur ouvre l’application à partir d’une notification locale.
 
-* **[!UICONTROL Annuler]** Lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Annuler]** dans une alerte ou un message plein écran.
+* **[!UICONTROL Annuler]**, lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Annuler]** dans une alerte ou un message plein écran.
 
-* **[!UICONTROL Taux d’engagement]**. Il s’agit d’une mesure calculée d’Adobe Analytics. Le résultat est obtenu en divisant le nombre de clics publicitaires par le nombre d’impressions.
+* **[!UICONTROL Taux d’engagement]**, une mesure calculée d’Adobe Analytics. Le résultat est obtenu en divisant le nombre de clics publicitaires par le nombre d’impressions.
 
 ## Messages push {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -61,14 +61,14 @@ Voici la liste des mesures disponibles pour les messages push :
 
 * **[!UICONTROL Heure]**
 
-   Heure à laquelle le message a été transmis aux appareils à partir de Mobile Services.
+   Heure à laquelle le message a été transmis aux appareils à partir de Mobile Services.
 
-* **[!UICONTROL État]**
+* **[!UICONTROL Statut]**
 
    Le statut du message, et les statuts disponibles sont les suivants :
 
-   * **[!UICONTROL Annulés]**
-   * **[!UICONTROL Planifiés]**
+   * **[!UICONTROL Annulé]**
+   * **[!UICONTROL Planifié]**
    * **[!UICONTROL En cours d’exécution]**
    * **[!UICONTROL Exécuté]**
 
@@ -82,12 +82,12 @@ Voici la liste des mesures disponibles pour les messages push :
 
    * pushID non valide
 
-   * La plateforme push (APNS, FCM, etc.) spécifiée n’existe pas pour l’application de la tâche. Par exemple, la plate-forme peut collecter des jetons Push iOS, mais le service APNS n’est pas configuré.
+   * La plateforme push (APNS, FCM, etc.) spécifiée n’existe pas pour l’application de la tâche. Par exemple, la plateforme peut collecter des jetons push iOS mais aucun service APNS n’est configuré.
 
-   * Le message a peut-être échoué car le service Push n&#39;a pas été configuré correctement ou que le système Mobile Services est hors service.
+   * Le message a peut-être échoué car le service push n’a pas été configuré correctement ou que le système Mobile Services est hors service.
    >[!IMPORTANT]
    >
-   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services Push semblent être correctement configurés, contactez le service d’assistance clientèle Adobe.
+   >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services push semblent configurés correctement, contactez l’assistance clientèle d’Adobe.
 
 * **[!UICONTROL Liste bloquée]**
 
