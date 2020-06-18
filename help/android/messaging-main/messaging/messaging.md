@@ -1,30 +1,33 @@
 ---
-description: Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
-seo-description: Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
+description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en oeuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
+seo-description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en oeuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
 seo-title: Messagerie in-app
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Messagerie in-app
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+workflow-type: tm+mt
+source-wordcount: '803'
+ht-degree: 61%
 
 ---
 
 
 # Messagerie in-app{#in-app-messaging}
 
-Vous pouvez envoyer des messages in-app déclenchés par une donnée ou un événement Analytics. Après la mise en œuvre, les messages sont envoyés dynamiquement à l’application et ne requièrent pas de mise à jour du code.
+Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en oeuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 >[!IMPORTANT]
 >
->Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+>Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur [Launch](https://launch.adobe.com/).
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -33,9 +36,9 @@ Vous recherchez des informations et de la documentation à propos du SDK Adobe 
 
 >[!IMPORTANT]
 >
->Pour utiliser la messagerie in-app, vous **devez** disposer du SDK version 4.2 ou supérieure.
+>To use in-app messaging, you **must** have SDK version 4.2 or later.
 
-Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui définissent le moment où les messages s’affichent. Pour obtenir plus d’informations, voir [Création d’un message in-app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Pour afficher des messages in-app, des mises à jour doivent être apportées au SDK. Vous pouvez terminer ces étapes même si vous n’avez pas encore défini de messages. Une fois que vous avez défini les messages, ils sont envoyés dynamiquement à l’application et affichés sans mise à jour de la boutique d’applications.
+Vous pouvez créer des messages et des règles dans les services Adobe Mobile qui définissent le moment où les messages sont affichés. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Pour afficher les messages in-app, des mises à jour doivent être apportées au SDK. Vous pouvez effectuer ces étapes même si vous n’avez encore défini aucun message. Une fois que vous avez défini les messages, ils sont diffusés dynamiquement dans votre application et affichés sans mise à jour de la boutique d’applications.
 
 ## Activation de la messagerie in-app {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -57,6 +60,7 @@ Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui 
    * `Theme.Translucent.NoTitleBar.Fullscreen`
    * `Theme.Translucent.NoTitleBar`
    * `Theme.Translucent`
+
    Par exemple :
 
    ```java
@@ -117,11 +121,11 @@ Vous pouvez créer des messages et les règles dans Adobe Mobile Services qui 
 
 ## Suivi des messages in-app {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Les SDK Android Mobile Services effectuent le suivi des mesures suivantes pour vos messages in-app :
+Les SDK mobiles Android effectuent le suivi des mesures suivantes pour vos messages in-app :
 
-* Pour les messages in-app en plein écran et de type alerte :
+* Pour les messages in-app en mode plein écran et en style d’alerte :
 
-   * **Impressions** : lorsque l’utilisateur déclenche un message in-app.
+   * **Impressions**: lorsque l’utilisateur déclenche un message in-app.
    * **Clics publicitaires** : lorsque l’utilisateur appuie sur **[!UICONTROL Clic publicitaire]**.
    * **Annulations** : lorsque l’utilisateur appuie sur **[!UICONTROL Annuler]**.
 
@@ -136,7 +140,7 @@ Les SDK Android Mobile Services effectuent le suivi des mesures suivantes pour
 
 ## Image de secours locale {#section_DEACC1CE549B4573B556A44A52409941}
 
-Lors de la création d’un message Plein écran, vous avez la possibilité, si vous le souhaitez, de spécifier une image de secours. Si le message ne peut pas récupérer l’image prévue depuis le web, le SDK tente de charger l’image portant le même nom depuis le dossier assets de l’application. Cela permet d’afficher le message dans son format d’origine, même si l’utilisateur est hors ligne ou si l’image prédéterminée n’est pas accessible.
+Lors de la création d’un message en plein écran, vous pouvez éventuellement spécifier une image de secours. Si votre message ne parvient pas à récupérer l’image qui lui est destinée sur le Web, le SDK tente de charger l’image portant le même nom depuis le dossier des ressources de votre application. Vous pouvez ainsi afficher votre message sous sa forme d’origine, même si l’utilisateur est hors ligne ou si l’image prédéterminée est inatteignable.
 
 >[!IMPORTANT]
 >
@@ -148,7 +152,7 @@ Les méthodes suivantes permettent de configurer la petite icône et la grande i
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   Définit la petite icône qui sera utilisée pour les notifications créées par le SDK. Cette icône apparaît dans la barre d’état et est l’image secondaire qui s’affiche lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
+   Définissez la petite icône qui sera utilisée pour les notifications créées par le SDK. Cette icône s’affiche dans la barre d’état et est l’image secondaire qui s’affiche lorsque l’utilisateur voit la notification complète dans le centre de notification.
 
    * Voici la syntaxe de cette méthode :
 
