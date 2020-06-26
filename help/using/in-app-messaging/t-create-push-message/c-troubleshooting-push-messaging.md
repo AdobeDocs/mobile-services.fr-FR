@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Résolution des problèmes liés aux messages push
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    Chaque suite de rapports comporte un paramètre permettant de déterminer le moment du traitement des accès Analytics entrants. Par défaut, ce traitement a lieu toutes les heures.
 
-   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. À titre d’exemple, une suite de rapports traite les correspondances toutes les heures. En tenant compte du temps de traitement requis de 30 minutes au maximum, il peut s’écouler jusqu’à 90 minutes avant qu’un accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur de Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
+   Le traitement effectif des accès Analytics peut prendre jusqu’à 30 minutes, mais il est normalement de 15 à 20 minutes. À titre d’exemple, une suite de rapports traite les correspondances toutes les heures. En tenant compte du temps de traitement requis de 30 minutes au maximum, il peut s’écouler jusqu’à 90 minutes avant qu’un accès entrant soit disponible pour un message push. Si un utilisateur a lancé l’application à 9 h 01, l’accès se présente dans l’interface utilisateur d’Adobe Mobile Services en tant que nouvel utilisateur unique entre 10 h 15 et 10 h 30.
 
 * **Attente du service push**
 
@@ -100,10 +100,10 @@ Le client suivant possède deux applications iOS :
    * RSID : PhotoShop_iOS_app_LA
    * Segment de définition VRSID : `a.os contains “iOS”`
 
-Dans cet exemple, si un employé Photoshop envoie un message push à l’application *PhotoShop_iOS_app_SF*, tous les *utilisateurs de l’application PhotoShop_iOS_app_SF* recevront le message push, comme attendu. Mais si l’employé envoie un message à l’application *PhotoShop_iOS_app_LA*, car son segment de définition VRSID est incorrect (`iOS` au lieu de `a.os contains "PhotoShop_iOS_app_LA"`), le message est envoyé à **tous** les utilisateurs iOS dans *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blocklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. Si le segment avait été défini comme `a.os contains “PhotoShop_iOS_app_LA”`, le message push aurait été envoyé uniquement aux utilisateurs de l’application *PhotoShop_iOS_app_LA*.
+Dans cet exemple, si un employé Photoshop envoie un message push à l’application *PhotoShop_iOS_app_SF*, tous les *utilisateurs de l’application PhotoShop_iOS_app_SF* recevront le message push, comme attendu. Mais si l’employé envoie un message à l’application *PhotoShop_iOS_app_LA*, car son segment de définition VRSID est incorrect (`iOS` au lieu de `a.os contains "PhotoShop_iOS_app_LA"`), le message est envoyé à **tous** les utilisateurs iOS dans *AllAdobe PhotoShop_apps*. Bien que le message soit toujours adressé aux utilisateurs de *PhotoShop_iOS_app_LA*, il met également sur liste de blocage les ID push pour les utilisateurs de *PhotoShop_iOS_app_SF* car l’application *PhotoShop_iOS_app_SF* a un certificat différent. Si le segment avait été défini comme `a.os contains “PhotoShop_iOS_app_LA”`, le message push aurait été envoyé uniquement aux utilisateurs de l’application *PhotoShop_iOS_app_LA*.
 
 Si le message est envoyé avec le certificat push de l’application *PhotoShop_IOS_app_LA*, les identifiants push pour *PhotoShop_iOS_app_SF* reviendront comme `invalid`.
 
 >[!CAUTION]
 >
->Après avoir créé un message push pour une application qui utilise une suite de rapports virtuelle et cliqué sur **[!UICONTROL Enregistrer et envoyer]**, une alerte s’affiche pour vous rappeler que chaque application listée **doit** disposer d’un certificat valide. If each app does **not** have a valid certificate, your audience segments might be indefinitely blocklisted, and you might not be able to send future push messages to the affected users. Pour plus d’informations sur les segments d’audience, voir [Audience : Définition et configuration des options d’audience pour les messages push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>Après avoir créé un message push pour une application qui utilise une suite de rapports virtuelle et cliqué sur **[!UICONTROL Enregistrer et envoyer]**, une alerte s’affiche pour vous rappeler que chaque application listée **doit** disposer d’un certificat valide. Si toutes les applications **ne possèdent pas** de certificat valide, vos segments d’audience pourront être placés définitivement sur liste de blocage, et vous pourrez ne plus être en mesure de leur envoyer des messages push ultérieurement. Pour plus d’informations sur les segments d’audience, voir [Audience : Définition et configuration des options d’audience pour les messages push](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
