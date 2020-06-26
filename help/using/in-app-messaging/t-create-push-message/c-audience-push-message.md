@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ Vous pouvez définir et configurer les options d’audience se rapportant aux me
 
 ## Définition des segments d’audience {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir [Suites de rapports virtuelles](/help/using/manage-apps/c-mob-vrs.md)
+Lorsqu’un segment d’audience est créé pour les messages push, le segment peut inclure des utilisateurs d’une ou plusieurs applications, car les suites de rapport ou suites de rapports virtuelles peuvent contenir des données concernant une ou plusieurs applications. Pour de plus amples informations concernant les suites de rapports virtuelles, voir  [Suites de rapports virtuelles](/help/using/manage-apps/c-mob-vrs.md)
 
-Dans Adobe Mobile Services, il est possible que les professionnels du marketing ne puissent émettre des notifications push que vers une application par plate-forme. Si les spécialistes du marketing tentent de diffuser des segments contenant des utilisateurs provenant de plusieurs applications, un avertissement s’affiche indiquant que le traitement peut entraîner de graves échecs de diffusion et la liste bloquée potentielle des utilisateurs. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
+Dans Adobe Mobile Services, il est possible que les professionnels du marketing ne puissent émettre des notifications push que vers une application par plate-forme. S’ils tentent de cibler des segments qui contiennent des utilisateurs provenant de plusieurs applications, un avertissement s’affiche indiquant que le traitement peut entraîner de graves problèmes et que les utilisateurs peuvent être mis sur liste de blocage. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans  [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
 
 Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->If app users are blocklisted, marketers can **never** send push messages to those affected users again.
+>Si les utilisateurs de l’application sont sur liste de blocage, les marketeurs ne peuvent plus **jamais** leur envoyer de messages push.
 
 Si vous sélectionnez un segment d’audience qui contient des utilisateurs de plusieurs applications, vous pouvez lire le message suivant :
 
@@ -67,7 +67,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
 
 **À faire** : le professionnel du marketing fournit des certificats push pour les versions iOS et Android d’une application, par exemple pour Adobe Photoshop. Il peut envoyer une notification push à un segment d’utilisateurs qui s’étend sur les deux plateformes.
 
-**À ne pas faire** : le professionnel du marketing fournit des certificats push pour les versions iOS et Android d’une application, par exemple pour Adobe Photoshop. If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be blocklisted. Pour de plus amples informations et exemples, consultez *Résoudre les dysfonctionnements des messages push* dans [Résolution des problèmes liés aux messages push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**À ne pas faire** : le professionnel du marketing fournit des certificats push pour les versions iOS et Android d’une application, par exemple pour Adobe Photoshop. S’il crée et envoie une notification vers un segment de *tous les utilisateurs actifs au cours des 30 derniers jours*, seuls les utilisateurs de l’application Adobe Photoshop sur iOS et Android reçoivent la notification push, et tous les utilisateurs de l’application Adobe Illustrator sur iOS et Android sont bloqués. Pour de plus amples informations et exemples, consultez *Résoudre les dysfonctionnements des messages push* dans  [Résolution des problèmes liés aux messages push](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Configuration des segments d’audience {#section_A92C60885A30421B8150820EC1CCBF13}
 
