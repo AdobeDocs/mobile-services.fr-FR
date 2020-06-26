@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * La valeur par défaut est `false`.
    * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
 
-   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+   Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste de blocage sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
    À noter :
 
@@ -130,7 +130,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
       >
       >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` **doit** être définie sur « true ». Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` **doit** être définie sur « false ».
       >
-      >En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé, contactez l’Assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services.
+      >En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé,  contactez l’Assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services.
 
       Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
@@ -219,7 +219,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
 
 * **server**
    * Version minimale du SDK : 4.0
-   * Serveur Analytics ou de la gestion de l’audience, en fonction du nœud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Ce préfixe est géré automatiquement par la bibliothèque en fonction de la variable `ssl`. Si `ssl` est défini sur `true`, une connexion sécurisée est établie avec le serveur. Si `ssl` est défini sur `false`, une connexion non sécurisée est établie avec le serveur.
+   * Serveur Analytics ou de la gestion de l’audience, en fonction du nœud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Ce préfixe est géré automatiquement par la bibliothèque en fonction de la variable `ssl`. Si `ssl` est `true`défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
 * **ssl**
    * Version minimale du SDK : 4.0
@@ -370,11 +370,11 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
 
 
 
-* « audiences »
+* &quot;audiences&quot;
    * ensemble d’objets qui définit comment le message doit être affiché
-   * « key »
+   * &quot;key&quot;
       * nom de variable à rechercher dans l’accès, obligatoire
-* « matches »
+* &quot;matches&quot;
    * type de correspondance utilisé lors de la comparaison
    * eq = est égal à
    * ne = n’est pas égal à
@@ -388,13 +388,13 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
    * le = inférieur ou égal à
    * gt = supérieur à
    * ge = supérieur ou égal à
-* « values »
+* &quot;values&quot;
    * tableau de valeurs utilisées pour correspondre à la valeur de la variable nommée dans
       * key
       * avec le type de correspondance dans
       * matches
-* « triggers »
+* &quot;triggers&quot;
    * identique aux audiences, mais il s’agit de l’action au lieu de l’audience
-   * « key »
-   * « matches »
-   * « values »
+   * &quot;key&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;
