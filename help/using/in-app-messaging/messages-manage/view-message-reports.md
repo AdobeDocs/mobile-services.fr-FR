@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -91,4 +91,4 @@ Voici la liste des mesures disponibles pour les messages push :
 
 * **[!UICONTROL Placé sur l&#39;liste bloquée]**
 
-   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Android et iOS diffèrent quant au moment où les jetons sont comptés comme Placés sur l&#39;liste bloquée. Les jetons Android sont immédiatement affichés dans le nombre de listes bloquées. Les jetons iOS s’affichent au départ comme étant publiés, mais en fonction des commentaires d’APNS, ils s’affichent comme placés sur l&#39;liste bloquée sur les messages suivants.
+   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Le moment où les jetons sont considérés comme étant sur liste de blocage n’est pas le même sur Android et iOS. Les jetons Android sont immédiatement affichés dans le nombre de listes bloquées. Les jetons iOS apparaissent tout d’abord comme étant publiés, mais selon le retour d’APNS, ils apparaissent ensuite comme étant sur liste de blocage dans les messages suivants.
