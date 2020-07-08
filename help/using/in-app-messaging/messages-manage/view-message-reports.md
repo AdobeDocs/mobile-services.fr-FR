@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Affichage des rapports sur les messages
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -89,6 +89,6 @@ Voici la liste des mesures disponibles pour les messages push :
    >
    >Si vous constatez un nombre d’échecs inhabituellement élevé, vérifiez la configuration des services Push. Si les services push semblent configurés correctement, contactez l’assistance clientèle d’Adobe.
 
-* **[!UICONTROL Placé sur l&#39;liste bloquée]**
+* **[!UICONTROL Placé sur la liste bloquée]**
 
-   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Le moment où les jetons sont considérés comme étant sur liste de blocage n’est pas le même sur Android et iOS. Les jetons Android sont immédiatement affichés dans le nombre de listes bloquées. Les jetons iOS apparaissent tout d’abord comme étant publiés, mais selon le retour d’APNS, ils apparaissent ensuite comme étant sur liste de blocage dans les messages suivants.
+   Nombre de jetons d’appareil qui ne peuvent plus être envoyés vers APNS ou FCM. Cela signifie habituellement que l’application a été désinstallée du périphérique ou que l’utilisateur a modifié ses paramètres de réception des messages. Le moment où les jetons sont considérés comme étant sur liste de blocage n’est pas le même sur Android et iOS. Les jetons Android sont immédiatement pris en compte comme figurant dans la liste bloquée. Les jetons iOS apparaissent tout d’abord comme étant publiés, mais selon le retour d’APNS, ils apparaissent ensuite comme étant placés sur la liste bloquée dans les messages suivants.
