@@ -2,12 +2,15 @@
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 seo-title: Suivi des blocages d’application
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des blocages d’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +31,7 @@ Pour garantir une création de rapports de blocage exacte, vous devez appeler `p
 
 ![](assets/android-lifecycle.png)
 
-Pour plus d’informations sur le cycle de vie des activités Android, voir [Activités](https://developer.android.com/guide/components/activities.html).
+For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
 
 *L’illustration ci-dessus du cycle de vie Android a été créée et[partagée par le projet Open Source d’Android](https://source.android.com/)et utilisée selon les conditions générales de la licence[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
 
@@ -44,7 +47,7 @@ Pour plus d’informations sur le cycle de vie des activités Android, voir [Act
 
 ## Comment les fragments doivent-ils être traités ?
 
-Les fragments disposent d’événements de cycle de vie des applications similaires aux activités. Néanmoins, un fragment ne peut pas être actif sans être rattaché à une activité.
+Les fragments disposent d’événements de cycle de vie des applications similaires aux activités. Cependant, un fragment ne peut pas être actif sans être attaché à une Activité.
 
 >[!IMPORTANT]
 >
