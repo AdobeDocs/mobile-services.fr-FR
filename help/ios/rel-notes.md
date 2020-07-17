@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '401'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 48c3addeb929f3356990ef55b44f93dd4bb2f728
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 95%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 # Notes de mise à jour {#release-notes}
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
+
+**16 juillet 2020 : Version 4.19.3**
+
+* Général - Correction d’un bogue qui empêchait la gestion correcte des URL de lien profond avec plusieurs signes égal dans le paramètre de requête.
 
 **24 mars 2020 : Version 4.19.2**
 
