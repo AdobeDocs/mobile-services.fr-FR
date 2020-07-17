@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Pour garantir une création de rapports de blocage exacte, vous devez appeler `p
 
 ![](assets/android-lifecycle.png)
 
-For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
+Pour plus d’informations sur le cycle de vie de l’activité Android, voir [Activités](https://developer.android.com/guide/components/activities.html).
 
-*L’illustration ci-dessus du cycle de vie Android a été créée et[partagée par le projet Open Source d’Android](https://source.android.com/)et utilisée selon les conditions générales de la licence[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
+*L’illustration ci-dessus du cycle de vie Android a été créée et [partagée par le projet Open Source d’Android](https://source.android.com/) et utilisée selon les conditions générales de la licence [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Qu’est-ce qui peut provoquer le signalement d’un faux blocage ?
 
@@ -47,7 +47,7 @@ For more information about the Android activity lifecycle, see [Activities](http
 
 ## Comment les fragments doivent-ils être traités ?
 
-Les fragments disposent d’événements de cycle de vie des applications similaires aux activités. Cependant, un fragment ne peut pas être actif sans être attaché à une Activité.
+Les fragments disposent d’événements de cycle de vie des applications similaires aux activités. Cependant, un fragment ne peut pas être actif sans être attaché à une activité.
 
 >[!IMPORTANT]
 >
