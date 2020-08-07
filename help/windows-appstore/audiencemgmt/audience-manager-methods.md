@@ -1,32 +1,35 @@
 ---
-description: Liste des méthodes Audience Manager fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-seo-description: Liste des méthodes Audience Manager fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-seo-title: Méthodes d’Audience Manager
+description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
+seo-description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
+seo-title: Méthodes Audience Manager
 solution: Marketing Cloud,Analytics
-title: Audience Manager methods
-topic: Développeur et mise en œuvre
+title: Méthodes Audience Manager
+topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 45%
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Méthodes Audience Manager{#audience-manager-methods}
 
-Liste des méthodes Audience Manager fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Le préfixe des méthodes Audience Manager est « AudienceManager ».
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes d’Audience Manager comportent le préfixe &quot;AudienceManager&quot;.
 
 >[!NOTE]
 >
->When you consume winmd methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Lorsque vous consommez des méthodes winmd de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
 
-Si Audience Manager est configuré dans le fichier JSON, un signal qui contient des mesures de cycle de vie est envoyé avec l’accès de cycle de vie.
+Si le gestionnaire d’audiences est configuré dans votre fichier JSON, un signal contenant des mesures de cycle de vie est envoyé avec votre accès de cycle de vie.
 
-* **GetVisitorProfile (winJS : getVisitorProfile)**
+* **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie `null` si aucun signal n’a encore été envoyé. Le profil du visiteur est enregistré dans `SharedPreferences` pour un accès facile à l’échelle de plusieurs lancements de l’application.
+   Renvoie le dernier profil du visiteur obtenu. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
    * Voici la syntaxe de cette méthode :
 
@@ -41,7 +44,7 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
       var profile = ADB.AudienceManager.getVisitorProfile();
       ```
 
-* **GetDpid (winJS : getDpid)**
+* **GetDpid (winJS: getDpid)**
 
    Renvoie le DPID en cours.
 
@@ -58,7 +61,7 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
       var dpid = ADB.AudienceManager.getDpid();
       ```
 
-* **GetDpuuid (winJS : getDpuuid)**
+* **GetDpuuid (winJS: getDpuuid)**
 
    Renvoie le DPUUID en cours.
 
@@ -77,7 +80,7 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
 
 * **SetDpidAndDpuuid (winJS: setDpidAndDpuuid)**
 
-   Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils sont envoyés avec chaque signal.
+   Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
 
    * Voici la syntaxe de cette méthode :
 
@@ -92,9 +95,9 @@ Si Audience Manager est configuré dans le fichier JSON, un signal qui contien
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData (winJS: signalWithData)**
+* **SignalWithData (winJS : signalWithData)**
 
-   Envoie à Audience Manager un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans un rappel de bloc.
+   Envoie à l’Audience Manager un signal avec des caractéristiques et obtient les segments correspondants renvoyés dans un rappel de bloc.
 
    * Voici la syntaxe de cette méthode :
 
