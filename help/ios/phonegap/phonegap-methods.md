@@ -3,12 +3,15 @@ description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS 
 keywords: phonegap
 seo-description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS pour réaliser différentes tâches.
 seo-title: Méthodes du module externe PhoneGap
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes du module externe PhoneGap
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +90,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 * **trackingIdentifier**
 
-   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un identifiant visiteur unique spécifique à une application généré au lancement initial de l’application, puis stocké et utilisé à partir de ce lancement. Cet identifiant est conservé d’une mise à niveau de l’application à l’autre, puis est supprimé à la désinstallation de l’application.
+   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
@@ -322,7 +325,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 * **trackActionFromBackground**
 
-   Effectue le suivi d’une action survenue en arrière-plan. Ceci empêche les événements de cycle de vie de se déclencher dans certains scénarios.
+   Effectue le suivi d’une action survenue en arrière-plan. Cela empêche les événements de cycle de vie de se déclencher dans certains scénarios.
 
    * Voici la syntaxe de cette méthode :
 
