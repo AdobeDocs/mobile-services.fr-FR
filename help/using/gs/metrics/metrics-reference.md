@@ -3,12 +3,15 @@ description: Voici les informations de référence sur les dimensions et les mes
 keywords: mobile
 seo-description: Voici les informations de référence sur les dimensions et les mesures mobiles par défaut.
 seo-title: Référence sur les dimensions et les mesures mobiles
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Référence sur les dimensions et les mesures mobiles
-topic: Mesures
+topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: ht
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 94%
 
 ---
 
@@ -38,6 +41,7 @@ Voici la liste des mesures mobiles par défaut :
    Déclenché lorsque l’application est utilisée un jour spécifique.
 
    >[!TIP]
+   >
    >L’événement Utilisateurs actifs/jour n’est pas enregistré automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
 * **Utilisateurs actifs par mois**
@@ -56,7 +60,7 @@ Voici la liste des mesures mobiles par défaut :
 
 * **Blocages**
 
-   Déclenché lorsque l’application ne se ferme pas correctement. Cet événement est envoyé au démarrage de l’application après un blocage.
+   Déclenché lorsque l’application ne se ferme pas correctement. Ce événement est envoyé lorsque l&#39;application début après un blocage.
 
    >[!TIP]
    >L’application est considérée comme bloquée si la sortie n’est pas appelée.
@@ -71,7 +75,7 @@ Voici la liste des mesures mobiles par défaut :
 
 * **La date d’installation**
 
-   Date du premier lancement après installation. La date est au format *MM/JJ/AAAA*.
+   Date du premier lancement après l’installation. La date est au format *MM/JJ/AAAA* .
 
 * **ID d’application**
 
