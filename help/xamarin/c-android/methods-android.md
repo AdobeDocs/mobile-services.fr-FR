@@ -1,26 +1,29 @@
 ---
-description: Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
+description: Méthodes Android pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
 keywords: Xamarin
-seo-description: Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
+seo-description: Méthodes Android pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
 seo-title: Méthodes Android
 solution: Marketing Cloud,Developer
 title: Méthodes Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 66%
 
 ---
 
 
-# Android methods{#android-methods}
+# Méthodes Android{#android-methods}
 
-Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
+Méthodes Android pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
 
-## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
+## Méthodes de configuration {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   Returns the current debug logging preference, and the default is false.
+   Renvoie la préférence de consignation de débogage actuelle et la valeur par défaut est false.
 
    * Voici la syntaxe de cette méthode :
 
@@ -35,7 +38,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       setter: Config.DebugLogging = (Java.Lang.Boolean)true;
       ```
 
-* **LifetimeValue**
+* **Valeur de durée de vie**
 
    Renvoie la valeur du cycle de vie de l’utilisateur actuel.
 
@@ -54,10 +57,11 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 * **PrivacyStatus**
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
-   * `ADBMobilePrivacyStatus.OptIn` - les accès sont envoyés immédiatement.
+   * `ADBMobilePrivacyStatus.OptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatus.Unknown` : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
-   La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md).
+   * `ADBMobilePrivacyStatus.Unknown` - si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+
+   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
 
    * Voici la syntaxe de cette méthode :
 
@@ -75,7 +79,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **UserIdentifier**
 
-   If a custom identifier has been set, returns this identifier. Si aucun identifiant personnalisé n’est défini, renvoie null. La valeur par défaut est `null`.
+   Si un identifiant personnalisé a été défini, renvoie cet identifiant. Si aucun identifiant personnalisé n’est défini, renvoie null. La valeur par défaut est `null`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -108,7 +112,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **PauseCollectingLifecycleData**
 
-   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, en cas de suspension, collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
+   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors d’une mise en pause, un horodatage est collecté pour déterminer la durée de session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -122,9 +126,9 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       Config.PauseCollectingLifecycleData();
       ```
 
-* **CollectLifecycleData (activité Activity)**
+* **CollectLifecycleData (activité Activité)**
 
-   (4.2 ou version ultérieure) Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
+   (4.2 ou version ultérieure) Indique au SDK que les données de cycle de vie doivent être collectées pour être utilisées dans toutes les solutions du SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -138,9 +142,9 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData (activité Activity)**
+* **CollectLifecycleData (activité Activité)**
 
-   (4.2 ou version ultérieure) Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
+   (4.2 ou version ultérieure) Indique au SDK que les données de cycle de vie doivent être collectées pour être utilisées dans toutes les solutions du SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -159,7 +163,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
+   (4.2 ou version ultérieure) Permet de charger un autre fichier `ADBMobile JSON` de configuration lorsque l’application début. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -176,7 +180,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2 or later) Sets the large icon that is used for notifications created by the SDK. Cette icône est l’image principale qui s’affiche lorsque l’utilisateur voit la notification complète dans le centre de notification.
+   (4.2 ou version ultérieure) Définit la grande icône utilisée pour les notifications créées par le SDK. Cette icône est l’image principale affichée lorsque l’utilisateur voit l’ensemble de la notification dans le Centre de notifications.
 
    * Voici la syntaxe de cette méthode :
 
@@ -192,7 +196,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2 ou version ultérieure) Définit la petite icône utilisée pour les notifications créées par le SDK. This icon displays in the status bar and is the secondary image shown when the user sees the complete notification in the notification center.
+   (4.2 ou version ultérieure) Définit la petite icône utilisée pour les notifications créées par le SDK. Cette icône s’affiche dans la barre d’état et représente l’image secondaire affichée lorsque l’utilisateur voit la notification complète dans le centre de notification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -206,11 +210,11 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
        Config.SetSmallIconResourceId(R.drawable.appIcon);
       ```
 
-## Analytics methods {#section_63CF636104EF41F790C3E4190D755BBA}
+## Méthodes Analytics {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
-   Renvoie l’identifiant automatiquement généré pour Analytics. Il s’agit d’un identifiant unique spécifique à l’application qui est généré au lancement initial et stocké et utilisé à partir de ce moment. Cet ID est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
+   Renvoie l’identifiant généré automatiquement pour Analytics. Il s’agit d’un identifiant unique propre à l’application qui est généré au lancement initial et qui est stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
 
    * Voici la syntaxe de cette méthode :
 
@@ -226,7 +230,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **TrackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. `States`sont les vues disponibles dans l’application, par exemple « écran de titre », « niveau 1 », « pause », etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il est présenté comme « nom d’application version d’application (compilation) » dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir state dans chaque appel `TrackState`.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. `States` sont les vues disponibles dans votre application, telles que &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;nom de l’application version de l’application (compilation)&quot; dans les rapports. If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
@@ -249,12 +253,12 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **TrackAction**
 
-   Effectue le suivi d’une action dans l’application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple « décès », « niveau atteint », « abonnements aux flux » et autres mesures.
+   Effectue le suivi d’une action dans votre application. Les actions sont les éléments qui se produisent dans votre application que vous souhaitez mesurer, tels que &quot;décès&quot;, &quot;niveau de gain&quot;, &quot;abonnements de flux&quot; et d’autres mesures.
 
    >[!TIP]
    >
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >Si vous avez du code qui peut s’exécuter pendant que l’application est en arrière-plan (par exemple, une récupération de données en arrière-plan), utilisez plutôt `trackActionFromBackground`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -324,7 +328,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       Analytics.ClearBeacon(); 
       ```
 
-* **TrackLifetimeValueIncrease**
+* **TrackLifetimeValueAugmentation**
 
    Ajoute une quantité à la valeur de durée de vie de l’utilisateur.
 
@@ -354,7 +358,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Here is code sample for this method:
+   * Voici un exemple de code pour cette méthode :
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -362,7 +366,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **TrackTimedActionUpdate**
 
-   Transmet des données afin de mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont annexées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
+   Transmettez les données pour mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont ajoutées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
 
    >[!TIP]
    >
@@ -424,7 +428,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SendQueuedHits**
 
-   Force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne, quel que soit le nombre d’accès en file d’attente.
+   Force la bibliothèque à envoyer tous les accès dans la file d’attente hors ligne, quel que soit le nombre d’accès actuellement en file d’attente.
 
    * Voici la syntaxe de cette méthode :
 
@@ -470,7 +474,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       var queueSize = Analytics.QueueSize();
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Méthodes d’identification des Experience Cloud {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
@@ -490,7 +494,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **SyncIdentifiers**
 
-   Avec l’identifiant Experience Cloud, vous pouvez définir d’autres identifiants de client à associer à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour le même visiteur, ainsi qu’un identifiant de type Client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
+   Avec l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs` dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
@@ -533,7 +537,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **CreateRequest**
 
-   Constructeur de commodité permettant de créer un objet `ADBTargetLocationRequest` avec les paramètres donnés.
+   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
    * Voici la syntaxe de cette méthode :
 
@@ -551,7 +555,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **CreateOrderConfirmRequest**
 
-   Creates an `ADBTargetLocationRequest`.
+   Crée une `ADBTargetLocationRequest`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -567,7 +571,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **ClearCookies**
 
-   Clears Target cookies from your app.
+   Efface les cookies de Cible de votre application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -581,11 +585,11 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       Target.ClearCookies (); 
       ```
 
-## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
-* **VisitorProfile**
+* **Profil du visiteur**
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie nul si aucun signal n’a encore été envoyé. Le profil du visiteur est enregistré dans `NSUserDefaults` pour un accès facile à l’échelle de plusieurs lancements de votre application.
+   Renvoie le dernier profil du visiteur obtenu. Renvoie nil si aucun signal n’a encore été envoyé. Le profil du visiteur est enregistré dans `NSUserDefaults` pour un accès facile à l’échelle de plusieurs lancements de votre application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -633,7 +637,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 * **AudienceSetDpidAndDpuuid**
 
-   Sets the  and . `dpid``dpuuid` If `dpid` and `dpuuid` are set, they are sent with each signal.
+   Définit la valeur `dpid` et `dpuuid`. Si `dpid` et `dpuuid` sont définis, ils sont envoyés avec chaque signal.
 
    * Voici la syntaxe de cette méthode :
 
@@ -673,9 +677,9 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
       AudienceManager.SignalWithData (traits, new AudienceManagerCallback());
       ```
 
-* **Réinitialiser**
+* **Réinitialiser le**
 
-   Réinitialise l’`UUID` du gestionnaire d’audience et purge le profil du visiteur en cours.
+   Resets audience manager `UUID` and purges current visitor profile.
 
    * Voici la syntaxe de cette méthode :
 
@@ -691,7 +695,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Exp
 
 ## Vidéo {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-For more information about Video Analytics, see Video Analytics.[](/help/android/analytics-main/video-qs.md)
+Pour plus d’informations sur les analyses vidéo, voir Analyses [](/help/android/analytics-main/video-qs.md)vidéo.
 
 * **MediaSettings**
 
@@ -727,7 +731,7 @@ For more information about Video Analytics, see Video Analytics.[](/help/android
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
       ```
 
-* **Open (Ouvrir)**
+* **Ouvrir**
 
    Ouvre un objet `ADBMediaSettings` pour le suivi.
 
@@ -751,7 +755,7 @@ For more information about Video Analytics, see Video Analytics.[](/help/android
 
 * **Fermer**
 
-   Ferme le nom nommé de l’élément multimédia.
+   Ferme l’élément multimédia nommé name.
 
    * Voici la syntaxe de cette méthode :
 
@@ -765,7 +769,7 @@ For more information about Video Analytics, see Video Analytics.[](/help/android
       Media.Close (settings.Name); 
       ```
 
-* **Lire**
+* **Play**
 
    Lit le nom nommé de l’élément multimédia au décalage donné (en secondes).
 
@@ -781,9 +785,9 @@ For more information about Video Analytics, see Video Analytics.[](/help/android
       Media.Play (settings.Name, 0); 
       ```
 
-* **Complete**
+* **Terminée**
 
-   Marque manuellement l’élément multimédia comme terminé au décalage donné (en secondes).
+   Marque manuellement l’élément multimédia comme terminé au décalage offset donné (en secondes).
 
    * Voici la syntaxe de cette méthode :
 
@@ -797,9 +801,9 @@ For more information about Video Analytics, see Video Analytics.[](/help/android
       Media.Complete (settings.Name, 5); 
       ```
 
-* **Stop**
+* **Stopper**
 
-   Avertit le module multimédia que la vidéo a été interrompue ou suspendue au décalage donné.
+   Avertit le module multimédia que la vidéo a été interrompue ou suspendue au décalage offset donné.
 
    * Voici la syntaxe de cette méthode :
 
