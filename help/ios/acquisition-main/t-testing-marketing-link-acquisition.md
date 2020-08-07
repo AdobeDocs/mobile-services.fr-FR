@@ -3,12 +3,15 @@ description: Les instructions suivantes expliquent comment gérer une campagne d
 keywords: android;library;mobile;sdk
 seo-description: Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing basé sur l’empreinte numérique d’un périphérique.
 seo-title: Évaluation de l’acquisition d’un lien marketing
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +36,8 @@ Les instructions suivantes expliquent comment gérer une campagne d’acquisitio
 
    L’élément contextData doit être indiqué dans la réponse JSON :
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -81,7 +85,7 @@ Les instructions suivantes expliquent comment gérer une campagne d’acquisitio
 
    * `Analytics - Acquisition referrer timed out`
 
-      Échec de récupération de la réponse dans le délai défini dans `referrerTimeout`. Augmentez la valeur et réessayez. Vérifiez également que vous avez ouvert le lien d’acquisition avant d’installer l’application et que vous utilisez le même réseau lorsque vous cliquez sur l’URL et que vous ouvrez l’application.
+      Échec de récupération de la réponse dans le délai défini dans `referrerTimeout`. Augmentez la valeur et réessayez. Assurez-vous également d’avoir ouvert le lien d’acquisition avant d’installer l’application et d’utiliser le même réseau lorsque vous cliquez sur l’URL et ouvrez l’application.
 
 À noter :
 
