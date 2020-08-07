@@ -2,12 +2,15 @@
 description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 seo-description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 seo-title: Chemin
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Chemin
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +23,7 @@ Cette section contient des informations sur la mesure des vidéos sous iOS au mo
 >
 >Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesures audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html).
 
-Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Cette section donne une vue d’ensemble des tâches du développeur et fournit des exemples de code.
+Le processus général de mesure vidéo est très similaire sur toutes les plates-formes. Ce contenu fournit un aperçu de base des tâches des développeurs avec des exemples de code.
 
 ## Mise en correspondance des événements du lecteur avec les variables Analytics {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -28,13 +31,13 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.media.name**
 
-   (Obligatoire) Collecte le nom de la vidéo, comme spécifié dans la mise en œuvre, lorsqu’un visiteur affiche une vidéo d’une certaine manière. Vous pouvez ajouter des classifications pour cette variable.
+   (Obligatoire) Collecte le nom de la vidéo, tel que spécifié dans l’implémentation, lorsqu’un visiteur vue la vidéo d’une certaine manière. Vous pouvez ajouter des classifications pour cette variable.
 
-   (Facultatif) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
+   (Facultatif) La variable Custom Insight fournit des informations de cheminement vidéo.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : Visite
-   * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
+   * Custom Insight (s.prop, utilisé pour le cheminement vidéo)
 
 * **a.media.name**
 
@@ -47,12 +50,13 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, il est possible que SiteCatalyst collecte les `1:M:0-25` dans l’eVar Segments :
 
-   La méthode par défaut de collecte des données sur les vidéos collecte les données aux points suivants :
+   La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
 
-   * début de la vidéo (lecture)
+   * début vidéo (lecture)
    * début du segment
-   * fin de la vidéo (arrêt)
-   Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
+   * fin de vidéo (arrêt)
+
+   Analytics comptabilise la première vue de segment en début du segment, lorsque le visiteur début à regarder. Vues de segments suivantes au début du segment.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
@@ -60,7 +64,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.contentType**
 
-   Collecte les données sur le type de contenu affiché par un visiteur. Les envois d’accès par mesures vidéo se voient attribuer un type de contenu `video`. Cette variable ne doit pas être exclusivement réservée au suivi vidéo. Les autres types de contenu des rapports de contenu utilisant la même variable vous permettent d’analyser la distribution des visiteurs par rapport aux différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
+   Collecte les données sur le type de contenu affiché par un visiteur. Hits sent by video measurement are assigned a content type of `video`. This variable does not need to be reserved exclusively for video tracking. La présence d’un autre type de contenu de rapport de contenu à l’aide de cette même variable vous permet d’analyser la répartition des visiteurs entre les différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
@@ -74,21 +78,21 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.media.view**
 
-   Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardé (ni la partie visionnée).
+   Indique qu’un visiteur a visionné une partie d’une vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardée, ni la partie visionnée.
 
    * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.segmentView**
 
-   Indique qu’un visiteur a visionné une partie d’un segment de vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardée (ni la partie visionnée).
+   Indique qu’un visiteur a visionné une partie d’un segment de vidéo. Cependant, cette mesure ne fournit aucune information quant au pourcentage de la vidéo que le visiteur a regardée, ni la partie visionnée.
 
    * Type de variable : Evénement
    * Type : compteur
 
 * **a.media.complete**
 
-   Indique qu’un utilisateur a visionné une vidéo dans son intégralité. Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et d’autres diffusions sans fin définie, vous pouvez indiquer un point personnalisé auquel la mesure se termine, par exemple, une durée spécifique visionnée.
+   Indique qu’un utilisateur a visionné une vidéo dans son intégralité. Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et les autres flux qui n’ont pas de fin définie, vous pouvez spécifier un point personnalisé pour mesurer les vidéos terminées, par exemple, après un moment spécifique de visionnage.
 
    * Type de variable : Evénement
    * Type : compteur
