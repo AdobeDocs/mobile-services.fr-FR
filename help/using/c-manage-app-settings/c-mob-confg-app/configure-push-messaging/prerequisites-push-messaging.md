@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,9 @@ Pour plus d’informations, voir [Dépannage de la liaison de compte](https://do
 
 La section **[!UICONTROL Services push]** est désactivée tant que vous n’avez pas activé le service d’identification pour votre application. Mais une fois le service d’identification activé, la section des services push est activée. Pour plus d’informations sur l’activation des services push, voir [Configuration des options du service d’identification du SDK](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
->[!IMPORTANT] : vous devez cliquer sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et actualiser les services push.
+>[!IMPORTANT]
+>
+>You must click **[!UICONTROL Save]** to save your changes and refresh the Push Services.
 >
 >Vous pouvez configurer une application de boutique d’applications pour Apple et une application pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour un environnement de production et une pour un environnement de développement, configurez une nouvelle application de boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
