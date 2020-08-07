@@ -3,12 +3,15 @@ description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS 
 keywords: android;library;mobile;sdk
 seo-description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS pour réaliser différentes tâches.
 seo-title: Méthodes du module externe PhoneGap
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes du module externe PhoneGap
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 97%
 
 ---
 
@@ -93,7 +96,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
    Renvoie l’identifiant visiteur généré automatiquement.
 
-   Il s’agit d’un identifiant visiteur unique, spécifique à une application, généré au lancement initial de l’application, puis stocké et utilisé à partir de ce lancement. Cet identifiant est conservé d’une mise à niveau à l’autre, puis est supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet ID est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
