@@ -1,26 +1,29 @@
 ---
-description: Classes et méthodes fournies par la bibliothèque Plateforme Windows universelle.
-seo-description: Classes et méthodes fournies par la bibliothèque Plateforme Windows universelle.
+description: Classes et méthodes fournies par la bibliothèque de plateformes Windows universelles.
+seo-description: Classes et méthodes fournies par la bibliothèque de plateformes Windows universelles.
 seo-title: Méthodes SDK
 solution: Marketing Cloud,Analytics
 title: Méthodes SDK
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 65%
 
 ---
 
 
 # SDK methods {#sdk-methods}
 
-Classes et méthodes fournies par la bibliothèque Plateforme Windows universelle.
+Classes et méthodes fournies par la bibliothèque de plateformes Windows universelles.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
 
-* **GetVersion (winJS: getVersion)**
+* **GetVersion (winJS : getVersion)**
 
    Renvoie la version actuelle de la bibliothèque Adobe Mobile.
 
@@ -36,15 +39,15 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
       var ADB = ADBMobile;var libVersion = ADB.Config.getVersion();
       ```
 
-* **GetPrivacyStatusAsync (winJS: getPrivacyStatusAsync)**
+* **GetPrivacyStatusAsync (winJS : getPrivacyStatusAsync)**
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
-   * `ADBMobilePrivacyStatusOptIn` - Hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - Les accès sont envoyés immédiatement.
    * `ADBMobilePrivacyStatusOptOut` - Les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      The default value is set in the `ADBMobileConfig.json` config file. For more information, see ADBMobileConfig.json config file.[](/help/universal-windows/c-configuration/c.json.md)
+      The default value is set in the `ADBMobileConfig.json` config file. Pour plus d’informations, voir [ADBMobileConfig.json fichier](/help/universal-windows/c-configuration/c.json.md)de configuration.
 
    * Voici la syntaxe de cette méthode :
 
@@ -53,7 +56,7 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
       ^getPrivacyStatusAsync();
       ```
 
-   * Voici des exemples de code pour cette méthode :
+   * Voici des exemples de code pour cette méthode :
 
       **C Sharp**
 
@@ -63,7 +66,7 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
       ADBMobilePrivacyStatusUnknown = 3};
       ```
 
-      **JavaScript **
+      **JavaScript**
 
       ```javascript
       var ADB = ADBMobile;
@@ -76,9 +79,9 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
 * **SetPrivacyStatus (winJS : setPrivacyStatus)**
 
    Définit l’état de confidentialité pour l’utilisateur actuel sur `status`. Valeurs possibles :
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `DBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés. Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `DBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés. Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
       * Voici la syntaxe de cette méthode :
 
@@ -86,9 +89,9 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
          static void SetPrivacyStatus(ADBMobilePrivacyStatus status);
          ```
 
-      * Here are the code samples for this method:
+      * Voici des exemples de code pour cette méthode :
 
-         **C-sharp**
+         **Accentuation**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -98,7 +101,7 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
          };
          ```
 
-         **JavaScript **
+         **JavaScript**
 
          ```js
          var ADB = ADBMobile;
@@ -123,14 +126,14 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universe
       var ltv = ADB.Config.getLifetimeValue();
       ```
 
-* **GetUserIdentifier (winJS : getUserIdentifier)**
+* **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Renvoie un identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Returns `null` if a custom identifier is not set.
+   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Returns `null` if a custom identifier is not set.
 La valeur par défaut est `null`.
 
    >[!IMPORTANT]
    >
-   >Si votre application effectue une mise à niveau du SDK Experience Cloud 3.x vers 4.x, le service d’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `null` tant qu’il n’a pas été défini.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, le service d’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `null` tant qu’il n’a pas été défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -145,7 +148,7 @@ La valeur par défaut est `null`.
       var userId = ADB.Config.getUserIdentifier(); 
       ```
 
-* **SetUserIdentifier (winJS : setUserIdentifier)**
+* **SetUserIdentifier (winJS: setUserIdentifier)**
 
    Définit l’identifiant d’utilisateur sur `identifier`.
 
@@ -181,7 +184,7 @@ La valeur par défaut est `null`.
 
 * **SetDebugLogging (winJS : setDebugLogging)**
 
-   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation du débogage ne fonctionne que lorsque vous utilisez la version de débogage de la bibliothèque, la version de publication ignore ce paramètre.
+   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation du débogage fonctionne uniquement lors de l’utilisation de la version de débogage de la bibliothèque. La version de publication ignore ce paramètre.
 
    * Voici la syntaxe de cette méthode :
 
@@ -196,9 +199,9 @@ La valeur par défaut est `null`.
       ADB.Config.setDebugLogging(true);
       ```
 
-* **CollectLifecycleData (winJS : VEraieLifecycleData)**
+* **CollectLifecycleData (winJS : VE)**
 
-   Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. For more information, see  [Lifecycle metrics](/help/universal-windows/metrics.md).
+   Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/universal-windows/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -213,9 +216,9 @@ La valeur par défaut est `null`.
       ADB.Config.collectLifecycleData();
       ```
 
-* **PauseCollecte &#x200B; LifecycleData (winJS : pauseCollecte &#x200B; LifecycleData)**
+* **PauseCollecte &#x200B; LifecycleData (winJS : pauseCollecte &#x200B; données de cycle de vie)**
 
-   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, en cas de suspension, collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/universal-windows/metrics.md).
+   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors d’une mise en pause, un horodatage est collecté pour déterminer la durée de session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/universal-windows/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
