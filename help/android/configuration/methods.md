@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Méthodes de configuration
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 100%
 
 ---
 
@@ -248,8 +251,8 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting&#x200B;LifecycleData**
 
    * Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, `onPause` collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
