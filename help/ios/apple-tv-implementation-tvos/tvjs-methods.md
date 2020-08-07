@@ -2,12 +2,15 @@
 description: Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 seo-description: Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 seo-title: Méthodes TVJS
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes TVJS
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 84%
 
 ---
 
@@ -38,9 +41,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
 * **privacyStatus**
 
-   Renvoie la représentation NSUInteger de l’état de confidentialité pour l’utilisateur actuel.
+   Renvoie la représentation NSUInteger de l’énumération de l’état de confidentialité de l’utilisateur actuel.
 
-   Options disponibles :
+   Voici les options :
 
    * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` : les accès sont ignorés.
@@ -69,6 +72,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
    * `ADBMobilePrivacyStatusOptIn` : les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` : les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` : Si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
+
    Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
 
    * Voici la syntaxe de cette méthode :
@@ -145,7 +149,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
    * Paramètre :  `userID`
 
       * Type : String
-      * Nouvel identifiant pour cet utilisateur.
+      * Nouvel identifiant de cet utilisateur.
 
 * **setAdvertisingIdentifier**
 
@@ -217,7 +221,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
          * Type : `String`
          * Nom d’état de la page
       * Paramètre : `contextData`
-         * Type : Object
+         * Type : Objet
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
 
@@ -243,7 +247,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
          * Type : String
          * Nom de l’action suivie.
       * Paramètre : `contextData`
-         * Type : Object
+         * Type : Objet
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
 
@@ -267,13 +271,13 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
       * Renvoie : S/O
       * Paramètre : `lat`
-         * Type : nombre
-         * Latitude de l’emplacement.
+         * Type : Nombre
+         * Latitude de l&#39;emplacement.
       * Paramètre : `lon`
-         * Type : nombre
-         * Longitude de l’emplacement.
+         * Type : Nombre
+         * Longitude de l&#39;emplacement.
       * Paramètre : `contextData`
-         * Type : Object
+         * Type : Objet
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
 
@@ -296,8 +300,8 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
       * Renvoie : S/O
       * Paramètre : `increaseAmount`
-         * Type : nombre
-         * Quantité à ajouter à la valeur de durée de vie de l’utilisateur actuel.
+         * Type : Nombre
+         * Montant à ajouter à la valeur de durée de vie actuelle de l’utilisateur.
    * Voici l’exemple de code pour cette méthode :
 
       ```objective-c
@@ -322,9 +326,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       * Renvoie : S/O
       * Paramètre : `name`
          * Type : String
-         * Nom de l’action minutée lancée.
+         * Nom de l’action minutée en cours de démarrage.
       * Paramètre : `contextData`
-         * Type : Object
+         * Type : Objet
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
 
@@ -335,9 +339,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
 * **trackTimedActionUpdateData**
 
-   Transmet des données afin de mettre à jour les données contextuelles associées à l’action donnée.
+   Transmettez les données pour mettre à jour les données contextuelles associées à l’action donnée.
 
-   Les données transmises sont annexées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
+   Les données transmises sont ajoutées aux données existantes pour l’action donnée et si la même clé est déjà définie pour l’action, les données sont remplacées.
 
    >[!TIP]
    >
@@ -352,9 +356,9 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       * Renvoie : S/O
       * Paramètre : `name`
          * Type : String
-         * Nom de l’action minutée mise à jour.
+         * Nom de l’action minutée en cours de mise à jour.
       * Paramètre : `contextData`
-         * Type : Object
+         * Type : Objet
          * Données contextuelles supplémentaires pour cet accès.
    * Voici l’exemple de code pour cette méthode :
 
@@ -368,7 +372,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Termine une action minutée.
 
-   Si vous spécifiez une fonction de rappel, vous pouvez accéder aux valeurs temporelles finales. Si aucun rappel n’est spécifié ou si le rappel renvoie « true », le SDK Adobe envoie automatiquement un accès. Lorsque que false est renvoyé par le rappel, l’accès de l’action minutée est supprimé.
+   Si vous fournissez une fonction de rappel, vous pouvez accéder aux valeurs d’heure finales. Si aucun rappel n’est fourni ou si le rappel renvoie true, le SDK Adobe envoie automatiquement un accès. Lorsque que false est renvoyé par le rappel, l’accès de l’action minutée est supprimé.
 
    * Voici la syntaxe de cette méthode :
 
@@ -379,7 +383,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       * Renvoie : S/O
       * Paramètres : `name`
          * Type : String
-         * Nom de l’action minutée terminée.
+         * Nom de l&#39;action minutée en cours de fin
       * Paramètre : `callback`
          * Type : `function(inAppDuration, totalDuration, data)`
          * Méthode de rappel qui aura `inAppDuration` (nombre), `totalDuration` (nombre), et `data` (objet de données contextuelles) dans ses paramètres.
@@ -423,7 +427,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Renvoie l’identifiant visiteur généré automatiquement.
 
-   Il s’agit d’un identifiant visiteur unique propre à l’application qui est généré par les serveurs d’Adobe. Si les serveurs d’Adobe ne sont pas joignables au moment de la génération, l’identifiant est généré au moyen du CFUUID d’Apple. La valeur est générée au lancement initial, puis stockée et utilisée à partir de ce point. Cet identifiant est conservé entre les différentes mises à jour de l’application, enregistré et restauré au cours du processus standard de sauvegarde de l’application, puis supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un identifiant de visiteur unique propre à l’application, généré par les serveurs de l’Adobe. Si les serveurs d’Adobe ne peuvent pas être atteints au moment de la génération, l’identifiant est généré à l’aide du CFUUID d’Apple. La valeur est générée au lancement initial et stockée et utilisée à partir de ce point. Cet ID est conservé entre les mises à niveau de l’application, est enregistré et restauré pendant le processus de sauvegarde de l’application standard et est supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
@@ -598,11 +602,11 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
       ```
 
       * Paramètre : `traits`
-         * Type : Object
-         * Dictionnaire des caractéristiques pour cet utilisateur.
+         * Type : Objet
+         * Dictionnaire Traits pour cet utilisateur.
       * Paramètre : `callback`
-         * Type : function(profile)
-         * Profil renvoyé depuis Audience Manager dans le paramètre de la fonction de rappel.
+         * Type : function(profil)
+         * Profil renvoyé par l’Audience Manager dans le paramètre de la fonction de rappel.
    * Voici l’exemple de code pour cette méthode :
 
       ```objective-c
@@ -656,7 +660,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
 * **visitorSyncIdentifiers**
 
-   Outre l’Experience Cloud ID, vous pouvez définir d’autres identifiants de client à associer à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants setCustomerID dans la bibliothèque JavaScript.
+   Outre l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond à setCustomerIDs dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
