@@ -1,30 +1,33 @@
 ---
 description: Classes et méthodes fournies par la bibliothèque BlackBerry.
 seo-description: Classes et méthodes fournies par la bibliothèque BlackBerry.
-seo-title: Classe Adobe Mobile et référence de méthode
-title: Adobe Mobile class and method reference
+seo-title: adobe Mobile, classe et référence de méthode
+title: adobe Mobile, classe et référence de méthode
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 56%
 
 ---
 
 
-# Adobe Mobile class and method reference {#adobe-mobile-class-and-method-reference}
+# adobe Mobile, classe et référence de méthode {#adobe-mobile-class-and-method-reference}
 
 Classes et méthodes fournies par la bibliothèque BlackBerry.
 
-The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
+Le SDK prend actuellement en charge l’Adobe Analytics et les méthodes se trouvent dans des classes distinctes basées sur la solution.
 
-## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## Paramètres du SDK {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **getPrivacyStatus**
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
-   * ADBMobilePrivacyStatusOptIn : les accès sont immédiatement envoyés.
-   * ADBMobilePrivacyStatusOptOut : les accès sont ignorés.
-   * ADBMobilePrivacyStatusUnknown : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * ADBMobilePrivacyStatusOptIn : les accès sont envoyés immédiatement.
+   * ADBMobilePrivacyStatusOptOut - les accès sont ignorés.
+   * ADBMobilePrivacyStatusUnknown : si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
       La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
@@ -44,9 +47,9 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
    Définit l’état de confidentialité pour l’utilisateur actuel sur `status`. Valeurs possibles :
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
    * Voici la syntaxe de cette méthode :
 
@@ -143,17 +146,17 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
       }
       ```
 
-## Analytics methods {#section_91F4AD0A045D4E4E8F9A93450503E49E}
+## Méthodes Analytics {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
 Chacune de ces méthodes est utilisée pour envoyer des données dans la suite de rapports Adobe Analytics.
 
 * **trackState**
 
-   Effectue le suivi de l’état d’une application avec les données contextuelles facultatives. Les états correspondent aux affichages disponibles dans l’application : tableau de bord d’accueil, paramètres d’application, panier, etc. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
 
    >[!TIP]
    >
-   >This is the only tracking call that increments page views.
+   >Il s’agit du seul appel de suivi qui incrémente les pages vues.
 
    * Voici la syntaxe de cette méthode :
 
@@ -169,7 +172,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackAction**
 
-   Effectue le suivi d’une action dans l’application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple les connexions, les appuis sur la bannière, les abonnements aux flux, etc.
+   Effectue le suivi d’une action dans votre application. Les actions sont les actions qui se produisent dans votre application et que vous souhaitez mesurer, telles que les &quot;connexions&quot;, les &quot;clics sur la bannière&quot;, les &quot;abonnements de flux&quot; et d’autres mesures.
 
    * Voici la syntaxe de cette méthode :
 
@@ -185,7 +188,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackLocation**
 
-   Envoie les coordonnées x et y actuelles. Remplace l’événement par l’événement reçu de l’abonné à BPS.
+   Envoie les coordonnées x et y actuelles. Remplacez événement par le événement reçu de l’abonné à BPS.
 
    * Voici la syntaxe de cette méthode :
 
@@ -199,13 +202,13 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` référence au fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json`Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
-   (Requis) Une ou plusieurs suites de rapports où seront envoyées les données Analytics. Plusieurs identifiants de suite de rapports doivent être séparés par une virgule, sans espace.
+   (Obligatoire) Une ou plusieurs suites de rapports pour recevoir les données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
 
    Voici un exemple de code pour cette variable :
 
@@ -219,15 +222,15 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **server**
 
-   (Obligatoire). Serveur Analytics. This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl`. Si `ssl` est défini sur `true`, une connexion sécurisée est établie avec le serveur. Si `ssl` est défini sur `false`, une connexion non sécurisée est établie avec le serveur.
+   (Obligatoire). Serveur Analytics. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la `ssl` variable. Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports.
+   Définit le jeu de caractères utilisé pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports.
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (HTTPS). La valeur par défaut est `false`.
+   Active (`true`) ou désactive (`false`) l&#39;envoi de données de mesure via SSL (HTTPS). La valeur par défaut est `false`.
 
 * **offlineEnabled**
 
@@ -235,34 +238,34 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Sinon, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,  contactez  [Assistance](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html)aux entreprises.
 
-   Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données depuis JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
+   If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    La valeur par défaut est `false`.
 
 * **lifecycleTimeout**
 
-   Spécifie la durée, en secondes, qui doit s’écouler entre les lancements de l’application pour qu’un lancement soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque l’application est placée en arrière-plan et réactivée. La durée passée en arrière-plan n’est pas prise en compte dans la durée de la session.
+   Indique la durée, en secondes, qui doit s’écouler entre les lancements de l’application avant que le lancement ne soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
 
-   La valeur par défaut est de 300 secondes.
+   La valeur par défaut est de 300 secondes.
 
 * **batchLimit**
 
-   Nombre maximal d’accès hors ligne stockés dans la file d’attente. The default value is 0 (No limit).
+   Nombre maximal d’accès hors ligne stockés dans la file d’attente. La valeur par défaut est 0 (aucune limite).
 
 * **privacyDefault**
 
-   * `optedin` - les accès sont envoyés immédiatement.
+   * `optedin` - les accès sont immédiatement envoyés.
    * `optedout` - les accès sont ignorés.
-   * `optunknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés).
+   * `optunknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés).
 
-      Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
-   Cette variable définit uniquement la valeur initiale. Si cette valeur est définie ou modifiée dans le code, la nouvelle valeur est utilisée jusqu’à ce qu’elle soit de nouveau modifiée, ou lorsque l’application est désinstallée, puis réinstallée.
+      Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+   Cette variable définit uniquement la valeur initiale. Si cette valeur est déjà définie ou modifiée dans le code, la nouvelle valeur est utilisée à partir de maintenant jusqu’à ce qu’elle soit modifiée ou que l’application soit désinstallée puis réinstallée.
 
    La valeur par défaut est `optedin`.
 
-Voici un exemple de fichier `ADBMobileConfig.json` :
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
