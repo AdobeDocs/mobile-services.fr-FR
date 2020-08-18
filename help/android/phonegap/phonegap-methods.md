@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Méthodes du module externe PhoneGap
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Méthodes du module externe PhoneGap{#phonegap-plug-in-methods}
+# Méthodes du module externe PhoneGap {#phonegap-plug-in-methods}
 
 Vous pouvez utiliser les méthodes du module externe Android PhoneGap pour réaliser diverses tâches.
 
@@ -26,7 +26,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## Méthodes de configuration{#section_CC429F68292D4601AEEF0A91445E1185}
+## Méthodes de configuration {#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
@@ -96,7 +96,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
    Renvoie l’identifiant visiteur généré automatiquement.
 
-   Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet ID est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
@@ -198,7 +198,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
       ADB.trackingClearQueue(function (value) { myTempVal = value; }, function () { myTempVal = null; }); 
       ```
 
-## Méthodes Pill {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
+## Méthodes PII {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
 
 * **collectPII**
 
@@ -564,7 +564,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
       ```
 
-## Méthodes d’acquisition{#section_EDEA25C4B2884487827069E9257A0BA6}
+## Méthodes d’acquisition {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -590,7 +590,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 Dans l’activité principale générée par Cordova, appelez `Config.submitAdvertisingIdentifierTask()` dans la méthode `onResume()`. Pour plus d’informations, voir [Méthodes de configuration](/help/android/configuration/methods.md).
 
-## Méthodes Audience Manager{#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Méthodes Audience Manager {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
