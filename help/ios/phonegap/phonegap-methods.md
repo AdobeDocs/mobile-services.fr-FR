@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Méthodes du module externe PhoneGap
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Méthodes du module externe PhoneGap{#phonegap-plug-in-methods}
+# Méthodes du module externe PhoneGap {#phonegap-plug-in-methods}
 
 Vous pouvez utiliser les méthodes du module externe PhoneGap iOS pour réaliser différentes tâches.
 
@@ -26,7 +26,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## Méthodes de configuration{#section_CC429F68292D4601AEEF0A91445E1185}
+## Méthodes de configuration {#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
@@ -211,7 +211,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
       ```
 
 
-## Méthodes Pill {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
+## Méthodes PII {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
 
 * **collectPII**
 
@@ -377,7 +377,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 * **trackTimed&#x200B;ActionStart**
 
-   Commence une minutée portant le nom `action`action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
+   Commence une minutée portant le nom `action` action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
 
    >[!TIP]
    >
@@ -591,7 +591,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
       ADB.targetThirdPartyID(function(value){alert(value);},function(value){alert('fail');}); 
       ```
 
-## Méthodes d’acquisition{#section_EDEA25C4B2884487827069E9257A0BA6}
+## Méthodes d’acquisition {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -614,7 +614,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 Dans l’`AppDelegate` généré par Cordova, appelez `[ADBMobile setAdvertisingIdentifier:]` dans la méthode déléguée `application:didFinishLaunchingWithOptions:`. Pour plus d’informations, voir [Méthodes de configuration](/help/ios/configuration/sdk-methods.md).
 
-## Méthodes Audience Manager{#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Méthodes Audience Manager {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
