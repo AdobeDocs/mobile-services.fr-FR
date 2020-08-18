@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Experience Cloud doit être activé pour votre entreprise Adobe Analytics. Vou
 
 * **Configuration des services push**
 
-   Vous devez configurer les services push dans le SDK Mobile. 
+   Vous devez configurer les services push dans le SDK Mobile.
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
    * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
@@ -76,7 +76,7 @@ La section **[!UICONTROL Services push]** est désactivée tant que vous n’ave
 
 >[!IMPORTANT]
 >
->You must click **[!UICONTROL Save]** to save your changes and refresh the Push Services.
+>Vous devez cliquer sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et actualiser les services push.
 >
 >Vous pouvez configurer une application de boutique d’applications pour Apple et une application pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour un environnement de production et une pour un environnement de développement, configurez une nouvelle application de boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
