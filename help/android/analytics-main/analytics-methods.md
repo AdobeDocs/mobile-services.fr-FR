@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Effectue le suivi d’une action dans votre application.
 * **getTrackingIdentifier**
 envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
-   Il s’agit d’un identifiant de visiteur unique spécifique à l’application, qui est généré au lancement initial et qui est stocké et utilisé à partir de ce moment. L’ID est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un identifiant de visiteur unique spécifique à l’application, qui est généré au lancement initial et qui est stocké et utilisé à partir de ce moment. L’identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    * Voici la syntaxe de cette méthode :
 
@@ -114,7 +114,7 @@ envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
 * **trackTimed&#x200B;ActionStart**
 
-   Commence une minutée portant le nom `action`action.
+   Commence une minutée portant le nom `action` action.
 
    Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
 
