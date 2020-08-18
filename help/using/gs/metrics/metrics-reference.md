@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Référence sur les dimensions et les mesures mobiles
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Référence sur les dimensions et les mesures mobiles{#mobile-metrics-and-dimensions-reference}
+# Référence sur les dimensions et les mesures mobiles {#mobile-metrics-and-dimensions-reference}
 
 Ces informations vous aident à mieux comprendre les mesures et dimensions mobiles par défaut.
 
@@ -60,7 +60,7 @@ Voici la liste des mesures mobiles par défaut :
 
 * **Blocages**
 
-   Déclenché lorsque l’application ne se ferme pas correctement. Ce événement est envoyé lorsque l&#39;application début après un blocage.
+   Déclenché lorsque l’application ne se ferme pas correctement. Cet événement est envoyé lorsque l’application débute après un blocage.
 
    >[!TIP]
    >L’application est considérée comme bloquée si la sortie n’est pas appelée.
@@ -75,7 +75,7 @@ Voici la liste des mesures mobiles par défaut :
 
 * **La date d’installation**
 
-   Date du premier lancement après l’installation. La date est au format *MM/JJ/AAAA* .
+   Date du premier lancement après installation. La date est au format *MM/JJ/AAAA*.
 
 * **ID d’application**
 
