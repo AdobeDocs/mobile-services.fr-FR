@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: Méthodes Target pour iOS
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est ajouté aux méthodes selon la solution. Par exemple, les méthodes sont précédées du préfixe `target`target.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est ajouté aux méthodes selon la solution. Par exemple, les méthodes sont précédées du préfixe `target` target.
 
 >[!TIP]
 >
