@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Ces informations vous aident à comprendre les variables du fichier de configuration ADBMobile.json.
 
-## `ADBMobileConfig.json`Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Vous pouvez utiliser le même fichier de configuration pour votre application sur différentes plateformes :
 
@@ -130,7 +130,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
       >
       >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` **doit** être définie sur « true ». Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` **doit** être définie sur « false ».
       >
-      >En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé,  contactez l’Assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services.
+      >En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si l’horodatage d’une suite de rapports est activé, contactez l’Assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services.
 
       Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
@@ -242,7 +242,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Détermine le délai pendant lequel Target attend une réponse.
 
 
-## Exemple de fichier `ADBMobileConfig.json` :{#section_4655EF79744649E5A5AE19E3224C472C}
+## Exemple de fichier `ADBMobileConfig.json` : {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Voici un exemple de fichier `ADBMobileConfig.json` :
 
