@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Acquisition des applications mobiles
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +22,7 @@ Il est possible de générer des liens d’acquisition avec des codes de suivi u
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -28,9 +31,9 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 >[!IMPORTANT]
 >
->Pour utiliser Acquisition, vous **devez** disposer de la version 4.1 ou supérieure du SDK.
+>To use Acquisition, you **must** have SDK version 4.1 or later.
 
-Les liens d’acquisition doivent être créés dans Adobe Mobile Services. Pour en savoir plus, consultez la rubrique [Acquisition](/help/using/acquisition-main/acquisition-main.md).
+Les liens d’acquisition doivent être créés dans Adobe Mobile Services. Pour en savoir plus, consultez la rubrique [Acquisition](/help/using/acquisition-main/acquisition-main.md).
 
 **Dans le SDK versions 4.18.0 et supérieures** :
 
