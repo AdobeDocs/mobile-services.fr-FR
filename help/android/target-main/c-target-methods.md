@@ -3,12 +3,15 @@ description: Liste des méthodes Adobe Target fournies par la bibliothèque And
 keywords: android;library;mobile;sdk
 seo-description: Liste des méthodes Adobe Target fournies par la bibliothèque Android.
 seo-title: Méthodes Target pour Android
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Méthodes Target pour Android
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 100%
 
 ---
 
@@ -130,12 +133,12 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
          * **Type :** String
       * **profileParameters**
 
-         Les valeurs de ce dictionnaire seront placées dans l’objet "profileParameters" dans la demande à Target.
+         Les valeurs de ce dictionnaire seront placées dans l’objet &quot;profileParameters&quot; dans la demande à Target.
 
          * **Type :** Map `<String, Object>`
       * **orderParameters**
 
-         Les valeurs de ce dictionnaire seront placées dans l’objet "order" dans la demande à Target.
+         Les valeurs de ce dictionnaire seront placées dans l’objet &quot;order&quot; dans la demande à Target.
 
          * **Type :** Map `<String, Object>`
       * **mboxParameters**
@@ -145,7 +148,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
          * **Type :** Map `<String, Object>`
       * **requestLocationParameters**
 
-         Les valeurs de ce dictionnaire seront placées dans l’objet "requestLocation" dans la demande à Target.
+         Les valeurs de ce dictionnaire seront placées dans l’objet &quot;requestLocation&quot; dans la demande à Target.
 
          * **Type :** Map `<String, Object>`
       * **callback**
