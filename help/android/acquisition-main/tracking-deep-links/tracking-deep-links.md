@@ -3,12 +3,15 @@ description: Utilisez ces informations pour effectuer le suivi des liens profond
 keywords: android;library;mobile;sdk
 seo-description: Utilisez ces informations pour effectuer le suivi des liens profonds et des liens profonds différés dans vos applications mobiles à l’aide du SDK Android pour Adobe Mobile.
 seo-title: Suivi des liens profonds dans Adobe Mobile Services
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Suivi des liens profonds
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +45,7 @@ Utilisez ces informations pour effectuer le suivi des liens profonds et des lien
    }
    ```
 
-Le SDK Adobe Mobile peut analyser les paires clé-valeur de données ajoutées à n’importe quel lien profond ou universel, à condition que le lien contienne une clé comportant une étiquette `a.deeplink.id` et une valeur correspondante non nulle générée par l’utilisateur. Toutes les paires clé-valeur de données ajoutées au lien seront analysées, associées à un accès de cycle de vie et envoyées à Adobe Analytics, à condition que le lien contienne la clé et la valeur `a.deeplink.id`.
+The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. Toutes les paires clé-valeur de données ajoutées au lien seront analysées, associées à un accès de cycle de vie et envoyées à Adobe Analytics, à condition que le lien contienne la clé et la valeur `a.deeplink.id`.
 
 Vous pouvez également ajouter une ou plusieurs des clés réservées suivantes (avec les valeurs générées par l’utilisateur) au lien profond ou universel :
 
