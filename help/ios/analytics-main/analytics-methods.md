@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: Méthodes Analytics
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -177,7 +177,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackTimedActionStart:&#x200B;data:**
 
-   Commence une minutée portant le nom `action`action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
+   Commence une minutée portant le nom `action` action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
 
    >[!TIP]
    >
@@ -221,7 +221,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **trackTimedActionEnd:&#x200B;logic:**
 
-   Termine une action minutée. Si vous fournissez un `block`, vous pourrez accéder aux valeurs de délai final et manipuler `data`avant d’envoyer l’accès final.
+   Termine une action minutée. Si vous fournissez un `block`, vous pourrez accéder aux valeurs de délai final et manipuler `data` avant d’envoyer l’accès final.
 
    >[!TIP]
    >
