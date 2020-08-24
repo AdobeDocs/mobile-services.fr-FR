@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing basé sur l’empreinte numérique d’un périphérique.
 
 1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/ios/acquisition-main/acquisition.md).
-1. Dans l’interface utilisateur Adobe Mobile Services, cliquez sur **[!UICONTROL Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition définissant l’App Store en tant que destination pour les appareils iOS.
+1. Dans l’interface utilisateur Adobe Mobile Services, cliquez sur **[!UICONTROL Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition définissant l’App Store en tant que destination pour les appareils iOS.
 
    Par exemple :
 
@@ -67,7 +67,7 @@ Les instructions suivantes expliquent comment gérer une campagne d’acquisitio
 
    Voici quelques informations sur les erreurs possibles :
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)` :
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       Une erreur de réseau s’est produite.
 
