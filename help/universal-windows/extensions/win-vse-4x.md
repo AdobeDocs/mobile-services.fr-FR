@@ -7,7 +7,7 @@ title: Extensions Windows Visual Studio pour Experience Cloud Solutions 4.x SDK
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Cette extension permet d&#39;ajouter plus facilement la référence du SDK Windo
 
 1. Téléchargez le SDK Windows Universal depuis [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Décompressez le fichier téléchargé localement.
-1. Doublon-cliquez sur le fichier **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsix]** pour ouvrir le programme d’installation.
+1. Doublon-cliquez sur le fichier **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** pour ouvrir le programme d’installation.
 1. Sélectionnez Emplacement **** global et installez la bibliothèque.
 
 ## ajouter des références à votre projet {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
