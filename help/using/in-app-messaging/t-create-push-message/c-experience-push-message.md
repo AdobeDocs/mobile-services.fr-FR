@@ -1,24 +1,24 @@
 ---
-description: Vous pouvez configurer des options d’expérience pour les messages Push et les messages Push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
+description: Vous pouvez configurer des options d’expérience pour les messages push et les messages push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
 keywords: mobile
-seo-description: Vous pouvez configurer des options d’expérience pour les messages Push et les messages Push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
+seo-description: Vous pouvez configurer des options d’expérience pour les messages push et les messages push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
 seo-title: 'Expérience : message push'
 solution: Marketing Cloud,Analytics
 title: 'Expérience : message push'
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
-# Experience : message push{#experience-push-message}
+# Experience : message push {#experience-push-message}
 
-Vous pouvez configurer des options d’expérience pour les messages Push et les messages Push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
+Vous pouvez configurer des options d’expérience pour les messages push et les messages push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
 
 1. Sur la page Audience pour un nouveau message push, cliquez sur **[!UICONTROL Experience]**.
 
@@ -29,7 +29,7 @@ Vous pouvez configurer des options d’expérience pour les messages Push et les
 
    * **[!UICONTROL Contenu]**
 
-      Spécifiez le texte de votre message. Vous pouvez spécifier jusqu’à 140 caractères.
+      Spécifiez le texte de votre message. Vous pouvez spécifier jusqu’à 140 caractères.
 
    * **[!UICONTROL URL du média]**
 
@@ -48,7 +48,7 @@ Vous pouvez configurer des options d’expérience pour les messages Push et les
 
       >[!TIP]
       >
-      >Lorsque vous utilisez des types de destination de **[!UICONTROL lien Web]** ou de **[!UICONTROL lien personnalisé]**, le type de destination ne fait pas l’objet d’un suivi. Seuls les **[!UICONTROL liens profonds]** font l’objet d’un suivi.
+      >Lorsque vous utilisez les * types de destination de **[!UICONTROL lien Web]** ou de **[!UICONTROL lien personnalisé]**, le type de destination ne fait pas l’objet d’un suivi. Seuls les **[!UICONTROL liens profonds]** font l’objet d’un suivi.
 
 ## Conditions préalables pour les notifications push enrichies
 
@@ -64,20 +64,20 @@ Voici les conditions préalables requises pour envoyer des notifications push en
       >
       >Gardez à l’esprit les informations suivantes :
       >* Les messages push enrichis envoyés à des versions antérieures seront toute de même transmis, mais n’afficheront que du texte.
-      >* Il n&#39;y a pas de prise en charge de la montre pour le moment.
+      >* Les montres ne sont pour l’instant pas prises en charge.
 
 
 * **Formats de fichier**
 
-   Voici les formats de fichier pris en charge :
-   * Images : JPG et PNG
-   * Animations (iOS uniquement) : GIF
-   * Vidéos (iOS uniquement) : MP4
+   Voici les formats de fichier pris en charge :
+   * Images : JPG et PNG
+   * Animations (iOS uniquement) : GIF
+   * Vidéos (iOS uniquement) : MP4
 
 * **Formats d’URL**
    * HTTPS uniquement
 
-* **Taille**
+* **Dimensions**
    * Les images doivent être au format 2/1, sinon elles seront recadrées.
 
 Pour de plus amples informations concernant la configuration des notifications push enrichies, consultez le contenu suivant :
@@ -87,9 +87,9 @@ Pour de plus amples informations concernant la configuration des notifications p
 
 Pour configurer un message push sur la page Experience :
 
-1. (**Facultatif**) Cliquez sur le lien **[!UICONTROL Afficher les options avancées]** pour configurer les options supplémentaires :
+1. (**Facultatif**) Cliquez sur le lien **[!UICONTROL Afficher les options avancées]** pour configurer des options supplémentaires :
 
-   * **[!UICONTROL Données utiles : données]**
+   * **[!UICONTROL Charge utile : données]**
 
       Fournissez des données utiles push personnalisées dans l’objet JSON qui sera envoyé à l’application au moyen d’une notification push ou locale. La limite pour Android et iOS est fixée à 4 ko.
 
@@ -128,10 +128,10 @@ Pour configurer un message push sur la page Experience :
       Pour prévisualiser votre message tel qu’il apparaîtra sur la tablette d’un utilisateur, cliquez sur ![l’icône de tablette](assets/icon_tablet.png).
    En bas du panneau d’aperçu, vous pouvez afficher une description de l’audience que vous avez sélectionnée à l’étape précédente.
 
-1. (**Facultatif**) Cliquez sur **[!UICONTROL Test]** pour pousser votre message vers les appareils spécifiés à des fins de test.
-1. Sélectionnez le service et tapez les jetons Push pour au moins un périphérique sur lequel vous souhaitez envoyer le message.
+1. (**Facultatif**) Cliquez sur **[!UICONTROL Test]** pour envoyer votre message en push sur les périphériques spécifiés à des fins de test.
+1. Sélectionnez le service et saisissez les jetons push pour au moins un périphérique sur lequel vous souhaitez envoyer le message en push.
 
-   Spécifiez les jetons dans une liste séparée par des virgules pour transmettre le message à plusieurs périphériques.
+   Spécifiez les jetons dans une liste séparée par des virgules pour envoyer le message en push sur plusieurs périphériques.
 
 1. Configurez les options de planification du message.
 
