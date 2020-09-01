@@ -7,20 +7,20 @@ solution: Marketing Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# Évaluation de l’acquisition d’un lien marketing{#testing-marketing-link-acquisition}
+# Évaluation de l’acquisition d’un lien marketing {#testing-marketing-link-acquisition}
 
 Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing sur un appareil Android.
 
-Si l’application mobile n’est pas encore sur Google Play, vous pouvez sélectionner n’importe quelle destination lors de la création du lien marketing. Cela affecte uniquement l’application à laquelle le serveur d’acquisition vous redirige, après avoir cliqué sur le lien d’acquisition, et non la possibilité de tester le lien d’acquisition. Les paramètres de chaîne de requête sont transmis à Google Play Store, qui sont transmis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Les tests d’acquisition d’applications mobiles Roundtrip nécessitent la simulation de ce type de diffusion.
+Si l’application mobile n’est pas encore sur Google Play, vous pouvez sélectionner n’importe quelle destination lors de la création du lien marketing. Cela a uniquement une incidence sur l’application vers laquelle le serveur d’acquisition vous redirige lorsque vous cliquez sur le lien d’acquisition. Le lien d’acquisition pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, qui sont transmis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Les tests d’acquisition d’applications mobiles nécessitent la simulation de ce type de diffusion.
 
 Chaque fois qu’un test est exécuté, l’application doit avoir été installée depuis peu ou ses données doivent être effacées sous **[!UICONTROL Paramètres]**. Ainsi, les mesures initiales de cycle de vie associées aux paramètres des chaînes de requête de la campagne sont envoyées lorsque l’application est lancée pour la première fois.
 
@@ -73,7 +73,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    | Paramètre | Valeur |
    |--- |--- |
    | acquisition | Le serveur doit être `c00.adobe.com`, et *`appid`* doit être égal à l’`appid` de votre lien d’acquisition. |
-   | analytics | À des fins de test, définissez le délai d’expiration du parrain pour permettre l’envoi manuel de l’émission pendant une durée suffisante (60 secondes ou plus). Vous pouvez restaurer le paramètre d’expiration d’origine après le test. |
+   | analytics | À des fins de test, définissez le délai d’expiration du parrain pour permettre l’envoi manuel de la diffusion pendant une durée suffisante (60 secondes ou plus). Vous pouvez restaurer le paramètre d’expiration d’origine après le test. |
 
 1. Connectez l’appareil à un ordinateur, désinstallez puis réinstallez l’application.
 1. Lancez l’interpréteur de commandes ADB, puis l’application sur l’appareil.
@@ -108,9 +108,9 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   Si ces journaux ne s’affichent pas, vérifiez que vous avez effectué les étapes 6 à 10.
+   Si ces journaux ne s’affichent pas, vérifiez que vous avez bien effectué les étapes 6 à 10 de la procédure.
 
-   Le tableau suivant contient des informations supplémentaires sur les erreurs possibles :
+   Le tableau suivant contient des informations supplémentaires sur les erreurs possibles :
 
    | Erreur | Description |
    |--- |--- |
@@ -120,7 +120,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` n’est pas inclus dans contextData. |
    | Analytics - Acquisition referrer timed out. | Échec d’obtention de la réponse dans la durée définie par `referrerTimeout`. Augmentez la valeur et réessayez.  Assurez-vous également d’avoir ouvert le lien d’acquisition avant d’installer l’application. |
 
-À noter :
+Gardez à l’esprit les informations suivantes :
 
 * Les accès envoyés depuis l’application peuvent être surveillés à l’aide d’outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
 * Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
