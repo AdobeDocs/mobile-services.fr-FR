@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Ajout d’une nouvelle application
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Utilisez ces informations pour créer une application et configurer ses mesures 
 
 Ces instructions indiquent comment ajouter une nouvelle application et configurer les intégrations Adobe Analytics et Adobe Audience Manager.
 
-Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’interface utilisateur de Adobe Mobile Services. Une fois l’application créée, la configuration appropriée est générée afin d’être fournie aux développeurs qui mettent en œuvre le SDK Mobile pour l’application.
+Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’interface utilisateur d’Adobe Mobile Services. Une fois l’application créée, la configuration appropriée est générée afin d’être fournie aux développeurs qui mettent en œuvre le SDK Mobile pour l’application.
 
 1. Connectez-vous à Adobe Mobile Services et effectuez l’une des tâches suivantes :
 
@@ -78,7 +78,7 @@ Avant de pouvoir configurer votre application, vous devez l’ajouter dans l’i
 
       * **[!UICONTROL Standard]**
 
-         You can leave the **[!UICONTROL Standard]** option selected for most apps.
+         Vous pouvez laisser l’option **[!UICONTROL Standard]** sélectionnée pour la plupart des applications.
 
       * **[!UICONTROL Publication]**
 
