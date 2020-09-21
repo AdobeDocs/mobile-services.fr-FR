@@ -1,14 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Aide sur Mobile Services Android
-translation-type: ht
-source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
+user-guide-title: Guide Android Mobile Services
+breadcrumb-title: Android Guide
+translation-type: tm+mt
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 97%
 
 ---
 
 
-# Aide sur Mobile Services Android{#android}
+# Mobile Services Android Guide{#android}
 
 + [SDK Android 4.x pour solutions Experience Cloud](overview.md)
 + [Notes de mise à jour](rel-notes.md)
