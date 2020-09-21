@@ -1,18 +1,22 @@
 ---
-product: services mobiles
+product: mobile-services
 audience: end-user
-user-guide-title: Aide du module externe Mobile Services Unity
+user-guide-title: Guide du module externe Mobile Services Unity
+breadcrumb-title: Unity Plug-in Guide
 translation-type: tm+mt
-source-git-commit: 9d1d3a2fa65c6627c748c417aa18f04f8fdc255e
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 31%
 
 ---
 
 
-# Aide du module externe Mobile Services Unity {#unity}
+# Guide du module externe Mobile Services Unity {#unity}
 
 + [Module externe Unity pour SDK iOS et Android 4.x](get-started.md)
 + [Création de votre projet](project.md)
 + [Appels à la bibliothèque](library-calls.md)
-+ [Mise en œuvre du cycle de vie](lifecycle.md)
++ [Mise en oeuvre du cycle de vie](lifecycle.md)
 + [Méthodes ADBMobile.cs](methods.md)
-+ [Énumérations](enumerations.md)
++ [Enumérations](enumerations.md)
