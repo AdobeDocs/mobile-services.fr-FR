@@ -1,18 +1,19 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Guide d’Utilisateur Mobile Services
-user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
-translation-type: ht
-source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
-workflow-type: ht
-source-wordcount: '323'
+user-guide-title: Guide des Mobile Services
+breadcrumb-title: Mobile Services Guide
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
+translation-type: tm+mt
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '321'
 ht-degree: 100%
 
 ---
 
 
-# Guide d’Utilisateur Mobile Services {#using}
+# Guide des Mobile Services {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Notes de mise à jour](whatsnew.md)
