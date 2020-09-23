@@ -5,10 +5,13 @@ seo-description: Ces informations vous aident à personnaliser les rapports int�
 seo-title: Ajout de séries (mesures) aux rapports
 solution: Experience Cloud,Analytics
 title: Ajout de séries (mesures) aux rapports
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 90%
 
 ---
 
@@ -23,11 +26,11 @@ Ces informations vous aident à personnaliser les rapports intégrés par l’aj
 
 Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateurs et sessions]**, mais ces instructions peuvent s’appliquer à n’importe quel autre rapport.
 
-1. Ouvrez votre application et cliquez sur **[!UICONTROL Utilisation]** &gt; **[!UICONTROL Utilisateurs et sessions]**.
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![Résultat de l’étape](assets/customize1.png)
 
-   Ce rapport donne une vue complète des utilisateurs de l’application au fil du temps. Toutefois, nous souhaitons ajouter une série à ce rapport afin de rendre compte des blocages de l’application.
+   Ce rapport fournit une vue complète des utilisateurs de notre application au fil du temps. Cependant, nous voulons ajouter une série pour créer des rapports sur les blocages d’application.
 
 1. Cliquez sur **[!UICONTROL Personnaliser]**.
 
