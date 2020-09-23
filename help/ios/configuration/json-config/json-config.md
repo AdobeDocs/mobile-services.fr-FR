@@ -2,15 +2,15 @@
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
 seo-title: Fichier de configuration JSON ADBMobile
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **coopUnsafe**
 
-   For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
+   Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste de blocage sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
 
    À noter :
 
@@ -134,7 +134,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    * Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur « true ».
    * Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ».
 
-      En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez l’assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
+      En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,  contactez  l’assistance clientèle ou téléchargez le fichier de configuration depuis Adobe Mobile Services. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, il est possible que vous deviez configurer une suite de rapports distincte pour les données mobiles ou que vous deviez inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
    * Version minimale du SDK : 4.0
 
@@ -239,7 +239,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Ce préfixe est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
 
-   Si `ssl` est défini sur `true`, une connexion sécurisée est établie avec le serveur. Si `ssl` est défini sur `false`, une connexion non sécurisée est établie avec le serveur.
+   Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
    >[!IMPORTANT]
    >
@@ -450,7 +450,7 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
       * le = inférieur ou égal à
       * gt = supérieur à
       * ge = supérieur ou égal à
-   * « values »
+   * &quot;values&quot;
 
       Tableau de valeurs utilisées pour correspondre à la valeur de la variable nommée dans ce qui suit :
 
@@ -459,10 +459,10 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
       * matches
 
 
-* « triggers »
+* &quot;triggers&quot;
 
    Comme les audiences, mais il s’agit ici des actions :
 
-   * « key »
-   * « matches »
-   * « values »
+   * &quot;triggers&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;
