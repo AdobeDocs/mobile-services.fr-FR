@@ -4,10 +4,13 @@ seo-description: Ces informations vous permettent d’effectuer la mise en œuvr
 seo-title: Mise en œuvre de l’Apple TV avec tvOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’Apple TV avec tvOS
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +21,7 @@ Ces informations vous permettent d’effectuer la mise en œuvre de l’Apple T
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -27,7 +30,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 ## Aperçu
 
-Avec Apple TV, vous pouvez désormais créer des applications s’exécutant dans l’environnement natif de tvOS. Vous pouvez créer une application native en utilisant différentes structures d’iOS ou créer votre application à l’aide de modèles XML et de JavaScript.
+Avec Apple TV, vous pouvez désormais créer des applications à exécuter dans l’environnement tvOS natif. Vous pouvez créer une application native à l’aide de plusieurs structures dans iOS ou vous pouvez créer votre application à l’aide de modèles XML et de JavaScript.
 
 >[!TIP]
 >
