@@ -4,10 +4,13 @@ seo-description: Si votre application permet d’ouvrir du contenu web mobile, v
 seo-title: Suivi des visiteurs entre une application et le web mobile
 solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: ht
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ Si votre application permet d’ouvrir du contenu web mobile, vous devez vous as
 
 ## Identifiants visiteurs dans les applications
 
-Le SDK iOS génère un identifiant visiteur unique à l’installation de l’application. Cet identifiant est stocké dans une mémoire persistante sur l’appareil mobile et envoyé avec chaque accès. Il est supprimé uniquement lorsque l’utilisateur désinstalle l’application.
+Le SDK iOS génère un identifiant de visiteur unique lorsqu’une application est installée. Cet identifiant est stocké en mémoire persistante sur le périphérique mobile et est envoyé avec chaque accès. Il est supprimé uniquement lorsque l’utilisateur désinstalle l’application.
 
 >[!TIP]
 >
@@ -56,7 +59,7 @@ Pour utiliser le même ID visiteur dans l’application et le web mobile, et tr
    }];
    ```
 
-Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une requête à Adobe pour demander un nouvel identifiant. Le code du service d’ID sur la page de destination utilise le MID transmis pour suivre le visiteur.
+Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une demande à l’Adobe pour un nouvel ID. Le code du service d’ID sur la page de destination utilise l’MID transmis pour effectuer le suivi du visiteur.
 
 Dès les premiers accès depuis le contenu web mobile, vérifiez que le paramètre `mid` est bien présent pour chaque accès et que sa valeur correspond à celle du `mid` envoyé par le code de l’application.
 
