@@ -3,13 +3,13 @@ description: L’intégration du connecteur de données appFigures associe la pu
 keywords: mobile
 seo-description: L’intégration du connecteur de données appFigures associe la puissance de l’analyse de données intégrée pour les boutiques d’applications mobiles appFigures avec le suivi direct des applications par le biais d’Adobe Analytics, afin d’offrir de puissantes capacités d’analyse et d’optimisation à votre organisation.
 seo-title: Boutique d’applications
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Boutique d’applications
 topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
