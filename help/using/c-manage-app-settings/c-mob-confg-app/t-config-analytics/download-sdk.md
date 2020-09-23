@@ -5,10 +5,13 @@ seo-description: Ces informations peuvent vous aider à télécharger les SDK et
 seo-title: Téléchargement des SDK et des outils Mobile Services
 solution: Experience Cloud,Analytics
 title: Téléchargement des SDK et des outils Mobile Services
-topic: Développeur et implémentation, Mesures
+topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 100%
 
 ---
 
