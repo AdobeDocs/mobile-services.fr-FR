@@ -4,10 +4,13 @@ seo-description: Les règles de traitement sont utilisées pour copier les donn�
 seo-title: Règles de traitement et données contextuelles.
 solution: Experience Cloud,Analytics
 title: Règles de traitement et données contextuelles.
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 44%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports. Pour plus d’informations, reportez-vous à la section [Règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-Lors de l’utilisation des règles de traitement, gardez à l’esprit les informations suivantes :
+Lorsque vous utilisez des règles de traitement, tenez compte des informations suivantes :
 
-* Regroupez les variables de données contextuelles à l’aide d’espaces de noms, car cela permet de conserver un ordre logique. Par exemple, pour recueillir des informations sur un produit, vous pouvez définir les variables suivantes :
+* Regroupez vos variables de données contextuelles à l’aide d’espaces de nommage, car cela vous permet de conserver un ordre logique. Par exemple, pour collecter des informations sur un produit, vous pouvez définir les variables suivantes :
 
    ```js
    "product.type":"hat" 
@@ -26,27 +29,27 @@ Lors de l’utilisation des règles de traitement, gardez à l’esprit les info
    "product.color":"blue"
    ```
 
-* Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, ce qui permet de voir rapidement les variables qui sont dans le même espace de noms.
+* Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, ce qui vous permet de voir rapidement quelles variables se trouvent dans le même espace de nommage.
 
-   Évitez de nommer les clés de données contextuelles en utilisant le numéro evar ou prop :
+   Evitez d’attribuer un nom aux clés de données contextuelles en utilisant la variable evar ou le numéro prop :
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   La dénomination selon le numéro evar ou prop peut *légèrement* faciliter la correspondance unique dans les règles de traitement, mais cela nuit à la lisibilité lors du débogage et des mises à jour futures du code, qui peuvent ainsi devenir plus difficiles. Nous vous recommandons vivement d’utiliser plutôt des noms explicites pour les clés et les valeurs :
+   Cela peut faciliter *légèrement* la tâche lorsque vous effectuez le mappage ponctuel dans les règles de traitement, mais vous perdez la lisibilité lors du débogage et des futures mises à jour du code, ce qui peut s’avérer plus difficile. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
 
    ```js
    "username":"jimbo"
    ```
 
-* Les variables de contexte qui définissent les événements de compteur doivent être définies sur 1 :
+* Les variables contextuelles qui définissent les événements de compteur doivent être définies sur 1 :
 
    ```js
    "logon":"1"
    ```
 
-* Les variables de données contextuelles qui définissent les événements d’incrémentation peuvent avoir l’événement comme clé et le montant à incrémenter comme valeur :
+* Les variables de données contextuelles qui définissent les événements incrémenteurs peuvent avoir le événement comme clé et le montant à incrémenter comme valeur :
 
    ```js
    "levels completed":"6"
