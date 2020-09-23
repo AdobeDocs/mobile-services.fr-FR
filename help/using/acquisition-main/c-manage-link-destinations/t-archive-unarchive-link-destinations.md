@@ -5,10 +5,13 @@ seo-description: Sur la page Destinations de lien, vous pouvez modifier, archive
 seo-title: Gestion des destinations de lien
 solution: Experience Cloud,Analytics
 title: Gestion des destinations de lien
-topic: Mesures
+topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +31,7 @@ Pour afficher la page Gérer les destinations de lien, procédez comme suit :
 
    * **Modifier**
 
-      Pour modifier la destination d’un lien, cliquez sur son nom dans la liste, puis modifiez les champs pertinents. Pour plus d’informations, voir [Création d’une destination de lien](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+      Pour modifier une destination de lien existante, cliquez sur son nom dans la liste, puis modifiez les champs appropriés. Pour plus d’informations, voir [Création d’une destination de lien](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
       >[!IMPORTANT]
       >
@@ -49,6 +52,7 @@ Pour afficher la page Gérer les destinations de lien, procédez comme suit :
       1. Cliquez sur **[!UICONTROL Afficher l’archive]**.
       1. Cochez une ou plusieurs cases en regard des noms des liens que vous souhaitez désarchiver.
       1. Cliquez sur **[!UICONTROL Désarchiver sélection]**.
+
       L’option **[!UICONTROL Afficher l’archive]** ne s’affiche que si vous avez précédemment archivé des destinations de lien.
 
    * **Supprimer**
