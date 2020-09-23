@@ -5,10 +5,13 @@ seo-description: Vous pouvez utiliser ces informations pour configurer les optio
 seo-title: Configuration de la messagerie push
 solution: Experience Cloud,Analytics
 title: Configuration de la messagerie push
-topic: Mesures
+topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: ht
-source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 99%
 
 ---
 
@@ -19,9 +22,9 @@ Vous pouvez utiliser ces informations pour configurer les options des services p
 
 Avant de configurer la messagerie push, effectuez les tâches préalables requises dans [Conditions préalables requises pour activer la messagerie push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
 
-* **Étude de la suite de rapports**
+* **Considérations sur les Report Suites**
 
-   Vous pouvez configurer une application de la boutique d’applications pour Apple et une pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour l’environnement de production et une pour l’environnement de développement, configurez une nouvelle application de la boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
+   Vous pouvez configurer une application de boutique d’applications pour Apple et une application pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour un environnement de production et une pour un environnement de développement, configurez une nouvelle application de boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
 >[!IMPORTANT]
 >
