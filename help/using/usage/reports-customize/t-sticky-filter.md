@@ -1,21 +1,24 @@
 ---
-description: Créez un filtre couvrant différents rapports afin de visualiser le comportement d’un segment particulier par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
+description: Créez un filtre qui s’étend sur différents rapports afin de visualiser les performances d’un segment particulier sur l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
 keywords: mobile
-seo-description: Créez un filtre couvrant différents rapports afin de visualiser le comportement d’un segment particulier par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
+seo-description: Créez un filtre qui s’étend sur différents rapports afin de visualiser les performances d’un segment particulier sur l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
 seo-title: Ajout d’un filtre d’attractivité
 solution: Experience Cloud,Analytics
 title: Ajout d’un filtre d’attractivité
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 72%
 
 ---
 
 
 # Ajout d’un filtre bascule{#add-sticky-filter}
 
-Créez un filtre couvrant différents rapports afin de visualiser le comportement d’un segment particulier par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
+Créez un filtre qui s’étend sur différents rapports afin de visualiser les performances d’un segment particulier sur l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
 
 L’exemple suivant permet d’ajouter des filtres bascules pour les systèmes d’exploitation iOS et Android dans le rapport **[!UICONTROL Utilisateurs et sessions]**, mais ces instructions peuvent s’appliquer à n’importe quels autres rapports et mesures.
 
