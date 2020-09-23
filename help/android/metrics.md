@@ -5,10 +5,13 @@ seo-description: Mesures et dimensions pouvant être évaluées automatiquement 
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ Cette section donne des informations sur les mesures et dimensions pouvant être
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -28,7 +31,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 ## Mesures et dimensions de cycle de vie{#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Une fois configurées, les mesures de cycle de vie sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox et en tant que signal pour la gestion de l’audience. Analytics et Target utilisent le même format, tandis que la gestion de l’audience utilise un préfixe différent pour chaque mesure.
+Une fois configurées, les mesures de cycle de vie sont envoyées dans des paramètres de données contextuelles à Analytics, dans des paramètres à Cible avec chaque appel de mbox et en tant que signal à la gestion des audiences. Analytics et Cible utilisent le même format, tandis que la gestion des audiences utilise un préfixe différent pour chaque mesure.
 
 Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi de cycle de vie sont automatiquement capturées et consignées à l’aide de la mesure ou de la dimension répertoriée, et les exceptions sont notées.
 
@@ -72,7 +75,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Lancements**
 
-   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la reprise depuis l’arrière-plan de l’application lorsque le délai d’expiration de la session du cycle de vie a été dépassé.
+   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché sur un CV en arrière-plan lorsque le délai d’expiration de la session de cycle de vie est dépassé.
 
    >[!IMPORTANT]
    >
@@ -316,21 +319,21 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
 
 * **Support de campagne**
 
-   Support marketing, une bannière ou un courrier électronique par exemple. Renseigné par l’acquisition des applications mobiles.
+   Support marketing, tel qu’une bannière ou un courriel. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.medium`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_medium`
 
 * **Source de campagne**
 
-   Référent original, une newsletter ou un réseau de médias sociaux par exemple. Renseigné par l’acquisition des applications mobiles.
+   Parrain d’origine, tel qu’un bulletin d’information ou un réseau de médias sociaux. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.source`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_source`
 
 * **Termes de campagne**
 
-   Mots-clés ou autres termes payés dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
+   Mots-clés payants ou autres termes dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.term`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_term`
