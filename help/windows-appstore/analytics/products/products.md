@@ -1,20 +1,23 @@
 ---
-description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products directement sur l’appel de serveur.
-seo-description: La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products directement sur l’appel de serveur.
-seo-title: Products variable
-solution: Marketing Cloud,Analytics
-title: Variable Produits
-topic: Développeur et mise en œuvre
+description: Impossible de définir la variable products à l'aide de règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
+seo-description: Impossible de définir la variable products à l'aide de règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
+seo-title: Variable products
+solution: Experience Cloud,Analytics
+title: Variable products
+topic: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 13%
 
 ---
 
 
-# Products variable{#products-variable}
+# Variable products {#products-variable}
 
-La variable products ne peut pas être définie à l’aide des règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir la variable products directement sur l’appel de serveur.
+Impossible de définir la variable products à l&#39;aide de règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
 
 To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products`*:
 
@@ -42,8 +45,8 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* is set directly on the image request, and the other variables are set as context data. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide des règles de traitement :
+*`products`* est définie directement sur la demande d’image, tandis que les autres variables sont définies en tant que données contextuelles. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide de règles de traitement :
 
 ![](assets/products-procrules.png)
 
-You do not need to map the *`products`* variable using processing rules since it is set directly on the image request by the SDK.
+Il n’est pas nécessaire de mapper la *`products`* variable à l’aide de règles de traitement, car elle est directement définie sur la demande d’image par le SDK.
