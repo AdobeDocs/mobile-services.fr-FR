@@ -5,8 +5,11 @@ seo-description: Les informations suivantes vous aident à dépanner les tests d
 seo-title: Dépannage des tests d’Acquisition
 solution: Experience Cloud,Analytics
 title: Dépannage des tests d’Acquisition
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 100%
 
 ---
 
