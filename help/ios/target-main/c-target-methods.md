@@ -2,13 +2,13 @@
 description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
 seo-description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
 seo-title: Méthodes Target pour iOS pour Adobe Mobile Services
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Target pour iOS
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
