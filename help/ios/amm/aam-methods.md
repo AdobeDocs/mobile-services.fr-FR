@@ -4,10 +4,13 @@ seo-description: Cette section répertorie les méthodes Audience Manager fourn
 seo-title: Méthodes Audience Manager
 solution: Experience Cloud,Analytics
 title: Méthodes Audience Manager
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 80%
 
 ---
 
@@ -70,14 +73,14 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   Définit les DPID et DPUUID. Une fois définis, les deux identifiants sont ajoutés à chaque signal.
+   Définit les DPID et DPUUID. Une fois définies, les deux sont ajoutées à chaque signal.
 
-   * L’**identifiant du fournisseur de données (DPID)** est l’identifiant du partenaire fournisseur de données affecté par Audience Manager.
-   * L’**identifiant de l’utilisateur unique du fournisseur de données (DPUUID)** est l’identifiant unique du fournisseur de données pour l’utilisateur.
+   * L’ID de fournisseur de **données (DPID)** est l’ID de partenaire de données qui est attribué par Audience Manager.
+   * L’ID utilisateur unique du fournisseur de **données (DPUUID)** est l’ID unique du fournisseur de données pour l’utilisateur.
 
       >[!IMPORTANT]
       >
-      >Avant la version 4.13.x, le DPUUID n’était pas codé automatiquement. À compter de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis recode cette valeur. Ce processus permet au SDK de préserver la rétrocompatibilité.
+      >Avant la version 4.13.x, le DPUUID n’était pas codé automatiquement. À partir de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis réencoder cette valeur. Ce processus permet de s’assurer que le SDK ne rompt pas la compatibilité ascendante.
 
    * Voici la syntaxe de cette méthode :
 
