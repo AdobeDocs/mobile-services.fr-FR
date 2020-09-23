@@ -1,29 +1,32 @@
 ---
-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut aussi créer un lien unique afin d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon ce qui convient le mieux.
+description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
 keywords: mobile
-seo-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut aussi créer un lien unique afin d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon ce qui convient le mieux.
+seo-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
 seo-title: Acquisition
 solution: Experience Cloud,Analytics
 title: Acquisition
-topic: Mesures
+topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 84%
 
 ---
 
 
 # Acquisition {#acquisition}
 
-Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut aussi créer un lien unique afin d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon ce qui convient le mieux.
+Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur [Launch](https://launch.adobe.com/).
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -54,6 +57,6 @@ Les rapports d’acquisition suivants exposent les informations concernant les p
 
    À noter :
 
-   * Cliquez sur les flèches dans les en-têtes de colonne pour trier les données par ordre croissant ou décroissant.
+   * Vous pouvez cliquer sur les icônes de flèche dans les en-têtes de colonne pour trier les données par ordre croissant ou décroissant.
    * Pour exporter les données vers un document PDF, vous pouvez cliquer sur **[!UICONTROL Télécharger]**.
    ![](assets/acquisition_name.png)
