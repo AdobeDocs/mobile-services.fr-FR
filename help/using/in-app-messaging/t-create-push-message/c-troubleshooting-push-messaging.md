@@ -3,13 +3,13 @@ description: Ces informations peuvent vous aider à résoudre les problèmes li�
 keywords: mobile
 seo-description: Ces informations peuvent vous aider à résoudre les problèmes liés aux messages push.
 seo-title: Résolution des problèmes liés aux messages push
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Résolution des problèmes liés aux messages push
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
