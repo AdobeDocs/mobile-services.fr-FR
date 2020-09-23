@@ -4,10 +4,13 @@ seo-description: Si l’application ouvre un contenu de web mobile, assurez-vous
 seo-title: Suivi des visiteurs entre une application et le web mobile
 solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +21,7 @@ Si l’application ouvre un contenu de web mobile, assurez-vous que les visiteur
 
 ## Identifiants visiteurs dans les applications
 
-Le SDK Android génère un ID visiteur unique lorsqu’une application est installée. Cet ID est stocké dans la mémoire persistante de l’appareil mobile, envoyé avec chaque accès et supprimé uniquement lorsque l’utilisateur désinstalle l’application.
+Le SDK Android génère un identifiant de visiteur unique lorsqu’une application est installée. Cet identifiant est stocké dans la mémoire persistante du périphérique mobile, est envoyé avec chaque accès et n’est supprimé que lorsque l’utilisateur désinstalle l’application.
 
 >[!TIP]
 >
@@ -59,7 +62,7 @@ Pour utiliser le même identifiant visiteur pour l’application et le Web mobil
    });
    ```
 
-Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une requête de nouvel identifiant à Adobe. Le code utilise le MID transmis pour effectuer le suivi du visiteur.
+Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une demande à l’Adobe pour un nouvel ID. Le code utilise le MID transmis pour effectuer le suivi du visiteur.
 
 Pour les accès depuis le contenu web mobile, vérifiez que le paramètre `mid` existe pour chaque accès et que cette valeur correspond au paramètre `mid` envoyé par le code de l’application.
 
