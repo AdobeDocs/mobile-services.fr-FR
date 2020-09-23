@@ -2,13 +2,13 @@
 description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
 seo-description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
 seo-title: Méthodes de services d’identification Adobe Experience Platform
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
