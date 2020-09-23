@@ -4,21 +4,24 @@ seo-description: Il est possible de générer des liens d’acquisition avec des
 seo-title: Acquisition des applications mobiles
 solution: Experience Cloud,Analytics
 title: Acquisition des applications mobiles
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 100%
 
 ---
 
 
-# Acquisition des applications mobiles{#mobile-app-acquisition}
+# Acquisition des applications mobiles {#mobile-app-acquisition}
 
 Il est possible de générer des liens d’acquisition avec des codes de suivi uniques dans Adobe Mobile Services. Lorsqu’un utilisateur télécharge et exécute une application à partir de l’App Store d’Apple après avoir cliqué sur le lien généré, le SDK collecte et envoie automatiquement les données d’acquisition à Adobe Mobile Services.
 
-Vous **devez** disposer d’un SDK version 4.1 ou ultérieure pour utiliser l’acquisition.
+Pour utiliser Acquisition, vous **devez** disposer de la version 4.1 ou supérieure du SDK.
 
-Les liens d’acquisition doivent être créés dans Adobe Mobile Services. Pour en savoir plus, consultez la rubrique [Acquisition](/help/using/acquisition-main/acquisition-main.md).
+Les liens Acquisition doivent être créés dans Adobe Mobile Services. Pour en savoir plus, consultez la rubrique [Acquisition](/help/using/acquisition-main/acquisition-main.md).
 
 Les informations de cette section permettent au SDK d’envoyer les données d’acquisition depuis un lien d’acquisition.
 
