@@ -1,21 +1,24 @@
 ---
-description: Informations relatives à l’envoi de signaux et à la récupération de segments de visiteurs à partir d’Audience Manager.
-seo-description: Informations relatives à l’envoi de signaux et à la récupération de segments de visiteurs à partir d’Audience Manager.
+description: Informations destinées à vous aider à envoyer des signaux et à récupérer des segments de visiteur à partir de l’Audience Manager.
+seo-description: Informations destinées à vous aider à envoyer des signaux et à récupérer des segments de visiteur à partir de l’Audience Manager.
 seo-title: Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
 translation-type: tm+mt
-source-git-commit: 398299575a32d4fee4dcea22788839afa13a1a0f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 22%
 
 ---
 
 
-# Audience Manager{#audience-manager}
+# Audience Manager {#audience-manager}
 
-Informations relatives à l’envoi de signaux et à la récupération de segments de visiteurs à partir d’Audience Manager.
+Informations destinées à vous aider à envoyer des signaux et à récupérer des segments de visiteur à partir de l’Audience Manager.
 
-## Informations supplémentaires
+## Informations supplémentaires 
 
-+ [Audience Manager methods](/help/windows-appstore/audiencemgmt/audience-manager-methods.md)
++ [Méthodes Audience Manager](/help/windows-appstore/audiencemgmt/audience-manager-methods.md)
