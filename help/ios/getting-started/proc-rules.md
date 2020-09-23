@@ -4,10 +4,13 @@ seo-description: Les règles de traitement sont utilisées pour copier les donn�
 seo-title: Règles de traitement et données contextuelles.
 solution: Experience Cloud,Analytics
 title: Règles de traitement et données contextuelles.
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 48%
 
 ---
 
@@ -18,16 +21,16 @@ Les règles de traitement sont utilisées pour copier les données que vous envo
 
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
-* [Processing Rules Training](https://tv.adobe.com/embed/1181/16506/) (Formation aux règles de traitement) – Summit 2013
+* [Formation](https://tv.adobe.com/embed/1181/16506/) sur les règles de traitement au sommet 2013
 * Obtention de l’autorisation d’utiliser des règles de traitement
 
    Pour plus d’informations sur les règles de traitement, voir l’[Aperçu des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-Lors de l’utilisation des règles de traitement, prenez note des informations suivantes :
+Lorsque vous utilisez des règles de traitement, tenez compte des informations suivantes :
 
-* Regroupez les variables de données contextuelles à l’aide d’espaces de noms, car cela permet de conserver un ordre logique.
+* Regroupez vos variables de données contextuelles à l’aide d’espaces de nommage, car cela vous permet de conserver un ordre logique.
 
-   Si, par exemple, vous souhaitez collecter des informations sur un produit, vous pourriez définir les variables suivantes :
+   Par exemple, si vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
 
    ```js
    "product.type":"hat" 
@@ -35,27 +38,27 @@ Lors de l’utilisation des règles de traitement, prenez note des informations 
    "product.color":"blue"
    ```
 
-* Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, ce qui permet de voir rapidement les variables qui sont dans le même espace de noms.
+* Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, ce qui vous permet de voir rapidement quelles variables se trouvent dans le même espace de nommage.
 
-   Évitez de nommer les clés de données contextuelles en utilisant le numéro evar ou prop :
+   Evitez d’attribuer un nom aux clés de données contextuelles en utilisant la variable evar ou le numéro prop :
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   Ceci pourrait *quelque peu* vous faciliter la tâche lorsque vous exécutez le mappage unique dans les règles de traitement, mais la lisibilité sera réduite au cours du débogage et des futures mises à jour de code, qui pourront alors s’avérer plus complexes. Utilisez plusieurs des noms explicites pour les clés et les valeurs :
+   Cela peut faciliter *légèrement* le mappage ponctuel dans les règles de traitement, mais vous perdez la lisibilité lors du débogage et des futures mises à jour du code, ce qui peut s’avérer plus difficile. Utilisez plutôt des noms descriptifs pour les clés et les valeurs :
 
    ```js
    "username":"jimbo"
    ```
 
-* Les variables de contexte qui définissent les événements de compteur doivent être définies sur 1 :
+* Les variables contextuelles qui définissent les événements de compteur doivent être définies sur 1 :
 
    ```js
    "logon":"1"
    ```
 
-* Les variables de données contextuelles qui définissent les événements d’incrémentation peuvent avoir l’événement comme clé et le montant à incrémenter comme valeur :
+* Les variables de données contextuelles qui définissent les événements incrémenteurs peuvent avoir le événement comme clé et le montant à incrémenter comme valeur :
 
    ```js
    "levels completed":"6"
