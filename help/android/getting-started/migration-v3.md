@@ -5,10 +5,13 @@ seo-description: Ces informations vous aident à migrer de la version 2.x ou 3.
 seo-title: Migration vers la bibliothèque Android 4.x
 solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque Android 4.x
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 61%
 
 ---
 
@@ -21,19 +24,19 @@ Ces informations vous aident à migrer de la version 2.x ou 3.x de la biblioth�
 >
 >Le SDK utilise `SharedPreferences` pour stocker les données nécessaires au calcul d’utilisateurs uniques, de mesures de cycle de vie et d’autres données nécessaires dans le cadre du fonctionnement de base du SDK.  Si vous modifiez ou supprimez dans `SharedPreferences` des valeurs attendues par le SDK, il peut en résulter un comportement inattendu sous la forme de données incohérentes.
 
-Dans la bibliothèque version 4.x, les méthodes publiques sont consolidées dans un en-tête. En outre, toutes les fonctionnalités sont désormais accessibles par des méthodes de niveau de classe : ainsi, il n’est pas nécessaire d’effectuer le suivi des pointeurs, des instances ou des singletons.
+Dans la bibliothèque version 4.x, les méthodes publiques sont regroupées en un seul en-tête. En outre, toutes les fonctionnalités sont désormais accessibles par le biais de méthodes de niveau classe. Il n’est donc pas nécessaire de suivre les pointeurs, instances ou singularités.
 
 ## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Dans la version 4, vous ne pouvez plus affecter des variables telles que les événements, les eVars, les props, les héritiers et les listes dans votre application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
+Dans la version 4, vous ne pouvez plus affecter de variables telles que des événements, des eVars, des props, des héritiers et des listes dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
 
-Les avantages des règles de traitement sont les suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier la correspondance de vos données sans soumettre de mise à jour dans la boutique d’applications.
+* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
-* L’envoi de données supplémentaires a très peu d’impact.
+* L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mises en correspondance à l’aide des règles de traitement.
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement.
 
 >[!TIP]
 >
@@ -75,8 +78,8 @@ Les tableaux suivants répertorient les variables de configuration que vous deve
 
 ### Déplacement du fichier de configuration
 
-1. Déplacez la valeur définie pour la variable de la première colonne vers la variable de la deuxième colonne.
-1. Supprimez l’ancienne variable de configuration du code.
+1. Déplacez la valeur définie pour la variable dans la première colonne vers la variable dans la seconde colonne.
+1. Supprimez l’ancienne variable de configuration de votre code.
 
 ### Migration depuis la version 3.x
 
@@ -84,15 +87,15 @@ Pour migrer de la version 3.x vers la version 4, déplacez la valeur de la varia
 
 | Variable ou méthode de configuration | Variable du fichier `ADBMobileConfig.json` |
 |--- |--- |
-| setOfflineTrackingEnabled | "offlineEnabled" |
-| setOfflineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Supprimée, n’est plus utilisée. |
-| linkTrackEvents | Supprimée, n’est plus utilisée. |
+| setOfflineTrackingEnabled | &quot;offlineEnabled&quot; |
+| setOfflineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;devise&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
+| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
 
 ### Migration depuis la version 2.x
 
@@ -100,23 +103,23 @@ Pour migrer depuis la version 2.x vers la version 4.x, déplacez la valeur de 
 
 | Variable de configuration | Variable du fichier `ADBMobileConfig.json` |
 | --- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server", supprimez le préfixe `"https://"`. Le préfixe du protocole est ajouté automatiquement en fonction du paramètre "ssl". |
-| trackingServerSecure | Supprimée. Pour les connexions sécurisées, définissez "server", puis activez "ssl". |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Supprimée, n’est plus utilisée. |
-| linkTrackEvents | Supprimée, n’est plus utilisée. |
-| timestamp | Supprimée, ne peut plus être configurée. |
-| dc | Supprimée, n’est plus utilisée. |
-| userAgent | Supprimée, ne peut plus être configurée. |
-| dynamicVariablePrefix | Supprimée, n’est plus utilisée. |
-| visitorNamespace | Supprimée, n’est plus utilisée. |
-| usePlugins | Supprimée, n’est plus utilisée. |
-| useBestPractices  tous les appels à la mesure churn (getChurnInstance) | Supprimée, remplacée par des mesures de cycle de vie. |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
+| trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;serveur&quot;, puis activez &quot;ssl&quot;. |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;devise&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
+| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
+| timestamp | Supprimer, ne peut plus être configuré. |
+| dc | Supprimer, n&#39;est plus utilisé. |
+| userAgent | Supprimer, ne peut plus être configuré. |
+| dynamicVariablePrefix | Supprimer, n&#39;est plus utilisé. |
+| visitorNamespace | Supprimer, n&#39;est plus utilisé. |
+| usePlugins | Supprimer, n&#39;est plus utilisé. |
+| useBestPractices tous les appels à la mesure churn ( getChurnInstance) | Supprimée, remplacée par des mesures de cycle de vie. |
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -132,15 +135,15 @@ Le paramètre `contextData` pour ces deux méthodes est un `HashMap<String, Obje
 
 ## Événements, props et eVars
 
-Dans la version 4, vous ne pouvez plus affecter des variables telles que les événements, les eVars, les props, les héritiers et les listes directement dans votre application. Le SDK utilise désormais les données contextuelles et les règles de traitement pour faire correspondre les données de l’application aux variables Analytics pour la création de rapports.
+Dans la version 4, vous ne pouvez plus attribuer directement dans votre application des variables telles que des événements, des eVars, des props, des héritiers et des listes. Le SDK utilise désormais les données contextuelles et les règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
 
-Les avantages des règles de traitement sont les suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier la correspondance de vos données sans soumettre de mise à jour dans la boutique d’applications.
+* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
-* L’envoi de données supplémentaires a très peu d’impact.
+* L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mises en correspondance à l’aide des règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/android/getting-started/proc-rules.md).
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/android/getting-started/proc-rules.md).
 
 Les valeurs que vous avez affectées directement aux variables doivent être ajoutées à la table de hachage HashMap `data`. Cela signifie que les appels vers `setProp`, `setEvar`, ainsi que les attributions à des données contextuelles persistantes, doivent être supprimés et les valeurs doivent être ajoutées au paramètre `data`.
 
@@ -172,7 +175,7 @@ Remplacez la variable `visitorID` par un appel à `setUserIdentifier`.
 
 Le suivi hors ligne est activé dans le fichier `ADBMobileConfig.json` et le reste de la configuration hors ligne est effectué automatiquement.
 
-Supprimez les appels pour les méthodes suivantes :
+Supprimez les appels aux méthodes suivantes :
 
 **Version 3.x**
 
