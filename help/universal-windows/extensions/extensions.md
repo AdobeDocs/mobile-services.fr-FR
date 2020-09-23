@@ -1,21 +1,24 @@
 ---
-description: Informations pour vous aider à utiliser les extensions avec le SDK Plateforme Windows universelle pour les solutions Experience Cloud.
-seo-description: Informations pour vous aider à utiliser les extensions avec le SDK Plateforme Windows universelle pour les solutions Experience Cloud.
+description: Informations destinées à vous aider à utiliser les extensions avec le SDK de plateforme Windows universelle pour les solutions Experience Cloud.
+seo-description: Informations destinées à vous aider à utiliser les extensions avec le SDK de plateforme Windows universelle pour les solutions Experience Cloud.
 seo-title: Extensions
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Extensions
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 94bde8cf-f9d5-4374-a9a1-c2c3509cdbb7
 translation-type: tm+mt
-source-git-commit: a161a4a2f2a46c351874ad9569be694e1a04333f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 7%
 
 ---
 
 
 # Extensions {#extensions}
 
-Informations pour vous aider à utiliser les extensions avec le SDK Plateforme Windows universelle pour les solutions Experience Cloud.
+Informations destinées à vous aider à utiliser les extensions avec le SDK de plateforme Windows universelle pour les solutions Experience Cloud.
 
-## Informations supplémentaires
+## Informations supplémentaires 
 
-+ [Windows Visual Studio extensions for Experience /Users/Cloud Solutions 4.x SDK](/help/universal-windows/extensions/win-vse-4x.md)
++ [Extensions Windows Visual Studio pour Experience /Users/Cloud Solutions SDK 4.x](/help/universal-windows/extensions/win-vse-4x.md)
