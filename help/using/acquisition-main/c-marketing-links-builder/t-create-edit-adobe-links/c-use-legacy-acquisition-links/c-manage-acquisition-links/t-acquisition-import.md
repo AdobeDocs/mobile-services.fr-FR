@@ -5,10 +5,13 @@ seo-description: Importez ou exportez des liens d’acquisition si vous préfér
 seo-title: Importation ou exportation de liens d’acquisition
 solution: Experience Cloud,Analytics
 title: Importation ou exportation de liens d’acquisition
-topic: Mesures
+topic: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 Si vous préférez utiliser les liens à l’aide d’un fichier .csv au lieu de l’interface utilisateur d’Adobe Mobile Services, vous pouvez importer ou exporter des liens d’acquisition.
 
-1. Cliquez sur **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Gérer les liens d’acquisition]**.
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
 1. Cliquez sur **[!UICONTROL Importer]** et effectuez l’une des tâches suivantes :
 
    * Recherchez et sélectionnez le fichier à charger vers Mobile Services.
