@@ -5,10 +5,13 @@ seo-description: Ce module externe permet d’envoyer des appels AppMeasurement 
 seo-title: Présentation du module externe PhoneGap
 solution: Experience Cloud,Analytics
 title: Présentation du module externe PhoneGap
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ Ce module externe permet d’envoyer des appels AppMeasurement pour Android à p
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
