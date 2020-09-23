@@ -1,30 +1,33 @@
 ---
-description: Liste des méthodes Target fournies par la bibliothèque Windows 8.1 Universal App Store.
-seo-description: Liste des méthodes Target fournies par la bibliothèque Windows 8.1 Universal App Store.
+description: Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
+seo-description: Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
 seo-title: Méthodes Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Target
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 42%
 
 ---
 
 
 # Méthodes Target {#target-methods}
 
-List of Target methods provided by the Windows 8.1 Universal App Store library.
+Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Le préfixe des méthodes Analytics est « Target ».
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Cible&quot;.
 
 [Les mesures de cycle de vie](/help/windows-appstore/metrics.md) sont envoyées sous la forme de paramètres à chaque chargement de mbox.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
 
-## Référence de classe : TargetLocationRequest
+## Référence de classe : TargetLocationRequest
 
 ### Propriétés
 
@@ -68,9 +71,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 }
 ```
 
-* **LoadRequest (winJS : loadRequest)**
+* **LoadRequest (winJS: loadRequest)**
 
-   Envoie `request` à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un bloc `callback`.
+   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -87,9 +90,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       });
       ```
 
-* **CreateRequest (winJS : createRequest)**
+* **CreateRequest (winJS: createRequest)**
 
-   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Voici la syntaxe de cette méthode :
 
@@ -106,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS : createOrder &#x200B; ConfirmRequest)**
 
-   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * Voici la syntaxe de cette méthode :
 
@@ -121,9 +124,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm", "order", "47.88", "3722", null); 
       ```
 
-* **ClearCookies (winJS : clearCookies)**
+* **ClearCookies (winJS: clearCookies)**
 
-   Efface les cookies Target pour l’application sur l’appareil en cours d’utilisation.
+   Efface les cookies de Cible de l’application sur le périphérique actuel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -139,7 +142,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId (winJS : getPcId)**
 
-   Renvoie le cookie d’ID de PC pour l’appareil en cours d’utilisation.
+   Renvoie le cookie d&#39;ID de PC pour le périphérique actuel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -155,7 +158,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId (winJS : getSessionId)**
 
-   Renvoie le cookie d’ID de session pour l’appareil en cours d’utilisation.
+   Renvoie le cookie ID de session pour le périphérique actuel.
 
    * Voici la syntaxe de cette méthode :
 
