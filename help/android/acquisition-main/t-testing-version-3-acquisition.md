@@ -3,12 +3,15 @@ description: Ces informations vous expliquent comment rediriger un lien de campa
 keywords: android;library;mobile;sdk
 seo-description: Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
 seo-title: Test d’Acquisition version 3
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Test d’Acquisition version 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: ht
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +22,9 @@ Ces informations vous expliquent comment rediriger un lien de campagne Acquisiti
 
 >[!IMPORTANT]
 >
->L’acquisition dans V 3 fait référence aux liens d’acquisition que vous créez avec le Créateur d’acquisitions dans l’interface utilisateur Adobe Mobile Services. Pour utiliser cette fonctionnalité, vous devez effectuer la mise à niveau vers le SDK Android 4.x pour solutions Experience Cloud 4.6.0 ou version supérieure.
+>L’acquisition dans V 3 fait référence aux liens d’acquisition que vous créez avec le Créateur d’acquisitions dans l’interface utilisateur Adobe Mobile Services. Pour utiliser cette fonctionnalité, vous devez effectuer la mise à niveau vers Android SDK 4.x pour les solutions Experience Cloud 4.6.0 ou versions ultérieures.
 
-Si l’application mobile ne figure pas encore dans Google Play, lors de la création du lien de campagne, vous pouvez sélectionner n’importe quelle application mobile comme destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, puis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Le test aller-retour de l’acquisition de l’application mobile requiert la simulation de ce type de diffusion.
+Si l’application mobile n’est pas encore dans Google Play, lors de la création du lien de la campagne, vous pouvez sélectionner n’importe quelle application mobile comme destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, qui sont transmis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Les tests d’acquisition d’applications mobiles nécessitent la simulation de ce type de diffusion.
 
 >[!IMPORTANT]
 >
@@ -31,7 +34,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 
 1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/android/acquisition-main/acquisition.md) et assurez-vous que vous avez correctement mis en œuvre le récepteur de diffusion pour `INSTALL_REFERRER`.
 
-1. Dans l’interface utilisateur d’Adobe Mobile Services, cliquez sur **[!UICONTROL Acquisition]** >**[!UICONTROL  Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition qui définit Google Play comme destination des appareils Android.
+1. Dans l’interface utilisateur d’Adobe Mobile Services, cliquez sur **[!UICONTROL Acquisition]** > **[!UICONTROL Générateur de liens marketing]**, puis générez une URL de lien marketing d’acquisition qui définit Google Play comme destination des appareils Android.
 
    Pour obtenir plus d’informations, voir [Générateur de liens marketing](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -68,8 +71,8 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 
    | Paramètre | Valeur |
    |--- |--- |
-   | acquisition | Le serveur doit être `c00.adobe.com`. *`appid`*doit être égal à l’`appid`de votre lien d’acquisition. |
-   | analytics | À des fins de test, définissez le délai d’expiration du référent afin que la durée soit suffisante (60 secondes ou moins) pour permettre l’envoi manuel de la diffusion. Vous pouvez restaurer le délai d’expiration d’origine après le test. |
+   | acquisition | Le serveur doit être `c00.adobe.com`. *`appid`* doit être égal à l’`appid` de votre lien d’acquisition. |
+   | analytics | À des fins de test, définissez le délai d’expiration du parrain pour permettre l’envoi manuel de la diffusion pendant une durée suffisante (60 secondes ou plus). Vous pouvez restaurer le paramètre d’expiration d’origine après le test. |
 
 1. Connectez l’appareil à un ordinateur, désinstallez puis réinstallez l’application.
 1. Lancez l’interpréteur de commandes ADB, puis l’application sur l’appareil.
@@ -81,6 +84,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    1. Remplacez `com.adobe.android` par le nom de module de votre application.
    1. Remplacez la référence du récepteur par celle de l’emplacement du récepteur de suivi de la campagne dans l’application.
    1. Remplacez les valeurs associées à `utm_content`.
+
    Si la diffusion est réussie, vous pouvez vous attendre à une réponse similaire à l’exemple suivant :
 
    `Broadcasting: Intent
@@ -93,9 +97,9 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-Si vous ne voyez pas les journaux ci-dessus, assurez-vous que vous avez exécuté les étapes 6 à 12.
+Si vous ne voyez pas les journaux ci-dessus, vérifiez que vous avez suivi les étapes 6 à 12.
 
-Le tableau suivant répertorie les informations supplémentaires sur les erreurs possibles :
+Le tableau suivant contient des informations supplémentaires sur les erreurs possibles :
 
 | Erreur | Description |
 |--- |--- |
@@ -103,26 +107,26 @@ Le tableau suivant répertorie les informations supplémentaires sur les erreurs
 | Analytics - Unable to parse response (*a JSON Response*). | La chaîne JSON est incorrecte. |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | Absence du paramètre contextData dans la réponse. |
 | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` n’est pas inclus dans contextData. |
-| Analytics - Acquisition referrer timed out. | Échec d’obtention de la réponse dans la durée définie par `referrerTimeout`. Augmentez la valeur et réessayez.  Assurez-vous que vous avez ouvert le lien d’acquisition avant d’installer l’application. |
+| Analytics - Acquisition referrer timed out. | Échec d’obtention de la réponse dans la durée définie par `referrerTimeout`. Augmentez la valeur et réessayez.  Assurez-vous également d’avoir ouvert le lien d’acquisition avant d’installer l’application. |
 
 À noter :
 
-* Les accès envoyés depuis l’application peuvent être surveillés à l’aide des outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
+* Les accès envoyés depuis l’application peuvent être surveillés à l’aide d’outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
 * Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
 
-* Un correctif de bogue a été publié pour Acquisition sur Android 4.8.2.
+* Un correctif de bogue a été publié pour l’acquisition sur Android 4.8.2.
 
-   Avant le test, mettez à niveau le SDK vers la version la plus récente.
+   Avant de tester, mettez à niveau le SDK vers la dernière version.
 
 * Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 12.
 
-   **Installation de l’outil Java**
+   **Installation de l’outil Java**
 
 Pour installer l’outil Java, procédez comme suit :
 
 1. Téléchargez le fichier [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip).
 
-1. Extrayez le fichier .jar.
+1. Extrayez le fichier .jar.
 
    Vous pouvez exécuter le fichier sur la ligne de commande.
 
