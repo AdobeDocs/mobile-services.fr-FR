@@ -1,21 +1,24 @@
 ---
-description: Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la remise immédiate ou ultérieure d’un message push ou sa diffusion selon un schéma récurrent (quotidien, hebdomadaire ou mensuel).
+description: Dans l’interface utilisateur de Adobe Mobile Services, vous pouvez planifier la remise immédiate d’un message push, qui sera diffusé ultérieurement et en tant que événement récurrent. Ces événements peuvent être planifiés sur une base quotidienne, hebdomadaire ou mensuelle.
 keywords: mobile
-seo-description: Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la remise immédiate ou ultérieure d’un message push ou sa diffusion selon un schéma récurrent (quotidien, hebdomadaire ou mensuel).
+seo-description: Dans l’interface utilisateur de Adobe Mobile Services, vous pouvez planifier la remise immédiate d’un message push, qui sera diffusé ultérieurement et en tant que événement récurrent. Ces événements peuvent être planifiés sur une base quotidienne, hebdomadaire ou mensuelle.
 seo-title: 'Planification : message push'
 solution: Experience Cloud,Analytics
 title: 'Planification : message push'
-topic: Mesures
+topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 51%
 
 ---
 
 
 # Planification : messages push{#schedule-push-message}
 
-Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la remise immédiate ou ultérieure d’un message push ou sa diffusion selon un schéma récurrent (quotidien, hebdomadaire ou mensuel).
+Dans l’interface utilisateur de Adobe Mobile Services, vous pouvez planifier la remise immédiate d’un message push, qui sera diffusé ultérieurement et en tant que événement récurrent. Ces événements peuvent être planifiés sur une base quotidienne, hebdomadaire ou mensuelle.
 
 >[!TIP]
 >
@@ -28,9 +31,9 @@ Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier
 * Vous pouvez modifier un message programmé des façons suivantes :
 
    * Repousser à une date ultérieure.
-   * Modifier l’intervalle de répétition
+   * Remplacez l’intervalle de répétition par un autre intervalle.
 
-      Par exemple, si vous aviez un message envoyé tous les jours, vous pouvez le basculer en envoi hebdomadaire.
+      Si, par exemple, vous aviez à l’origine un message qui était envoyé tous les jours, vous pouvez passer à la fréquence hebdomadaire.
 
 ## Avant de planifier des messages push récurrents
 
@@ -46,16 +49,16 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
    * **[!UICONTROL Le 7 de chaque mois]**
    * **[!UICONTROL Le 1er samedi de chaque mois]**
 
-* Les messages push sont programmés et envoyés d’après le Temps moyen de Greenwich (GMT).
+* Les messages Push sont programmés et envoyés selon l&#39;heure de Greenwich Mean (GMT).
 
-   Par exemple, si vous avez choisi d’envoyer un message récurrent chaque samedi à 12 h (midi) **PST**, à compter du 7 octobre, le message sera, en fait, envoyé le samedi à 19 h **GMT**.
-* Les messages sont envoyés de façon différente si vous vous situez aux États-Unis, en Europe ou en Asie.
+   Par exemple, si vous avez planifié l’envoi d’un message récurrent tous les samedis à 12h00 (midi) **PST**, à partir du 7 octobre, le message sera en fait envoyé le samedi à 19h00 **GMT**.
+* Les messages sont envoyés différemment selon que vous vous trouvez aux États-Unis, en Europe ou en Asie.
 
-   Par exemple, si vous êtes situé à San José, Californie, et que vous programmez un message pour qu’il soit envoyé le ***31 octobre*** à **17 h 30 PST**, le message sera, en fait, envoyé le ***1er novembre*** à 00 h 30 **GMT**. Si vous êtes situé à Tokyo, et que vous programmez un message pour qu’il soit envoyé le ***1er janvier*** à 5 h 30, il sera envoyé le ***31 décembre*** à 20 h 30 **GMT**.
-* Les messages sont envoyés une heure à l’avance ou en retard en fonction des heures d’été et d’hiver.
-* Si vous regardez vos rapports de messages push, le message est affiché dans l’heure locale de votre système.
+   Par exemple, si vous vous trouvez à San Jose, en Californie, et que vous planifiez l’envoi d’un message le 31 ***octobre*** à 17h30 **PST**, le message est en fait envoyé le 1 ****** novembre à 12h30 **GMT.** Si vous vous trouvez à Tokyo, et que vous programmez l&#39;envoi d&#39;un message le 1er ***janvier*** à 5h30 du matin, il sera envoyé le 31 ***décembre*** à 20h30 **GMT**.
+* Les messages Push sont envoyés une heure plus tôt ou plus tard, selon le moment où la lumière du jour s&#39;économise.
+* Lorsque vous consultez le rapport des messages Push, le message s’affiche dans le fuseau horaire local de votre système.
 
-   Par exemple, si votre heure de départ est 12 h **PST**, même si le message est envoyé 19 h **GMT**, le rapport de messages affichera 12 h **PST**.
+   Par exemple, si l&#39;heure de votre début est 12h00 ( **heure du Pacifique**), bien que le message soit envoyé à 19h **GMT**, le rapport de messages affiche l&#39;heure envoyée sous la forme de 12h00 ( **heure du Pacifique**).
 
 ## Planification d’un message push récurrent {#section_675BD754E5A04423A1751193698A978F}
 
@@ -68,7 +71,7 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
    ![](assets/schedule-push-message.png)
 
 1. Si vous sélectionnez **[!UICONTROL Planifié]**, cliquez sur l’icône de calendrier, puis sélectionnez ou saisissez une date de début.
-1. Saisissez une heure. 
+1. Tapez une heure. 
 1. Dans **[!UICONTROL Répéter]**, sélectionnez l’une des options suivantes :
 
    * **[!UICONTROL Jamais]**
@@ -92,9 +95,9 @@ Vous **devez** comprendre les informations suivantes avant de programmer l’env
 
    * **[!UICONTROL Enregistrement et planification]**
 
-      Cette option envoie le message à une date et une heure programmées.
+      Cette option envoie le message le jour et l’heure planifiés.
 
-Pour envoyer le brouillon de message ultérieurement, effectuez l’une des tâches suivantes :
+Pour pousser le brouillon de message ultérieurement, effectuez l’une des tâches suivantes :
 
 * Cliquez sur **[!UICONTROL Gestion des messages]**, sélectionnez la case à cocher à côté du message, puis cliquez sur **[!UICONTROL Activer la sélection]**.
 * Cliquez sur **[!UICONTROL Enregistrer et envoyer]** pour enregistrer le message et l’envoyer.
