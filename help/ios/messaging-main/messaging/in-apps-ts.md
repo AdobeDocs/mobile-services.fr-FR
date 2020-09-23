@@ -3,13 +3,13 @@ description: Ces informations vous aideront à résoudre les problèmes liés à
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 seo-title: Dépannage de la messagerie intégrée (in-app)
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
