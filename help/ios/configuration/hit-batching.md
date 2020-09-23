@@ -4,10 +4,13 @@ seo-description: Le traitement par lot des accès permet aux applications dont l
 seo-title: Traitement par lot des accès
 solution: Experience Cloud,Analytics
 title: Traitement par lot des accès
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 89%
 
 ---
 
@@ -29,9 +32,9 @@ Pour activer le traitement par lot des accès, mettez à jour le fichier `ADBMob
 }
 ```
 
-Lorsque la valeur définie est supérieure à 0, le SDK place les accès en file d’attente tant que leur nombre est inférieur ou égal à *`batchLimit`*. Une fois ce seuil atteint, tous les accès de la file d’attente sont envoyés.
+Lorsque la valeur définie est supérieure à 0, le SDK place les accès en file d’attente tant que leur nombre est inférieur ou égal à *`batchLimit`*. Une fois ce seuil dépassé, tous les accès de la file d’attente sont envoyés.
 
-Les méthodes suivantes sont utilisées avec le traitement par lot des accès :
+Les méthodes suivantes sont utilisées avec le traitement par lot des accès :
 
 * `trackingGetQueueSize()` renvoie un `NSUInteger` correspondant au nombre d’accès actuellement placés en attente.
 * `trackingSendQueuedHits()` force la bibliothèque à envoyer tous les accès de la file d’attente, peu importe le nombre d’accès déjà en file d’attente.
