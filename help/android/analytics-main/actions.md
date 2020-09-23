@@ -1,20 +1,23 @@
 ---
-description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
-seo-description: Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
+description: Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
+seo-description: Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
 seo-title: Suivi des actions de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 88%
 
 ---
 
 
 # Suivi des actions d’application {#track-app-actions}
 
-Les actions sont les événements qui se produisent dans votre application Android et que vous souhaitez mesurer.
+Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
 
 Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez envoyer un appel `trackAction` à chaque nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Le suivi des actions n’est pas automatique. Par conséquent, vous devez appeler `trackAction` lorsqu’un événement dont vous souhaitez effectuer le suivi se produit, puis mettre en correspondance l’action avec un événement personnalisé.
 
@@ -66,6 +69,6 @@ Les valeurs de données contextuelles doivent être mappées à des variables pe
 | Interface | Rapport |
 |--- |--- |
 | Adobe Mobile Services | Rapport **[!UICONTROL Chemins d’accès des actions]**.  Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]** dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier. |
-| Rapports et analyses marketing | Rapport [!UICONTROL **Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
-| Analyses ad hoc | Rapport [!UICONTROL **Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Rapports et analyses marketing | Rapport **[!UICONTROL Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Analyses ad hoc | Rapport **[!UICONTROL Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
 
