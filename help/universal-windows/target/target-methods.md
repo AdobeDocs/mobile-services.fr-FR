@@ -2,12 +2,12 @@
 description: Liste des méthodes de Cible fournies par la bibliothèque de plateformes Windows universelles.
 seo-description: Liste des méthodes de Cible fournies par la bibliothèque de plateformes Windows universelles.
 seo-title: Méthodes Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Target
 topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
