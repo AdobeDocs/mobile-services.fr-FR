@@ -2,13 +2,13 @@
 description: Notes de mise à jour et problèmes connus pour les SDK Android 4.x pour les solutions Experience Cloud.
 seo-description: Notes de mise à jour et problèmes connus pour les SDK Android 4.x pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
