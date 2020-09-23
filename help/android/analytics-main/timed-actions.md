@@ -1,31 +1,34 @@
 ---
-description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
-seo-description: Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+seo-description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-title: Actions minutées
 solution: Experience Cloud,Analytics
 title: Actions minutées
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
-translation-type: ht
-source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 49%
 
 ---
 
 
 # Actions minutées{#timed-actions}
 
-Les actions minutées permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée dans chaque session et la durée totale entre toutes les sessions nécessaires pour terminer l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 
-Les mesures suivantes sont signalées pour les actions minutées :
+Les mesures suivantes sont rapportées pour les actions minutées :
 
 * Nombre total de secondes dans l’application entre le début et la fin (intersessions)
 * Nombre total de secondes entre le début et la fin (heure de l’horloge)
 
-Un rappel facultatif permet d’entreprendre des actions supplémentaires lorsque les actions minutées se terminent :
+Un rappel facultatif vous permet d’effectuer des actions supplémentaires lorsque l’action minutée se termine :
 
-* Exécuter du code et ajouter une logique : logique personnalisée facultative reposant sur les résultats de la durée.
-* Ajouter des données contextuelles avant de transmettre des durées.
-* Annuler un accès et des durées non encore envoyés.
+* Exécutez le code et ajoutez toute logique - optionnelle logique personnalisée basée sur les résultats de durée.
+* ajouter des données contextuelles avant de transmettre des durées.
+* Annuler l’accès et les durées non encore envoyées.
 
 ## Suivi des actions minutées {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
