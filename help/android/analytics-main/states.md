@@ -4,10 +4,13 @@ seo-description: Les états correspondent aux différents écrans ou affichages 
 seo-title: Suivi des états de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des états de l’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
@@ -68,11 +71,11 @@ Les valeurs de données contextuelles doivent être mappées à des variables pe
 
 ## Création de rapports d’états d’application {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Les états sont généralement affichés en utilisant un rapport de cheminement qui permet de voir comment les utilisateurs naviguent dans votre application, ainsi que les états les plus fréquemment affichés.
+Les états sont généralement affichés à l’aide d’un rapport de cheminement qui vous permet de déterminer comment les utilisateurs naviguent dans votre application et quels états sont les plus consultés.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Rapport **[!UICONTROL Afficher les états]**. Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. Un exemple de chemin est **[!UICONTROL Accueil]** &gt; **[!UICONTROL Paramètres]** &gt; **[!UICONTROL Flux]**. |
+| Adobe Mobile Services | Rapport **[!UICONTROL Afficher les états]**. Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **[!UICONTROL Pages]**, rapport **[!UICONTROL Pages vues]** et rapport **[!UICONTROL Chemin]**. |
 | Analyses ad hoc | Vous pouvez consulter les états sur les différents affichages des Pages au moyen de la dimension **[!UICONTROL Page]**, de la mesure **[!UICONTROL Pages vues]** et des rapports **[!UICONTROL Chemin]**. |
 
