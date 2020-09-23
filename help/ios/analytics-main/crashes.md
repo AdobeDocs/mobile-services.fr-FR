@@ -4,10 +4,13 @@ seo-description: Ces informations vous aident à comprendre le mode de suivi des
 seo-title: Suivi des blocages d’application
 solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +31,7 @@ Lorsque votre application est arrêtée avant d’avoir été mise en arrière-p
 
 iOS utilise des notifications système qui permettent aux développeurs de suivre et de gérer différents états et événements du cycle de vie de l’application.
 
-Le SDK iOS Adobe Mobile est doté d’un gestionnaire de notifications répondant à la notification `UIApplicationDidEnterBackgroundNotification`. Dans ce code, une valeur est définie et indique que l’utilisateur a mis l’application en arrière-plan. Au prochain lancement, si cette valeur n’est pas trouvée, un plantage est signalé.
+Le SDK iOS Adobe Mobile est doté d’un gestionnaire de notifications répondant à la notification `UIApplicationDidEnterBackgroundNotification`. Dans ce code, une valeur est définie qui indique que l’utilisateur a mis l’application en arrière-plan. Lors d’un lancement ultérieur, si cette valeur est introuvable, un blocage est signalé.
 
 ## Pourquoi Adobe mesure-t-il les plantages de cette façon ?
 
@@ -38,9 +41,9 @@ Les bibliothèques de rapport de plantages fournies par des sociétés comme Apt
 
 ## Qu’est-ce qui peut provoquer le signalement d’un faux blocage ?
 
-Les scénarios suivants sont connus pour causer par erreur le signalement d’un plantage par le SDK :
+Les scénarios suivants sont connus pour provoquer à tort un plantage qui est signalé par le SDK :
 
-* Si vous effectuez un débogage à l’aide de Xcode, un plantage peut survenir si vous lancez de nouveau l’application en avant-plan.
+* Si vous effectuez un débogage à l’aide de Xcode, le lancement de l’application à nouveau alors qu’elle est en premier plan entraîne un blocage.
 
    >[!TIP]
    >
@@ -59,11 +62,11 @@ Les scénarios suivants sont connus pour causer par erreur le signalement d’un
 
 Les procédures suivantes peuvent vous aider à empêcher que de faux plantages ne soient signalés :
 
-* Dans la version 4.8.6 du SDK iOS, du code a été ajouté pour mieux déterminer si une nouvelle session de cycle de vie est réellement souhaitée.
+* Dans le SDK iOS 4.8.6, du code a été ajouté pour mieux déterminer si une nouvelle session de cycle de vie est réellement souhaitée.
 
-   Ce code permet de corriger les faux plantages nº 2 et nº 3 de la section précédente.
+   Ce code corrige les faux blocages #2 et #3 dans la section précédente.
 
-* Veillez à procéder à votre développement avec des suites de rapports hors production, ce qui devrait empêcher que le plantage nº 1 ne survienne.
+* Assurez-vous d’effectuer votre développement par rapport aux suites de rapports hors production, ce qui devrait empêcher le faux plantage n° 1.
 * Ne supprimez et ne modifiez aucune valeur placée dans `NSUserDefaults` par le SDK Adobe Mobile.
 
    Si ces valeurs sont modifiées en dehors du SDK, les données reportées seront invalides.
