@@ -1,18 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Guide iOS de Mobile Services
+user-guide-title: Guide iOS pour Mobile Services
 breadcrumb-title: iOS Guide
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Mobile Services iOS Guide {#ios}
+# Guide iOS pour Mobile Services {#ios}
 
 + [SDK iOS 4.x pour solutions Experience Cloud](overview.md)
 + [Notes de mise à jour](rel-notes.md)
@@ -38,11 +38,11 @@ ht-degree: 97%
    + [Suivi des blocages d’application](analytics-main/crashes.md)
    + [Actions minutées](analytics-main/timed-actions.md)
    + [Valeur de durée de vie visiteur](analytics-main/lifetime-value.md)
-   + Variable products{#products-variable}
+   + Variable products {#products-variable}
       + [Variable products](analytics-main/products/products.md)
       + [Variable products avec des eVars de marchandisage et des événements spécifiques à un produit](analytics-main/products/products-variable-evars-events.md)
    + [Sérialisation d’événements](analytics-main/event-serialization.md)
-   + [Chemin ](analytics-main/video-qs.md)
+   + [Analyses des vidéo ](analytics-main/video-qs.md)
    + Postbacks {#postbacks}
       + [Présentation des postbacks](analytics-main/postback/postback.md)
       + [Exemple de postback](analytics-main/postback/postback-example.md)
@@ -52,7 +52,7 @@ ht-degree: 97%
    + [Présentation de l’acquisition](acquisition-main/acquisition-main.md)
    + [Acquisition des applications mobiles](acquisition-main/acquisition.md)
    + [Méthodes d’acquisition](acquisition-main/c-acquisition-methods.md)
-   + Suivi des liens profonds{#tracking-deep-links}
+   + Suivi des liens profonds {#tracking-deep-links}
       + [Suivi des liens profonds](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Suivi de liens profonds différés tiers](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [Évaluation de l’acquisition d’un lien marketing](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -61,10 +61,10 @@ ht-degree: 97%
    + [Publicités Search Ads d’Apple](acquisition-main/c-apple-search-ads.md)
 + Messagerie {#messaging-ios}
    + [Présentation de la messagerie](messaging-main/messaging-main.md)
-   + Messagerie in-app{#in-app-messaging}
+   + Messagerie in-app {#in-app-messaging}
       + [Messagerie in-app](messaging-main/messaging/messaging.md)
       + [Dépannage de la messagerie intégrée (in-app)](messaging-main/messaging/in-apps-ts.md)
-   + Messagerie Push{#push-messaging}
+   + Messagerie Push {#push-messaging}
       + [Messagerie Push](messaging-main/push-messaging/push-messaging.md)
       + [Mise en œuvre de la messagerie Push avec la création de liens profonds](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [Réception de notifications push enrichies](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
@@ -97,7 +97,7 @@ ht-degree: 97%
    + [ID d’application](reference/app-ids.md)
    + [Suivi des visiteurs entre une application et le web mobile](reference/hybrid-app.md)
    + [Versions des appareils iOS ](reference/device-versions.md)
-+ Confidentialité et Règlement général sur la protection des données{#privacy-gdpr-ios}
++ Confidentialité et Règlement général sur la protection des données {#privacy-gdpr-ios}
    + [Confidentialité et Règlement général sur la protection des données](c-mob-privacy-gdpr-ios/c-mob-privacy-gdpr-ios.md)
    + [Récupération des identifiants stockés](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
    + [Définition de l’état de souscription de l’utilisateur](c-mob-privacy-gdpr-ios/privacy.md)
