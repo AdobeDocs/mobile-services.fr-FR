@@ -1,13 +1,16 @@
 ---
-description: Consultez cette documentation de référence pour utiliser le SDK iOS avec les solutions Experience Cloud.
-seo-description: Consultez cette documentation de référence pour utiliser le SDK iOS avec les solutions Experience Cloud.
+description: Ce document de référence vous aide à utiliser le SDK iOS pour les solutions Experience Cloud.
+seo-description: Ce document de référence vous aide à utiliser le SDK iOS pour les solutions Experience Cloud.
 seo-title: Références relatives au SDK iOS
 solution: Experience Cloud,Analytics
 title: Références relatives au SDK iOS
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ Consultez les informations de cette section lorsque vous utilisez le SDK iOS av
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
