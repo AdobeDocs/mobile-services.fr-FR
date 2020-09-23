@@ -1,44 +1,46 @@
 ---
-description: Le SDK 4.x Boutique d’applications Windows 8.1 universelle pour solutions Experience Cloud permet de mesurer les applications natives Windows 8.1 et Windows Phone 8.1, de diffuser du contenu ciblé dans votre application et d’exploiter et collecter des données d’audience au moyen d’Audience Manager.
-seo-description: Le SDK 4.x Boutique d’applications Windows 8.1 universelle pour solutions Experience Cloud permet de mesurer les applications natives Windows 8.1 et Windows Phone 8.1, de diffuser du contenu ciblé dans votre application et d’exploiter et collecter des données d’audience au moyen d’Audience Manager.
-seo-title: SDK 4.x Boutique d’applications Windows 8.1 universelle pour solutions Experience Cloud
-solution: Marketing Cloud,Analytics
-title: SDK 4.x Boutique d’applications Windows 8.1 universelle pour solutions Experience Cloud
-topic: Développeur et mise en œuvre
+description: Le SDK Windows 8.1 Universal App Store 4.x pour les solutions Experience Cloud vous permet de mesurer les applications Windows 8.1 et Windows Phone 8.1 natives, de diffuser du contenu ciblé dans votre application et d’exploiter et de collecter des données d’audience par le biais de l’Audience Manager.
+seo-description: Le SDK Windows 8.1 Universal App Store 4.x pour les solutions Experience Cloud vous permet de mesurer les applications Windows 8.1 et Windows Phone 8.1 natives, de diffuser du contenu ciblé dans votre application et d’exploiter et de collecter des données d’audience par le biais de l’Audience Manager.
+seo-title: SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud
+solution: Experience Cloud,Analytics
+title: SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud
+topic: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 35%
 
 ---
 
 
-# SDK 4.x Boutique d’applications Windows 8.1 universelle pour solutions Experience Cloud{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
+# SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
-Le SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud vous permet de mesurer les applications Windows 8.1 et Windows Phone 8.1 natives, de diffuser du contenu ciblé dans votre application et d’exploiter et de collecter des données d’audience par le biais d’Audience Manager.
+Le SDK Windows 8.1 Universal App Store 4.x pour les solutions Experience Cloud vous permet de mesurer les applications Windows 8.1 et Windows Phone 8.1 natives, de diffuser du contenu ciblé dans votre application et d’exploiter et de collecter des données d’audience par le biais de l’Audience Manager.
 
-**Dernière mise à jour : 21 août 2015**
+**Dernière mise à jour : 21 août 2015**
 
-## Plates-formes prises en charge {#section_45978BF5C62E4986AAB7FFD96402BF2D}
+## Supported Platforms {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
-The following platforms are supported:
+Les plateformes suivantes sont prises en charge :
 
-* Windows 8.1 ou version ultérieure.
+* Windows 8.1 ou version ultérieure.
 
-* Windows Phone 8.1 ou version ultérieure.
+* Windows Phone 8.1 ou version ultérieure.
 
 ## IDE pris en charge {#section_03905798D74940C9A9F77285DA3F27D0}
 
-Visual Studio 2013 ou version ultérieure.
+Visual Studio 2013 ou version ultérieure.
 
-## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
+## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Initially, the Mobile service provides seamless integration of app analytics and targeting capabilities from Adobe Analytics and Adobe Target.
+Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications en provenance d’Adobe Analytics et d’Adobe Target.
 
-Pour en savoir plus, consultez la [documentation d’Adobe Mobile Services](/help/using/home.md).
+Learn more at [Adobe Mobile services documentation](/help/using/home.md).
 
 ## Utilisation de Bloodhound
 
 >[!IMPORTANT]
 >
->As of **April 30, 2017**, Adobe Bloodhound has been
-sunset. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
+>Depuis le **30 avril 2017**, Adobe Bloodhound fait l’objet d’une élimination progressive. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
