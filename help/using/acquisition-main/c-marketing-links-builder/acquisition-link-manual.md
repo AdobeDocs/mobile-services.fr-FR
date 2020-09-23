@@ -5,10 +5,13 @@ seo-description: En configurant manuellement les paramètres d’URL, vous pouve
 seo-title: Création manuelle de liens Acquisition
 solution: Experience Cloud,Analytics
 title: Création manuelle de liens Acquisition
-topic: Mesures
+topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: ht
-source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ Le schéma suivant illustre les composants d’un lien de suivi créé manuellem
 
 ![](assets/acquisition_url.png)
 
-Ce lien est configuré en vue d’exécuter une redirection spécifique à la plateforme vers la boutique Google Play ou l’App Store d’Apple pour une application mobile. Si la destination ne peut pas être déterminée, la boutique est par défaut configurée sur l’App Store d’Apple. Une fois l’application installée, la clé contextuelle personnalisée `my.custom.key:test` est jointe à l’accès à l’installation d’Analytics.
+Ce lien est configuré pour effectuer une redirection spécifique à la plate-forme vers la boutique Google Play ou l’Apple App Store pour une application mobile. Si la destination ne peut pas être déterminée, la boutique par défaut a été définie sur l’Apple App Store. Une fois l’application installée, la clé contextuelle personnalisée `my.custom.key:test` est jointe à l’accès à l’installation d’Analytics.
 
 Pour créer des liens manuellement, utilisez le format d’URL suivant :
 
@@ -38,7 +41,7 @@ Pour créer des liens manuellement, utilisez le format d’URL suivant :
 Assurez-vous d’utiliser le bon protocole pour les appareils iOS :
 
 * Appliquez le protocole **HTTP** si vous utilisez un SDK iOS antérieur à la version 4.7.0 ou si vous utilisez un SDK iOS version 4.7.0 ou ultérieure et que l’option **[!UICONTROL Utiliser HTTPS]** n’est **pas** sélectionnée sur la page Gérer les paramètres de l’application.
-* Appliquez le protocole **HTTPS** si vous utilisez un SDK iOS version 4.7.0 ou ultérieure et que l’option **[!UICONTROL Utiliser HTTPS]** **est** sélectionnée sur la page Gérer les paramètres de l’application.
+* Appliquez le protocole **HTTPS** si vous utilisez un SDK iOS version 4.7.0 ou ultérieure et que l’option **[!UICONTROL Utiliser HTTPS]****est** sélectionnée sur la page Gérer les paramètres de l’application.
 
 Les conditions suivantes ont été respectées :
 
