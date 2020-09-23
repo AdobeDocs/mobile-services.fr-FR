@@ -5,10 +5,13 @@ seo-description: Ce module externe permet d’envoyer des appels AppMeasurement 
 seo-title: Module externe PhoneGap
 solution: Experience Cloud,Analytics
 title: Module externe PhoneGap
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: ht
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +22,7 @@ Ce module externe permet d’envoyer des appels AppMeasurement pour iOS à parti
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -62,7 +65,7 @@ Pour inclure la bibliothèque AppMeasurement, procédez comme suit :
 
 ### Ajout des autorisations des applications
 
-La bibliothèque AppMeasurement exige de procéder comme suit :
+La bibliothèque AppMeasurement requiert les éléments suivants :
 
 1. Lancez Xcode IDE et ouvrez votre application.
 1. Effectuez un glisser-déplacer du dossier **[!UICONTROL Adobe Mobile]** vers votre projet Xcode, puis procédez comme suit :
@@ -70,7 +73,8 @@ La bibliothèque AppMeasurement exige de procéder comme suit :
    1. Sélectionnez **[!UICONTROL Copier les éléments dans le dossier du groupe de destination (si nécessaire)]**.
    1. Sélectionnez **[!UICONTROL Créer des groupes pour les dossiers ajoutés]**.
    1. Sélectionnez les cibles dans lesquelles vous voulez utiliser le code AppMeasurement et cliquez sur **[!UICONTROL Terminer]**.
-   ![](assets/xcode-settings.png){width="672"}
+
+   ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
 1. Dans l’onglet **[!UICONTROL Créer les phases]** de la cible de votre projet, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]**, puis ajoutez les bibliothèques suivantes :
 
