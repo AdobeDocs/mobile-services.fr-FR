@@ -1,25 +1,25 @@
 ---
-description: Informations relatives à l’Analytics vidéo.
-seo-description: Informations relatives à l’Analytics vidéo.
-seo-title: Chemin
-solution: Marketing Cloud,Analytics
-title: Chemin
+description: Informations relatives aux analyses vidéo.
+seo-description: Informations relatives aux analyses vidéo.
+seo-title: Analyses de vidéos
+solution: Experience Cloud,Analytics
+title: Analyses de vidéos
 topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 65%
+ht-degree: 71%
 
 ---
 
 
-# Chemin {#video-analytics}
+# Analyses de vidéos {#video-analytics}
 
-Informations relatives à l’Analytics vidéo.
+Informations relatives aux analyses vidéo.
 
-Les mesures vidéo sont décrites en détail dans le guide [Mesure audio et vidéo du Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html/) d’Adobe. Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de début rapide fournit un aperçu de base des tâches des développeurs ainsi que des exemples de code.
+Les mesures vidéo sont décrites en détail dans le guide [Mesure audio et vidéo en Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html/) . Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de début rapide fournit un aperçu de base des tâches des développeurs ainsi que des exemples de code.
 
 Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez des règles de traitement pour mapper les données contextuelles à une variable Analytics.
 
@@ -27,11 +27,11 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Obligatoire) Collecte le nom de la vidéo, tel qu&#39;il est spécifié dans l&#39;implémentation, lorsqu&#39;un visiteur vue la vidéo d&#39;une manière ou d&#39;une autre.Vous pouvez ajouter des classifications pour cette variable.
 
-   (**Facultatif**) La variable Custom Insight fournit des informations de cheminement vidéo.
+   (**Optional**) The Custom Insight variable provides video pathing information.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : Visite
-   * Custom Insight (s.prop, utilisé pour le cheminement vidéo)
+   * Custom Insight (s.prop, utilisée pour le cheminement vidéo)
 
 * **a.media.name**
 
@@ -45,13 +45,13 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
 
-   La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
+   La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
 
-   * début vidéo (lecture)
-   * début du segment
-   * fin de vidéo (arrêt)
+   * lorsque la vidéo démarre (lecture) ;
+   * lorsque le segment débute ;
+   * lorsque la vidéo prend fin (arrêt).
 
-   Analytics comptabilise la première vue de segment en début du segment, lorsque le visiteur début à regarder. vues de segments suivantes au début du segment.
+   Analytics comptabilise la première vue du segment au début du segment, lorsque le visiteur commence à regarder. Les vues des segments suivants démarrent au début des segments.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
@@ -198,7 +198,7 @@ property bool isMediaAd;
 
 * **Play (winJS : play)**
 
-   Effectue le suivi d&#39;une lecture multimédia pour l&#39;élément média nommé *`name`* au *décalage* donné (en secondes).
+   Effectue le suivi d&#39;une lecture multimédia pour l&#39;élément multimédia nommé *`name`* au *décalage* donné (en secondes).
 
    * Voici la syntaxe de cette méthode :
 
