@@ -5,10 +5,13 @@ seo-description: Vous pouvez utiliser ces informations pour vous aider à compre
 seo-title: Exemple de postback
 solution: Experience Cloud,Analytics
 title: Exemple de postback
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 100%
 
 ---
 
