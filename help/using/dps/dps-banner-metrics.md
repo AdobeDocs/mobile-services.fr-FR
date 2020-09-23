@@ -5,10 +5,13 @@ seo-description: Le rapport sur les mesures de bannière offre une visualisation
 seo-title: Mesures de bannière
 solution: Experience Cloud,Analytics
 title: Mesures de bannière
-topic: Mesures
+topic: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
-translation-type: ht
-source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
 
@@ -27,4 +30,4 @@ Par défaut, ce rapport affiche les mesures suivantes :
 * **[!UICONTROL Clics sur la bannière]** : nombre de fois où des utilisateurs ont cliqué sur la bannière.
 * **[!UICONTROL Impressions de la bannière]** : nombre de fois où une bannière a été vue (ou a été visible) sur une page de navigateur.
 
-Ce rapport est similaire au rapport **[!UICONTROL Technologie]**. Pour plus d’informations sur la navigation et l’utilisation des rapports radiaux, l’ajout de ventilations et de mesures, la création d’activités Target et de filtres bascules, ainsi que le partage de rapports, voir [Technologie](/help/using/usage/reports-technology.md). Les informations contenues dans cette rubrique peuvent être utilisées pour personnaliser le rapport **[!UICONTROL Mesures de bannière].**
+Ce rapport est similaire au rapport **[!UICONTROL Technologie]**. Pour plus d’informations sur la navigation et l’utilisation des rapports radiaux, l’ajout de ventilations et de mesures, la création d’activités Target et de filtres bascules, ainsi que le partage de rapports, voir [Technologie](/help/using/usage/reports-technology.md). Les informations contenues dans cette rubrique peuvent être utilisées pour personnaliser le rapport **[!UICONTROL Mesures de bannière]**.
