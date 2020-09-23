@@ -1,33 +1,36 @@
 ---
-description: Informations pour vous aider à utiliser le SDK Plateforme Windows universelle avec Adobe Analytics.
-seo-description: Informations pour vous aider à utiliser le SDK Plateforme Windows universelle avec Adobe Analytics.
+description: Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
+seo-description: Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
 seo-title: Méthodes Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Analytics
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 57%
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Méthodes Analytics {#analytics-methods}
 
-Informations pour vous aider à utiliser le SDK Plateforme Windows universelle avec Adobe Analytics.
+Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Le préfixe des méthodes Analytics est « Analytics ».
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Analytics&quot;.
 
 Chacune de ces méthodes est utilisée pour envoyer des données dans la suite de rapports Adobe Analytics.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
 
-* **TrackState (winJS : trackState)**
+* **TrackState (winJS: trackState)**
 
-   Effectue le suivi de l’état d’une application avec les données contextuelles facultatives. Les états correspondent aux affichages disponibles dans l’application : tableau de bord d’accueil, paramètres d’application, panier, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
-Si `state` est vide, il est présenté comme « app name app version (build) » dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
+If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
 
    >[!TIP]
    >
@@ -46,9 +49,9 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **TrackAction (winJS : trackAction)**
+* **TrackAction (winJS: trackAction)**
 
-   Effectue le suivi d’une action dans l’application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple les connexions, les appuis sur la bannière, les abonnements aux flux, etc.
+   Effectue le suivi d’une action dans votre application. Les actions sont les actions qui se produisent dans votre application et que vous souhaitez mesurer, telles que les &quot;connexions&quot;, les &quot;clics sur la bannière&quot;, les &quot;abonnements de flux&quot; et d’autres mesures.
 
    * Voici la syntaxe de cette méthode :
 
@@ -65,7 +68,7 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
 
 * **GetTrackingIdentifierAsync (winJS : getTrackingIdentifierAsync)**
 
-   Renvoie l’identifiant visiteur automatiquement généré pour Analytics. Il s’agit d’un identifiant visiteur unique et spécifique à l’application généré au lancement initial, puis stocké et utilisé à partir de ce lancement. Cet identifiant est conservé d’une mise à niveau de l’application à l’autre, puis supprimé à la désinstallation.
+   Renvoie l’ID de visiteur généré automatiquement pour Analytics. Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré au lancement initial, puis stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
 
    * Voici la syntaxe de cette méthode :
 
@@ -82,7 +85,7 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
       });
       ```
 
-* **TrackLocation (winJS: trackLocation)**
+* **TrackLocation (winJS : trackLocation)**
 
    Envoie les coordonnées x et y actuelles. Utilise également les points ciblés définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelle est renseignée et envoyée avec l’appel `trackLocation`.
 
@@ -118,7 +121,7 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
 
 * **TrackTimed &#x200B; ActionStart (winJS : trackTimed &#x200B; ActionStart)**
 
-   Commence une minutée portant le nom `action`action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
+   Commence une minutée portant le nom `action` action. Si vous appelez cette méthode pour une action qui a déjà commencé, l’action minutée précédente est écrasée.
 
    >[!TIP]
    >
@@ -160,9 +163,9 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
+* **TrackTimedActionExistsAsync (winJS : trackTimedActionExistsAsync)**
 
-   Returns true if the given timed action exists and false if it does not exist.
+   Renvoie true si l’action minutée donnée existe et false si elle n’existe pas.
 
    * Voici la syntaxe de cette méthode :
 
@@ -211,7 +214,7 @@ Si `state` est vide, il est présenté comme « app name app version (build) �
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **GetQueueSizeAsync (winJS: getQueueSizeAsync)**
+* **GetQueueSizeAsync (winJS : getQueueSizeAsync)**
 
    Renvoie le nombre d’accès actuellement stockés dans la file d’attente Analytics.
 
