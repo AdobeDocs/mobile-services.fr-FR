@@ -5,8 +5,11 @@ seo-title: Test de l’acquisition de V3
 solution: Experience Cloud,Analytics
 title: Test de l’acquisition de V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +24,7 @@ Ces informations expliquent comment rediriger un lien de campagne d’acquisitio
 
 Si l’application mobile n’est pas encore dans l’App Store, lorsque vous créez un lien de campagne, sélectionnez n’importe quelle application mobile en tant que destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé.
 
-1. Effectuez les tâches préalables requises dans [Acquisition des applications mobiles](/help/ios/acquisition-main/acquisition.md).
+1. Effectuez les tâches préalables requises dans [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md) (Acquisition de l’application mobile).
 1. Accédez au **[!UICONTROL Créateur d’acquisitions]** de l’interface utilisateur d’Adobe Mobile Services et créez une URL de campagne d’acquisition.
 
    Par exemple :
@@ -63,7 +66,7 @@ Si l’application mobile n’est pas encore dans l’App Store, lorsque vous c
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   Si les journaux ci-dessus ne s’affichent pas, assurez-vous que vous avez bien effectué les étapes 4 et 5 de la procédure.
+   Si vous ne voyez pas les journaux ci-dessus, vérifiez que vous avez suivi les étapes 4 et 5.
 
    Voici quelques informations sur les erreurs possibles :
 
@@ -84,7 +87,7 @@ Une erreur de réseau s’est produite.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Échec de récupération de la réponse dans le délai défini dans `referrerTimeout`. Augmentez la valeur et réessayez. Vérifiez également que vous avez ouvert le lien d’acquisition avant d’installer l’application et que vous utilisez le même réseau lorsque vous cliquez sur l’URL et que vous ouvrez l’application.
+      Échec de récupération de la réponse dans le délai défini dans `referrerTimeout`. Augmentez la valeur et réessayez. Assurez-vous également d’avoir ouvert le lien d’acquisition avant d’installer l’application et d’utiliser le même réseau lorsque vous cliquez sur l’URL et ouvrez l’application.
 
       À noter :
 
