@@ -5,10 +5,13 @@ seo-description: Le rapport Entonnoir identifie le moment où les clients abando
 seo-title: Rapport Entonnoir
 solution: Experience Cloud,Analytics
 title: Rapport Entonnoir
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 62%
 
 ---
 
@@ -29,19 +32,19 @@ Voici un exemple de rapport Versions :
 
 ![](assets/funnel_create.png)
 
-Pour expliquer le principe d’un entonnoir simple, voici les paramètres d’une configuration qui utilise trois étapes et deux comparaisons d’entonnoir. Supposons qu’une application de démonstration permette aux utilisateurs d’ajouter un élément (par exemple une photo), puis de le partager.
+Pour démontrer un entonnoir simple, voici les paramètres d&#39;une configuration qui utilise trois étapes d&#39;entonnoir et deux comparaisons d&#39;entonnoir. Nous supposons qu’une application de démonstration permet aux utilisateurs d’ajouter un élément, tel qu’une photo, puis de le partager.
 
-Dans la fenêtre Personnaliser, des sections indiquent que l’utilisateur a lancé l’application, a ajouté une photo à partir d’une galerie contenue dans l’application, a partagé une ou plusieurs photos issues de l’application sur les médias sociaux, par SMS, par courrier électronique, etc. Les comparaisons d’entonnoir nous permettent de mesurer les niveaux d’ajout et de partage de photos entre les utilisateurs de l’application iOS et de l’application Android.
+Dans la fenêtre Personnaliser, certaines sections indiquent que l’utilisateur a lancé l’application, a ajouté une photo à partir d’une galerie dans l’application, partagé une ou plusieurs photos de l’application sur les réseaux sociaux, par SMS, par courrier électronique, etc. Les comparaisons d’entonnoir permettent de comparer les niveaux d’ajout et de partage de photos entre les utilisateurs de l’application iOS et de l’application Android.
 
 Pour générer le rapport, cliquez sur **[!UICONTROL Exécuter]**.
 
-Voici un exemple de rapport généré :
+Voici un exemple de rapport généré :
 
 ![](assets/funnel.png)
 
-La première série indique que 100 % des utilisateurs ont lancé l’application. La deuxième série montre qu’un pourcentage plus élevé d’utilisateurs d’Android ont ajouté une photo depuis la galerie. La troisième série indique que près de la moitié des utilisateurs d’iOS ont partagé la photo, mais qu’aucun utilisateur d’Android ne l’a fait. Ce résultat peut indiquer un incident affectant l’application et dont il convient de rechercher la cause.
+La première série montre que 100 % des utilisateurs ont lancé l’application. La deuxième série montre qu&#39;un pourcentage plus élevé d&#39;utilisateurs d&#39;Android ont ajouté une photo de la galerie. La troisième série montre que près de la moitié des utilisateurs d&#39;iOS ont partagé la photo, mais qu&#39;aucun des utilisateurs d&#39;Android n&#39;a partagé la photo. Cela peut indiquer un problème avec l’application qui doit être étudié.
 
-Pour afficher des informations supplémentaires, survolez n’importe quelle partie du graphique avec la souris.
+Pour afficher des informations supplémentaires, placez le pointeur de la souris sur une barre du graphique.
 
 Vous pouvez configurer les options suivantes pour ce rapport :
 
