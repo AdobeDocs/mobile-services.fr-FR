@@ -1,20 +1,23 @@
 ---
-description: Depuis iOS 10, Apple permet la création d’une extension autonome pouvant être distribuée sans application contenante. Grâce à cette extension, vous n’avez pas besoin d’un groupe d’applications, car l’application contenante avec laquelle partager les données est inexistante.
-seo-description: Depuis iOS 10, Apple permet la création d’une extension autonome pouvant être distribuée sans application contenante. Grâce à cette extension, vous n’avez pas besoin d’un groupe d’applications, car l’application contenante avec laquelle partager les données est inexistante.
+description: A partir d’iOS 10, Apple vous permet de créer une extension appelée extension autonome qui peut être distribuée sans application contenant. Avec cette extension, vous n’avez pas besoin d’un groupe d’applications, car il n’existe aucune application contenant avec laquelle partager les données.
+seo-description: A partir d’iOS 10, Apple vous permet de créer une extension appelée extension autonome qui peut être distribuée sans application contenant. Avec cette extension, vous n’avez pas besoin d’un groupe d’applications, car il n’existe aucune application contenant avec laquelle partager les données.
 seo-title: Mise en œuvre d’une extension autonome
 solution: Experience Cloud,Analytics
 title: Mise en œuvre d’une extension autonome
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 44%
 
 ---
 
 
 # Mise en œuvre d’une extension autonome {#stand-alone-extension-implementation}
 
-Depuis iOS 10, Apple permet la création d’une extension autonome pouvant être distribuée sans application contenante. Grâce à cette extension, vous n’avez pas besoin d’un groupe d’applications, car l’application contenante avec laquelle partager les données est inexistante.
+A partir d’iOS 10, Apple vous permet de créer une extension appelée extension autonome qui peut être distribuée sans application contenant. Avec cette extension, vous n’avez pas besoin d’un groupe d’applications, car il n’existe aucune application contenant avec laquelle partager les données.
 
 >[!IMPORTANT]
 >
