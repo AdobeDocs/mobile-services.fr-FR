@@ -1,13 +1,16 @@
 ---
-description: Les tableaux suivants répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
-seo-description: Les tableaux suivants répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
+description: Les tableaux suivants liste les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
+seo-description: Les tableaux suivants liste les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: ht
-source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1108'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +21,7 @@ Voici les mesures et les dimensions pouvant être mesurées automatiquement par 
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -68,7 +71,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Lancements**
 
-   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la reprise depuis l’arrière-plan de l’application une fois le délai d’expiration de la session du cycle de vie dépassé.
+   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché lorsque l’application reprend en arrière-plan après le dépassement du délai d’expiration de la session de cycle de vie.
 
    * Données contextuelles Analytics/Paramètre Target : `a.LaunchEvent`
    * Signal d’Audience Manager : `c_a_LaunchEvent`
@@ -165,7 +168,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Nom de l’appareil**
 
-   Stocke le nom de l’appareil.  Chaîne de deux chiffres séparés par une virgule qui identifie l’appareil iOS. Le premier chiffre représente généralement la génération de l’appareil, le second les différents membres de la famille d’appareils. Pour obtenir la liste des noms d’appareils courants, reportez-vous à  Versions des appareils iOS.
+   Stocke le nom de l’appareil.  Chaîne à deux chiffres séparée par des virgules qui identifie le périphérique iOS. Le premier chiffre représente généralement la génération de l’appareil, et le second les différents membres de la famille d’appareils. Pour obtenir la liste des noms d’appareils courants, reportez-vous à  Versions des appareils iOS.
 
    * Données contextuelles Analytics/Paramètre : `a.DeviceName`
    * Gestion de l’audience : `c_a_DeviceName`
@@ -283,7 +286,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Code de suivi**
 
-   Renseigné par l’acquisition des applications mobiles. Généré automatiquement par Adobe Mobile Services.
+   Renseigné par l’acquisition des applications mobiles. Généré automatiquement par Adobe mobile services.
 
    * Données contextuelles Analytics/Paramètre Target : `a.referrer.campaign.trackingcode`
    * Caractéristique de la gestion de l’audience : `c_a_referrer_campaign_trackingcode`
