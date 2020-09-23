@@ -2,12 +2,15 @@
 description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 seo-title: Mise en œuvre principale et cycle de vie
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -61,6 +64,7 @@ Pour télécharger le kit SDK :
    * La case à cocher **[!UICONTROL Copier les éléments si nécessaire]** est sélectionnée.
    * **[!UICONTROL L’option Créer des groupes]** est sélectionnée.
    * Aucune des cases à cocher de la section **[!UICONTROL Ajouter aux cibles]** n’est sélectionnée.
+
    ![](assets/step_3.png)
 
 1. Cliquez sur **[!UICONTROL Terminer]**.
@@ -93,6 +97,7 @@ Pour télécharger le kit SDK :
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > Le fait de lier plusieurs fichiers `AdobeMobileLibrary*.a` à la même cible risque d’entraîner un comportement inattendu ou d’empêcher la création de votre application.
