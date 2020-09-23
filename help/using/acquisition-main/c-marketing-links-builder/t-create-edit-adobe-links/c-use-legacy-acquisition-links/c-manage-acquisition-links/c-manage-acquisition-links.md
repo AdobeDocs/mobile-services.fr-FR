@@ -5,10 +5,13 @@ seo-description: Une fois les liens d’acquisition créés, ils peuvent être s
 seo-title: Gestion des liens d’acquisition
 solution: Experience Cloud,Analytics
 title: Gestion des liens d’acquisition
-topic: Mesures
+topic: Metrics
 uuid: 06b35bbc-7cd6-4375-aa17-204edab40e62
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 100%
 
 ---
 
