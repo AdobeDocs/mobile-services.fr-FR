@@ -4,10 +4,13 @@ seo-description: Consultez ces informations en cas de demande de suppression de 
 seo-title: Définition de l’état de souscription de l’utilisateur
 solution: Experience Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 81%
 
 ---
 
@@ -34,17 +37,17 @@ Le tableau suivant décrit chaque état de confidentialité :
 
 * **Inclusion**
 
-   * **Analytics** : les accès sont envoyés.
-   * **Target** : les demandes de mbox sont envoyées.
-   * **Audience Manager** : les signaux et la synchronisation des identifiants sont envoyés.
+   * **Analytics**: Les accès sont envoyés.
+   * **Cible**: Les requêtes de mbox sont envoyées.
+   * **audience manager**: Les signaux et les synchronisations d’identifiants sont envoyés.
    * Valeur dans le fichier JSON Config : `optedin`
    * Valeur dans `setPrivacyStatus` : `MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **Exclusion**
 
-   * **Analytics** : les accès sont ignorés.
-   * **Target** : les demandes de mbox ne sont pas autorisées.
-   * **Audience Manager** : les signaux et la synchronisation des identifiants ne sont pas autorisés.
+   * **Analytics**: Les accès sont ignorés.
+   * **Cible**: Les requêtes de mbox ne sont pas autorisées.
+   * **audience manager**: Les signaux et les synchronisations d’ID ne sont pas autorisés.
    * Valeur dans le fichier JSON Config : `optedout`
    * Valeur dans `setPrivacyStatus` : `MOBILE_PRIVACY_STATUS_OPT_OUT`
 
@@ -53,8 +56,8 @@ Le tableau suivant décrit chaque état de confidentialité :
    * **Analytics** : Si le suivi hors ligne est **activé**, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
       Si le suivi hors ligne <b>n’est pas</b> activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
-   * **Target** : les demandes de mbox sont envoyées.
-   * **Audience Manager** : les signaux et la synchronisation des identifiants sont envoyés.
+   * **Cible**: Les requêtes de mbox sont envoyées.
+   * **audience manager**: Les signaux et les synchronisations d’identifiants sont envoyés.
    * Valeur dans le fichier JSON Config : `optunknown`
    * Valeur dans `setPrivacyStatus` : `MOBILE_PRIVACY_STATUS_UNKNOWN`
 
