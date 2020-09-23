@@ -4,11 +4,14 @@ keywords: mobile
 seo-description: Vous pouvez afficher une carte interactive indiquant vos points ciblés et d’autres marqueurs de données.
 seo-title: Carte
 solution: Experience Cloud,Analytics
-title: Carte
-topic: Mesures
+title: Map
+topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 74%
 
 ---
 
@@ -23,10 +26,10 @@ Prenez note des informations importantes suivantes :
 
 * Vous pouvez augmenter ou diminuer la taille de la carte.
 
-   Cette fonction est par exemple très utile lorsque deux points ciblés sont proches l’un de l’autre. L’agrandissement de la carte vous permet de visualiser davantage de détails.
-* Vos points ciblés s’affichent en bleu.
+   Cette fonction est utile, par exemple, si deux points d’intérêt sont proches les uns des autres. L’agrandissement de la carte vous permet de la vue en détail.
+* Vos points d&#39;intérêt s&#39;affichent en bleu.
 
-   Les autres marqueurs de données, tels que les lancements, s’affichent en noir. Cliquez sur un marqueur pour afficher plus d’informations.
+   D’autres marqueurs de données, tels que Lancements, s’affichent en noir. Cliquez sur un marqueur pour vue plus d’informations.
 
 Cliquez sur ![couches](assets/map_layers.png) pour sélectionner les options suivantes :
 
@@ -43,11 +46,11 @@ Afficher la carte en mode satellite.
 
 * **[!UICONTROL Carte thermique]**
 
-   Spécifier l’affichage des marqueurs de carte thermique. Plus l’intensité de la couleur est prononcée, plus la fréquence de la condition (les lancements, par exemple) est vérifiée.
+   Choisissez d’afficher ou non les marqueurs de carte thermique. Plus la couleur est intense, plus la condition (Lancements, par exemple) est remplie fréquemment.
 
 * **[!UICONTROL Points ciblés]**
 
-   Choisissez d’afficher ou non vos points ciblés.
+   Choisissez si vous souhaitez afficher vos points ciblés.
 
 Vous pouvez configurer les options suivantes pour ce rapport :
 
