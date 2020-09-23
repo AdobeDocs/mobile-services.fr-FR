@@ -1,13 +1,16 @@
 ---
-description: Ces informations vous permettent d’utiliser les fonctionnalités de localisation de vos applications iOS.
-seo-description: Ces informations vous permettent d’utiliser les fonctionnalités de localisation de vos applications iOS.
+description: Ces informations vous aident à utiliser les fonctions Emplacement dans vos applications iOS.
+seo-description: Ces informations vous aident à utiliser les fonctions Emplacement dans vos applications iOS.
 seo-title: Emplacement
 solution: Experience Cloud,Analytics
 title: Emplacement
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ Les informations de cette section vous aident à utiliser les fonctionnalités d
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
