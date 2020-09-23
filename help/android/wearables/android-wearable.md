@@ -4,10 +4,13 @@ seo-description: À compter de la version 4.5 du SDK Android, une nouvelle ext
 seo-title: 'Android Wearables : Prise en main'
 solution: Experience Cloud,Analytics
 title: 'Android Wearables : Prise en main'
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
