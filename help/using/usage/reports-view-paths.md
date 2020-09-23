@@ -5,10 +5,13 @@ seo-description: Le rapport Chemins d’accès des vues est basé sur l’analys
 seo-title: Afficher le rapport Chemins d’accès
 solution: Experience Cloud,Analytics
 title: Afficher le rapport Chemins d’accès
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 70%
 
 ---
 
@@ -23,29 +26,29 @@ Le rapport **[!UICONTROL Chemins d’accès des vues]** est basé sur l’analys
 
 ![chemins d’accès des vues](assets/view_paths.png)
 
-Chaque nœud matérialisé par une case représente un état dans les chemins d’accès empruntés par les utilisateurs dans une application. À titre d’exemple, sur l’illustration ci-dessus, le nœud supérieur représente le nombre d’utilisateurs qui ont lancé l’application, puis ont navigué vers la vue principale.
+Chaque noeud, en forme de boîte, représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans l’illustration ci-dessus, le noeud supérieur représente le nombre d’utilisateurs qui ont lancé l’application et accédé à la vue principale.
 
 Lorsque vous cliquez sur un nœud pour afficher les options supplémentaires de modification du graphique, des options telles que **[!UICONTROL Mise au point]** ou **[!UICONTROL Développer]** apparaissent. Si, par exemple, vous cliquez sur l’état **[!UICONTROL MainView]** dans le nœud supérieur, les icônes **[!UICONTROL Mise au point]** et **[!UICONTROL Développer]** s’affichent.
 
-Pour agrandir l’affichage, cliquez sur l’icône **[!UICONTROL +]** de sorte à afficher les autres chemins d’accès au départ ou à destination du nœud. Sur l’illustration ci-dessous, l’état 1 lance l’application, l’état 2 visualise la page principale de l’application et l’état 3 inclut les chemins d’accès suivants empruntés par les utilisateurs :
+To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. Dans l’illustration ci-dessous, l’état 1 lance l’application, l’état 2 affiche la page principale de l’application et l’état 3 inclut les chemins suivants empruntés par les utilisateurs :
 
-* Navigation vers la pellicule
-* Navigation vers le sélecteur d’éléments
-* Navigation vers l’appareil photo
-* Navigation vers la page d’informations sur l’élément
+* Navigation vers le rouleau de caméra
+* navigation vers le sélecteur d’éléments
+* navigation vers la caméra
+* navigation vers la page d&#39;informations sur l&#39;article
 
 ![](assets/view_paths_expand.png)
 
-Cliquez sur ![l’icône mise au point](assets/icon_focus.png) pour isoler le nœud et afficher les chemins d’accès entrants et sortants du nœud sélectionné. Sur l’illustration ci-dessous, les chemins d’accès suivants ont été empruntés avant que les utilisateurs ne visualisent la vue principale de l’application :
+Cliquez sur ![l’icône mise au point](assets/icon_focus.png) pour isoler le nœud et afficher les chemins d’accès entrants et sortants du nœud sélectionné. Dans l’illustration ci-dessous, les chemins suivants ont précédé les utilisateurs qui affichaient la vue principale de l’application :
 
-* Informations sur l’élément
-* Sélecteur d’éléments
-* Pellicule
+* information sur l&#39;article
+* sélecteur d’éléments
+* Camera roll
 * Appareil photo
 
 ![mise au point du chemin d’accès](assets/view_paths_focus.png)
 
-Vous pouvez effectuer une mise au point ou développer plusieurs nœuds afin d’obtenir une vue détaillée des chemins d’accès empruntés par les utilisateurs dans votre application. Par exemple :
+Vous pouvez cibler ou développer plusieurs noeuds pour obtenir une vue détaillée des chemins empruntés par les utilisateurs dans votre application. Par exemple :
 
 ![chemin d’accès multi](assets/view_paths_mult.png)
 
