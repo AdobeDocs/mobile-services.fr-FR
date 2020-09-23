@@ -5,10 +5,13 @@ seo-description: Le rapport d’aperçu de l’emplacement vous permet de visual
 seo-title: Aperçu (emplacement)
 solution: Experience Cloud,Analytics
 title: Aperçu (emplacement)
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +26,7 @@ Informations supplémentaires sur ce rapport :
 
 ## Navigation et utilisation {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
-Cette visualisation fournit par exemple le rapport de base avec les ventilations. Elle utilise la hauteur pour montrer la mesure concernée et les différences de performances entre les mesures. Chaque anneau représente un segment d’audience dans la catégorie de l’anneau. Vous pouvez exécuter des actions sur une audience, comme appliquer un filtre d’attractivité et afficher ou masquer des mesures.
+Cette visualisation fournit, par exemple, le rapport de base avec des ventilations. La visualisation utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment d&#39;audience dans la catégorie de l&#39;anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
 >[!TIP]
 >
@@ -31,7 +34,7 @@ Cette visualisation fournit par exemple le rapport de base avec les ventilations
 
 ![](assets/location.png)
 
-Ce graphique radial est interactif. Vous pouvez modifier la période en cliquant sur l’icône **[!UICONTROL Calendrier]** dans la partie supérieure droite. Survolez une partie quelconque du graphique avec la souris pour afficher plus d’informations. À titre d’exemple, dans l’illustration suivante, vous pouvez visualiser le nombre total et le pourcentage de personnes qui utilisent votre application aux États-Unis.
+Ce graphique radial est interactif. Vous pouvez modifier la période en cliquant sur l’icône **[!UICONTROL Calendrier]** dans la partie supérieure droite. Placez le pointeur de la souris sur une partie du graphique pour afficher plus d’informations. Par exemple, dans l’illustration suivante, vous pouvez voir le nombre total et le pourcentage d’utilisateurs qui utilisent votre application aux États-Unis.
 
 ![](assets/location_mouse.png)
 
@@ -45,7 +48,7 @@ Voici la visualisation lorsque vous sélectionnez **[!UICONTROL Points ciblés]*
 
 ![](assets/location_poi.png)
 
-Cliquez sur une tranche de l’anneau pour sélectionner l’audience pour laquelle vous pouvez exécuter certaines actions, notamment zoomer, masquer les audiences et créer un message in-app ou un filtre bascule.
+Vous pouvez cliquer sur une tranche de l’anneau pour sélectionner l’audience sur laquelle vous pouvez effectuer des actions, telles que zoomer, masquer des audiences, créer un message in-app ou un filtre bascule.
 
 ![](assets/location_aud.png)
 
