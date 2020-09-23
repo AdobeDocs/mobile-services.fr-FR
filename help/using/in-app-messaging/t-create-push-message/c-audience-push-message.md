@@ -3,13 +3,13 @@ description: Vous pouvez définir et configurer les options d’audience se rapp
 keywords: mobile
 seo-description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 seo-title: 'Audience : définition et configuration de segments d’audience pour les messages push'
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 100%
 
