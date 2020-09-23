@@ -2,18 +2,21 @@
 description: Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
 keywords: android;library;mobile;sdk
 seo-description: Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
-seo-title: Chemin
+seo-title: Analyses de vidéos
 solution: Experience Cloud,Analytics
-title: Chemin
-topic: Développeur et mise en œuvre
+title: Analyses de vidéos
+topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
 
-# Chemin {#video-analytics}
+# Analyses de vidéos {#video-analytics}
 
 Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
 
@@ -28,9 +31,9 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 * **a.media.name**
    * Type de variable : eVar
       * Délai d’expiration par défaut : Visite
-      * Insight personnalisé (s.prop, utilisé pour le cheminement vidéo)
-   * (**Obligatoire**) Lorsqu’un visiteur affiche une vidéo d’une certaine manière, cette variable de données contextuelles collecte le nom de la vidéo, tel que spécifié dans la mise en œuvre. Vous pouvez ajouter des classifications pour cette variable.
-   * (**Facultatif**) La variable Insight personnalisé fournit des informations sur le cheminement vidéo.
+      * Custom Insight (s.prop, utilisée pour le cheminement vidéo)
+   * (**Obligatoire**) Lorsqu’un visiteur vue la vidéo d’une manière ou d’une autre, cette variable de données contextuelles collecte le nom de la vidéo, comme indiqué dans l’implémentation. Vous pouvez ajouter des classifications pour cette variable.
+   * (**Optional**) The Custom Insight variable provides video pathing information.
 
 * **a.media.name**
    * Type de variable : Insight personnalisé (s.prop)
@@ -44,16 +47,17 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 * **a.media.segment**
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
-   * (**Obligatoire**) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo.
+   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
 
       Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, il est possible que SiteCatalyst collecte les données suivantes dans l’eVar Segments :`1:M:0-25`
 
-      La méthode par défaut de collecte des données sur les vidéos collecte les données aux points suivants :
+      La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
 
-      * début de la vidéo (lecture)
-      * début du segment
-      * fin de la vidéo (arrêt)
-      Analytics compte l’affichage du premier segment au début du segment, lorsque le visiteur commence la lecture. Les affichages de segments suivants commencent au démarrage du segment.
+      * lorsque la vidéo démarre (lecture) ;
+      * lorsque le segment débute ;
+      * lorsque la vidéo prend fin (arrêt).
+
+      Analytics comptabilise la première vue du segment au début du segment, lorsque le visiteur commence à regarder. Les vues des segments suivants démarrent au début des segments.
 
 
 * **a.contentType**
@@ -66,7 +70,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 * **a.media.timePlayed**
    * Type de variable : Evénement
    * Type : compteur
-   * Compte le temps de lecture vidéo passé, en secondes, depuis le dernier processus de collecte de données (demande d’image).
+   * Compte le temps, en secondes, passé à regarder une vidéo depuis le dernier processus de collecte de données (demande d’image).
 
 * **a.media.view**
    * Type de variable : Evénement
@@ -87,7 +91,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
    * Type : compteur
    * Indique qu’un utilisateur a visionné une vidéo dans son intégralité.
 
-      Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et d’autres diffusions sans fin définie, vous pouvez indiquer un point personnalisé auquel la mesure se termine (par exemple, une durée spécifique visionnée).
+      Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant l’implémentation, vous pouvez spécifier le nombre de secondes à partir de la fin de la vidéo que vous souhaitez considérer comme une vue terminée. Pour les vidéos en direct et les autres flux qui n’ont pas de fin définie, vous pouvez spécifier un point personnalisé pour mesurer les vidéos terminées (par exemple, après une durée spécifique de visionnage).
 
 
 ## Configuration des paramètres multimédias {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -203,6 +207,7 @@ Voici les méthodes de la classe Media Measurement :
       Ferme l’élément multimédia nommé *name*.
 
       * Voici la syntaxe de cette méthode :
+
       ```java
       public static void close(String name);
       ```
