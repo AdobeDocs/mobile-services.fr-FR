@@ -4,10 +4,13 @@ seo-description: Le suivi iBeacon permet de mesurer et de cibler des micro-empla
 seo-title: Suivi iBeacon
 solution: Experience Cloud,Analytics
 title: Suivi iBeacon
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 100%
 
 ---
 
