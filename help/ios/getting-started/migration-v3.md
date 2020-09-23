@@ -4,10 +4,13 @@ seo-description: Ces informations vous aideront à migrer de la version 2.x ou�
 seo-title: Migration vers la bibliothèque iOS 4.x
 solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque iOS 4.x
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 62%
 
 ---
 
@@ -24,15 +27,15 @@ Dans la bibliothèque du SDK iOS version 4.x, les méthodes publiques sont cons
 
 ## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Dans la version 4, vous ne pouvez plus attribuer des variables telles que des événements, des eVars, des props, des héritiers et des listes directement dans votre application. À la place, le SDK utilise des données contextuelles et des règles de traitement pour mapper vos données d’application aux variables Analytics pour la création de rapports.
+Dans la version 4, vous ne pouvez plus attribuer directement dans votre application des variables telles que des événements, des eVars, des props, des héritiers et des listes. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
 
-Les avantages des règles de traitement sont les suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier la correspondance de vos données sans soumettre de mise à jour dans la boutique d’applications.
+* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
-* L’envoi de données supplémentaires a très peu d’impact.
+* L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mises en correspondance à l’aide des règles de traitement.
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement.
 
 >[!TIP]
 >
@@ -71,10 +74,10 @@ Le nouveau fichier `ADBMobileConfig.json` comporte des paramètres globaux, spé
 
 ### Déplacement du fichier de configuration
 
-Pour déplacer le fichier de configuration, procédez comme suit :
+Pour déplacer le fichier de configuration :
 
-1. Déplacez la valeur qui est définie pour la variable dans la première colonne vers la variable dans la deuxième colonne.
-1. Supprimez l’ancienne variable de configuration du code.
+1. Déplacez la valeur définie pour la variable dans la première colonne vers la variable dans la seconde colonne.
+1. Supprimez l’ancienne variable de configuration de votre code.
 
 ### Informations de migration
 
@@ -86,15 +89,15 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 
 | Variable de configuration | Variable du fichier `ADBMobileConfig.json` |
 |--- |--- |
-| offlineTrackingEnabled | "offlineEnabled" |
-| offlineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Supprimée, n’est plus utilisée. |
-| linkTrackEvents | Supprimée, n’est plus utilisée. |
+| offlineTrackingEnabled | &quot;offlineEnabled&quot; |
+| offlineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;devise&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
+| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
 
 
 #### Migration depuis la version 2.x
@@ -103,23 +106,23 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 
 | Variable de configuration | Variable du fichier `ADBMobileConfig.json` |
 |--- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server", supprimez le préfixe `"https://"`. Le préfixe du protocole est ajouté automatiquement en fonction du paramètre "ssl". |
-| trackingServerSecure | Supprimée. Pour les connexions sécurisées, définissez "server", puis activez "ssl". |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | Supprimée, n’est plus utilisée. |
-| linkTrackEvents | Supprimée, n’est plus utilisée. |
-| timestamp | Supprimée, ne peut plus être configurée. |
-| dc | Supprimée, n’est plus utilisée. |
-| userAgent | Supprimée, ne peut plus être configurée. |
-| dynamicVariablePrefix | Supprimée, n’est plus utilisée. |
-| visitorNamespace | Supprimée, n’est plus utilisée. |
-| usePlugins | Supprimée, n’est plus utilisée. |
-| useBestPractices  tous les appels à la mesure churn (getChurnInstance ) | Supprimée, remplacée par des mesures de cycle de vie. Pour en savoir plus, voir la section [Mesures de cycle de vie](//help/ios/metrics.md). |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
+| trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;serveur&quot;, puis activez &quot;ssl&quot;. |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;devise&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
+| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
+| timestamp | Supprimer, ne peut plus être configuré. |
+| dc | Supprimer, n&#39;est plus utilisé. |
+| userAgent | Supprimer, ne peut plus être configuré. |
+| dynamicVariablePrefix | Supprimer, n&#39;est plus utilisé. |
+| visitorNamespace | Supprimer, n&#39;est plus utilisé. |
+| usePlugins | Supprimer, n&#39;est plus utilisé. |
+| useBestPractices tous les appels à la mesure churn ( getChurnInstance ) | Supprimée, remplacée par des mesures de cycle de vie. Pour en savoir plus, voir la section [Mesures de cycle de vie](//help/ios/metrics.md). |
 
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}
@@ -136,15 +139,15 @@ Le paramètre `data` pour ces deux méthodes est un `NSDictionary` qui contient 
 
 ### Événements, props et eVars
 
-Dans la version 4, vous ne pouvez plus affecter des variables telles que les événements, les eVars, les props, les héritiers et les listes directement dans votre application. Le SDK utilise désormais les données contextuelles et les règles de traitement pour faire correspondre les données de l’application aux variables Analytics pour la création de rapports.
+Dans la version 4, vous ne pouvez plus attribuer directement dans votre application des variables telles que des événements, des eVars, des props, des héritiers et des listes. Le SDK utilise désormais les données contextuelles et les règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
 
-Les avantages des règles de traitement sont les suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier la correspondance de vos données sans soumettre de mise à jour dans la boutique d’applications.
+* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
-* L’envoi de données supplémentaires a très peu d’impact.
+* L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mappées à l’aide des règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/ios/getting-started/proc-rules.md).
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/ios/getting-started/proc-rules.md).
 
 Les valeurs que vous avez directement attribuées aux variables doivent être ajoutées au `data``NSDictionary` à la place. Cela signifie que les appels vers `setProp`, `setEvar` et les attributions à des données contextuelles persistantes doivent être supprimés et les valeurs doivent être ajoutées au paramètre `data`.
 
