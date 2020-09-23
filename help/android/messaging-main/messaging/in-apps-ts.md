@@ -5,10 +5,13 @@ seo-description: Ces informations vous aideront à résoudre les problèmes lié
 seo-title: Dépannage de la messagerie intégrée (in-app)
 solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
-topic: Mesures
+topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: ht
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 94%
 
 ---
 
@@ -17,17 +20,17 @@ source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 
-Si vous avez respecté toutes les exigences relatives à la messagerie intégrée (in-app), mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
+Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
 
 ## Placez-vous la nouvelle configuration et le nouveau SDK dans l’application ?
 
 Assurez-vous que votre configuration comporte une section [Messagerie](/help/android/messaging-main/messaging/messaging.md) (fichier JSON téléchargé) ou un point de terminaison distant Message afin qu’il puisse être récupéré depuis la gestion dynamique des balises.
 
-## Mon message en plein écran ne s’affiche pas sous Android. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
+## Mon message en plein écran sous Android ne s’affiche pas. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
 
-Avez-vous mis à jour votre fichier de manifeste afin de définir l’activité Plein écran ?
+Avez-vous mis à jour votre fichier manifeste pour définir l’activité en plein écran ?
 
-## Mon message de notification locale ne fonctionne pas sous Android.
+## Mon message de notification locale sous Android ne fonctionne pas.
 
 Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. Pour obtenir plus d’informations, voir l’étape 2 *Activation de la messagerie in-app* dans [Messagerie in-app](/help/android/messaging-main/messaging/messaging.md).
 
@@ -54,18 +57,19 @@ Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/met
 
 ## Mon image ne correspond pas exactement à l’espace fourni par le modèle.
 
-Le modèle de message intégré (in-app) en plein écran prend en charge l’affichage d’une image provenant d’un serveur distant (adresse URL de l’image) ou du lot d’applications (image en lot). L’image doit être spécifiée dans un format standard tel que JPG, GIF ou PNG. Puisque les écrans des appareils peuvent être de taille très variable, l’image ne tiendra probablement pas exactement dans l’espace prévu par le modèle. Le modèle se focalise sur l’affichage du centre de l’image et, si l’image ne tient pas dans l’espace prévu, rognez (portrait) ou estompez (paysage) les bords.
+Le modèle de message in-app en plein écran prend en charge l’affichage d’une image à partir d’un serveur distant (URL d’image) ou du lot d’applications (image groupée). L’image doit être spécifiée dans un format standard tel que JPG, GIF ou PNG. Puisque les écrans des appareils peuvent être de taille très variable, l’image ne tiendra probablement pas exactement dans l’espace prévu par le modèle. Le modèle se focalise sur l’affichage du centre de l’image et, si l’image ne tient pas dans l’espace prévu, rognez (portrait) ou estompez (paysage) les bords.
 
 Les règles de dimensionnement et de placement exactes pour chaque orientation sont les suivantes :
 
 * **Portrait**
    * Hauteur de 195 px pour les téléphones.
    * Hauteur de 529 px pour les tablettes.
-   * Centrée si la largeur de l’image est plus petite que la largeur de l’appareil.
-   * Rognée si la largeur de l’image est plus grande que la largeur de l’appareil.
+   * Centré si la largeur de l’image est inférieure à la largeur de l‘appareil.
+   * Recadré si la largeur de l’image est supérieure à la largeur de l’appareil.
 
 * **Paysage**
-   * L’image s’adapte à 100 % à la hauteur de l’appareil.
-   * La largeur correspond à 75 % à celle de l’appareil, avec un fondu sur la droite.
-   Si vous rencontrez des problèmes avec le modèle Plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Ce dernier offre davantage de flexibilité pour les images et permet un contrôle complet du modèle.
+   * L’image est mise à l’échelle à 100 % de la hauteur de l’appareil.
+   * La largeur est de 75 % de celle du périphérique, avec un fondu sur la droite.
+
+   Si vous rencontrez des problèmes avec le modèle plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Ce modèle offre davantage de flexibilité pour les images et permet un contrôle total du modèle.
 
