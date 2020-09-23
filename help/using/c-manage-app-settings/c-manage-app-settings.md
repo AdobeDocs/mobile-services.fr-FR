@@ -5,10 +5,13 @@ seo-description: La gestion de vos applications implique de configurer une appli
 seo-title: Gérer les paramètres de l’application
 solution: Experience Cloud,Analytics
 title: Gérer les paramètres de l’application
-topic: Mesures
+topic: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 78%
 
 ---
 
@@ -19,4 +22,4 @@ La gestion de vos applications implique de configurer une application et de gér
 
 >[!IMPORTANT]
 >
->Pour modifier cette page, vous devez être membre du groupe d’administrateurs des applications mobiles. Afin de déterminer si vous êtes membre de ce groupe, cliquez sur **[!UICONTROL Outils d’administration]** &gt; **[!UICONTROL Gestion des utilisateurs]** &gt; **[!UICONTROL Groupes]** &gt; **[!UICONTROL Administration des applications mobiles]**.
+>Pour modifier cette page, vous devez être membre du groupe d’administrateurs des applications mobiles. To determine whether you are a member of this group, click **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL Mobile App Admin]**.
