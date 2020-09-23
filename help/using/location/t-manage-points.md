@@ -1,14 +1,17 @@
 ---
-description: Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
+description: Vous pouvez créer et gérer des points d’intérêt qui vous permettent de définir des emplacements géographiques que vous pouvez utiliser à des fins de corrélation, de cible avec des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
 keywords: mobile
-seo-description: Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
+seo-description: Vous pouvez créer et gérer des points d’intérêt qui vous permettent de définir des emplacements géographiques que vous pouvez utiliser à des fins de corrélation, de cible avec des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
 seo-title: Gestion des points ciblés
 solution: Experience Cloud,Analytics
 title: Gestion des points ciblés
-topic: Mesures
+topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +33,7 @@ Sur l’appareil de l’utilisateur, pour qu’un accès soit assigné à un **[
 Pour utiliser la fonction Emplacement, procédez comme suit :
 
 1. Cliquez sur le nom de l’application pour accéder à sa page Gérer les paramètres de l’application.
-1. Cliquez sur **[!UICONTROL Emplacement]** &gt; **[!UICONTROL Gérer les points ciblés]**.
+1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
 
    ![Résultat de l’étape](assets/poi.png)
 
