@@ -1,20 +1,23 @@
 ---
-description: Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Boutique d’applications Windows 8.1 universelle.
-seo-description: Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Boutique d’applications Windows 8.1 universelle.
+description: Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Windows 8.1 Universal App Store.
+seo-description: Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Windows 8.1 Universal App Store.
 seo-title: Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Target
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: c57bdf85-c1a9-446d-9ec9-4a483b189522
 translation-type: tm+mt
-source-git-commit: 398299575a32d4fee4dcea22788839afa13a1a0f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 15%
 
 ---
 
 
-# Target{#target}
+# Target {#target}
 
-Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Boutique d’applications Windows 8.1 universelle.
+Informations destinées à vous aider à diffuser du contenu ciblé dans les applications Windows 8.1 Universal App Store.
 
 ## Informations supplémentaires
 
