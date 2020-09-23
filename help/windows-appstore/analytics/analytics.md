@@ -1,13 +1,16 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
+description: 'null'
+seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analytics
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 11%
 
 ---
 
@@ -18,37 +21,37 @@ Après avoir ajouté la bibliothèque à votre projet, vous pouvez effectuer n�
 
 >[!TIP]
 >
->Vérifiez que vous importez `ADBMobile.h` dans votre classe.
+>Assurez-vous que vous importez `ADBMobile.h` dans votre classe.
 
-## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
+## Activation des rapports d’applications mobiles dans Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Avant d’ajouter du code, demandez à votre administrateur Analytics de procéder comme suit pour activer le suivi du cycle de vie des applications mobiles. Cela garantit que la suite de rapports est prête à capturer des mesures lors du démarrage du développement.
+Avant d’ajouter du code, demandez à votre administrateur Analytics d’effectuer les opérations suivantes pour activer le suivi du cycle de vie des applications mobiles. Ainsi, votre suite de rapports est prête à capturer les mesures au début du développement.
 
-1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
-1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
+1. Ouvrez Outils **** d’administration > Suites **[!UICONTROL de]** rapports et sélectionnez votre ou vos suites de rapports mobiles.
+1. Cliquez sur **[!UICONTROL Modifier les paramètres]** > Gestion **** mobile > Rapports **[!UICONTROL d’application]** mobile.
 
    ![](assets/mobile-settings.png)
 
-1. Cliquez sur **[!UICONTROL Activer la dernière version d’App Reports]**.
+1. Cliquez sur **[!UICONTROL Activer les derniers rapports]** d’application.
 
-   Vous pouvez éventuellement cliquer aussi sur **[!UICONTROL Activer le suivi de l’emplacement mobile]** et **[!UICONTROL Activer la création de rapports et l’attribution héritées pour les accès en arrière-plan]**.
+   Vous pouvez également cliquer sur **[!UICONTROL Activer le suivi]** des emplacements mobiles et **[!UICONTROL Activer le Rapports et l’attribution hérités pour les accès]** en arrière-plan.
 
    ![](assets/enable-lifecycle.png)
 
-Les mesures de cycle de vie sont à présent capturées et les Rapports d’applications mobiles apparaissent dans le menu **Rapports** de l’interface des rapports marketing.
+Les mesures de cycle de vie sont maintenant prêtes à être capturées et les rapports d’applications mobiles apparaissent dans le menu **[!UICONTROL Rapports]** de l’interface des rapports marketing.
 
 
 ### Nouvelles versions
 
-Périodiquement, de nouvelles versions des rapports d’applications mobiles sont publiées. Elles ne sont pas automatiquement appliquées à la suite de rapports. Vous devez répéter ces étapes pour effectuer la mise à niveau. Chaque fois que vous ajoutez une nouvelle fonctionnalité Experience Cloud à l’application, il est recommandé de répéter les étapes ci-dessus pour vous assurer de disposer de la dernière configuration.
+Régulièrement, de nouvelles versions du rapports d’applications mobiles sont publiées. Les nouvelles versions ne sont pas appliquées automatiquement à votre suite de rapports. Vous devez répéter ces étapes pour effectuer la mise à niveau. Chaque fois que vous ajoutez une nouvelle fonctionnalité Experience Cloud à votre application, nous vous recommandons de répéter ces étapes pour vous assurer que vous disposez de la dernière configuration.
 
 
-## Lifecycle metrics {#section_532702562A7A43809407C9A2CBA80E1E}
+## Mesures de cycle de vie{#section_532702562A7A43809407C9A2CBA80E1E}
 
-Pour collecter des mesures de cycle de vie dans l’application, ajoutez des appels lorsque l’application est activée, comme indiqué dans les exemples suivants. 
+Pour collecter les mesures de cycle de vie dans votre application, ajoutez des appels lorsque l&#39;application est activée, comme le montrent les exemples suivants.
 
 
-### WinJS in default.js
+### WinJS dans default.js
 
 
 ```js
@@ -122,34 +125,34 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-If `CollectLifecycleData()` is called twice in the same session, then your application will report a crash on every call after the first. Le SDK définit un indicateur lorsque l’application est arrêtée afin de signaler une sortie réussie. If this flag is not set, `CollectLifecyleData()` reports a crash.
+Si `CollectLifecycleData()` est appelé deux fois au cours de la même session, votre application signale un blocage à chaque appel après le premier. Le SDK définit un indicateur lorsque l’application est fermée, qui indique une sortie réussie. Si cet indicateur n&#39;est pas défini, `CollectLifecyleData()` signale un blocage.
 
 
-## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-Si vous avez examiné la classe [ADBMobile et la référence](/help/windows-appstore/c-configuration/methods.md)de méthode, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans l’application. À la place, le SDK utilise des données contextuelles et des règles de traitement afin de faire correspondre les données de l’application aux variables Analytics à des fins de création de rapports.
+Si vous avez examiné la classe [ADBMobile et la référence](/help/windows-appstore/c-configuration/methods.md)de méthode, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
 
-Les règles de traitement présentent plusieurs avantages :
+Les règles de traitement offrent plusieurs avantages :
 
-* Vous pouvez modifier la correspondance des données sans soumettre de mise à jour dans la boutique d’applications.
+* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
-* L’envoi de données supplémentaires a très peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne sont pas mappées à l’aide des règles de traitement.
+* L’envoi de données supplémentaires n’a que peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne seront pas mises en correspondance à l’aide de règles de traitement.
 
-Les valeurs que vous avez affectées directement aux variables doivent plutôt être ajoutées aux données contextuelles.
+Toutes les valeurs que vous affectiez directement aux variables doivent être ajoutées aux données contextuelles.
 
 
 ## Règles de traitement {#section_66EE762EEA5E4728864166201617DEBF}
 
-Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des eVars, props et autres variables pour la création de rapports.
+Les règles de traitement permettent de copier les données envoyées dans des variables de données contextuelles vers des variables evar, prop et d’autres variables pour le rapports.
 
-[Formation aux règles de traitement](https://tv.adobe.com/embed/1181/16506/) – Summit 2013
+[Formation](https://tv.adobe.com/embed/1181/16506/) sur les règles de traitement au sommet 2013
 
-[Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Présentation des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Devenir autorisé à utiliser des règles de traitement](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Obtention de l’autorisation d’utiliser des règles de traitement](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
-Il est recommandé de regrouper les variables de données contextuelles à l’aide d’espaces de noms, car cela vous aide à conserver un ordre logique. Si, par exemple, vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
+Nous vous recommandons de regrouper vos variables de données contextuelles à l’aide d’&quot;espaces de nommage&quot;, car cela vous permet de conserver un ordre logique. Par exemple, si vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
 
 ```js
 "product.type":"hat" 
@@ -157,27 +160,27 @@ Il est recommandé de regrouper les variables de données contextuelles à l’a
 "product.color":"blue"
 ```
 
-Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, afin que les espaces de noms permettent de voir rapidement les variables qui se trouvent dans le même espace de noms.
+Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement. Les espaces de nommage vous permettent donc d’afficher rapidement les variables qui se trouvent dans le même espace de nommage.
 
-En outre, nous avons entendu dire que certains d’entre vous nomment des clés de données de contexte en utilisant le numéro d’eVar ou de prop :
+En outre, nous avons entendu dire que certains d’entre vous nomment des clés de données contextuelles à l’aide de l’evar ou du numéro prop :
 
 ```js
 "eVar1":"jimbo"
 ```
 
-Ceci pourrait *quelque peu* vous faciliter la tâche lorsque vous exécutez le mappage unique dans les règles de traitement, mais la lisibilité sera réduite au cours du débogage et des futures mises à jour de code, qui pourront alors s’avérer plus complexes. Il est vivement recommandé d’utiliser plutôt des noms explicites pour les clés et les valeurs :
+Cela peut rendre la tâche *légèrement* plus facile lorsque vous effectuez le mappage unique dans les règles de traitement, mais vous perdez la lisibilité pendant le débogage et les futures mises à jour du code peuvent s’avérer plus difficiles. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
 
 ```js
 "username":"jimbo"
 ```
 
-Définissez les variables contextuelles qui déterminent les événements de compteur sur la valeur "1" :
+Définissez les variables contextuelles qui définissent les événements de compteur sur la valeur &quot;1&quot; :
 
 ```js
 "logon":"1"
 ```
 
-Les variables de données contextuelles qui définissent les événements d’incrémenteur peuvent comporter la valeur à incrémenter :
+Les variables de données contextuelles qui définissent les événements incrémenteurs peuvent avoir la valeur d’incrémentation :
 
 ```js
 "levels completed":"6"
@@ -185,31 +188,31 @@ Les variables de données contextuelles qui définissent les événements d’in
 
 >[!NOTE]
 >
->Adobe réserve l’espace de noms `a.`. En dehors de cette restriction, les variables de données contextuelles doivent être uniques dans votre société de connexion afin éviter les collisions.
+>Adobe réserve l’espace de noms « `a.` ». Outre cette petite restriction, les variables de données contextuelles doivent simplement être uniques dans votre société de connexion pour éviter les collisions.
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variable products {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Pour être défini *`products`* dans le SDK mobile, vous devez utiliser une syntaxe spéciale. Voir Variable [Produits](/help/windows-appstore/analytics/products/products.md).
+Pour être défini *`products`* dans le SDK mobile, vous devez utiliser une syntaxe spéciale. Voir Variable [](/help/windows-appstore/analytics/products/products.md)Produits.
 
-## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
+## (Facultatif) Activation du suivi hors ligne {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). Avant d’activer le suivi hors ligne, tenez compte des exigences d’horodatage décrites dans la référence au fichier de configuration.
+Pour stocker les accès lorsque le périphérique est hors ligne, vous pouvez activer le suivi hors ligne dans la configuration [](/help/windows-appstore/c-configuration/methods.md)ADBMobileConfig.json. Avant d’activer le suivi hors ligne, tenez compte des exigences d’horodatage décrites dans la référence de fichier de configuration.
 
-## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
+## Géolocalisation et points ciblés{#section_BAD34A8DD013454DB355121316BD7FD4}
 
-La géolocalisation permet de mesurer les données d’emplacement (latitude/longitude) et les points ciblés prédéfinis. Each `TrackLocation` call sends:
+La géolocalisation vous permet de mesurer les données d’emplacement (latitude/longitude) et les points d’intérêt prédéfinis. Chaque `TrackLocation` appel envoie :
 
-* Latitude/longitude et point ciblé (POI) (si dans un point ciblé défini dans le fichier de configuration `ADBMobileConfig.json`). Ils sont transmis aux variables de la solution mobile pour la création de rapports automatique.
-* Distance du centre et données de précision, transmises comme données contextuelles. Capture en utilisant une règle de traitement.
+* Latitude/Longitude et point d’accès (s’il s’agit d’un point d’accès défini dans le fichier de `ADBMobileConfig.json` configuration). Elles sont transmises aux variables de solution mobile pour le rapports automatique.
+* Distance du centre et précision transmise en tant que données contextuelles. Capturer à l’aide d’une règle de traitement.
 
-Pour effectuer le suivi d’un emplacement :
+Pour effectuer le suivi d&#39;un emplacement :
 
 ```js
 var ADB = ADBMobile; 
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Si le point ciblé (POI) suivant est défini dans le fichier de configuration `ADBMobileConfig.json` :
+Si le point d’accès suivant est défini dans le fichier de `ADBMobileConfig.json` configuration :
 
 ```js
 "poi" : [ 
@@ -217,11 +220,11 @@ Si le point ciblé (POI) suivant est défini dans le fichier de configuration `A
         ]
 ```
 
-Lorsque l’emplacement de l’appareil est déterminé dans un rayon de 7 000 mètres à partir du point défini, une variable de données contextuelles `a.loc.poi` dotée de la valeur « San Francisco » est envoyée avec l’accès `TrackLocation`. Une variable contextuelle `a.loc.dist` est envoyée avec la distance en mètres depuis les coordonnées définies.
+Lorsque l’emplacement du périphérique est déterminé comme se trouvant dans un rayon de 7 000 mètres du point défini, une variable de données `a.loc.poi` contextuelles avec la valeur &quot;San Francisco&quot; est envoyée avec l’ `TrackLocation` accès. An `a.loc.dist` context variable is sent with the distance in meters from the defined coordinates.
 
 ## Lifetime value {#section_D2C6971545BA4D639FBE07F13EF08895}
 
-La valeur de durée de vie permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur. À chaque fois que vous envoyez une valeur avec `TrackLifetimeValueIncrease`, la valeur est ajoutée à la valeur existante. La valeur de durée de vie est stockée sur l’appareil et peut être récupérée à tout moment en appelant `GetLifetimeValue`. Cette procédure peut être utilisée pour stocker des valeurs de durée de vie (achats, vues des publicités, affichages complets de vidéos, partages sur les médias sociaux, chargement de photos, etc.).
+La valeur de durée de vie vous permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur. À chaque fois que vous envoyez une valeur avec `TrackLifetimeValueIncrease`, la valeur est ajoutée à la valeur existante. La valeur de durée de vie est stockée sur l’appareil et peut être récupérée à tout moment en appelant `GetLifetimeValue`. Cette procédure peut être utilisée pour stocker des valeurs de durée de vie (achats, vues des publicités, affichages complets de vidéos, partages sur les médias sociaux, chargement de photos, etc.).
 
 ```js
 // Lifetime Value Example 
@@ -234,12 +237,12 @@ cdata["PurchasePrice"] = purchasePrice;
 ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 ```
 
-## Timed actions {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
+## Actions minutées{#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
-Les actions minutées permettent de mesurer la durée in-app et la durée totale écoulée entre le début et la fin d’une action. Le SDK calcule la durée de la session et la durée totale de toutes les sessions qu’il faudra pour que l’action soit terminée. Ces durées peuvent être utilisées pour définir des segments permettant de comparer la durée avant l’achat, le niveau de passage, le passage en caisse, etc.
+Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de la session et la durée totale (intersessions) nécessaire à l’exécution de l’action. Vous pouvez l’utiliser pour définir des segments à comparer à l’heure d’achat, au niveau de passage, au flux de passage en caisse, etc.
 
-* Nombre total de secondes dans l’application entre le début et la fin (intersessions)
-* Nombre total de secondes entre le début et la fin (horloge)
+* Nombre total de secondes dans l&#39;application entre le début et la fin - intersessions
+* Nombre total de secondes entre le début et la fin (heure de l’horloge)
 
 ```js
 // Timed Action Start Example 
