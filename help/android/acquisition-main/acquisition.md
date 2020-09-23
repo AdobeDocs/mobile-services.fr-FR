@@ -3,13 +3,13 @@ description: Il est possible de générer des liens d’acquisition avec des cod
 keywords: android;library;mobile;sdk
 seo-description: Il est possible de générer des liens d’acquisition avec des codes de suivi uniques dans Adobe Mobile Services. Lorsqu’un utilisateur télécharge et exécute une application à partir de la boutique d’applications après avoir cliqué sur le lien généré, le SDK collecte et envoie automatiquement les données d’acquisition à Adobe Mobile Services.
 seo-title: Acquisition des applications mobiles
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Acquisition des applications mobiles
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 
