@@ -2,13 +2,13 @@
 description: Voici une liste des méthodes fournies par la bibliothèque iOS.
 seo-description: Voici une liste des méthodes fournies par la bibliothèque iOS.
 seo-title: Méthodes de configuration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes de configuration
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 100%
 
