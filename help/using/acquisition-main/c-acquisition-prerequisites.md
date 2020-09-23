@@ -5,10 +5,13 @@ seo-description: Vous devez répondre aux conditions préalables suivantes avant
 seo-title: Conditions préalables requises pour l’acquisition
 solution: Experience Cloud,Analytics
 title: Conditions préalables requises pour l’acquisition
-topic: Mesures
+topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 74%
 
 ---
 
@@ -33,12 +36,12 @@ Pour effectuer un suivi des liens marketing, assurez-vous que les conditions pr�
    |--- |--- |--- |--- |
    | 4.1 à 4.5 | Oui | Non | Non |
    | 4.6 à 4.9 | Oui | Oui | Non |
-   | 4.9 ou ultérieure | Oui | Oui | Oui |
+   | 4.9 ou version ultérieure | Oui | Oui | Oui |
 
 1. Activation des options d’acquisition du SDK
 
-   Le suivi d’acquisition doit être activé dans la configuration du SDK avant que vous ne puissiez effectuer le suivi des liens et générer des rapports. Pour plus d’informations, voir [Configuration d’Acquisition](/help/using/acquisition-main/t-enable-acquisition.md).
+   Le suivi doit être activé dans la configuration du SDK pour que les liens puissent être suivis et signalés. For more information, see [Configure Acquisition](/help/using/acquisition-main/t-enable-acquisition.md).
 
 1. Ajout d’une application de la boutique d’applications
 
-   Vous devez ajouter l’application depuis l’App Store d’Apple ou Google Play. Pour plus d’informations, voir [Ajout d’une application depuis une boutique d’applications](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Vous devez ajouter l’application à partir de l’Apple App Store ou de Google Play. Pour plus d’informations, voir [Ajouter une application à partir d’une boutique](/help/using/manage-apps/c-app-store/t-app-store-app.md)d’applications.
