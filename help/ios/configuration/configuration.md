@@ -4,10 +4,13 @@ seo-description: 'Les informations suivantes vous permettent de configurer le SD
 seo-title: Configuration
 solution: Experience Cloud,Analytics
 title: Configuration
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 63261b61-e70a-42be-a56f-5943173c041e
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Les informations de cette section vous permettent de configurer le SDK iOS, y co
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
