@@ -5,10 +5,13 @@ seo-description: Le suivi des balises permet de mesurer et de cibler des micro-e
 seo-title: Suivi des balises
 solution: Experience Cloud,Analytics
 title: Suivi des balises
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 81%
 
 ---
 
@@ -24,12 +27,12 @@ Les données de balises suivantes sont envoyées à Analytics et à Target lorsq
 * `a.beacon.minor` : numéro mineur de la balise (par exemple, un numéro unique dans une boutique)
 * `a.beacon.prox` : valeurs 0 à 3 représentant la distance de l’utilisateur par rapport à la balise.
 
-Ces valeurs ont la signification suivante :
+Voici ce que ces valeurs signifient :
 
-* 0 = distance inconnue
-* 1 = proximité immédiate
-* 2 = proche
-* 3 = lointain
+* 0 = inconnu
+* 1 = immédiat
+* 2 = proche
+* 3 = far
 
 Ces données de balise sont capturées dans les variables des solutions mobiles.
 
@@ -45,10 +48,10 @@ Ces données de balise sont capturées dans les variables des solutions mobiles.
    import com.adobe.mobile.*;
    ```
 
-1. Récupérez la position des balises.
+1. Rassembler l&#39;emplacement de la balise.
 
-   Plusieurs bibliothèques tierces sont disponibles pour numériser les balises Bluetooth Low Energy, selon le fabricant de la balise.
-1. Une fois les informations de balise obtenues, vous pouvez utiliser l’appel suivant pour effectuer le suivi de l’emplacement :
+   Plusieurs bibliothèques tierces sont disponibles pour analyser les balises Bluetooth LE, selon le fabricant de la balise.
+1. Après avoir obtenu les informations de la balise, utilisez l&#39;appel suivant pour effectuer le suivi de l&#39;emplacement :
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
