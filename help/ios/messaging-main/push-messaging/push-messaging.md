@@ -1,20 +1,23 @@
 ---
-description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. En outre, grâce au SDK, vous pouvez créer facilement des rapports sur les utilisateurs qui ont ouvert votre application en cliquant sur un message push.
-seo-description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. En outre, grâce au SDK, vous pouvez créer facilement des rapports sur les utilisateurs qui ont ouvert votre application en cliquant sur un message push.
+description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK vous permet également de créer facilement des rapports sur les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message push.
+seo-description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK vous permet également de créer facilement des rapports sur les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message push.
 seo-title: Messagerie Push
 solution: Experience Cloud,Analytics
 title: Messagerie Push
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 74%
 
 ---
 
 
 # Messagerie Push{#push-messaging}
 
-Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. En outre, grâce au SDK, vous pouvez créer facilement des rapports sur les utilisateurs qui ont ouvert votre application en cliquant sur un message push.
+Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK vous permet également de créer facilement des rapports sur les utilisateurs qui ont ouvert votre application après avoir cliqué sur un message push.
 
 >[!IMPORTANT]
 >
@@ -24,7 +27,7 @@ Pour utiliser les messages push, vous **devez** disposer du SDK version 4.6 ou 
 
 >[!IMPORTANT]
 >
->Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Cela provoque la création d’un nouvel utilisateur unique qui ne recevra pas les messages Push en raison de son état d’inclusion. Par exemple, supposons qu’un utilisateur qui a choisi de recevoir des messages Push se connecte à votre application. Après la connexion, si vous définissez manuellement l’identifiant dans l’application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir les messages Push. Ce nouvel utilisateur ne recevra pas vos messages Push.
+>Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Ceci provoque la création d’un nouvel utilisateur unique qui ne recevra pas de messages Push en raison de son état d’inclusion. Supposons, par exemple, qu’un utilisateur qui s’est abonné pour recevoir des messages Push se connecte à votre application. Une fois connecté, si vous définissez manuellement l’identifiant dans votre application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir de messages Push. Ce nouvel utilisateur ne recevra pas vos messages Push.
 
 ## Conditions préalables {#section_06655ABE973743DC965897B229A2118D}
 
