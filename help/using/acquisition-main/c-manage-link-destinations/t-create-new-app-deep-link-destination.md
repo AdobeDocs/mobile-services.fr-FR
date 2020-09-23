@@ -5,10 +5,13 @@ seo-description: Vous pouvez créer une nouvelle destination de lien qui redirig
 seo-title: Création d’une destination de lien
 solution: Experience Cloud,Analytics
 title: Création d’une destination de lien
-topic: Mesures
+topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ Vous pouvez créer une nouvelle destination de lien qui redirige les utilisateur
 1. Cliquez sur **[!UICONTROL Gérer les destinations de lien]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 1. Renseignez les champs suivants :
-   * **[!UICONTROL Titre]**
+   * **[!UICONTROL Title]**
 
       Saisissez un nom explicite pour la destination de lien d’application. Le titre s’affiche seulement sur la page Gérer les destinations de lien dans l’interface utilisateur de Adobe Mobile Services. Grâce à ce nom explicite, vous et d’autres personnes de votre organisation pouvez trouver rapidement une destination de lien spécifique et des informations à son sujet.
 
@@ -32,11 +35,11 @@ Vous pouvez créer une nouvelle destination de lien qui redirige les utilisateur
 
       * **[!UICONTROL Lien profond d’application]**
 
-         Spécifiez un lien profond de schéma d’URI (par exemple, `yourapp://section`). Les destinations de lien profond d’application sont des liens profonds de schéma d’URI qui orientent les utilisateurs vers un lien profond au sein de l’application. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits spécifiques dans une application mobile d’un détaillant en ligne.
+         Spécifiez un lien profond de schéma d’URI (par exemple, `yourapp://section`). Les destinations de lien profond d’application sont des liens profonds de schéma URI qui orientent les utilisateurs vers un lien profond dans votre application. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits spécifique dans l’application mobile d’un détaillant en ligne.
 
       * **[!UICONTROL Lien Web]**
 
-         Saisissez une URL HTTP ou HTTPS Web, par exemple, `https://adobe.com`. Les destinations de lien Web orientent les utilisateurs vers une URL. Par exemple, vous pouvez rediriger les utilisateurs vers une gamme de produits sur le site Web d’une boutique en ligne.
+         Saisissez une URL HTTP ou HTTPS Web, par exemple, `https://adobe.com`. Les destinations de lien Web orientent les utilisateurs vers une URL. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits sur le site Web d’un détaillant en ligne.
 
       * **[!UICONTROL Lien hybride]**
 
@@ -52,7 +55,7 @@ Sélectionnez l’application associée au lien que vous allez fournir
 
       Saisissez l’URL réelle du lien sélectionné. Le libellé de ce champ varie selon le type de lien sélectionné.
 
-   * **[!UICONTROL Remarques]**
+   * **[!UICONTROL Notes]**
 
       Saisissez des remarques facultatives au sujet de votre destination. Ces remarques s’affichent seulement sur la page Gérer les destinations de lien dans l’interface utilisateur de Adobe Mobile Services. Elles vous aident, vous et les autres personnes de votre organisation, à rechercher rapidement une destination de lien spécifique et peuvent fournir des informations à son sujet, sur la campagne à laquelle elle est liée ou tout ce qui selon vous est important.
 
