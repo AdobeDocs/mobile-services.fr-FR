@@ -5,10 +5,13 @@ seo-description: Les liens universels (iOS) et les liens d’application (Androi
 seo-title: Liens universels Apple et liens d’application Android
 solution: Experience Cloud,Analytics
 title: Liens universels Apple et liens d’application Android
-topic: Mesures
+topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: ht
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1142'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +66,7 @@ Vous pouvez créer un lien marketing qui utilise un lien universel ou d’applic
 
 1. Dans Adobe Mobile Services, créez un lien marketing qui utilise des liens universels :
 
-   a. Sélectionnez l’application sur la page d’accueil de Mobile Services, cliquez sur **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Générateur de liens marketing]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -122,7 +125,7 @@ Vous pouvez créer un lien marketing qui utilise un lien universel ou d’applic
 
 1. Dans Adobe Mobile Services, créez un lien marketing qui utilise des liens d’application :
 
-   a. Sélectionnez l’application sur la page d’accueil de Mobile Services, cliquez sur **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Générateur de liens marketing]**.
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Cliquez sur **[!UICONTROL Créer]**.
 
