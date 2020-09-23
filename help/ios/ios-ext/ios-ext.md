@@ -4,10 +4,13 @@ seo-description: L’extension iOS permet de collecter les données d’utilisat
 seo-title: Mise en œuvre de l’extension iOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +21,7 @@ L’extension iOS permet de collecter les données d’utilisation de vos applic
 
 ## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
@@ -31,7 +34,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >
 >Il est vivement recommandé d’utiliser le SDK iOS plutôt que votre propre wrapper.
 
-Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application contenante en envoyant des demandes à l’application contenante et en recevant des réponses. Bien que vous puissiez envoyer les données de suivi en tant que dictionnaire de l’application Watch à l’application contenante et appeler ensuite n’importe quelle méthode de suivi sur l’application contenante pour envoyer les données, cette solution est limitée.
+Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application qui la contient en envoyant des requêtes à l’application qui la contient et en recevant les réponses. Bien que vous puissiez envoyer les données de suivi sous forme de dictionnaire depuis l’application de contrôle vers l’application contenant et appeler toute méthode de suivi sur l’application contenant pour envoyer les données, cette solution présente des limites.
 
 Dans la plupart des cas, lorsqu’un utilisateur a recours à l’application Watch, l’application contenante s’exécute en arrière-plan et seules les méthodes `TrackActionInBackground`, `TrackLocation` et `TrackBeacon` peuvent être appelées en toute sécurité. L’appel d’autres méthodes de suivi interfère avec les données de cycle de vie. Vous devez donc utiliser uniquement ces trois méthodes pour envoyer les données depuis l’application Watch.
 
@@ -43,13 +46,14 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 >
 >Vérifiez que l’un de vos projets comprend au minimum les cibles suivantes :
 >
->* Une cible contenant l’application.
->* Une cible pour l’extension.
+>* Une cible pour contenir l’application.
+>* Une cible pour l&#39;extension.
+
 >
 
 
 
-Si vous utilisez une application WatchKit, vous devez avoir une troisième cible. Pour plus d’informations sur le développement pour Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
+Si vous travaillez sur une application WatchKit, vous devriez avoir une troisième cible. Pour plus d’informations sur le développement pour Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
 ## Configuration de l’application conteneur {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -107,8 +111,8 @@ Prenez note des informations suivantes :
 
       Cette valeur signifie que l’accès provient de l’extension.
 
-* Si vous effectuez une mise à niveau à partir d’une ancienne version du SDK, lorsque l’application contenante est lancée, Adobe migre automatiquement tous les paramètres utilisateur par défaut ainsi que les fichiers en cache depuis le dossier de l’application contenante vers le dossier partagé du groupe d’applications.
-* Si l’application contenante n’est jamais lancée, les accès provenant de l’extension sont supprimés.
-* Les numéros de version de l’application contenante et de l’application d’extension doivent être identiques.
+* Si vous effectuez une mise à niveau à partir d’une ancienne version du SDK, lorsque l’application contenant est lancée, l’Adobe migre automatiquement tous les fichiers par défaut et mis en cache de l’utilisateur du dossier contenant l’application vers le dossier partagé du groupe d’applications.
+* Si l’application conteneur n’est jamais lancée, les accès provenant de l’extension sont ignorés.
+* Le numéro de version et le numéro de version doivent être identiques entre votre application qui contient et l’application d’extension.
 * Aucun appel de cycle de vie n’est déclenché sur les applications d’extension iOS.
 
