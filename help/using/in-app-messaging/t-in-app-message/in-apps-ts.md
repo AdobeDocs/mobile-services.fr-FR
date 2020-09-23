@@ -5,19 +5,22 @@ seo-description: Ces informations peuvent vous aider à résoudre les problèmes
 seo-title: Dépannage de la messagerie intégrée (in-app)
 solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
-topic: Mesures
+topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 58%
 
 ---
 
 
-# Dépannage de la messagerie in-app{#troubleshooting-in-app-messaging}
+# Dépannage de la messagerie intégrée (in-app) {#troubleshooting-in-app-messaging}
 
 Ces informations peuvent vous aider à résoudre les problèmes liés à la messagerie in-app.
 
-Si vous réalisez toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
+Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
 
 ## Placez-vous la nouvelle configuration et le nouveau SDK dans l’application ?
 
@@ -25,11 +28,11 @@ Si vous réalisez toutes les exigences relatives à la messagerie in-app, mais q
 
 * Assurez-vous que votre configuration comporte une section [Messagerie](/help/using/in-app-messaging/in-app-messaging.md) (fichier JSON téléchargé) ou un point de terminaison distant Messages afin qu’il puisse être récupéré depuis la gestion dynamique des balises.
 
-## Mon message en plein écran ne s’affiche pas sous Android. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
+## Mon message en plein écran sous Android ne s’affiche pas. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
 
-Avez-vous mis à jour votre fichier de manifeste afin de définir l’activité Plein écran ?
+Avez-vous mis à jour votre fichier manifeste pour définir l’activité en plein écran ?
 
-## Mon message de notification locale ne fonctionne pas sous Android.
+## Mon message de notification locale sous Android ne fonctionne pas.
 
 Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. Pour plus d’informations, voir l’étape n°1 dans [Messagerie in-app](/help/android/messaging-main/messaging/messaging.md).
 
@@ -49,31 +52,31 @@ Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’
 
 Procédez de l’une des manières suivantes :
 
-* Il peut s’écouler quelques minutes avant que la gestion dynamique des balises ne mette à jour son point de terminaison avec votre nouvelle définition.
+* La gestion dynamique des balises peut prendre quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition.
 
-   Patientez et essayez à nouveau.
+   Donnez-lui du temps et réessayez.
 
 * La configuration se mettra à jour uniquement lors d’un nouveau lancement.
 
-   Si l’application a été redémarrée pendant le délai d’expiration de la session du cycle de vie, la nouvelle configuration n’a peut-être pas été téléchargée.
+   Si l’application a été redémarrée dans le délai d’expiration de la session du cycle de vie, il est possible que votre nouvelle configuration n’ait pas été téléchargée.
 
 ## Mon image ne correspond pas exactement à l’espace fourni par le modèle.
 
-Le modèle de message in-app en plein écran prend en charge l’affichage d’une image provenant d’un serveur distant (adresse URL de l’image) ou du lot d’applications (image en lot). L’image doit être spécifiée dans un format standard tel que JPG, GIF ou PNG.
+Le modèle de message intégré en plein écran prend en charge l’affichage d’une image provenant d’un serveur distant (URL d’image) ou du lot d’applications (image groupée). L’image doit être au format d’image standard, par exemple JPG, GIF ou PNG.
 
-Du fait que les écrans des appareils peuvent être de taille très variable, l’image ne tiendra probablement pas exactement dans l’espace prévu par le modèle. Le modèle s’efforce de toujours afficher le centre de l’image et les recadre (portrait) ou atténue (paysage) les bords si l’image ne s’adapte pas au format de l’écran.
+Étant donné que les écrans des périphériques ont de nombreuses dimensions différentes, l’image ne correspond probablement pas exactement à l’espace fourni par le modèle. Le modèle se concentre toujours sur l’affichage du centre de l’image et recadre (portrait) ou atténue (paysage) les côtés si l’image ne tient pas.
 
 Les règles de dimensionnement et de placement exactes pour chaque orientation sont les suivantes :
 
-* **Portrait :** image mise à l’échelle à une hauteur de 195 pixels pour les téléphones, 529 pixels pour les tablettes, centrée si la largeur de l’image est inférieure à la largeur de l’appareil, recadrée si la largeur de l’image est supérieure à la largeur de l’appareil.
+* **Portrait**, où l’image est mise à l’échelle à une hauteur de 195 px pour le téléphone, de 529 px pour la tablette, centrée si la largeur de l’image est inférieure à la largeur de l’appareil et recadrée si la largeur de l’image est supérieure à la largeur de l’appareil.
 
-* **Paysage :** image mise à l’échelle à 100 % de la hauteur de l’appareil, largeur égale à 75 % de celle de l’appareil, avec une apparition en fondu sur la droite.
+* **Paysage**, où l’image est mise à l’échelle à 100 % de la hauteur du périphérique, largeur égale à 75 % du périphérique et avec un fondu en arrière sur la droite.
 
-   Si vous rencontrez des problèmes avec le modèle Plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Le modèle HTML personnalisé offre davantage de flexibilité pour les images et permet un contrôle complet du modèle.
+   Si vous rencontrez des problèmes avec le modèle plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Le modèle HTML personnalisé offre une plus grande flexibilité pour les images et permet un contrôle total du modèle.
 
-## Mes messages ne reflètent pas les modifications ou mises à jour que j’ai apportées dans l’interface utilisateur.
+## Mes messages ne reflètent pas les modifications/mises à jour que j’ai effectuées dans l’interface utilisateur.
 
-Le SDK récupère les messages nouveaux ou mis à jour au moment du lancement d’un cycle de vie. Ceci se produit seulement quand l’application est fermée/placée en arrière-plan pendant un délai plus long que la valeur de temporisation, avant d’être rouverte.
+Le SDK récupère les messages nouveaux ou mis à jour au moment du lancement d’un cycle de vie. Il ne s’agit que lorsque l’application est fermée/mise en arrière-plan pour une durée supérieure à la valeur du délai d’expiration du cycle de vie, puis rouverte.
 
 Procédez comme suit :
 
