@@ -4,15 +4,18 @@ seo-description: Suivez les étapes ci-après pour configurer une suite de rappo
 seo-title: Avant de commencer
 solution: Experience Cloud,Analytics
 title: Avant de commencer
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 93%
 
 ---
 
 
-# Avant de commencer{#before-you-start}
+# Avant de commencer {#before-you-start}
 
 Suivez les étapes ci-après pour configurer une suite de rapports afin de collecter des données d’application iOS.
 
@@ -24,7 +27,7 @@ Les administrateurs d’Analytics et les développeurs d’applications doivent 
 
 Pour configurer une suite de rapports et collecter les données de l’application mobile :
 
-1. Suivez les instructions d’une des sections dans [Connexion à l’interface utilisateur Adobe Mobile Services](/help/ios/getting-started/getting-started.md).
+1. Renseignez l’une des sections dans [Connexion à l’interface utilisateur d’Adobe Mobile Services](/help/ios/getting-started/getting-started.md).
 1. Créez un compte Analytics pour chaque développeur d’applications.
 
 Les développeurs d’applications ont désormais accès à l’affichage des suites de rapports que vous avez créées.
@@ -42,11 +45,11 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 Pour plus d’informations sur les rôles et les autorisations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Connexion à l’interface utilisateur Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
+## Connexion à l’interface utilisateur d’Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services est l’interface principale de création de rapports pour les analyses et le ciblage des applications mobiles. Une fois que vous avez terminé ces étapes, vous pouvez télécharger un fichier de configuration préconfiguré comportant le serveur de collecte des données, la suite de rapports ainsi que de nombreux autres paramètres.
+Adobe Mobile Services est la principale interface de rapports pour l’analyse et le ciblage des applications mobiles. Une fois ces étapes terminées, vous pouvez télécharger un fichier de configuration préconfiguré avec votre serveur de collecte de données, votre suite de rapports et de nombreux autres paramètres.
 
-Vous pouvez vous connecter à Adobe Mobile Services de l’une des façons suivantes :
+Vous pouvez vous connecter à Adobe Mobile Services de l’une des manières suivantes :
 
 * **Experience Cloud**
 
@@ -60,7 +63,7 @@ Vous pouvez vous connecter à Adobe Mobile Services de l’une des façons sui
 
 * **Adobe Analytics**
 
-   Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
+   Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
 
 ## Création d’une suite de rapports {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
@@ -68,9 +71,9 @@ Pour créer une suite de rapports permettant de collecter des données d’appli
 
 1. Cliquez sur **[!UICONTROL Créer une application]**.
 
-   Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** &gt; **[!UICONTROL Ajouter]**.
+   Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** > **[!UICONTROL Ajouter]**.
 
-1. Dans la liste déroulante **[!UICONTROL Suite de rapports]**, sélectionnez **[!UICONTROL Nouvelle suite de rapports]**.
+1. Dans la liste déroulante **[!UICONTROL Suite de rapports]**, sélectionnez **[!UICONTROL Nouvelle suite de rapports]**.
 
 1. Saisissez le nom de l’application et sélectionnez un identifiant unique de suite de rapports.
 
