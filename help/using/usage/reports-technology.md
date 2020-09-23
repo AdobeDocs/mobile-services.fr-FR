@@ -5,10 +5,13 @@ seo-description: Le rapport Technologie vous permet de visualiser les différent
 seo-title: Rapport Technologie
 solution: Experience Cloud,Analytics
 title: Rapport Technologie
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +24,7 @@ Ce rapport présente une visualisation radiale de vos données existantes, et vo
 
 ## Navigation et utilisation {#section_83CA60E1AE6245FEBCBFF3205615C4DF}
 
-Cette visualisation fournit par exemple le rapport de base et les ventilations, et utilise la hauteur pour montrer la mesure concernée et les différences de performances entre les mesures. Chaque anneau représente un segment d’audience dans la catégorie de l’anneau. Vous pouvez exécuter des actions sur une audience, comme appliquer un filtre d’attractivité et afficher ou masquer des mesures.
+Cette visualisation fournit, par exemple, le rapport de base et les ventilations, utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment d&#39;audience dans la catégorie de l&#39;anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
 >[!TIP]
 >
@@ -29,10 +32,10 @@ Cette visualisation fournit par exemple le rapport de base et les ventilations, 
 
 ![](assets/report_technology.png)
 
-Le graphique radial est interactif et vous permet d’effectuer les tâches suivantes :
+Le graphique radial est interactif et vous pouvez exécuter les tâches suivantes :
 
-* Survolez une partie quelconque du graphique avec la souris pour afficher plus d’informations.
-* Modifiez la période en cliquant sur l’icône **[!UICONTROL Calendrier].**
+* Passez la souris sur une partie quelconque du graphique pour afficher plus d’informations.
+* Modifiez la période en cliquant sur l’icône **[!UICONTROL Calendrier]**.
 * Cliquez sur une tranche de l’anneau pour sélectionner l’audience pour laquelle vous pouvez exécuter certaines actions, notamment zoomer, masquer les audiences et créer un message in-app ou un filtre bascule.
 * Dans l’angle supérieur droit, sélectionnez **[!UICONTROL Type d’appareil]** et **[!UICONTROL Appareil]** pour afficher des informations sur les appareils et les types d’appareils.
 
@@ -42,12 +45,12 @@ Le graphique radial est interactif et vous permet d’effectuer les tâches suiv
 
 Le tableau suivant décrit les rapports standards et la manière dont ils sont alimentés dans Adobe Mobile Services :
 
-| Rapport | Méthode de remplissage | Description |
+| Rapport | Méthode de population | Description |
 |--- |--- |--- |
 | Device | Mesures de cycle de vie | Mesures courantes ventilées par type de périphérique. |
 | Systèmes d’exploitation | Automatique | Mesures courantes ventilées par système d’exploitation. |
 | Version du système d’exploitation | Mesures de cycle de vie | Mesures courantes ventilées par version du système d’exploitation. |
-| Opérateurs | Automatique | Mesures courantes ventilées par opérateur. |
+| Transporteurs | Automatique | Mesures courantes ventilées par opérateur. |
 
 >[!TIP]
 >
