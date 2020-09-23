@@ -1,20 +1,23 @@
 ---
-description: La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les événements sérialisés directement dans l’appel au serveur.
-seo-description: La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les événements sérialisés directement dans l’appel au serveur.
+description: La sérialisation des événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir des événements sérialisés directement sur l’appel au serveur.
+seo-description: La sérialisation des événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir des événements sérialisés directement sur l’appel au serveur.
 seo-title: Sérialisation d’événements
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Sérialisation d’événements
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 translation-type: tm+mt
-source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
 
 # Sérialisation d’événements{#event-serialization}
 
-La sérialisation d’événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre des données contextuelles pour définir des événements sérialisés directement sur l’appel au serveur.
+La sérialisation des événements n’est pas prise en charge par les règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir des événements sérialisés directement sur l’appel au serveur.
 
 ```js
 cdata["&&events"] = "event1:12341234";
