@@ -1,24 +1,27 @@
 ---
-description: Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-seo-description: Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+description: Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
+seo-description: Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
 seo-title: Méthodes SDK
-solution: Marketing Cloud,Analytics
-title: SDK methods
-topic: Développeur et mise en œuvre
+solution: Experience Cloud,Analytics
+title: Méthodes SDK
+topic: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 50%
 
 ---
 
 
-# SDK methods {#sdk-methods}
+# Méthodes SDK {#sdk-methods}
 
-Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
 
 * **GetVersion (winJS : getVersion)**
 
@@ -40,9 +43,9 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
       The default value is set in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) file.
 
@@ -52,7 +55,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
       static Windows::Foundation::IAsyncOperation<ADBMobilePrivacyStatus> ^getPrivacyStatusAsync(); 
       ```
 
-   * Here are the code samples for this method:
+   * Voici des exemples de code pour cette méthode :
 
       ```csharp
       public enum class ADBMobilePrivacyStatus : int  {
@@ -74,9 +77,9 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
 
    Définit l’état de confidentialité pour l’utilisateur actuel sur `status`. Valeurs possibles :
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` : si l’horodatage est activé pour la suite de rapports, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in ; alors les accès sont envoyés) ou sur exclusion (opt-out ; les accès sont ignorés). Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
+   * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
    * Voici la syntaxe de cette méthode :
 
@@ -101,7 +104,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
 
 * **GetLifetimeValue (winJS : getLifetimeValue)**
 
-   Renvoie la valeur du cycle de vie de l’utilisateur actuel. La valeur par défaut est de 0.
+   Renvoie la valeur du cycle de vie de l’utilisateur actuel. La valeur par défaut est de 0.
 
    * Voici la syntaxe de cette méthode :
 
@@ -116,13 +119,13 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
        var ltv = ADB.Config.getLifetimeValue(); 
       ```
 
-* **GetUserIdentifier (winJS : getUserIdentifier)**
+* **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Renvoie un identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie une valeur nulle si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
+   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie la valeur null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
 
    >[!TIP]
    >
-   >Si votre application effectue une mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `null` tant qu’il n’est pas défini.
+   >Si votre application est mise à niveau de l’Experience Cloud SDK 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. For new installations on the 4.x SDK, user identifier is `null` until set.
 
    * Voici la syntaxe de cette méthode :
 
@@ -137,7 +140,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
       var userId = ADB.Config.getUserIdentifier(); 
       ```
 
-* **SetUserIdentifier (winJS : setUserIdentifier)**
+* **SetUserIdentifier (winJS: setUserIdentifier)**
 
    Définit l’identifiant d’utilisateur sur `identifier`.
 
@@ -173,7 +176,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
 
 * **SetDebugLogging (winJS : setDebugLogging)**
 
-   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation du débogage ne fonctionne que lorsque vous utilisez la version de débogage de la bibliothèque, la version de publication ignore ce paramètre.
+   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation du débogage fonctionne uniquement lors de l’utilisation de la version de débogage de la bibliothèque. La version de publication ignore ce paramètre.
 
    * Voici la syntaxe de cette méthode :
 
@@ -188,13 +191,13 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
       ADB.Config.setDebugLogging(true); 
       ```
 
-* **CollectLifecycleData (winJS : VEraieLifecycleData)**
+* **CollectLifecycleData (winJS : VE)**
 
    Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Invoke this method in the `onResume()` method in each Activity inside of your application, as shown in the following example. Il est également recommandé de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
+   >Appelez cette méthode dans la `onResume()` méthode de chaque Activité de votre application, comme indiqué dans l&#39;exemple suivant. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
@@ -209,13 +212,13 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications W
       ADB.Config.collectLifecycleData(); 
       ```
 
-* **PauseCollecting&#x200B;LifecycleData (winJS: pauseCollecting&#x200B;LifecycleData)**
+* **PauseCollecte &#x200B; LifecycleData (winJS : pauseCollecte &#x200B; données de cycle de vie)**
 
-   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, en cas de suspension, collecte un horodatage afin de déterminer la durée de la session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
+   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors d’une mise en pause, un horodatage est collecté pour déterminer la durée de session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Invoke this method in the `onPause()` methods in each Activity inside Your application, as shown in the example. Il est également recommandé de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
+   >Appelez cette méthode dans les `onPause()` méthodes de chaque Activité de votre application, comme le montre l&#39;exemple. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
