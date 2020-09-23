@@ -1,21 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Début rapide des développeurs
-solution: Marketing Cloud,Analytics
-title: Début rapide des développeurs
+seo-title: Démarrage rapide pour les développeurs
+solution: Experience Cloud,Analytics
+title: Démarrage rapide pour les développeurs
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# Début rapide des développeurs {#developer-quick-start}
+# Démarrage rapide pour les développeurs {#developer-quick-start}
 
 Vous aurez besoin de Visual Studio 2013 ou version ultérieure pour mettre en oeuvre le SDK.
 
