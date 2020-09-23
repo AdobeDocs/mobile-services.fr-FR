@@ -4,10 +4,13 @@ seo-description: Consultez ces informations en cas de demande de suppression de 
 seo-title: Définition de l’état de souscription de l’utilisateur
 solution: Experience Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
