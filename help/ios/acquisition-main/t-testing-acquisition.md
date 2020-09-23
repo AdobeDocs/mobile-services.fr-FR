@@ -5,8 +5,11 @@ seo-title: Test de l’acquisition héritée
 solution: Experience Cloud,Analytics
 title: Test de l’acquisition héritée
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 Les informations suivantes expliquent comment rediriger un lien de campagne d’acquisition héritée basé sur l’empreinte numérique d’un périphérique.
 
-Si l’application mobile n’est pas encore sur Google Play, vous pouvez sélectionner n’importe quelle destination lors de la création du lien de campagne. Cela a uniquement une incidence sur l’application utilisée par le serveur pour vous rediriger lorsque vous cliquez sur le lien d’acquisition. Le lien d’acquisition pourra toujours être testé.
+Si l’application mobile n’est pas encore dans Google Play, vous pouvez sélectionner n’importe quelle application mobile comme destination lors de la création du lien de la campagne. Cela a uniquement une incidence sur l’application utilisée par le serveur pour vous rediriger lorsque vous cliquez sur le lien d’acquisition. Le lien d’acquisition pourra toujours être testé.
 
 1. Accédez à **[!UICONTROL Utilisation de liens d’acquisition hérités]** dans Adobe Mobile Services et créez une URL de campagne d’acquisition.
 
