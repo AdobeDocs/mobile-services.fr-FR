@@ -1,23 +1,26 @@
 ---
-description: Les rapports d’utilisation permettent de déterminer la durée de session moyenne, le nombre d’utilisateurs actifs par jour et par mois, les mises à niveau, ainsi que d’autres informations qui vous aideront à mieux comprendre comment et à quelle fréquence est utilisée votre application. Les rapports de rétention indiquent les niveaux de fidélisation des utilisateurs le jour suivant le lancement initial, après 7 jours et après 28 jours.
+description: Les rapports d’utilisation présentent la durée moyenne de session, les utilisateurs actifs quotidiens et mensuels, les mises à niveau et d’autres informations qui vous aident à comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de rétention des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 keywords: mobile
-seo-description: Les rapports d’utilisation permettent de déterminer la durée de session moyenne, le nombre d’utilisateurs actifs par jour et par mois, les mises à niveau, ainsi que d’autres informations qui vous aideront à mieux comprendre comment et à quelle fréquence est utilisée votre application. Les rapports de rétention indiquent les niveaux de fidélisation des utilisateurs le jour suivant le lancement initial, après 7 jours et après 28 jours.
+seo-description: Les rapports d’utilisation présentent la durée moyenne de session, les utilisateurs actifs quotidiens et mensuels, les mises à niveau et d’autres informations qui vous aident à comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de rétention des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 seo-title: Rapports
 solution: Experience Cloud,Analytics
 title: Rapports
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 19%
 
 ---
 
 
 # Rapports{#reports}
 
-Les rapports d’utilisation permettent de déterminer la durée de session moyenne, le nombre d’utilisateurs actifs par jour et par mois, les mises à niveau, ainsi que d’autres informations qui vous aideront à mieux comprendre comment et à quelle fréquence est utilisée votre application. Les rapports de rétention indiquent les niveaux de fidélisation des utilisateurs le jour suivant le lancement initial, après 7 jours et après 28 jours.
+Les rapports d’utilisation présentent la durée moyenne de session, les utilisateurs actifs quotidiens et mensuels, les mises à niveau et d’autres informations qui vous aident à comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de rétention des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 
-Les rapports suivants peuvent être générés dans l’interface utilisateur de Mobile :
+Vous pouvez générer les rapports suivants dans l’interface utilisateur de Mobile :
 
 * [Aperçu](/help/using/usage/usage-overview.md)
 * [Utilisateurs et sessions](/help/using/usage/users-sessions.md)
