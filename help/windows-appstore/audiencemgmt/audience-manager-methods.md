@@ -2,12 +2,12 @@
 description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
 seo-description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
 seo-title: Méthodes Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Méthodes Audience Manager
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
@@ -15,7 +15,7 @@ ht-degree: 45%
 ---
 
 
-# Méthodes Audience Manager{#audience-manager-methods}
+# Méthodes Audience Manager {#audience-manager-methods}
 
 Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
 
@@ -95,7 +95,7 @@ Si le gestionnaire d’audiences est configuré dans votre fichier JSON, un sign
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData (winJS : signalWithData)**
+* **SignalWithData (winJS: signalWithData)**
 
    Envoie à l’Audience Manager un signal avec des caractéristiques et obtient les segments correspondants renvoyés dans un rappel de bloc.
 
