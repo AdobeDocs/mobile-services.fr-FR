@@ -2,12 +2,12 @@
 description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en oeuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
 seo-description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en oeuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
 seo-title: Messagerie in-app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Messagerie in-app
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 61%
@@ -38,7 +38,7 @@ Vous recherchez des informations et de la documentation concernant le SDK d’Ad
 >
 >To use in-app messaging, you **must** have SDK version 4.2 or later.
 
-Vous pouvez créer des messages et des règles dans les services Adobe Mobile qui définissent le moment où les messages sont affichés. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Pour afficher les messages in-app, des mises à jour doivent être apportées au SDK. Vous pouvez effectuer ces étapes même si vous n’avez encore défini aucun message. Une fois que vous avez défini les messages, ils sont diffusés dynamiquement dans votre application et affichés sans mise à jour de la boutique d’applications.
+Vous pouvez créer des messages et des règles dans les services mobiles d’Adobe qui définissent le moment où les messages s’affichent. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Pour afficher les messages in-app, des mises à jour doivent être apportées au SDK. Vous pouvez effectuer ces étapes même si vous n’avez encore défini aucun message. Une fois que vous avez défini les messages, ils sont diffusés dynamiquement dans votre application et affichés sans mise à jour de la boutique d’applications.
 
 ## Activation de la messagerie in-app {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
