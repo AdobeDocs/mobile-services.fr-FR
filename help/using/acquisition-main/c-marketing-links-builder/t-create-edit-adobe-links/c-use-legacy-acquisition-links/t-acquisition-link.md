@@ -1,23 +1,26 @@
 ---
-description: Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
+description: Vous pouvez créer des liens de boutique d’applications qui vous permettent de télécharger directement des applications à partir de l’Apple App Store et de Google Play. Les liens que vous créez vous permettent d’attribuer vos événements de réussite aux téléchargements.
 keywords: mobile
-seo-description: Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
+seo-description: Vous pouvez créer des liens de boutique d’applications qui vous permettent de télécharger directement des applications à partir de l’Apple App Store et de Google Play. Les liens que vous créez vous permettent d’attribuer vos événements de réussite aux téléchargements.
 seo-title: Création d’un lien d’acquisition
 solution: Experience Cloud,Analytics
 title: Création d’un lien d’acquisition
-topic: Mesures
+topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 74%
 
 ---
 
 
 # Création d’un lien d’acquisition{#create-an-acquisition-link}
 
-Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
+Vous pouvez créer des liens de boutique d’applications qui vous permettent de télécharger directement des applications à partir de l’Apple App Store et de Google Play. Les liens que vous créez vous permettent d’attribuer vos événements de réussite aux téléchargements.
 
-1. Cliquez sur **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Gérer les liens d’acquisition]** &gt; **[!UICONTROL Créer]**.
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
 1. Saisissez les informations suivantes dans la section **[!UICONTROL Informations sur les liens]** :
 
    * (**Obligatoire**) **[!UICONTROL Nom]**
@@ -43,7 +46,8 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
       Sélectionnez une boutique d’applications :
       * Apple App Store
       * Google Play
-      Les options de chaque boutique d’applications varient comme décrit ci-dessous.
+
+      Les options de chaque boutique d’applications varient, comme décrit ci-dessous.
 
    * **[!UICONTROL Région du navigateur (Apple App Store uniquement)]**
 
@@ -74,7 +78,7 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
 
 
-1. Pour enregistrer votre configuration et générer le lien, cliquez sur **[!UICONTROL Ajouter]** &gt; **[!UICONTROL Enregistrer]**.
+1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
    Le lien nouvellement créé s’affiche dans la section **[!UICONTROL Liens de boutique d’applications]**.
 
