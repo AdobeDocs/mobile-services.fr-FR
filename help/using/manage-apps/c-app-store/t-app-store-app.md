@@ -5,10 +5,13 @@ seo-description: Vous pouvez ajouter une application existante depuis l’App S
 seo-title: Ajout d’une application depuis une boutique d’applications
 solution: Experience Cloud,Analytics
 title: Ajout d’une application depuis une boutique d’applications
-topic: Mesures
+topic: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 100%
 
 ---
 
