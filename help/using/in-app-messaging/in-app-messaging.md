@@ -5,10 +5,13 @@ seo-description: Créez et gérez les messages in-app et push, puis créez des r
 seo-title: Messagerie
 solution: Experience Cloud,Analytics
 title: Messagerie
-topic: Mesures
+topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 82%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 Vous pouvez créer et gérer les messages in-app et push, puis créez des rapports sur ces derniers.
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, cliquez sur [Launch](https://launch.adobe.com/).
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -34,9 +37,9 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 Les messages in-app sont remis en temps réel aux utilisateurs, selon leurs actions et leurs caractéristiques. Les messages sont déclenchés à partir des données Analytics qui font déjà l’objet d’un suivi par le SDK.
 
-Les types de messages suivants sont pris en charge :
+Les types de message suivants sont pris en charge :
 
-* Personnalisés et à thème
+* Personnalisé et thématique
 * Plein écran
 * Alertes natives
 * Notifications locales
@@ -47,11 +50,11 @@ Pour vous aider à comprendre le fonctionnement de la messagerie in-app, voici q
 * Vous devez spécifier le détenteur des droits d’administrateur des applications mobiles.
 
    Ces droits donnent accès aux liens d’acquisition et aux messages in-app. Pour plus d’informations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
-* Une fois un message approuvé, il est publié automatiquement dans l’application.
-* Le SDK présente le message aux utilisateurs lorsque les paramètres du message (caractéristiques, déclencheur et planification) sont satisfaits.
-* Les messages peuvent contenir du code HTML personnalisé ou une image, en utilisant une URL en ligne.
+* Une fois qu’un message est approuvé, il est publié automatiquement dans l’application.
+* Le SDK présente le message aux utilisateurs lorsque les paramètres du message, tels que les caractéristiques, le déclencheur et la planification, sont satisfaits.
+* Les messages peuvent contenir du code HTML personnalisé ou une image, à l’aide d’une URL en ligne.
 
-   Une image de sauvegarde ou alternative issue du lot de l’application peut également être spécifiée pour les messages déclenchés en mode hors ligne.
+   Une image de sauvegarde ou alternative issue du lot d’applications peut également être spécifiée pour les messages déclenchés hors ligne.
 * Les messages actifs et terminés fournissent des rapports sur le nombre total de consultations, les taux de clics publicitaires, etc.
 * Les modèles sont disponibles pour les messages personnalisés, ce qui vous permet de créer facilement votre propre message in-app.
 
