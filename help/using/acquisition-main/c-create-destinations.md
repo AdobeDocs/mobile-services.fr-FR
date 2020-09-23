@@ -5,10 +5,13 @@ seo-description: Les marketeurs peuvent créer, enregistrer et modifier les dest
 seo-title: Destinations
 solution: Experience Cloud,Analytics
 title: Destinations
-topic: Mesures
+topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +30,7 @@ Vous pouvez créer les destinations de lien de types suivants :
 
 * **[!UICONTROL Lien Web]**
 
-   Les destinations de lien Web orientent les utilisateurs vers une URL spécifique. Par exemple, vous pouvez rediriger les utilisateurs vers une gamme de produits sur le site Web d’une boutique en ligne.
+   Les destinations de lien Web orientent les utilisateurs vers une URL spécifique. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits sur le site Web d’un détaillant en ligne.
 
    >[!IMPORTANT]
    >
