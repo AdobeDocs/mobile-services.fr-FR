@@ -1,26 +1,29 @@
 ---
-description: Informations relatives à la mise en œuvre des mesures de cycle de vie pour Android. Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
+description: Informations destinées à vous aider à mettre en oeuvre des mesures de cycle de vie pour Android. Les mesures de cycle de vie sont automatiquement collectées pour iOS.
 keywords: Xamarin
-seo-description: Informations relatives à la mise en œuvre des mesures de cycle de vie pour Android. Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
-seo-title: Mettre en oeuvre le cycle de vie
-solution: Marketing Cloud,Developer
-title: Mettre en oeuvre le cycle de vie
+seo-description: Informations destinées à vous aider à mettre en oeuvre des mesures de cycle de vie pour Android. Les mesures de cycle de vie sont automatiquement collectées pour iOS.
+seo-title: Mise en œuvre du cycle de vie
+solution: Experience Cloud
+title: Mise en œuvre du cycle de vie
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 7%
 
 ---
 
 
-# Implement lifecycle {#implement-lifecycle}
+# Mise en œuvre du cycle de vie {#implement-lifecycle}
 
 Ces informations vous aident à mettre en oeuvre des mesures de cycle de vie pour Android.
 
 >[!TIP]
 >
->Sous iOS, les mesures de cycle de vie sont automatiquement collectées.
+>Les mesures de cycle de vie sont automatiquement collectées pour iOS.
 
-For the metrics and dimensions that can be measured automatically by the mobile library after lifecycle is implemented, see [Lifecycle Metrics](/help/ios/metrics.md).
+Pour les mesures et les dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile une fois le cycle de vie mis en oeuvre, voir Mesures [du](/help/ios/metrics.md)cycle de vie.
 
 ## iOS
 
@@ -39,7 +42,7 @@ protected override void OnCreate (Bundle bundle)
 }
 ```
 
-In every activity, implement lifecycle calls.
+Dans chaque activité, implémentez des appels de cycle de vie.
 
 ```java
 protected override void OnResume()
