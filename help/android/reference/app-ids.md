@@ -1,22 +1,25 @@
 ---
-description: Le tableau suivant décrit les différents identifiants des applications utilisés par le SDK Android et Adobe Mobile Services.
-seo-description: Le tableau suivant décrit les différents identifiants des applications utilisés par le SDK Android et Adobe Mobile Services.
+description: Le tableau suivant décrit les différents identifiants d’application utilisés par le SDK Android et les services Adobe Mobile.
+seo-description: Le tableau suivant décrit les différents identifiants d’application utilisés par le SDK Android et les services Adobe Mobile.
 seo-title: ID d’application
 solution: Experience Cloud,Analytics
 title: ID d’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 72%
 
 ---
 
 
 # ID d’application{#app-ids}
 
-Le tableau suivant décrit les différents identifiants des applications utilisés par le SDK Android et Adobe Mobile Services.
+Le tableau suivant décrit les différents identifiants d’application utilisés par le SDK Android et les services Adobe Mobile.
 
-| ID | Description |
+| Identifiant | Description |
 |--- |--- |
 | ID envoyé avec les mesures de cycle de vie | Il s’agit d’une combinaison du nom de l’application et de la version du lot qui est soumise à la boutique d’applications. Cette valeur est utilisée pour le rapport Versions d’Adobe Mobile Services ; vous pouvez l’utiliser comme filtre pour segmenter les données du rapport par versions spécifiques de l’application. |
 | ID de la boutique d’applications | Cet ID est affecté à l’application par la boutique d’applications et est fourni par Adobe Mobile Services lorsque vous créez des liens d’acquisition. |
