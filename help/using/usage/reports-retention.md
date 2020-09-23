@@ -5,10 +5,13 @@ seo-description: Le rapport Rétention (anciennement appelé Cohortes des premie
 seo-title: Rapport de rétention
 solution: Experience Cloud,Analytics
 title: Rapport de rétention
-topic: Rapports, Mesures
+topic: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 77%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Le rapport **[!UICONTROL Rétention]** (anciennement appelé Cohortes des premiers lancements) est un rapport de cohortes qui affiche le nombre d’utilisateurs uniques qui ont lancé votre application pour la première fois, puis l’ont lancée à nouveau au moins une fois au cours des mois suivants.
 
-Par défaut, ce rapport indique la rétention des groupes d’utilisateurs d’après le moment où ils ont lancé l’application. Vous pouvez également personnaliser ce rapport pour utiliser une autre mesure en plus des premiers lancements et ajouter des actions supplémentaires.
+Par défaut, ce rapport montre la rétention de groupes d’utilisateurs en fonction du moment où les utilisateurs ont lancé l’application pour la première fois. Vous pouvez également personnaliser ce rapport pour utiliser une mesure autre que le premier lancement et ajouter d’autres actions.
 
-Une cohorte est un groupe de personnes qui partagent une caractéristique ou une expérience commune au cours d’une période définie. Le rapport **[!UICONTROL Rétention]** répertorie la caractéristique commune des utilisateurs qui ont installé l’application un jour, une semaine ou un mois spécifique, puis crée un graphique comportant le nombre d’utilisateurs qui ont lancé l’application au cours des X jours, semaines ou mois suivants. Il montre principalement dans quelle mesure les visiteurs ont été actifs.
+Une cohorte est un groupe de personnes qui partagent une caractéristique ou une expérience commune au cours d’une période définie. Le rapport **[!UICONTROL Rétention]** répertorie la caractéristique commune des utilisateurs qui ont installé l’application un jour, une semaine ou un mois spécifique, puis crée un graphique comportant le nombre d’utilisateurs qui ont lancé l’application au cours des X jours, semaines ou mois suivants. Le rapport indique dans quelle mesure les visiteurs ont été retenus comme principaux ou engagés.
 
 Voici un exemple de rapport Versions :
 
