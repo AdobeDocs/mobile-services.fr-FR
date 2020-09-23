@@ -1,21 +1,24 @@
 ---
-description: valeur nulle
+description: 'null'
 keywords: Unity
-seo-description: valeur nulle
+seo-description: 'null'
 seo-title: Appels à la bibliothèque
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Appels à la bibliothèque
 uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 30%
 
 ---
 
 
-# Making calls to the library{#making-calls-to-the-library}
+# Appels à la bibliothèque{#making-calls-to-the-library}
 
-Lorsque vous souhaitez appeler le module externe à partir de vos scripts, importez le   :
+Pour appeler le module externe à partir de vos scripts, importez l’espace de nommage :
 
-* **C# :** utilisation de `com.adobe.mobile;`
+* **C# :** using `com.adobe.mobile;`
 
-Après avoir importé le  , vous pouvez appeler directement le module externe au moyen des méthodes statiques de la classe ADBMobile.
+Après avoir importé l&#39;espace de nommage, vous pouvez invoquer directement le module externe au moyen des méthodes statiques de la classe ADBMobile.
