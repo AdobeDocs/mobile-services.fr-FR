@@ -5,10 +5,13 @@ seo-description: Vous pouvez créer ou modifier les liens marketing afin de four
 seo-title: Création ou modification de liens marketing
 solution: Experience Cloud,Analytics
 title: Création ou modification de liens marketing
-topic: Mesures
+topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +24,7 @@ Vous pouvez créer ou modifier les liens marketing afin de fournir des liens pro
 1. Procédez de l’une des manières suivantes :
 
    * Pour créer un lien marketing, cliquez sur **[!UICONTROL Créer]**.
-   * Pour modifier un lien, cliquez sur son nom dans la colonne **[!UICONTROL Titre].**
+   * Pour modifier un lien, cliquez sur son nom dans la colonne **[!UICONTROL Titre]**.
 
 1. Renseignez les champs suivants :
 
@@ -35,7 +38,7 @@ Vous pouvez créer ou modifier les liens marketing afin de fournir des liens pro
 
    * **[!UICONTROL Ajouter les données contextuelles de suivi]** :
 
-      (**Facultatif**) Cliquez sur l’icône **[!UICONTROL +]** et saisissez les informations pertinentes pour suivre votre campagne à l’aide des données contextuelles. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées]**, sélectionnez une balise prédéfinie ou l’une de vos propres balises. Les données contextuelles servent à la création de rapports lorsque le lien marketing est déployé.
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées]**, sélectionnez une balise prédéfinie ou l’une de vos propres balises. Les données contextuelles servent à la création de rapports lorsque le lien marketing est déployé.
 
       Les balises prédéfinies suivantes sont disponibles :
 
@@ -65,7 +68,7 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
 1. Cliquez sur **[!UICONTROL Modifier le spot de lien profond]** et configurez le lien.
 
-   (**Facultatif**) Quand il existe plusieurs destinations, les utilisateurs peuvent être orientés selon qu’une application mobile est installée sur leur appareil. Si l’application est installée, une page d’entrée de spots s’affiche.
+   (**Facultatif**) Quand il existe plusieurs destinations, les utilisateurs peuvent être orientés selon qu’une application mobile est installée sur leur appareil. Si l’application est installée, un landing page interactif s’affiche.
 
    Pour plus d’informations, voir [Spots](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
@@ -82,7 +85,7 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
          Les systèmes d’exploitation pris en charge comprennent iOS, Android, AMX, etc.
 
-      * **[!UICONTROL Type de périphérique]**
+      * **[!UICONTROL Device Type]**
 
          Les types d’appareils incluent les ordinateurs de bureau, les liseuses électroniques, les consoles de jeux, les téléphones mobiles, les décodeurs, etc.
    1. Cliquez sur l’icône **[!UICONTROL Destination]** (![icône carrée](assets/icon_square.png) ) et sélectionnez l’un des types de destinations suivants :
@@ -91,9 +94,10 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
       * **[!UICONTROL Lien Web]**
       * **[!UICONTROL Lien profond d’application]**
       * **[!UICONTROL Lien hybride]**
+
       >[!TIP]
       >
-      >Lorsque vous utilisez le type de destination **[!UICONTROL Lien Web]** avec un lien vers la boutique d’applications, l’acquisition n’est pas suivie. Pour suivre les acquisitions, utilisez le type de destination **[!UICONTROL Boutique d’applications].**
+      >Lorsque vous utilisez le type de destination **[!UICONTROL Lien Web]** avec un lien vers la boutique d’applications, l’acquisition n’est pas suivie. Pour suivre les acquisitions, utilisez le type de destination **[!UICONTROL Boutique d’applications]**.
 
       Pour plus d’informations, voir [Création d’une destination de lien](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
 
