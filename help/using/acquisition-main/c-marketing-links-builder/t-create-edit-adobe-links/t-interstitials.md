@@ -5,17 +5,20 @@ seo-description: Vous pouvez orienter les utilisateurs vers une destination donn
 seo-title: Spots
 solution: Experience Cloud,Analytics
 title: Spots
-topic: Mesures
+topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 79%
 
 ---
 
 
 # Spots{#interstitials}
 
-Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications). Il est préférable de laisser aux utilisateurs le choix de leur destination. Les marketeurs peuvent configurer une page de spots qui présente aux utilisateurs les destinations possibles.
+Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications). Il est préférable de laisser aux utilisateurs le choix du routage. Les marketeurs peuvent offrir des choix aux utilisateurs en configurant une page de spots qui présente aux utilisateurs les destinations d’entrée disponibles.
 
 Pour configurer un spot en créant un lien marketing :
 
@@ -31,7 +34,7 @@ Pour configurer un spot en créant un lien marketing :
 
       En utilisant des spots personnalisés, les marketeurs peuvent personnaliser les pages d’entrée de spots à l’aide de code HTML/CSS/JS personnalisé, ce qui vous permet de personnaliser vos pages.
 
-      Voici les exigences relatives à la page HTML :
+      Voici les conditions requises pour la page HTML :
 
       * Doit être un fichier HTML.
       * Doit contenir les espaces réservés `%%DEST%%` et `%%FALLBACK%%`.
@@ -56,9 +59,9 @@ Pour configurer un spot en créant un lien marketing :
 
    * **[!UICONTROL Texte de rechange]**
 
-      Spécifiez le texte de substitution à afficher.
+      Spécifiez le texte de secours à afficher.
 
-      Ce champ met à jour le texte du bouton en cas d’échec d’un lien profond. Les utilisateurs sont invités à cliquer sur le lien profond avant d’être dirigés vers une option de substitution. Par exemple, il peut s’agir d’une boutique d’applications d’où télécharger et installer l’application ou du site Web de l’entreprise. Le texte de rechange indique aux utilisateurs qu’il existe une autre option en cas d’échec du lien profond.
+      Ce champ met à jour le bouton de texte en cas d’échec d’un lien profond. Les utilisateurs sont invités à cliquer sur le lien profond avant d’être dirigés vers une option de substitution. Par exemple, une boutique d’applications peut être utilisée pour télécharger et installer l’application ou pour amener les utilisateurs sur le site Web de la société. Le texte de rechange indique aux utilisateurs qu’il existe une autre option en cas d’échec du lien profond.
 
 
 1. (**Facultatif**) Cliquez sur les icônes au-dessus de l’image afin d’avoir un aperçu du spot pivoté sur différents appareils.
