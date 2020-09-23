@@ -1,20 +1,23 @@
 ---
-description: Les actions sont des événements mesurables qui se produisent dans l’application. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Vous pouvez par exemple effectuer le suivi de chaque nouvel abonnement, chaque consultation d’un article ou chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées comme abonnements, articles lus et niveaux atteints.
-seo-description: Les actions sont des événements mesurables qui se produisent dans l’application. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Vous pouvez par exemple effectuer le suivi de chaque nouvel abonnement, chaque consultation d’un article ou chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées comme abonnements, articles lus et niveaux atteints.
+description: Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
+seo-description: Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
 seo-title: Suivi des actions de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 72%
 
 ---
 
 
 # Suivi des actions d’application {#track-app-actions}
 
-Les actions sont des événements mesurables qui se produisent dans l’application. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Vous pouvez par exemple effectuer le suivi de chaque nouvel abonnement, chaque consultation d’un article ou chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées comme abonnements, articles lus et niveaux atteints.
+Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
 
 Le suivi des actions n’est pas automatique. Pour effectuer le suivi d’un événement, vous devez appeler `trackAction`.
 
@@ -74,6 +77,6 @@ Si vous suivez une action dans un code qui pourrait être en cours d’exécutio
 
 | Interface | Rapport |
 |--- |--- |
-| Adobe Mobile Services | Rapport **[!UICONTROL Chemins d’accès des actions]**. Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]** dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier. |
-| Rapports et analyses marketing | Rapport [!UICONTROL **Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
-| Analyses ad hoc | Rapport [!UICONTROL **Événement personnalisé]**. Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Adobe Mobile Services | Rapport **[!UICONTROL Chemins d’accès des actions.]** Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]** dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier. |
+| Rapports et analyses marketing | Rapport **[!UICONTROL Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
+| Analyses ad hoc | Rapport **[!UICONTROL Événement personnalisé.]** Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
