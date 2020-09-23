@@ -1,13 +1,16 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
 seo-description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-seo-title: config ADBMobileConfig.json
-solution: Marketing Cloud,Analytics
-title: config ADBMobileConfig.json
+seo-title: Configuration de ADBMobileConfig.json
+solution: Experience Cloud,Analytics
+title: Configuration de ADBMobileConfig.json
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 39%
 
 ---
 
@@ -36,11 +39,11 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    (**Requis par Analytics et la gestion des** Audiences). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `"https://"` ou `"https://"`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la `ssl` variable.
 
-   Si `ssl` est défini sur `true`, une connexion sécurisée est établie avec le serveur. Si `ssl` est défini sur `false`, une connexion non sécurisée est établie avec le serveur.
+   Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
 * **charset**
 
-   Définit le jeu de caractères utilisé pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Définit le jeu de caractères utilisé pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 
@@ -58,7 +61,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **lifecycleTimeout**
 
-   Indique la durée, en secondes, qui doit s’écouler entre les lancements de l’application avant que le lancement ne soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de la session.
+   Indique la durée, en secondes, qui doit s’écouler entre les lancements de l’application avant que le lancement ne soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
 
    La valeur par défaut est de 300 secondes.
 
