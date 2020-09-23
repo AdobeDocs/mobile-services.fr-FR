@@ -5,10 +5,13 @@ seo-description: Configurez les options pour les messages in-app, y compris le t
 seo-title: 'Expérience : message in-app'
 solution: Experience Cloud,Analytics
 title: 'Expérience : message in-app'
-topic: Mesures
+topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 92%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Configurez les options pour les messages in-app, y compris le type (plein écran, alerte ou notification) et les options d’affichage, de texte et de bouton.
 
-1. Dans votre application, cliquez sur **[!UICONTROL Messagerie]** &gt; **[!UICONTROL Gestion des messages]** &gt; **[!UICONTROL Créer un message]** &gt; **[!UICONTROL Créer message in-app]**.
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. Sur la page Expérience, saisissez le nom du message.
-1. Renseignez les champs de la section **[!UICONTROL Type] :**
+1. Renseignez les champs de la section **[!UICONTROL Type]** :
 
    * **[!UICONTROL Type]**
 Sélectionnez le type de message pour votre campagne de messages in-app :
@@ -35,21 +38,23 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
       >
       >Cette option est affichée uniquement quand vous sélectionnez le type de message **[!UICONTROL Plein écran]**.
 
-   * **[!UICONTROL Personnalisation]**
+   * **[!UICONTROL Valeur]** personnalisée
 
-      Chargez votre contenu HTML personnalisé (plein écran seulement). Vous devez fournir un lien Clic publicitaire et un lien Annuler.
+      Chargez votre contenu HTML personnalisé (plein écran uniquement). Vous devez fournir un lien de clic publicitaire et un lien d’annulation.
 
       1. Cliquez sur **[!UICONTROL Parcourir]** et téléchargez un fichier HTML ou déposez un document HTML sur la fenêtre.
       1. Cliquez sur **[!UICONTROL Télécharger des exemples]** pour afficher des exemples de contenus HTML personnalisés.
+
       >[!TIP]
       >
       >Cette option est affichée uniquement quand vous sélectionnez le type de message **[!FPlein écran]**.
 
 
 
-1. Renseignez les champs de la section **[!UICONTROL Affichage] :**
+1. Renseignez les champs de la section **[!UICONTROL Affichage]** :
 
    * **[!UICONTROL Thème]**
+
    Sélectionnez un thème pour votre message.
 
    * **[!UICONTROL Mise en page]**
@@ -62,12 +67,12 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
 
    * **[!UICONTROL Image groupée]**
 
-      Chemin d’accès vers une image de votre code d’application. Cette option est utilisée lorsqu’il n’y a aucune image, ou qu’elle n’est pas disponible. Par exemple, l’image peut être indisponible si l’appareil est hors ligne. Si vous rencontrez des problèmes de dimensionnement lors de l’utilisation du modèle plein écran, consultez la rubrique *Mon image ne correspond pas exactement à l’espace fourni par le modèle* dans [Dépannage de la messagerie in-app](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      Chemin d’accès à une image dans le lot de code de votre application. Cette option est utilisée en l’absence d’image. ou l’image n’est pas disponible. Par exemple, l’image peut être indisponible si l’appareil est hors ligne. Si vous rencontrez des problèmes de dimensionnement lors de l’utilisation du modèle plein écran, consultez la rubrique *Mon image ne correspond pas exactement à l’espace fourni par le modèle* dans [Dépannage de la messagerie in-app](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
-1. Renseignez les champs de la section **[!UICONTROL Texte] :**
+1. Renseignez les champs de la section **[!UICONTROL Texte]** :
 
-   * **[!UICONTROL En-tête]**
+   * **[!UICONTROL Header]**
 
       Saisissez le texte pour l’en-tête du message.
 
@@ -75,7 +80,7 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
 
       Saisissez le texte pour le contenu du message.
 
-1. Renseignez les champs de la section **[!UICONTROL Boutons] :**
+1. Renseignez les champs de la section **[!UICONTROL Boutons]** :
 
    * **[!UICONTROL Bouton Clic publicitaire]**
 
@@ -91,6 +96,7 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
       * `{trackingId}`, qui est remplacé par l’aide (correspond au cookie *s_vi*).
       * `{messageId}`, qui est remplacé par l’identifiant unique du message in-app.
       * `{lifetimeValue}`, qui est remplacé par la valeur de durée de vie ou 0 s’il n’existe aucune valeur de durée de vie.
+
       Exemple de suivi de l’identifiant utilisateur : `https://www.mysite.com?uid={userId}`.
 
       Si l’adresse URL de clic publicitaire utilise l’indicatif `https://` ou `https://`, elle s’ouvre dans le navigateur du périphérique, en dehors de l’application. Dans le cas contraire, chaque plateforme prend en charge des schémas qui vous permettent d’ouvrir ou de référencer votre application, si celle-ci a été développée pour prendre en charge le schéma personnalisé.
