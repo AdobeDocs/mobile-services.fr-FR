@@ -3,13 +3,13 @@ description: Les instructions suivantes expliquent comment gérer une campagne d
 keywords: android;library;mobile;sdk
 seo-description: Les instructions suivantes expliquent comment gérer une campagne d’acquisition avec un lien marketing sur un appareil Android.
 seo-title: Évaluation de l’acquisition d’un lien marketing
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
 
