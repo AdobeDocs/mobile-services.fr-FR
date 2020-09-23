@@ -1,20 +1,23 @@
 ---
-description: Voici un exemple de variable products avec eVars de marchandisage et événements spécifiques aux produits.
-seo-description: Voici un exemple de variable products avec eVars de marchandisage et événements spécifiques aux produits.
+description: Exemple de la variable products avec des eVars de marchandisage et des événements spécifiques aux produits.
+seo-description: Exemple de la variable products avec des eVars de marchandisage et des événements spécifiques aux produits.
 seo-title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
-topic: Développeur et mise en œuvre
+topic: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
-source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events{#products-variable-with-merchandising-evars-and-product-specific-events}
+# Variable products avec des eVars de marchandisage et des événements spécifiques à un produit{#products-variable-with-merchandising-evars-and-product-specific-events}
 
-Voici un exemple de variable products avec eVars de marchandisage et événements spécifiques aux produits.
+Exemple de la variable products avec des eVars de marchandisage et des événements spécifiques aux produits.
 
 ```
 //create a context data dictionary 
@@ -37,5 +40,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Si vous déclenchez un événement spécifique au produit à l’aide de la *`&&products`* variable, vous devez également définir cet événement dans la *`&&events`* variable, sinon l’événement est filtré pendant le traitement.
+>Si vous déclenchez un événement spécifique au produit à l’aide de la *`&&products`* variable, vous devez également définir ce événement dans la *`&&events`* variable, sinon le événement est filtré pendant le traitement.
 
