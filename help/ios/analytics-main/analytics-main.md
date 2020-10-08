@@ -7,7 +7,7 @@ title: Présentation d’Analytics
 topic: Developer and implementation
 uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 67%
@@ -33,12 +33,13 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 Dans les SDK, les identifiants sont utilisés pour effectuer le suivi des utilisateurs et voici la hiérarchie des identifiants :
 
 1. Identifiant de Visiteur personnalisé (VID)
-2. Analytics Tracking Identifier (AID)
-3. Identifiant Experience Cloud (MID)
+1. Analytics Tracking Identifier (AID)
+1. Identifiant Experience Cloud (MID)
 
 >[!TIP]
 >
->Le bon acronyme pour l’identifiant Experience Cloud est ECID. Même si les SDK utilisent encore MID, qui est l’ancien nom. 
+>Le bon acronyme pour l’identifiant Experience Cloud est ECID. Même si les SDK utilisent encore MID, qui est l’ancien nom.
+
 L’AID, qui est aussi parfois appelé identifiant de suivi, est généré par le SDK lorsque l’application n’est pas configurée pour utiliser un MID. La valeur persiste entre les lancements et les mises à niveau des applications dans `NSUserDefaults`. Si l’utilisateur supprime l’application de son appareil et réinstalle ensuite l’application, ou si le développeur de l’application efface `NSUserDefaults`, un nouvel identifiant est généré par le SDK. Ce processus génère un nouvel utilisateur dans Analytics rapports.
 
 Pour les utilisateurs d’une application qui introduit la prise en charge du service d’identité (MID), les valeurs AID existantes sont envoyées avec les accès Analytics et l’accès Analytics contient un AID et un MID. Pour les nouveaux utilisateurs dans une application prise en charge par le service d’identité, les requêtes Analytics ne contiennent qu’un MID. Pour plus d’informations sur l’identification des visiteurs, voir [Identification des visiteurs](https://docs.adobe.com/content/help/fr-FR/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html).
