@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Acquisition des applications mobiles
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Avec cet abandon, au lieu de créer un `BroadcastReceiver`, vous devez collecter
 
    `implementation 'com.android.installreferrer:installreferrer:1.1'`
 
-1. Pour récupérer l’URL du référent à partir de l’API du référent d’installation, suivez la procédure décrite dans [Getting the install referrer](https://developer.android.com/google/play/installreferrer/library#install-referrer) (Obtention du référent d’installation).
+1. Pour récupérer l’URL du référent à partir de l’API du référent d’installation, suivez la procédure décrite dans [Obtention du référent d’installation](https://developer.android.com/google/play/installreferrer/library#install-referrer).
 
 1. Transmettez l’URL du référent au SDK :
 
