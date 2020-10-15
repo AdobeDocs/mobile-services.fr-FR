@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >
 >Il est vivement recommandé d’utiliser le SDK iOS plutôt que votre propre wrapper.
 
-Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application qui la contient en envoyant des requêtes à l’application qui la contient et en recevant les réponses. Bien que vous puissiez envoyer les données de suivi sous forme de dictionnaire depuis l’application de contrôle vers l’application contenant et appeler toute méthode de suivi sur l’application contenant pour envoyer les données, cette solution présente des limites.
+Apple fournit un ensemble d’API qui permet à l’application Watch de communiquer avec l’application contenante en envoyant des requêtes à l’application contenante et en recevant les réponses. Bien que vous puissiez envoyer les données de suivi sous forme de dictionnaire de l’application Watch vers l’application contenante et appeler toute méthode de suivi sur l’application contenante pour envoyer les données, cette solution présente des limites.
 
 Dans la plupart des cas, lorsqu’un utilisateur a recours à l’application Watch, l’application contenante s’exécute en arrière-plan et seules les méthodes `TrackActionInBackground`, `TrackLocation` et `TrackBeacon` peuvent être appelées en toute sécurité. L’appel d’autres méthodes de suivi interfère avec les données de cycle de vie. Vous devez donc utiliser uniquement ces trois méthodes pour envoyer les données depuis l’application Watch.
 
@@ -47,7 +47,7 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 >Vérifiez que l’un de vos projets comprend au minimum les cibles suivantes :
 >
 >* Une cible pour contenir l’application.
->* Une cible pour l&#39;extension.
+>* Une cible pour l’extension.
 
 >
 
@@ -102,7 +102,7 @@ Procédez comme suit dans votre projet Xcode :
 
 Prenez note des informations suivantes :
 
-* Une valeur de données contextuelles supplémentaire (`a.RunMode`) a été ajoutée pour indiquer si les données proviennent de l’application contenante ou de votre extension :
+* Une valeur de données contextuelles supplémentaire ( `a.RunMode` ) a été ajoutée pour indiquer si les données proviennent de l’application contenante ou de votre extension :
 
    * `a.RunMode = Application`
 
@@ -111,8 +111,8 @@ Prenez note des informations suivantes :
 
       Cette valeur signifie que l’accès provient de l’extension.
 
-* Si vous effectuez une mise à niveau à partir d’une ancienne version du SDK, lorsque l’application contenant est lancée, l’Adobe migre automatiquement tous les fichiers par défaut et mis en cache de l’utilisateur du dossier contenant l’application vers le dossier partagé du groupe d’applications.
-* Si l’application conteneur n’est jamais lancée, les accès provenant de l’extension sont ignorés.
-* Le numéro de version et le numéro de version doivent être identiques entre votre application qui contient et l’application d’extension.
-* Aucun appel de cycle de vie n’est déclenché sur les applications d’extension iOS.
+* Si vous effectuez une mise à niveau à partir d’une ancienne version du SDK, lorsque l’application contenante est lancée, Adobe migre automatiquement tous les fichiers par défaut et mis en cache de l’utilisateur du dossier de l’application contenante au dossier partagé du groupe d’applications.
+* Si l’application contenante n’est jamais lancée, les accès provenant de l’extension sont ignorés.
+* Le numéro de version et le numéro de build doivent être identiques entre votre application contenante et l’application de l’extension.
+* Aucun appel de cycle de vie n’est déclenché sur les applications de l’extension iOS.
 
