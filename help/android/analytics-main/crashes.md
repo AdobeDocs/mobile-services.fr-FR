@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
 ---
 
 
-# Suivi des blocages d’application{#track-app-crashes}
+# Suivi des blocages d’application {#track-app-crashes}
 
 Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 
