@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Création et gestion des destinations de lien
 topic: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
 ---
 
 
-# Création et gestion des destinations de lien{#create-and-manage-link-destinations}
+# Création et gestion des destinations de lien {#create-and-manage-link-destinations}
 
 Utilisez la page Gérer les destinations de lien afin de créer, de modifier, d’archiver/ne plus archiver et de supprimer des destinations de lien. Ces destinations peuvent alors être invoquées en ligne lors de la création de liens marketing, de notifications push ou de messages in-app.
 
