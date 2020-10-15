@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Liens universels Apple et liens d’application Android
 topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Liens universels Apple et liens d’application Android{#universal-links-and-app-links}
+# Liens universels Apple et liens d’application Android {#universal-links-and-app-links}
 
 Les liens universels (iOS) et les liens d’application (Android) vous permettent de vous connecter à des liens profonds dans vos applications iOS ou Android.
 
@@ -66,19 +66,19 @@ Vous pouvez créer un lien marketing qui utilise un lien universel ou d’applic
 
 1. Dans Adobe Mobile Services, créez un lien marketing qui utilise des liens universels :
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Sélectionnez l’application sur la page d’accueil de Mobile Services, cliquez sur **[!UICONTROL Acquisition]** > **[!UICONTROL Générateur de liens marketing]**.
 
    b. Cliquez sur **[!UICONTROL Créer]**.
 
    c. Sous **[!UICONTROL Options de lien marketing]**, sélectionnez **[!UICONTROL Utiliser des liens universels ou d’application]**.
 
-   d. Si vous avez configuré les documents d’association de site dans la section *Configuration des documents d’association de site dans Adobe Mobile Services* ci-dessus, cette option est sélectionnée par défaut.
+   d. Si vous avez configuré les documents d’association de site dans la section *Configuration des documents d’association de site dans Adobe Mobile Services* ci-dessus, cette option est sélectionnée par défaut.
 
    Si vous n’avez pas configuré les documents, l’option **[!UICONTROL Utiliser des liens universels ou d’application]** est désactivée et l’option **[!UICONTROL Utiliser des spots]** est sélectionnée par défaut.
 
    e. Si l’option **[!UICONTROL Utiliser des liens universels ou d’application]** est sélectionnée, le champ **[!UICONTROL Chemin d’accès personnalisé]** s’affiche.
 
-   Il permet aux utilisateurs de définir le chemin d’URL suivant le domaine avec les paramètres de requête appropriés. Par exemple, si vous entrez `my/universal/link?os=9.2`, l’URL complète du lien marketing devient `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
+   Il permet aux utilisateurs de définir le chemin d’URL suivant le domaine avec les paramètres de requête appropriés. Par exemple, si vous entrez  `my/universal/link?os=9.2`, l’URL complète du lien marketing devient `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
 
    f. Cliquez sur l’onglet **[!UICONTROL Décisions]** et configurez votre arbre de décision.
 
@@ -125,19 +125,19 @@ Vous pouvez créer un lien marketing qui utilise un lien universel ou d’applic
 
 1. Dans Adobe Mobile Services, créez un lien marketing qui utilise des liens d’application :
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Sélectionnez l’application sur la page d’accueil de Mobile Services, cliquez sur **[!UICONTROL Acquisition]** > **[!UICONTROL Générateur de liens marketing]**.
 
    b. Cliquez sur **[!UICONTROL Créer]**.
 
    c. Dans la section **[!UICONTROL Options de lien marketing]**, sélectionnez **[!UICONTROL Utiliser des liens universels ou d’application]**.
 
-   d. Si vous avez configuré les documents d’association de site lors de l’étape 2, l’option est sélectionnée par défaut.
+   d. Si vous avez configuré les documents d’association de site lors de l’étape 2, l’option est sélectionnée par défaut.
 
    Dans le cas contraire, l’option **[!UICONTROL Utiliser des liens universels ou d’application]** est désactivée et l’option **[!UICONTROL Utiliser des spots]** est sélectionnée par défaut.
 
    e. Si **[!UICONTROL Utiliser des liens universels ou d’application]** est sélectionné, le champ **[!UICONTROL Chemin d’accès personnalisé]** s’affiche.
 
-   Il permet aux utilisateurs de définir le chemin d’URL suivant le domaine avec les paramètres de requête appropriés. Par exemple, si vous entrez `my/app/link?os=6.0`, l’URL complète du lien marketing devient `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
+   Il permet aux utilisateurs de définir le chemin d’URL suivant le domaine avec les paramètres de requête appropriés. Par exemple, si vous entrez  `my/app/link?os=6.0`, l’URL complète du lien marketing devient `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
 
    f. Cliquez sur l’onglet **[!UICONTROL Décisions]** et configurez votre arbre de décision.
 
