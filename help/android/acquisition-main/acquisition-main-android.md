@@ -1,16 +1,16 @@
 ---
-description: Ces informations vous aident à utiliser les liens de suivi d’acquisition dans vos applications iOS.
-seo-description: Ces informations vous aident à utiliser les liens de suivi d’acquisition dans vos applications iOS.
+description: Ces informations vous permettent d’utiliser les liens de suivi d’acquisition dans vos applications iOS.
+seo-description: Ces informations vous permettent d’utiliser les liens de suivi d’acquisition dans vos applications iOS.
 seo-title: Présentation de l’acquisition
 solution: Experience Cloud,Analytics
 title: Présentation de l’acquisition
 topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
