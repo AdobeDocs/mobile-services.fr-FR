@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: 50 premiers articles
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Rapport sur les 50 premiers articles{#top-articles}
+# Rapport sur les 50 premiers articles {#top-articles}
 
 Le rapport sur les **[!UICONTROL 50 premiers articles]** contient un histogramme et un rapport de classement affichant les articles les plus consultés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS.
 
