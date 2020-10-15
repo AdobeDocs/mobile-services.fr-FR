@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapport Utilisateurs et sessions
 topic: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
 
 
-# Rapport Utilisateurs et sessions{#users-and-sessions}
+# Rapport Utilisateurs et sessions {#users-and-sessions}
 
 Le rapport Utilisateurs et sessions affiche les mesures relatives aux visiteurs uniques pendant la période sélectionnée.
 
