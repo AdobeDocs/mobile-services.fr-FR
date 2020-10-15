@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapport Aperçu de la boutique d’applications
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Rapport Aperçu de la boutique d’applications{#app-store-overview-report}
+# Rapport Aperçu de la boutique d’applications {#app-store-overview-report}
 
 Le rapport **[!UICONTROL Aperçu de la boutique d’applications]** vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.
 
@@ -52,11 +52,11 @@ Vous pouvez cliquer n’importe où sur le widget **[!UICONTROL Note moyenne de 
 
 Ce rapport présente le revenu généré par le téléchargement de votre application.
 
-## Recettes in-app {#section_58792ED9C4B54B7D836E30CF09E8E204}
+## Recettes in-app  {#section_58792ED9C4B54B7D836E30CF09E8E204}
 
 Ce rapport présente le revenu généré par les achats in-app réalisés avec votre application.
 
-## Téléchargements par pays {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## Téléchargements par pays  {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 Ce rapport présente le nombre de téléchargements de votre application, par pays.
 
@@ -66,7 +66,7 @@ Pour afficher un graphique et un tableau exposant le nombre de téléchargements
 
 ![](assets/downloads_by_country.png)
 
-## Téléchargements par boutique d’applications {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Téléchargements par boutique d’applications  {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Ce rapport présente le nombre de téléchargements de votre application, par boutique d’applications.
 
@@ -76,6 +76,6 @@ Pour afficher un graphique et un tableau exposant le nombre de téléchargements
 
 ![](assets/app_store_downloads_detail.png)
 
-## Achats in-app par nom {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## Achats in-app par nom  {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 Ce rapport présente les achats in-app par nom.
