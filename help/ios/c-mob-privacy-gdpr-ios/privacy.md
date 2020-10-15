@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
 ht-degree: 100%
 
 ---
 
 
-# Définition de l’état de souscription de l’utilisateur{#setting-the-user-s-opt-status}
+# Définition de l’état de souscription de l’utilisateur {#setting-the-user-s-opt-status}
 
 Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
 
@@ -33,7 +33,7 @@ Vous pouvez décider si l’activité d’Analytics, de Target et d’Audience 
 
    Une fois le paramètre de confidentialité modifié à l’aide de cette méthode, la modification est permanente jusqu’à ce qu’il soit changé à nouveau à l’aide de cette méthode ou jusqu’au moment où vous désinstallez et réinstallez l’application.
 
-   Pour obtenir plus d’informations sur les méthodes, voir [Méthodes de configuration](/help/ios/configuration/json-config/json-config.md).
+   Pour obtenir plus d’informations sur les méthodes, voir  [Méthodes de configuration](/help/ios/configuration/json-config/json-config.md).
 
 Voici des informations sur chaque état de confidentialité :
 
