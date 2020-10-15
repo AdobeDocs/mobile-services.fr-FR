@@ -1,36 +1,36 @@
 ---
-description: Ces informations vous aident à utiliser la messagerie in-app dans vos applications iOS.
-seo-description: Ces informations vous aident à utiliser la messagerie in-app dans vos applications iOS.
+description: Ces informations vous permettent d’utiliser la messagerie in-app dans vos applications iOS.
+seo-description: Ces informations vous permettent d’utiliser la messagerie in-app dans vos applications iOS.
 seo-title: Messagerie in-app
 solution: Experience Cloud,Analytics
 title: Messagerie in-app
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
-# Messagerie in-app{#in-app-messaging}
+# Messagerie in-app {#in-app-messaging}
 
-Ces informations vous aident à utiliser la messagerie in-app dans vos applications iOS.
+Ces informations vous permettent d’utiliser la messagerie in-app dans vos applications iOS.
 
-To use in-app messaging, you **must** have SDK version 4.2 or later.
+Pour utiliser la messagerie in-app, vous **devez** disposer du SDK version 4.2 ou supérieure.
 
 Informations à retenir :
 
-* Les messages et les règles qui définissent le moment où les messages sont affichés sont créés dans Adobe Mobile Services. For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
-* Les mises à jour décrites dans cette section doivent être apportées au SDK pour afficher les messages in-app.
+* Les messages et les règles qui définissent le moment où les messages sont affichés sont créés dans Adobe Mobile Services. Pour plus d’informations, voir [Créer un message in-app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
+* Les mises à jour décrites dans cette section doivent être effectuées sur le SDK pour afficher les messages in-app.
 
    >[!TIP]
    >
    >Vous pouvez suivre ces étapes même si vous n’avez aucun message défini. Une fois que vous avez défini les messages, ils sont envoyés dynamiquement à l’application et affichés sans mise à jour de la boutique d’applications.
 
-## Activation de la messagerie in-app{#section_79F984271C3B4366B7B04F864F4FF8C2}
+## Activation de la messagerie in-app {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
@@ -76,9 +76,9 @@ Informations à retenir :
 
 ## Suivi des messages in-app {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Les SDK iOS Mobile Services effectuent le suivi des mesures suivantes pour vos messages in-app :
+Les SDK iOS Mobile Services effectuent le suivi des mesures suivantes pour vos messages in-app :
 
-* Pour les messages in-app en mode plein écran et en style d’alerte :
+* Pour les messages in-app en mode plein écran et de style alerte :
 
    * **[!UICONTROL Impressions]** : lorsque l’utilisateur déclenche un message in-app.
    * **[!UICONTROL Clics publicitaires]** : lorsque l’utilisateur appuie sur le bouton **[!UICONTROL Clic publicitaire]**.
@@ -86,7 +86,7 @@ Les SDK iOS Mobile Services effectuent le suivi des mesures suivantes pour vos m
 
 * Pour les messages in-app personnalisés en plein écran, le contenu HTML du message doit contenir le code approprié pour notifier le suivi du SDK concernant les boutons suivants :
 
-   * Exemple de suivi des **[!UICONTROL Clics publicitaires]** (redirections) : `adbinapp://confirm/?url=https://www.yoursite.com`
+   * Exemple de suivi des **[!UICONTROL Clics publicitaires]** (redirections) :  `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL Exemple de suivi - Annuler]** (fermer) : `adbinapp://cancel`
 
 * Pour les notifications locales (à distance) :
@@ -111,9 +111,9 @@ Les SDK iOS Mobile Services effectuent le suivi des mesures suivantes pour vos m
 
 ## Image de secours locale {#section_DEACC1CE549B4573B556A44A52409941}
 
-Lors de la création d’un message en plein écran dans Adobe Mobile Services, vous pouvez éventuellement spécifier une image de secours. Si votre message ne parvient pas à récupérer l’image qui lui est destinée sur le Web, le SDK tente de charger l’image portant le même nom depuis votre lot d’applications. Vous pouvez ainsi afficher votre message sous sa forme d’origine, même si l’utilisateur est hors ligne ou si l’image prédéterminée est inatteignable.
+Lors de la création d’un message en plein écran dans Adobe Mobile Services, vous pouvez éventuellement spécifier une image de secours. Si votre message ne parvient pas à récupérer l’image qui lui est destinée sur le Web, le SDK tente de charger l’image portant le même nom depuis votre groupe d’applications. Vous pouvez ainsi afficher votre message sous sa forme d’origine, même si l’utilisateur est hors ligne ou si l’image prédéterminée est inatteignable.
 
-Le nom du fichier d’image de secours est spécifié lors de la configuration du message dans Adobe Mobile Services.
+Le nom du fichier d’image de secours est spécifié lors de la configuration du message dans Adobe Mobile Services.
 
 >[!IMPORTANT]
 >
