@@ -6,11 +6,11 @@ seo-title: Module externe Unity pour SDK iOS et Android 4.x
 solution: Experience Cloud
 title: Module externe Unity pour SDK iOS et Android 4.x
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Voici le contenu du fichier `ADBMobile.unitypackage` :
 
 **Dossiers facultatifs** : le dossier *Demo* contient des scènes Unity et un exemple de code.
 
-## Importation du module externe ADBMobile dans un projet Unity {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
+## Importation du module externe ADBMobile dans un projet Unity  {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Ouvrez le projet Unity.
 1. Double-cliquez sur **[!UICONTROL ADBMobile.unitypackage]**.
