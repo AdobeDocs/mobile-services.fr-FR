@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Rapport de rétention
 topic: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Le rapport **[!UICONTROL Rétention]** (anciennement appelé Cohortes des premie
 
 Par défaut, ce rapport montre la rétention de groupes d’utilisateurs en fonction du moment où les utilisateurs ont lancé l’application pour la première fois. Vous pouvez également personnaliser ce rapport pour utiliser une mesure autre que le premier lancement et ajouter d’autres actions.
 
-Une cohorte est un groupe de personnes qui partagent une caractéristique ou une expérience commune au cours d’une période définie. Le rapport **[!UICONTROL Rétention]** répertorie la caractéristique commune des utilisateurs qui ont installé l’application un jour, une semaine ou un mois spécifique, puis crée un graphique comportant le nombre d’utilisateurs qui ont lancé l’application au cours des X jours, semaines ou mois suivants. Le rapport indique dans quelle mesure les visiteurs ont été retenus comme principaux ou engagés.
+Une cohorte est un groupe de personnes qui partagent une caractéristique ou une expérience commune au cours d’une période définie. Le rapport **[!UICONTROL Rétention]** répertorie la caractéristique commune des utilisateurs qui ont installé l’application un jour, une semaine ou un mois spécifique, puis crée un graphique comportant le nombre d’utilisateurs qui ont lancé l’application au cours des X jours, semaines ou mois suivants. Le rapport indique dans quelle mesure les visiteurs ont été retenus comme actifs ou engagés.
 
 Voici un exemple de rapport Versions :
 
@@ -30,6 +30,6 @@ Voici un exemple de rapport Versions :
 
 La colonne **[!UICONTROL M0]** indique le nombre total de personnes ayant lancé l’application pour la première fois en novembre 2014. La colonne **[!UICONTROL M1]** indique le nombre de personnes ayant lancé à nouveau l’application en décembre 2014, etc.
 
-Cliquez sur **[!UICONTROL Modifier]** pour modifier la plage de dates ou les règles du rapport.
+Cliquez sur **[!UICONTROL Modifier]** pour modifier la période ou les règles du rapport.
 
 Le rapport peut contenir n’importe quelle variable ou mesure, y compris les mesures de cycle de vie (à l’exception toutefois des mesures calculées).
