@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: Suppression de liens d’acquisition
 topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
-# Suppression de liens d’acquisition{#delete-acquisition-links}
+# Suppression de liens d’acquisition {#delete-acquisition-links}
 
 Lorsque vous n’avez plus besoin de liens d’acquisition, vous pouvez les supprimer.
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
+1. Cliquez sur **[!UICONTROL Acquisition]** > **[!UICONTROL Gérer les liens d’acquisition]**.
 1. Procédez de l’une des manières suivantes :
 
    * Cochez la case en regard d’un ou de plusieurs liens d’acquisition.
