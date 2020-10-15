@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# Suivi des blocages d’application{#track-app-crashes}
+# Suivi des blocages d’application {#track-app-crashes}
 
 Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
 
@@ -41,9 +41,9 @@ Les bibliothèques de rapport de plantages fournies par des sociétés comme Apt
 
 ## Qu’est-ce qui peut provoquer le signalement d’un faux blocage ?
 
-Les scénarios suivants sont connus pour provoquer à tort un plantage qui est signalé par le SDK :
+Les scénarios suivants sont connus pour provoquer à tort un blocage qui est signalé par le SDK :
 
-* Si vous effectuez un débogage à l’aide de Xcode, le lancement de l’application à nouveau alors qu’elle est en premier plan entraîne un blocage.
+* Si vous effectuez un débogage à l’aide de Xcode, lancer à nouveau l’application alors qu’elle est en premier plan entraîne un blocage.
 
    >[!TIP]
    >
@@ -66,7 +66,7 @@ Les procédures suivantes peuvent vous aider à empêcher que de faux plantages 
 
    Ce code corrige les faux blocages #2 et #3 dans la section précédente.
 
-* Assurez-vous d’effectuer votre développement par rapport aux suites de rapports hors production, ce qui devrait empêcher le faux plantage n° 1.
+* Assurez-vous d’effectuer votre développement par rapport aux suites de rapports hors production, ce qui devrait empêcher le faux blocage #1.
 * Ne supprimez et ne modifiez aucune valeur placée dans `NSUserDefaults` par le SDK Adobe Mobile.
 
    Si ces valeurs sont modifiées en dehors du SDK, les données reportées seront invalides.
