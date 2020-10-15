@@ -1,26 +1,26 @@
 ---
-description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
+description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 keywords: mobile
-seo-description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
+seo-description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 seo-title: Configuration des options du SDK Acquisition
 solution: Experience Cloud,Analytics
-title: Configuration des options du SDK Acquisition
+title: Configuration des options du SDK Acquisition
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
 
 ---
 
 
-# Configuration des options du SDK Acquisition{#configure-sdk-acquisition-options}
+# Configuration des options du SDK Acquisition {#configure-sdk-acquisition-options}
 
-Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
+Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 
-1. Renseignez les champs suivants sous les **[!UICONTROL Options du SDK Acquisition]** :
+1. Renseignez les champs suivants sous les **[!UICONTROL Options du SDK Acquisition]** :
 
    * **[!UICONTROL Activer]**
 
