@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Remplacement du chemin du fichier de configuration JSON ADBMobile
 topic: Developer and implementation
 uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '116'
 ht-degree: 100%
 
 ---
 
 
-# Remplacement du chemin du fichier de configuration JSON ADBMobile{#override-the-adbmobile-json-config-path}
+# Remplacement du chemin du fichier de configuration JSON ADBMobile {#override-the-adbmobile-json-config-path}
 
 Vous pouvez charger un fichier de configuration JSON ADBMobile distinct au démarrage de l’application.
 
