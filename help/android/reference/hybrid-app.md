@@ -6,22 +6,22 @@ solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Suivi des visiteurs entre une application et le web mobile{#visitor-tracking-between-an-app-and-mobile-web}
+# Suivi des visiteurs entre une application et le web mobile {#visitor-tracking-between-an-app-and-mobile-web}
 
 Si l’application ouvre un contenu de web mobile, assurez-vous que les visiteurs ne sont pas identifiés séparément lorsqu’ils se déplacent entre le web natif et le web mobile.
 
 ## Identifiants visiteurs dans les applications
 
-Le SDK Android génère un identifiant de visiteur unique lorsqu’une application est installée. Cet identifiant est stocké dans la mémoire persistante du périphérique mobile, est envoyé avec chaque accès et n’est supprimé que lorsque l’utilisateur désinstalle l’application.
+Le SDK Android génère un ID de visiteur unique lorsqu’une application est installée. Cet ID est stocké dans la mémoire persistante de l’appareil mobile, est envoyé avec chaque accès et n’est supprimé que lorsque l’utilisateur désinstalle l’application.
 
 >[!TIP]
 >
@@ -31,7 +31,7 @@ Le SDK Android génère un identifiant de visiteur unique lorsqu’une applicati
 
 Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID visiteur uniques, ce qui engendre la création d’un ID visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
 
-## Mise en œuvre du suivi des visiteurs entre une application et le web mobile{#section_1755BCCFD42D456EB2319141030FDDFF}
+## Mise en œuvre du suivi des visiteurs entre une application et le web mobile {#section_1755BCCFD42D456EB2319141030FDDFF}
 
 Pour utiliser le même identifiant visiteur pour l’application et le Web mobile :
 
@@ -62,7 +62,7 @@ Pour utiliser le même identifiant visiteur pour l’application et le Web mobil
    });
    ```
 
-Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une demande à l’Adobe pour un nouvel ID. Le code utilise le MID transmis pour effectuer le suivi du visiteur.
+Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une requête à Adobe pour le nouvel ID. Le code utilise le MID transmis pour effectuer le suivi du visiteur.
 
 Pour les accès depuis le contenu web mobile, vérifiez que le paramètre `mid` existe pour chaque accès et que cette valeur correspond au paramètre `mid` envoyé par le code de l’application.
 
