@@ -1,22 +1,22 @@
 ---
-description: Vous pouvez créer et gérer des points d’intérêt qui vous permettent de définir des emplacements géographiques que vous pouvez utiliser à des fins de corrélation, de cible avec des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
+description: Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
 keywords: mobile
-seo-description: Vous pouvez créer et gérer des points d’intérêt qui vous permettent de définir des emplacements géographiques que vous pouvez utiliser à des fins de corrélation, de cible avec des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
+seo-description: Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
 seo-title: Gestion des points ciblés
 solution: Experience Cloud,Analytics
 title: Gestion des points ciblés
 topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des points ciblés{#manage-points-of-interest}
+# Gestion des points ciblés {#manage-points-of-interest}
 
 Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point d’accès, ce dernier est associé à l’accès.
 
@@ -33,7 +33,7 @@ Sur l’appareil de l’utilisateur, pour qu’un accès soit assigné à un **[
 Pour utiliser la fonction Emplacement, procédez comme suit :
 
 1. Cliquez sur le nom de l’application pour accéder à sa page Gérer les paramètres de l’application.
-1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
+1. Cliquez sur **[!UICONTROL Emplacement]** > **[!UICONTROL Gérer les points ciblés]**.
 
    ![Résultat de l’étape](assets/poi.png)
 
@@ -55,7 +55,7 @@ Pour utiliser la fonction Emplacement, procédez comme suit :
 
    * **[!UICONTROL Rayon (mètres)]**
 
-      Saisissez le rayon (en mètres) autour du **[!UICONTROL point ciblé]** que vous souhaitez inclure. Si vous créez par exemple un Point ciblé pour Denver (Colorado), vous pouvez spécifier un rayon assez large pour inclure la ville de Denver et les régions avoisinantes, mais exclure Colorado Springs.
+      Saisissez le rayon (en mètres) autour du **[!UICONTROL point ciblé]** que vous souhaitez inclure. Si vous créez par exemple un point ciblé pour Denver (Colorado), vous pouvez spécifier un rayon assez large pour inclure la ville de Denver et les régions avoisinantes, mais exclure Colorado Springs.
 
    * **[!UICONTROL Icône de carte]**
 
@@ -69,4 +69,4 @@ Pour utiliser la fonction Emplacement, procédez comme suit :
 
 Pour supprimer un ou plusieurs points ciblés, cochez les cases applicables, puis cliquez sur **[!UICONTROL Supprimer sélection]**.
 
-Cliquez sur **[!UICONTROL Importer]** ou sur **[!UICONTROL Exporter]** pour travailler sur les données à l’aide d’un fichier `.csv` plutôt que par le biais de l’interface utilisateur de Adobe Mobile
+Cliquez sur **[!UICONTROL Importer]** ou sur **[!UICONTROL Exporter]** pour travailler sur les données à l’aide d’un fichier `.csv` plutôt que par le biais de l’interface utilisateur de Adobe Mobile.
