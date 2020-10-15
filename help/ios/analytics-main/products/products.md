@@ -1,23 +1,23 @@
 ---
-description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
-seo-description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
+description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
+seo-description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
 seo-title: Variable products
 solution: Experience Cloud,Analytics
 title: Variable products
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
-# Variable products{#products-variable}
+# Variable products {#products-variable}
 
-La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
+La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
 
 Pour définir la variable *`products`*, définissez une clé de données contextuelles sur `"&&products"`, puis définissez la valeur en utilisant la syntaxe définie pour la variable *`products`* :
 
@@ -48,4 +48,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ![](assets/map-products.png)
 
-Il n’est pas nécessaire de mettre en correspondance la variable *`products`* à l’aide des règles de traitement, car elle est définie directement sur la demande d’image par le SDK.
+Il n’est pas nécessaire de mettre en correspondance la variable  *`products`* à l’aide des règles de traitement, car elle est définie directement sur la demande d’image par le SDK.
