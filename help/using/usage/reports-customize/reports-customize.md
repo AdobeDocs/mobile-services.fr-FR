@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: Personnalisation des rapports
 topic: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Personnalisation des rapports{#customize-reports}
+# Personnalisation des rapports {#customize-reports}
 
 Ces informations vous aident à comprendre et à personnaliser les rapports intégrés.
 
-Vous pouvez personnaliser vos rapports en modifiant la plage de dates, les options **[!UICONTROL Afficher par]** (afficher les données graphiques et tabulaires par périodes ou par dimensions), ajouter des mesures et des filtres, ajouter des séries (mesures) supplémentaires, etc.
+Vous pouvez personnaliser vos rapports en modifiant la période, les options **[!UICONTROL Afficher par]** (afficher les données graphiques et tabulaires par périodes ou par dimensions), ajouter des mesures et des filtres, ajouter des séries (mesures) supplémentaires, etc.
 
 Pour afficher le rail Personnaliser, cliquez sur le nom de l’application pour accéder à sa page Aperçu, puis cliquez sur **[!UICONTROL Personnaliser]**.
 
@@ -37,8 +37,8 @@ Les informations suivantes décrivent chaque portion du rapport et le rail **[!U
 
 | Nombre | Description |
 |--- |--- |
-| 1 | Dans **[!UICONTROL Plages de dates]**, la liste déroulante vous permet de sélectionner différentes plages de dates pour votre rapport. Toutes les données contenues dans le graphique (9) et le tableau correspondant (10) respectent la plage de dates sélectionnée. |
-| 2 | Dans **[!UICONTROL Afficher par]**, la liste déroulante vous permet de sélectionner un affichage temporel ou dimensionnel de votre rapport.  Par exemple, sur l’illustration, vous pouvez voir que l’option Jours est sélectionnée. Si vous observez les dates indiquées sous le graphique (7) et les lignes du tableau (8), vous constatez que les données sont classées par date dans un rapport temporel. Jusqu’à six mesures peuvent être consignées dans les rapports temporels en ajoutant à ceux-ci des séries supplémentaires.  Si vous sélectionnez une dimension de cycle de vie, vous pouvez vue les 50 premières valeurs dans une liste classée, les 5 premières valeurs de tendances par jour ou par semaine ou une ventilation des 5 ou 10 premières valeurs. |
+| 1 | Dans **[!UICONTROL Périodes]**, la liste déroulante vous permet de sélectionner différentes périodes pour votre rapport. Toutes les données contenues dans le graphique (9) et le tableau correspondant (10) respectent la plage de dates sélectionnée. |
+| 2 | Dans **[!UICONTROL Afficher par]**, la liste déroulante vous permet de sélectionner un affichage temporel ou dimensionnel de votre rapport.  Par exemple, sur l’illustration, vous pouvez voir que l’option Jours est sélectionnée. Si vous observez les dates indiquées sous le graphique (7) et les lignes du tableau (8), vous constatez que les données sont classées par date dans un rapport temporel. Jusqu’à six mesures peuvent être consignées dans les rapports temporels en ajoutant à ceux-ci des séries supplémentaires.  Si vous sélectionnez une dimension de cycle de vie, vous pouvez afficher les 50 premières valeurs dans une liste classée, les 5 premières valeurs de tendances par jour ou par semaine ou une ventilation des 5 ou 10 premières valeurs. |
 | 3 | **[!UICONTROL Les séries]** représentent des mesures individuelles, comme Utilisateurs, Lancements, Premiers lancements et Téléchargements de boutique d’applications dans l’exemple ci-dessus. Chaque série est identifiée par un code de couleur avec les données contenues dans le graphique (7) et le tableau (8).  Vous pouvez ajouter des séries (mesures) supplémentaires, et même différentes applications dans différentes suites de rapports aux fins de comparaison des données.  Pour plus d’informations, voir [Ajout de séries (mesures) aux rapports](/help/using/usage/reports-customize/t-reports-series.md). |
 | 4 | **[!UICONTROL Ajouter un filtre]** vous permet de personnaliser les rapports intégrés en ajoutant des filtres (segments) supplémentaires.  Pour plus d’informations, voir [Ajout de filtres aux rapports](/help/using/usage/reports-customize/t-reports-customize.md). |
 | 5 | **[!UICONTROL Ajouter des séries]** vous permet de personnaliser les rapports intégrés par l’ajout de séries (mesures) supplémentaires ou d’applications dans différentes suites de rapports aux fins de comparaison des données.  Pour plus d’informations, voir [Ajout de séries (mesures) aux rapports](/help/using/usage/reports-customize/t-reports-series.md). |
