@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Gestion des liens marketing
 topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des liens marketing{#manage-marketing-links}
+# Gestion des liens marketing {#manage-marketing-links}
 
 Vous pouvez utiliser la page Liens marketing pour créer, utiliser et archiver des liens marketing.
 
@@ -28,7 +28,7 @@ Depuis la page Liens Marketing, réalisez les tâches suivantes :
 
 * **Afficher les liens marketing**
 
-   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
+   Sur la page d’accueil Mobile Services, cliquez sur **[!UICONTROL Acquisition]** > **[!UICONTROL Générateur de liens marketing]** afin d’afficher la liste des liens marketing.
 
    La colonne **[!UICONTROL Clics]** présente le nombre d’utilisateurs qui ont cliqué sur le lien marketing. La colonne **[!UICONTROL Premiers lancements]** expose le nombre de premiers lancements de l’application. Cette valeur reflète le nombre d’utilisateurs qui ont choisi d’installer l’application et de la lancer après avoir cliqué sur le lien marketing.
 
