@@ -2,12 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Guide Xamarin pour Mobile Services
-breadcrumb-title: Xamarin Guide
-translation-type: ht
+breadcrumb-title: Guide Xamarin
+translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: ht
-source-wordcount: '36'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '38'
+ht-degree: 94%
 
 ---
 
