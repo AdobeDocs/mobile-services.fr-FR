@@ -1,36 +1,36 @@
 ---
-description: Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En exploitant les mêmes déclencheurs et caractéristiques que ceux utilisés pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
-seo-description: Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En exploitant les mêmes déclencheurs et caractéristiques que ceux utilisés pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
+description: Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En mettant à profit les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
+seo-description: Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En mettant à profit les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
 seo-title: Postbacks
 solution: Experience Cloud,Analytics
 title: Présentation des postbacks
 uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 
 # Présentation des postbacks {#postbacks}
 
-Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En exploitant les mêmes déclencheurs et caractéristiques que ceux utilisés pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
+Les postbacks permettent d’envoyer des données collectées par le SDK à un serveur tiers. En mettant à profit les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer le SDK pour envoyer des données personnalisées vers une destination tierce.
 
 >[!IMPORTANT]
 >
 >Pour utiliser cette fonctionnalité, vous devez disposer de la version 4.6.0 ou ultérieure du SDK
 
-Les messages postback sont placés en file d’attente et suivent toutes les règles en ligne/hors ligne qui régissent la collecte de données d’analyse. Lorsqu’un message correspond (comme le font les messages affichés), les messages postback n’annulent pas le reste des messages. Cela permet plusieurs postbacks sur le même accès Analytics. Pour consulter une définition, voir la ligne *postbacks* dans la section [Fichier de configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+Les messages postback sont placés en file d’attente et suivent toutes les règles en ligne/hors ligne qui régissent la collecte de données d’analyse. Lorsqu’un message correspond (comme le font les messages affichés), les messages postback n’annulent pas le reste des messages. Ainsi, plusieurs postbacks peuvent avoir lieu sur le même accès Analytics. Pour consulter une définition, voir la ligne *postbacks* dans la section  [Fichier de configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
 
 ## Extensions de modèles {#section_6758AD05A24C4E9E965F5253294C164A}
 
-Les extensions de modèles sont disponibles dans les propriétés `templateurl` et `templatebody`. Les éléments du modèle prennent le format `{key}`, où `key` est une clé de données contextuelles ou de données standard. The values available for template expansion are limited to the [standard Lifecycle variables list](/help/ios/metrics.md), in addition to any custom data attached to the hit that triggers the message. Aucune donnée basée sur l’historique ou les segments n’est disponible pour le moment.
+Les extensions de modèles sont disponibles dans les propriétés `templateurl` et `templatebody`. Les éléments du modèle prennent le format `{key}`, où `key` est une clé de données contextuelles ou de données standard. Les valeurs disponibles pour l’extension de modèle sont limitées à la [liste des variables du cycle de vie](/help/ios/metrics.md), en plus des données personnalisées jointes à l’accès qui déclenche le message. Aucune donnée basée sur l’historique ou les segments n’est disponible pour le moment.
 
 Il existe également des modèles réservés spécifiques que le SDK remplacera automatiquement par des données internes connues du SDK.
 
-Cette liste comprend :
+Cette liste comprend :
 
 | Nom du jeton | Description du jeton |
 |--- |--- |
