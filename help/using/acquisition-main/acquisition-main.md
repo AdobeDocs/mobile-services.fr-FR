@@ -1,24 +1,24 @@
 ---
-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
+description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 keywords: mobile
-seo-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
+seo-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 seo-title: Acquisition
 solution: Experience Cloud,Analytics
 title: Acquisition
 topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # Acquisition {#acquisition}
 
-Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un spécialiste du marketing peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plates-formes, selon le cas.
+Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 
 ## Nouvelle version du SDK Adobe Experience Cloud
 
@@ -26,7 +26,7 @@ Vous recherchez des informations et de la documentation concernant le SDK d’Ad
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Pour commencer, accédez à [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
@@ -45,7 +45,7 @@ Vous pouvez créer, modifier, gérer et afficher des rapports sur les liens mark
 
 Les rapports d’acquisition suivants exposent les informations concernant les performances de vos liens marketing :
 
-* **Aperçu** {#section_5B2BA47F22694919A472AB591101237E}
+* **Aperçu**{#section_5B2BA47F22694919A472AB591101237E}
 
    Ce rapport expose les meilleures campagnes qui ont attiré des utilisateurs vers votre application, avec des informations concernant les performances de la campagne sur différentes métadonnées de suivi, telles que la source, le moyen, le terme et le contenu de l’acquisition.
 
