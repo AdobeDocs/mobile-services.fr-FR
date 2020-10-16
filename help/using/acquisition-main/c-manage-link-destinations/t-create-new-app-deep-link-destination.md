@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Création d’une destination de lien
 topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez créer une nouvelle destination de lien qui redirige les utilisateur
 1. Cliquez sur **[!UICONTROL Gérer les destinations de lien]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 1. Renseignez les champs suivants :
-   * **[!UICONTROL Title]**
+   * **[!UICONTROL Titre]**
 
       Saisissez un nom explicite pour la destination de lien d’application. Le titre s’affiche seulement sur la page Gérer les destinations de lien dans l’interface utilisateur de Adobe Mobile Services. Grâce à ce nom explicite, vous et d’autres personnes de votre organisation pouvez trouver rapidement une destination de lien spécifique et des informations à son sujet.
 
@@ -35,11 +35,11 @@ Vous pouvez créer une nouvelle destination de lien qui redirige les utilisateur
 
       * **[!UICONTROL Lien profond d’application]**
 
-         Spécifiez un lien profond de schéma d’URI (par exemple, `yourapp://section`). Les destinations de lien profond d’application sont des liens profonds de schéma URI qui orientent les utilisateurs vers un lien profond dans votre application. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits spécifique dans l’application mobile d’un détaillant en ligne.
+         Spécifiez un lien profond de schéma d’URI (par exemple, `yourapp://section`). Les destinations de lien profond d’application sont des liens profonds de schéma d’URI qui orientent les utilisateurs vers un lien profond au sein de l’application. Par exemple, vous pouvez rediriger les utilisateurs vers une gamme de produits spécifique sur l’application mobile d’une boutique en ligne.
 
       * **[!UICONTROL Lien Web]**
 
-         Saisissez une URL HTTP ou HTTPS Web, par exemple, `https://adobe.com`. Les destinations de lien Web orientent les utilisateurs vers une URL. Par exemple, vous pouvez diriger les utilisateurs vers une gamme de produits sur le site Web d’un détaillant en ligne.
+         Saisissez une URL HTTP ou HTTPS Web, par exemple, `https://adobe.com`. Les destinations de lien Web orientent les utilisateurs vers une URL. Par exemple, vous pouvez rediriger les utilisateurs vers une gamme de produits sur le site web d’une boutique en ligne.
 
       * **[!UICONTROL Lien hybride]**
 
