@@ -2,12 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Guide de Mobile Services
-breadcrumb-title: Mobile Services Guide
-user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
-translation-type: ht
+breadcrumb-title: Guide de Mobile Services
+user-guide-description: Mobile Services est une solution de bout en bout qui vous aide à attirer et à obtenir de nouveaux utilisateurs d’applications mobiles et à optimiser leurs expériences.
+translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: ht
-source-wordcount: '321'
+workflow-type: tm+mt
+source-wordcount: '343'
 ht-degree: 100%
 
 ---
