@@ -1,16 +1,16 @@
 ---
-description: Ce document de référence vous aide à utiliser le SDK Android pour les solutions Experience Cloud.
-seo-description: Ce document de référence vous aide à utiliser le SDK Android pour les solutions Experience Cloud.
+description: Ce document de référence vous aide à utiliser le SDK Android pour les solutions Experience Cloud.
+seo-description: Ce document de référence vous aide à utiliser le SDK Android pour les solutions Experience Cloud.
 seo-title: Présentation de la référence SDK Android
 solution: Experience Cloud,Analytics
-title: Présentation de la référence SDK Android
+title: Présentation de la référence SDK Android
 topic: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
