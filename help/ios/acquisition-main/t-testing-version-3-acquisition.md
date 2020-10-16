@@ -5,16 +5,16 @@ seo-title: Test de l’acquisition de V3
 solution: Experience Cloud,Analytics
 title: Test de l’acquisition de V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Test de l’acquisition de V3{#testing-v-acquisition}
+# Test de l’acquisition de V3 {#testing-v-acquisition}
 
 Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
 
@@ -24,7 +24,7 @@ Ces informations expliquent comment rediriger un lien de campagne d’acquisitio
 
 Si l’application mobile n’est pas encore dans l’App Store, lorsque vous créez un lien de campagne, sélectionnez n’importe quelle application mobile en tant que destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé.
 
-1. Effectuez les tâches préalables requises dans [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md) (Acquisition de l’application mobile).
+1. Effectuez les tâches préalables requises dans [Acquisition de l’application mobile](/help/ios/acquisition-main/acquisition.md).
 1. Accédez au **[!UICONTROL Créateur d’acquisitions]** de l’interface utilisateur d’Adobe Mobile Services et créez une URL de campagne d’acquisition.
 
    Par exemple :
