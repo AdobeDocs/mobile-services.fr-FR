@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Mesures de cycle de vie{#lifecycle-metrics}
+# Mesures de cycle de vie {#lifecycle-metrics}
 
 Cette section donne des informations sur les mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre. Pour plus d’informations sur le dépannage, consultez [Données de durée de vie de dépannage](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
 
@@ -29,9 +29,9 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 * Pour commencer, accédez à Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Mesures et dimensions de cycle de vie{#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Une fois configurées, les mesures de cycle de vie sont envoyées dans des paramètres de données contextuelles à Analytics, dans des paramètres à Cible avec chaque appel de mbox et en tant que signal à la gestion des audiences. Analytics et Cible utilisent le même format, tandis que la gestion des audiences utilise un préfixe différent pour chaque mesure.
+Une fois les mesures de cycle de vie configurées, elles sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox, et transmises en tant que signal à la gestion de l’audience. Analytics et Target utilisent le même format, tandis que la gestion de l’audience utilise un préfixe différent pour chaque mesure.
 
 Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi de cycle de vie sont automatiquement capturées et consignées à l’aide de la mesure ou de la dimension répertoriée, et les exceptions sont notées.
 
@@ -75,7 +75,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Lancements**
 
-   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché sur un CV en arrière-plan lorsque le délai d’expiration de la session de cycle de vie est dépassé.
+   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la mise en premier plan de l’application lorsque le délai d’expiration de la session de cycle de vie a été dépassé.
 
    >[!IMPORTANT]
    >
@@ -204,7 +204,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    * Données contextuelles Analytics/Paramètre Target : `a.Resolution`
    * Audience Manager : `c_a_Resolution`
 
-## Mesures et dimensions mobiles supplémentaires{#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Mesures et dimensions mobiles supplémentaires {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Les mesures et dimensions suivantes sont capturées dans les variables des solutions mobiles par la méthode répertoriée dans la colonne **Description**.
 
@@ -319,21 +319,21 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
 
 * **Support de campagne**
 
-   Support marketing, tel qu’une bannière ou un courriel. Renseigné par l’acquisition des applications mobiles.
+   Support marketing, une bannière ou un email par exemple. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.medium`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_medium`
 
 * **Source de campagne**
 
-   Parrain d’origine, tel qu’un bulletin d’information ou un réseau de médias sociaux. Renseigné par l’acquisition des applications mobiles.
+   Référent original, comme une newsletter ou les médias sociaux. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.source`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_source`
 
 * **Termes de campagne**
 
-   Mots-clés payants ou autres termes dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
+   Mots-clés ou autres termes payés dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.term`
    * Caractéristique d’Audience Manager : `c_a_referrer_campaign_term`
