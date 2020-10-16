@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud
 
 Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experience Cloud ID sont précédées du préfixe `visitor`. Pour plus d’informations, voir [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
+* **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
    Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, il vous faut le SDK mobile version 4.12 ou ultérieure. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
 
@@ -169,7 +169,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
