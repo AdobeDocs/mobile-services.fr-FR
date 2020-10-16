@@ -1,21 +1,21 @@
 ---
-description: A partir de WatchOS 2, vos extensions WatchKit s'exécuteront sur un périphérique Apple Watch. Les applications qui s’exécutent dans cet environnement nécessitent la structure WatchConnectivity pour partager les données avec leur application iOS qui les contient.
-seo-description: A partir de WatchOS 2, vos extensions WatchKit s'exécuteront sur un périphérique Apple Watch. Les applications qui s’exécutent dans cet environnement nécessitent la structure WatchConnectivity pour partager les données avec leur application iOS qui les contient.
+description: À partir de la version WatchOS 2, vos extensions WatchKit s’exécuteront sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent le framework WatchConnectivity pour partager des données avec leur application iOS contenante.
+seo-description: À partir de la version WatchOS 2, vos extensions WatchKit s’exécuteront sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent le framework WatchConnectivity pour partager des données avec leur application iOS contenante.
 seo-title: Mise en œuvre de l’Apple Watch avec WatchOS 2
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’Apple Watch avec WatchOS 2
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Mise en œuvre de l’Apple Watch avec WatchOS 2{#apple-watch-implementation-with-watchos}
+# Mise en œuvre de l’Apple Watch avec WatchOS 2 {#apple-watch-implementation-with-watchos}
 
 À partir de la version WatchOS 2, vos extensions WatchKit peuvent s’exécuter sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent la structure `WatchConnectivity` pour partager des données avec leur application iOS contenante.
 
@@ -38,15 +38,15 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >
 >Vérifiez que l’un de vos projets comprend au minimum les cibles suivantes :
 >
->* L&#39;application contenant
->* L&#39;application WatchKit
->* Extension WatchKit
+>* L’application contenante
+>* L’application WatchKit
+>* L’extension WatchKit
 
 >
 
 
 
-Pour plus d’informations sur le développement d’applications WatchKit, voir [L’architecture](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)de l’application Watch App.
+Pour plus d’informations sur le développement d’applications WatchKit, voir [L’architecture des applications Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
 
 ## Configuration de l’application conteneur {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
@@ -103,7 +103,7 @@ Procédez comme suit dans votre projet Xcode :
    } 
    ```
 
-## Configuration de l’extension WatchKit{#section_5ADE31741E514330A381F2E3CFD4A814}
+## Configuration de l’extension WatchKit {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Vérifiez que le fichier `ADBMobileConfig.json` est un membre de la cible de votre extension WatchKit.
 1. Dans l’onglet **[!UICONTROL Créer les phases]** de la cible de votre extension WatchKit, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]**, puis ajoutez les bibliothèques suivantes :
