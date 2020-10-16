@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Pour télécharger le kit SDK :
 1. Vérifiez les éléments suivants :
 
    * La case à cocher **[!UICONTROL Copier les éléments si nécessaire]** est sélectionnée.
-   * **[!UICONTROL L’option Créer des groupes]** est sélectionnée.
+   * L’option **[!UICONTROL Créer des groupes]** est sélectionnée.
    * Aucune des cases à cocher de la section **[!UICONTROL Ajouter aux cibles]** n’est sélectionnée.
 
    ![](assets/step_3.png)
