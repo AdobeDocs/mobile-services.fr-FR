@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Création manuelle de liens Acquisition
 topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Le schéma suivant illustre les composants d’un lien de suivi créé manuellem
 
 ![](assets/acquisition_url.png)
 
-Ce lien est configuré pour effectuer une redirection spécifique à la plate-forme vers la boutique Google Play ou l’Apple App Store pour une application mobile. Si la destination ne peut pas être déterminée, la boutique par défaut a été définie sur l’Apple App Store. Une fois l’application installée, la clé contextuelle personnalisée `my.custom.key:test` est jointe à l’accès à l’installation d’Analytics.
+Ce lien est configuré pour effectuer une redirection spécifique à la plateforme vers la boutique Google Play ou l’Apple App Store pour une application mobile. Si la destination ne peut pas être déterminée, la boutique par défaut est définie sur l’Apple App Store. Une fois l’application installée, la clé contextuelle personnalisée `my.custom.key:test` est jointe à l’accès à l’installation d’Analytics.
 
 Pour créer des liens manuellement, utilisez le format d’URL suivant :
 
