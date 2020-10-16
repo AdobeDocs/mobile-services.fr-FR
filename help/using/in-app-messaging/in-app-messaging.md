@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Messagerie
 topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,18 +26,18 @@ Vous recherchez des informations et de la documentation concernant le SDK d’Ad
 
 Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* Pour commencer, accédez à [Launch](https://launch.adobe.com/).
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme les liens Acquisition. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation de la messagerie Push et de la messagerie intégrée (in-app) avec les SDK Experience Platform, reportez-vous à la section [Set up push messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) (Configuration de la messagerie Push) et [Set up in-app messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging) (Configuration de la messagerie intégrée).
+> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme les liens Acquisition. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation de la messagerie Push et de la messagerie intégrée (in-app) avec les SDK Experience Platform, reportez-vous à la section [Configuration de la messagerie Push](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) et [Configuration de la messagerie intégrée](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 ## Les messages in-app {#section_8984F4568BC24D32A87429FFCB5184A6}
 
 Les messages in-app sont remis en temps réel aux utilisateurs, selon leurs actions et leurs caractéristiques. Les messages sont déclenchés à partir des données Analytics qui font déjà l’objet d’un suivi par le SDK.
 
-Les types de message suivants sont pris en charge :
+Les types de message suivants sont pris en charge :
 
 * Personnalisé et thématique
 * Plein écran
@@ -51,10 +51,10 @@ Pour vous aider à comprendre le fonctionnement de la messagerie in-app, voici q
 
    Ces droits donnent accès aux liens d’acquisition et aux messages in-app. Pour plus d’informations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
 * Une fois qu’un message est approuvé, il est publié automatiquement dans l’application.
-* Le SDK présente le message aux utilisateurs lorsque les paramètres du message, tels que les caractéristiques, le déclencheur et la planification, sont satisfaits.
+* Le SDK présente le message aux utilisateurs lorsque les paramètres du message, tels que les caractéristiques, le trigger et le planning, sont respectés.
 * Les messages peuvent contenir du code HTML personnalisé ou une image, à l’aide d’une URL en ligne.
 
-   Une image de sauvegarde ou alternative issue du lot d’applications peut également être spécifiée pour les messages déclenchés hors ligne.
+   Une image de sauvegarde ou alternative issue du groupe d’applications peut également être spécifiée pour les messages déclenchés hors ligne.
 * Les messages actifs et terminés fournissent des rapports sur le nombre total de consultations, les taux de clics publicitaires, etc.
 * Les modèles sont disponibles pour les messages personnalisés, ce qui vous permet de créer facilement votre propre message in-app.
 
