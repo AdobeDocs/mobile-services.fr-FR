@@ -1,23 +1,23 @@
 ---
-description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application, par exemple lorsqu’un utilisateur navigue de la page d'accueil vers le flux d’actualités, un appel d’état de suivi doit être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
-seo-description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application, par exemple lorsqu’un utilisateur navigue de la page d'accueil vers le flux d’actualités, un appel d’état de suivi doit être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
+description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), un appel de suivi de l’état devrait être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
+seo-description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), un appel de suivi de l’état devrait être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
 seo-title: Suivi des états de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des états de l’application
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # Suivi des états d’application {#track-app-states}
 
-Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application, par exemple lorsqu’un utilisateur navigue de la page d&#39;accueil vers le flux d’actualités, un appel d’état de suivi doit être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
+Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), un appel de suivi de l’état devrait être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
 
 >[!TIP]
 >
@@ -59,10 +59,10 @@ Les valeurs des données contextuelles doivent être mises en correspondance ave
 
 ## Création de rapports d’états d’application {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-Les états sont généralement affichés à l’aide d’un rapport de cheminement afin que vous puissiez déterminer comment les utilisateurs naviguent dans votre application et quels états sont les plus consultés.
+Les états sont généralement consultés au moyen d’un rapport de cheminement afin de découvrir comment les utilisateurs naviguent dans votre application et les états les plus vus.
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | Rapport **[!UICONTROL Afficher les états]**. Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | Rapport **[!UICONTROL Afficher les états]**. Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. Un exemple de chemin est **[!UICONTROL Accueil]** > **[!UICONTROL Paramètres]** > **[!UICONTROL Flux]**. |
 | Adobe Analytics | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **[!UICONTROL Pages]**, rapport **[!UICONTROL Pages vues]** et rapport **[!UICONTROL Chemin]**. |
 | Analyses ad hoc | Vous pouvez consulter les états sur les différents affichages des Pages au moyen de la dimension **[!UICONTROL Page]**, de la mesure **[!UICONTROL Pages vues]** et des rapports **[!UICONTROL Chemin]**. |
