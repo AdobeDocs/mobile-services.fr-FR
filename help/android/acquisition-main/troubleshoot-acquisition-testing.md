@@ -6,16 +6,16 @@ seo-title: Dépannage des tests d’Acquisition
 solution: Experience Cloud,Analytics
 title: Dépannage des tests d’Acquisition
 topic: Developer and implementation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
 
 
-# Dépannage des tests d’Acquisition{#troubleshoot-acquisition-testing}
+# Dépannage des tests d’Acquisition {#troubleshoot-acquisition-testing}
 
 Cette rubrique fournit des informations sur la manière de résoudre les problèmes que vous pourriez rencontrer lors des tests d’Acquisition.
 
