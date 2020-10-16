@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Variable products
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Variable products{#products-variable}
+# Variable products {#products-variable}
 
 La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
 
@@ -49,4 +49,4 @@ La variable *products* est définie sur la demande d’image ; les autres varia
 
 ![](assets/map-products.png)
 
-Il n’est pas nécessaire de mettre en correspondance la variable *products* en utilisant les règles de traitement, car cette variable est définie directement sur la demande d’image par le SDK.
+Il n’est pas nécessaire de mettre en correspondance la variable  *products* en utilisant les règles de traitement, car cette variable est définie directement sur la demande d’image par le SDK.
