@@ -1,24 +1,24 @@
 ---
-description: Sur la page Destinations de lien, vous pouvez modifier, archiver, ne plus archiver ou supprimer des destinations.
+description: Sur la page Destinations de lien, vous pouvez modifier, archiver, désarchiver ou supprimer des destinations.
 keywords: mobile
-seo-description: Sur la page Destinations de lien, vous pouvez modifier, archiver, ne plus archiver ou supprimer des destinations.
+seo-description: Sur la page Destinations de lien, vous pouvez modifier, archiver, désarchiver ou supprimer des destinations.
 seo-title: Gestion des destinations de lien
 solution: Experience Cloud,Analytics
 title: Gestion des destinations de lien
 topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des destinations de lien{#manage-link-destinations}
+# Gestion des destinations de lien {#manage-link-destinations}
 
-Sur la page Destinations de lien, vous pouvez modifier, archiver, ne plus archiver ou supprimer des destinations.
+Sur la page Destinations de lien, vous pouvez modifier, archiver, désarchiver ou supprimer des destinations.
 
 Pour afficher la page Gérer les destinations de lien, procédez comme suit :
 
