@@ -1,34 +1,34 @@
 ---
-description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale entre les sessions qu’il faudra pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
-seo-description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale entre les sessions qu’il faudra pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre nécessaire à l’exécution de l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+seo-description: Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre nécessaire à l’exécution de l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 seo-title: Actions minutées
 solution: Experience Cloud,Analytics
 title: Actions minutées
 topic: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Actions minutées{#timed-actions}
+# Actions minutées {#timed-actions}
 
-Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale entre les sessions qu’il faudra pour que l’action soit terminée. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
+Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de chaque session et la durée totale d’une session à l’autre nécessaire à l’exécution de l’action. Vous pouvez utiliser les actions minutées pour définir des segments et comparer la durée d’achat, le niveau de transmission, le flux de passage en caisse, etc.
 
-Les mesures suivantes sont rapportées pour les actions minutées :
+Les mesures suivantes sont signalées pour les actions minutées :
 
-* Nombre total de secondes dans l&#39;application entre le début et la fin - intersessions
+* Nombre total de secondes dans l’application entre le début et la fin (intersessions)
 * Nombre total de secondes entre le début et la fin (heure de l’horloge)
 
-Un rappel facultatif vous permet d’effectuer des actions supplémentaires lorsque l’action minutée se termine :
+Un rappel facultatif vous permet d’effectuer des actions supplémentaires lorsque l’action minutée se termine :
 
-* Exécutez le code et ajoutez toute logique - optionnelle logique personnalisée basée sur les résultats de durée.
-* ajouter des données contextuelles avant de transmettre des durées.
-* Annuler l’accès et les durées non encore envoyées.
+* Exécutez le code et ajoutez toute logique - logique personnalisée optionnelle basée sur les résultats de durée.
+* Ajoutez des données contextuelles avant de transmettre des durées.
+* Annuler l’accès et les durées pas encore envoyés.
 
 ## Suivi des actions minutées {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
