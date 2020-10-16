@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Générateur de liens marketing
 topic: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
 
 
-# Générateur de liens marketing{#marketing-links-builder}
+# Générateur de liens marketing {#marketing-links-builder}
 
 Ce générateur permet de générer des liens marketing capables d’orienter les utilisateurs vers les boutiques d’applications et les destinations de lien Web ou d’application. Les marketeurs peuvent choisir des destinations en fonction de règles, telles que le type de périphérique ou le système d’exploitation sur le périphérique de l’utilisateur.
 
