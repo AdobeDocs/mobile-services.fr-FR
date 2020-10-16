@@ -1,16 +1,16 @@
 ---
-description: Ces informations vous aident à utiliser les fonctions Emplacement dans vos applications iOS.
-seo-description: Ces informations vous aident à utiliser les fonctions Emplacement dans vos applications iOS.
+description: Ces informations vous aideront à utiliser les fonctionnalités d’emplacement dans vos applications iOS.
+seo-description: Ces informations vous aideront à utiliser les fonctionnalités d’emplacement dans vos applications iOS.
 seo-title: Emplacement
 solution: Experience Cloud,Analytics
 title: Emplacement
 topic: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
