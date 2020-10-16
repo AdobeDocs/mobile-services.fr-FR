@@ -1,24 +1,24 @@
 ---
-description: Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
+description: Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
 keywords: mobile
-seo-description: Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
+seo-description: Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
 seo-title: Configuration de votre application pour utiliser APNS ou FCM
 solution: Experience Cloud,Analytics
 title: Configuration de votre application pour utiliser APNS ou FCM
 topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Configuration de votre application pour utiliser APNS ou FCM{#configure-app-to-use-apns-or-fcm}
+# Configuration de votre application pour utiliser APNS ou FCM {#configure-app-to-use-apns-or-fcm}
 
-Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
+Vous pouvez configurer votre application pour utiliser l’Apple Push Notification Service (APNS) ou Firebase Cloud Messaging (FCM).
 
 ## Applications Android {#section_41D304102CDF4586911EC1413AD35A10}
 
@@ -86,10 +86,10 @@ Pour configurer votre application Android afin d’utiliser FCM dans ce scénari
 
 Pour configurer votre application iOS en vue de l’utilisation du service APNS :
 
-1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
+1. Accédez à  et connectez-vous à votre [compte développeur Apple](https://developer.apple.com/account)[https://developer.apple.com/account](https://developer.apple.com/account).
 1. Sous **[!UICONTROL Applications iOS]**, sélectionnez **[!UICONTROL Identifiants]**.
 1. Si vous possédez un ID d’application configuré pour les notifications push, allez à l’étape 11.
-1. Press the **[!UICONTROL +]** button to create a new App ID.
+1. Appuyez sur le bouton **[!UICONTROL +]** pour créer un nouvel ID d’application.
 1. Saisissez une description de l’ID d’application.
 1. Saisissez un suffixe d’ID d’application.
 
@@ -117,7 +117,7 @@ Pour obtenir votre certificat SSL et votre clé privée (APNS) :
 1. Ouvrez **[!UICONTROL Accès au trousseau]**.
 1. Cliquez sur **[!UICONTROL Mes certificats]** et recherchez le **[!UICONTROL certificat de services iOS]** approprié pour votre application et votre environnement.
 
-   Vous pouvez identifier le certificat correct en faisant correspondre l’ID d’assemblage et s’il s’agit de Développement ou de Production.
+   Vous pouvez identifier le certificat correct en faisant correspondre l’ID de lot et s’il s’agit de Développement ou de Production.
 
 1. Développez le certificat et vérifiez qu’il contient une clé privée.
 1. Effectuez un clic droit sur la clé privée et sélectionnez **[!UICONTROL Export &quot;*`<name of key>`*]**.
