@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: 'Expérience : message in-app'
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Experience : message in-app{#experience-in-app-message}
+# Experience : message in-app {#experience-in-app-message}
 
 Configurez les options pour les messages in-app, y compris le type (plein écran, alerte ou notification) et les options d’affichage, de texte et de bouton.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. Dans votre application, cliquez sur **[!UICONTROL Messagerie]** > **[!UICONTROL Gestion des messages]** > **[!UICONTROL Créer un message]** > **[!UICONTROL Créer message in-app]**.
 1. Sur la page Expérience, saisissez le nom du message.
 1. Renseignez les champs de la section **[!UICONTROL Type]** :
 
@@ -67,12 +67,12 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
 
    * **[!UICONTROL Image groupée]**
 
-      Chemin d’accès à une image dans le lot de code de votre application. Cette option est utilisée en l’absence d’image. ou l’image n’est pas disponible. Par exemple, l’image peut être indisponible si l’appareil est hors ligne. Si vous rencontrez des problèmes de dimensionnement lors de l’utilisation du modèle plein écran, consultez la rubrique *Mon image ne correspond pas exactement à l’espace fourni par le modèle* dans [Dépannage de la messagerie in-app](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      Chemin d’accès à une image dans le groupe de codes de votre application. Cette option est utilisée en l’absence d’image, ou lorsque l’image n’est pas disponible. Par exemple, l’image peut être indisponible si l’appareil est hors ligne. Si vous rencontrez des problèmes de dimensionnement lors de l’utilisation du modèle plein écran, consultez la rubrique *Mon image ne correspond pas exactement à l’espace fourni par le modèle* dans [Dépannage de la messagerie in-app](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
 1. Renseignez les champs de la section **[!UICONTROL Texte]** :
 
-   * **[!UICONTROL Header]**
+   * **[!UICONTROL En-tête]**
 
       Saisissez le texte pour l’en-tête du message.
 
@@ -108,7 +108,7 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
 
 1. (Facultatif) Pour afficher un aperçu de la mise en page de votre message, cliquez sur les icônes ci-après :
 
-   * **[!UICONTROL Résumé (Summary)]** masque le volet d’aperçu.
+   * **[!UICONTROL Résumé]** masque le volet d’aperçu.
 
       Cliquez sur ![Aperçu](assets/icon_preview.png) pour afficher à nouveau le volet d’aperçu.
 
