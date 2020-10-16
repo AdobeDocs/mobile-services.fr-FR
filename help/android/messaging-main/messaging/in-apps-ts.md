@@ -2,25 +2,25 @@
 description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 keywords: mobile
 seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
-seo-title: Dépannage de la messagerie intégrée (in-app)
+seo-title: Dépannage de la messagerie in-app
 solution: Experience Cloud,Analytics
-title: Dépannage de la messagerie intégrée (in-app)
+title: Dépannage de la messagerie in-app
 topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Dépannage de la messagerie intégrée (in-app){#troubleshooting-in-app-messaging}
+# Dépannage de la messagerie in-app {#troubleshooting-in-app-messaging}
 
 Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 
-Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
+Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
 
 ## Placez-vous la nouvelle configuration et le nouveau SDK dans l’application ?
 
@@ -36,7 +36,7 @@ Assurez-vous que le récepteur de diffusion de notifications locales est déclar
 
 ## Le message est-il actif ?
 
-Pour vérifier si le message est actif, sur la page Manage In-App Message (Gérer le message in-app), dans la colonne **[!UICONTROL Status]** (État), vérifiez la liste des messages.
+Pour vérifier si le message est actif, sur la page Gérer le message in-app, dans la colonne **[!UICONTROL État]**, vérifiez la liste des messages.
 
 ## Consultez les paramètres *afficher une fois*, *afficher toujours*, *afficher hors ligne* dans l’onglet Audience.
 
