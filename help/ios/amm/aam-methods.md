@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Méthodes Audience Manager
 topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
-# Méthodes Audience Manager{#audience-manager-methods}
+# Méthodes Audience Manager {#audience-manager-methods}
 
 Cette section répertorie les méthodes Audience Manager fournies par la bibliothèque iOS.
 
@@ -73,14 +73,14 @@ Si Audience Manager est configuré dans votre fichier JSON, un signal contenan
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   Définit les DPID et DPUUID. Une fois définies, les deux sont ajoutées à chaque signal.
+   Définit les DPID et DPUUID. Une fois définis, les deux sont ajoutés à chaque signal.
 
-   * L’ID de fournisseur de **données (DPID)** est l’ID de partenaire de données qui est attribué par Audience Manager.
-   * L’ID utilisateur unique du fournisseur de **données (DPUUID)** est l’ID unique du fournisseur de données pour l’utilisateur.
+   * L’**identifiant du fournisseur de données (DPID)** est l’identifiant du partenaire de données qui est attribué par Audience Manager.
+   * L’**ID d’utilisateur unique du fournisseur de données (DPUUID)** est l’ID unique du fournisseur de données pour l’utilisateur.
 
       >[!IMPORTANT]
       >
-      >Avant la version 4.13.x, le DPUUID n’était pas codé automatiquement. À partir de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis réencoder cette valeur. Ce processus permet de s’assurer que le SDK ne rompt pas la compatibilité ascendante.
+      >Avant la version 4.13.x, le DPUUID n’était pas codé automatiquement. À partir de la version 4.13.x, le SDK commence par décoder la valeur transmise, puis réencode cette valeur. Ce processus permet de s’assurer que le SDK ne rompt pas la compatibilité descendante.
 
    * Voici la syntaxe de cette méthode :
 
