@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Ajout de séries (mesures) aux rapports
 topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Ajout de séries (mesures) aux rapports{#add-series-metrics-to-reports}
+# Ajout de séries (mesures) aux rapports {#add-series-metrics-to-reports}
 
 Ces informations vous aident à personnaliser les rapports intégrés par l’ajout de séries (mesures) supplémentaires ou d’applications dans différentes suites de rapports aux fins de comparaison des données.
 
@@ -26,7 +26,7 @@ Ces informations vous aident à personnaliser les rapports intégrés par l’aj
 
 Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateurs et sessions]**, mais ces instructions peuvent s’appliquer à n’importe quel autre rapport.
 
-1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
+1. Ouvrez votre application et cliquez sur **[!UICONTROL Utilisation]** > **[!UICONTROL Utilisateurs et sessions]**.
 
    ![Résultat de l’étape](assets/customize1.png)
 
