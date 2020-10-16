@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Exemple de postback
 topic: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
 ht-degree: 100%
 
 ---
 
 
-# Exemple de postback{#postback-example}
+# Exemple de postback {#postback-example}
 
 Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
 
