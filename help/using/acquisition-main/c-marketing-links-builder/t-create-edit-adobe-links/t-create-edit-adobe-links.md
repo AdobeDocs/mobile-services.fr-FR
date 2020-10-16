@@ -1,22 +1,22 @@
 ---
-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
+description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site web.
 keywords: mobile
-seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
+seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site web.
 seo-title: Création ou modification de liens marketing
 solution: Experience Cloud,Analytics
 title: Création ou modification de liens marketing
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Création ou modification de liens marketing{#create-or-edit-marketing-links}
+# Création ou modification de liens marketing {#create-or-edit-marketing-links}
 
 Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web. Pour plus d’informations, voir [Liens universels Apple et liens d’application Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
@@ -34,11 +34,11 @@ Vous pouvez créer ou modifier les liens marketing afin de fournir des liens pro
 
    * **[!UICONTROL Code de suivi unique]** :
 
-      (**Obligatoire**) Spécifiez le code de suivi souhaité ou cliquez sur ![générer une icône](assets/icon_generate.png) pour créer un nouveau code de suivi. Vous pouvez afficher les rapports qui détaillent l’utilisation du code de suivi.
+      (**Obligatoire**) Spécifiez le code de suivi souhaité ou cliquez sur ( ![générer une icône](assets/icon_generate.png) ) pour créer un nouveau code de suivi. Vous pouvez afficher les rapports qui détaillent l’utilisation du code de suivi.
 
    * **[!UICONTROL Ajouter les données contextuelles de suivi]** :
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées]**, sélectionnez une balise prédéfinie ou l’une de vos propres balises. Les données contextuelles servent à la création de rapports lorsque le lien marketing est déployé.
+      (**Facultatif**) Cliquez sur l’icône **[!UICONTROL +]** et saisissez les informations pertinentes pour suivre votre campagne à l’aide des données contextuelles. Dans la liste déroulante **[!UICONTROL Données contextuelles personnalisées]**, sélectionnez une balise prédéfinie ou l’une de vos propres balises. Les données contextuelles servent à la création de rapports lorsque le lien marketing est déployé.
 
       Les balises prédéfinies suivantes sont disponibles :
 
@@ -68,14 +68,14 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
 1. Cliquez sur **[!UICONTROL Modifier le spot de lien profond]** et configurez le lien.
 
-   (**Facultatif**) Quand il existe plusieurs destinations, les utilisateurs peuvent être orientés selon qu’une application mobile est installée sur leur appareil. Si l’application est installée, un landing page interactif s’affiche.
+   (**Facultatif**) Quand il existe plusieurs destinations, les utilisateurs peuvent être orientés selon qu’une application mobile est installée sur leur appareil. Si l’application est installée, une landing page interactive s’affiche.
 
    Pour plus d’informations, voir [Spots](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** puis sur **[!UICONTROL Suivant]**.
 1. Sur la page Destination, configurez le lien.
 
-   1. Cliquez sur l’icône **[!UICONTROL Décision]** (![icône décision](assets/icon_decision.png)) et sélectionnez l’un des emplacements de décision suivants :
+   1. Cliquez sur l’icône **[!UICONTROL Décision]** ( ![icône décision](assets/icon_decision.png) ) et sélectionnez l’un des emplacements de décision suivants :
 
       * **[!UICONTROL Ajouter une décision]**
       * **[!UICONTROL Ajouter un chemin d’accès]**
@@ -85,10 +85,10 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
          Les systèmes d’exploitation pris en charge comprennent iOS, Android, AMX, etc.
 
-      * **[!UICONTROL Device Type]**
+      * **[!UICONTROL Type d’appareil]**
 
          Les types d’appareils incluent les ordinateurs de bureau, les liseuses électroniques, les consoles de jeux, les téléphones mobiles, les décodeurs, etc.
-   1. Cliquez sur l’icône **[!UICONTROL Destination]** (![icône carrée](assets/icon_square.png) ) et sélectionnez l’un des types de destinations suivants :
+   1. Cliquez sur l’icône **[!UICONTROL Destination]** ( ![icône carrée](assets/icon_square.png) ) et sélectionnez l’un des types de destinations suivants :
 
       * **[!UICONTROL Boutique d’applications]**
       * **[!UICONTROL Lien Web]**
