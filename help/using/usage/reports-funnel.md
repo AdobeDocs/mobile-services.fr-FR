@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapport Entonnoir
 topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Rapport Entonnoir{#funnel}
+# Rapport Entonnoir {#funnel}
 
 Le rapport **[!UICONTROL Entonnoir]** identifie le moment où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport **[!UICONTROL Entonnoir]** pour comparer les actions de différents segments.
 
@@ -32,17 +32,17 @@ Voici un exemple de rapport Versions :
 
 ![](assets/funnel_create.png)
 
-Pour démontrer un entonnoir simple, voici les paramètres d&#39;une configuration qui utilise trois étapes d&#39;entonnoir et deux comparaisons d&#39;entonnoir. Nous supposons qu’une application de démonstration permet aux utilisateurs d’ajouter un élément, tel qu’une photo, puis de le partager.
+Pour démontrer un entonnoir simple, voici les paramètres d’une configuration qui utilise trois étapes d’entonnoir et deux comparaisons d’entonnoir. Nous supposons qu’une application de démonstration permet aux utilisateurs d’ajouter un élément, tel qu’une photo, puis de le partager.
 
-Dans la fenêtre Personnaliser, certaines sections indiquent que l’utilisateur a lancé l’application, a ajouté une photo à partir d’une galerie dans l’application, partagé une ou plusieurs photos de l’application sur les réseaux sociaux, par SMS, par courrier électronique, etc. Les comparaisons d’entonnoir permettent de comparer les niveaux d’ajout et de partage de photos entre les utilisateurs de l’application iOS et de l’application Android.
+Dans la fenêtre Personnaliser, certaines sections indiquent que l’utilisateur a lancé l’application, a ajouté une photo à partir d’une galerie dans l’application, a partagé une ou plusieurs photos depuis l’application sur les médias sociaux, par SMS, par email, etc. Les comparaisons d’entonnoir permettent de comparer les niveaux d’ajout et de partage de photos entre les utilisateurs de l’application iOS et de l’application Android.
 
 Pour générer le rapport, cliquez sur **[!UICONTROL Exécuter]**.
 
-Voici un exemple de rapport généré :
+Voici un exemple de rapport généré :
 
 ![](assets/funnel.png)
 
-La première série montre que 100 % des utilisateurs ont lancé l’application. La deuxième série montre qu&#39;un pourcentage plus élevé d&#39;utilisateurs d&#39;Android ont ajouté une photo de la galerie. La troisième série montre que près de la moitié des utilisateurs d&#39;iOS ont partagé la photo, mais qu&#39;aucun des utilisateurs d&#39;Android n&#39;a partagé la photo. Cela peut indiquer un problème avec l’application qui doit être étudié.
+La première série montre que 100 % des utilisateurs ont lancé l’application. La deuxième série montre qu’un pourcentage plus élevé d’utilisateurs d’Android ont ajouté une photo de la galerie. La troisième série montre que près de la moitié des utilisateurs d’iOS ont partagé la photo, mais qu’aucun des utilisateurs d’Android n’a partagé la photo. Cela peut indiquer un problème avec l’application qui doit être étudié.
 
 Pour afficher des informations supplémentaires, placez le pointeur de la souris sur une barre du graphique.
 
