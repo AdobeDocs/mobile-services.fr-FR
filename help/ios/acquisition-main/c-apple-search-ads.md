@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Publicités Search Ads d’Apple
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ L’utilisation d’Apple Ads vous offre les avantages suivants :
 
 Pour activer votre application pour l’attribution Search Ads, procédez comme suit :
 
-1. Mettez en oeuvre le Adobe SDK version 4.13.2 ou ultérieure.
+1. Mettez en œuvre le SDK Adobe version 4.13.2 ou ultérieure.
 
-   For more information, see [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   Pour plus d’informations, voir [Mise en œuvre principale et cycle de vie](/help/ios/getting-started/dev-qs.md).
 
 1. Ajoutez la structure iAd au fichier de projet Xcode de votre application.
 
