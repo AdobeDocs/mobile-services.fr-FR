@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Types de rapports
 topic: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Avant de personnaliser les rapports, vous devez comprendre la différence entre 
 
 * Mesure
 
-   Une mesure sert à mesurer vos données. Les mesures sont des valeurs qui peuvent être comptabilisées et ajoutées et qui sont utilisées pour déterminer la fréquence des actions spécifiques dans votre application. Les mesures courantes comprennent les installations, les lancements, les recettes, la valeur de durée de vie et les connexions. Par exemple, à chaque lancement de votre application, la valeur _launches_value augmente d’un.
+   Une mesure sert à mesurer vos données. Les mesures sont des valeurs qui peuvent être comptabilisées et ajoutées et qui sont utilisées pour déterminer la fréquence des actions spécifiques dans votre application. Les mesures courantes comprennent les installations, les lancements, le chiffre d’affaires, la valeur de durée de vie et les connexions. Par exemple, à chaque lancement de votre application,  la valeur  _launches_value augmente d’un.
 
 * Dimension
 
@@ -34,61 +34,61 @@ Voici les types de rapports que vous pouvez générer dans l’interface utilisa
 
 ## Rapport de dépassement de délai {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 
-Les rapports de dépassement de délai montrent les performances des mesures sur une période afin que vous puissiez rapidement identifier les pics et les tendances. L’Analyse se début souvent dans un rapport de dépassement de délai et se déplace dans des rapports de tendance et de classement au fur et à mesure que vous analysez les facteurs susceptibles de contribuer à un pic de mesure ou à une tendance.
+Les rapports de dépassement de délai montrent les performances des mesures sur une période afin que vous puissiez rapidement identifier les pics et les tendances. L’analyse débute souvent dans un rapport de dépassement de délai et passe aux rapports de tendance et de classement au fur et à mesure que vous analysez les facteurs susceptibles de contribuer à un pic de mesure ou à une tendance.
 
-Par exemple, si vous constatez un pic de lancements, vous pouvez exécuter un rapport de tendance qui affiche les lancements des 5 principaux systèmes d’exploitation pour identifier les systèmes d’exploitation qui contribuent le plus au pic de lancements :
+Par exemple, si vous constatez un pic de lancements, vous pouvez exécuter un rapport de tendance qui affiche les lancements des 5 principaux systèmes d’exploitation pour identifier ceux qui contribuent le plus au pic de lancements :
 
 ![](assets/overtime.png)
 
-Pour vue des valeurs de dimension avec d’autres mesures sur un rapport de dépassement de délai, vous pouvez utiliser la mesure d’instances et définir un filtre de dimension.
+Pour afficher des valeurs de dimension avec d’autres mesures sur un rapport de dépassement de délai, vous pouvez utiliser la mesure d’instances et définir un filtre de dimension.
 
-## Rapport de tendances {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
+## Rapport de tendances  {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
 
 Les rapports de tendances vous aident à déterminer les performances des dimensions les plus populaires par rapport à une mesure. Vous pouvez utiliser ce rapport pour déterminer les valeurs qui contribuent le plus à la modification d’une mesure.
 
 ![](assets/trended.png)
 
-Pour vue d’un rapport de tendances pour une dimension, ajoutez un filtre bascule (par exemple, Système d’exploitation = iOS 6.0.1) à un rapport de dépassement de délai afin de vue des mêmes données. En outre, vous pouvez ajouter cinq mesures supplémentaires au rapport de dépassement de délai filtré.
+Pour voir un rapport de tendances pour une dimension, ajoutez un filtre bascule (par exemple, Système d’exploitation = iOS 6.0.1) à un rapport de dépassement de délai afin d’afficher les mêmes données. En outre, vous pouvez ajouter cinq mesures supplémentaires au rapport de dépassement de délai filtré.
 
 ## Rapport de dépassement de délai filtré {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
 
-Si vous souhaitez vue une valeur de dimension spécifique, vous pouvez ajouter un filtre bascule à un rapport de dépassement de délai. Le rapport suivant montre les lancements, les mises à niveau et les blocages d’une durée de 30 jours pour une version spécifique du système d’exploitation.
+Si vous souhaitez afficher une valeur de dimension spécifique, vous pouvez ajouter un filtre bascule à un rapport de dépassement de délai. Le rapport suivant montre les lancements, les mises à niveau et les blocages sur une durée de 30 jours pour une version spécifique du système d’exploitation.
 
 ![](assets/overtime-filter.png)
 
 ## Rapport de classement {#section_C073D744A95843AF99EE74FB5B013735}
 
-Les rapports avec classement indiquent la fréquence à laquelle les 50 premières dimensions contribuent à une mesure. Ce rapport est utile pour vue la contribution totale pour une période sur un grand nombre de valeurs.
+Les rapports de classement indiquent la fréquence à laquelle les 50 premières dimensions contribuent à une mesure. Ce rapport est utile pour afficher la contribution totale pour une période sur un grand nombre de valeurs.
 
 ![](assets/ranked.png)
 
-## Rapport radial {#section_17A9842039174DE094A6B1E9837E35BB}
+## Rapport radial  {#section_17A9842039174DE094A6B1E9837E35BB}
 
-Les rapports radial fournissent, par exemple, le rapport de base avec les ventilations. La visualisation utilise la hauteur pour afficher la mesure et les différences de performances entre les mesures. Chaque cercle concentrique représente un segment d&#39;audience dans la catégorie de ce cercle. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
+Les rapports radiaux fournissent, par exemple, le rapport de base avec les ventilations. La visualisation utilise la hauteur pour afficher la mesure et les différences de performances entre les mesures. Chaque cercle concentrique représente un segment ciblé dans la catégorie de ce cercle. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
-Vous pouvez vue le rapport dans un didacticiel produit qui décrit comment interagir avec un graphique radial.
+Vous pouvez afficher le rapport dans un tutoriel produit qui décrit comment interagir avec un graphique sous forme de cadran.
 
-Pour début au didacticiel :
+Pour commencer le tutoriel :
 
 1. Dans Gérer les paramètres de l’application, cliquez sur **[!UICONTROL Utilisation]**.
 
-1. Click **[!UICONTROL Technology]** > **[!UICONTROL Technology Breakdown]**.
+1. Cliquez sur **[!UICONTROL Technologie]** > **[!UICONTROL Ventilation technologique]**.
 1. Dans la barre de titre du rapport, cliquez sur **[!UICONTROL Personnaliser]**, puis sur l’icône d’information.
 
 ![](assets/report_technology.png)
 
 ### Rapport de cheminement {#section_AD400106BC684B50B27CCCD3F4497114}
 
-Un rapport Cheminement est basé sur l’analyse des chemins et affiche un graphique des chemins qui représente les chemins empruntés par un état de l’application pour passer à un autre état.
+Un rapport de cheminement est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application vers un autre état.
 
 ![](assets/action_paths.png)
 
-Chaque noeud a la forme d’une boîte et représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans l’illustration ci-dessus, le noeud supérieur représente le nombre d’utilisateurs qui ont lancé l’application et sélectionné une photo dans la galerie.
+Chaque nœud a la forme d’une boîte et représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans l’illustration ci-dessus, le nœud supérieur représente le nombre d’utilisateurs qui ont lancé l’application et sélectionné une photo dans la galerie.
 
-### Rapport Entonnoir {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
+### Rapport Entonnoir  {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
-Les rapports Entonnoir vous permettent d’identifier où les clients abandonnent une campagne marketing ou s’ils s’éloignent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport Entonnoir pour comparer les actions de différents segments.
+Les rapports Entonnoir vous permettent d’identifier où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport Entonnoir pour comparer les actions de différents segments.
 
-La visualisation de l’entonnoir vous permet de voir où les clients abandonnent le processus. La visibilité accrue des décisions des clients à chaque étape vous permet de comprendre où les clients sont dissuadés, quel chemin ils ont tendance à suivre et quand ils quittent votre application.
+La visualisation de l’entonnoir vous permet de voir où les clients abandonnent le processus. L’obtention d’une bonne visibilité sur les décisions des clients à chaque étape vous permet de comprendre à quel moment ils ont été dissuadés, quel chemin ils ont tendance à emprunter, ainsi que le moment où ils quittent votre application.
 
 ![](assets/funnel.png)
