@@ -1,23 +1,23 @@
 ---
-description: Notes de mise à jour et problèmes connus relatifs au SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus relatifs au SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud.
+description: Notes de mise à jour et problèmes connus pour les SDK 4.x de la boutique d’applications Windows 8.1 pour les solutions Experience Cloud.
+seo-description: Notes de mise à jour et problèmes connus pour les SDK 4.x de la boutique d’applications Windows 8.1 pour les solutions Experience Cloud.
 seo-title: Notes de mise à jour
 solution: Experience Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
 # Notes de mise à jour {#release-notes}
 
-Notes de mise à jour et problèmes connus relatifs au SDK 4.x de la boutique d’applications universelle Windows 8.1 pour les solutions Experience Cloud.
+Notes de mise à jour et problèmes connus pour les SDK 4.x de la boutique d’applications Windows 8.1 pour les solutions Experience Cloud.
 
 ## Notes de mise à jour de la version actuelle {#section_DC697A291F0A4CB7B669B24488E07DC1}
 
@@ -25,9 +25,9 @@ En plus d’améliorer considérablement les performances, la version 4 ajoute 
 
 | Fonctionnalité | Description |
 |--- |--- |
-| Géolocalisation - Points ciblés | Les points ciblés vous permettent de définir un point central long/long et de déterminer un rayon. La bibliothèque détermine ensuite si l’emplacement fourni pour cet appel correspond à l’un de vos points d’intérêt. Pour plus d’informations, voir *Géolocalisation et points ciblés* dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
-| Valeur de durée de vie | La valeur de durée de vie permet de mesurer les contributions et l’utilisation de vos utilisateurs dans votre application. Chaque fois que vous envoyez une valeur, elle ajoute à la valeur existante de cet utilisateur.  Pour plus d’informations, voir Valeur *de* durée de vie dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
-| Action minutée | Les actions minutées sont un moyen facile pour vous de voir combien de temps il faut aux utilisateurs pour terminer un processus de bout en bout dans votre application. Les actions minutées vous permettent de calculer la durée de la session et la durée totale (intersessions) nécessaire à l’exécution de l’action. Pour plus d’informations, voir Actions ** minutées dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
+| Géolocalisation - Points ciblés | Les points ciblés vous permettent de définir un point central lat./long. et de déterminer un rayon. La bibliothèque détermine ensuite si l’emplacement fourni pour cet appel correspond à l’un de vos points ciblés. Pour plus d’informations, voir *Géolocalisation et points ciblés* dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
+| Valeur de durée de vie | La valeur de durée de vie permet de mesurer les contributions et l’utilisation de vos utilisateurs dans votre application. Chaque fois que vous envoyez une valeur, elle s’ajoute à la valeur existante de cet utilisateur.  Pour plus d’informations, voir *Valeur de durée de vie* dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
+| Action minutée | Les actions minutées sont un moyen facile de voir combien de temps il faut aux utilisateurs pour terminer un processus de bout en bout dans votre application. Les actions minutées vous permettent de calculer la durée de la session et la durée totale (intersessions) nécessaire à l’exécution de l’action. Pour plus d’informations, voir *Actions minutées* dans [Analytics](/help/windows-appstore/analytics/analytics.md). |
 | Inclusion/exclusion | Activation et désactivation rapides des analyses. |
 
 
