@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Analyses de vidéos
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Analyses de vidéos {#video-analytics}
+# Analyses de vidéos  {#video-analytics}
 
 Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
 
@@ -32,8 +32,8 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
    * Type de variable : eVar
       * Délai d’expiration par défaut : Visite
       * Custom Insight (s.prop, utilisée pour le cheminement vidéo)
-   * (**Obligatoire**) Lorsqu’un visiteur vue la vidéo d’une manière ou d’une autre, cette variable de données contextuelles collecte le nom de la vidéo, comme indiqué dans l’implémentation. Vous pouvez ajouter des classifications pour cette variable.
-   * (**Optional**) The Custom Insight variable provides video pathing information.
+   * (**Obligatoire**) Lorsqu’un visiteur regarde la vidéo d’une manière ou d’une autre, cette variable de données contextuelles collecte le nom de la vidéo, comme indiqué dans l’implémentation. Vous pouvez ajouter des classifications pour cette variable.
+   * (**Facultatif**) La variable Custom Insight fournit des informations de cheminement vidéo.
 
 * **a.media.name**
    * Type de variable : Insight personnalisé (s.prop)
@@ -47,7 +47,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 * **a.media.segment**
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
-   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   * (**Obligatoire**) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo.
 
       Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, il est possible que SiteCatalyst collecte les données suivantes dans l’eVar Segments :`1:M:0-25`
 
@@ -70,7 +70,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
 * **a.media.timePlayed**
    * Type de variable : Evénement
    * Type : compteur
-   * Compte le temps, en secondes, passé à regarder une vidéo depuis le dernier processus de collecte de données (demande d’image).
+   * Compte le temps de lecture vidéo passé, en secondes, depuis le dernier processus de collecte de données (demande d’image).
 
 * **a.media.view**
    * Type de variable : Evénement
@@ -91,7 +91,7 @@ Le processus général de mesure vidéo se ressemble sur toutes les plateformes.
    * Type : compteur
    * Indique qu’un utilisateur a visionné une vidéo dans son intégralité.
 
-      Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant l’implémentation, vous pouvez spécifier le nombre de secondes à partir de la fin de la vidéo que vous souhaitez considérer comme une vue terminée. Pour les vidéos en direct et les autres flux qui n’ont pas de fin définie, vous pouvez spécifier un point personnalisé pour mesurer les vidéos terminées (par exemple, après une durée spécifique de visionnage).
+      Par défaut, la fin de l’événement est mesurée 1 seconde avant la fin de la vidéo. Pendant la mise en œuvre, vous pouvez spécifier combien de secondes à partir de la fin de la vidéo vous souhaitez considérer comme une lecture intégrale. Pour les vidéos en direct et les autres flux qui n’ont pas de fin définie, vous pouvez spécifier un point personnalisé pour mesurer les vidéos terminées, par exemple, après un moment spécifique de visionnage.
 
 
 ## Configuration des paramètres multimédias {#section_929945D4183C428AAF3B983EFD3E2500}
