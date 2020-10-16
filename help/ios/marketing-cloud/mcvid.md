@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Experience Cloud ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 
@@ -23,9 +23,9 @@ Le service d’identification Adobe Experience Platform fournit un identifiant v
 >
 >Il n’est pas nécessaire de renseigner l’Experience Cloud ID, sauf si vous utilisez le service d’identification Adobe Experience Platform. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html).
 
-**La version 4.3 ou ultérieure du SDK est requise.**
+**La version 4.3 ou ultérieure du SDK est requise**
 
-## Activez votre Experience Cloud ID.{#section_79F984271C3B4366B7B04F864F4FF8C2}
+## Activez votre Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
