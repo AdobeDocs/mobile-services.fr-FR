@@ -7,22 +7,22 @@ solution: Experience Cloud,Analytics
 title: Configuration de la messagerie push
 topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Configuration de la messagerie push{#configure-push-messaging}
+# Configuration de la messagerie push {#configure-push-messaging}
 
 Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 
 Avant de configurer la messagerie push, effectuez les tâches préalables requises dans [Conditions préalables requises pour activer la messagerie push](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md).
 
-* **Considérations sur les Report Suites**
+* **Considérations sur les suites de rapports**
 
    Vous pouvez configurer une application de boutique d’applications pour Apple et une application pour Google dans chaque suite de rapports. Si vous avez besoin d’applications supplémentaires, par exemple, une pour un environnement de production et une pour un environnement de développement, configurez une nouvelle application de boutique d’applications et une nouvelle suite de rapports pour chaque environnement.
 
@@ -39,11 +39,11 @@ Avant de configurer la messagerie push, effectuez les tâches préalables requis
       Recherchez et sélectionnez votre clé privée valide `.p12`, `.key`, ou `.pen`.
 
       >[!IMPORTANT]
-      >Si le fichier que vous sélectionnez pour la saisie de la **[!UICONTROL Clé privée]** contient également un certificat, il n’est pas nécessaire de spécifier ce dernier.
+      >Si le fichier que vous sélectionnez pour la saisie de la **[!UICONTROL clé privée]** contient également un certificat, il n’est pas nécessaire de spécifier ce dernier.
 
    * **[!UICONTROL Certificat]**
 
-      Spécifiez un certificat valide. Cette information est requise uniquement si la saisie **[!UICONTROL Clé privée]** ne contient **aucun** certificat. Pour plus d’informations sur l’obtention du certificat SSL et de la clé privée, voir [Configuration d’une application pour l’utilisation du service APNS ou FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Spécifiez un certificat valide. Cette information est requise uniquement si la saisie **[!UICONTROL clé privée]** ne contient **aucun** certificat. Pour plus d’informations sur l’obtention du certificat SSL et de la clé privée, voir [Configuration d’une application pour l’utilisation du service APNS ou FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
    * Google
 
