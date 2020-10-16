@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Rapport Chemins d’accès des actions
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# Rapport Chemins d’accès des actions{#action-paths}
+# Rapport Chemins d’accès des actions {#action-paths}
 
 Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
 
@@ -28,16 +28,16 @@ Les rapports **[!UICONTROL Chemins d’accès des vues]** et **[!UICONTROL Chemi
 
 ![](assets/action_paths.png)
 
-Chaque noeud, en forme de boîte, représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans le graphique ci-dessus, le noeud supérieur représente le nombre d’utilisateurs qui ont lancé l’application, puis sélectionné une photo dans la galerie.
+Chaque nœud a la forme d’une boîte et représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans l’image ci-dessus, le nœud supérieur représente le nombre d’utilisateurs qui ont lancé l’application et sélectionné une photo dans la galerie.
 
 Pour afficher les options de modification du graphique, cliquez sur un nœud, puis sur **[!UICONTROL Mise au point]** ou **[!UICONTROL Développer]**. Si, par exemple, vous cliquez sur l’état **[!UICONTROL PhotoPicked]** dans le nœud supérieur, les icônes **[!UICONTROL Mise au point]** et **[!UICONTROL Développer]** s’affichent.
 
 ![](assets/action_paths_icons.png)
 
-To expand, click the **[!UICONTROL +]** icon. Cette option affiche les chemins supplémentaires qui entrent dans le noeud ou en sortent. Dans le graphique ci-dessous, l’état 1 lance l’application, l’état 2 sélectionne une photo (l’élément que vous avez précédemment développé) et l’état 3 inclut les différents chemins empruntés par les utilisateurs :
+Pour agrandir l’affichage, cliquez sur l’icône **[!UICONTROL +]**. Cette option affiche les chemins supplémentaires qui entrent dans le nœud ou en sortent. Dans l’image ci-dessous, l’état 1 lance l’application, l’état 2 sélectionne une photo (l’élément que vous avez développé) et l’état 3 inclut les différents chemins empruntés par les utilisateurs :
 
 * Sélection d’un élément
-* ajouter un élément
+* Ajout d’un élément
 * Glissement d’un élément
 * Mise à l’échelle d’un élément
 
@@ -45,23 +45,23 @@ Le développement d’un état est similaire à un entonnoir.
 
 ![développer chemin d’action](assets/action_paths_expand.png)
 
-Cliquez sur l’icône ![icône mise au point](assets/icon_focus.png) pour isoler le nœud et afficher les chemins d’accès entrants et sortants du nœud sélectionné. Dans le graphique ci-dessous, les chemins suivants ont été suivis **avant** que les utilisateurs ne sélectionnent une photo :
+Cliquez sur l’icône ![icône mise au point](assets/icon_focus.png) pour isoler le nœud et afficher les chemins d’accès entrants et sortants du nœud sélectionné. Dans l’image ci-dessous, les chemins suivants ont été suivis **avant** que les utilisateurs ne sélectionnent une photo :
 
 * Rotation d’un élément
 * Mise à l’échelle d’un élément
 * Glissement d’un élément
 * Suppression d’un élément
 
-Parmi les utilisateurs qui ont sélectionné une photo, les chemins suivants ont été suivis **après** la sélection de la photo :
+Parmi les utilisateurs qui ont sélectionné une photo, les chemins suivants ont été suivis **après** la sélection de la photo :
 
 * Sélection d’un élément
-* ajouter un élément
+* Ajout d’un élément
 * Glissement d’un élément
 * Mise à l’échelle d’un élément
 
 ![mise au point du chemin d’action](assets/action_paths_focus.png)
 
-Vous pouvez cibler ou développer plusieurs noeuds afin d’obtenir une vue détaillée des chemins empruntés par les utilisateurs dans votre application. Par exemple :
+Vous pouvez cibler ou développer plusieurs nœuds afin d’obtenir une vue détaillée des chemins empruntés par les utilisateurs dans votre application. Par exemple :
 
 ![chemin d’action multi](assets/action_paths_mult.png)
 
