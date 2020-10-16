@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: 'Android Wearables : Prise en main'
 topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
 
 
-# Android Wearables : Prise en main{#android-wearables-getting-started}
+# Android Wearables : Prise en main {#android-wearables-getting-started}
 
 À compter de la version 4.5 du SDK Android, une nouvelle extension Android a été ajoutée pour permettre la collecte des données à partir de l’application Android Wearable.
 
