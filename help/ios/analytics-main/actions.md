@@ -1,27 +1,27 @@
 ---
-description: Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
-seo-description: Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
+description: Les actions sont des événements qui se produisent votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez suivre un nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux atteints.
+seo-description: Les actions sont des événements qui se produisent votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez suivre un nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux atteints.
 seo-title: Suivi des actions de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 
 # Suivi des actions d’application {#track-app-actions}
 
-Les actions sont les événements qui se produisent dans votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pouvez effectuer le suivi d’un nouvel abonnement, chaque fois qu’un article est consulté ou chaque fois qu’un niveau est atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux terminés.
+Les actions sont des événements qui se produisent votre application que vous souhaitez mesurer. Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez suivre un nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Les mesures correspondantes pour ces événements sont configurées en tant qu’abonnements, articles lus et niveaux atteints.
 
 Le suivi des actions n’est pas automatique. Pour effectuer le suivi d’un événement, vous devez appeler `trackAction`.
 
-## Suivi des actions{#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Suivi des actions {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
