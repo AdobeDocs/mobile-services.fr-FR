@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Test d’Acquisition version 3
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Ces informations vous expliquent comment rediriger un lien de campagne Acquisiti
 
 >[!IMPORTANT]
 >
->L’acquisition dans V 3 fait référence aux liens d’acquisition que vous créez avec le Créateur d’acquisitions dans l’interface utilisateur Adobe Mobile Services. Pour utiliser cette fonctionnalité, vous devez effectuer la mise à niveau vers Android SDK 4.x pour les solutions Experience Cloud 4.6.0 ou versions ultérieures.
+>L’acquisition dans V 3 fait référence aux liens d’acquisition que vous créez avec le Créateur d’acquisitions dans l’interface utilisateur Adobe Mobile Services. Pour utiliser cette fonctionnalité, votre SDK 4.X pour les solutions Experience Cloud doit être mis à niveau vers la version 4.6.0 ou une version ultérieure.
 
-Si l’application mobile n’est pas encore dans Google Play, lors de la création du lien de la campagne, vous pouvez sélectionner n’importe quelle application mobile comme destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, qui sont transmis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Les tests d’acquisition d’applications mobiles nécessitent la simulation de ce type de diffusion.
+Si l’application mobile n’est pas encore dans Google Play, lorsque vous créez un lien de campagne, vous pouvez sélectionner n’importe quelle application mobile en tant que destination. Seule l’application vers laquelle le serveur d’acquisition vous redirige après avoir cliqué sur le lien d’acquisition est concernée. Le lien pourra toujours être testé. Les paramètres de chaîne de requête sont transmis à la boutique Google Play, qui sont transmis à l’application lors de l’installation dans le cadre d’une diffusion de campagne. Les tests d’acquisition d’applications mobiles nécessitent la simulation de ce type de diffusion.
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-Si vous ne voyez pas les journaux ci-dessus, vérifiez que vous avez suivi les étapes 6 à 12.
+Si les journaux ci-dessus ne s’affichent pas, vérifiez que vous avez bien effectué les étapes 6 à 12 de la procédure.
 
 Le tableau suivant contient des informations supplémentaires sur les erreurs possibles :
 
@@ -112,15 +112,15 @@ Le tableau suivant contient des informations supplémentaires sur les erreurs po
 À noter :
 
 * Les accès envoyés depuis l’application peuvent être surveillés à l’aide d’outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
-* Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
+* Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Test de la mesure des campagnes Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) dans le guide des développeurs Google.
 
-* Un correctif de bogue a été publié pour l’acquisition sur Android 4.8.2.
+* Un correctif de bug a été publié pour l’acquisition sur Android 4.8.2.
 
    Avant de tester, mettez à niveau le SDK vers la dernière version.
 
 * Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 12.
 
-   **Installation de l’outil Java**
+   **Installation de l’outil Java**
 
 Pour installer l’outil Java, procédez comme suit :
 
