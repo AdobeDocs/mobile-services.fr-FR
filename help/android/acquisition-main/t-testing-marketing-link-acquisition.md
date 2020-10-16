@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -123,7 +123,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 Gardez à l’esprit les informations suivantes :
 
 * Les accès envoyés depuis l’application peuvent être surveillés à l’aide d’outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
-* Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (Test de la mesure des campagnes Google Play) dans le guide des développeurs Google.
+* Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Test de la mesure des campagnes Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) dans le guide des développeurs Google.
 * Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 10.
 
 **Installation de l’outil Java**
