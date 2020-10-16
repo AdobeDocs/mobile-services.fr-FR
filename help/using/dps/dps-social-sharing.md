@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Partage social
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
 ht-degree: 100%
 
 ---
 
 
-# Partage social{#social-sharing}
+# Partage social {#social-sharing}
 
 Le rapport sur le **[!UICONTROL partage social]** offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est accessible exclusivement aux clients de DPS.
 
