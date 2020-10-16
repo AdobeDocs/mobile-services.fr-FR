@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: 'Planification : message in-app'
 topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# Planification : message in-app{#schedule-in-app-message}
+# Planification : message in-app {#schedule-in-app-message}
 
 Vous pouvez configurer les options de planification des messages in-app, notamment la durée, les jours de la semaine et l’heure.
 
@@ -24,7 +24,7 @@ Vous pouvez configurer les options de planification des messages in-app, notamme
 >
 >Les plages de dates sont définies selon votre fuseau horaire. Les jours et les plages de dates spécifiques dépendent du périphérique de l’utilisateur.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. Dans votre application, cliquez sur **[!UICONTROL Messagerie]** > **[!UICONTROL Gestion des messages]** > **[!UICONTROL Créer un message]** > **[!UICONTROL Créer message in-app]**.
 1. Cliquez sur **[!UICONTROL Planifier]**.
 1. Renseignez les champs suivants de la section **[!UICONTROL Durée]** :
 
@@ -44,7 +44,7 @@ Vous pouvez configurer les options de planification des messages in-app, notamme
 
    * **[!UICONTROL Jours de la semaine]**
 
-      Cliquez sur les jours de la semaine pour sélectionner les jours auxquels vous souhaitez afficher votre message.
+      Cliquez sur les jours de la semaine pour sélectionner les jours où vous souhaitez afficher votre message.
 
 1. Renseignez les champs suivants de la section **[!UICONTROL Heure de la journée]** :
 
