@@ -1,21 +1,21 @@
 ---
-description: Les tableaux suivants liste les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
-seo-description: Les tableaux suivants liste les mesures et dimensions qui peuvent être automatiquement mesurées par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
+description: Les tables suivantes répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
+seo-description: Les tables suivantes répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
 topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1108'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Mesures de cycle de vie{#lifecycle-metrics}
+# Mesures de cycle de vie {#lifecycle-metrics}
 
 Voici les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
 
@@ -29,7 +29,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
-## Mesures et dimensions de cycle de vie{#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Une fois les mesures de cycle de vie configurées, elles sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox, et transmises en tant que signal à Audience Manager. Analytics et Target utilisent le même format, tandis qu’Audience Manager utilise un préfixe différent pour chaque mesure.
 
@@ -168,7 +168,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Nom de l’appareil**
 
-   Stocke le nom de l’appareil.  Chaîne à deux chiffres séparée par des virgules qui identifie le périphérique iOS. Le premier chiffre représente généralement la génération de l’appareil, et le second les différents membres de la famille d’appareils. Pour obtenir la liste des noms d’appareils courants, reportez-vous à  Versions des appareils iOS.
+   Stocke le nom de l’appareil.  Chaîne de deux chiffres séparés par une virgule qui identifie l’appareil iOS. Le premier chiffre représente généralement la génération de l’appareil, et le second les différents membres de la famille d’appareils. Pour obtenir la liste des noms d’appareils courants, reportez-vous à    Versions des appareils iOS.
 
    * Données contextuelles Analytics/Paramètre : `a.DeviceName`
    * Gestion de l’audience : `c_a_DeviceName`
@@ -191,7 +191,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >Les dimensions *Jours depuis la dernière mise à niveau*, *Lancements depuis la dernière mise à niveau*, et *Nom de l’opérateur* ne sont pas automatiquement stockées dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier ces valeurs dans une variable Analytics.
 
 
-## Mesures et dimensions mobiles supplémentaires{#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Mesures et dimensions mobiles supplémentaires {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Les mesures et dimensions suivantes sont capturées dans les variables de solution mobile par la méthode répertoriée.
 
@@ -286,7 +286,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Code de suivi**
 
-   Renseigné par l’acquisition des applications mobiles. Généré automatiquement par Adobe mobile services.
+   Renseigné par l’acquisition des applications mobiles. Généré automatiquement par Adobe Mobile Services.
 
    * Données contextuelles Analytics/Paramètre Target : `a.referrer.campaign.trackingcode`
    * Caractéristique de la gestion de l’audience : `c_a_referrer_campaign_trackingcode`
