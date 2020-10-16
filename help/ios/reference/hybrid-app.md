@@ -6,22 +6,22 @@ solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Suivi des visiteurs entre une application et le web mobile{#visitor-tracking-between-an-app-and-mobile-web}
+# Suivi des visiteurs entre une application et le web mobile {#visitor-tracking-between-an-app-and-mobile-web}
 
 Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
 
 ## Identifiants visiteurs dans les applications
 
-Le SDK iOS génère un identifiant de visiteur unique lorsqu’une application est installée. Cet identifiant est stocké en mémoire persistante sur le périphérique mobile et est envoyé avec chaque accès. Il est supprimé uniquement lorsque l’utilisateur désinstalle l’application.
+Le SDK iOS génère un ID de visiteur unique lorsqu’une application est installée. Cet ID est stocké en mémoire persistante sur l’appareil mobile et est envoyé avec chaque accès. Il est supprimé uniquement lorsque l’utilisateur désinstalle l’application.
 
 >[!TIP]
 >
@@ -33,7 +33,7 @@ Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d
 
 Pour utiliser le même ID visiteur dans l’application et le web mobile, et transmettre l’ID visiteur de l’application au web mobile dans l’URL :
 
-## Implémentation du suivi des visiteurs entre une application et le web mobile{#section_EDC91D6C67AD43999227707C2769C65D}
+## Implémentation du suivi des visiteurs entre une application et le web mobile {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
@@ -59,7 +59,7 @@ Pour utiliser le même ID visiteur dans l’application et le web mobile, et tr
    }];
    ```
 
-Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une demande à l’Adobe pour un nouvel ID. Le code du service d’ID sur la page de destination utilise l’MID transmis pour effectuer le suivi du visiteur.
+Le code du service d’ID sur le domaine de destination extrait le MID de l’URL au lieu d’envoyer une requête à Adobe pour le nouvel ID. Le code du service d’ID sur la page de destination utilise le MID transmis pour effectuer le suivi du visiteur.
 
 Dès les premiers accès depuis le contenu web mobile, vérifiez que le paramètre `mid` est bien présent pour chaque accès et que sa valeur correspond à celle du `mid` envoyé par le code de l’application.
 
