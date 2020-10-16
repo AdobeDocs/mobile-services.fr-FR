@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Valeur de durée de vie visiteur
 topic: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
 
 
-# Valeur de durée de vie visiteur{#visitor-lifetime-value}
+# Valeur de durée de vie visiteur {#visitor-lifetime-value}
 
 La valeur de durée de vie vous permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur.
 
