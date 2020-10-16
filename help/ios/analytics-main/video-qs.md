@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Analyses de vidéos
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
 ht-degree: 100%
 
 ---
 
 
-# Analyses de vidéos {#video-analytics}
+# Analyses de vidéos  {#video-analytics}
 
 Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
 
