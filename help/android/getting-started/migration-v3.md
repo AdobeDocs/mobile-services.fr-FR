@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque Android 4.x
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -24,19 +24,19 @@ Ces informations vous aident à migrer de la version 2.x ou 3.x de la biblioth�
 >
 >Le SDK utilise `SharedPreferences` pour stocker les données nécessaires au calcul d’utilisateurs uniques, de mesures de cycle de vie et d’autres données nécessaires dans le cadre du fonctionnement de base du SDK.  Si vous modifiez ou supprimez dans `SharedPreferences` des valeurs attendues par le SDK, il peut en résulter un comportement inattendu sous la forme de données incohérentes.
 
-Dans la bibliothèque version 4.x, les méthodes publiques sont regroupées en un seul en-tête. En outre, toutes les fonctionnalités sont désormais accessibles par le biais de méthodes de niveau classe. Il n’est donc pas nécessaire de suivre les pointeurs, instances ou singularités.
+Dans la bibliothèque version 4.x, les méthodes publiques sont consolidées dans un en-tête. En outre, toutes les fonctionnalités sont désormais accessibles par des méthodes de niveau de classe : ainsi, il n’est pas nécessaire d’effectuer le suivi des pointeurs, des instances ou des singletons.
 
 ## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Dans la version 4, vous ne pouvez plus affecter de variables telles que des événements, des eVars, des props, des héritiers et des listes dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
+Dans la version 4, vous ne pouvez plus affecter de variables telles que des événements, des eVars, des props, des héritiers et des listes dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
-Les règles de traitement offrent les avantages suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
+* Vous pouvez modifier le mapping de vos données sans envoyer de mise à jour à la boutique d’applications.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement.
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mappées à l’aide de règles de traitement.
 
 >[!TIP]
 >
@@ -92,10 +92,10 @@ Pour migrer de la version 3.x vers la version 4, déplacez la valeur de la varia
 | reportSuiteIDs | &quot;rsids&quot; |
 | trackingServer | &quot;server&quot; |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;devise&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
-| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
+| linkTrackVars | Supprimer, n’est plus utilisé. |
+| linkTrackEvents | Supprimer, n’est plus utilisé. |
 
 ### Migration depuis la version 2.x
 
@@ -107,19 +107,19 @@ Pour migrer depuis la version 2.x vers la version 4.x, déplacez la valeur de 
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
 | trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
-| trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;serveur&quot;, puis activez &quot;ssl&quot;. |
+| trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;devise&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
-| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
+| linkTrackVars | Supprimer, n’est plus utilisé. |
+| linkTrackEvents | Supprimer, n’est plus utilisé. |
 | timestamp | Supprimer, ne peut plus être configuré. |
-| dc | Supprimer, n&#39;est plus utilisé. |
+| dc | Supprimer, n’est plus utilisé. |
 | userAgent | Supprimer, ne peut plus être configuré. |
-| dynamicVariablePrefix | Supprimer, n&#39;est plus utilisé. |
-| visitorNamespace | Supprimer, n&#39;est plus utilisé. |
-| usePlugins | Supprimer, n&#39;est plus utilisé. |
-| useBestPractices tous les appels à la mesure churn ( getChurnInstance) | Supprimée, remplacée par des mesures de cycle de vie. |
+| dynamicVariablePrefix | Supprimer, n’est plus utilisé. |
+| visitorNamespace | Supprimer, n’est plus utilisé. |
+| usePlugins | Supprimer, n’est plus utilisé. |
+| useBestPractices  tous les appels à la mesure churn (getChurnInstance) | Supprimée, remplacée par des mesures de cycle de vie. |
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -135,15 +135,15 @@ Le paramètre `contextData` pour ces deux méthodes est un `HashMap<String, Obje
 
 ## Événements, props et eVars
 
-Dans la version 4, vous ne pouvez plus attribuer directement dans votre application des variables telles que des événements, des eVars, des props, des héritiers et des listes. Le SDK utilise désormais les données contextuelles et les règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
+Dans la version 4, vous ne pouvez plus affecter de variables telles que des événements, des eVars, des props, des héritiers et des listes directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
-Les règles de traitement offrent les avantages suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
+* Vous pouvez modifier le mapping de vos données sans envoyer de mise à jour à la boutique d’applications.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact.
 
-   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mises en correspondance à l’aide de règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/android/getting-started/proc-rules.md).
+   Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mappées à l’aide de règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/android/getting-started/proc-rules.md).
 
 Les valeurs que vous avez affectées directement aux variables doivent être ajoutées à la table de hachage HashMap `data`. Cela signifie que les appels vers `setProp`, `setEvar`, ainsi que les attributions à des données contextuelles persistantes, doivent être supprimés et les valeurs doivent être ajoutées au paramètre `data`.
 
@@ -175,7 +175,7 @@ Remplacez la variable `visitorID` par un appel à `setUserIdentifier`.
 
 Le suivi hors ligne est activé dans le fichier `ADBMobileConfig.json` et le reste de la configuration hors ligne est effectué automatiquement.
 
-Supprimez les appels aux méthodes suivantes :
+Supprimez les appels aux méthodes suivantes :
 
 **Version 3.x**
 
@@ -187,7 +187,7 @@ Supprimez les appels aux méthodes suivantes :
 * `forceOffline`
 * `forceOnline`
 
-## Variable products{#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variable products {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Pour obtenir plus d’informations sur la variable products, voir [Variable products](/help/android/analytics-main/products/products.md).
 
