@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: 'Audience : message in-app'
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# Audience : message in-app{#audience-in-app-message}
+# Audience : message in-app {#audience-in-app-message}
 
 Vous pouvez configurer les options d’audience pour les messages in-app, y compris les options d’affichage, de déclenchement et de caractéristiques.
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. Dans votre application, cliquez sur **[!UICONTROL Messagerie]** > **[!UICONTROL Gestion des messages]** > **[!UICONTROL Créer un message]** > **[!UICONTROL Créer message in-app]**.
 1. Sur la page Audience, saisissez les informations dans les champs suivants :
 
    * **[!UICONTROL Affichage]**
@@ -47,7 +47,7 @@ Vous pouvez configurer les options d’audience pour les messages in-app, y comp
       >Si vous sélectionnez plusieurs déclencheurs, ils doivent tous survenir sur le même accès pour que le message s’affiche.
 
    * **[!UICONTROL Caractéristiques]**
-Vous pouvez déterminer qui doit voir le message in-app lors de son déclenchement, ainsi que filtrer (segmenter) l’audience selon les données spécifiées des accès. Par exemple, vous pouvez définir une règle dans laquelle les points ciblés contiennent Denver. Ce filtre vous permet d&#39;afficher le message aux clients qui se trouvent dans l&#39;un de vos points ciblés avec Denver dans le nom, au moment du déclenchement.
+Vous pouvez déterminer qui doit voir le message in-app lors de son déclenchement, ainsi que filtrer (segmenter) l’audience selon les données spécifiées des accès. Par exemple, vous pouvez définir une règle dans laquelle les points ciblés contiennent Denver. Ce filtre vous permet d’afficher le message aux clients qui se trouvent dans l’un de vos points ciblés avec Denver dans le nom, au moment du déclenchement.
 
 
 
@@ -55,9 +55,9 @@ Vous pouvez déterminer qui doit voir le message in-app lors de son déclencheme
 
 >[!IMPORTANT]
 >
->Les déclencheurs et les caractéristiques utilisent des données qui sont transférées dans Analytics à partir de votre application. Ces valeurs sont transmises sous forme de données contextuelles, de variables mappées et de mesures. Une variable est une valeur textuelle et une mesure une valeur numérique.
+>Les déclencheurs et les caractéristiques utilisent des données qui sont transférées dans Analytics à partir de votre application. Ces valeurs sont transmises sous forme de données contextuelles, de variables mappées et de mesures. Une variable est une valeur textuelle et une mesure est une valeur numérique.
 
-To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables &amp; Metrics]** >, which displays the following tabs:
+Pour afficher le mappage de ces paires de valeurs de clés dans l’interface utilisateur de Mobile Services, ainsi que pour valider la valeur de votre déclencheur, cliquez sur **[!UICONTROL Gérer les paramètres de l’application]** > **[!UICONTROL Gérer les variables et les mesures]** >, ce qui affiche les onglets suivants :
 
 * **[!UICONTROL Variables et mesures standard]**
 * **[!UICONTROL Variables personnalisées]**
@@ -75,7 +75,7 @@ Les scénarios suivants vous permettent de déterminer si vous devez sélectionn
 
 Une mesure est un nombre, il peut s’agir par exemple d’un nombre dʼachats.
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. Cliquez sur **[!UICONTROL Gérer les messages]** > **[!UICONTROL Créer un message]**.
 1. Procédez comme suit dans la section **[!UICONTROL Déclencheur]** de l’onglet **[!UICONTROL Audience]** :
 
    1. Sélectionnez un événement standard tel que **[!UICONTROL Lancé]** et sélectionnez **[!UICONTROL Existe]**.
@@ -86,7 +86,7 @@ Une mesure est un nombre, il peut s’agir par exemple d’un nombre dʼachats.
 
 Une variable est une chaîne de texte, c’est un identifiant unique. On peut citer par exemple des pays, des aéroports, etc.
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. Cliquez sur **[!UICONTROL Gérer les messages]** > **[!UICONTROL Créer un message]**.
 1. Procédez comme suit dans la section **[!UICONTROL Déclencheur]** de l’onglet **[!UICONTROL Audience]** :
 
    1. Sélectionnez un événement standard tel que **[!UICONTROL Lancé]** et sélectionnez **[!UICONTROL Existe]**.
