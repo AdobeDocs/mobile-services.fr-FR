@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Rapport Technologie
 topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Ce rapport présente une visualisation radiale de vos données existantes, et vo
 
 ## Navigation et utilisation {#section_83CA60E1AE6245FEBCBFF3205615C4DF}
 
-Cette visualisation fournit, par exemple, le rapport de base et les ventilations, utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment d&#39;audience dans la catégorie de l&#39;anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
+Cette visualisation fournit, par exemple, le rapport de base et les ventilations, utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment ciblé dans la catégorie de l’anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
 >[!TIP]
 >
@@ -32,14 +32,14 @@ Cette visualisation fournit, par exemple, le rapport de base et les ventilations
 
 ![](assets/report_technology.png)
 
-Le graphique radial est interactif et vous pouvez exécuter les tâches suivantes :
+Le graphique sous forme de cadran est interactif et vous pouvez exécuter les tâches suivantes :
 
-* Passez la souris sur une partie quelconque du graphique pour afficher plus d’informations.
-* Modifiez la période en cliquant sur l’icône **[!UICONTROL Calendrier]**.
-* Cliquez sur une tranche de l’anneau pour sélectionner l’audience pour laquelle vous pouvez exécuter certaines actions, notamment zoomer, masquer les audiences et créer un message in-app ou un filtre bascule.
-* Dans l’angle supérieur droit, sélectionnez **[!UICONTROL Type d’appareil]** et **[!UICONTROL Appareil]** pour afficher des informations sur les appareils et les types d’appareils.
+* Passer la souris sur une partie quelconque du graphique pour afficher plus d’informations.
+* Modifier la période en cliquant sur l’icône **[!UICONTROL Calendrier]**.
+* Cliquer sur une tranche de l’anneau pour sélectionner l’audience pour laquelle vous pouvez exécuter certaines actions, notamment zoomer, masquer les audiences et créer un message in-app ou un filtre bascule.
+* Dans l’angle supérieur droit, sélectionner **[!UICONTROL Type d’appareil]** et **[!UICONTROL Appareil]** pour afficher des informations sur les appareils et les types d’appareils.
 
-* Cliquez sur une mesure secondaire sur le côté droit pour l’ajouter à la visualisation.
+* Cliquer sur une mesure secondaire sur le côté droit pour l’ajouter à la visualisation.
 
    Vous pouvez afficher la mesure secondaire en spécifiant la couleur, la hauteur ou les deux.
 
@@ -47,7 +47,7 @@ Le tableau suivant décrit les rapports standards et la manière dont ils sont a
 
 | Rapport | Méthode de population | Description |
 |--- |--- |--- |
-| Device | Mesures de cycle de vie | Mesures courantes ventilées par type de périphérique. |
+| Device | Mesures de cycle de vie | Mesures courantes ventilées par type d’appareil. |
 | Systèmes d’exploitation | Automatique | Mesures courantes ventilées par système d’exploitation. |
 | Version du système d’exploitation | Mesures de cycle de vie | Mesures courantes ventilées par version du système d’exploitation. |
 | Transporteurs | Automatique | Mesures courantes ventilées par opérateur. |
@@ -73,6 +73,6 @@ Lorsque vous cliquez sur **[!UICONTROL Ajouter une ventilation]** ou **[!UICONTR
 
 Cliquez sur une tranche de l’anneau pour sélectionner l’audience pour laquelle vous souhaitez créer un filtre d’attractivité, puis cliquez sur **[!UICONTROL Filtre bascule]**. Ce filtre permet d’appliquer les filtres actuels et d’exécuter un nouveau rapport selon les filtres.
 
-## Partage de rapports {#section_560DD5CED5144249B7E49461E2422100}
+## Partage de rapports  {#section_560DD5CED5144249B7E49461E2422100}
 
 Une fois un rapport créé, vos paramètres sont utilisés pour créer une URL personnalisée que vous pouvez copier et partager.
