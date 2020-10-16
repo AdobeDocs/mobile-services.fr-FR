@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Avant de commencer
 topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ Les développeurs d’applications ont désormais accès à l’affichage des su
 
 Pour plus d’informations sur les rôles et les autorisations, voir [Rôles et autorisations](/help/using/gs/c-mob-roles-and-permissions.md).
 
-## Connexion à l’interface utilisateur d’Adobe Mobile Services  {#section_690A2EC4572E47869F183974E932A6A8}
+## Connexion à l’interface utilisateur d’Adobe Mobile Services   {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services est la principale interface de rapports pour l’analyse et le ciblage des applications mobiles. Une fois ces étapes terminées, vous pouvez télécharger un fichier de configuration préconfiguré avec votre serveur de collecte de données, votre suite de rapports et de nombreux autres paramètres.
 
-Vous pouvez vous connecter à Adobe Mobile Services de l’une des manières suivantes :
+Vous pouvez vous connecter à Adobe Mobile Services de l’une des manières suivantes :
 
 * **Experience Cloud**
 
