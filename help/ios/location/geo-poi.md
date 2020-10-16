@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Géolocalisation et points ciblés
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Géolocalisation et points ciblés{#geo-location-and-points-of-interest}
+# Géolocalisation et points ciblés {#geo-location-and-points-of-interest}
 
 La géolocalisation vous permet de déterminer des données de position au moyen de la latitude et de la longitude, et de points ciblés prédéfinis dans vos applications iOS.
 
@@ -23,9 +23,9 @@ Chaque appel `trackLocation` envoie les informations suivantes :
 
 * Latitude, longitude et position sous forme de point ciblé (POI) défini dans Adobe Mobile Services.
 
-   Ces informations sont transmises aux variables de solution mobile pour le rapports automatique.
+   Ces informations sont transmises aux variables de solution mobile pour le reporting automatique.
 
-* Distance par rapport au centre et précision transmise en tant que données contextuelles.
+* Distance par rapport au centre et précision transmises en tant que données contextuelles.
 
    Ces variables ne sont pas capturées automatiquement. Vous devez les mettre en correspondance en suivant les instructions de la section *Envoi de données supplémentaires* ci-dessous.
 
@@ -83,9 +83,9 @@ Les valeurs des données contextuelles doivent être mises en correspondance ave
 
 ## Données contextuelles de position {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-La latitude et la longitude sont chacune envoyées à l’aide de trois paramètres de données contextuelles différents, chacun représentant un niveau de précision différent, pour un total de six paramètres de données contextuelles.
+La latitude et la longitude sont chacune envoyées en utilisant trois paramètres de données contextuelles différents, chacun représentant un niveau de précision différent, pour un total de six paramètres de données contextuelles.
 
-Par exemple, les coordonnées lat = 40.93231, lon = -111.93152 représentent un emplacement avec une précision de 1 m. Cet emplacement est fractionné en fonction du niveau de précision des variables suivantes :
+Par exemple, les coordonnées lat = 40.93231, lon = -111.93152 représentent un emplacement avec une précision de 1 m. Cet emplacement est fractionné en fonction du niveau de précision des variables suivantes :
 
 * `a.loc.lat.a`= 040.9
 * `a.loc.lat.b` = 32
@@ -115,5 +115,5 @@ Pour certains niveaux de précision, il se peut que la valeur « 00 » apparai
 
 * Lorsque les diamètres de deux points ciblés se chevauchent, le premier point ciblé contenant la position actuelle est utilisé.
 
-   Si vos points d’intérêt se chevauchent, vous devez liste les points d’intérêt de manière à ce qu’ils soient les plus granulaires ou les moins granulaires afin de vous assurer que les points d’intérêt les plus granulaires sont signalés.
+   Si vos points ciblés se chevauchent, vous devez les répertorier du plus granulaire au moins granulaire afin de vous assurer que les points ciblés les plus granulaires sont signalés.
 
