@@ -1,27 +1,27 @@
 ---
-description: Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
-seo-description: Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
+description: Les actions sont des événements qui se produisent votre application Android que vous souhaitez mesurer.
+seo-description: Les actions sont des événements qui se produisent votre application Android que vous souhaitez mesurer.
 seo-title: Suivi des actions de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Suivi des actions d’application {#track-app-actions}
 
-Les actions sont les événements qui se produisent dans votre application Android que vous souhaitez mesurer.
+Les actions sont des événements qui se produisent votre application Android que vous souhaitez mesurer.
 
 Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. Par exemple, vous pourriez envoyer un appel `trackAction` à chaque nouvel abonnement, à chaque consultation d’un article ou à chaque niveau atteint. Le suivi des actions n’est pas automatique. Par conséquent, vous devez appeler `trackAction` lorsqu’un événement dont vous souhaitez effectuer le suivi se produit, puis mettre en correspondance l’action avec un événement personnalisé.
 
-## Suivi des actions{#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Suivi des actions {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 
@@ -42,7 +42,7 @@ Chaque action est associée à une ou à plusieurs mesures qui sont incrémenté
 1. Dans l’interface utilisateur Adobe Mobile Services, sélectionnez l’application souhaitée, puis cliquez sur **[!UICONTROL Gérer les paramètres d’application]**.
 1. Cliquez sur **[!UICONTROL Gérer les variables et les mesures]**, puis sur l’onglet **[!UICONTROL Mesures personnalisées]**.
 
-1. Mappez le nom des données contextuelles utilisé dans votre code, par exemple `myapp.ActionName`, à un événement personnalisé.
+1. Mappez le nom des données contextuelles utilisé dans votre code, par exemple `myapp.ActionName`, sur un événement personnalisé.
 
    ![](assets/map-event-context-data.png)
 
