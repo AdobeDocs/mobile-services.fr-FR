@@ -1,26 +1,26 @@
 ---
-description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées le plus récemment. Par défaut, vous pouvez vue jusqu’à 12 applications. Vous pouvez modifier la plage de dates et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
+description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 keywords: mobile
-seo-description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées le plus récemment. Par défaut, vous pouvez vue jusqu’à 12 applications. Vous pouvez modifier la plage de dates et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
+seo-description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 seo-title: Affichage des mesures mobiles
 solution: Experience Cloud,Analytics
 title: Affichage des mesures mobiles
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
 # Affichage des mesures mobiles {#display-mobile-metrics}
 
-Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées le plus récemment. Par défaut, vous pouvez vue jusqu’à 12 applications. Vous pouvez modifier la plage de dates et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
+Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 
-Les mesures affichées pour chaque application reflètent les mesures clés que vous avez sélectionnées lors de la création de l’application. For more information, see [Add a New App](/help/using/manage-apps/t-new-app.md).
+Les mesures affichées pour chaque application reflètent les mesures clés que vous avez sélectionnées lors de la création de l’application. Pour plus d’informations, reportez-vous à la section [Ajout d’une nouvelle application](/help/using/manage-apps/t-new-app.md).
 
 Si l’application que vous souhaitez consulter n’apparaît pas, recherchez-la en saisissant son nom ou en cliquant sur la liste déroulante dans **[!UICONTROL Toutes les applications]**.
 
@@ -28,15 +28,15 @@ Vous pouvez exécuter les tâches suivantes sur la page Aperçu :
 
 * **Modification de la période**
 
-   Les 30 jours précédents de données s’affichent pour les mesures clés. Vous pouvez modifier ce paramètre en cliquant sur l&#39;icône de calendrier dans le coin supérieur droit. Vous pouvez sélectionner une plage de dates ou une période prédéfinie dans la liste déroulante.
+   Les 30 jours précédents de données s’affichent pour les mesures clés. Vous pouvez modifier ce paramètre en cliquant sur l’icône Calendrier dans la partie supérieure droite. Vous pouvez sélectionner une plage de dates ou une période prédéfinie dans la liste déroulante.
 
 * **Filtrage des données**
 
-   Vous pouvez segmenter les données par filtres utilisateurs pour chaque application.
+   Vous pouvez utiliser des filtres pour segmenter les données pour chaque application.
 
-   Par exemple, vous pouvez filtrer les données par version d’application et par type de périphérique.
+   Par exemple, vous pouvez filtrer les données par version d’application et par type d’appareil.
 
-   Pour créer un filtre :
+   Pour créer un filtre :
 
    1. Cliquez sur l’icône **[!UICONTROL Filtrer]** pour afficher la boîte de dialogue **[!UICONTROL Filtre bascule]**.
    1. Cliquez sur **[!UICONTROL Ajouter une règle]**, sélectionnez une option dans la liste déroulante, puis saisissez les informations nécessaires.
@@ -45,7 +45,7 @@ Vous pouvez exécuter les tâches suivantes sur la page Aperçu :
 
       >[!TIP]
       >
-      >Vous pouvez créer des filtres complexes à l’aide des instructions *ET* et *OU*.
+      >Vous pouvez créer des filtres complexes à l’aide des instructions *AND* et *OR*.
 
    1. Cliquez sur **[!UICONTROL Mettre à jour]**.
    >[!TIP]
@@ -56,13 +56,13 @@ Vous pouvez exécuter les tâches suivantes sur la page Aperçu :
 
 * **Affichage des indicateurs clés de performance**
 
-   Cliquez sur le nom de l’application pour afficher des détails sur les indicateurs de performances clés. Les lignes du graphique sont codées par couleur et vous pouvez placer le pointeur de la souris sur le point de données pour afficher les statistiques pour des dates spécifiques. Pour effectuer une analyse plus approfondie, cliquez sur l’icône près de **[!UICONTROL Indicateurs de performance clés]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
+   Cliquez sur le nom de l’application pour afficher des détails sur les indicateurs de performances clés. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur le point de données pour afficher les statistiques pour des dates spécifiques. Pour effectuer une analyse plus approfondie, cliquez sur l’icône près de **[!UICONTROL Indicateurs de performance clés]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
 
 ## Modification des paramètres d’une application {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. Cliquez sur l’icône d’engrenage dans une mosaïque d’application pour ouvrir la page Informations sur l’application.
 1. Modifiez les paramètres de l’application.
 
-   Pour plus d’informations sur chaque paramètre, voir  [Configuration de votre application](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   Pour plus d’informations sur chaque paramètre, voir   [Configuration de votre application](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
