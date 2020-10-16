@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Téléchargement des SDK et des outils Mobile Services
 topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
 ht-degree: 100%
 
 ---
 
 
-# Téléchargement des SDK et des outils mobiles{#download-mobile-sdks-and-tools}
+# Téléchargement des SDK et des outils mobiles {#download-mobile-sdks-and-tools}
 
 Ces informations vous aident à télécharger les SDK et les outils Mobile Services.
 
