@@ -5,16 +5,16 @@ seo-title: Suivi des liens profonds
 solution: Experience Cloud,Analytics
 title: Suivi des liens profonds
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Suivi des liens profonds{#tracking-deep-links}
+# Suivi des liens profonds {#tracking-deep-links}
 
 Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
 
@@ -29,7 +29,7 @@ Pour obtenir plus d’informations sur la façon dont les spécialistes du marke
 
    Pour plus d’informations, voir [Communications inter-applications](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) ou [Prise en charge des liens universels](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
-1. Effectuez le suivi d’un lien profond dans openURL.
+1. Effectuez le suivi du lien profond dans openURL.
 
    Voici un exemple de suivi de lien profond :
 
@@ -82,7 +82,7 @@ Ces clés sont des variables prémappées pour la création de rapports dans Ado
    }];
    ```
 
-## Informations publiques sur les liens profonds{#section_44600E9AA68D4A53AA0C14BD86CC5284}
+## Informations publiques sur les liens profonds {#section_44600E9AA68D4A53AA0C14BD86CC5284}
 
 ### Méthodes
 
