@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Widgets Android
 topic: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 46%
 
 Les widgets Android peuvent être suivis en utilisant les mêmes méthodes que votre application. Les widgets partagent le contexte de l’application avec votre application, de sorte que l’ordre d’accès et l’identification du visiteur sont préservés.
 
-Les instructions suivantes vous aideront à effectuer le suivi des widgets Android :
+Les instructions suivantes vous aideront à effectuer le suivi des widgets Android :
 
 * Ne mettez pas en œuvre d’appels de mesures de cycle de vie ( `startActivity`/ `stopActivity`) dans le widget.
 
