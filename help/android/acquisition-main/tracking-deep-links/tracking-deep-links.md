@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Suivi des liens profonds
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
+workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 100%
 
 ---
 
 
-# Suivi des liens profonds {#tracking-deep-links}
+# Suivi des liens profonds
 
 Utilisez ces informations pour effectuer le suivi des liens profonds et des liens profonds différés dans vos applications mobiles à l’aide du SDK Android pour Adobe Mobile.
 
