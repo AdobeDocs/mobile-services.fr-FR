@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Informations à retenir :
 
 * iOS 8 ou version ultérieure compatible.
 
-   Pour iOS 11 ou version ultérieure, vous **devez** disposer du SDK version 4.13.8 ou ultérieure.
+   Pour iOS 11 ou version ultérieure, vous **devez** disposer du SDK version 4.13.8 ou ultérieure.
 
 * Dans la version 4.2 de ce SDK ou une version ultérieure, tous les accès sont désormais envoyés par HTTP POST.
 
