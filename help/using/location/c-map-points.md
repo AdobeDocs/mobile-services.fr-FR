@@ -4,14 +4,14 @@ keywords: mobile
 seo-description: Vous pouvez afficher une carte interactive indiquant vos points ciblés et d’autres marqueurs de données.
 seo-title: Carte
 solution: Experience Cloud,Analytics
-title: Map
+title: Carte
 topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -26,10 +26,10 @@ Prenez note des informations importantes suivantes :
 
 * Vous pouvez augmenter ou diminuer la taille de la carte.
 
-   Cette fonction est utile, par exemple, si deux points d’intérêt sont proches les uns des autres. L’agrandissement de la carte vous permet de la vue en détail.
-* Vos points d&#39;intérêt s&#39;affichent en bleu.
+   Cette fonction est utile, par exemple, si deux points ciblés sont proches les uns des autres. L’agrandissement de la carte vous permet de la voir plus en détail.
+* Vos points ciblés s’affichent en bleu.
 
-   D’autres marqueurs de données, tels que Lancements, s’affichent en noir. Cliquez sur un marqueur pour vue plus d’informations.
+   D’autres marqueurs de données, tels que Lancements, s’affichent en noir. Cliquez sur un marqueur pour voir plus d’informations.
 
 Cliquez sur ![couches](assets/map_layers.png) pour sélectionner les options suivantes :
 
