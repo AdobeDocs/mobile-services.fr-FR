@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie intégrée (in-app)
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 58%
 
 Ces informations peuvent vous aider à résoudre les problèmes liés à la messagerie in-app.
 
-Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
+Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app, mais que les messages ne s’affichent pas, vérifiez les éléments suivants :
 
 ## Placez-vous la nouvelle configuration et le nouveau SDK dans l’application ?
 
@@ -46,37 +46,37 @@ Vérifiez que ces paramètres sont corrects. Sur la page Audience, consultez les
 
 ## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
-Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’informations sur le moment où commence une session, voir `lifecycleTimeout` Dans le fichier de [configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’informations sur le moment où commence une session, voir  `lifecycleTimeout` Dans le fichier de [configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
 
 ## J’ai mis à jour mon message à distance, mais mon application affiche toujours l’ancien message.
 
 Procédez de l’une des manières suivantes :
 
-* La gestion dynamique des balises peut prendre quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition.
+* La gestion dynamique des balises peut nécessiter quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition.
 
-   Donnez-lui du temps et réessayez.
+   Patientez quelques minutes et réessayez.
 
 * La configuration se mettra à jour uniquement lors d’un nouveau lancement.
 
-   Si l’application a été redémarrée dans le délai d’expiration de la session du cycle de vie, il est possible que votre nouvelle configuration n’ait pas été téléchargée.
+   Si l’application a été redémarrée pendant le délai d’expiration de la session du cycle de vie, la nouvelle configuration n’a peut-être pas été téléchargée.
 
 ## Mon image ne correspond pas exactement à l’espace fourni par le modèle.
 
-Le modèle de message intégré en plein écran prend en charge l’affichage d’une image provenant d’un serveur distant (URL d’image) ou du lot d’applications (image groupée). L’image doit être au format d’image standard, par exemple JPG, GIF ou PNG.
+Le modèle de message in-app en plein écran prend en charge l’affichage d’une image à partir d’un serveur distant (URL d’image) ou du lot d’applications (image groupée). L’image doit être spécifiée dans un format standard tel que JPG, GIF ou PNG.
 
-Étant donné que les écrans des périphériques ont de nombreuses dimensions différentes, l’image ne correspond probablement pas exactement à l’espace fourni par le modèle. Le modèle se concentre toujours sur l’affichage du centre de l’image et recadre (portrait) ou atténue (paysage) les côtés si l’image ne tient pas.
+Puisque les écrans des appareils peuvent être de taille très variable, l’image ne tiendra probablement pas exactement dans l’espace prévu par le modèle. Le modèle se concentre toujours sur l’affichage du centre de l’image et rogne (portrait) ou atténue (paysage) les côtés si l’image est trop grande.
 
 Les règles de dimensionnement et de placement exactes pour chaque orientation sont les suivantes :
 
-* **Portrait**, où l’image est mise à l’échelle à une hauteur de 195 px pour le téléphone, de 529 px pour la tablette, centrée si la largeur de l’image est inférieure à la largeur de l’appareil et recadrée si la largeur de l’image est supérieure à la largeur de l’appareil.
+* **Portrait**, où l’image est mise à l’échelle à une hauteur de 195 px pour le téléphone, de 529 px pour la tablette, centrée si la largeur de l’image est inférieure à la largeur de l’appareil et rognée si la largeur de l’image est supérieure à la largeur de l’appareil.
 
-* **Paysage**, où l’image est mise à l’échelle à 100 % de la hauteur du périphérique, largeur égale à 75 % du périphérique et avec un fondu en arrière sur la droite.
+* **Paysage**, où l’image est mise à l’échelle à 100 % de la hauteur de l’appareil, largeur égale à 75 % de l’appareil et avec un fondu sur la droite.
 
-   Si vous rencontrez des problèmes avec le modèle plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Le modèle HTML personnalisé offre une plus grande flexibilité pour les images et permet un contrôle total du modèle.
+   Si vous rencontrez des problèmes avec le modèle plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Ce modèle offre davantage de flexibilité pour les images et permet un contrôle total du modèle.
 
 ## Mes messages ne reflètent pas les modifications/mises à jour que j’ai effectuées dans l’interface utilisateur.
 
-Le SDK récupère les messages nouveaux ou mis à jour au moment du lancement d’un cycle de vie. Il ne s’agit que lorsque l’application est fermée/mise en arrière-plan pour une durée supérieure à la valeur du délai d’expiration du cycle de vie, puis rouverte.
+Le SDK récupère les messages nouveaux ou mis à jour au moment du lancement d’un cycle de vie. Cette action est effectuée uniquement lorsque l’application est fermée/mise en arrière-plan pour une durée supérieure à la valeur du délai d’expiration du cycle de vie, puis rouverte.
 
 Procédez comme suit :
 
