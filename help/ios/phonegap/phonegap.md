@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Module externe PhoneGap
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Module externe PhoneGap{#phonegap-plug-in}
+# Module externe PhoneGap {#phonegap-plug-in}
 
 Ce module externe permet d’envoyer des appels AppMeasurement pour iOS à partir de votre projet PhoneGap.
 
@@ -42,7 +42,7 @@ Pour créer un projet PhoneGap, voir [PhoneGap](https://helpx.adobe.com/fr/exper
    cordova plugin add adobe-mobile-services
    ```
 
-## Installation manuelle du module externe {#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## Installation manuelle du module externe  {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### Inclusion de la bibliothèque AppMeasurement
 
@@ -65,7 +65,7 @@ Pour inclure la bibliothèque AppMeasurement, procédez comme suit :
 
 ### Ajout des autorisations des applications
 
-La bibliothèque AppMeasurement requiert les éléments suivants :
+La bibliothèque AppMeasurement requiert les éléments suivants :
 
 1. Lancez Xcode IDE et ouvrez votre application.
 1. Effectuez un glisser-déplacer du dossier **[!UICONTROL Adobe Mobile]** vers votre projet Xcode, puis procédez comme suit :
