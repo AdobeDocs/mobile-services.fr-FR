@@ -56,9 +56,8 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* Si vous utilisez un SDK **antérieur** à la version 4.14.0, voir [Paramètres d’entrée](https://developers.adobetarget.com/api/#input-parameters) pour les restrictions des paramètres.
-   >
-   >
-* Si vous utilisez un SDK version 4.14.0 **ou version supérieure**, voir [Paramètres d’entrée de lot](https://developers.adobetarget.com/api/#batch-input-parameters) pour les restrictions des paramètres.
+>
+>* Si vous utilisez un SDK version 4.14.0 **ou version supérieure**, voir [Paramètres d’entrée de lot](https://developers.adobetarget.com/api/#batch-input-parameters) pour les restrictions des paramètres.
 
 
 ### Méthodes
