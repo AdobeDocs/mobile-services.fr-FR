@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 89%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
 # Notes de mise à jour {#release-notes}
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
+
+**4 novembre 2020 : Version 4.20.0**
+
+* Service d’identification des visiteurs - Paramètre d’état device_consentement Ajouté lorsque setAdvertisingIdentifier est appelé une fois le suivi des publicités activé/désactivé.
+* Analytics - Correction d’un bogue qui retardait l’envoi des accès Analytics lors d’une installation lorsque iAd.framework était lié et que le suivi des publicités limité était activé sur le périphérique.
 
 **16 juillet 2020 : Version 4.19.3**
 
