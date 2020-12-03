@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
 
-# Analyses de vidéos {#video-analytics}
+# Analyses de vidéos  {#video-analytics}
 
 Informations relatives aux analyses vidéo.
 
@@ -27,7 +27,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (Obligatoire) Collecte le nom de la vidéo, tel qu&#39;il est spécifié dans l&#39;implémentation, lorsqu&#39;un visiteur vue la vidéo d&#39;une manière ou d&#39;une autre.Vous pouvez ajouter des classifications pour cette variable.
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   (**Facultatif**) La variable Custom Insight fournit des informations de cheminement vidéo.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : Visite
