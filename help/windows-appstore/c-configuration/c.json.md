@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 43%
+ht-degree: 47%
 
 ---
 
@@ -55,11 +55,11 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,  contactez  Assistance clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
 * **lifecycleTimeout**
 
-   Indique la durée, en secondes, qui doit s’écouler entre les lancements de l’application avant que le lancement ne soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session. La valeur par défaut est de 300 secondes.
+   Spécifie la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le moment où le lancement est considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session. La valeur par défaut est de 300 secondes.
 
 * **batchLimit**
 
