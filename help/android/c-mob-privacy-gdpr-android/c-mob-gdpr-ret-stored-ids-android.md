@@ -4,8 +4,11 @@ seo-description: Ces informations permettent de récupérer des identités SDK s
 seo-title: Récupération des identifiants stockés
 title: Récupération des identifiants stockés
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 76%
 
 ---
 
@@ -16,18 +19,18 @@ Ces informations permettent de récupérer des identités SDK stockées localeme
 
 >[!IMPORTANT]
 >
->La méthode `getAllIdentifiersAsync` récupère les identités stockées dans le SDK. Vous devez appeler cette méthode **avant** que l’utilisateur ne sélectionne l’option d’exclusion.
+>La méthode `getAllIdentifiersAsync` récupère les identités stockées dans le SDK. You must call this method **before** the user opts-out.
 
-Les identités SDK (selon le cas) sont stockées localement et renvoyées dans une chaîne JSON, qui peut contenir :
+Les identités du SDK (selon le cas) sont stockées localement et renvoyées dans une chaîne JSON, qui peut contenir :
 
-* Contexte de la société – ID org. IMS
+* Contexte de l’entreprise - ID d’organisation IMS
 * Identifiants d’utilisateurs
 * Experience Cloud ID (MID), précédemment Experience Cloud ID
-* Codes d’intégration (ADID, ID Push)
-* ID de sources de données (DPID, DPUUID)
-* Analytics ID (AVID, AID, VID et RSID associés)
-* ID hérités de Target (TNTID, TNT3rdpartyID)
-* Audience Manager ID (UUID)
+* Codes d’intégration (ADID, Push ID)
+* ID de source de données (DPID, DPUUID)
+* Analytics ID (AVID, AID, VID et RSID associés)
+* Identifiants hérités de cible (TNTID, TNT3rdpartyID)
+* Audience Manager ID (UUID)
 
 Voici un exemple de la méthode `ADBMobile getAllIdentifiersAsync` sous Android :
 
