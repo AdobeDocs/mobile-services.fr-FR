@@ -474,7 +474,7 @@ Méthodes Android pour les composants Xamarin pour le SDK des solutions Experien
       var queueSize = Analytics.QueueSize();
       ```
 
-## Méthodes d’identification des Experience Cloud {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
@@ -677,7 +677,7 @@ Méthodes Android pour les composants Xamarin pour le SDK des solutions Experien
       AudienceManager.SignalWithData (traits, new AudienceManagerCallback());
       ```
 
-* **Réinitialiser le**
+* **Réinitialiser**
 
    Resets audience manager `UUID` and purges current visitor profile.
 
