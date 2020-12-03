@@ -4,17 +4,20 @@ keywords: mobile
 seo-description: Une présentation de la section Emplacement.
 seo-title: Présentation d’Emplacement
 title: Présentation d’Emplacement
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
 
 # Présentation d’Emplacement {#location-overview}
 
-## Nouvelle mise à jour du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation à propos du SDK Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter notre documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 >[!IMPORTANT]
 >
