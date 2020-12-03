@@ -11,21 +11,21 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 75%
+ht-degree: 83%
 
 ---
 
 
-# Mesures de cycle de vie{#lifecycle-metrics}
+# Mesures de cycle de vie {#lifecycle-metrics}
 
 Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 
 Pour plus d’informations, voir [Résolution des problèmes liés aux données](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html)du cycle de vie.
 
 
-## Mesures et dimensions de cycle de vie{#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-Une fois configurées, les mesures de cycle de vie sont envoyées dans des paramètres de données contextuelles à Analytics, dans des paramètres à Cible avec chaque appel de mbox et en tant que signal à la gestion des audiences. Analytics et Cible utilisent le même format, tandis que la gestion des audiences utilise un préfixe différent pour chaque mesure.
+Une fois les mesures de cycle de vie configurées, elles sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox, et transmises en tant que signal à la gestion de l’audience. Analytics et Target utilisent le même format, tandis que la gestion de l’audience utilise un préfixe différent pour chaque mesure.
 
 Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi du cycle de vie sont automatiquement capturées dans la mesure ou la dimension et font l’objet de rapports à l’aide de celle-ci. Les exceptions sont indiquées dans le contenu.
 
@@ -69,7 +69,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Lancements**
 
-   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché sur un CV en arrière-plan lorsque le délai d’expiration de la session de cycle de vie est dépassé.
+   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la mise en premier plan de l’application lorsque le délai d’expiration de la session de cycle de vie a été dépassé.
 
    * Données contextuelles Analytics/Paramètre Target : `a.LaunchEvent`
    * Signal d’Audience Manager : `c_a_LaunchEvent`
@@ -195,7 +195,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    * Signal d’Audience Manager : `c_a_Resolution`
 
 
-## Mesures et dimensions mobiles supplémentaires{#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Mesures et dimensions mobiles supplémentaires {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Les mesures et dimensions suivantes sont capturées dans les variables de solution mobile selon la méthode suivante :
 
