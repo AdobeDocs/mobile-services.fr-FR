@@ -23,7 +23,7 @@ Vous aurez besoin de Visual Studio 2013 ou version ultérieure pour mettre en oe
 
 Après avoir décompressé le téléchargement [du](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)SDK, vous disposez d’un dossier distinct pour chaque combinaison d’architecture et de plate-forme prise en charge. Vous disposerez également d’un `ADBMobileConfig.json` fichier qui est expliqué plus loin dans ce guide.
 
-## Sélectionner la version correcte {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 Différents `.dll`/ `.winmd` fichiers sont fournis pour chaque plate-forme de cible (Windows 8.1, Windows Phone 8.1) et l’architecture prise en charge (x86, x64, ARM). Les fichiers sont séparés dans une structure de dossiers selon les éléments suivants :
 
@@ -41,7 +41,7 @@ La principale différence entre les implémentations est la structure de donnée
 
 De plus, lors de l’utilisation du SDK dans un projet WinJS, utilisez une chaîne vide ( `""` ou `''`) au lieu de `null` valeurs de chaîne vides.
 
-## ajouter la bibliothèque et le fichier de configuration à votre projet - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## Ajouter la bibliothèque et le fichier de configuration à votre projet - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Lancez Visual Studio et ouvrez votre solution.
 1. Dans l’Explorateur **de** solutions, cliquez avec le bouton droit sur **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Ajouter la référence]**.
@@ -64,7 +64,7 @@ De plus, lors de l’utilisation du SDK dans un projet WinJS, utilisez une chaî
 
 1. Dans l’onglet **Windows** sur la gauche, sélectionnez **[!UICONTROL Extensions]**, puis sélectionnez et ajoutez le package d’exécution **[!UICONTROL Microsoft Visual C++ 2013 pour Windows]**.
 
-1. ajoutez la ligne suivante à votre classe :
+1. Ajoutez la ligne suivante à votre classe :
 
    ```
    using ADBMobile;
@@ -95,7 +95,7 @@ De plus, lors de l’utilisation du SDK dans un projet WinJS, utilisez une chaî
    >
    >Lors de l’ajout d’une référence à une application Windows Phone, pour sélectionner `ADBMobile.winmd`, remplacez le filtre de fichiers par défaut par Fichiers **** composants par **Tous les fichiers**.
 
-1. ajoutez la ligne suivante à votre classe :
+1. Ajoutez la ligne suivante à votre classe :
 
    ```
    using namespace ADMS::Measurement;
