@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
@@ -45,7 +45,7 @@ Les mesures de cycle de vie sont maintenant prêtes à être capturées et les r
 
 Régulièrement, de nouvelles versions du rapports d’applications mobiles sont publiées. Les nouvelles versions ne sont pas appliquées automatiquement à votre suite de rapports. Vous devez répéter ces étapes pour effectuer la mise à niveau. Chaque fois que vous ajoutez une nouvelle fonctionnalité Experience Cloud à votre application, nous vous recommandons de répéter ces étapes pour vous assurer que vous disposez de la dernière configuration.
 
-## Mesures de cycle de vie{#section_532702562A7A43809407C9A2CBA80E1E}
+## Mesures de cycle de vie {#section_532702562A7A43809407C9A2CBA80E1E}
 
 Pour collecter les mesures de cycle de vie dans votre application, ajoutez des appels lorsque l&#39;application est activée, comme le montrent les exemples suivants.
 
@@ -125,11 +125,11 @@ Si `CollectLifecycleData()` est appelé deux fois au cours de la même session, 
 
 ## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
+Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
 Les règles de traitement offrent plusieurs avantages :
 
-* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
+* Vous pouvez modifier le mapping de vos données sans envoyer de mise à jour à la boutique d’applications.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne seront pas mises en correspondance à l’aide de règles de traitement.
 
@@ -139,7 +139,7 @@ Toutes les valeurs que vous affectiez directement aux variables doivent être aj
 
 Les règles de traitement permettent de copier les données envoyées dans des variables de données contextuelles vers des variables evar, prop et d’autres variables pour le rapports.
 
-[Formation](https://tv.adobe.com/embed/1181/16506/) sur les règles de traitement au sommet 2013
+[Formation aux règles de traitement](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
 [Aide des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -161,7 +161,7 @@ En outre, nous avons entendu dire que certains d’entre vous nomment des clés 
 "eVar1":"jimbo"
 ```
 
-Cela peut rendre la tâche *légèrement* plus facile lorsque vous effectuez le mappage unique dans les règles de traitement, mais vous perdez la lisibilité pendant le débogage et les futures mises à jour du code peuvent s’avérer plus difficiles. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
 
 ```js
 "username":"jimbo"
@@ -191,7 +191,7 @@ Pour être défini *`products`* dans le SDK mobile, vous devez utiliser une synt
 
 Pour stocker les accès lorsque le périphérique est hors ligne, vous pouvez activer le suivi hors ligne dans le fichier de méthodes [](/help/universal-windows/c-configuration/methods.md) SDK. Soyez attentif aux exigences d’horodatage décrites dans la référence de fichier de configuration avant d’activer le suivi hors ligne.
 
-## Géolocalisation et points ciblés{#section_BAD34A8DD013454DB355121316BD7FD4}
+## Géolocalisation et points ciblés {#section_BAD34A8DD013454DB355121316BD7FD4}
 
 La géolocalisation vous permet de mesurer les données d’emplacement (latitude/longitude) et les points d’intérêt prédéfinis. Chaque `TrackLocation` appel envoie :
 
@@ -199,7 +199,7 @@ La géolocalisation vous permet de mesurer les données d’emplacement (latitud
 
    Elles sont transmises aux variables de solution mobile pour le rapports automatique.
 
-* Distance par rapport au centre et précision transmise en tant que données contextuelles.
+* Distance par rapport au centre et précision transmises en tant que données contextuelles.
 
    Capturer à l’aide d’une règle de traitement.
 
@@ -235,11 +235,11 @@ cdata["PurchasePrice"] = purchasePrice;
 ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 ```
 
-## Actions minutées{#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
+## Actions minutées {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
 Les actions minutées vous permettent de mesurer la durée in-app et la durée totale entre le début et la fin d’une action. Le SDK calcule la durée de la session et la durée totale (intersessions) nécessaire à l’exécution de l’action. Vous pouvez l’utiliser pour définir des segments à comparer à l’heure d’achat, au niveau de passage, au flux de passage en caisse, etc.
 
-* Nombre total de secondes dans l&#39;application entre le début et la fin - intersessions
+* Nombre total de secondes dans l’application entre le début et la fin (intersessions)
 * Nombre total de secondes entre le début et la fin (heure de l’horloge)
 
 ```js
