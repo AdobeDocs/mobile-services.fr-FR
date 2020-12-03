@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -53,11 +53,11 @@ Les mesures de cycle de vie sont maintenant prêtes à être capturées et les r
 ## Événements, props et eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-Si vous avez examiné la classe [ADBMobile et la référence](/help/blackberry/methods.md)de méthode, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
+Si vous avez examiné la classe [ADBMobile et la référence](/help/blackberry/methods.md)de méthode, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
 Les règles de traitement offrent plusieurs avantages :
 
-* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
+* Vous pouvez modifier le mapping de vos données sans envoyer de mise à jour à la boutique d’applications.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne seront pas mises en correspondance à l’aide de règles de traitement.
 
@@ -67,7 +67,7 @@ Any values that you were assigning directly to variables should be added to the 
 
 Les règles de traitement permettent de copier les données envoyées dans des variables de données contextuelles vers des variables evar, prop et d’autres variables pour le rapports.
 
-[Formation](https://tv.adobe.com/embed/1181/16506/) sur les règles de traitement au sommet 2013
+[Formation aux règles de traitement](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
 [Règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -81,7 +81,7 @@ Nous vous recommandons de regrouper vos variables de données contextuelles à l
 "product.color":"blue"
 ```
 
-Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement. Les espaces de nommage vous permettent donc d’afficher rapidement les variables qui se trouvent dans le même espace de nommage.
+Context data variables are sorted alphabetically in the processing rules interface, so namespaces let you quickly see variables that are in the same namespace.
 
 En outre, nous avons entendu dire que certains d’entre vous nomment des clés de données contextuelles à l’aide de l’evar ou du numéro prop :
 
@@ -89,7 +89,7 @@ En outre, nous avons entendu dire que certains d’entre vous nomment des clés 
 "eVar1":"jimbo"
 ```
 
-Cela peut rendre la tâche *légèrement* plus facile lorsque vous effectuez le mappage unique dans les règles de traitement, mais vous perdez la lisibilité pendant le débogage et les futures mises à jour du code peuvent s’avérer plus difficiles. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
 
 ```js
 "username":"jimbo"
