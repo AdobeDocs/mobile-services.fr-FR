@@ -4,8 +4,11 @@ seo-description: Target Preview permet d’effectuer facilement un contrôle qu
 seo-title: Target Preview sous Android
 title: Target Preview sous Android
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 87%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
 
-Pour plus d’informations sur la configuration et l’utilisation de Target Preview, aller à [Aperçu de Target Mobile](https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+For more information on how to set up and use Target Preview, go to [Target Mobile Preview](https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/mobile-apps/target-mobile-preview.html).
 
 >[!IMPORTANT]
 >
@@ -22,7 +25,7 @@ Pour plus d’informations sur la configuration et l’utilisation de Target Pr
 
 * **setPreviewRestartDeeplink**
 
-   Définit un lien profond vers des applications qui sera déclenché lorsque les sélections d’aperçu sont appliquées en mode Aperçu.
+   Définit un lien profond d’application qui sera déclenché lorsque les sélections de prévisualisation seront appliquées en mode Prévisualisation.
 
    * Voici la syntaxe de cette méthode :
 
