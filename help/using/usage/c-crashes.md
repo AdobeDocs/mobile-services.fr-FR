@@ -4,8 +4,11 @@ seo-description: Le rapport Blocages présente un aperçu des blocages de votre 
 seo-title: Rapport Blocages
 title: Rapport Blocages
 uuid: 0c96190f-e16b-49d5-aaa5-b651780a7266
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ Le rapport **[!UICONTROL Blocages]** présente un aperçu des blocages de votre 
 
 Le graphique **[!UICONTROL Taux de plantage moyen]** affiche le taux de blocage par date. Vous pouvez passer le pointeur de la souris sur une date pour afficher le taux de plantage de cette journée.
 
-Le graphique **[!UICONTROL Historique de plantage]** présente des informations sur chaque plantage d’application, y compris l’ID et le type de plantage, ainsi que le nombre et la date des plantages. Pour vous connecter à Apteligent et afficher plus d’informations sur le blocage, cliquez sur le lien situé dans la colonne **[!UICONTROL ID de plantage].**
+Le graphique **[!UICONTROL Historique de plantage]** présente des informations sur chaque plantage d’application, y compris l’ID et le type de plantage, ainsi que le nombre et la date des plantages. Pour vous connecter à Apteligent et afficher plus d’informations sur le blocage, cliquez sur le lien situé dans la colonne **[!UICONTROL ID de plantage]**.
 
 Vous pouvez configurer les options suivantes pour ce rapport :
 
