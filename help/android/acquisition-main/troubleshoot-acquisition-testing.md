@@ -6,9 +6,9 @@ seo-title: Dépannage des tests d’Acquisition
 solution: Experience Cloud,Analytics
 title: Dépannage des tests d’Acquisition
 topic: Developer and implementation
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 
