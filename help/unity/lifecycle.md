@@ -25,7 +25,7 @@ Les mesures de cycle de vie sont automatiquement collectées dans iOS.
 
 ## Android
 
-Dans votre script Unity, vous définissez le contexte de l’application pour le SDK Android. ajoutez le code suivant à la `Awake()` fonction de votre PREMIÈRE scène :
+Dans votre script Unity, vous définissez le contexte de l’application pour le SDK Android. Ajoutez le code suivant à la `Awake()` fonction de votre PREMIÈRE scène :
 
 ```java
 void Awake()
