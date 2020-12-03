@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Chaque action est associée à une ou à plusieurs mesures qui sont incrémenté
 1. Dans l’interface utilisateur Adobe Mobile Services, sélectionnez l’application souhaitée, puis cliquez sur **[!UICONTROL Gérer les paramètres d’application]**.
 1. Cliquez sur **[!UICONTROL Gérer les variables et les mesures]**, puis sur l’onglet **[!UICONTROL Mesures personnalisées]**.
 
-1. Mappez le nom des données contextuelles utilisé dans votre code, par exemple `myapp.ActionName`, sur un événement personnalisé.
+1. Mappez le nom des données contextuelles utilisé dans votre code, par exemple `myapp.ActionName`, à un événement personnalisé.
 
    ![](assets/map-event-context-data.png)
 
