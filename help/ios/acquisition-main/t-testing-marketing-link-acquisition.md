@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Les instructions suivantes expliquent comment gérer une campagne d’acquisitio
 
    Voici quelques informations sur les erreurs possibles :
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
 
       Une erreur de réseau s’est produite.
 
