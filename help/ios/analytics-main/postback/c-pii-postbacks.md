@@ -4,8 +4,11 @@ seo-description: Vous pouvez utiliser le SDK Adobe pour collecter des informati
 seo-title: Postbacks de type PII
 title: Postbacks de type PII
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 88%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 Vous pouvez utiliser le SDK Adobe pour collecter des informations d’identification personnelle (PII) et les envoyer à un point de terminaison tiers.
 
-Si vous souhaitez utiliser le SDK Adobe pour recueillir des informations d’identification personnelles, vous devez envoyer un appel PII de suivi. Bien que l’utilisation de cet appel active la collecte des données PII, le SDK n’envoie pas automatiquement les données vers un point de terminaison Adobe. Un postback de type PII doit être configuré avec le point de terminaison approprié.
+Si vous souhaitez utiliser le SDK Adobe pour collecter des informations d’identification personnelle, vous devez envoyer un appel track PII. Bien que l’utilisation de cet appel permette la collecte de données d’identification personnelle, le SDK n’envoie pas automatiquement les données à un point de terminaison d’Adobe. Un postback de type PII doit être configuré avec le point de terminaison approprié.
 
 >[!TIP]
 >
