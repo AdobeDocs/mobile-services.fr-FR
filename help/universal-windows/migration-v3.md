@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 15%
+ht-degree: 26%
 
 ---
 
@@ -67,11 +67,11 @@ Le tableau suivant fournit une liste de variables dans les SDK 3.x et le nouveau
 | reportSuiteIDs | &quot;rsids&quot; |
 | trackingServer | &quot;server&quot; |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;devise&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| setOfflineHitLimit | Supprimer, n&#39;est plus utilisé. |
-| linkTrackVars | Supprimer, n&#39;est plus utilisé. |
-| linkTrackEvents | Supprimer, n&#39;est plus utilisé. |
+| setOfflineHitLimit | Supprimer, n’est plus utilisé. |
+| linkTrackVars | Supprimer, n’est plus utilisé. |
+| linkTrackEvents | Supprimer, n’est plus utilisé. |
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -85,11 +85,11 @@ The `contextData` parameter for both of these methods contains name-value pairs 
 
 ### Événements, props et eVars
 
-Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application aux variables Analytics pour le rapports.
+Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
-Les règles de traitement offrent les avantages suivants :
+Les règles de traitement offrent les avantages suivants :
 
-* Vous pouvez modifier le mappage de vos données sans envoyer de mise à jour à l’App Store.
+* Vous pouvez modifier le mapping de vos données sans envoyer de mise à jour à la boutique d’applications.
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact. Ces valeurs n’apparaîtront pas dans les rapports tant qu’elles ne seront pas mises en correspondance à l’aide de règles de traitement.
 
@@ -127,7 +127,7 @@ Dans tout votre code, supprimez les appels aux méthodes suivantes :
 * SetOnline
 * SetOffline
 
-## Variable products{#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variable products {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Puisque la variable `products` n’est plus disponible dans les règles de traitement, vous pouvez utiliser la syntaxe suivante pour la définir :
 
