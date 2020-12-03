@@ -11,18 +11,18 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
 
-# Mesures de cycle de vie{#lifecycle-metrics}
+# Mesures de cycle de vie {#lifecycle-metrics}
 
 Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 
 Pour plus d’informations, voir [Résolution des problèmes liés aux données](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html)du cycle de vie.
 
-## Mesures et dimensions de cycle de vie{#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Une fois configurées, les mesures de cycle de vie sont envoyées dans des paramètres de données contextuelles à Analytics, dans des paramètres à Cible avec chaque appel de mbox et en tant que signal à l’Audience Manager. Analytics et Cible utilisent le même format et l’Audience Manager utilise un préfixe différent pour chaque mesure.
 
@@ -68,7 +68,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 * **Lancements**
 
-   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché sur un CV en arrière-plan lorsque le délai d’expiration de la session de cycle de vie est dépassé.
+   Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la mise en premier plan de l’application lorsque le délai d’expiration de la session de cycle de vie a été dépassé.
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Signal d’Audience Manager : `c_a_LaunchEvent`
@@ -193,7 +193,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    * Audience Manager : `c_a_Resolution`
 
 
-## Mesures et dimensions mobiles supplémentaires{#section_0B32BBF9CA734103BEDB5E755FFE5B31}
+## Mesures et dimensions mobiles supplémentaires {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
 Les mesures et dimensions suivantes sont capturées dans des variables de solution mobile par les méthodes répertoriées dans la description.
 
