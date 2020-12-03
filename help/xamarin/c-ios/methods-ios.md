@@ -464,7 +464,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Méthodes d’identification des Experience Cloud {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
