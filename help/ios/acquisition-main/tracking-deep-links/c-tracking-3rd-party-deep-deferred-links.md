@@ -1,11 +1,14 @@
 ---
 description: Utilisez le SDK iOS pour mettre en œuvre le suivi de liens profonds différés tiers.
 seo-description: Utilisez le SDK iOS pour mettre en œuvre le suivi de liens profonds différés tiers.
-seo-title: Suivi de liens profonds différés tiers
-title: Suivi de liens profonds différés tiers
+seo-title: Suivi des liens profonds tiers reportés
+title: Suivi des liens profonds tiers reportés
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +23,7 @@ Le SDK Adobe Mobile prend actuellement en charge la création de liens profonds
 
 ## Création de liens profonds Facebook {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-Un créateur de publicités peut créer une publicité sur Facebook sous la forme d’un lien profond. Lorsque les utilisateurs cliquent sur la publicité dans Facebook, ils accèdent directement aux informations qui les intéressent dans l’application. Le lien profond **n’est pas** une URL d’empreinte digitale. Néanmoins, lors de la configuration de la publicité, il existe une option permettant de fournir une URL de lien profond tiers. Un développeur d’applications qui utilise les SDK et services Experience Cloud Mobile doit saisir l’URL d’empreinte digitale configurée pour Mobile Services dans ce champ. Si tout est correctement configuré, le SDK Facebook transmet cette URL à l’application lorsque cette dernière est installée ou lancée.
+Un créateur de publicités peut créer une publicité sur Facebook sous la forme d’un lien profond. Lorsque les utilisateurs cliquent sur la publicité dans Facebook, ils accèdent directement aux informations qui les intéressent dans l’application. Le lien profond **n’est pas** une URL d’empreinte digitale. Néanmoins, lors de la configuration de la publicité, il existe une option permettant de fournir une URL de lien profond tiers. Un développeur d’applications qui utilise les kits SDK et les services mobiles Experience Cloud doit entrer l’URL d’imprimante configurée par Mobile Services dans ce champ. Si tout est correctement configuré, le SDK Facebook transmet cette URL à l’application lorsque cette dernière est installée ou lancée.
 
 ## Configuration des SDK {#section_834CD3109175432B8173ECB6EA7DE315}
 
