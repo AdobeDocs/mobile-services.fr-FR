@@ -1,19 +1,19 @@
 ---
 description: Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section présente une vue d’ensemble des tâches des développeurs ainsi que des exemples de code.
 seo-description: Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section présente une vue d’ensemble des tâches des développeurs ainsi que des exemples de code.
-seo-title: Chemin
-title: Chemin
+seo-title: Analyses de vidéos
+title: Analyses de vidéos
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 62%
+ht-degree: 68%
 
 ---
 
 
-# Chemin {#video-analytics}
+# Analyses de vidéos  {#video-analytics}
 
 Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section présente une vue d’ensemble des tâches des développeurs ainsi que des exemples de code.
 
@@ -27,9 +27,9 @@ For more information about Video measurement, see the [Measuring audio and video
 
    **(Facultatif)** La variable Custom Insight fournit des informations de cheminement vidéo.
 
-   * Nom de variable : evar
+   * Nom de variable : eVar
       * Délai d’expiration par défaut : Visite
-      * Custom Insight (s.prop, utilisé pour le cheminement vidéo)
+      * Custom Insight (s.prop, utilisée pour le cheminement vidéo)
 
 * **a.media.name**
 
@@ -40,11 +40,11 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur.
+   (**Obligatoire**) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur.
 
    For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. La méthode de collecte de données vidéo par défaut collecte les données aux points de début vidéo (lecture), de début de segment et de fin de vidéo (arrêt).
 
-   Analytics comptabilise la première vue de segment en début du segment, lorsque le visiteur début à regarder. Vues de segments suivantes au début du segment.
+   Analytics comptabilise la première vue du segment au début du segment, lorsque le visiteur commence à regarder. Les vues des segments suivants démarrent au début des segments.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
