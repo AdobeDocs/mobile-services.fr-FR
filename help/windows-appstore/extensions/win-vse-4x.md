@@ -27,7 +27,7 @@ Ces extensions vous offrent un moyen beaucoup plus facile d&#39;ajouter la réf�
 
 1. Sélectionnez Emplacement **** global et installez la bibliothèque.
 
-## ajouter des références à votre projet {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
+## Ajouter des références à votre projet {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
 
 1. Ouvrez votre projet Windows 8.1 ou Windows Phone 8.1.
 1. Ouvrez la boîte de dialogue Gestionnaire de références.
