@@ -26,7 +26,7 @@ Cette extension permet d&#39;ajouter plus facilement la référence du SDK Windo
 1. Doublon-cliquez sur le fichier **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** pour ouvrir le programme d’installation.
 1. Sélectionnez Emplacement **** global et installez la bibliothèque.
 
-## ajouter des références à votre projet {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
+## Ajouter des références à votre projet {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
 
 1. Ouvrez votre projet Windows 10.
 1. Ouvrez la boîte de dialogue Gestionnaire de références.
