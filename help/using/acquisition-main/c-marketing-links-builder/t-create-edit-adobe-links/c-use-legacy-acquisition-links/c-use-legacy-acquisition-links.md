@@ -1,11 +1,14 @@
 ---
-description: Ces informations vous aident à utiliser la fonction de lien d’acquisition héritée.
-seo-description: Ces informations vous aident à utiliser la fonction de lien d’acquisition héritée.
+description: Ces informations vous aident à utiliser la fonctionnalité de lien d’acquisition héritée.
+seo-description: Ces informations vous aident à utiliser la fonctionnalité de lien d’acquisition héritée.
 seo-title: Utilisation de liens d’acquisition hérités
 title: Utilisation de liens d’acquisition hérités
 uuid: cee84d33-e7f9-428e-89a1-83554e7f4c5e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 83%
 
 ---
 
