@@ -1,23 +1,26 @@
 ---
-title: 'Développeurs : démarrage rapide'
-seo-title: BlackBerry Developer Quick Start pour Adobe Mobile Services
-description: Le guide de démarrage rapide du développeur BlackBerry vous aide à comprendre le processus de mise en oeuvre de la bibliothèque BlackBerry pour Adobe Mobile Services.
-seo-description: The BlackBerry Developer Quick Start Guide helps you understand the process to implement the BlackBerry library for Adobe Mobile Services.
+title: Début rapide des développeurs
+seo-title: Début rapide des développeurs BlackBerry pour Adobe Mobile Services
+description: Le guide de Début rapide des développeurs BlackBerry vous aide à comprendre le processus de mise en oeuvre de la bibliothèque BlackBerry pour Adobe Mobile Services.
+seo-description: Le guide de Début rapide des développeurs BlackBerry vous aide à comprendre le processus de mise en oeuvre de la bibliothèque BlackBerry pour Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 5%
 
 ---
 
 
-# Developer quick start
+# Démarrage rapide pour les développeurs
 
-Ces informations vous permettent de comprendre le processus de mise en œuvre de la bibliothèque BlackBerry.
+Ces informations vous aident à comprendre le processus de mise en oeuvre de la bibliothèque BlackBerry.
 
-## Obtention du kit SDK
+## Obtention du kit SDK 
 
-**BlackBerry version 10 ou ultérieure est requis par le SDK.**
+**Le SDK requiert BlackBerry 10 ou une version ultérieure.**
 
-Après avoir décompressé le SDK téléchargé, vérifiez que les fichiers ci-après existent dans un dossier `AdobeMobile` :
+Après avoir décompressé le SDK téléchargé, vérifiez que les fichiers suivants existent dans un `AdobeMobile` dossier :
 
 * `Device-Coverage/libADBMobileShared.so`
 * `Device-Debug/libADBMobileShared.so`
@@ -31,46 +34,46 @@ Après avoir décompressé le SDK téléchargé, vérifiez que les fichiers ci-a
 * `Simulator-Debug/libADBMobileShared.so`
 * `Simulator-Profile/libADBMobileShared.so`
 
-## Ajout des SDK à votre projet
+## Ajouter les SDK à votre projet
 
-1. Right-click on your project and select **[!UICONTROL Configure]** &gt; **[!UICONTROL Add Library]**.
-1. Sélectionnez **[!UICONTROL Bibliothèque externe]**, puis cliquez sur **[!UICONTROL Suivant]**.
-1. En regard du champ **[!UICONTROL Bibliothèque de l’appareil]**, cliquez sur **Parcourir[!UICONTROL .]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
-1. En regard du champ **[!UICONTROL Bibliothèque du simulateur]**, cliquez sur **Parcourir[!UICONTROL .]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
-1. En regard du champ **[!UICONTROL Inclure les dossiers], cliquez sur****Ajouter[!UICONTROL .]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. Ajoutez le dossier `public` à vos inclusions.
-1. In the `ADBMobile-4.0.0BETA-BlackBerry` folder, there is a `.json` config file named `ADBMobileConfig.json`.
+1. Cliquez avec le bouton droit sur votre projet et sélectionnez **[!UICONTROL Configurer]** > Bibliothèque **[!UICONTROL d’]** Ajoutes.
+1. Sélectionnez Bibliothèque **** externe et cliquez sur **[!UICONTROL Suivant]**.
+1. Cliquez sur **[!UICONTROL Parcourir]** en regard du champ de bibliothèque **** de périphériques.
+1. Accédez au dossier `ADBMobile-4.0.0BETA-BlackBerry`. 
+1. Dans le `Device-Debug` dossier, sélectionnez `libADBMobileShared.so` et cliquez sur **[!UICONTROL Ouvrir]**.
+1. Cliquez sur **[!UICONTROL Parcourir]** en regard du champ de bibliothèque **** Simulator.
+1. Accédez au dossier `ADBMobile-4.0.0BETA-BlackBerry`. 
+1. Dans le `Device-Debug` dossier, sélectionnez `libADBMobileShared.so` et cliquez sur **[!UICONTROL Ouvrir]**.
+1. Cliquez sur **[!UICONTROL Ajouter]** en regard du champ **[!UICONTROL Inclure les dossiers]** .
+1. Accédez au dossier `ADBMobile-4.0.0BETA-BlackBerry`. 
+1. Ajoutez le `public` dossier à vos inclusions.
+1. Dans le `ADBMobile-4.0.0BETA-BlackBerry` dossier, il existe un fichier `.json` de configuration nommé `ADBMobileConfig.json`.
 
-   Copiez ce fichier à la racine du projet.
-1. Cliquez avec le bouton droit de la souris sur le projet, puis sélectionnez **[!UICONTROL Actualiser]**.
+   Copiez ce fichier dans la racine de votre projet.
+1. Cliquez avec le bouton droit sur votre projet et sélectionnez **[!UICONTROL Actualiser]**.
 
-   The `.json` file should now be visible in your **[!UICONTROL Project Explorer]**.
-1. Ouvrez le fichier `bar-descriptor.xml` correspondant au projet.
-1. Au bas de la fenêtre, sélectionnez l’onglet **[!UICONTROL Ressources].**
-1. Vérifiez que l’option **[!UICONTROL (Toutes les configurations)]** est activée puis, dans la section **[!UICONTROL Ressources]de la fenêtre, cliquez sur** Ajouter des fichiers.****
+   Le `.json` fichier doit maintenant être visible dans l’Explorateur **[!UICONTROL de]** projets.
+1. Ouvrez le `bar-descriptor.xml` fichier correspondant à votre projet.
+1. Dans la partie inférieure de la fenêtre, sélectionnez l’onglet **[!UICONTROL Ressources]** .
+1. Vérifiez que **[!UICONTROL (Toutes les configurations)]** est sélectionné, puis cliquez sur le bouton **[!UICONTROL Ajouter les fichiers]** dans la section **[!UICONTROL Ressources]** de la fenêtre.
    >[!TIP]
    >
-   >There is a bug in the QNX Momentics IDE that sometimes prevents those buttons from being visible. Si vous ne voyez pas les boutons, redimensionnez les fenêtres jusqu'à ce qu'elles apparaissent.
+   >Il y a un bogue dans l&#39;IDE QNX Momentics qui empêche parfois ces boutons d&#39;être visibles. Si les boutons ne s’affichent pas, redimensionnez les fenêtres jusqu’à ce qu’elles apparaissent.
 
 1. Cliquez sur **[!UICONTROL Espace de travail]**.
-1. Recherchez le fichier `ADBMobileConfig.json`**dans le projet, puis cliquez sur[!UICONTROL OK]**.
+1. Recherchez le `ADBMobileConfig.json` fichier dans votre projet, puis cliquez sur **[!UICONTROL OK]**.
 
-Votre application peut importer les classes/interfaces de la bibliothèque `adobeMobileLibrary.jar` à l'aide de `#include <ADBMobile.hpp>`.
+Votre application peut importer les classes/interfaces de la `adobeMobileLibrary.jar` bibliothèque à l&#39;aide `#include <ADBMobile.hpp>`.
 
-## Add app permissions
+## Ajout des autorisations des applications
 
-In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
+Dans `bar-descriptor.xml` le répertoire du projet, ajoutez la ligne `<permission>access_internet</permission>`ou dans l’IDE QNX Momentics, sélectionnez la zone **[!UICONTROL Internet]** dans la section permissions de l’onglet **[!UICONTROL Application]** .
 
-## Update the `ADBMobileConfig.json` config file
+## Mise à jour du fichier de `ADBMobileConfig.json` configuration
 
-Le fichier `ADBMobileConfig.json` contient les paramètres du SDK global. Pour commencer, certaines valeurs doivent être mises à jour.
+Le `ADBMobileConfig.json` fichier contient les paramètres du SDK global. Vous devez mettre à jour quelques valeurs pour commencer.
 
-Voici un exemple de fichier `ADBMobileConfig.json` :
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```json
 {
@@ -87,6 +90,6 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. Pour plus d’informations, reportez-vous à la page Référence [de classe et de méthode](/help/blackberry/methods.md)Adobe Mobile.
+Vous devez au moins mettre à jour les `rsids` paramètres et `server` . Pour plus d&#39;informations, reportez-vous à la section Référence [de classe et de méthode](/help/blackberry/methods.md)Adobe Mobile.
 
-Vous pouvez désormais mettre en œuvre Analytics dans votre application BlackBerry 10.
+Vous pouvez désormais mettre en oeuvre Analytics dans votre application BlackBerry 10.
