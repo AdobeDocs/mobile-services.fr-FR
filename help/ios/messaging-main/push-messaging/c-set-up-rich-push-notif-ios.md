@@ -1,35 +1,38 @@
 ---
-description: Vous pouvez joindre des fichiers image à vos notifications Apple. L’ajout d’éléments visuels peut augmenter de façon notable l’engagement de vos utilisateurs vis-à-vis des notifications push.
-seo-description: Vous pouvez joindre des fichiers image à vos notifications Apple. L’ajout d’éléments visuels peut augmenter de façon notable l’engagement de vos utilisateurs vis-à-vis des notifications push.
-seo-title: Réception de notifications push enrichies
-title: Réception de notifications Push enrichies
+description: Vous pouvez joindre des fichiers image à vos notifications Apple. Ajouter des composants visuels peut augmenter considérablement l’engagement de vos utilisateurs avec les notifications Push.
+seo-description: Vous pouvez joindre des fichiers image à vos notifications Apple. Ajouter des composants visuels peut augmenter considérablement l’engagement de vos utilisateurs avec les notifications Push.
+seo-title: Recevoir des notifications Push enrichies
+title: Recevoir des notifications Push enrichies
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 38%
 
 ---
 
 
 # Réception de notifications push enrichies{#receive-rich-push-notifications}
 
-Vous pouvez joindre des fichiers image à vos notifications Apple. L’ajout d’éléments visuels peut augmenter de façon notable l’engagement de vos utilisateurs vis-à-vis des notifications push.
+Vous pouvez joindre des fichiers image à vos notifications Apple. Ajouter des composants visuels peut augmenter considérablement l’engagement de vos utilisateurs avec les notifications Push.
 
-Pour recevoir des notifications push enrichies dans votre application iOS :
+Pour recevoir des notifications Push riches dans votre application iOS :
 
 1. Mettez en œuvre la messagerie push pour l’application en suivant la procédure indiquée dans [Messagerie Push](/help/ios/messaging-main/push-messaging/push-messaging.md).
-1. Assurez-vous que vous pouvez envoyer un message texte push à votre application.
-1. Ajoutez une extension de service de notification en suivant la procédure suivante :
+1. Vérifiez que vous pouvez envoyer un message Push texte à votre application.
+1. Ajoutez une extension de service de notification en procédant comme suit :
 
-   1. Dans votre projet Xcode, sélectionnez **[!UICONTROL Fichier]** &gt; **[!UICONTROL Nouveau]** &gt; **[!UICONTROL Target]**.
+   1. Dans le projet Xcode, sélectionnez **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Target]**.
    1. Sélectionnez **[!UICONTROL Extension de service de notification]**.
    1. Vérifiez que le fichier `NotificationService.m` existe.
 
 1. Ouvrez le fichier `NotificationService.m` et vérifiez que les méthodes déléguées suivantes existent :
 
-   * Une méthode destinée à recevoir la demande de notification.
-   * Une méthode destinée à gérer l’expiration de l’extension de service.
+   * Une méthode pour recevoir une demande de notification.
+   * Une méthode pour gérer l&#39;expiration de l&#39;extension de service.
 
-      La première méthode est utilisée pour la réception de notifications push enrichies :
+      Pour recevoir des notifications Push enrichies, la première méthode est utilisée :
 
       ```objective-c
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
@@ -72,4 +75,4 @@ Pour recevoir des notifications push enrichies dans votre application iOS :
       ```
 
 
-Pour obtenir plus d’informations sur l’utilisation de notifications push enrichies avec iOS, voir [UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment).
+For more information about rich push notifications with iOS, see [UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment).
