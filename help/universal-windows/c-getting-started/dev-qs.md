@@ -27,7 +27,7 @@ Voici quelques informations sur la mise en oeuvre de la bibliothèque de platefo
 
 Après avoir décompressé le fichier de téléchargement [du](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) SDK, vous disposez d’un dossier distinct pour chaque combinaison d’architecture et de plate-forme prise en charge. Vous aurez également un `ADBMobileConfig.json` fichier. Pour plus d’informations sur ce fichier, voir le fichier [de configuration](/help/universal-windows/c-configuration/c.json.md)ADBMobileConfig.json.
 
-## Sélectionner la version correcte {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 Différents `.dll/.winmd` fichiers sont fournis pour chaque architecture prise en charge (x86, x64, ARM).
 
@@ -60,7 +60,7 @@ La principale différence entre les implémentations est la structure de donnée
 
 1. Dans l’onglet **[!UICONTROL Windows]** sur la gauche, sélectionnez **[!UICONTROL Extensions]**, sélectionnez et ajoutez **[!UICONTROL Visual C++ 2015 Runtime pour les applications]** de plateformes Windows universelles.
 
-1. ajoutez la ligne suivante à votre classe :
+1. Ajoutez la ligne suivante à votre classe :
 
    ```csharp
    using ADBMobile;
@@ -87,7 +87,7 @@ La principale différence entre les implémentations est la structure de donnée
 
 1. Vérifiez que `ADBMobile.winmd` est coché dans la fenêtre Gestionnaire **[!UICONTROL de]** références, puis cliquez sur **[!UICONTROL OK]**.
 
-1. ajoutez la ligne suivante à votre classe :
+1. Ajoutez la ligne suivante à votre classe :
 
    ```c++
    using namespace ADBMobile;
@@ -163,7 +163,7 @@ Voici un exemple de fichier `ADBMobileConfig.json` :
 
 Mettez à jour au minimum les valeurs suivantes pour les solutions que vous utilisez :
 
-* **adobe analytics**: `rsids` et `server`
+* **Adobe Analytics**: `rsids` et `server`
 
 * **Adobe Target**: `clientCode`
 
