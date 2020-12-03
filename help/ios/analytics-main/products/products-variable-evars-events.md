@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Variable products avec des eVars de marchandisage et des événements spécifiques à un produit
 topic: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 100%
 
