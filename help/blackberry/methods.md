@@ -1,19 +1,19 @@
 ---
 description: Classes et méthodes fournies par la bibliothèque BlackBerry.
 seo-description: Classes et méthodes fournies par la bibliothèque BlackBerry.
-seo-title: adobe Mobile, classe et référence de méthode
-title: adobe Mobile, classe et référence de méthode
+seo-title: référence en matière de classe et de méthode pour Adobe Mobile
+title: référence en matière de classe et de méthode pour Adobe Mobile
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
 
-# adobe Mobile, classe et référence de méthode {#adobe-mobile-class-and-method-reference}
+# référence en matière de classe et de méthode pour Adobe Mobile {#adobe-mobile-class-and-method-reference}
 
 Classes et méthodes fournies par la bibliothèque BlackBerry.
 
@@ -202,7 +202,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json`Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` Référence du fichier de configuration {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
@@ -238,7 +238,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,  contactez  [Assistance](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html)aux entreprises.
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   [Assistance](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html)aux entreprises.
 
    If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
@@ -246,7 +246,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **lifecycleTimeout**
 
-   Indique la durée, en secondes, qui doit s’écouler entre les lancements de l’application avant que le lancement ne soit considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
+   Spécifie la durée, en secondes, qui doit s’écouler entre le lancement de l’application et le moment où le lancement est considéré comme une nouvelle session. Ce délai d’attente s’applique également lorsque votre application est envoyée en arrière-plan et réactivée. Le temps passé par votre application en arrière-plan n’est pas inclus dans la durée de session.
 
    La valeur par défaut est de 300 secondes.
 
