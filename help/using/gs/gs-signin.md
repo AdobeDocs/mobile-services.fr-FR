@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Connexion
 topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Procédez de l’une des manières suivantes pour réinitialiser votre mot de pa
 
 * **Adobe Experience Cloud** Si vous utilisez votre Adobe ID :
 
-   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID]**, puis sur le lien **[!UICONTROL Mot de passe oublié ?]**
+   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID]**, puis sur le lien **[!UICONTROL Mot de passe oublié ?]** link.
    1. Saisissez l’adresse électronique du compte associé à votre Adobe ID, puis cliquez sur **[!UICONTROL Envoyer]**.
    1. Suivez les instructions pour réinitialiser votre mot de passe dans l’email reçu.
 
