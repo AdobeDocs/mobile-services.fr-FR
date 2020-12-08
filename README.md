@@ -1,16 +1,12 @@
 ---
-source-git-commit: 635ca6a376b5d1380712ebb01a3e238d5caffc6a
+source-git-commit: b743d87d8b9a590a6a488a077ac0a16ad19a6964
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 85%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 # Article sur les contributions
-
-| EXL-PR | EXL | Aperçu | Activer | Publication | Aide |
-|--- |--- |--- |--- |--- |--- |
-| [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_pr-exl/lastBuild/) | [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/mobile-services.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/mobile-services/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
@@ -24,7 +20,7 @@ Consultez le [Guide du contributeur de documents Adobe](https://docs.adobe.com/c
 
 Votre contribution dépend de qui vous êtes et du type de modifications auxquelles vous souhaitez contribuer :
 
-### Modifications mineures
+### Modifications mineures 
 
 Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le lien **Modifier** de l’article pour accéder à la source GitHub de celui-ci. Utilisez ensuite l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
