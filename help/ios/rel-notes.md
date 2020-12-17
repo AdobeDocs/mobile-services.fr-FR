@@ -7,10 +7,10 @@ title: Notes de mise à jour
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,12 @@ ht-degree: 100%
 # Notes de mise à jour {#release-notes}
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
+
+**15 décembre 2020 : Version 4.21.0**
+
+* Général - Le SDK est maintenant distribué à l&#39;aide de XCFrframework afin de prendre en charge le matériel avec la nouvelle architecture Apple M1 tout en maintenant la prise en charge de l&#39;architecture Intel existante.
+   * IMPORTANT : La mise à niveau vers AdobeMobile XCFrameworks nécessite Xcode 12.0 ou version ultérieure
+   * IMPORTANT : Si vous utilisez Cocoapods, la mise à niveau vers AdobeMobile XCFrameworks nécessite Cocoapods 1.10.0 ou version ultérieure
 
 **4 novembre 2020 : version 4.20.0**
 
