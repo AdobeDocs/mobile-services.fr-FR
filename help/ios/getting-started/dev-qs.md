@@ -7,10 +7,10 @@ title: Mise en œuvre principale et cycle de vie
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 72%
 
 ---
 
@@ -23,13 +23,42 @@ Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à c
 
 >[!IMPORTANT]
 >
->Pour télécharger les SDK, vous **devez** utiliser la version iOS 6 ou ultérieure.
+>Le SDK requiert iOS 8 ou une version ultérieure.
 
 **Condition requise**
 
 Avant de télécharger le SDK, suivez les étapes de la section *Création d’une suite de rapports* dans [Mise en œuvre principale et cycle de vie](/help/ios/getting-started/requirements.md) pour configurer une suite de rapports de développement et télécharger une version préremplie du fichier de configuration.
 
 Pour télécharger le kit SDK :
+
+>[!IMPORTANT]
+>
+>A compter de la version 4.21.0, le SDK est distribué via XCFrameworks (Cadres XCF). Si vous utilisez la version 4.21.0 ou ultérieure, suivez les étapes ci-dessous.
+>
+>La version 4.21.0 du SDK requiert Xcode 12.0 ou une version plus récente et, le cas échéant, Cocoapods 1.10.0 ou une version plus récente.
+
+1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants dans le répertoire `AdobeMobileLibrary` :
+
+   * `ADBMobileConfig.json` - le fichier de configuration du SDK personnalisé pour votre application.
+   * `AdobeMobile.xcframework` - contient deux binaires gras, un pour les appareils iOS (armv7, armv7s, arm64) et des simulateurs (i386, x86_64, arm64). Contient également le fichier d’en-tête `ADBMobile.h` pour le SDK.
+
+      Ce cadre XCF doit être lié lors du ciblage d’une application iOS.
+
+   * `AdobeMobileExtension.xcframework` - contient deux binaires gras, un pour les appareils iOS (armv7, armv7s, arm64) et des simulateurs (i386, x86_64, arm64). Contient également le fichier d’en-tête `ADBMobile.h` pour le SDK.
+
+      Ce cadre XCF doit être lié lors du ciblage d’une extension iOS.
+
+   * `AdobeMobileWatch.xcframework` - contient deux binaires gras, un pour les périphériques watchOS (arm64_32, armv7k) et des simulateurs (i386, x86_64, arm64). Contient également le fichier d’en-tête `ADBMobile.h` pour le SDK.
+
+      Ce cadre XCF doit être lié lors du ciblage d’une application Apple Watch (watchOS).
+
+   * `AdobeMobileTV.xcframework` - contient deux binaires gras, un pour les appareils tvOS (arm64) et les simulateurs (x86_64, arm64). Contient également le fichier d’en-tête `ADBMobile.h` pour le SDK.
+
+      Ce cadre XCF doit être lié lors du ciblage d’une application Apple TV (tvOS).
+
+>[!IMPORTANT]
+>
+>Dans les versions antérieures à la version 4.21.0, le SDK est distribué via des binaires. Si vous utilisez une version antérieure à 4.21.0, suivez les étapes ci-dessous.
 
 1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants :
 
@@ -102,6 +131,12 @@ Pour télécharger le kit SDK :
    >
    > Le fait de lier plusieurs fichiers `AdobeMobileLibrary*.a` à la même cible risque d’entraîner un comportement inattendu ou d’empêcher la création de votre application.
 
+   >[!IMPORTANT]
+   >
+   > Si vous utilisez la version 4.21.0 ou une version ultérieure, assurez-vous que les structures XCF Adobe ne sont pas incorporées.
+
+   ![](assets/no-embed.png)
+
 1. Vérifiez qu’aucune erreur n’est générée lors de la création de votre application.
 
 ## Mise en œuvre des mesures de cycle de vie {#section_532702562A7A43809407C9A2CBA80E1E}
@@ -115,9 +150,9 @@ Une fois que vous avez activé le cycle de vie, chaque fois que l’application 
 Ajoutez un appel `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` dans `application:didFinishLaunchingWithOptions` :
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
- [ADBMobile collectLifecycleData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+ [ADBMobile collectLifecycleData];
+    return YES;
 }
 ```
 
@@ -130,11 +165,11 @@ Pour ajouter des données aux appels de mesures de cycle de vie, utilisez `colle
 >Toute donnée transférée au SDK par l’intermédiaire de `collectLifecycleDataWithAdditionalData:` est conservée dans `NSUserDefaults` par le SDK. Le SDK retire du paramètre `NSDictionary` les valeurs qui ne sont pas de type `NSString` ou `NSNumber`.
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
-    [contextData setObject:@"Game" forKey:@"myapp.category"]; 
-    [ADBMobile collectLifecycleDataWithAdditionalData:contextData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
+    [contextData setObject:@"Game" forKey:@"myapp.category"];
+    [ADBMobile collectLifecycleDataWithAdditionalData:contextData];
+    return YES;
 }
 ```
 
