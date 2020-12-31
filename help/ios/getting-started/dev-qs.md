@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -33,33 +33,33 @@ Pour télécharger le kit SDK :
 
 >[!IMPORTANT]
 >
->A compter de la version 4.21.0, le SDK est distribué via XCFrameworks (Cadres XCF). Si vous utilisez la version 4.21.0 ou ultérieure, suivez les étapes ci-dessous.
+>À compter de la version 4.21.0, le SDK est distribué par le biais de XCFrameworks. Si vous utilisez la version 4.21.0 ou une version ultérieure, suivez les étapes ci-dessous.
 >
->La version 4.21.0 du SDK requiert Xcode 12.0 ou une version plus récente et, le cas échéant, Cocoapods 1.10.0 ou une version plus récente.
+>La version 4.21.0 du SDK requiert Xcode 12.0 ou une version ultérieure et, le cas échéant, Cocoapods 1.10.0 ou une version ultérieure.
 
-1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants dans le répertoire `AdobeMobileLibrary` :
+1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants dans le répertoire `AdobeMobileLibrary` :
 
    * `ADBMobile.h` - fichier d’en-tête Objective-C utilisé pour le SDK iOS.
-   * `ADBMobileConfig.json` - le fichier de configuration du SDK personnalisé pour votre application.
-   * `AdobeMobile.xcframework` - contient deux binaires gras, un pour les appareils iOS (armv7, armv7s, arm64) et des simulateurs (i386, x86_64, arm64).
+   * `ADBMobileConfig.json` : fichier de configuration du SDK personnalisé pour votre application.
+   * `AdobeMobile.xcframework` : contient deux fichiers binaires FAT, un pour les appareils (armv7, armv7s, arm64) et un pour les simulateurs (i386, x86_64, arm64) iOS. 
 
-      Ce cadre XCF doit être lié lors du ciblage d’une application iOS.
+      Ce XCFramework doit être lié lors du ciblage d’une application iOS.
 
-   * `AdobeMobileExtension.xcframework` - contient deux binaires gras, un pour les appareils iOS (armv7, armv7s, arm64) et des simulateurs (i386, x86_64, arm64).
+   * `AdobeMobileExtension.xcframework` : contient deux fichiers binaires FAT, un pour les appareils (armv7, armv7s, arm64) et un pour les simulateurs (i386, x86_64, arm64) iOS. 
 
-      Ce cadre XCF doit être lié lors du ciblage d’une extension iOS.
+      Ce XCFramework doit être lié lors du ciblage d’une extension iOS.
 
-   * `AdobeMobileWatch.xcframework` - contient deux binaires gras, un pour les périphériques watchOS (arm64_32, armv7k) et des simulateurs (i386, x86_64, arm64).
+   * `AdobeMobileWatch.xcframework` : contient deux fichiers binaires FAT, un pour les appareils (arm64_32, armv7k) et un pour les simulateurs (i386, x86_64, arm64) watchOS. 
 
-      Ce cadre XCF doit être lié lors du ciblage d’une application Apple Watch (watchOS).
+      Ce XCFramework doit être lié lors du ciblage d’une application Apple Watch (watchOS).
 
-   * `AdobeMobileTV.xcframework` - contient deux binaires gras, un pour les appareils tvOS (arm64) et les simulateurs (x86_64, arm64).
+   * `AdobeMobileTV.xcframework` : contient deux fichiers binaires FAT, un pour les appareils (arm64) et un pour les simulateurs (x86_64, arm64) tvOS. 
 
-      Ce cadre XCF doit être lié lors du ciblage d’une application Apple TV (tvOS).
+      Ce XCFramework doit être lié lors du ciblage d’une application Apple TV (tvOS).
 
 >[!IMPORTANT]
 >
->Dans les versions antérieures à la version 4.21.0, le SDK est distribué via des binaires. Si vous utilisez une version antérieure à 4.21.0, suivez les étapes ci-dessous.
+>Dans les versions antérieures à la version 4.21.0, le SDK est distribué par le biais de fichiers binaires. Si vous utilisez une version antérieure à la version 4.21.0, suivez les étapes ci-dessous.
 
 1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants :
 
@@ -134,7 +134,7 @@ Pour télécharger le kit SDK :
 
    >[!IMPORTANT]
    >
-   > Si vous utilisez la version 4.21.0 ou une version ultérieure, assurez-vous que les structures XCF Adobe ne sont pas incorporées.
+   > Si vous utilisez la version 4.21.0 ou une version ultérieure, vérifiez que les XCFrameworks Adobe ne sont pas incorporés.
 
    ![](assets/no-embed.png)
 
