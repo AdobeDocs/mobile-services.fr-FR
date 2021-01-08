@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: SDK iOS 4.x pour solutions Experience Cloud
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applicati
 
 >[!IMPORTANT]
 >
->A compter de la version 4.21.0, le SDK iOS dispose d’une version minimale requise de Xcode 12. Si vous utilisez Cocoapods pour gérer les dépendances dans votre application, le Adobe SDK nécessite la version 1.10.0 ou ultérieure de Cocoapods.
+>À partir de la version 4.21.0, le SDK iOS dispose d’une version minimale requise de Xcode 12. Si vous utilisez Cocoapods pour gérer les dépendances au sein de votre application, le SDK Adobe requiert la version 1.10.0 ou une version ultérieure de Cocoapods.
 
-Si vous utilisez la version 4.21.0 ou ultérieure, lisez la documentation en gardant à l’esprit les modifications suivantes :
+Si vous utilisez la version 4.21.0 ou une version ultérieure, consultez la documentation en tenant compte des modifications suivantes :
 
-* Chaque fois qu’un fichier de bibliothèque binaire est mentionné, son remplacement XCFrframework doit être utilisé à la place :
+* Chaque fois qu’un fichier de bibliothèque binaire est mentionné, son remplaçant XCFramework doit être utilisé à la place :
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
-* Si vous ajoutez manuellement l&#39;Adobe XCFrframework à votre projet, assurez-vous qu&#39;il n&#39;est pas incorporé.
+   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
+* Si vous ajoutez manuellement les XCFrameworks Adobe à votre projet, vérifiez qu’ils ne sont pas incorporés.
 
 >[!IMPORTANT]
 >
