@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Pour télécharger le kit SDK :
 
 1. Téléchargez, décompressez le fichier `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` et vérifiez que vous disposez des composants logiciels suivants dans le répertoire `AdobeMobileLibrary` :
 
-   * `ADBMobile.h` - fichier d’en-tête Objective-C utilisé pour le SDK iOS.
+   * `ADBMobile.h` : fichier d’en-tête Objective-C utilisé pour le SDK iOS.
    * `ADBMobileConfig.json` : fichier de configuration du SDK personnalisé pour votre application.
    * `AdobeMobile.xcframework` : contient deux fichiers binaires FAT, un pour les appareils (armv7, armv7s, arm64) et un pour les simulateurs (i386, x86_64, arm64) iOS. 
 
@@ -148,7 +148,7 @@ Pour télécharger le kit SDK :
 
 Une fois que vous avez activé le cycle de vie, chaque fois que l’application est lancée, un accès est envoyé permettant de mesurer les lancements, les mises à niveau, les sessions, les utilisateurs actifs et d’autres [mesures de cycle de vie](/help/ios/metrics.md).
 
-Ajoutez un appel `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` dans `application:didFinishLaunchingWithOptions` :
+Ajoutez un appel `collectLifecycleData`/`collectLifecycleDataWithAdditionalData` dans `application:didFinishLaunchingWithOptions` :
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
