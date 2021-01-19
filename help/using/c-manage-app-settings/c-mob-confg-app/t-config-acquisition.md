@@ -8,7 +8,7 @@ title: Configuration des options du SDK Acquisition
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les pa
 
    * **[!UICONTROL Activer]**
 
-      Créez des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements. Pour plus d’informations, reportez-vous à la section [Acquisition](//help/using/acquisition-main/acquisition-main.md).
+      Créez des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements. Pour plus d’informations, reportez-vous à la section [Acquisition](/help/using/acquisition-main/acquisition-main.md).
 
    * **[!UICONTROL Délai d’expiration du référent (secondes)]**
 
