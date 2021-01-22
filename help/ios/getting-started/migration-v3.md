@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque iOS 4.x
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 | trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
 | trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;devise&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | Supprimer, n’est plus utilisé. |
 | linkTrackEvents | Supprimer, n’est plus utilisé. |
@@ -149,11 +149,11 @@ Les règles de traitement offrent les avantages suivants :
 
    Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mappées à l’aide de règles de traitement. Pour plus d’informations, voir [Règles de traitement et données contextuelles](/help/ios/getting-started/proc-rules.md).
 
-Les valeurs que vous avez directement attribuées aux variables doivent être ajoutées au `data``NSDictionary` à la place. Cela signifie que les appels vers `setProp`, `setEvar` et les attributions à des données contextuelles persistantes doivent être supprimés et les valeurs doivent être ajoutées au paramètre `data`.
+Les valeurs que vous avez directement attribuées aux variables doivent être ajoutées au `data` `NSDictionary` à la place. Cela signifie que les appels vers `setProp`, `setEvar` et les attributions à des données contextuelles persistantes doivent être supprimés et les valeurs doivent être ajoutées au paramètre `data`.
 
 ### AppSection/Server, GeoZip, transaction ID, Campaign et autres variables standard
 
-Les données que vous configuriez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées au `data``NSDictionary` à la place. Les seules données envoyées avec un appel `trackState` ou `trackAction` sont la charge utile dans le paramètre `data`.
+Les données que vous configuriez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées au `data` `NSDictionary` à la place. Les seules données envoyées avec un appel `trackState` ou `trackAction` sont la charge utile dans le paramètre `data`.
 
 ### Remplacement des appels de suivi
 
