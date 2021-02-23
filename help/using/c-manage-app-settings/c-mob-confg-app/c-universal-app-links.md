@@ -1,22 +1,21 @@
 ---
-description: Les liens universels (iOS) et les liens d’application (Android) vous permettent de vous connecter à des liens profonds dans vos applications iOS ou Android.
-keywords: mobile
+description: Il est important de créer des liens dans les applications et les sites Web pour préserver l’expérience des utilisateurs. Découvrez comment les liens universels et d’application fonctionnent et les différences entre eux.
 seo-description: Les liens universels (iOS) et les liens d’application (Android) vous permettent de vous connecter à des liens profonds dans vos applications iOS ou Android.
 seo-title: Liens universels Apple et liens d’application Android
 solution: Experience Cloud,Analytics
-title: Liens universels Apple et liens d’application Android
-topic: Metrics
+title: Guide des liens universels et d’application
+topic: Mesures
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 100%
+source-wordcount: '1146'
+ht-degree: 96%
 
 ---
 
 
-# Liens universels Apple et liens d’application Android {#universal-links-and-app-links}
+# Liens universels et liens d’application : Comment fonctionnent-ils ? {#universal-links-and-app-links}
 
 Les liens universels (iOS) et les liens d’application (Android) vous permettent de vous connecter à des liens profonds dans vos applications iOS ou Android.
 
