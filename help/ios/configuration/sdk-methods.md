@@ -4,16 +4,16 @@ seo-description: Voici une liste des méthodes fournies par la bibliothèque iOS
 seo-title: Méthodes de configuration
 solution: Experience Cloud,Analytics
 title: Méthodes de configuration
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
+exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes de configuration {#configuration-methods}
 
@@ -124,7 +124,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
 * **trackingIdentifier**
 
-   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un identifiant de visiteur unique propre à l’application, généré par les serveurs d’Adobe. Si les serveurs d’Adobe ne peuvent pas être atteints au moment de la génération, alors l’identifiant est généré à l’aide du CFUUID d’Apple. La valeur est générée au lancement initial et stockée et utilisée à partir de ce point. Cet identifiant est conservé entre les mises à niveau de l’application, est enregistré et restauré pendant le processus de sauvegarde standard de l’application et est supprimé à la désinstallation.
+   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un ID de visiteur unique propre à l’application, généré par les serveurs d’Adobe. Si les serveurs d’Adobe ne peuvent pas être atteints au moment de la génération, alors l’identifiant est généré à l’aide du CFUUID d’Apple. La valeur est générée au lancement initial et stockée et utilisée à partir de ce point. Cet identifiant est conservé entre les mises à niveau de l’application, est enregistré et restauré pendant le processus de sauvegarde standard de l’application et est supprimé à la désinstallation.
 
    >[!TIP]
    >
@@ -388,4 +388,3 @@ typedef NS_ENUM(NSUInteger, ADBMobileAppExtensionType) {
     ADBMobileAppExtensionTypeStandAlone = 1 /*!< Enum value ADBMobileAppExtensionTypeStandAlone. */ 
 };
 ```
-
