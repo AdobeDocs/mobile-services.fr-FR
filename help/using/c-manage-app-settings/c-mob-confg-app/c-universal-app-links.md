@@ -4,16 +4,16 @@ seo-description: Les liens universels (iOS) et les liens d’application (Androi
 seo-title: Liens universels Apple et liens d’application Android
 solution: Experience Cloud,Analytics
 title: Guide des liens universels et d’application
-topic: Mesures
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 96%
 
 ---
-
 
 # Liens universels et liens d’application : Comment fonctionnent-ils ? {#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ Vous pouvez désormais utiliser ces liens marketing dans la messagerie et d’au
 >[!IMPORTANT]
 >
 >Vous ne verrez pas le nombre de suivi des clics avec des liens universels ou d’application, et vous ne pouvez pas non plus utiliser de spots.
-
