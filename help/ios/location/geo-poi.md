@@ -4,16 +4,16 @@ seo-description: La géolocalisation vous permet de déterminer des données de 
 seo-title: Géolocalisation et points ciblés
 solution: Experience Cloud,Analytics
 title: Géolocalisation et points ciblés
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
 ---
-
 
 # Géolocalisation et points ciblés {#geo-location-and-points-of-interest}
 
@@ -116,4 +116,3 @@ Pour certains niveaux de précision, il se peut que la valeur « 00 » apparai
 * Lorsque les diamètres de deux points ciblés se chevauchent, le premier point ciblé contenant la position actuelle est utilisé.
 
    Si vos points ciblés se chevauchent, vous devez les répertorier du plus granulaire au moins granulaire afin de vous assurer que les points ciblés les plus granulaires sont signalés.
-
