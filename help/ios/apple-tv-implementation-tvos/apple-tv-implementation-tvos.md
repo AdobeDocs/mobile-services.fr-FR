@@ -4,16 +4,16 @@ seo-description: Ces informations vous permettent d’effectuer la mise en œuvr
 seo-title: Mise en œuvre de l’Apple TV avec tvOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’Apple TV avec tvOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
+exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre de l’Apple TV avec tvOS {#apple-tv-implementation-with-tvos}
 
@@ -83,4 +83,3 @@ Pour obtenir plus d’informations, consultez la documentation iOS sur [iOS](ht
 1. Dans vos fichiers JavaScript, utilisez l’objet `ADBMobile` pour accéder aux méthodes natives du SDK Adobe.
 
    Pour accéder à la liste complète des méthodes disponibles, voir [Méthodes TVJS](/help/ios/apple-tv-implementation-tvos/tvjs-methods.md).
-
