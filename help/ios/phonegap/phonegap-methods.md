@@ -5,16 +5,16 @@ seo-description: Vous pouvez utiliser les méthodes du module externe PhoneGap 
 seo-title: Méthodes du module externe PhoneGap
 solution: Experience Cloud,Analytics
 title: Méthodes du module externe PhoneGap
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
+exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1731'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes du module externe PhoneGap {#phonegap-plug-in-methods}
 
@@ -90,7 +90,7 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
 
 * **trackingIdentifier**
 
-   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
+   Renvoie l’identifiant visiteur généré automatiquement. Il s’agit d’un ID de visiteur unique propre à l’application, qui est généré lors du lancement initial de l’application et qui est stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
@@ -815,4 +815,3 @@ Dans l’`AppDelegate` généré par Cordova, appelez `[ADBMobile setAdvertising
       ```java
       ADB.visitorGetIDs(function(value){alert(value);},function(value){alert('fail');}); 
       ```
-
