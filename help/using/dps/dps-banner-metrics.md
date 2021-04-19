@@ -5,16 +5,16 @@ seo-description: Le rapport sur les mesures de bannière offre une visualisation
 seo-title: Mesures de bannière
 solution: Experience Cloud,Analytics
 title: Mesures de bannière
-topic: Metrics
+topic-fix: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
+exl-id: 0383e23f-579e-4177-922d-71f193a3c606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '196'
 ht-degree: 100%
 
 ---
-
 
 # Mesures de bannière {#banner-metrics}
 
