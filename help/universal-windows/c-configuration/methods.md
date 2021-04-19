@@ -4,16 +4,16 @@ seo-description: Classes et méthodes fournies par la bibliothèque de plateform
 seo-title: Méthodes SDK
 solution: Experience Cloud,Analytics
 title: Méthodes SDK
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 66%
 
 ---
-
 
 # Méthodes SDK {#sdk-methods}
 
@@ -21,7 +21,7 @@ Classes et méthodes fournies par la bibliothèque de plateformes Windows univer
 
 >[!TIP]
 >
->Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
 
 * **GetVersion (winJS : getVersion)**
 
@@ -47,7 +47,7 @@ Classes et méthodes fournies par la bibliothèque de plateformes Windows univer
    * `ADBMobilePrivacyStatusOptOut` - Les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      The default value is set in the `ADBMobileConfig.json` config file. Pour plus d’informations, voir [ADBMobileConfig.json fichier](/help/universal-windows/c-configuration/c.json.md)de configuration.
+      La valeur par défaut est définie dans le fichier de configuration `ADBMobileConfig.json`. Pour plus d’informations, voir [Fichier de configuration ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -128,7 +128,7 @@ Classes et méthodes fournies par la bibliothèque de plateformes Windows univer
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Returns `null` if a custom identifier is not set.
+   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie `null` si aucun identifiant personnalisé n’est défini.
 La valeur par défaut est `null`.
 
    >[!IMPORTANT]
