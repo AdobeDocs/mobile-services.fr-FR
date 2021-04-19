@@ -5,16 +5,16 @@ seo-description: Ces informations vous aident à migrer de la version 2.x ou 3.
 seo-title: Migration vers la bibliothèque Android 4.x
 solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque Android 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
+exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '884'
 ht-degree: 100%
 
 ---
-
 
 # Migration vers la bibliothèque Android 4.x {#migrating-to-the-android-x-library}
 
@@ -109,7 +109,7 @@ Pour migrer depuis la version 2.x vers la version 4.x, déplacez la valeur de 
 | trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
 | trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | &quot;devise&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | Supprimer, n’est plus utilisé. |
 | linkTrackEvents | Supprimer, n’est plus utilisé. |
@@ -190,4 +190,3 @@ Supprimez les appels aux méthodes suivantes :
 ## Variable products {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Pour obtenir plus d’informations sur la variable products, voir [Variable products](/help/android/analytics-main/products/products.md).
-
