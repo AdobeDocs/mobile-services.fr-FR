@@ -5,16 +5,16 @@ seo-description: Liste des méthodes Adobe Target fournies par la bibliothèque
 seo-title: Méthodes Target pour Android
 solution: Experience Cloud,Analytics
 title: Méthodes Target pour Android
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
+exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '607'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes Target pour Android {#target-methods}
 
@@ -57,8 +57,9 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* Si vous utilisez un SDK **antérieur** à la version 4.14.0, voir [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) pour les restrictions des paramètres.
->
->* Si vous utilisez un SDK 4.14.0 **ou version supérieure**, voir [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) pour les restrictions des paramètres.
+   >
+   >
+* Si vous utilisez un SDK 4.14.0 **ou version supérieure**, voir [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) pour les restrictions des paramètres.
 
 
 * **loadRequest**
