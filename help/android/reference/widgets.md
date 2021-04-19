@@ -5,16 +5,16 @@ seo-description: Les widgets Android peuvent être suivis en utilisant les même
 seo-title: Widgets Android
 solution: Experience Cloud,Analytics
 title: Widgets Android
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
+exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # Widgets Android {#android-widgets}
 
@@ -29,4 +29,3 @@ Les instructions suivantes vous aideront à effectuer le suivi des widgets Andro
 * Afin d’être informé lorsqu’une application est lancée à partir d’un widget, ajoutez un appel `trackState` ou `trackEvent` avant de lancer votre application.
 
 * Pour effectuer le suivi du contexte d’une action, vous pouvez définir une variable `ContextData` qui offre l’option de segmenter chaque action séparément (par exemple, `AppExperienceType="widget"` et `app`).
-
