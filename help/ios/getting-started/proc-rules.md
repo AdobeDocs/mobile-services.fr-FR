@@ -4,16 +4,16 @@ seo-description: Les règles de traitement sont utilisées pour copier les donn�
 seo-title: Règles de traitement et données contextuelles.
 solution: Experience Cloud,Analytics
 title: Règles de traitement et données contextuelles.
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # Règles de traitement et données contextuelles {#processing-rules-and-context-data}
 
@@ -67,4 +67,3 @@ Lorsque vous utilisez des règles de traitement, tenez compte des informations s
 >[!TIP]
 >
 >Adobe réserve l’espace de noms « `a.` ». À part cette restriction, pour éviter les collisions, la seule exigence est que les variables de données contextuelles soient uniques dans votre société de connexion.
-
