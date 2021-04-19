@@ -4,16 +4,16 @@ seo-description: Les actions sont des événements qui se produisent votre appli
 seo-title: Suivi des actions de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des actions de l’application
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des actions d’application {#track-app-actions}
 
@@ -71,4 +71,3 @@ Les valeurs de données contextuelles doivent être mappées à des variables pe
 | Adobe Mobile Services | Rapport **[!UICONTROL Chemins d’accès des actions]**.  Affichez l’ordre dans lequel les actions se produisent dans l’application. Vous pouvez également cliquer sur **[!UICONTROL Personnaliser]** dans n’importe quel rapport pour afficher les actions par ordre de classement, de tendances ou dans un rapport ventilé, ou appliquer un filtre afin d’afficher certaines actions pour un segment en particulier. |
 | Rapports et analyses marketing | Rapport **[!UICONTROL Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
 | Analyses ad hoc | Rapport **[!UICONTROL Événement personnalisé]**.  Une fois qu’une action est mise en correspondance avec un événement personnalisé, vous pouvez afficher les événements mobiles similaires à tous les autres événements Analytics. |
-
