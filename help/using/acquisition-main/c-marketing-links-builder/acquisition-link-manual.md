@@ -5,16 +5,16 @@ seo-description: En configurant manuellement les paramètres d’URL, vous pouve
 seo-title: Création manuelle de liens Acquisition
 solution: Experience Cloud,Analytics
 title: Création manuelle de liens Acquisition
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # Création manuelle de liens Acquisition {#create-acquisition-link-manually}
 
@@ -146,4 +146,3 @@ Lorsque vous créez manuellement des liens d’acquisition, tenez compte des inf
    Exemple d’identifiant de boutique : `a_g_id`/ `a_i_id`.
 
 * Si la boutique de destination ne peut être déterminée de façon automatique, et qu’aucune boutique n’est définie par défaut, le lien renvoie une erreur 404.
-
