@@ -4,16 +4,16 @@ seo-description: Ces informations vous aident à comprendre le mode de suivi des
 seo-title: Suivi des blocages d’application
 solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
+exl-id: d6b4c763-7e02-42d0-aaf2-cda8640e5b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des blocages d’application {#track-app-crashes}
 
@@ -70,4 +70,3 @@ Les procédures suivantes peuvent vous aider à empêcher que de faux plantages 
 * Ne supprimez et ne modifiez aucune valeur placée dans `NSUserDefaults` par le SDK Adobe Mobile.
 
    Si ces valeurs sont modifiées en dehors du SDK, les données reportées seront invalides.
-
