@@ -4,16 +4,16 @@ seo-description: A partir d’iOS 10, Apple vous permet de créer une extension
 seo-title: Mise en œuvre d’une extension autonome
 solution: Experience Cloud,Analytics
 title: Mise en œuvre d’une extension autonome
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
+exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre d’une extension autonome {#stand-alone-extension-implementation}
 
@@ -56,4 +56,3 @@ Voici quelques informations supplémentaires :
       Cette valeur signifie que l’accès provient de l’extension.
 
 * Aucun appel de cycle de vie n’est déclenché sur les applications de l’extension iOS.
-
