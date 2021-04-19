@@ -4,18 +4,18 @@ seo-description: Informations relatives à l’utilisation du fichier de configu
 seo-title: Configuration de ADBMobileConfig.json
 solution: Experience Cloud,Analytics
 title: Configuration de ADBMobileConfig.json
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 43%
 
 ---
 
-
-# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
+# Fichier de configuration ADBMobileConfig.json {#adbmobileconfig-json-config}
 
 Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
 
@@ -23,7 +23,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **rsids**
 
-   (**Requis par Analytics**) Une ou plusieurs suites de rapports pour recevoir des données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
+   (**Requis par Analytics**) Une ou plusieurs suites de rapports pour recevoir les données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
 
    * Voici la syntaxe de cette méthode :
 
@@ -37,7 +37,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **server**
 
-   (**Requis par Analytics et la gestion des** Audiences). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `"https://"` ou `"https://"`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la `ssl` variable.
+   (**Requis par Analytics et la gestion des Audiences**). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `"https://"` ou `"https://"`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
 
    Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
@@ -51,11 +51,11 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **offlineEnabled**
 
-   When enabled (`true`), hits are queued while the device is offline and sent later when the device is online. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
+   Lorsque cette option est activée (`true`), les accès sont placés en file d’attente lorsque le périphérique est hors ligne et envoyés ultérieurement lorsque le périphérique est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
 
-   If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
+   Si les horodatages sont activés sur votre suite de rapports, votre `offlineEnabled` propriété de configuration *doit* être `true`. si votre suite de rapports n’est pas horodatée, votre `offlineEnabled` propriété de configuration *doit* être `false`.
 
-   En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez le service d’assistance clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez le service d’assistance clientèle. Si vous rapports actuellement des données AppMeasurement à une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé sur tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
    La valeur par défaut est `false`.
 
@@ -69,7 +69,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    Envoyer les accès par lots.
 
-   Par exemple, si la valeur est définie sur `50`, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true`et la valeur par défaut est `0` (Pas de traitement par lot).
+   Par exemple, si la valeur est `50`, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true` et la valeur par défaut est `0` (Pas de traitement par lot).
 
 * **privacyDefault**
 
@@ -104,7 +104,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    Détermine la cible d’attente d’une réponse.
 
-The following is an example of an `ADBMobileConfig.json` file:
+Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ```js
 { 
