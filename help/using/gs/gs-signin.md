@@ -5,16 +5,16 @@ seo-description: Vous pouvez vous connecter à Adobe Mobile Services à l’ai
 seo-title: Connexion
 solution: Experience Cloud,Analytics
 title: Connexion
-topic: Metrics
+topic-fix: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
+exl-id: 12b447bd-f53b-43b4-b333-6b805f42fb75
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # Connexion {#signing-in}
 
@@ -67,7 +67,7 @@ Procédez de l’une des manières suivantes pour réinitialiser votre mot de pa
 
 * **Adobe Experience Cloud** Si vous utilisez votre Adobe ID :
 
-   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID]**, puis sur le lien **[!UICONTROL Mot de passe oublié ?]** link.
+   1. Cliquez sur **[!UICONTROL Se connecter avec l’Adobe ID]**, puis sur le lien **[!UICONTROL Mot de passe oublié ?]**
    1. Saisissez l’adresse électronique du compte associé à votre Adobe ID, puis cliquez sur **[!UICONTROL Envoyer]**.
    1. Suivez les instructions pour réinitialiser votre mot de passe dans l’email reçu.
 
