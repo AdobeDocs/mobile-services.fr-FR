@@ -3,17 +3,17 @@ description: Ces informations vous permettent de travailler avec App Transport�
 seo-description: Ces informations vous permettent de travailler avec App Transport Security (ATS), un nouvel ensemble d’exigences de sécurité pour iOS 9.
 seo-title: App Transport Security
 solution: Experience Cloud,Analytics
-title: App Transport Security
-topic: Developer and implementation
+title: Sécurité du transport des applications
+topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
+exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
 ---
-
 
 # App Transport Security {#app-transport-security}
 
@@ -39,4 +39,3 @@ Vous pouvez également placer les serveurs suivants dans votre liste de serveurs
 >[!TIP]
 >
 >Ces considérations affectent les connexions établies par le SDK Adobe Mobile. Elles n’ont pas d’incidence sur l’affichage Web ni sur d’autres connexions établies par votre application.
-
