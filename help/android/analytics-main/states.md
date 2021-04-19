@@ -4,16 +4,16 @@ seo-description: Les états correspondent aux différents écrans ou affichages 
 seo-title: Suivi des états de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des états de l’application
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
+exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des états d’application {#track-app-states}
 
@@ -78,5 +78,3 @@ Les états sont généralement consultés au moyen d’un rapport de cheminement
 | Adobe Mobile Services | Rapport **[!UICONTROL Afficher les états]**. Ce rapport est basé sur les chemins que les utilisateurs prennent dans votre application. Un exemple de chemin est **[!UICONTROL Accueil]** > **[!UICONTROL Paramètres]** > **[!UICONTROL Flux]**. |
 | Adobe Analytics | Vous pouvez consulter les états sur les différents affichages des Pages : rapport **[!UICONTROL Pages]**, rapport **[!UICONTROL Pages vues]** et rapport **[!UICONTROL Chemin]**. |
 | Analyses ad hoc | Vous pouvez consulter les états sur les différents affichages des Pages au moyen de la dimension **[!UICONTROL Page]**, de la mesure **[!UICONTROL Pages vues]** et des rapports **[!UICONTROL Chemin]**. |
-
-
