@@ -1,20 +1,20 @@
 ---
-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
+description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
+seo-description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 seo-title: Méthodes Analytics
 solution: Experience Cloud,Analytics
 title: Méthodes Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
+exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '744'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes Analytics {#analytics-methods}
 
@@ -66,7 +66,7 @@ Effectue le suivi d’une action dans votre application.
 * **getTrackingIdentifier**
 envoie l’identifiant visiteur automatiquement généré pour Analytics.
 
-   Il s’agit d’un identifiant de visiteur unique spécifique à l’application, qui est généré au lancement initial et qui est stocké et utilisé à partir de ce moment. L’identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un ID de visiteur unique spécifique à l’application, qui est généré au lancement initial et qui est stocké et utilisé à partir de ce moment. L’identifiant est conservé entre les mises à niveau de l’application et supprimé lorsque l’application est désinstallée.
 
    * Voici la syntaxe de cette méthode :
 
