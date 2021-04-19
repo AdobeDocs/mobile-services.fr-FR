@@ -5,16 +5,16 @@ seo-description: Ces informations vous aideront à mettre en œuvre la biblioth�
 seo-title: Mise en œuvre principale et cycle de vie
 solution: Experience Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
+exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '564'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre principale et cycle de vie {#core-implementation-and-lifecycle}
 
@@ -155,4 +155,3 @@ Exécutez les tâches ci-après :
 
 * [Suivi des états de l’application](/help/android/analytics-main/states.md)
 * [Suivi des actions de l’application](/help/android/analytics-main/actions.md)
-
