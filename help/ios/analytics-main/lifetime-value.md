@@ -4,16 +4,16 @@ seo-description: La valeur de durée de vie vous permet de mesurer et de cibler 
 seo-title: Valeur de durée de vie visiteur
 solution: Experience Cloud,Analytics
 title: Valeur de durée de vie visiteur
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
+exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
-
 
 # Valeur de durée de vie visiteur {#visitor-lifetime-value}
 
@@ -51,4 +51,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 Les valeurs des données contextuelles doivent être mises en correspondance avec des variables personnalisées :
 
 ![](assets/map-variable-context-ltv.png)
-
