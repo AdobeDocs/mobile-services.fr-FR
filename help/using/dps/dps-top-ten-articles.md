@@ -5,16 +5,16 @@ seo-description: Le rapport sur les 10 premiers articles offre une visualisatio
 seo-title: 10 premiers articles
 solution: Experience Cloud,Analytics
 title: 10 premiers articles
-topic: Metrics
+topic-fix: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
+exl-id: 93b3d0aa-83a3-4ee8-bc7f-fa30736a7749
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '138'
 ht-degree: 100%
 
 ---
-
 
 # Rapport sur les 10 premiers articles {#top-articles}
 
