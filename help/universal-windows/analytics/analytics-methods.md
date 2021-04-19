@@ -4,16 +4,16 @@ seo-description: Informations destinées à vous aider à utiliser le SDK de pla
 seo-title: Méthodes Analytics
 solution: Experience Cloud,Analytics
 title: Méthodes Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
+exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 57%
 
 ---
-
 
 # Méthodes Analytics {#analytics-methods}
 
@@ -25,12 +25,12 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 >[!TIP]
 >
->Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
 
 * **TrackState (winJS: trackState)**
 
    Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
-If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+Si `state` est vide, il s’affiche sous la forme &quot;nom d’application version d’application (compilation)&quot; dans les rapports. Si cette valeur apparaît dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
 
    >[!TIP]
    >
