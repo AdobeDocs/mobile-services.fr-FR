@@ -1,20 +1,20 @@
 ---
-description: Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth basse énergie.
+description: Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth basse énergie (Bluetooth Low Energy).
 keywords: android;library;mobile;sdk
-seo-description: Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth basse énergie.
+seo-description: Le suivi des balises permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth basse énergie (Bluetooth Low Energy).
 seo-title: Suivi des balises
 solution: Experience Cloud,Analytics
 title: Suivi des balises
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
+exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des balises {#beacon-tracking}
 
@@ -83,4 +83,3 @@ Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 Les valeurs des données contextuelles doivent être mises en correspondance avec des variables personnalisées dans Adobe Mobile Services :
 
 ![](assets/map-variable-context-ltv.png)
-
