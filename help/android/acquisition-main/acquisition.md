@@ -5,16 +5,16 @@ seo-description: Il est possible de générer des liens d’acquisition avec des
 seo-title: Acquisition des applications mobiles
 solution: Experience Cloud,Analytics
 title: Acquisition des applications mobiles
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
+exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 100%
 
 ---
-
 
 # Acquisition des applications mobiles {#mobile-app-acquisition}
 
