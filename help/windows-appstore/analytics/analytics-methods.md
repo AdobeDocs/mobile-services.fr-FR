@@ -4,16 +4,16 @@ seo-description: Informations relatives à l’utilisation du SDK Windows 8.1 Un
 seo-title: Méthodes Analytics
 solution: Experience Cloud,Analytics
 title: Méthodes Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
+exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 52%
 
 ---
-
 
 # Méthodes Analytics {#analytics-methods}
 
@@ -25,11 +25,11 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 >[!TIP]
 >
->Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
 
 * **TrackState (winJS: trackState)**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si `state` est vide, il s’affiche sous la forme &quot;nom d’application version d’application (compilation)&quot; dans les rapports. Si cette valeur apparaît dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
 
    >[!TIP]
    >
@@ -141,7 +141,7 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 * **TrackTimed &#x200B; ActionUpdate (winJS : trackTimed &#x200B; ActionUpdate)**
 
-   Transmet `contextData` afin de mettre à jour les données contextuelles associées à l’`action` donnée. The `data` passed is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
+   Transmet `contextData` afin de mettre à jour les données contextuelles associées à l’`action` donnée. Le `data` transmis est ajouté aux données existantes pour l&#39;action donnée et remplace les données si la même clé est déjà définie pour `action`.
 
    >[!TIP]
    >
