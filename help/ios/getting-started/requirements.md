@@ -4,16 +4,16 @@ seo-description: Suivez les étapes ci-après pour configurer une suite de rappo
 seo-title: Avant de commencer
 solution: Experience Cloud,Analytics
 title: Avant de commencer
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
 ---
-
 
 # Avant de commencer {#before-you-start}
 
@@ -101,4 +101,3 @@ Pour télécharger le SDK mobile :
 >[!TIP]
 >
 >Un fichier de configuration correspondant à votre application est automatiquement inclus dans le téléchargement du SDK : ainsi, vous n’avez pas besoin de télécharger ce fichier séparément. Néanmoins, si vous avez déjà téléchargé le SDK et que vous souhaitez obtenir les paramètres mis à jour, téléchargez de nouveau le fichier de configuration.
-
