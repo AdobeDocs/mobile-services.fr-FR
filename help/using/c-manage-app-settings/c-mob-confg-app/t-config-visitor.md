@@ -1,20 +1,20 @@
 ---
 description: Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres d’application.
 keywords: mobile
-seo-description: Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres d’application.
+seo-description: Lorsque vous créez une application ou modifiez une application existante, vous pouvez configurer les options du service d’identification d’Adobe Experience Platform sur la page Gérer les paramètres de l’application.
 seo-title: Configuration des options du service d’identification du SDK
 solution: Experience Cloud,Analytics
 title: Configuration des options du service d’identification du SDK
-topic: Metrics
+topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
+exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # Configuration des options du service d’identification du SDK {#configure-sdk-id-service-options}
 
