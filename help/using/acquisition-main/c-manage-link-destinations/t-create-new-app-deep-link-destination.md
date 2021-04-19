@@ -5,16 +5,16 @@ seo-description: Vous pouvez créer une nouvelle destination de lien qui redirig
 seo-title: Création d’une destination de lien
 solution: Experience Cloud,Analytics
 title: Création d’une destination de lien
-topic: Metrics
+topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
+exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 100%
 
 ---
-
 
 # Créer une destination de lien {#create-new-link-destination}
 
