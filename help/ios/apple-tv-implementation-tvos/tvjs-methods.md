@@ -4,16 +4,16 @@ seo-description: Cette section répertorie les méthodes TVJS fournies par la bi
 seo-title: Méthodes TVJS
 solution: Experience Cloud,Analytics
 title: Méthodes TVJS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
+exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes TVJS {#tvjs-methods}
 
@@ -427,7 +427,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    Renvoie l’identifiant visiteur généré automatiquement.
 
-   Il s’agit d’un identifiant de visiteur unique propre à l’application, généré par les serveurs d’Adobe. Si les serveurs d’Adobe ne peuvent pas être atteints au moment de la génération, l’identifiant est généré à l’aide du CFUUID d’Apple. La valeur est générée au lancement initial et stockée et utilisée à partir de ce point. Cet identifiant est conservé entre les mises à niveau de l’application, est enregistré et restauré pendant le processus de sauvegarde de l’application standard et est supprimé lorsque l’application est désinstallée.
+   Il s’agit d’un ID de visiteur unique propre à l’application, généré par les serveurs d’Adobe. Si les serveurs d’Adobe ne peuvent pas être atteints au moment de la génération, l’identifiant est généré à l’aide du CFUUID d’Apple. La valeur est générée au lancement initial et stockée et utilisée à partir de ce point. Cet identifiant est conservé entre les mises à niveau de l’application, est enregistré et restauré pendant le processus de sauvegarde de l’application standard et est supprimé lorsque l’application est désinstallée.
 
    >[!TIP]
    >
