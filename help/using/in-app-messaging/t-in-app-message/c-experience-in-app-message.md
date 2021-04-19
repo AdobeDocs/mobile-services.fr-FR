@@ -5,16 +5,16 @@ seo-description: Configurez les options pour les messages in-app, y compris le t
 seo-title: 'Expérience : message in-app'
 solution: Experience Cloud,Analytics
 title: 'Expérience : message in-app'
-topic: Metrics
+topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
+exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '687'
 ht-degree: 100%
 
 ---
-
 
 # Experience : message in-app {#experience-in-app-message}
 
@@ -94,7 +94,7 @@ Sélectionnez le type de message pour votre campagne de messages in-app :
 
       * `{userId}`, qui est remplacé par l’identifiant de l’utilisateur ou reste vide si aucun identifiant n’est défini.
       * `{trackingId}`, qui est remplacé par l’aide (correspond au cookie *s_vi*).
-      * `{messageId}`, qui est remplacé par l’identifiant unique du message in-app.
+      * `{messageId}`, qui est remplacé par l’ID unique du message in-app.
       * `{lifetimeValue}`, qui est remplacé par la valeur de durée de vie ou 0 s’il n’existe aucune valeur de durée de vie.
 
       Exemple de suivi de l’identifiant utilisateur : `https://www.mysite.com?uid={userId}`.
