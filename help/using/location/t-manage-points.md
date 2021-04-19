@@ -5,16 +5,16 @@ seo-description: Vous pouvez créer et gérer des points ciblés, qui vous perme
 seo-title: Gestion des points ciblés
 solution: Experience Cloud,Analytics
 title: Gestion des points ciblés
-topic: Metrics
+topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
+exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 100%
 
 ---
-
 
 # Gestion des points ciblés {#manage-points-of-interest}
 
