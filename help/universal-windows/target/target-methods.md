@@ -4,16 +4,16 @@ seo-description: Liste des méthodes de Cible fournies par la bibliothèque de p
 seo-title: Méthodes Target
 solution: Experience Cloud,Analytics
 title: Méthodes Target
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
+exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
 
 ---
-
 
 # Méthodes Target {#target-methods}
 
@@ -21,11 +21,11 @@ Liste des méthodes de Cible fournies par la bibliothèque de plateformes Window
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager.
 
-[Les mesures](/help/universal-windows/metrics.md) de cycle de vie sont envoyées en tant que paramètres à chaque chargement de mbox.
+[Les ](/help/universal-windows/metrics.md) mesures de cycle de vie sont envoyées en tant que paramètres à chaque chargement de mbox.
 
 >[!TIP]
 >
->Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
 
 ## Référence de classe : TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
+   Envoie `request` à votre serveur de Cibles configuré et renvoie la valeur de chaîne de l&#39;offre générée dans un bloc `callback`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS : createOrder &#x200B; ConfirmRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
