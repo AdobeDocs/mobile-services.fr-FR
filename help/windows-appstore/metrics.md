@@ -5,22 +5,22 @@ seo-description: Liste les mesures et dimensions qui peuvent être mesurées aut
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
+exl-id: a1e4eeca-8b8f-47ca-a489-acc338238c42
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 63%
 
 ---
-
 
 # Mesures de cycle de vie {#lifecycle-metrics}
 
 Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 
-Pour plus d’informations, voir [Résolution des problèmes liés aux données](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html)du cycle de vie.
+Pour plus d’informations, voir [Dépannage des données de cycle de vie](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -34,14 +34,14 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    Déclenchée lors de la première exécution après l’installation ou la réinstallation.
 
-   * Analytics context data/Target parameter: `a.InstallEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.InstallEvent`
    * Signal d’Audience Manager : `c_a_InstallEvent`
 
 * **Mises à niveau**
 
    Déclenché lors de la première exécution après une mise à niveau ou lorsque le numéro de version change.
 
-   * Analytics context data/Target parameter: `a.UpgradeEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.UpgradeEvent`
    * Signal d’Audience Manager : `c_a_UpgradeEvent`
 
 * **Utilisateurs actifs/jour**
@@ -52,7 +52,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >
    >Cette mesure n’est pas enregistrée automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
-   * Analytics context data/Target parameter: `a.DailyEngUserEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.DailyEngUserEvent`
    * Signal d’Audience Manager : `c_a_DailyEngUserEvent`
 
 * **Utilisateurs actifs par mois**
@@ -63,28 +63,28 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >
    >Cette mesure n’est pas enregistrée automatiquement dans une mesure Analytics. Pour capturer cette mesure, vous devez créer une règle de traitement définissant un événement personnalisé.
 
-   * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.MonthlyEngUserEvent`
    * Signal d’Audience Manager : `c_a_MonthlyEngUserEvent`
 
 * **Lancements**
 
    Déclenché à chaque exécution, y compris les blocages et les installations. Également déclenché à la mise en premier plan de l’application lorsque le délai d’expiration de la session de cycle de vie a été dépassé.
 
-   * Analytics context data/Target parameter: `a.LaunchEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.LaunchEvent`
    * Signal d’Audience Manager : `c_a_LaunchEvent`
 
 * **Blocages**
 
    Déclenché lorsque l’application n’est pas mise en arrière-plan avant sa fermeture. L’événement est envoyé au démarrage de l’application après son blocage. La création de rapports de blocage d’Adobe Mobile n’implémente pas un gestionnaire d’exceptions non interceptées global.
 
-   * Analytics context data/Target parameter: `a.CrashEvent`
+   * Paramètre de Cible/données contextuelles Analytics : `a.CrashEvent`
    * Signal d’Audience Manager : `c_a_CrashEvent`
 
 * **Durée de la session précédente**
 
    Mesure la durée en secondes d’une session précédente en fonction de la durée pendant laquelle l’application est restée ouverte et en premier plan.
 
-   * Analytics context data/Target parameter: `a.PrevSessionLength`
+   * Paramètre de Cible/données contextuelles Analytics : `a.PrevSessionLength`
    * Signal d’Audience Manager : `c_a_PrevSessionLength`
 
 ### Dimensions
@@ -93,56 +93,56 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
    Date du premier lancement après installation. Le format de date est `MM/DD/YYYY`.
 
-   * Analytics context data/Target: `a.InstallDate`
+   * Cible/données contextuelles Analytics : `a.InstallDate`
    * Audience Manager : `c_a_InstallDate`
 
 * **ID d’application**
 
    Stocke le nom et la version de l’application au format suivant `[AppName] [BundleVersion]`. Exemple de ce format : `myapp 1.1`.
 
-   * Analytics context data/Target: `a.AppID`
+   * Cible/données contextuelles Analytics : `a.AppID`
    * Audience Manager : `c_a_AppID`
 
 * **Numéro de lancement**
 
    Nombre de fois où l’application a été lancée ou mise en premier plan.
 
-   * Analytics context data/Target: `a.Launches`
+   * Cible/données contextuelles Analytics : `a.Launches`
    * Audience Manager : `c_a_Launches`
 
 * **Nombre de jours depuis la première utilisation**
 
    Nombre de jours depuis la première exécution.
 
-   * Analytics context data/Target: `a.DaysSinceFirstUse`
+   * Cible/données contextuelles Analytics : `a.DaysSinceFirstUse`
    * Audience Manager : `c_a_DaysSinceFirstUse`
 
 * **Nombre de jours depuis la dernière utilisation**
 
    Nombre de jours depuis la dernière utilisation.
 
-   * Analytics context data/Target: `a.DaysSinceLastUse`
+   * Cible/données contextuelles Analytics : `a.DaysSinceLastUse`
    * Audience Manager : `c_a_DaysSinceLastUse`
 
 * **Heure du jour**
 
    Mesure l’heure à laquelle l’application a été lancée. Cette mesure utilise le format numérique de 24 heures et est utilisée pour le découpage temporel afin de déterminer les pics horaires d’utilisation.
 
-   * Analytics context data/Target: `a.HourOfDay`
+   * Cible/données contextuelles Analytics : `a.HourOfDay`
    * Audience Manager : `c_a_HourOfDay`
 
 * **Jour de la semaine**
 
    Numéro du jour de la semaine où l’application a été lancée.
 
-   * Analytics context data/Target: `a.DayOfWeek`
+   * Cible/données contextuelles Analytics : `a.DayOfWeek`
    * Audience Manager : `c_a_DayOfWeek`
 
 * **Version du système d’exploitation**
 
    La version du système d’exploitation.
 
-   * Analytics context data/Target: `a.OSVersion`
+   * Cible/données contextuelles Analytics : `a.OSVersion`
    * Audience Manager : `c_a_OSVersion`
 
 * **Nombre de jours depuis la dernière mise à niveau**
@@ -153,7 +153,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >
    >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
-   * Analytics context data/Target: `a.DaysSinceLastUpgrade`
+   * Cible/données contextuelles Analytics : `a.DaysSinceLastUpgrade`
    * Audience Manager : `c_a_DaysSinceLastUpgrade`
 
 * **Lancements depuis la dernière mise à niveau**
@@ -164,14 +164,14 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >
    >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
-   * Analytics context data/Target: `a.LaunchesSinceUpgrade`
+   * Cible/données contextuelles Analytics : `a.LaunchesSinceUpgrade`
    * Audience Manager : `c_a_LaunchesSinceUpgrade`
 
 * **Nom de l’appareil**
 
    Stocke le nom de l’appareil.
 
-   * Analytics context data/Target: `a.DeviceName`
+   * Cible/données contextuelles Analytics : `a.DeviceName`
    * Audience Manager : `c_a_DeviceName`
 
 * **Nom de l’opérateur**
@@ -182,14 +182,14 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
    >
    >Cette mesure n’est pas enregistrée automatiquement dans une variable Analytics. Pour générer des rapports, vous devez créer une règle de traitement permettant de copier cette valeur dans une variable Analytics.
 
-   * Analytics context data/Target: `a.CarrierName`
+   * Cible/données contextuelles Analytics : `a.CarrierName`
    * Audience Manager : `c_a_CarrierName`
 
 * **Résolution**
 
    Largeur x Hauteur en pixels.
 
-   * Analytics context data/Target: `a.Resolution`
+   * Cible/données contextuelles Analytics : `a.Resolution`
    * Audience Manager : `c_a_Resolution`
 
 
@@ -203,22 +203,22 @@ Les mesures et dimensions suivantes sont capturées dans des variables de soluti
 
    Renseigné par les méthodes `trackTimedAction`.
 
-   * Analytics context data/Target parameter: `a.action.time.total`
-   * Audience Manager trait: `c_a_action_time_total`
+   * Paramètre de Cible/données contextuelles Analytics : `a.action.time.total`
+   * Caractéristique de l&#39;Audience Manager : `c_a_action_time_total`
 
 * **Durée de l’action dans l’application**
 
    Renseigné par les méthodes `trackTimedAction`.
 
-   * Analytics context data/Target parameter: `a.action.time.inapp`
-   * Audience Manager trait: `c_a_action_time_inapp`
+   * Paramètre de Cible/données contextuelles Analytics : `a.action.time.inapp`
+   * Caractéristique de l&#39;Audience Manager : `c_a_action_time_inapp`
 
 * **Valeur de durée de vie (événement)**
 
    Renseigné par les méthodes `trackLifetimeValue`.
 
-   * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Paramètre de Cible/données contextuelles Analytics : `a.ltv.amount`
+   * Caractéristique de l&#39;Audience Manager : `c_a_ltv_amount`
 
 ## Dimensions
 
@@ -266,21 +266,21 @@ Les mesures et dimensions suivantes sont capturées dans des variables de soluti
 
 * **Nom du point ciblé**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
 
-   * Analytics context data/Target parameter: `a.loc.poi`
-   * Audience Manager trait: `c_a_loc_poi`
+   * Paramètre de Cible/données contextuelles Analytics : `a.loc.poi`
+   * Caractéristique de l&#39;Audience Manager : `c_a_loc_poi`
 
 * **Distance jusqu’au centre du point ciblé**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
 
-   * Analytics context data/Target parameter: `a.loc.dist`
-   * Audience Manager trait: `c_a_loc_dist`
+   * Paramètre de Cible/données contextuelles Analytics : `a.loc.dist`
+   * Caractéristique de l&#39;Audience Manager : `c_a_loc_dist`
 
 * **Valeur de durée de vie (variable de conversion)**
 
    Renseigné par les méthodes `trackLifetimeValue`.
 
-   * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Paramètre de Cible/données contextuelles Analytics : `a.ltv.amount`
+   * Caractéristique de l&#39;Audience Manager : `c_a_ltv_amount`
