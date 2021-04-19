@@ -1,20 +1,20 @@
 ---
 description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site web.
 keywords: mobile
-seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site web.
+seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
 seo-title: Création ou modification de liens marketing
 solution: Experience Cloud,Analytics
 title: Création ou modification de liens marketing
-topic: Metrics
+topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
+exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '634'
 ht-degree: 100%
 
 ---
-
 
 # Création ou modification de liens marketing {#create-or-edit-marketing-links}
 
