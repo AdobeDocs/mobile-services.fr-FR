@@ -5,16 +5,16 @@ seo-description: Consultez ces informations lorsque vous utilisez le SDK Androi
 seo-title: Présentation d’Experience Cloud
 solution: Experience Cloud,Analytics
 title: Présentation d’Experience Cloud
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: dbf6e019-8707-42e7-97b8-e18a8a7d5e2c
+exl-id: 660187ab-c744-4aef-aea1-ede61d08897c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
-
 
 # Présentation d’Experience Cloud {#experience-cloud}
 
@@ -28,4 +28,3 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 * Pour commencer, accédez à Adobe Experience Platform Launch.
 * Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
