@@ -4,16 +4,16 @@ seo-description: Liste des méthodes d’Audience Manager fournies par la biblio
 seo-title: Méthodes Audience Manager
 solution: Experience Cloud,Analytics
 title: Méthodes Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
 
 ---
-
 
 # Méthodes Audience Manager {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ Si le gestionnaire d’audiences est configuré dans votre fichier JSON, un sign
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Renvoie le dernier profil du visiteur obtenu. Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   Renvoie le dernier profil du visiteur obtenu. Renvoie `null` si aucun signal n&#39;a encore été envoyé. Le profil du visiteur est enregistré dans `SharedPreferences` pour un accès facile à plusieurs lancements de votre application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -95,7 +95,7 @@ Si le gestionnaire d’audiences est configuré dans votre fichier JSON, un sign
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData (winJS: signalWithData)**
+* **SignalWithData (winJS : signalWithData)**
 
    Envoie à l’Audience Manager un signal avec des caractéristiques et obtient les segments correspondants renvoyés dans un rappel de bloc.
 
@@ -115,4 +115,3 @@ Si le gestionnaire d’audiences est configuré dans votre fichier JSON, un sign
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-
