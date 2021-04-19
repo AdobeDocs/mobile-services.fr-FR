@@ -5,16 +5,16 @@ seo-description: Les rapports d’utilisation affichent la durée de session moy
 seo-title: Rapports
 solution: Experience Cloud,Analytics
 title: Rapports
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
+exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '174'
 ht-degree: 100%
 
 ---
-
 
 # Rapports {#reports}
 
