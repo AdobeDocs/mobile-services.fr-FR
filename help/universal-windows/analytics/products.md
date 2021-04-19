@@ -4,22 +4,22 @@ seo-description: Impossible de définir la variable products à l'aide de règle
 seo-title: Variable products
 solution: Experience Cloud,Analytics
 title: Variable products
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
+exl-id: 0575236c-9858-4bf9-a2ce-6e2667d58ddd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 7%
 
 ---
 
-
 # Variable products {#products-variable}
 
 Impossible de définir la variable products à l&#39;aide de règles de traitement. Dans le SDK mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits directement sur l’appel au serveur.
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products` variable:
+Pour définir la variable *`products`*, définissez une clé de données contextuelles sur `"&&products"`, puis définissez la valeur à l’aide de la syntaxe définie pour la variable *`products` :
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -45,15 +45,15 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *`products`* is set directly on the image request, and the other variables are set as context data. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide de règles de traitement :
+*`products`* est défini directement sur la demande d’image et les autres variables sont définies en tant que données contextuelles. Toutes les variables de données contextuelles doivent être mises en correspondance à l’aide de règles de traitement :
 
 ![](assets/products-procrules.png)
 
-Il n’est pas nécessaire de mapper la *`products`* variable à l’aide de règles de traitement, car elle est directement définie sur la demande d’image par le SDK.
+Il n’est pas nécessaire de mapper la variable *`products`* à l’aide de règles de traitement, car elle est directement définie sur la demande d’image par le SDK.
 
 ## Variable products avec des eVars de marchandisage et des événements spécifiques à un produit {#section_685D53AD3D064F9A8E225F995A9BA545}
 
-An example of the *`products`* variable with Merchandising eVars and product-specific events.
+Exemple de la variable *`products`* avec des eVars de marchandisage et des événements spécifiques au produit.
 
 ```
 //create a context data dictionary 
@@ -76,5 +76,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Si vous déclenchez un événement spécifique au produit à l’aide de la *`&&products`* variable, vous devez également définir ce événement dans la *`&&events`* variable, sinon le événement est filtré pendant le traitement.
-
+>Si vous déclenchez un événement spécifique au produit à l&#39;aide de la variable *`&&products`*, vous devez également définir ce événement dans la variable *`&&events`*, sinon le événement est filtré pendant le traitement.
