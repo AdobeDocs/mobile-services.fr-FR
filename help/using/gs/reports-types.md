@@ -5,16 +5,16 @@ seo-description: Lorsque vous personnalisez des rapports, la grande flexibilité
 seo-title: Types de rapports
 solution: Experience Cloud,Analytics
 title: Types de rapports
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
-
 
 # Types de rapports {#report-types}
 
@@ -62,7 +62,7 @@ Les rapports de classement indiquent la fréquence à laquelle les 50 première
 
 ![](assets/ranked.png)
 
-## Rapport radial  {#section_17A9842039174DE094A6B1E9837E35BB}
+## Rapport radial   {#section_17A9842039174DE094A6B1E9837E35BB}
 
 Les rapports radiaux fournissent, par exemple, le rapport de base avec les ventilations. La visualisation utilise la hauteur pour afficher la mesure et les différences de performances entre les mesures. Chaque cercle concentrique représente un segment ciblé dans la catégorie de ce cercle. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
@@ -85,7 +85,7 @@ Un rapport de cheminement est basé sur l’analyse des chemins d’accès et af
 
 Chaque nœud a la forme d’une boîte et représente un état dans les chemins d’accès des utilisateurs par le biais d’une application. Par exemple, dans l’illustration ci-dessus, le nœud supérieur représente le nombre d’utilisateurs qui ont lancé l’application et sélectionné une photo dans la galerie.
 
-### Rapport Entonnoir  {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
+### Rapport Entonnoir   {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
 Les rapports Entonnoir vous permettent d’identifier où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport Entonnoir pour comparer les actions de différents segments.
 
