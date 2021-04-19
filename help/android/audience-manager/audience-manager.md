@@ -5,16 +5,16 @@ seo-description: Ces informations vous permettent d’envoyer des signaux et de 
 seo-title: Présentation d’Audience Manager
 solution: Experience Cloud,Analytics
 title: Présentation d’Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
+exl-id: b6cbe410-3ee4-44d4-a4e6-74291f45be81
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '143'
 ht-degree: 100%
 
 ---
-
 
 # Présentation d’Audience Manager {#audience-manager}
 
