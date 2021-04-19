@@ -4,16 +4,16 @@ seo-description: L’extension iOS permet de collecter les données d’utilisat
 seo-title: Mise en œuvre de l’extension iOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
+exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre de l’extension iOS {#ios-extension-implementation}
 
@@ -48,6 +48,7 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 >
 >* Une cible pour contenir l’application.
 >* Une cible pour l’extension.
+
 >
 
 
@@ -114,4 +115,3 @@ Prenez note des informations suivantes :
 * Si l’application contenante n’est jamais lancée, les accès provenant de l’extension sont ignorés.
 * Le numéro de version et le numéro de build doivent être identiques entre votre application contenante et l’application de l’extension.
 * Aucun appel de cycle de vie n’est déclenché sur les applications de l’extension iOS.
-
