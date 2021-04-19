@@ -5,22 +5,22 @@ seo-description: Liste les mesures et dimensions qui peuvent être mesurées aut
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
+exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 83%
 
 ---
-
 
 # Mesures de cycle de vie {#lifecycle-metrics}
 
 Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 
-Pour plus d’informations, voir [Résolution des problèmes liés aux données](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html)du cycle de vie.
+Pour plus d’informations, voir [Dépannage des données de cycle de vie](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
 ## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -267,21 +267,21 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Nom du point ciblé**
 
-   Populated by `trackLocation` methods when device is in a defined POI.
+   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.poi`
-   * Audience Manager trait: `c_a_loc_poi`
+   * Caractéristique de l&#39;Audience Manager : `c_a_loc_poi`
 
 * **Distance jusqu’au centre du point ciblé**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.dist`
-   * Audience Manager trait: `c_a_loc_dist`
+   * Caractéristique de l&#39;Audience Manager : `c_a_loc_dist`
 
 * **Valeur de durée de vie (variable de conversion)**
 
    Renseigné par les méthodes `trackLifetimeValue`.
 
    * Données contextuelles Analytics/Paramètre Target : `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Caractéristique de l&#39;Audience Manager : `c_a_ltv_amount`
