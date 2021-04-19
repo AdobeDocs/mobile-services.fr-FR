@@ -4,16 +4,16 @@ seo-description: Ces informations vous permettent d’utiliser la messagerie in-
 seo-title: Messagerie in-app
 solution: Experience Cloud,Analytics
 title: Messagerie in-app
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
+exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 
 ---
-
 
 # Messagerie in-app {#in-app-messaging}
 
@@ -118,4 +118,3 @@ Le nom du fichier d’image de secours est spécifié lors de la configuration d
 >[!IMPORTANT]
 >
 >Vous devez vous assurer que la ressource spécifiée est disponible.
-
