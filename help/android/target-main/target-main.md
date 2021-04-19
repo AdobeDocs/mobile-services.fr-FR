@@ -5,16 +5,16 @@ seo-description: Ces informations vous aideront à fournir un contenu ciblé dan
 seo-title: Présentation de Target
 solution: Experience Cloud,Analytics
 title: Présentation de Target
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3501b76d-f83f-45eb-b56d-39e64717772e
+exl-id: 6b75528c-b808-440e-8517-3dcea6204af8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
-
 
 # Présentation de Target {#target}
 
