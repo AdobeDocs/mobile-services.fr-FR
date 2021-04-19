@@ -4,20 +4,20 @@ seo-description: Informations relatives à l’utilisation du fichier de configu
 seo-title: Fichier de configuration ADBMobileConfig.json
 solution: Experience Cloud,Analytics
 title: Fichier de configuration ADBMobileConfig.json
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
+exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 47%
 
 ---
 
+# `ADBMobileConfig.json` fichier de configuration  {#adbmobileconfig-json-config}
 
-# `ADBMobileConfig.json` fichier de configuration {#adbmobileconfig-json-config}
-
-Informations destinées à vous aider à utiliser le fichier de `ADBMobile.json` configuration.
+Informations destinées à vous aider à utiliser le fichier de configuration `ADBMobile.json`.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes de configuration comportent le préfixe &quot;Config&quot;.
 
@@ -37,7 +37,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **server**
 
-   (Requis par Analytics et la gestion des Audiences). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la `ssl` variable.
+   (Requis par Analytics et la gestion des Audiences). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
 
    Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
@@ -55,7 +55,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   >Si les horodatages sont activés sur votre suite de rapports, votre `offlineEnabled` propriété de configuration *doit* être vraie. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. Si vous rapports actuellement des données AppMeasurement à une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
 
 * **lifecycleTimeout**
 
@@ -98,7 +98,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    Détermine le délai pendant lequel Target attend une réponse.
 
-The following is an example of an `ADBMobileConfig.json` file:
+Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ```js
 { 
@@ -125,4 +125,3 @@ The following is an example of an `ADBMobileConfig.json` file:
  } 
 }
 ```
-
