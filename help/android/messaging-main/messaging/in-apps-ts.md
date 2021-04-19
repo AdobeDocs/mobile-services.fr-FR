@@ -5,16 +5,16 @@ seo-description: Ces informations vous aideront à résoudre les problèmes lié
 seo-title: Dépannage de la messagerie in-app
 solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie in-app
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # Dépannage de la messagerie in-app {#troubleshooting-in-app-messaging}
 
@@ -70,6 +70,4 @@ Les règles de dimensionnement et de placement exactes pour chaque orientation s
 * **Paysage**
    * L’image est mise à l’échelle à 100 % de la hauteur de l’appareil.
    * La largeur est de 75 % de celle du périphérique, avec un fondu sur la droite.
-
    Si vous rencontrez des problèmes avec le modèle plein écran, vous pouvez télécharger et utiliser le modèle HTML personnalisé. Ce modèle offre davantage de flexibilité pour les images et permet un contrôle total du modèle.
-
