@@ -4,16 +4,16 @@ seo-description: Si votre application permet d’ouvrir du contenu web mobile, v
 seo-title: Suivi des visiteurs entre une application et le web mobile
 solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
+exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des visiteurs entre une application et le web mobile {#visitor-tracking-between-an-app-and-mobile-web}
 
@@ -29,7 +29,7 @@ Le SDK iOS génère un ID de visiteur unique lorsqu’une application est instal
 
 ## ID visiteur dans le web mobile
 
-Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID visiteur uniques, ce qui engendre la création d’un ID visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
+Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID de visiteur uniques, ce qui engendre la création d’un ID de visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
 
 Pour utiliser le même ID visiteur dans l’application et le web mobile, et transmettre l’ID visiteur de l’application au web mobile dans l’URL :
 
