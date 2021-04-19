@@ -4,16 +4,16 @@ seo-description: 'null'
 seo-title: Analytics
 solution: Experience Cloud,Analytics
 title: Analytics
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
+exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 21%
 
 ---
-
 
 # Analytics {#analytics}
 
@@ -21,21 +21,21 @@ Après avoir ajouté la bibliothèque à votre projet, vous pouvez effectuer n�
 
 >[!TIP]
 >
->Assurez-vous que vous importez `ADBMobile.h` dans votre classe.
+>Veillez à importer `ADBMobile.h` dans votre classe.
 
 ## Activation des rapports d’applications mobiles dans Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
 Avant d’ajouter du code, demandez à votre administrateur Analytics d’effectuer les opérations suivantes pour activer le suivi du cycle de vie des applications mobiles. Ainsi, votre suite de rapports est prête à capturer les mesures au début du développement.
 
-1. Ouvrez Outils **** d’administration > Suites **[!UICONTROL de]** rapports et sélectionnez votre ou vos suites de rapports mobiles.
+1. Ouvrez **[!UICONTROL Outils d’administration]** > **[!UICONTROL Report Suites]** et sélectionnez vos suites de rapports mobiles.
 
-1. Cliquez sur **[!UICONTROL Modifier les paramètres]** > Gestion **** mobile > Rapports **[!UICONTROL d’application]** mobile.
+1. Cliquez sur **[!UICONTROL Modifier les paramètres]** > **[!UICONTROL Gestion mobile]** > **[!UICONTROL Rapports d&#39;application mobile]**.
 
    ![](assets/mobile-settings.png)
 
-1. Cliquez sur **[!UICONTROL Activer les derniers rapports]** d’application.
+1. Cliquez sur **[!UICONTROL Activer les derniers rapports d’application]**.
 
-   Vous pouvez également cliquer sur **[!UICONTROL Activer le suivi]** des emplacements mobiles ou **[!UICONTROL Activer le Rapports et l’attribution hérités pour les accès]** en arrière-plan.
+   Vous pouvez également cliquer sur **[!UICONTROL Activer le suivi des emplacements mobiles]** ou **[!UICONTROL Activer le Rapports et l’attribution hérités pour les accès en arrière-plan]**.
 
    ![](assets/enable-lifecycle.png)
 
@@ -121,11 +121,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Si `CollectLifecycleData()` est appelé deux fois au cours de la même session, votre application signale un blocage à chaque appel après le premier. Le SDK définit un indicateur lorsque l’application est fermée, qui indique une sortie réussie. Si cet indicateur n&#39;est pas défini, `CollectLifecyleData()` signale un blocage.
+Si `CollectLifecycleData()` est appelé deux fois au cours de la même session, votre application signale un blocage pour chaque appel après le premier. Le SDK définit un indicateur lorsque l’application est fermée, qui indique une sortie réussie. Si cet indicateur n&#39;est pas défini, `CollectLifecyleData()` signale un plantage.
 
 ## Événements, props et eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Si vous avez examiné les méthodes [](/help/universal-windows/c-configuration/methods.md)SDK, vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
+Si vous avez examiné les méthodes [SDK](/help/universal-windows/c-configuration/methods.md), vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
 Les règles de traitement offrent plusieurs avantages :
 
@@ -161,7 +161,7 @@ En outre, nous avons entendu dire que certains d’entre vous nomment des clés 
 "eVar1":"jimbo"
 ```
 
-This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
+Cela peut rendre *légèrement* plus facile lorsque vous effectuez le mappage unique dans les règles de traitement, mais vous perdez la lisibilité pendant le débogage et les futures mises à jour du code peuvent être plus difficiles. Nous vous recommandons plutôt d’utiliser des noms descriptifs pour les clés et les valeurs :
 
 ```js
 "username":"jimbo"
@@ -185,17 +185,17 @@ Les variables de données contextuelles qui définissent les événements incré
 
 ## Variable products {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Pour être défini *`products`* dans le SDK mobile, vous devez utiliser une syntaxe spéciale. Pour plus d’informations, voir Variable [](/help/universal-windows/analytics/products.md)Produits.
+Pour définir *`products`* dans le SDK mobile, vous devez utiliser une syntaxe spéciale. Pour plus d’informations, voir [Variable Products](/help/universal-windows/analytics/products.md).
 
 ## (Facultatif) Activation du suivi hors ligne {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Pour stocker les accès lorsque le périphérique est hors ligne, vous pouvez activer le suivi hors ligne dans le fichier de méthodes [](/help/universal-windows/c-configuration/methods.md) SDK. Soyez attentif aux exigences d’horodatage décrites dans la référence de fichier de configuration avant d’activer le suivi hors ligne.
+Pour stocker les accès lorsque le périphérique est hors ligne, vous pouvez activer le suivi hors ligne dans le fichier [Méthodes SDK](/help/universal-windows/c-configuration/methods.md). Soyez attentif aux exigences d’horodatage décrites dans la référence de fichier de configuration avant d’activer le suivi hors ligne.
 
 ## Géolocalisation et points ciblés {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-La géolocalisation vous permet de mesurer les données d’emplacement (latitude/longitude) et les points d’intérêt prédéfinis. Chaque `TrackLocation` appel envoie :
+La géolocalisation vous permet de mesurer les données d’emplacement (latitude/longitude) et les points d’intérêt prédéfinis. Chaque appel `TrackLocation` envoie :
 
-* Latitude/Longitude et point d’accès (s’il s’agit d’un point d’accès défini dans le fichier de `ADBMobileConfig.json` configuration).
+* Latitude/Longitude, et POI (si elle se trouve dans un POI défini dans le fichier de configuration `ADBMobileConfig.json`).
 
    Elles sont transmises aux variables de solution mobile pour le rapports automatique.
 
@@ -210,7 +210,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Si le point d’accès suivant est défini dans le fichier de `ADBMobileConfig.json` configuration :
+Si le point d’accès suivant est défini dans le fichier de configuration `ADBMobileConfig.json` :
 
 ```js
 "poi" : [ 
@@ -218,9 +218,9 @@ Si le point d’accès suivant est défini dans le fichier de `ADBMobileConfig.j
         ]
 ```
 
-Lorsque l’emplacement du périphérique est déterminé comme se trouvant dans un rayon de 7 000 mètres du point défini, une variable de données `a.loc.poi` contextuelles avec la valeur `San Francisco` est envoyée avec l’ `TrackLocation` accès. An `a.loc.dist` context variable is sent with the distance in meters from the defined coordinates.
+Lorsque l&#39;emplacement du périphérique est déterminé comme se trouvant dans un rayon de 7 000 mètres du point défini, une variable de données contextuelles `a.loc.poi` avec la valeur `San Francisco` est envoyée avec l&#39;accès `TrackLocation`. Une variable de contexte `a.loc.dist` est envoyée avec la distance en mètres par rapport aux coordonnées définies.
 
-## Lifetime value {#section_D2C6971545BA4D639FBE07F13EF08895}
+## Valeur de durée de vie {#section_D2C6971545BA4D639FBE07F13EF08895}
 
 La valeur de durée de vie vous permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur. À chaque fois que vous envoyez une valeur avec `TrackLifetimeValueIncrease`, la valeur est ajoutée à la valeur existante. La valeur de durée de vie est stockée sur l’appareil et peut être récupérée à tout moment en appelant `GetLifetimeValue`. Cette procédure peut être utilisée pour stocker des valeurs de durée de vie (achats, vues des publicités, affichages complets de vidéos, partages sur les médias sociaux, chargement de photos, etc.).
 
