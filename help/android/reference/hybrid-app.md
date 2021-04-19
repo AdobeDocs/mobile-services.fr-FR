@@ -4,16 +4,16 @@ seo-description: Si l’application ouvre un contenu de web mobile, assurez-vous
 seo-title: Suivi des visiteurs entre une application et le web mobile
 solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
+exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # Suivi des visiteurs entre une application et le web mobile {#visitor-tracking-between-an-app-and-mobile-web}
 
@@ -29,7 +29,7 @@ Le SDK Android génère un ID de visiteur unique lorsqu’une application est i
 
 ## ID visiteur dans le web mobile
 
-Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID visiteur uniques, ce qui engendre la création d’un ID visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
+Les mises en œuvre type du web mobile utilisent le même `s_code.js` standard d’Analytics ou `AppMeasurement.js` que celui utilisé pour les environnements de bureau. Les bibliothèques JavaScript disposent de leurs propres méthodes de génération d’ID de visiteur uniques, ce qui engendre la création d’un ID de visiteur différent lorsque vous ouvrez le contenu web mobile depuis l’application.
 
 ## Mise en œuvre du suivi des visiteurs entre une application et le web mobile {#section_1755BCCFD42D456EB2319141030FDDFF}
 
@@ -94,4 +94,3 @@ Si ces procédures de dépannage ne résolvent pas vos problèmes, contactez le 
 >[!IMPORTANT]
 >
 >Pour permettre à Adobe de valider la mise en œuvre, vous devez partager un exemple de l’application et le site associé.
-
