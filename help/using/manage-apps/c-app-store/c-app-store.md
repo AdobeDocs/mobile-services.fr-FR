@@ -5,16 +5,16 @@ seo-description: L’intégration du connecteur de données appFigures associe l
 seo-title: Boutique d’applications
 solution: Experience Cloud,Analytics
 title: Boutique d’applications
-topic: Metrics
+topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
+exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
-
 
 # Boutique d’applications {#app-store}
 
