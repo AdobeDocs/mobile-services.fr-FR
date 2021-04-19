@@ -4,16 +4,16 @@ seo-description: Classes et méthodes fournies par la bibliothèque Windows 8.1 
 seo-title: Méthodes SDK
 solution: Experience Cloud,Analytics
 title: Méthodes SDK
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
+exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 50%
 
 ---
-
 
 # Méthodes SDK {#sdk-methods}
 
@@ -21,7 +21,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
 
 >[!TIP]
 >
->Lorsque vous utilisez `winmd` des méthodes de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
 
 * **GetVersion (winJS : getVersion)**
 
@@ -47,7 +47,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      The default value is set in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) file.
+      La valeur par défaut est définie dans le fichier [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -125,7 +125,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau de l’Experience Cloud SDK 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. For new installations on the 4.x SDK, user identifier is `null` until set.
+   >Si votre application est mise à niveau de l’Experience Cloud SDK 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `null` jusqu’à ce qu’il soit défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -197,7 +197,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
 
    >[!TIP]
    >
-   >Appelez cette méthode dans la `onResume()` méthode de chaque Activité de votre application, comme indiqué dans l&#39;exemple suivant. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
+   >Appelez cette méthode dans la méthode `onResume()` de chaque Activité de votre application, comme indiqué dans l&#39;exemple suivant. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
@@ -218,7 +218,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
 
    >[!TIP]
    >
-   >Appelez cette méthode dans les `onPause()` méthodes de chaque Activité de votre application, comme le montre l&#39;exemple. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
+   >Appelez cette méthode dans les méthodes `onPause()` de chaque Activité de votre application, comme indiqué dans l&#39;exemple. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
