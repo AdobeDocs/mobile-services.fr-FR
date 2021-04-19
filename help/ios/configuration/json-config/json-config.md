@@ -4,16 +4,16 @@ seo-description: Ces informations vous aideront à utiliser le fichier de config
 seo-title: Fichier de configuration JSON ADBMobile
 solution: Experience Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
+exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
 ---
-
 
 # Fichier de configuration JSON ADBMobile {#adbmobile-json-config}
 
@@ -464,5 +464,5 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
    Comme les audiences, mais il s’agit ici des actions :
 
    * &quot;triggers&quot;
-   * &quot;matches&quot;
-   * &quot;values&quot;
+   * &quot;correspond&quot;
+   * &quot;valeurs&quot;
