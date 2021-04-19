@@ -4,16 +4,16 @@ seo-description: Les tables suivantes répertorient les mesures et les dimension
 seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
+exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 100%
 
 ---
-
 
 # Mesures de cycle de vie {#lifecycle-metrics}
 
