@@ -5,16 +5,16 @@ seo-description: Vous pouvez utiliser la page Liens marketing pour créer, utili
 seo-title: Gestion des liens marketing
 solution: Experience Cloud,Analytics
 title: Gestion des liens marketing
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # Gestion des liens marketing {#manage-marketing-links}
 
@@ -38,4 +38,3 @@ Depuis la page Liens Marketing, réalisez les tâches suivantes :
    * Pour désarchiver un lien marketing, cliquez sur **[!UICONTROL Afficher l’archive]**, sélectionnez au moins un lien et cliquez sur **[!UICONTROL Désarchiver sélection]**.
 
       Seuls les liens marketing déjà archivés s’affichent sur la page Afficher l’archive.
-
