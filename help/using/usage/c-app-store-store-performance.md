@@ -5,16 +5,16 @@ seo-description: Le rapport Aperçu de la boutique d’applications vous donne u
 seo-title: Rapport Aperçu de la boutique d’applications
 solution: Experience Cloud,Analytics
 title: Rapport Aperçu de la boutique d’applications
-topic: Metrics
+topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
+exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Rapport Aperçu de la boutique d’applications {#app-store-overview-report}
 
@@ -56,7 +56,7 @@ Ce rapport présente le revenu généré par le téléchargement de votre applic
 
 Ce rapport présente le revenu généré par les achats in-app réalisés avec votre application.
 
-## Téléchargements par pays  {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## Téléchargements par pays   {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 Ce rapport présente le nombre de téléchargements de votre application, par pays.
 
@@ -66,7 +66,7 @@ Pour afficher un graphique et un tableau exposant le nombre de téléchargements
 
 ![](assets/downloads_by_country.png)
 
-## Téléchargements par boutique d’applications  {#section_F1CD1A3F0105469D879E4F280CE32484}
+## Téléchargements par boutique d’applications   {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 Ce rapport présente le nombre de téléchargements de votre application, par boutique d’applications.
 
@@ -76,6 +76,6 @@ Pour afficher un graphique et un tableau exposant le nombre de téléchargements
 
 ![](assets/app_store_downloads_detail.png)
 
-## Achats in-app par nom  {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## Achats in-app par nom   {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 Ce rapport présente les achats in-app par nom.
