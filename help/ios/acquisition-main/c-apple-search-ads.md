@@ -4,16 +4,16 @@ seo-description: Le SDK Adobe exploite les API d’attribution de l’applicatio
 seo-title: Publicités Search Ads d’Apple
 solution: Experience Cloud,Analytics
 title: Publicités Search Ads d’Apple
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # Publicités Search Ads d’Apple {#apple-search-ads}
 
@@ -49,7 +49,7 @@ Pour activer votre application pour l’attribution Search Ads, procédez comme 
    De plus, les valeurs suivantes seront mappées à partir du dictionnaire `"iad"` vers nos champs de données contextuelles de l’acquisition par défaut :
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    Ce mappage permet de s’assurer que les valeurs sont disponibles dans nos rapports de données standard.
