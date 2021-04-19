@@ -5,16 +5,16 @@ seo-description: Ces informations vous aident à comprendre et à personnaliser 
 seo-title: Personnalisation des rapports
 solution: Experience Cloud,Analytics
 title: Personnalisation des rapports
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
+exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # Personnalisation des rapports {#customize-reports}
 
@@ -45,4 +45,3 @@ Les informations suivantes décrivent chaque portion du rapport et le rail **[!U
 | 6 | **[!UICONTROL Filtre bascule]** vous permet de créer un filtre couvrant différents rapports. Par exemple, vous pouvez déterminer les performances d’un segment spécifique dans tous les rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement. Pour plus d’informations, voir [Ajout d’un filtre bascule](/help/using/usage/reports-customize/t-sticky-filter.md). |
 | 7 | Le **[!UICONTROL graphique de données]** affiche les informations sous forme de graphique approprié, sur la base des mesures sélectionnées. Les types de graphiques incluent les graphiques en courbes, les graphiques à barres, les graphiques en anneau, etc. |
 | 8 | Le **[!UICONTROL tableau de données]** offre une vue tabulaire des données. Vous pouvez cliquer sur un en-tête de colonne pour trier les données par ordre croissant ou décroissant. |
-
