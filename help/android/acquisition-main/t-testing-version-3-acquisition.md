@@ -5,16 +5,16 @@ seo-description: Ces informations vous expliquent comment rediriger un lien de c
 seo-title: Test d’Acquisition version 3
 solution: Experience Cloud,Analytics
 title: Test d’Acquisition version 3
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
+exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '824'
 ht-degree: 100%
 
 ---
-
 
 # Test de l’acquisition de V3 {#testing-version-acquisition}
 
@@ -49,11 +49,11 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    Vous devez être redirigé vers une page dont l’URL est similaire à l’exemple suivant :
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copiez l’identifiant unique après `utm_content%3D`.
+1. Copiez l’ID unique après `utm_content%3D`.
 
    Dans l’exemple précédent, l’ID est `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
-1. Créez le lien de fin de l’acquisition en utilisant l’identifiant unique de l’étape 3, avec le format suivant :
+1. Créez le lien de fin de l’acquisition en utilisant l’ID unique de l’étape 3, avec le format suivant :
 
    `https://c00.adobe.com/v3/<appid>/end?a_ugid=<unique id>`.
 
@@ -66,7 +66,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    `{"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.`
 
    Si `contextData` n’apparaît pas ou si certaines chaînes sont manquantes, assurez-vous que l’URL d’acquisition adopte le format indiqué dans le document [Création manuelle d’un lien d’acquisition](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
-1. Répétez l’étape 3 pour obtenir un nouvel identifiant unique.
+1. Répétez l’étape 3 pour obtenir un nouvel ID unique.
 1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
@@ -118,7 +118,7 @@ Le tableau suivant contient des informations supplémentaires sur les erreurs po
 
    Avant de tester, mettez à niveau le SDK vers la dernière version.
 
-* Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 12.
+* Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’ID unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 12.
 
    **Installation de l’outil Java**
 
