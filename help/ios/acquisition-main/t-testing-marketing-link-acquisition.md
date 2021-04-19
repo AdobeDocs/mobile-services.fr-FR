@@ -5,16 +5,16 @@ seo-description: Les instructions suivantes expliquent comment gérer une campag
 seo-title: Évaluation de l’acquisition d’un lien marketing
 solution: Experience Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
+exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
-
 
 # Évaluation de l’acquisition d’un lien marketing {#testing-marketing-link-acquisition}
 
@@ -67,7 +67,7 @@ Les instructions suivantes expliquent comment gérer une campagne d’acquisitio
 
    Voici quelques informations sur les erreurs possibles :
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       Une erreur de réseau s’est produite.
 
