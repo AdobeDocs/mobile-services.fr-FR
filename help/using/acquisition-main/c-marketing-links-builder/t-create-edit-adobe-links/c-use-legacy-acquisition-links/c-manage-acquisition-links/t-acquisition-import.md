@@ -5,16 +5,16 @@ seo-description: Importez ou exportez des liens d’acquisition si vous préfér
 seo-title: Importation ou exportation de liens d’acquisition
 solution: Experience Cloud,Analytics
 title: Importation ou exportation de liens d’acquisition
-topic: Metrics
+topic-fix: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
+exl-id: 9be2377e-7f46-44f7-9c5e-1c20c617276d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---
-
 
 # Importation ou exportation de liens d’acquisition {#import-or-export-acquisition-links}
 
@@ -25,4 +25,3 @@ Si vous préférez utiliser les liens à l’aide d’un fichier .csv au lieu de
 
    * Recherchez et sélectionnez le fichier à charger vers Mobile Services.
    * Cliquez sur **[!UICONTROL Exporter]**, puis ouvrez ou enregistrez le fichier.
-
