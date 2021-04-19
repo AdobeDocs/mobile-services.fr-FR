@@ -5,16 +5,16 @@ seo-description: Les instructions suivantes expliquent comment gérer une campag
 seo-title: Évaluation de l’acquisition d’un lien marketing
 solution: Experience Cloud,Analytics
 title: Évaluation de l’acquisition d’un lien marketing
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 100%
 
 ---
-
 
 # Évaluation de l’acquisition d’un lien marketing {#testing-marketing-link-acquisition}
 
@@ -39,11 +39,11 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copiez l’identifiant unique après `utm_content%3D`.
+1. Copiez l’ID unique après `utm_content%3D`.
 
    Dans l’exemple précédent, l’ID est `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
-   Si vous ne parvenez pas à obtenir l’identifiant unique sur l’appareil, exécutez la commande `CURL` suivante sur votre ordinateur pour obtenir l’identifiant unique depuis la chaîne de réponse.
+   Si vous ne parvenez pas à obtenir l’ID unique sur l’appareil, exécutez la commande `CURL` suivante sur votre ordinateur pour obtenir l’identifiant unique depuis la chaîne de réponse.
 
    `curl -A "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T815Y Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36" <Your Marketing Link>`
 
@@ -51,7 +51,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
 
    `curl -A "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T815Y Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36" https://c00.adobe.com/v3/da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d/start?a_dl=573e5bb3248a501360c2890b`
 
-1. Créez le lien de fin de l’acquisition en utilisant l’identifiant unique de l’étape 3, avec le format suivant :
+1. Créez le lien de fin de l’acquisition en utilisant l’ID unique de l’étape 3, avec le format suivant :
 
    `https://c00.adobe.com/v3/<appid>/end?a_ugid=<unique id>`
 
@@ -67,7 +67,7 @@ Chaque fois qu’un test est exécuté, l’application doit avoir été install
    ,"adobeData":{"unique_id":"9a2be52764a8db125c29a8c10f3b1b3d5d8ed915","deeplinkid":"57476c26072932ec6d3a470b"}}.
    ```
 
-1. Répétez l’étape 3 pour obtenir un nouvel identifiant unique.
+1. Répétez l’étape 3 pour obtenir un nouvel ID unique.
 1. Vérifiez que les paramètres suivants du fichier de configuration sont corrects :
 
    | Paramètre | Valeur |
@@ -124,7 +124,7 @@ Gardez à l’esprit les informations suivantes :
 
 * Les accès envoyés depuis l’application peuvent être surveillés à l’aide d’outils de surveillance HTTP afin de vérifier l’attribution de l’acquisition.
 * Pour obtenir plus d’informations sur le mode de diffusion de `INSTALL_REFERRER`, voir [Test de la mesure des campagnes Google Play](https://developers.google.com/analytics/solutions/testing-play-campaigns) dans le guide des développeurs Google.
-* Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’identifiant unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 10.
+* Vous pouvez utiliser l’outil Java `acquisitionTest.jar` fourni pour vous aider à obtenir l’ID unique et le référent d’installation de la diffusion qui, en retour, vous aident à obtenir les informations des étapes 3 à 10.
 
 **Installation de l’outil Java**
 
