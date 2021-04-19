@@ -5,16 +5,16 @@ seo-description: Le rapport Utilisateurs et sessions affiche les mesures relativ
 seo-title: Rapport Utilisateurs et sessions
 solution: Experience Cloud,Analytics
 title: Rapport Utilisateurs et sessions
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
+exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 100%
 
 ---
-
 
 # Rapport Utilisateurs et sessions {#users-and-sessions}
 
