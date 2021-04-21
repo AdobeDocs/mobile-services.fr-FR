@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: Méthodes de configuration ADBMobile.cs
 keywords: Unity
-seo-description: 'null'
-seo-title: Méthodes ADBMobile.cs
 solution: Experience Cloud
 title: Méthodes ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
+exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 70%
 
 ---
-
 
 # Méthodes ADBMobile.cs {#adbmobile-cs-methods}
 
@@ -91,7 +89,7 @@ ht-degree: 70%
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
       Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
-The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
+La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -263,7 +261,7 @@ The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/j
 
    Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
 
-   Si l’état est vide, il s’affiche comme *`app name app version (build)`* dans les rapports. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Si l’état est vide, il s’affiche sous la forme *`app name app version (build)`* dans les rapports. Si cette valeur apparaît dans les rapports, veillez à définir l’état dans chaque appel `TrackState`.
 
    >[!TIP]
    >
