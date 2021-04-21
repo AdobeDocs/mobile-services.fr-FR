@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Démarrage rapide pour les développeurs
+description: Informations sur la mise en oeuvre de la bibliothèque de plateformes Windows universelles.
 solution: Experience Cloud,Analytics
 title: Démarrage rapide pour les développeurs
 topic-fix: Developer and implementation
 uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
 exl-id: 28fc2a96-907e-41fc-a798-3e8d43fc7616
 translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '847'
 ht-degree: 4%
 
 ---
@@ -185,7 +183,7 @@ Pour les applications C Sharp et JavaScript, vous devez activer le débogage du 
 
 ### JavaScript
 
-1. Cliquez avec le bouton droit sur le projet, cliquez sur **[!UICONTROL Propriétés]** > **[!UICONTROL Propriétés de configuration]** > **[!UICONTROL onglet Débogage]**.
+1. Cliquez avec le bouton droit sur le projet, cliquez sur **[!UICONTROL Propriétés]** > **[!UICONTROL Propriétés de configuration]** > **[!UICONTROL Onglet Débogage]**.
 
 1. Remplacez la liste déroulante du type de débogueur par **[!UICONTROL Native Only]**.
 
