@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: Création de projets iOS
 keywords: Unity
-seo-description: 'null'
-seo-title: Création de votre projet
 solution: Experience Cloud
 title: Création de votre projet
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
+exl-id: 9da99392-b34e-4e36-b255-f3787e26015c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 20%
+source-wordcount: '161'
+ht-degree: 18%
 
 ---
-
 
 # Création de votre projet{#building-your-project}
 
@@ -25,7 +23,7 @@ Lorsque vous créez pour iOS, un projet Xcode est créé. Par défaut, les fichi
 
    Assurez-vous qu’il est membre de la build toutes les cibles nécessaires.
 
-1. Dans l’onglet **[!UICONTROL Build Phases]** (Créer les phases) de votre projet, ajoutez un lien vers les bibliothèques suivantes :
+1. Dans l&#39;onglet **[!UICONTROL Build Phases]** de votre projet, ajoutez un lien vers les bibliothèques suivantes :
 
    * `SystemConfiguration.framework`
 (Cette bibliothèque peut déjà être liée.)
@@ -38,7 +36,7 @@ Lorsque vous créez pour iOS, un projet Xcode est créé. Par défaut, les fichi
 
 ## Android
 
-Lorsque vous créez pour Android, le `apk` fichier inclut déjà le `ADBMobileConfig.json` fichier à l’emplacement approprié. Par défaut, le `AndroidManifest.xml` fichier de votre `/Plugins/Android` dossier est également utilisé.
+Lorsque vous créez pour Android, le fichier `apk` inclut déjà le fichier `ADBMobileConfig.json` à l’emplacement approprié. Par défaut, le fichier `AndroidManifest.xml` de votre dossier `/Plugins/Android` est également utilisé.
 
 Si vous devez utiliser votre propre fichier de manifeste personnalisé, les modifications suivantes doivent être ajoutées.
 
