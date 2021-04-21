@@ -48,7 +48,6 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 >
 >* Une cible pour contenir l’application.
 >* Une cible pour l’extension.
-
 >
 
 

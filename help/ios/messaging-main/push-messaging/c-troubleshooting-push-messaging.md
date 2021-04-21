@@ -39,9 +39,8 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
    >Les services Push ne garantissent pas qu’un message sera envoyé. Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
    >
    >* **APNS** : [Qualité du service](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM** : [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM** : [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Comment renouveler mon certificat du service Apple Push ?
