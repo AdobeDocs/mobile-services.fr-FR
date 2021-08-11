@@ -8,11 +8,10 @@ title: 'Audience : définition et configuration de segments d’audience pour l
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +25,7 @@ Lorsqu’un segment d’audience est créé pour les messages push, le segment p
 
 Dans Adobe Mobile Services, il est possible que les professionnels du marketing ne puissent émettre des notifications push que vers une application par plate-forme. S’ils tentent de cibler des segments qui contiennent des utilisateurs provenant de plusieurs applications, un avertissement s’affiche indiquant que le traitement peut entraîner de graves problèmes et que les utilisateurs peuvent être mis sur liste de blocage. Si vous êtes confronté à un dysfonctionnement des messages push, consultez *Résoudre les dysfonctionnements des messages push* dans   [Dépannage de la messagerie push](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)
 
-Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Afin d’utiliser les données Audience Manager dans votre définition de segment, consultez [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
