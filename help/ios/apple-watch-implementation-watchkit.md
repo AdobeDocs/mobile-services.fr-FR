@@ -38,7 +38,6 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >* L’application contenante
 >* L’application WatchKit
 >* L’extension WatchKit
-
 >
 
 
