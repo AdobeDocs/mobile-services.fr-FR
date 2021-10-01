@@ -1,17 +1,14 @@
 ---
 description: La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS Mobile pour récupérer le contenu des offres aussi peu de fois que possible en mettant en cache les réponses du serveur.
-seo-description: La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS Mobile pour récupérer le contenu des offres aussi peu de fois que possible en mettant en cache les réponses du serveur.
-seo-title: Prérécupération du contenu des offres dans iOS
 title: Prérécupération du contenu des offres dans iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
-source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 86%
+source-wordcount: '731'
+ht-degree: 85%
 
 ---
-
 
 # Prérécupération du contenu des offres dans iOS {#prefetch-offer-content-in-ios}
 
@@ -21,7 +18,7 @@ La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS 
 >
 >La fonctionnalité de prérécupération dans les SDK mobiles pour iOS n’est pas prise en charge pour les types d’activité Cible automatique, Allocation automatique et Personnalisation automatisée dans Adobe Target.
 
-Ce processus réduit le temps de chargement, empêche plusieurs appels réseau et permet à Adobe Target d’être averti de la mbox visitée par l’utilisateur de l’application mobile. Tout le contenu sera récupéré et mis en cache lors de l’appel de prérécupération, et ce contenu sera récupéré du cache pour tous les appels futurs qui contiennent du contenu mis en cache pour le nom de mbox spécifié.
+Ce processus réduit le temps de chargement, empêche plusieurs appels réseau et permet à Adobe Target d’être informé de la mbox visitée par l’utilisateur de l’application mobile. Tout le contenu sera récupéré et mis en cache lors de l’appel de prérécupération. Ce contenu sera récupéré du cache pour tous les appels futurs contenant du contenu mis en cache pour le nom de mbox spécifié.
 
 Le contenu de la prérécupération n’est pas conservé d’une exécution à l’autre. Il reste dans le cache tant que l’application est active ou jusqu’à ce que la méthode `clearPrefetchCache()` soit appelée.
 
@@ -179,13 +176,13 @@ Cette classe encapsule le nom de mbox, le contenu par défaut, les paramètres d
 
 * **`mboxParameters`**
 
-   Valeur NSString qui représente le nom de l’emplacement/de la mbox à récupérer.
+   La valeur NSString qui représente le nom de l’emplacement/de la mbox que vous souhaitez récupérer.
 
    * **Type** : NSString*
 
 * **`defaultContent`**
 
-   Contenu par défaut qui sera renvoyé si les serveurs de Cible sont inatteignables.
+   Contenu par défaut qui sera renvoyé si les serveurs Target ne sont pas accessibles.
 
    * **Type** : NSString*
 

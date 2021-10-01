@@ -1,17 +1,14 @@
 ---
 description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
 keywords: mobile
-seo-description: Ces informations vous aideront à résoudre les problèmes liés à la messagerie in-app.
-seo-title: Dépannage de la messagerie in-app
 solution: Experience Cloud,Analytics
 title: Dépannage de la messagerie in-app
 topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '519'
 ht-degree: 100%
 
 ---

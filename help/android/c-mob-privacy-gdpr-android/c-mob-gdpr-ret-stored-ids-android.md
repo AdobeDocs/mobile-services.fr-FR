@@ -1,17 +1,14 @@
 ---
 description: Ces informations permettent de récupérer des identités SDK stockées localement à partir de votre application Android et à l’aide de demandes d’accès aux données en vertu du RGPD.
-seo-description: Ces informations permettent de récupérer des identités SDK stockées localement à partir de votre application Android et à l’aide de demandes d’accès aux données en vertu du RGPD.
-seo-title: Récupération des identifiants stockés
 title: Récupération des identifiants stockés
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+exl-id: 86c990d8-334b-4003-b0ac-d5404cb598e4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 76%
+source-wordcount: '131'
+ht-degree: 72%
 
 ---
-
 
 # Récupération des identifiants stockés{#retrieving-stored-identifiers}
 
@@ -19,9 +16,9 @@ Ces informations permettent de récupérer des identités SDK stockées localeme
 
 >[!IMPORTANT]
 >
->La méthode `getAllIdentifiersAsync` récupère les identités stockées dans le SDK. You must call this method **before** the user opts-out.
+>La méthode `getAllIdentifiersAsync` récupère les identités stockées dans le SDK. Vous devez appeler cette méthode **avant** que l’utilisateur se désinscrive.
 
-Les identités du SDK (selon le cas) sont stockées localement et renvoyées dans une chaîne JSON, qui peut contenir :
+Les identités du SDK (le cas échéant) sont stockées localement et renvoyées dans une chaîne JSON, qui peut contenir :
 
 * Contexte de l’entreprise - ID d’organisation IMS
 * Identifiants d’utilisateurs
@@ -29,7 +26,7 @@ Les identités du SDK (selon le cas) sont stockées localement et renvoyées dan
 * Codes d’intégration (ADID, Push ID)
 * ID de source de données (DPID, DPUUID)
 * Analytics ID (AVID, AID, VID et RSID associés)
-* Identifiants hérités de cible (TNTID, TNT3rdpartyID)
+* Identifiants hérités de Target (TNTID, TNT3rdpartyID)
 * Audience Manager ID (UUID)
 
 Voici un exemple de la méthode `ADBMobile getAllIdentifiersAsync` sous Android :

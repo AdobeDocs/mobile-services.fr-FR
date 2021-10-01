@@ -1,17 +1,14 @@
 ---
 description: Le rapport Technologie vous permet de visualiser les différents types d’appareils, systèmes d’exploitation, versions de système d’exploitation et opérateurs de téléphonie mobile sur lesquels votre application est utilisée.
 keywords: mobile
-seo-description: Le rapport Technologie vous permet de visualiser les différents types d’appareils, systèmes d’exploitation, versions de système d’exploitation et opérateurs de téléphonie mobile sur lesquels votre application est utilisée.
-seo-title: Rapport Technologie
 solution: Experience Cloud,Analytics
 title: Rapport Technologie
 topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '544'
 ht-degree: 100%
 
 ---

@@ -1,23 +1,20 @@
 ---
-description: Informations destinées à vous aider à utiliser les extensions avec le SDK Windows 8.1 Universal App Store pour les solutions Experience Cloud.
-seo-description: Informations destinées à vous aider à utiliser les extensions avec le SDK Windows 8.1 Universal App Store pour les solutions Experience Cloud.
-seo-title: Extensions
+description: Informations relatives à l’utilisation des extensions avec le SDK Boutique d’applications Windows 8.1 universelle pour les solutions Experience Cloud.
 solution: Experience Cloud,Analytics
 title: Extensions
 topic-fix: Developer and implementation
 uuid: 2823b22c-d9a1-4724-9020-dfc6614691be
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 22%
+source-wordcount: '48'
+ht-degree: 29%
 
 ---
 
 
 # Extensions{#extensions}
 
-Informations destinées à vous aider à utiliser les extensions avec le SDK Windows 8.1 Universal App Store pour les solutions Experience Cloud.
+Informations relatives à l’utilisation des extensions avec le SDK Boutique d’applications Windows 8.1 universelle pour les solutions Experience Cloud.
 
 ## Informations supplémentaires 
 

@@ -1,33 +1,30 @@
 ---
-description: Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
+description: Répertorie les mesures et les dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 keywords: android;library;mobile;sdk
-seo-description: Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
-seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 83%
+source-wordcount: '905'
+ht-degree: 84%
 
 ---
 
 # Mesures de cycle de vie {#lifecycle-metrics}
 
-Liste les mesures et dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
+Répertorie les mesures et les dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 
-Pour plus d’informations, voir [Dépannage des données de cycle de vie](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
+Pour plus d’informations, voir [Dépannage des données du cycle de vie](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
 ## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 Une fois les mesures de cycle de vie configurées, elles sont envoyées dans les paramètres de données contextuelles d’Analytics, dans les paramètres de Target avec chaque appel de mbox, et transmises en tant que signal à la gestion de l’audience. Analytics et Target utilisent le même format, tandis que la gestion de l’audience utilise un préfixe différent pour chaque mesure.
 
-Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi du cycle de vie sont automatiquement capturées dans la mesure ou la dimension et font l’objet de rapports à l’aide de celle-ci. Les exceptions sont indiquées dans le contenu.
+Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi de cycle de vie sont automatiquement capturées et consignées à l’aide de la mesure ou de la dimension. Les exceptions sont notées dans le contenu.
 
 ## Mesures
 
@@ -197,7 +194,7 @@ Pour Analytics, les données contextuelles envoyées avec chaque appel de suivi 
 
 ## Mesures et dimensions mobiles supplémentaires {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Les mesures et dimensions suivantes sont capturées dans les variables de solution mobile selon la méthode suivante :
+Les mesures et dimensions suivantes sont capturées dans les variables de solution mobile par la méthode suivante :
 
 ### Mesures
 
@@ -227,11 +224,11 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Renseigné par les méthodes `trackLocation`.
 
-   * Paramètre(s) de données contextuelles Analytics/Cible :
+   * Données contextuelles Analytics/Paramètre(s) Target :
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caractéristiques de l&#39;Audience Manager :
+   * Caractéristiques de l’Audience Manager :
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -241,11 +238,11 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Renseigné par les méthodes `trackLocation`.
 
-   * Paramètre(s) de données contextuelles Analytics/Cible :
+   * Données contextuelles Analytics/Paramètre(s) Target :
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caractéristiques de l&#39;Audience Manager :
+   * Caractéristiques de l’Audience Manager :
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -255,11 +252,11 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
    Renseigné par les méthodes `trackLocation`.
 
-   * Paramètre(s) de données contextuelles Analytics/Cible :
+   * Données contextuelles Analytics/Paramètre(s) Target :
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caractéristiques de l&#39;Audience Manager :
+   * Caractéristiques de l’Audience Manager :
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -267,21 +264,21 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Nom du point ciblé**
 
-   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
+   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.poi`
-   * Caractéristique de l&#39;Audience Manager : `c_a_loc_poi`
+   * Caractéristique de l’Audience Manager : `c_a_loc_poi`
 
 * **Distance jusqu’au centre du point ciblé**
 
-   Renseigné par des méthodes `trackLocation` lorsque le périphérique se trouve dans un point d’intérêt défini.
+   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.dist`
-   * Caractéristique de l&#39;Audience Manager : `c_a_loc_dist`
+   * Caractéristique de l’Audience Manager : `c_a_loc_dist`
 
 * **Valeur de durée de vie (variable de conversion)**
 
    Renseigné par les méthodes `trackLifetimeValue`.
 
    * Données contextuelles Analytics/Paramètre Target : `a.ltv.amount`
-   * Caractéristique de l&#39;Audience Manager : `c_a_ltv_amount`
+   * Caractéristique de l’Audience Manager : `c_a_ltv_amount`

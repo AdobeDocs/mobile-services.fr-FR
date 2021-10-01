@@ -1,19 +1,16 @@
 ---
 description: Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
-seo-description: Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
-seo-title: Mise en oeuvre de la messagerie Push à l’aide de liens profonds
-title: Mise en oeuvre de la messagerie Push à l’aide de liens profonds
+title: Mise en oeuvre de la messagerie push avec la création de liens profonds
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
-source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+exl-id: ab97db32-d9d2-41ec-aae8-a951c7745df8
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 75%
+source-wordcount: '154'
+ht-degree: 74%
 
 ---
 
-
-# Mise en œuvre de la messagerie push avec la création de liens profonds{#implement-push-messaging-with-deep-linking}
+# Mise en œuvre de la messagerie push avec la création de liens profonds {#implement-push-messaging-with-deep-linking}
 
 Une fois l’URL de création de liens profonds configurée dans l’interface utilisateur Adobe Mobile Services, elle est incluse dans la charge utile Push avec la clé adb_deeplink.
 
@@ -29,7 +26,7 @@ Vous pouvez obtenir l’URL en appelant `remoteMessage.getData().get("adb_deepli
 
       Lorsque l’utilisateur clique sur le message push, un lien profond est déclenché.
 
-   * Si l’URL de lien profond ne **figure pas** dans la charge utile Push, créez une intention qui ouvrira l’une de vos activités.
+   * Si l’URL de création de liens profonds **n’est pas** dans la payload push, créez une intention qui ouvrira l’une de vos activités.
 
 ## Exemple
 

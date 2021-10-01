@@ -1,16 +1,13 @@
 ---
 description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en œuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
-seo-description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en œuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
-seo-title: Messagerie in-app
 solution: Experience Cloud,Analytics
 title: Messagerie in-app
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '770'
 ht-degree: 100%
 
 ---
@@ -95,25 +92,25 @@ Vous pouvez créer des messages et des règles dans Adobe Mobile Services qui 
    Pour que les messages in-app soient mis à jour dynamiquement au lancement, l’objet `remotes` doit être présent et correctement configuré :
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 

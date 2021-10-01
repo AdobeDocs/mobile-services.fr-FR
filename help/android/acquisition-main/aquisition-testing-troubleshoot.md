@@ -1,14 +1,11 @@
 ---
 description: Les informations suivantes vous aident à dépanner les tests d’Acquisition.
 keywords: android;Acquisition;testing
-seo-description: Les informations suivantes vous aident à dépanner les tests d’Acquisition.
-seo-title: Dépannage des tests d’Acquisition
 solution: Experience Cloud,Analytics
 title: Dépannage des tests d’Acquisition
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -22,7 +19,7 @@ Voici quelques problèmes que vous pouvez rencontrer lors des tests d’Acquisit
 
 * Le nom étant sensible à la casse, n’indiquez pas de nom en minuscules.
 
-   Vous devez vous assurer que l’appel `Config.setContext(this.getApplicationContext())` est effectué à partir de l’activité principale. Pour plus d’informations, voir [Méthodes de configuration](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/configuration-android/methods.html).
+   Vous devez vous assurer que l’appel `Config.setContext(this.getApplicationContext())` est effectué à partir de l’activité principale. Pour plus d’informations, voir [Méthodes de configuration](../configuration/methods.md).
 
 * Il manque quelques autorisations d’utilisateur dans le fichier AndroidManifest.xml fourni. Ces autorisations sont requises pour envoyer des données et enregistrer des appels de suivi hors ligne :
 
@@ -38,7 +35,7 @@ Voici quelques problèmes que vous pouvez rencontrer lors des tests d’Acquisit
 
    Pour les tests manuels, augmentez le `referrerTimeout` pour atteindre 10-15 secondes, de sorte qu’il y ait suffisamment de temps pour envoyer les informations sur le référent avant le traitement de l’accès à l’installation.
 
-* Il est important d’exécuter toutes les étapes de l’[Évaluation de l’acquisition d’un lien marketing](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) afin de vous assurer que vous exécutez le conteneur `adb` puis les étapes suivantes :
+* Il est important d’exécuter toutes les étapes de l’[Évaluation de l’acquisition d’un lien marketing](t-t-testing-marketing-link-acquisition.md) afin de vous assurer que vous exécutez le conteneur `adb` puis les étapes suivantes :
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 

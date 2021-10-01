@@ -1,17 +1,14 @@
 ---
 description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
 keywords: android;library;mobile;sdk
-seo-description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK Mobile, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
-seo-title: Variable products
 solution: Experience Cloud,Analytics
 title: Variable products
 topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '155'
 ht-degree: 100%
 
 ---

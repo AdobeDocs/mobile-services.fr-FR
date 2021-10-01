@@ -1,18 +1,15 @@
 ---
 description: Utilisez ces informations pour effectuer le suivi des liens profonds et des liens profonds différés dans vos applications mobiles à l’aide du SDK Android pour Adobe Mobile.
 keywords: android;library;mobile;sdk
-seo-description: Utilisez ces informations pour effectuer le suivi des liens profonds et des liens profonds différés dans vos applications mobiles à l’aide du SDK Android pour Adobe Mobile.
-seo-title: Suivi des liens profonds dans Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Suivi des liens profonds
 topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +52,7 @@ Vous pouvez également ajouter une ou plusieurs des clés réservées suivantes 
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Ces clés sont des variables prémappées pour la création de rapports dans Adobe Analytics. Pour obtenir plus d’informations sur le mappage et les règles de traitement, voir [Règles de traitement et données contextuelles](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Ces clés sont des variables prémappées pour la création de rapports dans Adobe Analytics. Pour obtenir plus d’informations sur le mappage et les règles de traitement, voir [Règles de traitement et données contextuelles](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 ## Suivi de liens profonds différés (pour utilisation avec les liens marketing)
 

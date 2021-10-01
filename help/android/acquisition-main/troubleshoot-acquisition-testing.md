@@ -1,16 +1,13 @@
 ---
 description: Cette rubrique fournit des informations sur la manière de résoudre les problèmes que vous pourriez rencontrer lors des tests d’Acquisition.
 keywords: android;library;mobile;sdk
-seo-description: Cette rubrique fournit des informations sur la manière de résoudre les problèmes que vous pourriez rencontrer lors des tests d’Acquisition.
-seo-title: Dépannage des tests d’Acquisition
 solution: Experience Cloud,Analytics
 title: Dépannage des tests d’Acquisition
 topic-fix: Developer and implementation
 exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '216'
 ht-degree: 100%
 
 ---
@@ -25,7 +22,7 @@ Cette rubrique fournit des informations sur la manière de résoudre les problè
 
 * Vérifiez que `Config.setContext(this.getApplicationContext())` est appelé depuis votre activité principale.
 
-   Pour plus d’informations, voir [Méthodes de configuration](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/configuration-android/methods.html).
+   Pour plus d’informations, voir [Méthodes de configuration](../configuration/methods.md).
 
 * Vérifiez que les autorisations requises pour le kit SDK Mobile sont présentes dans le fichier `AndroidManifest.xml`.
 
@@ -41,7 +38,7 @@ Cette rubrique fournit des informations sur la manière de résoudre les problè
 
    Pour les tests manuels, nous vous recommandons d’augmenter le délai `referrerTimeout` à 10-15 secondes afin d’avoir suffisamment de temps pour envoyer les informations du référent avant le traitement de l’accès à l’installation.
 
-* Suivez toutes les étapes de l’[Évaluation de l’acquisition d’un lien marketing](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) et assurez-vous d’exécuter d’abord la commande `adb shell`, puis les étapes suivantes :
+* Suivez toutes les étapes de l’[Évaluation de l’acquisition d’un lien marketing](t-testing-marketing-link-acquisition.md) et assurez-vous d’exécuter d’abord la commande `adb shell`, puis les étapes suivantes :
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"

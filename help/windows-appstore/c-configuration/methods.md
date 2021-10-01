@@ -1,29 +1,26 @@
 ---
-description: Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
-seo-description: Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
-seo-title: Méthodes SDK
+description: Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
 solution: Experience Cloud,Analytics
 title: Méthodes SDK
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 50%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
 # Méthodes SDK {#sdk-methods}
 
-Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
+Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
 
-* **GetVersion (winJS : getVersion)**
+* **GetVersion (winJS: getVersion)**
 
    Renvoie la version actuelle de la bibliothèque Adobe Mobile.
 
@@ -39,15 +36,15 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       varADB = ADBMobile;var libVersion = ADB.Config.getVersion(); 
       ```
 
-* **GetPrivacyStatusAsync (winJS : getPrivacyStatusAsync)**
+* **GetPrivacyStatusAsync (winJS) : getPrivacyStatusAsync)**
 
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
 
    * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+   * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne &quot;inclusion&quot; (les accès sont envoyés) ou &quot;exclusion&quot; (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      La valeur par défaut est définie dans le fichier [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md).
+      La valeur par défaut est définie dans le fichier [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) .
 
    * Voici la syntaxe de cette méthode :
 
@@ -73,13 +70,13 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       }); 
       ```
 
-* **SetPrivacyStatus (winJS : setPrivacyStatus)**
+* **SetPrivacyStatus (winJS) : setPrivacyStatus)**
 
    Définit l’état de confidentialité pour l’utilisateur actuel sur `status`. Valeurs possibles :
 
    * `ADBMobilePrivacyStatusOptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
-   * `ADBMobilePrivacyStatusUnknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+   * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne &quot;inclusion&quot; (les accès sont envoyés) ou &quot;exclusion&quot; (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
    * Voici la syntaxe de cette méthode :
 
@@ -121,11 +118,11 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
 
 * **GetUserIdentifier (winJS: getUserIdentifier)**
 
-   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie la valeur null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
+   Renvoie l’identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau de l’Experience Cloud SDK 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `null` jusqu’à ce qu’il soit défini.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant d’utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -157,7 +154,7 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       ADB.Config.setUserIdentifier("someUserId"); 
       ```
 
-* **GetDebugLogging (winJS : getDebugLogging)**
+* **GetDebugLogging (winJS: getDebugLogging)**
 
    Renvoie la préférence de consignation de débogage actuelle. La valeur par défaut est `false`.
 
@@ -174,9 +171,9 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       var logging = ADB.Config.getDebugLogging(); 
       ```
 
-* **SetDebugLogging (winJS : setDebugLogging)**
+* **SetDebugLogging (winJS: setDebugLogging)**
 
-   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation du débogage fonctionne uniquement lors de l’utilisation de la version de débogage de la bibliothèque. La version de publication ignore ce paramètre.
+   Définit la préférence de journalisation de débogage sur `debugLogging`. La journalisation de débogage fonctionne uniquement lors de l’utilisation de la version de débogage de la bibliothèque. La version de publication ignore ce paramètre.
 
    * Voici la syntaxe de cette méthode :
 
@@ -191,13 +188,13 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       ADB.Config.setDebugLogging(true); 
       ```
 
-* **CollectLifecycleData (winJS : VE)**
+* **CollectLifecycleData (winJS: collectLifecycleData)**
 
    Indique au SDK que les données du cycle de vie doivent être collectées pour être utilisées à l’échelle de toutes les solutions dans le SDK. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Appelez cette méthode dans la méthode `onResume()` de chaque Activité de votre application, comme indiqué dans l&#39;exemple suivant. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
+   >Appelez cette méthode dans la méthode `onResume()` de chaque activité au sein de votre application, comme illustré dans l’exemple suivant. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
@@ -212,13 +209,13 @@ Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Sto
       ADB.Config.collectLifecycleData(); 
       ```
 
-* **PauseCollecte &#x200B; LifecycleData (winJS : pauseCollecte &#x200B; données de cycle de vie)**
+* **PauseCollecting &#x200B; LifecycleData (winJS : pauseCollecting &#x200B; LifecycleData)**
 
-   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors d’une mise en pause, un horodatage est collecté pour déterminer la durée de session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
+   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors de la mise en pause, collecte un horodatage pour déterminer la durée de la session précédente. Cela définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/windows-appstore/metrics.md).
 
    >[!TIP]
    >
-   >Appelez cette méthode dans les méthodes `onPause()` de chaque Activité de votre application, comme indiqué dans l&#39;exemple. Nous vous recommandons également de transmettre l’Activité ou le service en tant qu’objet de contexte plutôt que le contexte d’application globale.
+   >Appelez cette méthode dans les méthodes `onPause()` de chaque activité dans votre application, comme illustré dans l’exemple. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 

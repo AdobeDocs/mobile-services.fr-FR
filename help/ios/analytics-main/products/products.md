@@ -1,16 +1,13 @@
 ---
 description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
-seo-description: La variable products ne peut pas être définie à l’aide de règles de traitement. Dans le SDK iOS 4.x, vous devez utiliser une syntaxe spéciale dans le paramètre de données contextuelles pour définir les produits sur l’appel au serveur.
-seo-title: Variable products
 solution: Experience Cloud,Analytics
 title: Variable products
 topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 exl-id: c945add4-5358-44f6-b445-554b0df056c1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---

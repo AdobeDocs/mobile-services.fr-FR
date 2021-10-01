@@ -1,17 +1,14 @@
 ---
 description: Configurez les options pour les messages in-app, y compris le type (plein écran, alerte ou notification) et les options d’affichage, de texte et de bouton.
 keywords: mobile
-seo-description: Configurez les options pour les messages in-app, y compris le type (plein écran, alerte ou notification) et les options d’affichage, de texte et de bouton.
-seo-title: 'Expérience : message in-app'
 solution: Experience Cloud,Analytics
 title: 'Expérience : message in-app'
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '665'
 ht-degree: 100%
 
 ---

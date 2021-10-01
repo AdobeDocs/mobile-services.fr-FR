@@ -1,21 +1,18 @@
 ---
 description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
-seo-description: L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
-seo-title: Mise en œuvre de l’extension iOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’extension iOS
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
 
-# Mise en œuvre de l’extension iOS {#ios-extension-implementation}
+# Mise en œuvre de l’extension iOS  {#ios-extension-implementation}
 
 L’extension iOS permet de collecter les données d’utilisation de vos applications Apple Watch (WatchOS 1), de widgets quotidiens, de widgets de retouche de photos et autres extensions d’application iOS.
 
@@ -48,8 +45,8 @@ Même si ces trois méthodes de suivi répondent à vos besoins, il est recomman
 >
 >* Une cible pour contenir l’application.
 >* Une cible pour l’extension.
->
 
+>
 
 
 Si vous travaillez sur une application WatchKit, vous devriez avoir une troisième cible. Pour plus d’informations sur le développement pour Apple Watch, voir [Développement pour Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
@@ -77,7 +74,7 @@ Procédez comme suit dans votre projet Xcode :
 
 1. Vérifiez qu’aucune erreur inattendue n’est générée lors de la création de votre application.
 
-## Configuration de l’extension {#section_28C994B7892340AC8D1F07AF26FF3946}
+## Configurez l’extension {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Vérifiez que le fichier `ADBMobileConfig.json` est un membre de la cible de votre extension.
 1. Sous l’onglet **[!UICONTROL Créer les phases]** de la cible de votre extension, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]**, puis ajoutez les bibliothèques suivantes :

@@ -1,17 +1,14 @@
 ---
 description: En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
 keywords: mobile
-seo-description: En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
-seo-title: Création manuelle de liens Acquisition
 solution: Experience Cloud,Analytics
 title: Création manuelle de liens Acquisition
 topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '475'
 ht-degree: 100%
 
 ---

@@ -1,22 +1,19 @@
 ---
 description: Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications).
 keywords: mobile
-seo-description: Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications).
-seo-title: Spots
 solution: Experience Cloud,Analytics
 title: Spots
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---
 
-# Spots {#interstitials}
+# Spots{#interstitials}
 
 Vous pouvez orienter les utilisateurs vers une destination donnée selon que l’application est installée sur leur appareil (lien profond d’application) ou non (orientation vers un site Web ou une boutique d’applications). Il est préférable de laisser aux utilisateurs le choix du routage. Les marketeurs peuvent offrir des choix aux utilisateurs en configurant une page de spot qui présente aux utilisateurs les destinations disponibles.
 

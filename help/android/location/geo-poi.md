@@ -1,16 +1,13 @@
 ---
 description: La géolocalisation vous aide à mesurer les données de position à l’aide de la latitude et de la longitude ainsi que de points ciblés prédéfinis dans vos applications Android.
-seo-description: La géolocalisation vous aide à mesurer les données de position à l’aide de la latitude et de la longitude ainsi que de points ciblés prédéfinis dans vos applications Android.
-seo-title: Géolocalisation et points ciblés
 solution: Experience Cloud,Analytics
 title: Géolocalisation et points ciblés
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Chaque appel `trackLocation` envoie les informations suivantes :
 À compter de la version 4.2, les points ciblés sont définis dans l’interface utilisateur Adobe Mobile et synchronisés dynamiquement dans le fichier de configuration de l’application. Cette synchronisation requiert un paramètre `analytics.poi` dans le [JSON ADBMobile](/help/android/configuration/json-config/json-config.md) :
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 S’il n’est pas configuré, vous devez télécharger une version mise à jour du fichier `ADBMobile.json` et l’ajouter à l’application. Pour plus d’informations, voir [Téléchargement du SDK et des outils de test](/help/android/getting-started/requirements.md).

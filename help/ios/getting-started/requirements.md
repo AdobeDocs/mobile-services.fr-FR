@@ -1,17 +1,14 @@
 ---
 description: Suivez les étapes ci-après pour configurer une suite de rapports afin de collecter des données d’application iOS.
-seo-description: Suivez les étapes ci-après pour configurer une suite de rapports afin de collecter des données d’application iOS.
-seo-title: Avant de commencer
 solution: Experience Cloud,Analytics
 title: Avant de commencer
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -53,9 +50,9 @@ Vous pouvez vous connecter à Adobe Mobile Services de l’une des manières su
 
 * **Experience Cloud**
 
-   Connectez-vous à [Experience Cloud](https://marketing.adobe.com) à l’aide de votre Adobe ID.
+   Connectez-vous à [Experience Cloud](https://experience.adobe.com) à l’aide de votre Adobe ID.
 
-   Cette méthode suppose que votre société a été configurée et que vous avez lié votre compte Analytics. Pour plus d’informations sur la configuration, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html). Pour plus d’informations sur la liaison de votre compte, voir [Liaisons d’organisations et de comptes](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html).
+   Cette méthode suppose que votre société a été configurée et que vous avez lié votre compte Analytics. Pour plus d’informations sur la configuration, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) dans le guide des composants de l’interface centrale Experience Cloud. Pour plus d’informations sur la liaison de votre compte, voir [Organisations dans l’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html).
 
    >[!TIP]
    >

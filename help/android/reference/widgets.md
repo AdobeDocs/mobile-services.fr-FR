@@ -1,17 +1,14 @@
 ---
 description: Les widgets Android peuvent être suivis en utilisant les mêmes méthodes que votre application. Les widgets partagent le contexte de l’application avec votre application, de sorte que l’ordre d’accès et l’identification du visiteur sont préservés.
 keywords: android;library;mobile;sdk
-seo-description: Les widgets Android peuvent être suivis en utilisant les mêmes méthodes que votre application. Les widgets partagent le contexte de l’application avec votre application, de sorte que l’ordre d’accès et l’identification du visiteur sont préservés.
-seo-title: Widgets Android
 solution: Experience Cloud,Analytics
 title: Widgets Android
 topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '152'
 ht-degree: 100%
 
 ---

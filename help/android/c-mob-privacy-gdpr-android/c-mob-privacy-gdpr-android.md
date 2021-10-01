@@ -1,17 +1,14 @@
 ---
 description: Les SDK Experience Cloud Mobile contiennent des API conformes au règlement général sur la protection des données (RGPD) destinées aux contrôleurs qui autorisent les utilisateurs à récupérer des identités stockées localement et à définir des indicateurs d’état de souscription pour la collecte et la transmission de données.
-seo-description: Les SDK Experience Cloud Mobile contiennent des API conformes au règlement général sur la protection des données (RGPD) destinées aux contrôleurs qui autorisent les utilisateurs à récupérer des identités stockées localement et à définir des indicateurs d’état de souscription pour la collecte et la transmission de données.
-seo-title: Présentation du Règlement général sur la protection des données
 title: Présentation du Règlement général sur la protection des données
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+exl-id: 57696f2e-87f4-4f72-bec2-80c7192576f9
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 78%
+source-wordcount: '322'
+ht-degree: 76%
 
 ---
-
 
 # Présentation du Règlement général sur la protection des données {#privacy-and-general-data-protection-regulation}
 
@@ -32,9 +29,9 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >
 >Le RGPD est pris en charge **uniquement** dans la version 4.16.0 ou ultérieure du SDK Mobile.
 
-Lorsque l&#39;Adobe fournit des logiciels et des services à une entreprise, l&#39;Adobe agit comme un processeur de données pour toutes les données personnelles qu&#39;il traite et stocke dans le cadre de la prestation de ces services. En tant que traitement de données, l’Adobe traite les données à caractère personnel conformément à l’autorisation et aux instructions de votre société (par exemple, conformément à votre accord avec l’Adobe).
+Lorsqu’Adobe fournit des logiciels et des services à une entreprise, elle agit en tant qu’entité de traitement des données pour toutes les données personnelles qu’elle traite et stocke dans le cadre de la prestation de ces services. En tant qu’entité de traitement des données, Adobe traite les données personnelles conformément aux autorisations et aux instructions de votre société (par exemple, tel que défini dans votre accord avec votre Adobe).
 
-En tant que contrôleur de données, vous pouvez utiliser les Adobes Mobile Services SDK pour prendre en charge la récupération et la suppression de requêtes GDPR de vos applications mobiles.
+En tant que contrôleur des données, vous pouvez utiliser les SDK Adobe Mobile Services pour prendre en charge les demandes de récupération et de suppression en vertu du RGPD de vos applications mobiles.
 
 Pour les parties du SDK Adobe Mobile de vos applications mobiles, vous pouvez utiliser les méthodes et paramètres suivants :
 

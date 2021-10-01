@@ -1,22 +1,19 @@
 ---
 description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
 keywords: mobile
-seo-description: Le rapport sur le partage social offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
-seo-title: Partage social
 solution: Experience Cloud,Analytics
 title: Partage social
 topic-fix: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 exl-id: 3f396c6d-dae4-4419-84fd-884a9e87dab1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '118'
 ht-degree: 100%
 
 ---
 
-# Partage social {#social-sharing}
+# Partage social{#social-sharing}
 
 Le rapport sur le **[!UICONTROL partage social]** offre une visualisation de vos données existantes sous forme de cadran. Ce rapport est accessible exclusivement aux clients de DPS.
 

@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 keywords: mobile
-seo-description: Vous pouvez configurer les options du SDK Acquisition sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
-seo-title: Configuration des options du SDK Acquisition
 solution: Experience Cloud,Analytics
 title: Configuration des options du SDK Acquisition
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---

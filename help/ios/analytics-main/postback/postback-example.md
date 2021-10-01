@@ -1,16 +1,13 @@
 ---
 description: Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
-seo-description: Exemples de définitions et de codes source pour la fonctionnalité des postbacks.
-seo-title: Exemple de postback
 solution: Experience Cloud,Analytics
 title: Exemple de postback
 topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
 exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 100%
 
 ---
@@ -61,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Comme son état est `“MainMenu”`, cet appel de suivi déclenche le message de postback ci-dessus. L’URL remplace toutes les variables du modèle par les valeurs issues de l’accès. En supposant que la session précédente de l’utilisateur a duré 132 secondes et que l’utilisateur utilise une version 4.6.0 du SDK iOS, voici un exemple de l’URL résultante :
+Comme son état est `"MainMenu"`, cet appel de suivi déclenche le message de postback ci-dessus. L’URL remplace toutes les variables du modèle par les valeurs issues de l’accès. En supposant que la session précédente de l’utilisateur a duré 132 secondes et que l’utilisateur utilise une version 4.6.0 du SDK iOS, voici un exemple de l’URL résultante :
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`

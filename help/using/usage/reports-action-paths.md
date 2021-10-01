@@ -1,22 +1,19 @@
 ---
 description: Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
 keywords: mobile
-seo-description: Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
-seo-title: Rapport Chemins d’accès des actions
 solution: Experience Cloud,Analytics
 title: Rapport Chemins d’accès des actions
 topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
 
-# Rapport Chemins d’accès des actions {#action-paths}
+# Rapport Chemins d’accès des actions{#action-paths}
 
 Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
 

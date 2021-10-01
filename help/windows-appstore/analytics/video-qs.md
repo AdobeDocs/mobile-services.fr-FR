@@ -1,17 +1,14 @@
 ---
 description: Informations relatives aux analyses vidéo.
-seo-description: Informations relatives aux analyses vidéo.
-seo-title: Analyses de vidéos
 solution: Experience Cloud,Analytics
 title: Analyses de vidéos
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 72%
+source-wordcount: '887'
+ht-degree: 71%
 
 ---
 
@@ -19,13 +16,13 @@ ht-degree: 72%
 
 Informations relatives aux analyses vidéo.
 
-Les mesures vidéo sont décrites en détail dans le guide [Mesure des données audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html/). Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de début rapide fournit un aperçu de base des tâches des développeurs ainsi que des exemples de code.
+Les mesures vidéo sont décrites en détail dans le guide [Mesure des médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr) . Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de démarrage rapide présente un aperçu des tâches des développeurs ainsi que des exemples de code.
 
 Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez des règles de traitement pour mapper les données contextuelles à une variable Analytics.
 
 * **a.media.name**
 
-   (Obligatoire) Collecte le nom de la vidéo, tel qu&#39;il est spécifié dans l&#39;implémentation, lorsqu&#39;un visiteur vue la vidéo d&#39;une manière ou d&#39;une autre.Vous pouvez ajouter des classifications pour cette variable.
+   (Obligatoire) Collecte le nom de la vidéo, tel que spécifié dans la mise en oeuvre, lorsqu’un visiteur regarde la vidéo d’une manière ou d’une autre. Vous pouvez ajouter des classifications pour cette variable.
 
    (**Facultatif**) La variable Custom Insight fournit des informations de cheminement vidéo.
 
@@ -35,7 +32,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.media.name**
 
-   (Facultatif) Fournit des informations de cheminement vidéo. Le cheminement doit être activé par ClientCare pour cette variable.
+   (Facultatif) Fournit des informations de cheminement vidéo. Pour cette variable, le cheminement doit être activé par l’assistance clientèle.
 
    Type d’événement : Insight personnalisé (s.prop)
 
@@ -43,7 +40,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.media.segment**
 
-   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur vue le premier segment d’une vidéo, le SiteCatalyst peut collecter les éléments suivants dans le segment `1:M:0-25` eVar.
+   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, SiteCatalyst peut collecter les éléments suivants dans l’eVar de segment `1:M:0-25`.
 
    La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
 
@@ -59,7 +56,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.contentType**
 
-   Collecte les données sur le type de contenu affiché par un visiteur. Les accès envoyés par mesure vidéo se voient attribuer un type de contenu &quot;vidéo&quot;. Cette variable ne doit pas être réservée exclusivement au suivi vidéo. La présence d’un autre type de contenu de rapport de contenu à l’aide de cette même variable vous permet d’analyser la répartition des visiteurs entre les différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu vous permet d’identifier les visiteurs vidéo et de calculer les taux de conversion vidéo.
+   Collecte les données sur le type de contenu affiché par un visiteur. Les accès envoyés par mesure vidéo se voient attribuer un type de contenu &quot;vidéo&quot;. Cette variable ne doit pas être réservée exclusivement au suivi vidéo. L’utilisation d’un autre type de contenu de rapport de contenu à l’aide de cette même variable vous permet d’analyser la répartition des visiteurs entre les différents types de contenu. Par exemple, vous pouvez baliser d’autres types de contenu à l’aide de valeurs telles que &quot;article&quot; ou &quot;page de produit&quot; à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu vous permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue
@@ -91,7 +88,6 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    * Type de variable : Evénement
    * Type : compteur
-
 
 ## Configuration des paramètres multimédias {#section_929945D4183C428AAF3B983EFD3E2500}
 
@@ -148,7 +144,7 @@ property bool isMediaAd;
       var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId"); 
       ```
 
-* **AdSettingsWith (winJS: adSettingsWith**
+* **AdSettingsWith (winJS : adSettingsWith**
 
    Renvoie un objet `MediaSettings` à utiliser pour le suivi d’une vidéo publicitaire.
 
@@ -166,7 +162,7 @@ property bool isMediaAd;
 
 * **Open (winJS: open)**
 
-   Effectue le suivi d&#39;un média ouvert à l&#39;aide des paramètres définis dans `settings`.
+   Effectue le suivi de l’ouverture d’un média à l’aide des paramètres définis dans `settings`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -180,9 +176,9 @@ property bool isMediaAd;
       ADB.Media.open(mySettings); 
       ```
 
-* **Close (winJS : close)**
+* **Close (winJS: close)**
 
-   Effectue le suivi d&#39;une fermeture de média pour l&#39;élément de média nommé *name*.
+   Effectue le suivi de la fermeture d’un média pour l’élément multimédia nommé *name*.
 
    * Voici la syntaxe de cette méthode :
 
@@ -196,9 +192,9 @@ property bool isMediaAd;
       ADB.Media.close("mediaName");
       ```
 
-* **Play (winJS : play)**
+* **Play (winJS) : play)**
 
-   Effectue le suivi d&#39;une lecture multimédia pour l&#39;élément multimédia nommé *`name`* au décalage *donné* (en secondes).
+   Effectue le suivi d’une lecture multimédia pour l’élément multimédia nommé *`name`* à l’emplacement *offset* donné (en secondes).
 
    * Voici la syntaxe de cette méthode :
 
@@ -244,7 +240,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName", 4);
       ```
 
-* **Cliquez sur (winJS: click)**
+* **Cliquez sur (winJS) : click)**
 
    Avertit le module multimédia qu’un utilisateur a cliqué sur l’élément multimédia.
 

@@ -1,16 +1,13 @@
 ---
 description: Le traitement par lot des accès permet aux applications dont le suivi hors ligne est activé de bloquer l’envoi d’accès tant que le nombre d’accès de la file d’attente n’a pas dépassé une limite configurable.
-seo-description: Le traitement par lot des accès permet aux applications dont le suivi hors ligne est activé de bloquer l’envoi d’accès tant que le nombre d’accès de la file d’attente n’a pas dépassé une limite configurable.
-seo-title: Traitement par lot des accès
 solution: Experience Cloud,Analytics
 title: Traitement par lot des accès
 topic-fix: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 exl-id: af21f435-13cb-4353-9fbb-c99274bce411
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '161'
 ht-degree: 100%
 
 ---

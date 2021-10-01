@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez configurer les options d’audience pour les messages in-app, y compris les options d’affichage, de déclenchement et de caractéristiques.
 keywords: mobile
-seo-description: Vous pouvez configurer les options d’audience pour les messages in-app, y compris les options d’affichage, de déclenchement et de caractéristiques.
-seo-title: 'Audience : message in-app'
 solution: Experience Cloud,Analytics
 title: 'Audience : message in-app'
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -48,7 +45,6 @@ Vous pouvez configurer les options d’audience pour les messages in-app, y comp
 
    * **[!UICONTROL Caractéristiques]**
 Vous pouvez déterminer qui doit voir le message in-app lors de son déclenchement, ainsi que filtrer (segmenter) l’audience selon les données spécifiées des accès. Par exemple, vous pouvez définir une règle dans laquelle les points ciblés contiennent Denver. Ce filtre vous permet d’afficher le message aux clients qui se trouvent dans l’un de vos points ciblés avec Denver dans le nom, au moment du déclenchement.
-
 
 
 ## Informations supplémentaires sur les caractéristiques et les déclencheurs {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

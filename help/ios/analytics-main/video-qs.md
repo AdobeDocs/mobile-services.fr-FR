@@ -1,17 +1,14 @@
 ---
 description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
-seo-description: Cette section contient des informations sur la mesure des vidéos sous iOS au moyen de la mesure Jalon.
-seo-title: Analyses de vidéos
 solution: Experience Cloud,Analytics
 title: Analyses de vidéos
 topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +18,7 @@ Cette section contient des informations sur la mesure des vidéos sous iOS au mo
 
 >[!TIP]
 >
->Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesures audio et vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html).
+>Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations, voir [Mesure des médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr).
 
 Le processus général de mesure vidéo est très similaire sur toutes les plateformes. Ce contenu présente un aperçu de base des tâches des développeurs avec des exemples de codes.
 
@@ -48,7 +45,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.media.segment**
 
-   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, il est possible que SiteCatalyst collecte les `1:M:0-25` dans l’eVar Segments :
+   (Obligatoire) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo. Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, SiteCatalyst peut collecter les éléments suivants dans l’eVar de segments `1:M:0-25`.
 
    La méthode de collecte de données vidéo par défaut collecte les données aux points suivants :
 
@@ -64,7 +61,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
 * **a.contentType**
 
-   Collecte les données sur le type de contenu affiché par un visiteur. Les accès envoyés par mesure vidéo se voient attribuer un type de contenu de `video`. Cette variable ne doit pas être réservée exclusivement au suivi vidéo. Le fait d’obtenir un autre type de contenu de rapport de contenu en utilisant cette même variable vous permet d’analyser la distribution des visiteurs par rapport aux différents types de contenu. Par exemple, vous pouvez baliser les types de contenu en utilisant des valeurs telles que « article » ou « page de produits » à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
+   Collecte les données sur le type de contenu affiché par un visiteur. Les accès envoyés par mesure vidéo se voient attribuer un type de contenu de `video`. Cette variable ne doit pas être réservée exclusivement au suivi vidéo. Le fait d’obtenir un autre type de contenu de rapport de contenu en utilisant cette même variable vous permet d’analyser la distribution des visiteurs par rapport aux différents types de contenu. Par exemple, vous pouvez baliser d’autres types de contenu à l’aide de valeurs telles que &quot;article&quot; ou &quot;page de produit&quot; à l’aide de cette variable. Du point de vue des mesures vidéo, le type de contenu permet d’identifier les visiteurs de vidéos et de calculer les taux de conversion vidéo.
 
    * Type de variable : eVar
    * Délai d’expiration par défaut : page vue

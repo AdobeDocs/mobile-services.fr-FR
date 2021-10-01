@@ -1,22 +1,19 @@
 ---
-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-seo-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
-seo-title: Méthodes de services d’identification Adobe Experience Platform
 solution: Experience Cloud,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 97%
 
 ---
 
-# Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
+# Méthodes de services d’identification Adobe Experience Platform{#experience-cloud-id-service-methods}
 
 Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 
@@ -26,7 +23,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **public static String appendToURL(final String URL)**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer du SDK Mobile 4.12+. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, vous devez disposer du SDK Mobile 4.12+. Pour plus d’informations, voir [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=fr) dans la documentation du service Adobe Experience Cloud Identity.
 
    >[!IMPORTANT]
    >

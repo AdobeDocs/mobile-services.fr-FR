@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 keywords: mobile
-seo-description: Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
-seo-title: Configuration de la messagerie push
 solution: Experience Cloud,Analytics
 title: Configuration de la messagerie push
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---

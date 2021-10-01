@@ -1,17 +1,14 @@
 ---
 description: Le traitement par lot des accès permet aux applications de différer l’envoi d’accès jusqu’à ce que le nombre d’accès dans la file d’attente dépasse la limite configurée.
 keywords: android;library;mobile;sdk
-seo-description: Le traitement par lot des accès permet aux applications de différer l’envoi d’accès jusqu’à ce que le nombre d’accès dans la file d’attente dépasse la limite configurée.
-seo-title: Traitement par lot des accès
 solution: Experience Cloud,Analytics
 title: Traitement par lot des accès
 topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---

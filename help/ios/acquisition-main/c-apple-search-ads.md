@@ -1,16 +1,13 @@
 ---
 description: Le SDK Adobe exploite les API d’attribution de l’application Search Ads d’Apple pour permettre aux développeurs et aux marketeurs de suivre et d’identifier les téléchargements d’application issus des campagnes Search Ads dans l’App Store d’Apple.
-seo-description: Le SDK Adobe exploite les API d’attribution de l’application Search Ads d’Apple pour permettre aux développeurs et aux marketeurs de suivre et d’identifier les téléchargements d’application issus des campagnes Search Ads dans l’App Store d’Apple.
-seo-title: Publicités Search Ads d’Apple
 solution: Experience Cloud,Analytics
 title: Publicités Search Ads d’Apple
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
@@ -26,7 +23,7 @@ L’utilisation d’Apple Ads vous offre les avantages suivants :
 * Mesurez facilement l’efficacité de vos campagnes de téléchargement d’application Search Ads en ajoutant quelques lignes de code à votre application.
 * Les développeurs peuvent accéder à la date/l’heure du téléchargement et au mot-clé avec enchère ayant permis la conversion.
 
-## Mise en œuvre des Search Ads d’Apple {#section_F1094676793540CFA1DBB540174EEB6A}
+## Mise en œuvre des Search Ads d’Apple {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
@@ -40,7 +37,7 @@ Pour activer votre application pour l’attribution Search Ads, procédez comme 
 
 1. Ajoutez la structure iAd au fichier de projet Xcode de votre application.
 
-## Rapport de données dans l’attribution Search Ads {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Rapport de données dans l’attribution Search Ads {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Les données d’attribution Search Ads d’Apple sont fournies dans le nom, la source et les valeurs de terme de l’acquisition.
 

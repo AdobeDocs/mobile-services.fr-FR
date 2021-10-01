@@ -1,23 +1,20 @@
 ---
-description: Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
+description: Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 keywords: Xamarin
-seo-description: Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
-seo-title: Méthodes iOS
 solution: Experience Cloud
 title: Méthodes iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1737'
 ht-degree: 70%
 
 ---
 
-
 # Méthodes iOS{#ios-methods}
 
-Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience Cloud 4.x.
+Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 
 ## Méthodes de configuration {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -55,7 +52,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **SetDebugLogging**
 
-   Définit la préférence de journalisation du débogage sur Activé.
+   Définit la préférence de journalisation de débogage sur activée.
 
    * Voici la syntaxe de cette méthode :
 
@@ -69,7 +66,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
       ADBMobile.SetDebugLogging(true);
       ```
 
-* **Valeur de durée de vie**
+* **LifetimeValue**
 
    Renvoie la valeur du cycle de vie de l’utilisateur actuel.
 
@@ -90,9 +87,9 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
    Renvoie la représentation d’énumération de l’état de confidentialité pour l’utilisateur actuel.
    * `ADBMobilePrivacyStatus.OptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
-   * ADBMobilePrivacyStatus.Unknown : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne est désactivé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur opt-in.
+   * ADBMobilePrivacyStatus.Unknown : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne est désactivé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
 
-   The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   La valeur par défaut est définie dans la balise [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -109,7 +106,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **SetPrivacyStatus**
 
-   Définit l’état de confidentialité de l’utilisateur actuel. Valeurs possibles :
+   Définit l’état de confidentialité pour l’utilisateur actuel. Valeurs possibles :
    * `ADBMobilePrivacyStatus.OptIn` - les accès sont immédiatement envoyés.
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatus.Unknown`  - si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
@@ -128,7 +125,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **UserIdentifier**
 
-   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie la valeur null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
+   Renvoie l’identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -144,7 +141,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **SetUserIdentifier**
 
-   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie la valeur null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
+   Renvoie l’identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -155,7 +152,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
    * Voici l’exemple de code pour cette méthode :
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -180,7 +177,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
    >[!TIP]
    >
-   >Cette méthode est destinée à être utilisée pour les applications qui s’enregistrent pour les notifications en arrière-plan et doit uniquement être appelée à partir du code qui s’exécute pendant que votre application est en arrière-plan.
+   >Cette méthode est conçue pour les applications qui s’inscrivent aux notifications lorsqu’elles sont en arrière-plan et doit uniquement être appelée à partir du code qui s’exécute pendant que votre application se trouve en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -214,7 +211,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **TrackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont similaires aux pages d’un site Web et `TrackState` les appels incrémentent les vues de page. Si l’état est vide, il s’affiche sous la forme &quot;nom d’application version de l’application (compilation)&quot; dans les rapports. If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont similaires aux pages d’un site web et les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque appel `TrackState`.
 
    >[!TIP]
    >
@@ -236,7 +233,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **TrackAction**
 
-   Effectue le suivi d’une action dans votre application. Les actions sont les éléments qui se produisent dans votre application que vous souhaitez mesurer, tels que &quot;décès&quot;, &quot;niveau de gain&quot;, &quot;abonnements de flux&quot; et d’autres mesures.
+   Effectue le suivi d’une action dans votre application. Les actions sont les événements qui se produisent dans votre application et que vous souhaitez mesurer, par exemple &quot;décès&quot;, &quot;niveau atteint&quot;, &quot;abonnements aux flux&quot;, etc.
 
    >[!TIP]
    >
@@ -324,13 +321,13 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
       ADBMobile.TrackingClearCurrentBeacon();
       ```
 
-* **TrackLifetimeValueAugmentation**
+* **TrackLifetimeValueIncrease**
 
-   Les Ajoutes correspondent à la valeur de durée de vie de l’utilisateur.
+   Ajoute un montant à la valeur de durée de vie de l’utilisateur.
 
    * Voici la syntaxe de cette méthode :
 
-      nbsp public ; void static TrackLifetimeValueAugmentation (quantité de doublon, données NSDictionary);
+      nbsp public;static void TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * Voici l’exemple de code pour cette méthode :
 
@@ -360,7 +357,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **TrackTimedActionUpdate**
 
-   Transmettez les données pour mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont ajoutées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
+   Transmet des données pour mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont ajoutées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
 
    >[!TIP]
    >
@@ -464,7 +461,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Méthodes d’ID Experience Cloud {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
@@ -484,7 +481,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **VisitorSyncIdentifiers**
 
-   Avec l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API du Visiteur accepte plusieurs ID de client pour le même visiteur, ainsi qu’un identifiant de type de client afin de séparer la portée des différents ID de client. Cette méthode correspond aux setCustomerIDs dans la bibliothèque JavaScript.
+   Avec l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API visiteur accepte plusieurs ID de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents ID de client. Cette méthode correspond aux setCustomerIDs dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
@@ -503,7 +500,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **TargetLoadRequest**
 
-   Sends request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   Envoie la demande au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel `Action<NSDictionary>`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -523,7 +520,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **TargetCreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   Constructeur de commodité permettant de créer un objet `ADBTargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
@@ -574,7 +571,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **AudienceVisitorProfile**
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie nil si aucun signal n’a encore été envoyé. Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
+   Renvoie le dernier profil du visiteur obtenu. Renvoie nil si aucun signal n’a encore été envoyé. Le profil du visiteur est enregistré dans `NSUserDefaults` pour un accès facile à l’échelle de plusieurs lancements de votre application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -638,7 +635,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 * **AudienceSignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>`  callback.
+   Envoie à la gestion de l’audience un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans un rappel `Action<NSDictionary>`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -673,7 +670,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK des solutions Experience C
 
 ## Vidéo {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Pour plus d’informations, voir Analyses [](/help/ios/getting-started/dev-qs.md)vidéo.
+Pour plus d’informations, voir [Analyses vidéo](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

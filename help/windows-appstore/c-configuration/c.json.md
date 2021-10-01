@@ -1,29 +1,26 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-seo-description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-seo-title: Fichier de configuration ADBMobileConfig.json
 solution: Experience Cloud,Analytics
 title: Fichier de configuration ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 47%
+source-wordcount: '609'
+ht-degree: 46%
 
 ---
 
-# `ADBMobileConfig.json` fichier de configuration  {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` fichier de configuration {#adbmobileconfig-json-config}
 
-Informations destinées à vous aider à utiliser le fichier de configuration `ADBMobile.json`.
+Informations pour vous aider à utiliser le fichier de configuration `ADBMobile.json`.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes de configuration comportent le préfixe &quot;Config&quot;.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes de configuration comportent le préfixe &quot;Config&quot;.
 
 * **rsids**
 
-   (Requis par Analytics) Une ou plusieurs suites de rapports pour recevoir les données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
+   (Requis par Analytics) Une ou plusieurs suites de rapports pour recevoir des données Analytics. Plusieurs ID de suite de rapports doivent être séparés par des virgules sans espace entre eux.
 
    * Voici des exemples de code pour cette variable :
 
@@ -37,25 +34,25 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **server**
 
-   (Requis par Analytics et la gestion des Audiences). Analytics ou serveur de gestion des Audiences, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl`.
+   (Requis par Analytics et gestion de l’audience). Serveur Analytics ou de gestion de l’audience, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `https://` ou `https://`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl` .
 
    Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
 * **charset**
 
-   Définit le jeu de caractères utilisé pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir la variable [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
 
 * **ssl**
 
-   Active (`true`) ou désactive (`false`) l&#39;envoi de données de mesure via SSL (HTTPS). La valeur par défaut est `false`.
+   Active (`true`) ou désactive (`false`) l’envoi de données de mesure via SSL (HTTPS). La valeur par défaut est `false`.
 
 * **offlineEnabled**
 
-   Lorsque cette option est activée (true), les accès sont placés en file d’attente lorsque le périphérique est hors ligne et envoyés ultérieurement lorsque le périphérique est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
+   Lorsque cette option est activée (true), les accès sont placés en file d’attente lorsque l’appareil est hors ligne et envoyés ultérieurement lorsque l’appareil est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
 
    >[!IMPORTANT]
    >
-   >Si les horodatages sont activés sur votre suite de rapports, votre `offlineEnabled` propriété de configuration *doit* être vraie. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. Si vous rapports actuellement des données AppMeasurement à une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp`.
+   >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur &quot;true&quot;. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp` .
 
 * **lifecycleTimeout**
 
@@ -63,25 +60,25 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **batchLimit**
 
-   Envoyer les accès par lots. Par exemple, si la valeur est définie sur 50, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true`. La valeur par défaut est `0` (Pas de traitement par lot).
+   Envoyez les accès par lots. Par exemple, si la valeur est définie sur 50, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true`. La valeur par défaut est `0` (Pas de traitement par lot).
 
 * **privacyDefault**
 
    * `optedin` - les accès sont immédiatement envoyés.
    * `optedout` - les accès sont ignorés.
-   * `optunknown` - Si votre suite de rapports est horodatée, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont alors envoyés) ou sur exclusion (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
+   * `optunknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne &quot;inclusion&quot; (les accès sont envoyés) ou &quot;exclusion&quot; (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
       La valeur par défaut est `optedin`.
 
       >[!TIP]
       >
-      >Cette option définit uniquement la valeur par défaut. Si cette valeur est définie ou modifiée dans le code, la valeur définie par le code est enregistrée dans l’enregistrement local et est utilisée à partir de maintenant jusqu’à ce qu’elle soit modifiée, ou que l’application soit désinstallée puis réinstallée.
+      >Cette option définit uniquement la valeur par défaut. Si cette valeur est jamais définie ou modifiée dans le code, alors la valeur définie par le code est enregistrée dans le stockage local et est utilisée à l’avenir jusqu’à ce qu’elle soit modifiée, ou jusqu’à ce que l’application soit désinstallée puis réinstallée.
 
 * **poi**
 
    Chaque matrice de points ciblés comporte le nom, la latitude, la longitude et le rayon (en mètres) du point ciblé correspondant à la zone du point. Le nom du point ciblé peut être n’importe quelle chaîne. Lorsqu’un appel `trackLocation` est envoyé, si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `trackLocation`.
 
-   * Voici un exemple de code pour cette variable :
+   * Voici l’exemple de code pour cette variable :
 
       ```js
       "poi": [
@@ -92,7 +89,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **clientCode**
 
-   (**Obligatoire par Cible**) Code client affecté.
+   (**Requis par Target**) Votre code client affecté.
 
 * **timeout**
 

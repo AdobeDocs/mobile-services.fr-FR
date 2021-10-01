@@ -1,17 +1,15 @@
 ---
 description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 keywords: mobile
-seo-description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
-seo-title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 solution: Experience Cloud,Analytics
 title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -90,11 +88,10 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
 
    * Pour de plus amples informations sur la résolution des problèmes liés aux messages push, consultez ceci :
 
-      * [Messagerie push dans iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Messagerie push dans Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. Renseignez les champs suivants :
+2. Renseignez les champs suivants :
 
    * **[!UICONTROL Durant]**
 
@@ -110,7 +107,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
 
    * **[!UICONTROL Segments Analytics]**
 
-      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. Pour en savoir plus, voir [Création de segments](https://docs.adobe.com/content/help/fr-FR/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. Pour plus d’informations, voir [Créateur de segments](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=fr) dans la documentation Adobe Analytics.
 
    * **[!UICONTROL Segments personnalisés]**
 

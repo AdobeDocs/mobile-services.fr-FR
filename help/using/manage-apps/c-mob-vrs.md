@@ -1,31 +1,28 @@
 ---
 description: Une suite de rapports virtuelle (VRS) est une suite de rapports créée en appliquant une ou plusieurs définitions de segmentation à une suite de rapports. Grâce à cette fonctionnalité, les utilisateurs peuvent conserver leurs données dans une suite de rapports unique, et les gérer comme si elles se trouvaient dans des suites de rapports distinctes.
-seo-description: Une suite de rapports virtuelle (VRS) est une suite de rapports créée en appliquant une ou plusieurs définitions de segmentation à une suite de rapports. Grâce à cette fonctionnalité, les utilisateurs peuvent conserver leurs données dans une suite de rapports unique, et les gérer comme si elles se trouvaient dans des suites de rapports distinctes.
-seo-title: Aperçu des suites de rapports
 title: Aperçu des suites de rapports
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 80%
+source-wordcount: '1006'
+ht-degree: 74%
 
 ---
 
-
-# Suites de rapports virtuelles{#virtual-report-suites}
+# Suites de rapports virtuelles {#virtual-report-suites}
 
 Une suite de rapports virtuelle (VRS) est une suite de rapports créée en appliquant une ou plusieurs définitions de segmentation à une suite de rapports. Grâce à cette fonctionnalité, les utilisateurs peuvent conserver leurs données dans une suite de rapports unique, et les gérer comme si elles se trouvaient dans des suites de rapports distinctes.
 
 Les applications qui utilisent des suites de rapports virtuelles font la même chose que les applications qui ont recours à des suites de rapports standard, à l’exception de la gestion des fonctionnalités suivantes :
 
 * Règles de traitement
-* evars/props/listvars/événements
+* eVars/props/listvars/events
 * Option Horodatage activé
 * Indicateurs de Dimension (cycle de vie, emplacement, etc.)
 * Classifications
 
-Ces valeurs sont gérées dans la suite de rapports parente et sont partagées avec les suites de rapports virtuelles qui appartiennent à la même suite de rapports parente.
+Ces valeurs sont gérées dans la suite de rapports parente et partagées avec les suites de rapports virtuelles qui appartiennent à la même suite de rapports parente.
 
 Vous pouvez accéder aux zones suivantes dans l’interface utilisateur d’Adobe Mobile Services, indépendamment de la suite de rapports parente :
 
@@ -38,9 +35,9 @@ Vous pouvez accéder aux zones suivantes dans l’interface utilisateur d’Adob
 
 Une suite de rapports virtuelle peut vous aider à terminer les tâches suivantes :
 
-* Limiter l&#39;accès aux données
+* Limitation de l’accès aux données
 
-   Une société multinationale comporte une application qui envoie des données à une suite de rapports pour tous les emplacements géographiques. Cependant, l’administrateur de la société souhaite empêcher l’utilisateur professionnel d’une région de voir les données d’une autre région. L’administrateur de la société peut créer une suite de rapports virtuelle pour segmenter les utilisateurs par région et donner une autorisation d’accès à la suite uniquement à l’utilisateur professionnel qui gère la région.
+   Une société multinationale possède une application qui envoie des données à une suite de rapports pour tous les emplacements géographiques. Cependant, l’administrateur de la société souhaite empêcher l’utilisateur professionnel d’une région de voir les données d’une autre région. L’administrateur de la société peut créer une suite de rapports virtuelle pour segmenter les utilisateurs par région et donner une autorisation d’accès à la suite uniquement à l’utilisateur professionnel qui gère la région.
 
    Cette restriction empêche les utilisateurs professionnels de voir les données qui ne sont pas liées à leur région. Par exemple, un utilisateur professionnel situé en région EMEA n’a nullement besoin de connaître les données de la région APAC.
 
@@ -54,17 +51,17 @@ Une suite de rapports virtuelle peut vous aider à terminer les tâches suivante
 
 >[!IMPORTANT]
 >
->Seuls les administrateurs Adobe Analytics peuvent créer et modifier des suites de rapports virtuelles dans Adobe Analytics. Pour créer une suite de rapports virtuelle, voir [Création de suites de rapports virtuelles](https://docs.adobe.com/content/help/fr-FR/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
+>Seuls les administrateurs Adobe Analytics peuvent créer et modifier des suites de rapports virtuelles dans Adobe Analytics. Pour créer une suite de rapports virtuelle, voir [Création de suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) dans la documentation Adobe Analytics.
 
-Chaque suite de rapports virtuelle possède un identifiant unique. Pour afficher l’identifiant de la suite de rapports parente dans l’interface utilisateur d’Adobe Mobile Services, sur la page Gestion des paramètres de l’application, dans la section **[!UICONTROL Informations sur l’application]**, cliquez sur **[!UICONTROL Plus de détails]**.
+Chaque suite de rapports virtuelle possède un ID unique. Pour afficher l’identifiant de la suite de rapports parente dans l’interface utilisateur d’Adobe Mobile Services, sur la page Gestion des paramètres de l’application, dans la section **[!UICONTROL Informations sur l’application]**, cliquez sur **[!UICONTROL Plus de détails]**.
 
-Dans l’interface utilisateur de Adobe Mobile Services, vous pouvez utiliser une suite de rapports virtuelle pour créer une application et segmenter les données vers un groupe spécifique de votre organisation. Ainsi, par exemple, un utilisateur d’entreprise en Espagne ne peut pas voir les données pertinentes pour un utilisateur d’entreprise au Japon.
+Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez utiliser une suite de rapports virtuelle pour créer une application et segmenter les données vers un groupe spécifique de votre entreprise. Ainsi, par exemple, un utilisateur chargé de la conception d’entreprise en Espagne ne peut pas consulter les données pertinentes pour un utilisateur chargé de la conception d’entreprise au Japon.
 
 >[!TIP]
 >
 >Vous ne pouvez pas modifier les valeurs qui sont héritées de la suite de rapports parente.
 
-Une suite de rapports virtuelle est une définition de segment côté serveur qui est jointe à une suite de rapports parente. Par conséquent, vous ne pouvez pas collecter de données dans une suite de rapports virtuelle, car le SDK envoie des accès uniquement à la suite de rapports parente, qui enregistre à son tour les accès.
+Une suite de rapports virtuelle est une définition de segment côté serveur qui est jointe à une suite de rapports parente. Par conséquent, vous ne pouvez pas effectuer de collecte de données vers une suite de rapports virtuelle, car le SDK envoie les accès uniquement à la suite de rapports parente, qui à son tour enregistre les accès.
 
 ## Suite de rapports virtuelle dans Adobe Mobile Services et collecte de données {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -110,17 +107,17 @@ Voici les propriétés des suites de rapports virtuelles :
 | `analytics.ssl` | Non | Oui |  |
 | `analytics.offlineEnabled` | Oui |  |  |
 | `analytics.charset` | Oui | Non |  |
-| `analytics.lifecycleTimeout` | Non | Oui | Doit être la suite de rapports parente si les utilisateurs ne souhaitent pas que leurs données soient incohérentes. |
+| `analytics.lifecycleTimeout` | Non | Oui | Doit être la suite de rapports parente, si les utilisateurs ne souhaitent pas que leurs données soient incohérentes. |
 | `analytics.privacyDefault` | Non | Oui |  |
 | `analytics.batchLimit` | Non | Oui |  |
-| `analytics.timezone` | Oui | Oui, lorsque vous créez l’application pour la première fois. | Cette propriété est utilisée pour envoyer des données à Adobe Analytics et est différente de la propriété de fuseau horaire définie lors de la création d’une suite de rapports virtuelle. |
+| `analytics.timezone` | Oui | Oui, lorsque vous créez l’application pour la première fois. | Cette propriété de fuseau horaire est utilisée pour envoyer des données à Adobe Analytics et est différente de la propriété de fuseau horaire définie lors de la création d’une suite de rapports virtuelle. |
 | `analytics.timezoneOffset` | Oui | Non |  |
 | `analytics.referrerTimeout` | Non | Oui |  |
 | `analytics.backdateSessionInfo` | Oui | Oui |  |
 
-## Informations supplémentaires {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
+## Informations supplémentaires  {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
 
 Voici quelques informations supplémentaires sur les suites de rapports virtuelles :
 
-* Pour plus d’informations sur les suites de rapports virtuelles, voir [Suites de rapports virtuelles](https://docs.adobe.com/content/help/fr-FR/analytics/components/virtual-report-suites/vrs-about.html).
-* Pour plus d’informations sur l’organisation de la mise en œuvre d’une suite de rapports virtuelle, voir [Processus de mise en œuvre des suites de rapports virtuelles](https://docs.adobe.com/content/help/fr-FR/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).
+* Pour plus d’informations sur les suites de rapports virtuelles, voir [Présentation des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Pour plus d’informations sur l’organisation de la mise en œuvre d’une suite de rapports virtuelle, voir [Processus de mise en œuvre des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

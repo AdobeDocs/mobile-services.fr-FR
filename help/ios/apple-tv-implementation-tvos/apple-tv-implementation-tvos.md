@@ -1,16 +1,13 @@
 ---
 description: Ces informations vous permettent d’effectuer la mise en œuvre de l’Apple TV avec tvOS.
-seo-description: Ces informations vous permettent d’effectuer la mise en œuvre de l’Apple TV avec tvOS.
-seo-title: Mise en œuvre de l’Apple TV avec tvOS
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’Apple TV avec tvOS
 topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '388'
 ht-degree: 100%
 
 ---
@@ -69,7 +66,7 @@ Pour obtenir plus d’informations, consultez la documentation iOS sur [iOS](ht
 1. Importez le SDK dans le fichier d’implémentation de votre classe `TVApplicationControllerDelegate`.
 
    ```objective-c
-   #import “ADBMobile.h"
+   #import "ADBMobile.h"
    ```
 
 1. Dans la méthode `application:didFinishLaunchWithOptions:` de votre classe `TVApplicationControllerDelegate`, transmettez votre objet `TVApplicationController` au SDK avec la méthode `installTVMLHooks:`.

@@ -1,21 +1,19 @@
 ---
 description: Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
 keywords: android;library;mobile;sdk
-seo-description: Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
-seo-title: Test d’Acquisition version 3
 solution: Experience Cloud,Analytics
 title: Test d’Acquisition version 3
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
 
-# Test de l’acquisition de V3 {#testing-version-acquisition}
+# Test de l’acquisition de V3  {#testing-version-acquisition}
 
 Ces informations vous expliquent comment rediriger un lien de campagne Acquisition version 3 sur un appareil Android.
 

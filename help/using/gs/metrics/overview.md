@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 keywords: mobile
-seo-description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
-seo-title: Affichage des mesures mobiles
 solution: Experience Cloud,Analytics
 title: Affichage des mesures mobiles
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '440'
 ht-degree: 100%
 
 ---

@@ -1,18 +1,15 @@
 ---
-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site web.
+description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
 keywords: mobile
-seo-description: Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web.
-seo-title: Création ou modification de liens marketing
 solution: Experience Cloud,Analytics
 title: Création ou modification de liens marketing
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +40,7 @@ Vous pouvez créer ou modifier les liens marketing afin de fournir des liens pro
       Les balises prédéfinies suivantes sont disponibles :
 
       * **Données contextuelles personnalisées**
-Indiquez la clé et la valeur. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir [Aperçu des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Indiquez la clé et la valeur. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir [Présentation des règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) dans la documentation Adobe Analytics.
 
       * **Source**
 Spécifiez le référent original, tel que « newsletter » ou « page d’accueil ».

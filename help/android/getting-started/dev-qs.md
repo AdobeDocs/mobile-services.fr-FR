@@ -1,17 +1,14 @@
 ---
 description: Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
 keywords: android;library;mobile;sdk
-seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque Android et à collecter les mesures de cycle de vie, par exemple les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
-seo-title: Mise en œuvre principale et cycle de vie
 solution: Experience Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '538'
 ht-degree: 100%
 
 ---

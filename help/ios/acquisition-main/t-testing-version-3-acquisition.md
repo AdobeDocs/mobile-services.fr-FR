@@ -1,14 +1,12 @@
 ---
 description: Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
-seo-description: Ces informations expliquent comment rediriger un lien de campagne d’acquisition V3 basé sur l’empreinte numérique d’un périphérique.
-seo-title: Test de l’acquisition de V3
 solution: Experience Cloud,Analytics
 title: Test de l’acquisition de V3
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 exl-id: 3cf66802-1f2c-428f-86ef-a9afc57e3470
-source-git-commit: 8db8f51a42acbbc0bbc4545b7d97cb214b490ab3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '602'
 ht-degree: 100%
 
 ---

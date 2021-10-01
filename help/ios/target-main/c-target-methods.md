@@ -1,17 +1,14 @@
 ---
 description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
-seo-description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
-seo-title: Méthodes Target pour iOS pour Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Méthodes Target pour iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '629'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameprofileParametersmboxParameterscallback:**
 
    Envoie la demande à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel de bloc.
 
@@ -154,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Pour plus d’informations sur l’API Target sous-jacent, voir [Développeurs Adobe Target](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      Pour plus d’informations sur l’API Target sous-jacente, voir [Référence de l’API Target](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -162,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameprofileParametersmboxParameters:callback**
 
    Envoie request à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel de bloc.
 

@@ -1,30 +1,27 @@
 ---
-description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
-seo-description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
-seo-title: Règles de traitement et données contextuelles.
+description: Les règles de traitement sont utilisées pour copier les données que vous envoyez dans des variables de données contextuelles vers des eVars, des props et d’autres variables pour la création de rapports.
 solution: Experience Cloud,Analytics
 title: Règles de traitement et données contextuelles.
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 70%
 
 ---
 
 # Règles de traitement et données contextuelles {#processing-rules-and-context-data}
 
-Les règles de traitement sont utilisées pour copier les données que vous envoyez dans les variables de données contextuelles vers des evars, props et autres variables pour la création de rapports.
+Les règles de traitement sont utilisées pour copier les données que vous envoyez dans des variables de données contextuelles vers des eVars, des props et d’autres variables pour la création de rapports.
 
 Pour plus d’informations, voir la vidéo et les rubriques suivants :
 
 * [Formation aux règles de traitement](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 * Obtention de l’autorisation d’utiliser des règles de traitement
 
-   Pour plus d’informations sur les règles de traitement, voir l’[Aperçu des règles de traitement](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   Pour plus d’informations sur les règles de traitement, voir [Présentation des règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) dans la documentation Adobe Analytics.
 
 Lorsque vous utilisez des règles de traitement, tenez compte des informations suivantes :
 
@@ -40,7 +37,7 @@ Lorsque vous utilisez des règles de traitement, tenez compte des informations s
 
 * Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement, ce qui vous permet de voir rapidement quelles variables se trouvent dans le même espace de noms.
 
-   Évitez d’attribuer un nom aux clés de données contextuelles en utilisant la variable evar ou le numéro prop :
+   Évitez de nommer les clés de données contextuelles à l’aide de l’eVar ou du numéro de prop :
 
    ```js
    "eVar1":"jimbo"

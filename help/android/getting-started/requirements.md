@@ -1,17 +1,14 @@
 ---
 description: 'Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes '
-seo-description: 'Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes '
-seo-title: Avant de commencer
 solution: Experience Cloud,Analytics
 title: Avant de commencer
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -52,7 +49,7 @@ Vous pouvez vous connecter à l’interface utilisateur d’Adobe Mobile Servic
 
 ### Experience Cloud
 
-Connectez-vous à [Experience Cloud](https://experiencecloud.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Connectez-vous à [Experience Cloud](https://experiencecloud.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) dans le guide des composants de l’interface centrale Experience Cloud.
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d�
 
 Pour créer une suite de rapports permettant de collecter des données d’application et de définir une application, procédez comme suit :
 
-1. Connectez-vous à l’interface utilisateur Mobile Services en saisissant [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) dans un navigateur.
+1. Connectez-vous à [Adobe Mobile Services](https://mobilemarketing.adobe.com).
 1. Cliquez sur **[!UICONTROL Créer une application]**.
 
    Si ce bouton n’est pas visible, cliquez sur **[!UICONTROL Gérer les applications]** > **[!UICONTROL Ajouter]**.
@@ -93,7 +90,7 @@ Vous pouvez également sélectionner votre application dans le volet de droite.
 
    >[!IMPORTANT]
    >
-   >Pour afficher votre application dans le volet de droite, vous devez d’abord créer une application. Pour plus d’informations sur la création d’une application, voir [Ajout d’une nouvelle application.](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Pour afficher votre application dans le volet de droite, vous devez d’abord créer une application. Pour plus d’informations sur la création d’une application, voir [Ajout d’une nouvelle application](/help/using/manage-apps/t-new-app.md).
 
 1. Dans votre application, dans le volet de gauche, cliquez sur **[!UICONTROL Gérer les paramètres de l’application]**.
 

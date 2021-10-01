@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez configurer les options de planification des messages in-app, notamment la durée, les jours de la semaine et l’heure.
 keywords: mobile
-seo-description: Vous pouvez configurer les options de planification des messages in-app, notamment la durée, les jours de la semaine et l’heure.
-seo-title: 'Planification : message in-app'
 solution: Experience Cloud,Analytics
 title: 'Planification : message in-app'
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '201'
 ht-degree: 100%
 
 ---

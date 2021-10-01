@@ -1,22 +1,19 @@
 ---
 description: Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
 keywords: mobile
-seo-description: Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
-seo-title: Création d’un lien d’acquisition
 solution: Experience Cloud,Analytics
 title: Création d’un lien d’acquisition
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
 
-# Création d’un lien d’acquisition {#create-an-acquisition-link}
+# Création d’un lien d’acquisition{#create-an-acquisition-link}
 
 Vous pouvez créer des liens de boutique d’applications permettant de télécharger des applications directement à partir de l’Apple App Store et de Google Play. Les liens que vous créez permettent d’attribuer les événements de succès aux téléchargements.
 

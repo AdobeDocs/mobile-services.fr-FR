@@ -1,22 +1,19 @@
 ---
 description: Affichez la liste de vos messages in-app et push avec des informations relatives au moment où chaque message a été actualisé, ainsi que son statut (actif ou désactivé).
 keywords: mobile
-seo-description: Affichez la liste de vos messages in-app et push avec des informations relatives au moment où chaque message a été actualisé, ainsi que son statut (actif ou désactivé).
-seo-title: Gestion des messages
 solution: Experience Cloud,Analytics
 title: Gestion des messages
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
 
-# Gestion des messages {#manage-messages}
+# Gestion des messages{#manage-messages}
 
 Affichez la liste de vos messages in-app et push avec des informations relatives au moment où chaque message a été actualisé, ainsi que son statut (actif ou désactivé).
 

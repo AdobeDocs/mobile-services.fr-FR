@@ -1,13 +1,10 @@
 ---
-description: Cette section contient des informations relatives à l’utilisation du composant Xamarin Adobe Mobile SDK pour iOS.
-seo-description: Cette section contient des informations relatives à l’utilisation du composant Xamarin Adobe Mobile SDK pour iOS.
-seo-title: iOS
+description: Cette section contient des informations relatives à l’utilisation du composant Xamarin SDK Mobile Adobe pour iOS.
 title: iOS
 uuid: 5439509d-cc18-46ef-97d6-c18059e0d190
-translation-type: tm+mt
-source-git-commit: d88dd2252afb3900d45e3bab48d601e7a85d190b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '32'
 ht-degree: 6%
 
 ---
@@ -15,5 +12,5 @@ ht-degree: 6%
 
 # iOS {#ios}
 
-Cette section contient des informations relatives à l’utilisation du composant Xamarin Adobe Mobile SDK pour iOS.
+Cette section contient des informations relatives à l’utilisation du composant Xamarin SDK Mobile Adobe pour iOS.
 

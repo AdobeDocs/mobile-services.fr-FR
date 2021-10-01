@@ -1,16 +1,13 @@
 ---
 description: La valeur de durée de vie vous permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur Android. La valeur peut être utilisée pour stocker des valeurs de durée de vie (achats, vues des publicités, affichages complets de vidéos, partages sur les médias sociaux, chargement de photos, etc.).
-seo-description: La valeur de durée de vie vous permet de mesurer et de cibler une valeur de durée de vie pour chaque utilisateur Android. La valeur peut être utilisée pour stocker des valeurs de durée de vie (achats, vues des publicités, affichages complets de vidéos, partages sur les médias sociaux, chargement de photos, etc.).
-seo-title: Valeur de durée de vie visiteur
 solution: Experience Cloud,Analytics
 title: Valeur de durée de vie visiteur
 topic-fix: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 exl-id: 93c6d711-c7c0-4fca-93b2-6a6fc19377bd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '192'
 ht-degree: 100%
 
 ---

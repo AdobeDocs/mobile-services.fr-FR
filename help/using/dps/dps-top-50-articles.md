@@ -1,22 +1,19 @@
 ---
 description: Le rapport sur les 50 premiers articles contient un histogramme et un rapport de classement indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
 keywords: mobile
-seo-description: Le rapport sur les 50 premiers articles contient un histogramme et un rapport de classement indiquant les articles les plus consultés en étant affichés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS (Digital Publishing Suite).
-seo-title: 50 premiers articles
 solution: Experience Cloud,Analytics
 title: 50 premiers articles
 topic-fix: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 exl-id: 8d5d6ab4-fcbb-42b2-b9bc-5ccb4f73522f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '225'
 ht-degree: 100%
 
 ---
 
-# Rapport sur les 50 premiers articles {#top-articles}
+# 50 premiers articles rapport{#top-articles}
 
 Le rapport sur les **[!UICONTROL 50 premiers articles]** contient un histogramme et un rapport de classement affichant les articles les plus consultés à l’aide de l’application. Ce rapport est accessible exclusivement aux clients de DPS.
 

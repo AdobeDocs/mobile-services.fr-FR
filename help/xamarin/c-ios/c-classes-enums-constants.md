@@ -1,21 +1,18 @@
 ---
-description: Liste de classes et de énumérations à utiliser dans les applications Xamarin.
-seo-description: Liste de classes et de énumérations à utiliser dans les applications Xamarin.
-seo-title: Classes et énumérations
+description: Liste des classes et énumérations à utiliser dans les applications Xamarin.
 title: Classes et énumérations
 uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
-translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+exl-id: 9486e654-18d1-4e71-a096-5925d928bf84
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '37'
 ht-degree: 24%
 
 ---
 
-
 # Classes et énumérations{#classes-and-enums}
 
-Liste de classes et de énumérations à utiliser dans les applications Xamarin.
+Liste des classes et énumérations à utiliser dans les applications Xamarin.
 
 ## Classes {#section_E28D6156EB0F4A84AAA7749DF7D3E193}
 

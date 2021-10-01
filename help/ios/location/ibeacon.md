@@ -1,16 +1,13 @@
 ---
 description: Le suivi iBeacon permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth à basse consommation.
-seo-description: Le suivi iBeacon permet de mesurer et de cibler des micro-emplacements à l’aide d’iBeacon et du Bluetooth à basse consommation.
-seo-title: Suivi iBeacon
 solution: Experience Cloud,Analytics
 title: Suivi iBeacon
 topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '182'
 ht-degree: 100%
 
 ---

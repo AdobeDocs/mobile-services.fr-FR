@@ -1,16 +1,13 @@
 ---
 description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
-seo-description: Ces informations vous aideront à mettre en œuvre la bibliothèque iOS et à collecter les mesures de cycle de vie, telles que les lancements, les mises à niveau, les sessions, les utilisateurs actifs, etc.
-seo-title: Mise en œuvre principale et cycle de vie
 solution: Experience Cloud,Analytics
 title: Mise en œuvre principale et cycle de vie
 topic-fix: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 exl-id: 5fb2d534-c2e8-480a-aaee-0e71dd55feb6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '835'
 ht-degree: 100%
 
 ---

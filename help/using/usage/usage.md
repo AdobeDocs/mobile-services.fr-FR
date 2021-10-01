@@ -1,28 +1,25 @@
 ---
 description: Les rapports d’utilisation affichent la durée de session moyenne, les utilisateurs actifs par jour et par mois, les mises à niveau et d’autres informations vous permettant de comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de fidélisation des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 keywords: mobile
-seo-description: Les rapports d’utilisation affichent la durée de session moyenne, les utilisateurs actifs par jour et par mois, les mises à niveau et d’autres informations vous permettant de comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de fidélisation des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
-seo-title: Rapports
 solution: Experience Cloud,Analytics
 title: Rapports
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Rapports {#reports}
+# Rapports{#reports}
 
 Les rapports d’utilisation affichent la durée de session moyenne, les utilisateurs actifs par jour et par mois, les mises à niveau et d’autres informations vous permettant de comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de fidélisation des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 
 Vous pouvez générer les rapports suivants dans l’interface utilisateur de Mobile :
 
-* [Aperçu](/help/using/usage/usage-overview.md)
+* [Présentation](/help/using/usage/usage-overview.md)
 * [Utilisateurs et sessions](/help/using/usage/users-sessions.md)
 * [Rétention](/help/using/usage/reports-retention.md)
 * [Entonnoir](/help/using/usage/reports-funnel.md)
@@ -33,6 +30,6 @@ Vous pouvez générer les rapports suivants dans l’interface utilisateur de Mo
 * [Blocages](/help/using/usage/c-crashes.md)
 * [Rapport Aperçu de la boutique d’applications](/help/using/usage/c-app-store-store-performance.md)
 * [Personnalisation des rapports](/help/using/usage/reports-customize/reports-customize.md)
-* [Ajouter des filtres aux rapports](/help/using/usage/reports-customize/t-reports-customize.md)
-* [Ajouter des séries (mesures) aux rapports](/help/using/usage/reports-customize/t-reports-series.md)
+* [Ajout de filtres aux rapports](/help/using/usage/reports-customize/t-reports-customize.md)
+* [Ajout de séries (mesures) aux rapports](/help/using/usage/reports-customize/t-reports-series.md)
 * [Ajout d’un filtre d’attractivité](/help/using/usage/reports-customize/t-sticky-filter.md)

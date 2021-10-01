@@ -1,16 +1,13 @@
 ---
 description: Notes de mise à jour et problèmes connus pour les SDK 4.x de la plateforme Windows universelle pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus pour les SDK 4.x de la plateforme Windows universelle pour les solutions Experience Cloud.
-seo-title: Notes de mise à jour
 solution: Experience Cloud,Analytics
 title: Notes de mise à jour
 topic-fix: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 exl-id: c7478baf-9f16-441f-9899-3a16a9dc291b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '86'
 ht-degree: 100%
 
 ---
@@ -27,5 +24,4 @@ En plus d’améliorer considérablement les performances, la version 4.x ajout
 |--- |--- |
 | SDK 4.x de la plateforme Windows universelle pour les solutions Experience Cloud | Version initiale. |
 
-
-Pour plus d’informations sur les notes de mise à jour de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html).
+Pour plus d’informations sur les notes de mise à jour de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).

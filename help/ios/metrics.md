@@ -1,16 +1,13 @@
 ---
 description: Les tables suivantes répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
-seo-description: Les tables suivantes répertorient les mesures et les dimensions pouvant être mesurées automatiquement par la bibliothèque mobile une fois la mise en œuvre du cycle de vie terminée.
-seo-title: Mesures de cycle de vie
 solution: Experience Cloud,Analytics
 title: Mesures de cycle de vie
 topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1085'
 ht-degree: 100%
 
 ---

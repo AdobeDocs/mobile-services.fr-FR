@@ -1,17 +1,14 @@
 ---
 description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 keywords: mobile
-seo-description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
-seo-title: Acquisition
 solution: Experience Cloud,Analytics
 title: Acquisition
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---

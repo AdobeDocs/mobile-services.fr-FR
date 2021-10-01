@@ -1,21 +1,18 @@
 ---
 description: Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applications iPhone et iPad Apple natives, de diffuser du contenu ciblé dans vos applications, ainsi que d’exploiter et de collecter des données d’audience grâce à Audience Manager.
-seo-description: Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applications iPhone et iPad Apple natives, de diffuser du contenu ciblé dans vos applications, ainsi que d’exploiter et de collecter des données d’audience grâce à Audience Manager.
-seo-title: SDK iOS 4.x pour solutions Experience Cloud
 solution: Experience Cloud,Analytics
 title: SDK iOS 4.x pour solutions Experience Cloud
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '492'
 ht-degree: 100%
 
 ---
 
-# SDK iOS 4.x pour solutions Experience Cloud {#ios-sdk-x-for-experience-cloud-solutions}
+# SDK iOS 4.x pour solutions Experience Cloud{#ios-sdk-x-for-experience-cloud-solutions}
 
 Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applications iPhone et iPad Apple natives, de diffuser du contenu ciblé dans vos applications, ainsi que d’exploiter et de collecter des données d’audience grâce à Audience Manager.
 

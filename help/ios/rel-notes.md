@@ -1,17 +1,14 @@
 ---
 description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
-seo-description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
-seo-title: Notes de mise à jour
 solution: Experience Cloud,Analytics
 title: Notes de mise à jour
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-translation-type: tm+mt
-source-git-commit: a6663bf682f0a4283978f2f07277a4d4d43615f6
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '535'
+ht-degree: 99%
 
 ---
 
@@ -19,47 +16,47 @@ ht-degree: 0%
 
 Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
 
-**13 avril 2021 : Version 4.21.2**
+## 13 avril 2021 : Version 4.21.2
 
-* Service d’identification des visiteurs - Correction d’un problème en raison duquel les identifiants publicitaires vides étaient synchronisés avec le service d’identification des Visiteurs.
+* Service dʼidentifiant visiteur - Correction dʼun problème en raison duquel les identifiants publicitaires vides étaient synchronisés avec le service dʼidentifiant visiteur.
 
-**13 janvier 2021 : version 4.21.1**
+## 13 janvier 2021 : version 4.21.1
 
 * Général : correction d’un problème en raison duquel des exceptions SQLite pouvaient survenir lors de l’arrêt de l’application.
 
-**15 décembre 2020 : version 4.21.0**
+## 15 décembre 2020 : version 4.21.0
 
 * Général : le SDK est désormais distribué à l’aide des XCFrameworks pour permettre la prise en charge du matériel avec la nouvelle architecture Apple M1 tout en maintenant la prise en charge de l’architecture Intel existante.
    * IMPORTANT : la mise à niveau vers les XCFrameworks AdobeMobile requiert Xcode 12.0 ou une version ultérieure
    * IMPORTANT : si vous utilisez Cocoapods, la mise à niveau vers les XCFrameworks AdobeMobile requiert Cocoapods 1.10.0 ou une version ultérieure
 
-**4 novembre 2020 : version 4.20.0**
+## 4 novembre 2020 : version 4.20.0
 
 * Service d’identifiant visiteur - Ajout du paramètre de statut device_consentement lorsque setAdvertisingIdentifier est appelé une fois le tracking des publicités activé/désactivé.
 * Analytics - Correction d’un bogue qui retardait l’envoi des accès Analytics lors d’une installation quand iAd.framework était lié et que le « tracking des publicités limité » était activé sur l’appareil.
 
-**16 juillet 2020 : Version 4.19.3**
+## 16 juillet 2020 : Version 4.19.3
 
 * Général : Correction d’un bug qui empêchait le traitement correct des URL de lien profond avec plusieurs signes égal dans le paramètre de requête.
 
-**24 mars 2020 : Version 4.19.2**
+## 24 mars 2020 : Version 4.19.2
 
 * Général : correction de certaines failles dans le code Target.
 
-**12 mars 2020 : Version 4.19.1**
+## 12 mars 2020 : Version 4.19.1
 
 * Général : Résolution d’un blocage potentiel lorsque des énumérations Swift sont incluses dans les données contextuelles des appels de suivi.
 * Target : L’ID de session Target sera désormais ajouté comme paramètre de données contextuelles ‘a.target.sessionId’ dans l’accès interne Analytics for Target envoyé à Adobe Analytics.
 
-**4 février 2020 : version 4.19.0**
+## 4 février 2020 : version 4.19.0
 
 * Cycle de vie : Ajout d’une nouvelle API, pauseCollectingLifecycleData, afin d’atténuer les données de durée de session anormale signalées par certains appareils iOS anciens.
 
-**8 novembre 2019 : version 4.18.9**
+## 8 novembre 2019 : version 4.18.9
 
 * Dans la messagerie intégrée (in-app) : correction d’un bogue en raison duquel les images mises en cache ou regroupées ne pouvaient pas être chargées dans les messages en plein écran.
 
-**20 septembre 2019 : Version 4.18.8**
+## 20 septembre 2019 : Version 4.18.8
 
 * Messagerie in-app :
 
@@ -70,13 +67,13 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 * Général : Correction d’un bogue en raison duquel les données du SDK étaient synchronisées avec l’application watchOS couplée à chaque appel Analytics.
 
-**2 août 2019 : Version 4.18.7**
+## 2 août 2019 : Version 4.18.7
 
 * Annulation d’une modification introduite dans la version 4.18.6, qui, dans certains environnements, provoquait un blocage sur les périphériques exécutant une version iOS antérieure à 11.0.
 
 * Adobe Target : Ajout de la propriété `requestLocationParameters` dans `ADBTargetRequestObject`, ce qui permet l’envoi de la valeur impressionId avec les requêtes Target.
 
-**18 juillet 2019 : Version 4.18.6**
+## 18 juillet 2019 : Version 4.18.6
 
 * Adobe Target : toutes les demandes comprennent désormais le client et `sessionId` dans les paramètres de requête d’URL.
 * Adobe Target : correction d’une fuite de mémoire.
@@ -84,15 +81,15 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
    Le double codage entraînait le marquage des valeurs renvoyées de ces API par certaines révisions de sécurité.
 
-**5 juin 2019 : Version 4.18.5**
+## 5 juin 2019 : Version 4.18.5
 
 * Analytics : Ajoutez l’état d’inclusion push aux données de cycle de vie lorsque les notifications push sont activées.
 
-**24 mai 2019 : Version 4.18.4**
+## 24 mai 2019 : Version 4.18.4
 
 * Service d’identification des visiteurs : Augmentation du délai d’attente des retours pour la variable
    `visitorGetUrlVariablesAsync` API à 30 secondes.
 
 * Service d’identification des visiteurs : l’appel API `setPushIdentifier` envoie désormais un appel de synchronisation au service d’identification des visiteurs à chaque appel.
 
-Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html).
+Pour plus d’informations sur les notes de mise à jour des versions actuelles et antérieures de l’ensemble des solutions, voir les [Notes de mise à jour d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).

@@ -1,17 +1,14 @@
 ---
 description: Les postbacks permettent d’envoyer les données collectées par Adobe Mobile à un serveur tiers distinct. En mettant à profit les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer les Mobile Services pour envoyer des données personnalisées vers une destination tierce.
-seo-description: Les postbacks permettent d’envoyer les données collectées par Adobe Mobile à un serveur tiers distinct. En mettant à profit les mêmes déclencheurs et caractéristiques que ceux que vous utilisez pour afficher un message in-app, vous pouvez configurer les Mobile Services pour envoyer des données personnalisées vers une destination tierce.
-seo-title: Configuration des postbacks
 title: Configuration des postbacks
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '430'
 ht-degree: 100%
 
 ---
-
 
 # Configuration des postbacks {#configure-postbacks}
 

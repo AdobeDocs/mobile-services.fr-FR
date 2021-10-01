@@ -1,20 +1,17 @@
 ---
 description: Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
-seo-description: Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
-seo-title: Suivi des liens profonds
 solution: Experience Cloud,Analytics
 title: Suivi des liens profonds
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: a8b20233-d800-4318-ad4f-39229d8b3a5e
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '295'
 ht-degree: 100%
 
 ---
 
-
-# Suivi des liens profonds {#tracking-deep-links}
+# Suivi des liens profonds{#tracking-deep-links}
 
 Utilisez ces informations pour effectuer un suivi des liens et des liens profonds dans vos applications mobiles à l’aide du SDK iOS Adobe Mobile.
 
@@ -104,4 +101,3 @@ Ces clés sont des variables prémappées pour la création de rapports dans Ado
  */ 
 FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
 ```
-

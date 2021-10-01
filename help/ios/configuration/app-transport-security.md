@@ -1,16 +1,13 @@
 ---
 description: Ces informations vous permettent de travailler avec App Transport Security (ATS), un nouvel ensemble d’exigences de sécurité pour iOS 9.
-seo-description: Ces informations vous permettent de travailler avec App Transport Security (ATS), un nouvel ensemble d’exigences de sécurité pour iOS 9.
-seo-title: App Transport Security
 solution: Experience Cloud,Analytics
-title: Sécurité du transport des applications
+title: App Transport Security
 topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
 exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -31,7 +28,7 @@ Vous pouvez également placer les serveurs suivants dans votre liste de serveurs
 |--- |--- |
 | Analytics | Pour autoriser votre serveur Analytics, ajoutez le domaine du serveur de suivi en tant qu’exception pour ATS dans le fichier info.plist.  Le domaine du serveur de suivi se trouve dans la section Analytics du fichier `ADBMobileConfig.json` ou dans la section Analytics de la page Gérer les paramètres d’application. |
 | Audience Manager | Votre domaine Audience Manager se trouve dans la propriété du serveur de l’objet audienceManager du fichier `ADBMobileConfig.json`.  Si vous utilisez Audience Manager dans votre application et que le protocole SSL est désactivé, ajoutez ce serveur en tant que domaine d’exception pour ATS dans votre fichier `Info.plist`. |
-| Target | Vous pouvez ajouter votre point de terminaison Target à votre fichier Info.plist en tant que domaine d’exception pour ATS.  Pour trouver votre point de terminaison Target, localisez `clientCodeproperty` dans l’objet cible de votre fichier `ADBMobileConfig.json`. Votre point de terminaison sera le suivant : `https://{clientCode}.tt.omtrdc.net`.  Par exemple, si votre `clientCodeproperty` est `“myCompany”`, votre point de terminaison sera `https://myCompany.tt.omtrdc.net`. |
+| Target | Vous pouvez ajouter votre point de terminaison Target à votre fichier Info.plist en tant que domaine d’exception pour ATS.  Pour trouver votre point de terminaison Target, localisez `clientCodeproperty` dans l’objet cible de votre fichier `ADBMobileConfig.json`. Votre point de terminaison sera le suivant : `https://{clientCode}.tt.omtrdc.net`.  Par exemple, si votre `clientCodeproperty` est `"myCompany"`, votre point de terminaison sera `https://myCompany.tt.omtrdc.net`. |
 | Service Adobe Experience Platform Identity | Vous pouvez ajouter le serveur Experience Cloud en tant que domaine d’exception pour ATS dans le fichier `Info.plist`. Ce domaine est le suivant : `dpm.demdex.net`. |
 | Mobile Services : acquisition | Autorisez le serveur d’acquisition en tant que domaine d’exception pour ATS dans le fichier `Info.plist`. Ce domaine est le suivant : `c00.adobe.com`. |
 | Mobile Services : messages in-app | Si vous utilisez des messages in-app, vous devrez peut-être ajouter des entrées dans le domaine d’exception pour ATS pour chaque URL que vous utilisez qui n’est pas en HTTPS. Cette liste comprend des images hébergées et les URL incorporées dans votre HTML de messages plein écran personnalisés.  Pour plus d’informations sur la configuration du domaine d’exception dans un fichier `info.plist`, voir la ligne *NSExceptionDomains* du *Tableau 2 : Clés primaires du dictionnaire de sécurité du transport d’application*. Voir aussi *Tableau 3 : Clés du dictionnaire de domaines d’exception* dans [Référence de clé pour une liste de propriété d’informations](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/). |

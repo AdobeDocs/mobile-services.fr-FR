@@ -1,18 +1,15 @@
 ---
 description: Avant de pouvoir configurer la messagerie push dans les applications, vous devez effectuer certaines tâches.
 keywords: mobile
-seo-description: Avant de pouvoir configurer la messagerie push dans les applications, vous devez effectuer certaines tâches.
-seo-title: Conditions préalables requises pour activer la messagerie push
 solution: Experience Cloud,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +55,7 @@ Si les utilisateurs n’ont pas d’Adobe ID, procédez comme suit :
 
 Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organisation Experience Cloud.
 
-1. Pour vous connecter à Experience Cloud à l’aide d’un Adobe ID, saisissez [https://marketing.adobe.com](https://marketing.adobe.com) dans un navigateur.
+1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com) avec un Adobe ID.
 
 1. Dans le coin supérieur droit, sélectionnez le nom de la société Analytics.
 
@@ -68,7 +65,7 @@ Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organ
 
    L’Adobe ID est maintenant associé à votre compte, votre société et vos informations de connexion Analytics.
 
-Pour plus d’informations, voir [Dépannage de la liaison de compte](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.html).
+Pour plus d’informations, voir [Organisations dans l’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) dans le guide Composants de l’interface centrale de l’Experience Cloud.
 
 ## Configuration des services push et du service d’identification du SDK dans l’interface utilisateur de Mobile
 

@@ -1,16 +1,13 @@
 ---
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
-seo-description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
-seo-title: Suivi des blocages d’application
 solution: Experience Cloud,Analytics
 title: Suivi des blocages d’application
 topic-fix: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 exl-id: d8d59b4e-0231-446d-9ba1-8a9809be9c61
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '467'
 ht-degree: 100%
 
 ---

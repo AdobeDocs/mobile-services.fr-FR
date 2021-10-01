@@ -1,21 +1,18 @@
 ---
 description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
-seo-description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
-seo-title: Méthodes de services d’identification Adobe Experience Platform
 solution: Experience Cloud,Analytics
-title: Méthodes de services d’identification Adobe Experience Platform
+title: Méthodes de services d’identification Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
-# Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
+# Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
 
 Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
 
@@ -25,7 +22,7 @@ Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experie
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
-   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, il vous faut le SDK mobile version 4.12 ou ultérieure. Pour obtenir plus d’informations, voir [Ajout de la fonction d’application d’assistance de l’identifiant visiteur](https://docs.adobe.com/content/help/fr-FR/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Ajoute les données du visiteur Adobe à une chaîne d’URL en vue d’une utilisation dans la bibliothèque JavaScript Adobe. Pour utiliser cette méthode, il vous faut le SDK mobile version 4.12 ou ultérieure. Pour plus d’informations, voir [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=fr) dans la documentation du service Adobe Experience Cloud Identity.
 
    >[!IMPORTANT]
    >

@@ -1,36 +1,33 @@
 ---
-description: Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
-seo-description: Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
-seo-title: Méthodes Analytics
+description: Informations relatives à l’utilisation du SDK Plateforme Windows universelle avec Adobe Analytics.
 solution: Experience Cloud,Analytics
 title: Méthodes Analytics
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 57%
+source-wordcount: '617'
+ht-degree: 58%
 
 ---
 
 # Méthodes Analytics {#analytics-methods}
 
-Informations destinées à vous aider à utiliser le SDK de plateforme Windows universelle avec Adobe Analytics.
+Informations relatives à l’utilisation du SDK Plateforme Windows universelle avec Adobe Analytics.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Analytics&quot;.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Analytics&quot;.
 
 Chacune de ces méthodes est utilisée pour envoyer des données dans la suite de rapports Adobe Analytics.
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
 
 * **TrackState (winJS: trackState)**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
-Si `state` est vide, il s’affiche sous la forme &quot;nom d’application version d’application (compilation)&quot; dans les rapports. Si cette valeur apparaît dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états correspondent aux affichages disponibles dans l’application, par exemple &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
+Si `state` est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
 
    >[!TIP]
    >
@@ -51,7 +48,7 @@ Si `state` est vide, il s’affiche sous la forme &quot;nom d’application vers
 
 * **TrackAction (winJS: trackAction)**
 
-   Effectue le suivi d’une action dans votre application. Les actions sont les actions qui se produisent dans votre application et que vous souhaitez mesurer, telles que les &quot;connexions&quot;, les &quot;clics sur la bannière&quot;, les &quot;abonnements de flux&quot; et d’autres mesures.
+   Effectue le suivi d’une action dans votre application. Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple &quot;connexions&quot;, &quot;appuis sur la bannière&quot;, &quot;abonnements aux flux&quot; et d’autres mesures.
 
    * Voici la syntaxe de cette méthode :
 
@@ -66,9 +63,9 @@ Si `state` est vide, il s’affiche sous la forme &quot;nom d’application vers
       ADB.Analytics.trackAction("ButtonClick",null); 
       ```
 
-* **GetTrackingIdentifierAsync (winJS : getTrackingIdentifierAsync)**
+* **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
-   Renvoie l’ID de visiteur généré automatiquement pour Analytics. Il s’agit d’un identifiant de visiteur unique propre à l’application, qui est généré au lancement initial, puis stocké et utilisé à partir de ce moment. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
+   Renvoie l’identifiant visiteur généré automatiquement pour Analytics. Il s’agit d’un identifiant visiteur unique propre à l’application, généré au lancement initial, puis stocké et utilisé à partir de ce lancement. Cet identifiant est conservé entre les mises à niveau de l’application et supprimé lors de la désinstallation.
 
    * Voici la syntaxe de cette méthode :
 
@@ -102,7 +99,7 @@ Si `state` est vide, il s’affiche sous la forme &quot;nom d’application vers
       ADB.Analytics.trackLocation(47.60621,-122.33207,null);
       ```
 
-* **TrackLifetime &#x200B; ValueAugmentation (winJS : trackLifetime &#x200B; ValueAugmentation)**
+* **TrackLifetime &#x200B; ValueIncrease (winJS : trackLifetime &#x200B; ValueIncrease)**
 
    Ajoute `amount` à la valeur de durée de vie de l’utilisateur.
 
@@ -163,7 +160,7 @@ Si `state` est vide, il s’affiche sous la forme &quot;nom d’application vers
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **TrackTimedActionExistsAsync (winJS : trackTimedActionExistsAsync)**
+* **TrackTimedActionExistsAsync (winJS: trackTimedActionExistsAsync)**
 
    Renvoie true si l’action minutée donnée existe et false si elle n’existe pas.
 
@@ -214,9 +211,9 @@ Si `state` est vide, il s’affiche sous la forme &quot;nom d’application vers
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **GetQueueSizeAsync (winJS : getQueueSizeAsync)**
+* **GetQueueSizeAsync (winJS: getQueueSizeAsync)**
 
-   Renvoie le nombre d’accès actuellement stockés dans la file d’attente Analytics.
+   Renvoie le nombre d’accès actuellement stockés dans la file d’attente d’Analytics.
 
    * Voici la syntaxe de cette méthode :
 

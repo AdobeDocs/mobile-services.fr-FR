@@ -1,22 +1,19 @@
 ---
 description: Ces informations vous aideront à utiliser la fonctionnalité de position dans vos applications Android.
 keywords: android;library;mobile;sdk
-seo-description: Ces informations vous aideront à utiliser la fonctionnalité de position dans vos applications Android.
-seo-title: Présentation de la fonctionnalité de position
 solution: Experience Cloud,Analytics
 title: Présentation d’Emplacement
 topic-fix: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
 exl-id: 687a3b2c-ee74-46d8-a732-b3a0bec6e798
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '123'
 ht-degree: 100%
 
 ---
 
-# Présentation de la fonctionnalité de position {#location}
+# Présentation d’Emplacement {#location}
 
 Les informations de cette section vous aident à utiliser la fonctionnalité de position dans vos applications Android.
 

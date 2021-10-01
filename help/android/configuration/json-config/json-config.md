@@ -1,16 +1,13 @@
 ---
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-title: Fichier de configuration JSON ADBMobile
 solution: Experience Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 100%
 
 ---
@@ -155,8 +152,8 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
       À partir de la version 4.2, les points ciblés sont définis dans l’interface Adobe Mobile et synchronisés dynamiquement avec les fichiers de configuration de l’application. Cette synchronisation requiert le paramètre `analytics.poi` :
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. Pour télécharger un fichier de configuration mis à jour, voir [Avant de démarrer](/help/android/getting-started/requirements.md).
@@ -242,7 +239,7 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
    * Détermine le délai pendant lequel Target attend une réponse.
 
 
-## Exemple de fichier `ADBMobileConfig.json` : {#section_4655EF79744649E5A5AE19E3224C472C}
+## Exemple de fichier `ADBMobileConfig.json` :  {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Voici un exemple de fichier `ADBMobileConfig.json` :
 
@@ -396,5 +393,5 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
 * &quot;triggers&quot;
    * identique aux audiences, mais il s’agit de l’action au lieu de l’audience
    * &quot;key&quot;
-   * &quot;correspond&quot;
-   * &quot;valeurs&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;

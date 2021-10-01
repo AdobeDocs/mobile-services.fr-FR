@@ -1,17 +1,14 @@
 ---
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-seo-title: Fichier de configuration JSON ADBMobile
 solution: Experience Cloud,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 100%
+source-wordcount: '1708'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +70,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour en savoir plus, voir [s.charSet](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/config-vars/charset.html).
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir la variable [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
 
    * Version minimale du SDK : 4.0
 
@@ -162,7 +159,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
    >À partir de la version 4.2, les points ciblés sont définis dans l’interface Adobe Mobile et synchronisés dynamiquement avec les fichiers de configuration de l’application. Cette synchronisation requiert le paramètre `analytics.poi` :
 
    ```js
-   “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
+   "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
    Si ce paramètre n’est pas configuré, le fichier `ADBMobile.json` doit être mis à jour afin d’inclure cette ligne. Pour télécharger un fichier de configuration mis à jour, voir [Avant de démarrer](/help/ios/getting-started/requirements.md).
@@ -275,8 +272,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
    * Version minimale du SDK : 4.0
 
-
-## Exemple de fichier `ADBMobileConfig.json` : {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exemple de fichier `ADBMobileConfig.json` :  {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Voici un exemple de fichier `ADBMobileConfig.json` :
 
@@ -464,5 +460,5 @@ Le nœud de messages est généré automatiquement par Adobe Mobile Services et
    Comme les audiences, mais il s’agit ici des actions :
 
    * &quot;triggers&quot;
-   * &quot;correspond&quot;
-   * &quot;valeurs&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;

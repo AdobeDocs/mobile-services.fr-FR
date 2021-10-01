@@ -1,22 +1,19 @@
 ---
 description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS pour réaliser différentes tâches.
 keywords: android;library;mobile;sdk
-seo-description: Vous pouvez utiliser les méthodes du module externe PhoneGap iOS pour réaliser différentes tâches.
-seo-title: Méthodes du module externe PhoneGap
 solution: Experience Cloud,Analytics
 title: Méthodes du module externe PhoneGap
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
 
-# Méthodes du module externe PhoneGap {#phonegap-plug-in-methods}
+# Méthodes du module externe PhoneGap{#phonegap-plug-in-methods}
 
 Vous pouvez utiliser les méthodes du module externe Android PhoneGap pour réaliser diverses tâches.
 
@@ -579,11 +576,11 @@ Dans les fichiers `html` pour lesquels vous voulez utiliser le suivi, ajoutez le
    * Voici des exemples de code pour cette méthode :
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’}, function() {…}, function() {…}));
       ```
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’});  
       ```
 
 ## Identifiant de publicité {#section_194607D101B047A19C51B19E176E1500}

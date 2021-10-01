@@ -1,23 +1,20 @@
 ---
 description: Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
-seo-description: Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
-seo-title: Target Preview sous Android
 title: Target Preview sous Android
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+exl-id: 69103f3a-9521-4808-8ecd-7b960efca04d
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 87%
+source-wordcount: '120'
+ht-degree: 74%
 
 ---
-
 
 # Target Preview sous Android {#target-preview-on-android}
 
 Target Preview permet d’effectuer facilement un contrôle qualité de bout en bout des activités Target et de prévisualiser ces dernières sur votre appareil.
 
-For more information on how to set up and use Target Preview, go to [Target Mobile Preview](https://docs.adobe.com/content/help/fr-FR/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Pour plus d’informations sur la configuration et l’utilisation de Target Preview, voir [Target Mobile Preview](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) dans le guide d’utilisation d’Adobe Target.
 
 >[!IMPORTANT]
 >
@@ -36,6 +33,5 @@ For more information on how to set up and use Target Preview, go to [Target Mobi
    * Voici l’exemple de code pour cette méthode :
 
       ```java
-      Target.setPreviewRestartDeeplink(“myapp://myhost”); 
+      Target.setPreviewRestartDeeplink("myapp://myhost"); 
       ```
-

@@ -1,21 +1,18 @@
 ---
 description: Ces informations vous aideront à migrer de la version 2.x ou 3.x de la bibliothèque iOS vers la version 4.x.
-seo-description: Ces informations vous aideront à migrer de la version 2.x ou 3.x de la bibliothèque iOS vers la version 4.x.
-seo-title: Migration vers la bibliothèque iOS 4.x
 solution: Experience Cloud,Analytics
 title: Migration vers la bibliothèque iOS 4.x
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
 
-# Migration vers la bibliothèque iOS 4.x {#migrating-to-the-x-ios-library}
+# Migration vers la bibliothèque iOS 4.x{#migrating-to-the-x-ios-library}
 
 Ces informations vous aideront à migrer de la version 2.x ou 3.x de la bibliothèque iOS vers la version 4.x.
 
@@ -112,7 +109,7 @@ Déplacez la valeur de la première colonne vers la variable de la deuxième col
 | trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
 | trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;devise&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | Supprimer, n’est plus utilisé. |
 | linkTrackEvents | Supprimer, n’est plus utilisé. |

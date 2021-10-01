@@ -1,17 +1,14 @@
 ---
 description: Ce module externe permet d’envoyer des appels AppMeasurement pour iOS à partir de votre projet PhoneGap.
 keywords: phonegap
-seo-description: Ce module externe permet d’envoyer des appels AppMeasurement pour iOS à partir de votre projet PhoneGap.
-seo-title: Module externe PhoneGap
 solution: Experience Cloud,Analytics
 title: Module externe PhoneGap
 topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '314'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 
 Pour créer un projet PhoneGap, voir [PhoneGap](https://helpx.adobe.com/fr/experience-manager/6-4/mobile/using/phonegap.html).
 
-## Installation du module externe à l’aide de npm : {#section_43229E57C16944C0B51531CB92089189}
+## Installation du module externe à l’aide de npm :  {#section_43229E57C16944C0B51531CB92089189}
 
 1. Exécutez la commande suivante :
 

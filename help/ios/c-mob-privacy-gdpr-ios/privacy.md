@@ -1,16 +1,13 @@
 ---
 description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
-seo-description: Consultez ces informations en cas de demande de suppression de données en vertu du RGPD.
-seo-title: Définition de l’état de souscription de l’utilisateur
 solution: Experience Cloud,Analytics
 title: Définition de l’état de souscription de l’utilisateur
 topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '255'
 ht-degree: 100%
 
 ---

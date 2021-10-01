@@ -1,16 +1,13 @@
 ---
 description: À partir de la version WatchOS 2, vos extensions WatchKit s’exécuteront sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent le framework WatchConnectivity pour partager des données avec leur application iOS contenante.
-seo-description: À partir de la version WatchOS 2, vos extensions WatchKit s’exécuteront sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent le framework WatchConnectivity pour partager des données avec leur application iOS contenante.
-seo-title: Mise en œuvre de l’Apple Watch avec WatchOS 2
 solution: Experience Cloud,Analytics
 title: Mise en œuvre de l’Apple Watch avec WatchOS 2
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '506'
 ht-degree: 100%
 
 ---
@@ -41,8 +38,8 @@ Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux 
 >* L’application contenante
 >* L’application WatchKit
 >* L’extension WatchKit
->
 
+>
 
 
 Pour plus d’informations sur le développement d’applications WatchKit, voir [L’architecture des applications Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
@@ -69,7 +66,7 @@ Procédez comme suit dans votre projet Xcode :
 1. Importez `AdobeMobileLibrary` dans le fichier d’implémentation de votre classe de délégation d’application.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Avant de lancer un appel vers la bibliothèque `ADBMobile`, dans `application:didFinishLaunchingWithOptions:` du délégué de votre application, configurez votre `WCSession`.
@@ -120,7 +117,7 @@ Procédez comme suit dans votre projet Xcode :
 1. Importez `AdobeMobileLibrary` dans le fichier d’implémentation de votre classe de délégation d’extension.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Dans l’élément `applicationDidFinishLaunching` du délégué de votre extension, configurez `WCSession` avant de lancer des appels vers la bibliothèque `ADBMobile`.
@@ -159,7 +156,7 @@ Procédez comme suit dans votre projet Xcode :
    } 
    ```
 
-## Informations supplémentaires {#section_7BCDB5CF0D424DCA97883753D1881233}
+## Informations supplémentaires  {#section_7BCDB5CF0D424DCA97883753D1881233}
 
 À noter :
 

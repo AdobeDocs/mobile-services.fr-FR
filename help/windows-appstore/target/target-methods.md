@@ -1,31 +1,28 @@
 ---
-description: Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
-seo-description: Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
-seo-title: Méthodes Target
+description: Liste des méthodes Target fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
 solution: Experience Cloud,Analytics
 title: Méthodes Target
 topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 42%
+source-wordcount: '267'
+ht-degree: 43%
 
 ---
 
 # Méthodes Target {#target-methods}
 
-Liste des méthodes de Cible fournies par la bibliothèque Windows 8.1 Universal App Store.
+Liste des méthodes Target fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Cible et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Cible&quot;.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Target&quot;.
 
 [Les mesures de cycle de vie](/help/windows-appstore/metrics.md) sont envoyées sous la forme de paramètres à chaque chargement de mbox.
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), toutes les méthodes ont automatiquement leur première lettre avec un caractère minuscule.
+>Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
 
 ## Référence de classe : TargetLocationRequest
 
@@ -39,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## Constantes de chaîne
 
-Ces informations vous aident à définir les clés des paramètres personnalisés.
+Ces informations vous aident à définir des clés pour les paramètres personnalisés.
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -73,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Envoie `request` à votre serveur de Cibles configuré et renvoie la valeur de chaîne de l&#39;offre générée dans un bloc `callback`.
+   Envoie `request` au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un bloc `callback`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -107,7 +104,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner", "default.png", null); 
       ```
 
-* **CreateOrder &#x200B; ConfirmRequest (winJS : createOrder &#x200B; ConfirmRequest)**
+* **CreateOrder &#x200B; ConfirmRequest (winJS) : createOrder &#x200B; ConfirmRequest)**
 
    Crée un objet `TargetLocationRequest` avec les paramètres donnés.
 
@@ -126,7 +123,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies (winJS: clearCookies)**
 
-   Efface les cookies de Cible de l’application sur le périphérique actuel.
+   Efface les cookies Target pour l’application sur l’appareil actuel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -140,9 +137,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ADBMobile.Target.clearCookies();
       ```
 
-* **GetPcId (winJS : getPcId)**
+* **GetPcId (winJS: getPcId)**
 
-   Renvoie le cookie d&#39;ID de PC pour le périphérique actuel.
+   Renvoie le cookie d’ID de PC de l’appareil actuel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -156,9 +153,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       auto pcId = ADBMobile.Target.getPcId(); 
       ```
 
-* **GetSessionId (winJS : getSessionId)**
+* **GetSessionId (winJS: getSessionId)**
 
-   Renvoie le cookie ID de session pour le périphérique actuel.
+   Renvoie le cookie ID de session de l’appareil actif.
 
    * Voici la syntaxe de cette méthode :
 

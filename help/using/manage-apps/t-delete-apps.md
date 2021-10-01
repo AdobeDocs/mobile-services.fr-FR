@@ -1,17 +1,14 @@
 ---
 description: Vous pouvez supprimer une application dans Adobe Mobile.
 keywords: mobile
-seo-description: Vous pouvez supprimer une application dans Adobe Mobile.
-seo-title: Suppression d’une application
 solution: Experience Cloud,Analytics
 title: Suppression d’une application
 topic-fix: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
 exl-id: 70b95aed-9e22-470b-b278-6c015334e92a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '94'
 ht-degree: 100%
 
 ---

@@ -1,21 +1,18 @@
 ---
 description: Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
-seo-description: Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
-seo-title: Suivi des visiteurs entre une application et le web mobile
 solution: Experience Cloud,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
-# Suivi des visiteurs entre une application et le web mobile {#visitor-tracking-between-an-app-and-mobile-web}
+# Suivi des visiteurs entre une application et le web mobile   {#visitor-tracking-between-an-app-and-mobile-web}
 
 Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
 
@@ -41,7 +38,7 @@ Pour utiliser le même ID visiteur dans l’application et le web mobile, et tr
 1. Afin d’ajouter des informations sur les visiteurs à l’URL utilisée pour ouvrir l’affichage web, appelez `visitorAppendToURL` :
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

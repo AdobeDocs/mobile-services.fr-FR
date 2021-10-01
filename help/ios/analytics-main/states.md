@@ -1,16 +1,13 @@
 ---
 description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), un appel de suivi de l’état devrait être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
-seo-description: Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état s’affiche dans votre application (par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers le fil d’actualité), un appel de suivi de l’état devrait être envoyé. Sous iOS, un état est généralement suivi dans la méthode viewDidLoad de chaque vue.
-seo-title: Suivi des états de l’application
 solution: Experience Cloud,Analytics
 title: Suivi des états de l’application
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---

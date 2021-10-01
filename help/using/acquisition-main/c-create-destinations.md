@@ -1,22 +1,19 @@
 ---
 description: Les marketeurs peuvent créer, enregistrer et modifier les destinations de lien (liens Web, profonds ou autres) pouvant être utilisées lors de la génération de liens marketing pouvant faire l’objet d’un suivi.
 keywords: mobile
-seo-description: Les marketeurs peuvent créer, enregistrer et modifier les destinations de lien (liens Web, profonds ou autres) pouvant être utilisées lors de la génération de liens marketing pouvant faire l’objet d’un suivi.
-seo-title: Destinations
 solution: Experience Cloud,Analytics
-title: Destinations
+title: 'Destinations '
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '171'
 ht-degree: 100%
 
 ---
 
-# Destinations {#destinations}
+# Destinations{#destinations}
 
 Les marketeurs peuvent créer, enregistrer et modifier les destinations de lien (liens Web, profonds ou autres) pouvant être utilisées lors de la génération de liens marketing pouvant faire l’objet d’un suivi.
 
