@@ -6,9 +6,9 @@ title: Résolution des problèmes liés aux messages push
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,11 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    >[!TIP]
    >
-   >Ce nombre correspond au nombre d’envois réussis vers le ou les services push. Les services push ne garantissent pas qu’un message sera envoyé.
+   >Les services push ne garantissent pas qu’un message sera envoyé. Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
+   >
+   >* **APNS** : [Qualité du service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM** : [Durée de vie d’un message](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Pour plus d’informations sur la fiabilité du service, voir :
-
-   * [Qualité de service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Durée de vie d’un message](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## Pourquoi ma clé API GCM Android est-elle incorrecte ?
 
@@ -52,8 +51,6 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 * **Vérification de la validité de la clé API**
 
    Pour vérifier la validité de la clé d’API, exécutez la commande suivante :
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Votre certificat APNS n’est peut-être pas valide pour les raisons suivantes 
 * Vous utilisez un fichier `.p8` au lieu d’un fichier `.p12`.
 
 ## Résolution des dysfonctionnements des messages push
-
-**Un exemple**
 
 L’exemple suivant explique comment résoudre un échec de message push lors de l’utilisation d’une suite de rapports virtuelle.
 

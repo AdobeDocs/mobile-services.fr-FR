@@ -6,7 +6,7 @@ title: Dépannage de la messagerie Push
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
@@ -31,12 +31,11 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
    >[!TIP]
    >
-   >Les services push ne garantissent pas qu’un message sera envoyé.
+   >Les services push ne garantissent pas qu’un message sera envoyé. Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
+   >
+   >* **APNS** : [Qualité du service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM** : [Durée de vie d’un message](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Pour obtenir plus d’informations sur la fiabilité des services, voir la documentation appropriée :
-
-   * **APNS** : [Qualité du service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM** : [Durée de vie d’un message](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Pourquoi mes messages push sont-ils coupés ou ne se développent-ils pas ?
 

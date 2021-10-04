@@ -5,10 +5,10 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 18%
+source-wordcount: '945'
+ht-degree: 17%
 
 ---
 
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### C# dans App.xaml.cs
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### C/CX dans App.xaml.cpp
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ Toutes les valeurs que vous assignez directement aux variables doivent être ajo
 
 Les règles de traitement sont utilisées pour copier les données que vous envoyez dans des variables de données contextuelles vers des eVars, des props et d’autres variables pour la création de rapports.
 
-[Formation aux règles de traitement](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
-
 [Présentation des règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-Nous vous recommandons de regrouper vos variables de données contextuelles à l’aide d’&quot;espaces de noms&quot;, car cela vous aide à conserver un ordre logique. Par exemple, si vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
+Adobe recommande de regrouper vos variables de données contextuelles à l’aide d’&quot;espaces de noms&quot;, car cela vous permet de conserver un ordre logique. Par exemple, si vous souhaitez collecter des informations sur un produit, vous pouvez définir les variables suivantes :
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Les variables de données contextuelles sont triées par ordre alphabétique dans l’interface des règles de traitement. Les espaces de noms vous permettent donc de voir rapidement les variables qui se trouvent dans le même espace de noms.
@@ -153,25 +151,25 @@ Les variables de données contextuelles sont triées par ordre alphabétique dan
 En outre, nous avons entendu dire que certains d’entre vous nomment des clés de données contextuelles à l’aide de l’eVar ou du numéro de prop :
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Cela peut rendre *légèrement* plus facile lorsque vous effectuez le mappage unique dans les règles de traitement, mais vous perdez la lisibilité pendant le débogage et les futures mises à jour du code peuvent être plus difficiles. Nous vous recommandons plutôt d’utiliser des noms explicites pour les clés et les valeurs :
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Définissez les variables contextuelles qui définissent les événements de compteur sur une valeur de &quot;1&quot; :
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Les variables de données contextuelles qui définissent les événements d’incrémentation peuvent avoir la valeur à incrémenter :
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]
