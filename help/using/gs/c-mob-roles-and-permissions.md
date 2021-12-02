@@ -3,10 +3,10 @@ description: Dans Adobe Analytics, vous pouvez gérer les rôles sur la page d�
 title: Rôles et autorisations
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 42%
+source-wordcount: '592'
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ Dans Adobe Analytics, vous pouvez gérer les rôles sur la page d’accueil des
 
 Les rôles suivants gèrent les autorisations dans l’interface utilisateur de Mobile Services :
 
-### Votre administrateur Analytics
+### Administrateur Analytics
 
 Un administrateur Analytics gère les groupes d’utilisateurs et affecte des autorisations, dont l’un est l’administrateur des applications mobiles. L’administrateur Experience Cloud associe votre Adobe ID à votre compte Adobe Analytics, ce qui vous permet de vous connecter à l’interface utilisateur de Mobile Services à l’aide de votre Adobe ID. Pour plus d’informations sur l’administrateur Experience Cloud, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) dans le guide des composants de l’interface centrale Experience Cloud.
 
@@ -28,10 +28,10 @@ Un administrateur Analytics gère les groupes d’utilisateurs et affecte des au
 
 Pour plus d’informations sur ce rôle, voir le contenu suivant dans la documentation Adobe Analytics :
 
-* [Gestion des utilisateurs - Aperçu](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [Modifications des autorisations d’utilisateur et des droits d’accès de groupe](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Gestion des utilisateurs - Aperçu](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=fr)
+* [Modifications des autorisations d’utilisateur et des droits d’accès de groupe](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
-### Administration des applications mobiles
+### Administrateur des applications mobiles
 
 Ce rôle confère les droits d’administrateur pour l’interface utilisateur de Mobile Services.
 
@@ -55,7 +55,7 @@ Si votre société ne dispose pas de contrat Analytics pour accéder à une fonc
 
 Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés de leurs autorisations pertinentes :
 
-### Votre administrateur Analytics permissions
+### Administrateur Analytics autorisations
 
 * Affecter les autorisations d’administrateur pour tous les utilisateurs et toutes les applications mobiles
 * Créer une application avec une nouvelle suite de rapports
@@ -71,7 +71,7 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
    * Activation des rapports d’emplacement
    * Création/mise à jour/suppression de variables et de mesures
 
-### Administration des applications mobiles permissions
+### Administrateur des applications mobiles autorisations
 
 * Toutes les autorisations d’utilisateur
 * Créer une application avec une suite de rapports existante
@@ -79,7 +79,7 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
 
    * Configuration des options du SDK Mobile de l’application
    * Configuration des paramètres de l’interface utilisateur de l’application
-   * Configuration des applications de la boutique d’applications liées
+   * Configuration des applications App Store liées
    * Configuration des options de lien universel de l’application
    * Configuration des certificats de services push et des clés d’API
    * Créer/mettre à jour/activer/désactiver/dupliquer/archiver/supprimer des postbacks
@@ -93,8 +93,8 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
 
 Pour plus d’informations sur les groupes et les utilisateurs, consultez le contenu suivant dans la documentation Adobe Analytics :
 
-* [Paramètres du groupe d’utilisateurs (hérités)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [Ajout d’un utilisateur à un groupe](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Paramètres du groupe d’utilisateurs (hérités)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Ajout d’un utilisateur à un groupe](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Utilisateur de Mobile Services
 
