@@ -6,10 +6,10 @@ title: Boutique d’applications
 topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 95%
+source-wordcount: '154'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ L’intégration du connecteur de données `appFigures` associe la puissance de 
 >
 >Dans l’interface utilisateur d’Adobe Mobile Services, une fois l’intégration configurée, l’option de menu **[!UICONTROL Boutique d’applications]** et les rapports associés s’affichent dans le volet de navigation de gauche.
 
-[Le connecteur de données appFigures pour Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/appfigures/appfigures-overview.html) contient les informations suivantes :
+Le connecteur de données appFigures pour Adobe Analytics contient les informations suivantes :
 
 * Principaux avantages et caractéristiques de l’intégration
 * Implémentation de l’intégration, notamment :

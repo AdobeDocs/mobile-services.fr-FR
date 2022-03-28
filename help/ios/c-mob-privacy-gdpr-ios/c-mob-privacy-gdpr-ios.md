@@ -3,10 +3,10 @@ description: Les SDK Experience Cloud Mobile contiennent des API conformes au 
 title: Confidentialité et Règlement général sur la protection des données
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 exl-id: 8549310d-31b8-49a3-9276-f8e9ab980a10
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 71%
+source-wordcount: '336'
+ht-degree: 74%
 
 ---
 
@@ -18,14 +18,14 @@ Les SDK Experience Cloud Mobile contiennent des API conformes au règlement g�
 >
 >Le RGPD est pris en charge **uniquement** dans la version 4.16.0 ou ultérieure du SDK Mobile.
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Aperçu
 
@@ -49,4 +49,3 @@ Pour les parties du SDK Adobe Mobile de vos applications mobiles, vous pouvez ut
 ## Informations supplémentaires {#section_7C7124C50D85469C8C8714533FB1A37D}
 
 * Pour plus d’informations sur le RGPD, voir [Le RGPD et votre entreprise](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
-* Pour consulter la documentation de l’API relative au RGPD, voir [API relative au règlement général sur la protection des données](https://adobe.io/apis/cloudplatform/gdpr.html).
