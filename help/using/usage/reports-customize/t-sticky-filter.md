@@ -1,12 +1,12 @@
 ---
 description: Créez un filtre couvrant différents rapports, afin de visualiser le comportement d’un segment par rapport à l’ensemble des rapports mobiles. Un filtre d’attractivité vous permet de définir un filtre qui est appliqué à tous les rapports autres que de cheminement.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Ajout d’un filtre d’attractivité
 topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez configurer des options d’expérience pour les messages push et les messages push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Expérience : message push'
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%

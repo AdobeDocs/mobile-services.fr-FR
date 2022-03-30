@@ -1,12 +1,12 @@
 ---
 description: Répertorie les mesures et les dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mesures de cycle de vie
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 84%
@@ -264,14 +264,14 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Nom du point ciblé**
 
-   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
+   Renseigné par `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.poi`
    * Caractéristique de l’Audience Manager : `c_a_loc_poi`
 
 * **Distance jusqu’au centre du point ciblé**
 
-   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
+   Renseigné par `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target : `a.loc.dist`
    * Caractéristique de l’Audience Manager : `c_a_loc_dist`

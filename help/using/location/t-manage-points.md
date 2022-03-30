@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point ciblé, celui-ci est rattaché à l’accès en question.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Gestion des points ciblés
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%

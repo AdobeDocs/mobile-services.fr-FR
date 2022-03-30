@@ -1,11 +1,11 @@
 ---
 description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Plateforme Windows universelle.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes Audience Manager
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 44%
@@ -20,7 +20,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
+>Lorsque vous consommez `winmd` à partir de winJS (JavaScript), toutes les méthodes voient automatiquement leur première lettre mise en minuscule.
 
 Si audience Manager est configuré dans votre fichier JSON, un signal contenant des mesures de cycle de vie est envoyé avec votre accès de cycle de vie.
 

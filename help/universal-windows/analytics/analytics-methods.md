@@ -1,11 +1,11 @@
 ---
 description: Informations relatives à l’utilisation du SDK Plateforme Windows universelle avec Adobe Analytics.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes Analytics
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 58%
@@ -22,12 +22,12 @@ Chacune de ces méthodes est utilisée pour envoyer des données dans la suite d
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
+>Lorsque vous consommez `winmd` à partir de winJS (JavaScript), toutes les méthodes voient automatiquement leur première lettre mise en minuscule.
 
 * **TrackState (winJS: trackState)**
 
    Contrôle l’état d’une application avec les données contextuelles facultatives. Les états correspondent aux affichages disponibles dans l’application, par exemple &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
-Si `state` est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir `state` dans chaque appel `TrackState`.
+If `state` est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si cette valeur s’affiche dans les rapports, veillez à définir `state` dans chaque `TrackState` appelez .
 
    >[!TIP]
    >

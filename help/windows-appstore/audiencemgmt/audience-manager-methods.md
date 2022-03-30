@@ -1,11 +1,11 @@
 ---
-description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-solution: Experience Cloud,Analytics
+description: Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
+solution: Experience Cloud Services,Analytics
 title: Méthodes Audience Manager
 topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 46%
@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Méthodes Audience Manager {#audience-manager-methods}
 
-Liste des méthodes d’Audience Manager fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+Liste des méthodes d’Audience Manager fournies par la bibliothèque Windows 8.1 Universal App Store.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Le préfixe des méthodes d’Audience Manager est &quot;AudienceManager&quot;.
 

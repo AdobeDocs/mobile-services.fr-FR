@@ -1,11 +1,11 @@
 ---
-description: Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-solution: Experience Cloud,Analytics
+description: Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
+solution: Experience Cloud Services,Analytics
 title: Méthodes SDK
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 51%
@@ -14,11 +14,11 @@ ht-degree: 51%
 
 # Méthodes SDK {#sdk-methods}
 
-Classes et méthodes fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+Classes et méthodes fournies par la bibliothèque Windows 8.1 Universal App Store.
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
+>Lorsque vous consommez `winmd` à partir de winJS (JavaScript), toutes les méthodes voient automatiquement leur première lettre mise en minuscule.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications Win
    * `ADBMobilePrivacyStatusOptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne &quot;inclusion&quot; (les accès sont envoyés) ou &quot;exclusion&quot; (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      La valeur par défaut est définie dans le fichier [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) .
+      La valeur par défaut est définie dans la variable [Fichier de configuration ADBMobileConfig.json](/help/windows-appstore/c-configuration/c.json.md) fichier .
 
    * Voici la syntaxe de cette méthode :
 
@@ -122,7 +122,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications Win
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant d’utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’ID précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant d’utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’elle soit définie.
 
    * Voici la syntaxe de cette méthode :
 
@@ -194,7 +194,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications Win
 
    >[!TIP]
    >
-   >Appelez cette méthode dans la méthode `onResume()` de chaque activité au sein de votre application, comme illustré dans l’exemple suivant. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
+   >Appelez cette méthode dans la variable `onResume()` dans chaque activité à l’intérieur de votre application, comme illustré dans l’exemple suivant. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 
@@ -215,7 +215,7 @@ Classes et méthodes fournies par la bibliothèque Boutique d’applications Win
 
    >[!TIP]
    >
-   >Appelez cette méthode dans les méthodes `onPause()` de chaque activité dans votre application, comme illustré dans l’exemple. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
+   >Appelez cette méthode dans la variable `onPause()` dans chaque activité de votre application, comme illustré dans l’exemple. Nous vous recommandons également de transmettre l’activité ou le service comme objet de contexte au lieu du contexte d’application globale.
 
    * Voici la syntaxe de cette méthode :
 

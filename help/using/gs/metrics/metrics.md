@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez effectuer différentes mesures en utilisant Adobe Mobile et en collectant les mesures que vous souhaitez suivre pour votre application.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mesures mobiles
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Les types de mesures suivants sont mesurés :
 
 * **Événements d’application**
 
-   Les événements d’application sont les indicateurs de performance clés que vous définissez pour mesurer le succès de votre application. Selon le type d’application fourni, les indicateurs de performance clés peuvent être  des articles lus et des niveaux atteints comme des recettes sur la durée de vie.
+   Les événements d’application sont les indicateurs clés de performance que vous définissez pour mesurer le succès de votre application. Selon le type d’application fourni, les indicateurs clés de performance peuvent être des articles lus et des niveaux atteints comme des recettes sur la durée de vie.
 
 * **États d’application**
 
@@ -53,7 +53,7 @@ Les types de mesures suivants sont mesurés :
 
 * **Durée d’achèvement**
 
-   Avec les indicateurs de performance clés que vous mesurez, vous pouvez utiliser le temps pour mesurer la durée de la session et le temps total (intersessions) nécessaire à l’exécution d’une action. Par exemple, vous pouvez mesurer le temps qui s’écoule entre l’installation et l’achat In-App initial.
+   Avec les indicateurs clés de performance que vous mesurez, vous pouvez utiliser le temps pour mesurer la durée de la session et le temps total (intersessions) nécessaire à l’exécution d’une action. Par exemple, vous pouvez mesurer le temps qui s’écoule entre l’installation et l’achat In-App initial.
 
 * **Appareils**
 

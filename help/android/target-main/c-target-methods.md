@@ -1,12 +1,12 @@
 ---
 description: Liste des méthodes Adobe Target fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes Target pour Android
 topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 95%
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 Liste des méthodes Adobe Target fournies par la bibliothèque Android.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `target`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `target`.
 
 >[!TIP]
 >

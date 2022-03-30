@@ -1,11 +1,11 @@
 ---
 description: Si votre application permet d’ouvrir du contenu web mobile, vous devez vous assurer que les visiteurs ne sont pas ré-identifiés à chaque fois qu’ils passent de l’application native à l’application web mobile.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
@@ -66,13 +66,13 @@ Dès les premiers accès depuis le contenu web mobile, vérifiez que le paramèt
 
 Vérifiez que la version du SDK Adobe groupé dans l’application parente est 4.12.0 ou supérieure.
 
-### Je ne vois pas les identifiants Adobe ID dans mon URL.
+### Je ne vois pas les identifiants Adobe ID dans mon URL.
 
 Vérifiez les éléments suivants :
 
 * La chaîne d’URL utilisée pour ouvrir l’affichage web a été générée par `[ADBMobile visitorAppendToURL:]`
 
-* Les identifiants Adobe ID sont encodés.
+* Les identifiants Adobe ID sont encodés.
 
    Pour vérifier que les identifiants ont été ajoutés à l’URL ouverte, recherchez le paramètre de requête `adobe_mc`.
 

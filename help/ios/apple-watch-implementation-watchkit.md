@@ -1,11 +1,11 @@
 ---
 description: À partir de la version WatchOS 2, vos extensions WatchKit s’exécuteront sur une Apple Watch. Les applications qui s’exécutent dans cet environnement requièrent le framework WatchConnectivity pour partager des données avec leur application iOS contenante.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mise en œuvre de l’Apple Watch avec WatchOS 2
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 100%
@@ -20,14 +20,14 @@ ht-degree: 100%
 >
 >A partir de `AdobeMobileLibrary` v4.6.0, `WatchConnectivity` est pris en charge.
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Prise en main {#section_70BC28BB69414F169196953D3D264BC1}
 

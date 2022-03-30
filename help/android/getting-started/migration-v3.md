@@ -1,12 +1,12 @@
 ---
 description: Ces informations vous aident à migrer de la version 2.x ou 3.x de la bibliothèque Android vers la version 4.x.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Migration vers la bibliothèque Android 4.x
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 99%
@@ -91,8 +91,8 @@ Pour migrer de la version 3.x vers la version 4, déplacez la valeur de la varia
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Supprimer, n’est plus utilisé. |
-| linkTrackEvents | Supprimer, n’est plus utilisé. |
+| linkTrackVars | À supprimer, n’est plus utilisée |
+| linkTrackEvents | À supprimer, n’est plus utilisée |
 
 ### Migration depuis la version 2.x
 
@@ -104,18 +104,18 @@ Pour migrer depuis la version 2.x vers la version 4.x, déplacez la valeur de 
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
 | trackingServer | &quot;server&quot;, supprimez le préfixe `"https://"`. Le préfixe de protocole est ajouté automatiquement en fonction du paramètre &quot;ssl&quot;. |
-| trackingServerSecure | Supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
+| trackingServerSecure | À supprimer. Pour les connexions sécurisées, définissez &quot;server&quot;, puis activez &quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| linkTrackVars | Supprimer, n’est plus utilisé. |
-| linkTrackEvents | Supprimer, n’est plus utilisé. |
-| timestamp | Supprimer, ne peut plus être configuré. |
-| dc | Supprimer, n’est plus utilisé. |
-| userAgent | Supprimer, ne peut plus être configuré. |
-| dynamicVariablePrefix | Supprimer, n’est plus utilisé. |
-| visitorNamespace | Supprimer, n’est plus utilisé. |
-| usePlugins | Supprimer, n’est plus utilisé. |
+| linkTrackVars | À supprimer, n’est plus utilisée |
+| linkTrackEvents | À supprimer, n’est plus utilisée |
+| timestamp | À supprimer, ne peut plus être configurée. |
+| dc | À supprimer, n’est plus utilisée |
+| userAgent | À supprimer, ne peut plus être configurée. |
+| dynamicVariablePrefix | À supprimer, n’est plus utilisée |
+| visitorNamespace | À supprimer, n’est plus utilisée |
+| usePlugins | À supprimer, n’est plus utilisée |
 | useBestPractices  tous les appels à la mesure churn (getChurnInstance) | Supprimée, remplacée par des mesures de cycle de vie. |
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}

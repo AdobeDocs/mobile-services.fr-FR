@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez définir et configurer les options d’audience se rapportant aux messages push, y compris la période, les segments Analytics et les segments personnalisés.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Audience : définition et configuration de segments d’audience pour les messages push'
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 98%
@@ -74,11 +74,11 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
 
    Pendant que vous configurez les options d’audience, prenez note des informations **importantes** :
 
-   * L’**[!UICONTROL Audience estimée ayant souscrit]** est le nombre d’appareils qui correspondent au segment Adobe Analytics **et** le nombre d’appareils ayant accepté les messages.
+   * L’**[!UICONTROL Audience estimée ayant souscrit]** est le nombre d’appareils qui correspondent au segment Adobe Analytics **et** le nombre d’appareils ayant accepté les messages.
 
       Vous pouvez afficher une estimation du nombre d’utilisateurs membres de vos segments sélectionnés qui ont choisi de recevoir des messages et qui recevront le message push. Le nombre total d’utilisateurs de l’application s’affiche en dessous de l’estimation, indépendamment du statut de souscription.
 
-   * Le **[!UICONTROL Total]** est le nombre d’appareils qui correspondent au segment Adobe Analytics.
+   * Le **[!UICONTROL Total]** est le nombre d’appareils qui correspondent au segment Adobe Analytics.
 
    * Les messages push sont envoyés aux appareils appartenant au segment Adobe Analytics défini **et** qui ont accepté les messages push.
 
@@ -107,7 +107,7 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
 
    * **[!UICONTROL Segments Analytics]**
 
-      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. Pour plus d’informations, voir [Créateur de segments](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=fr) dans la documentation Adobe Analytics.
+      Sélectionnez un segment Adobe Analytics existant dans la liste déroulante. Pour plus d’informations, voir [Créateur de segments](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=fr) dans la documentation Adobe Analytics.
 
    * **[!UICONTROL Segments personnalisés]**
 

@@ -1,11 +1,11 @@
 ---
 description: Voici une liste des méthodes fournies par la bibliothèque iOS.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes de configuration
 topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
@@ -125,7 +125,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Pour plus d’informations, voir la ligne `userIdentifier` ci-dessous. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` et l’identifiant de suivi est utilisé.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Pour plus d’informations, voir la ligne `userIdentifier` ci-dessous. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` et l’identifiant de suivi est utilisé.
 
    * Voici la syntaxe de cette méthode :
 
@@ -145,7 +145,7 @@ La valeur par défaut est définie dans le fichier `ADBMobileConfig.json`.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Cela permet de conserver les données du visiteur entre les mises à niveau du SDK.
 
    Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur a la valeur `nil` tant qu’il n’a pas été défini.
 

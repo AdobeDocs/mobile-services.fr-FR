@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK permet également de créer rapidement des rapports sur les utilisateurs qui ont ouvert votre application suite à un clic sur le message push.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Messagerie Push
 topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
 exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Pour utiliser les messages push, vous **devez** disposer du SDK version 4.6 ou 
 
 >[!IMPORTANT]
 >
->Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Ceci provoque la création d’un nouvel utilisateur unique qui ne recevra pas de messages push en raison de son état d’inclusion. Par exemple, un utilisateur qui s’est abonné pour recevoir des messages push se connecte à votre application. Une fois connecté, si vous définissez manuellement l’identifiant dans votre application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir de messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
+>Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Ceci provoque la création d’un nouvel utilisateur unique qui ne recevra pas de messages push en raison de son état d’inclusion. Par exemple, un utilisateur qui s’est abonné pour recevoir des messages push se connecte à votre application. Une fois connecté, si vous définissez manuellement l’identifiant dans votre application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir de messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
 >
 >Vous ne pouvez pas déplacer votre application vers une nouvelle suite de rapports. Si vous migrez vers une nouvelle suite de rapports, votre configuration push peut devenir défaillante et les messages peuvent ne pas être envoyés.
 

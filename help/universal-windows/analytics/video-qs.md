@@ -1,11 +1,11 @@
 ---
 description: Informations relatives aux analyses vidéo.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analyses de vidéos
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 71%
@@ -16,13 +16,13 @@ ht-degree: 71%
 
 Informations relatives aux analyses vidéo.
 
-Les mesures vidéo sont décrites en détail dans le guide [Mesure des médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr) . Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de démarrage rapide présente un aperçu des tâches des développeurs ainsi que des exemples de code.
+Les mesures vidéo sont décrites en détail dans la section [Mesure de médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr) guide. Le processus général de mesure vidéo est très similaire sur toutes les plateformes AppMeasurement. Cette section de démarrage rapide présente un aperçu des tâches des développeurs ainsi que des exemples de code.
 
 Le tableau suivant répertorie les données multimédias envoyées à Analytics. Utilisez des règles de traitement pour mapper les données contextuelles à une variable Analytics.
 
 * **a.media.name**
 
-   (**Obligatoire**) Collecte le nom de la vidéo, tel que spécifié dans l’implémentation, lorsqu’un visiteur regarde la vidéo d’une manière ou d’une autre. Vous pouvez ajouter des classifications pour cette variable.
+   (**Obligatoire**) Collecte le nom de la vidéo, tel que spécifié dans la mise en oeuvre, lorsqu’un visiteur regarde la vidéo d’une manière ou d’une autre. Vous pouvez ajouter des classifications pour cette variable.
 
    (**Facultatif**) La variable Custom Insight fournit des informations de cheminement vidéo.
 
@@ -41,7 +41,7 @@ Le tableau suivant répertorie les données multimédias envoyées à Analytics.
 
    (**Obligatoire**) Collecte des données de segments de vidéos, notamment le nom du segment et l’ordre d’apparition du segment dans la vidéo.
 
-   Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, SiteCatalyst peut collecter les éléments suivants dans l’eVar de segments `1:M:0-25`.
+   Cette variable est renseignée en activant la variable `segmentByMilestones` lors du suivi automatique des événements du lecteur ou en configurant un nom de segment personnalisé lors du suivi manuel des événements du lecteur. Par exemple, lorsqu’un visiteur affiche le premier segment dans une vidéo, SiteCatalyst peut collecter les éléments suivants dans la variable `1:M:0-25` segments eVar.
 
    La méthode de collecte de données vidéo par défaut collecte les données aux points suivants : démarrage (lecture), démarrage de segment et fin de vidéo (arrêt). Analytics comptabilise la première vue du segment au début du segment, lorsque le visiteur commence à regarder. Les vues des segments suivants démarrent au début des segments.
 
@@ -190,7 +190,7 @@ property bool isMediaAd;
 
 * **Play (winJS) : play)**
 
-   Effectue le suivi d’une lecture multimédia pour l’élément multimédia nommé *`name`* à l’emplacement *offset* donné (en secondes).
+   Effectue le suivi d’une lecture multimédia pour l’élément multimédia nommé *`name`* à la valeur donnée *offset* (en secondes).
 
    * Voici la syntaxe de cette méthode :
 

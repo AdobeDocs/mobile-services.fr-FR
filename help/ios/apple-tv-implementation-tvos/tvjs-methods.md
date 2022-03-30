@@ -1,11 +1,11 @@
 ---
 description: Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes TVJS
 topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1997'
 ht-degree: 100%
@@ -109,7 +109,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    >[!IMPORTANT]
    >
-   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est nil tant qu’il n’a pas été défini.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est nil tant qu’il n’a pas été défini.
 
    * Voici la syntaxe de cette méthode :
 
@@ -428,7 +428,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
    >[!TIP]
    >
-   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `nil` et l’identifiant de suivi est utilisé. Pour plus d’informations, voir la ligne userIdentifier ci-dessous.
+   >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant utilisateur est `nil` et l’identifiant de suivi est utilisé. Pour plus d’informations, voir la ligne userIdentifier ci-dessous.
 
    * Voici la syntaxe de cette méthode :
 
@@ -638,7 +638,7 @@ Cette section répertorie les méthodes TVJS fournies par la bibliothèque tvOS.
 
 * **visitorMarketingCloudID**
 
-   Récupère l’Experience Cloud ID du service d’identification.
+   Récupère l’Experience Cloud ID du service d’identification.
 
    * Voici la syntaxe de cette méthode :
 

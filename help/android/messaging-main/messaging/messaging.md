@@ -1,11 +1,11 @@
 ---
 description: Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en œuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Messagerie in-app
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 100%
@@ -16,20 +16,20 @@ ht-degree: 100%
 
 Vous pouvez diffuser des messages in-app qui sont déclenchés à partir de n’importe quelle donnée ou événement d’analyse. Après la mise en œuvre, les messages sont dynamiquement diffusés dans l’application et ne nécessitent pas de mise à jour du code.
 
-## Nouvelle version du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
 >[!IMPORTANT]
 >
->Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+>Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
 * Pour commencer, accédez à [Launch](https://launch.adobe.com/).
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme la messagerie intégrée (in-app) et les notifications Push. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation de la messagerie push et de la messagerie in-app avec les SDK Experience Cloud, voir [Configuration de la messagerie push](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) et [Configuration de la messagerie in-app](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme la messagerie intégrée (in-app) et les notifications Push. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation de la messagerie push et de la messagerie in-app avec les SDK Experience Cloud, voir [Configuration de la messagerie push](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) et [Configuration de la messagerie in-app](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >

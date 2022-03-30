@@ -1,11 +1,11 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Fichier de configuration ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 46%
@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # `ADBMobileConfig.json` fichier de configuration {#adbmobileconfig-json-config}
 
-Informations pour vous aider à utiliser le fichier de configuration `ADBMobile.json`.
+Informations relatives à l’utilisation de la variable `ADBMobile.json` fichier de configuration.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes de configuration comportent le préfixe &quot;Config&quot;.
 
@@ -40,11 +40,11 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir la variable [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
 
 * **ssl**
 
-   Active (`true`) ou désactive (`false`) l’envoi de données de mesure via SSL (HTTPS). La valeur par défaut est `false`.
+   Active (`true`) ou désactive (`false`) envoyant des données de mesure via SSL (HTTPS). La valeur par défaut est `false`.
 
 * **offlineEnabled**
 
@@ -52,7 +52,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    >[!IMPORTANT]
    >
-   >Si les horodatages sont activés sur votre suite de rapports, votre propriété de configuration `offlineEnabled` *doit* être définie sur &quot;true&quot;. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp` .
+   >Si les horodatages sont activés sur votre suite de rapports, votre `offlineEnabled` propriété de configuration *must* être vrai. Si la suite de rapports n’est pas horodatée, la propriété de configuration `offlineEnabled` *doit* être définie sur « false ». En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée,   contactez   Assistance clientèle. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp` .
 
 * **lifecycleTimeout**
 
@@ -89,13 +89,13 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **clientCode**
 
-   (**Requis par Target**) Votre code client affecté.
+   (**Requis par Target**) Le code client qui vous a été attribué.
 
 * **timeout**
 
    Détermine le délai pendant lequel Target attend une réponse.
 
-Voici un exemple de fichier `ADBMobileConfig.json` :
+Voici un exemple d’une `ADBMobileConfig.json` fichier :
 
 ```js
 { 

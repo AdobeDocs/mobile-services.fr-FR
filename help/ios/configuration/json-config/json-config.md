@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous aideront à utiliser le fichier de configuration ADBMobile.json.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Fichier de configuration JSON ADBMobile
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 99%
@@ -70,7 +70,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir la variable [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
 
    * Version minimale du SDK : 4.0
 
@@ -137,7 +137,7 @@ Vous pouvez utiliser le même fichier de configuration pour votre application su
 
 * **org**
 
-   Indique l’ID d’organisation Experience Cloud pour le service d’identification Adobe Experience Platform.
+   Indique l’ID d’organisation Experience Cloud pour le service d’identification Adobe Experience Platform.
 
    * Version minimale du SDK : 4.3
 

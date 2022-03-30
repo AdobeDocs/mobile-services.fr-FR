@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez suivre et gérer les données que vous recevez de l’application en configurant un ensemble de variables et de mesures.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Gestion de votre application
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -36,7 +36,7 @@ Vous pouvez suivre et gérer les données que vous recevez de l’application en
 
 Cliquez sur **[!UICONTROL Gérer les paramètres de l’application]** > **[!UICONTROL Gérer les variables et mesures]** > **[!UICONTROL Variables personnalisées]**.
 
-Ces mappages appellent la même API que les [Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) utilisées dans Adobe Analytics.
+Ces mappages appellent la même API que [Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) dans Adobe Analytics.
 
 ![Mappage des données contextuelles](assets/custom_data_content.png)
 
@@ -46,8 +46,8 @@ Voici une liste des variables personnalisées que vous pouvez configurer :
 
    Lorsqu’une valeur est définie pour une propriété dans un appel de suivi (ou accès), elle s’applique uniquement à cet appel.
 
-* Les **[!UICONTROL Variables personnalisées]** (ou eVars) répondent également à la question &quot;laquelle ?&quot;. Cependant, une valeur d’eVar peut s’appliquer non seulement à l’accès dans lequel elle est envoyée, mais aussi aux variables et mesures envoyées dans les accès suivants jusqu’à ce que la valeur expire ou qu’une nouvelle valeur soit définie.
-* Les **[!UICONTROL Variables de liste personnalisées (ou variables à valeurs multiples)]** se comportent comme les variables, mais permettent de capturer plusieurs valeurs sur un seul accès. Pour plus d’informations, voir les variables [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) dans la documentation Adobe Analytics.
+* Le **[!UICONTROL Variables personnalisées]** (ou eVars) répondent également à la question &quot;laquelle ?&quot; Cependant, une valeur d’eVar peut s’appliquer non seulement à l’accès dans lequel elle est envoyée, mais aussi aux variables et mesures envoyées dans les accès suivants jusqu’à ce que la valeur expire ou qu’une nouvelle valeur soit définie.
+* Les **[!UICONTROL Variables de liste personnalisées (ou variables à valeurs multiples)]** se comportent comme les variables, mais permettent de capturer plusieurs valeurs sur un seul accès. Pour plus d’informations, voir [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) dans la documentation Adobe Analytics.
 
 Les mappages suivants s’affichent dans Analytics comme ayant été créés dans Mobile Services.
 

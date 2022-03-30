@@ -1,11 +1,11 @@
 ---
 description: Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Méthodes Android
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 68%
@@ -58,7 +58,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
    * `ADBMobilePrivacyStatus.Unknown` - si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
 
-   La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) .
+   La valeur par défaut est définie dans la variable [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) fichier .
 
    * Voici la syntaxe de cette méthode :
 
@@ -160,7 +160,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **OverrideConfigStream**
 
-   (4.2 ou version ultérieure) Permet de charger un fichier de configuration `ADBMobile JSON` différent au démarrage de l’application. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
+   (4.2 ou version ultérieure) Permet de charger un `ADBMobile JSON` fichier de configuration au démarrage de l’application. Cette autre configuration est utilisée jusqu’à la fermeture de l’application.
 
    * Voici la syntaxe de cette méthode :
 
@@ -227,7 +227,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **TrackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. `States` sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque appel `TrackState`.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. `States` sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque `TrackState` appelez .
 
    >[!TIP]
    >
@@ -274,7 +274,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **TrackLocation**
 
-   Envoie les coordonnées de latitude et de longitude actuelles. Utilise également les points ciblés définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `TrackLocation`.
+   Envoie les coordonnées de latitude et de longitude actuelles. Utilise également les points ciblés définis dans la variable `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel `TrackLocation`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -475,7 +475,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **MarketingCloudId**
 
-   Récupère l’Experience Cloud ID du service d’identification.
+   Récupère l’Experience Cloud ID du service d’identification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -511,7 +511,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **LoadRequest**
 
-   Envoie une demande au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel `Action<NSDictionary>`.
+   Envoie une demande au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans une `Action<NSDictionary>` rappel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -534,7 +534,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **CreateRequest**
 
-   Constructeur de commodité permettant de créer un objet `ADBTargetLocationRequest` avec les paramètres donnés.
+   Constructeur pratique pour créer un `ADBTargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
@@ -582,7 +582,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
       Target.ClearCookies (); 
       ```
 
-## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
 * **VisitorProfile**
 
@@ -602,7 +602,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **Dpid**
 
-   Renvoie la valeur actuelle `DPID`.
+   Renvoie le `DPID`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -618,7 +618,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **Dpuuid**
 
-   Renvoie la valeur actuelle `DPUUID`.
+   Renvoie le `DPUUID`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -634,7 +634,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **AudienceSetDpidAndDpuuid**
 
-   Définit les valeurs `dpid` et `dpuuid`. Si `dpid` et `dpuuid` sont définis, ils sont envoyés avec chaque signal.
+   Définit la variable `dpid` et `dpuuid`. If `dpid` et `dpuuid` sont définis, ils sont envoyés avec chaque signal.
 
    * Voici la syntaxe de cette méthode :
 
@@ -650,7 +650,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **SignalWithData**
 
-   Envoie à la gestion de l’audience un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans un rappel `Action<NSDictionary>`.
+   Envoie à la gestion de l’audience un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans une `Action<NSDictionary>` rappel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -676,7 +676,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 * **Réinitialiser**
 
-   Réinitialise le gestionnaire d’audience `UUID` et purge le profil du visiteur actuel.
+   Réinitialisation d’audience manager `UUID` et purge le profil du visiteur actuel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -692,7 +692,7 @@ Méthodes Android pour les composants Xamarin pour le SDK 4.x des solutions Expe
 
 ## Vidéo {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Pour plus d’informations sur Video Analytics, voir [Video Analytics](/help/android/analytics-main/video-qs.md).
+Pour plus d’informations sur Video Analytics, voir [Analyses de vidéos](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 

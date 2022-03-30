@@ -1,12 +1,12 @@
 ---
 description: Le SDK Android 4.x pour solutions Experience Cloud permet de mesurer les applications Android natives, de fournir un contenu ciblé à l’application et d’utiliser et collecter les données d’audience à l’aide de la gestion de l’audience.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: SDK Android 4.x pour solutions Experience Cloud
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
@@ -17,18 +17,18 @@ ht-degree: 93%
 
 Le SDK Android 4.x pour solutions Experience Cloud permet de mesurer les applications Android natives, de fournir un contenu ciblé à l’application et d’utiliser et collecter les données d’audience à l’aide de la gestion de l’audience.
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
->Le SKU du module complémentaire de marketing mobile Adobe Analytics est nécessaire pour permettre aux Mobile Services d’accéder aux fonctionnalités d’acquisition mobile, de lien profond, de géolocalisation et de messagerie mobile. Pour en savoir plus, contactez votre CSM Adobe.
+>Le SKU du module complémentaire de marketing mobile Adobe Analytics est nécessaire pour permettre aux Mobile Services d’accéder aux fonctionnalités d’acquisition mobile, de lien profond, de géolocalisation et de messagerie mobile. Pour en savoir plus, contactez votre CSM Adobe.
 
 >[!IMPORTANT]
 >
@@ -59,4 +59,4 @@ Pour consulter les informations les plus récentes sur les versions d’Experien
 
 >[!IMPORTANT]
 >
->À compter du **30 avril 2017**, l’Adobe Bloodhound sera abandonné. À compter du 1er mai 2017, aucune amélioration supplémentaire n’a été apportée et aucune assistance d’ingénierie ou assistance d’Adobe spécialisée supplémentaire n’a été fournie.
+>À partir de **30 avril 2017**, l&#39;Adobe Bloodhound est au coucher du soleil. À compter du 1er mai 2017, aucune amélioration supplémentaire n’a été apportée et aucune assistance d’ingénierie ou assistance d’Adobe spécialisée supplémentaire n’a été fournie.

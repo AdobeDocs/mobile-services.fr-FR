@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous aident à comprendre le mode de suivi des blocages ainsi que les bonnes pratiques pour traiter les faux blocages.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Suivi des blocages d’application
 topic-fix: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 exl-id: d6b4c763-7e02-42d0-aaf2-cda8640e5b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Ces informations vous aident à comprendre le mode de suivi des blocages ainsi q
 >
 >Il est recommandé d’effectuer une mise à niveau vers la version 4.8.6 du SDK iOS : celle-ci contient d’importantes modifications qui empêchent le signalement de faux plantages.
 
-## À quel moment Adobe signale-t-il un plantage ?
+## À quel moment Adobe signale-t-il un plantage ?
 
 Lorsque votre application est arrêtée avant d’avoir été mise en arrière-plan, le SDK signale un plantage au prochain lancement de l’application.
 

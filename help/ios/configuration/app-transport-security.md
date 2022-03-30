@@ -1,11 +1,11 @@
 ---
 description: Ces informations vous permettent de travailler avec App Transport Security (ATS), un nouvel ensemble d’exigences de sécurité pour iOS 9.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: App Transport Security
 topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
 exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
@@ -20,14 +20,14 @@ Depuis iOS 9, Apple a introduit ATS, un ensemble d’exigences qui se conforme 
 
 Pour que le SDK Adobe Mobile version 4.7 ou supérieure fonctionne correctement avec ATS, vous devez activer le protocole SSL dans la page Gérer les paramètres d’application. Pour plus d’informations, voir [Gérer les paramètres d’application](/help/using/c-manage-app-settings/c-manage-app-settings.md) ou [Configuration ADBMobile JSON](/help/ios/configuration/json-config/json-config.md).
 
-Dans Adobe Mobile Services, si vous activez l’option **[!UICONTROL Utiliser HTTPS]** sur la page Gérer les paramètres d’application, tous les accès issus d’Analytics, d’Audience Manager, de Target et des services Adobe Experience Platform sont envoyés par HTTPS.
+Dans Adobe Mobile Services, si vous activez l’option **[!UICONTROL Utiliser HTTPS]** sur la page Gérer les paramètres d’application, tous les accès issus d’Analytics, d’Audience Manager, de Target et des services Adobe Experience Platform sont envoyés par HTTPS.
 
 Vous pouvez également placer les serveurs suivants dans votre liste de serveurs « autorisés » :
 
 | Produit | Instructions |
 |--- |--- |
 | Analytics | Pour autoriser votre serveur Analytics, ajoutez le domaine du serveur de suivi en tant qu’exception pour ATS dans le fichier info.plist.  Le domaine du serveur de suivi se trouve dans la section Analytics du fichier `ADBMobileConfig.json` ou dans la section Analytics de la page Gérer les paramètres d’application. |
-| Audience Manager | Votre domaine Audience Manager se trouve dans la propriété du serveur de l’objet audienceManager du fichier `ADBMobileConfig.json`.  Si vous utilisez Audience Manager dans votre application et que le protocole SSL est désactivé, ajoutez ce serveur en tant que domaine d’exception pour ATS dans votre fichier `Info.plist`. |
+| Audience Manager | Votre domaine Audience Manager se trouve dans la propriété du serveur de l’objet audienceManager du fichier `ADBMobileConfig.json`.  Si vous utilisez Audience Manager dans votre application et que le protocole SSL est désactivé, ajoutez ce serveur en tant que domaine d’exception pour ATS dans votre fichier `Info.plist`. |
 | Target | Vous pouvez ajouter votre point de terminaison Target à votre fichier Info.plist en tant que domaine d’exception pour ATS.  Pour trouver votre point de terminaison Target, localisez `clientCodeproperty` dans l’objet cible de votre fichier `ADBMobileConfig.json`. Votre point de terminaison sera le suivant : `https://{clientCode}.tt.omtrdc.net`.  Par exemple, si votre `clientCodeproperty` est `"myCompany"`, votre point de terminaison sera `https://myCompany.tt.omtrdc.net`. |
 | Service Adobe Experience Platform Identity | Vous pouvez ajouter le serveur Experience Cloud en tant que domaine d’exception pour ATS dans le fichier `Info.plist`. Ce domaine est le suivant : `dpm.demdex.net`. |
 | Mobile Services : acquisition | Autorisez le serveur d’acquisition en tant que domaine d’exception pour ATS dans le fichier `Info.plist`. Ce domaine est le suivant : `c00.adobe.com`. |

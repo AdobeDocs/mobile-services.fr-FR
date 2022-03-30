@@ -1,12 +1,12 @@
 ---
 description: Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Acquisition
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%
@@ -17,18 +17,18 @@ ht-degree: 100%
 
 Les marketeurs peuvent créer des liens de suivi afin de convertir et d’orienter le trafic vers leurs applications. Ces liens de suivi peuvent orienter les utilisateurs vers les boutiques d’applications, des liens profonds d’applications et des spots, qui peuvent ensuite être mis en corrélation avec le comportement intégré à l’application. Un marketeur peut créer un lien permettant d’orienter les utilisateurs vers iOS, Android ou d’autres plateformes, selon le cas.
 
-## Nouvelle version du SDK Adobe Experience Cloud
+## Nouvelle version du SDK Adobe Experience Cloud
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
 * Pour commencer, accédez à [Launch](https://launch.adobe.com/).
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme les liens Acquisition. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation des liens d’acquisition et de marketing avec les SDK Experience Cloud, voir [Liens d’acquisition et de marketing](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+> Si vous utilisez les SDK Adobe Experience Platform Mobile avec Adobe Launch, vous **devez** également installer l’extension Adobe Analytics Mobile Services pour utiliser les fonctionnalités Adobe Mobile Services comme les liens Acquisition. Pour en savoir plus, reportez-vous à la section [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Pour plus d’informations sur l’utilisation des liens d’acquisition et de marketing avec les SDK Experience Cloud, voir [Liens d’acquisition et de marketing](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
 
 >[!IMPORTANT]
 >

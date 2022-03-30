@@ -1,11 +1,11 @@
 ---
 description: Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experience Cloud.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Méthodes iOS
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 70%
@@ -89,7 +89,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
    * `ADBMobilePrivacyStatus.OptOut` - les accès sont ignorés.
    * ADBMobilePrivacyStatus.Unknown : si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés). Si le suivi hors ligne est désactivé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion.
 
-   La valeur par défaut est définie dans la balise [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   La valeur par défaut est définie dans la variable [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -211,7 +211,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 * **TrackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont similaires aux pages d’un site web et les appels `TrackState` incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque appel `TrackState`.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont similaires aux pages d’un site web ; `TrackState` Les appels incrémentent les pages vues. Si l’état est vide, il s’affiche sous la forme &quot;app name app version (build)&quot; dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque `TrackState` appelez .
 
    >[!TIP]
    >
@@ -327,7 +327,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
    * Voici la syntaxe de cette méthode :
 
-      nbsp public;static void TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
+      nbsp publique;void static TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * Voici l’exemple de code pour cette méthode :
 
@@ -465,7 +465,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 * **GetMarketingCloudID**
 
-   Récupère l’Experience Cloud ID du service d’identification.
+   Récupère l’Experience Cloud ID du service d’identification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -500,7 +500,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 * **TargetLoadRequest**
 
-   Envoie la demande au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel `Action<NSDictionary>`.
+   Envoie la demande à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un `Action<NSDictionary>` rappel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -520,7 +520,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 * **TargetCreateRequest**
 
-   Constructeur de commodité permettant de créer un objet `ADBTargetLocationRequest` avec les paramètres donnés.
+   Constructeur pratique pour créer un `ADBTargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
@@ -567,7 +567,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
       ADBMobile.TargetClearCookies(); 
       ```
 
-## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
+## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
 * **AudienceVisitorProfile**
 
@@ -635,7 +635,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 * **AudienceSignalWithData**
 
-   Envoie à la gestion de l’audience un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans un rappel `Action<NSDictionary>`.
+   Envoie à la gestion de l’audience un signal avec des caractéristiques et récupère les segments correspondants renvoyés dans une `Action<NSDictionary>`  rappel.
 
    * Voici la syntaxe de cette méthode :
 
@@ -670,7 +670,7 @@ Méthodes iOS pour les composants Xamarin pour le SDK 4.x des solutions Experien
 
 ## Vidéo {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Pour plus d’informations, voir [Analyses vidéo](/help/ios/getting-started/dev-qs.md).
+Pour plus d’informations, voir [Analyses de vidéos](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

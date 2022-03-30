@@ -1,12 +1,12 @@
 ---
 description: Le rapport Aperçu de la boutique d’applications vous donne un aperçu des mesures de la boutique d’applications, y compris le nombre de téléchargements, les achats in-app, la note moyenne de la boutique d’applications, les recettes de téléchargements, les recettes in-app, les téléchargements par pays, les téléchargements par boutique d’applications et les achats in-app par nom.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Rapport Aperçu de la boutique d’applications
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%

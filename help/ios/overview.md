@@ -1,11 +1,11 @@
 ---
 description: Le SDK iOS 4.x pour solutions Experience Cloud permet de mesurer les applications iPhone et iPad Apple natives, de diffuser du contenu ciblé dans vos applications, ainsi que d’exploiter et de collecter des données d’audience grâce à Audience Manager.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: SDK iOS 4.x pour solutions Experience Cloud
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 100%
@@ -24,27 +24,27 @@ Si vous utilisez la version 4.21.0 ou une version ultérieure, consultez la docu
 
 * Chaque fois qu’un fichier de bibliothèque binaire est mentionné, son remplaçant XCFramework doit être utilisé à la place :
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
 * Si vous ajoutez manuellement les XCFrameworks Adobe à votre projet, vérifiez qu’ils ne sont pas incorporés.
 
 >[!IMPORTANT]
 >
->Le SKU du module complémentaire de marketing mobile Adobe Analytics est nécessaire pour permettre aux Mobile Services d’accéder aux fonctionnalités d’acquisition mobile, de lien profond, de géolocalisation et de messagerie mobile. Pour en savoir plus, contactez votre CSM Adobe.
+>Le SKU du module complémentaire de marketing mobile Adobe Analytics est nécessaire pour permettre aux Mobile Services d’accéder aux fonctionnalités d’acquisition mobile, de liaison profonde, de géolocalisation et de messagerie mobile. Pour en savoir plus, contactez votre CSM Adobe.
 
 >[!IMPORTANT]
 >
 >Le SDK iOS 4.x pour solutions Experience Cloud prend désormais en charge [iOS 13 et Xcode 11](https://developer.apple.com/ios/). Pour garantir une compatibilité fluide, utilisez les dernières versions des SDK iOS 4.x. Pour plus d’informations sur la dernière version, voir les [notes de mise à jour](/help/ios/rel-notes.md).
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 Informations à retenir :
 
@@ -60,7 +60,7 @@ Informations à retenir :
 
 ## Documentation utilisateur Adobe Mobile {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Adobe Mobile offre une intégration en toute transparence des fonctionnalités d’analyse et de ciblage des applications issues des solutions Adobe Analytics, Adobe Audience Manager et Adobe Target, ainsi que du service d’identification Adobe Experience Platform.
+Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Adobe Mobile offre une intégration en toute transparence des fonctionnalités d’analyse et de ciblage des applications issues des solutions Adobe Analytics, Adobe Audience Manager et Adobe Target, ainsi que du service d’identification Adobe Experience Platform.
 
 Pour en savoir plus sur l’interface utilisateur de Mobile Services et lire la documentation utilisateur, reportez-vous à [Adobe Mobile Services](/help/using/home.md).
 

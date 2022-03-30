@@ -1,11 +1,11 @@
 ---
 description: Cette section répertorie les méthodes Adobe Target fournies par la bibliothèque iOS.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes Target pour iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 95%
@@ -79,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameprofileParametersmboxParameterscallback:**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback :**
 
    Envoie la demande à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel de bloc.
 
@@ -151,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Pour plus d’informations sur l’API Target sous-jacente, voir [Référence de l’API Target](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
+      Pour plus d’informations sur l’API Target sous-jacente, voir la section [Référence de l’API Target](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -159,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **:defaultContent::orderParameters:targetLoadRequestWithNameprofileParametersmboxParameters:callback**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
 
    Envoie request à votre serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un rappel de bloc.
 

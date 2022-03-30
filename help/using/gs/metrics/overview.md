@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Affichage des mesures mobiles
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
@@ -53,7 +53,7 @@ Vous pouvez exécuter les tâches suivantes sur la page Aperçu :
 
 * **Affichage des indicateurs clés de performance**
 
-   Cliquez sur le nom de l’application pour afficher des détails sur les indicateurs de performances clés. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur le point de données pour afficher les statistiques pour des dates spécifiques. Pour effectuer une analyse plus approfondie, cliquez sur l’icône près de **[!UICONTROL Indicateurs de performance clés]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
+   Cliquez sur le nom de l’application pour afficher des détails sur les indicateurs de performances clés. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur le point de données pour afficher les statistiques pour des dates spécifiques. Pour effectuer une analyse plus approfondie, cliquez sur l’icône près de **[!UICONTROL Indicateurs clés de performance]**. Les courbes sur le graphique sont codées par couleur. Vous pouvez positionner le pointeur de la souris sur n’importe quel point de données pour voir les statistiques pour des dates spécifiques. Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
 
 ## Modification des paramètres d’une application {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 

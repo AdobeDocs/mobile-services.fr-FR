@@ -1,12 +1,12 @@
 ---
 description: Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes Analytics
 topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Liste des méthodes Adobe Analytics fournies par la bibliothèque Android.
 
-Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `analytics`.
+Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform. Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `analytics`.
 
 Chacune des méthodes suivantes est utilisée pour envoyer des données vers la suite de rapports Adobe Analytics :
 

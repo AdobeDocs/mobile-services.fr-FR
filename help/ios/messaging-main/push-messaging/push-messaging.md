@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile et le SDK Adobe Mobile permettent d’envoyer des messages Push aux utilisateurs. Le SDK permet également de créer rapidement des rapports sur les utilisateurs qui ont ouvert votre application suite à un clic sur le message push.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Messagerie Push
 topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Pour utiliser les messages push, vous **devez** disposer du SDK version 4.6 ou 
 
 >[!IMPORTANT]
 >
->Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Ceci provoque la création d’un nouvel utilisateur unique qui ne recevra pas de messages push en raison de son état d’inclusion. Supposons, par exemple, qu’un utilisateur qui s’est abonné pour recevoir des messages push se connecte à votre application. Une fois connecté, si vous définissez manuellement l’identifiant dans votre application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir de messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
+>Ne définissez pas manuellement l’Experience Cloud ID dans l’application. Ceci provoque la création d’un nouvel utilisateur unique qui ne recevra pas de messages push en raison de son état d’inclusion. Supposons, par exemple, qu’un utilisateur qui s’est abonné pour recevoir des messages push se connecte à votre application. Une fois connecté, si vous définissez manuellement l’identifiant dans votre application, un nouvel utilisateur unique est créé qui n’a pas choisi de recevoir de messages push. Ce nouvel utilisateur ne recevra pas vos messages Push.
 
 ## Conditions préalables  {#section_06655ABE973743DC965897B229A2118D}
 

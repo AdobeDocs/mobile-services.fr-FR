@@ -1,12 +1,12 @@
 ---
 description: Les rapports d’utilisation affichent la durée de session moyenne, les utilisateurs actifs par jour et par mois, les mises à niveau et d’autres informations vous permettant de comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de fidélisation des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Rapports
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%

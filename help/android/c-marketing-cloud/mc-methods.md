@@ -1,12 +1,12 @@
 ---
-description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+description: Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 97%
@@ -15,11 +15,11 @@ ht-degree: 97%
 
 # Méthodes de services d’identification Adobe Experience Platform{#experience-cloud-id-service-methods}
 
-Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
+Voici les méthodes du service d’Experience Cloud ID fournies par la bibliothèque Android.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification Adobe Experience Platform.
 
-Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `visitor`. Pour plus d’informations, voir [Service d’Experience Cloud ID](/help/android/c-marketing-cloud/mcvid.md).
+Un préfixe est attribué aux méthodes selon la solution. Par exemple, les méthodes d’Experience Cloud ID sont affectées du préfixe `visitor`. Pour plus d’informations, voir [Service d’identification Experience Cloud](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
@@ -50,7 +50,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **getMarketingCloudId**
 
-   Récupère l’Experience Cloud ID auprès du service d’identification des visiteurs.
+   Récupère l’Experience Cloud ID auprès du service d’identification des visiteurs.
 
    * Voici la syntaxe de cette méthode :
 
@@ -149,7 +149,7 @@ Un préfixe est attribué aux méthodes selon la solution. Par exemple, les mét
 
 * **getUrlVariablesAsync**
 
-   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. Pour plus d’informations sur l’utilisation de cette méthode [Méthodes de services d’identification Adobe Experience Platform](/help/android/reference/hybrid-app.md).
+   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. Pour plus d’informations sur l’utilisation de cette méthode [Méthodes de services d’identification Adobe Experience Platform](/help/android/reference/hybrid-app.md).
 
    * Voici la syntaxe de cette méthode :
 

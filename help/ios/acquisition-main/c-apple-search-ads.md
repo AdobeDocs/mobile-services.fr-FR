@@ -1,11 +1,11 @@
 ---
 description: Le SDK Adobe exploite les API d’attribution de l’application Search Ads d’Apple pour permettre aux développeurs et aux marketeurs de suivre et d’identifier les téléchargements d’application issus des campagnes Search Ads dans l’App Store d’Apple.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Publicités Search Ads d’Apple
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Pour activer votre application pour l’attribution Search Ads, procédez comme 
    De plus, les valeurs suivantes seront mappées à partir du dictionnaire `"iad"` vers nos champs de données contextuelles de l’acquisition par défaut :
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
-   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —> `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —> `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —> `"a.referrer.campaign.term"`
    Ce mappage permet de s’assurer que les valeurs sont disponibles dans nos rapports de données standard.

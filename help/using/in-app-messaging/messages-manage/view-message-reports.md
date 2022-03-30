@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez afficher des rapports sur les messages in-app et push.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Affichage des rapports sur les messages
 topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
@@ -42,7 +42,7 @@ Voici la liste des mesures disponibles pour les messages in-app :
 
 * **[!UICONTROL Annuler]**, lorsqu’un utilisateur appuie sur le bouton **[!UICONTROL Annuler]** dans une alerte ou un message plein écran.
 
-* **[!UICONTROL Taux d’engagement]**, une mesure calculée d’Adobe Analytics. Le résultat est obtenu en divisant le nombre de clics publicitaires par le nombre d’impressions.
+* **[!UICONTROL Taux d’engagement]**, une mesure calculée d’Adobe Analytics. Le résultat est obtenu en divisant le nombre de clics publicitaires par le nombre d’impressions.
 
 ## Messages push {#section_BEAFD858CA194185B6F88903446058E9}
 

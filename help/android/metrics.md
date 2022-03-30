@@ -1,12 +1,12 @@
 ---
 description: Mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mesures de cycle de vie
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
@@ -17,14 +17,14 @@ ht-degree: 100%
 
 Cette section donne des informations sur les mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre. Pour plus d’informations sur le dépannage, consultez [Données de durée de vie de dépannage](https://helpx.adobe.com/fr/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Mesures et dimensions de cycle de vie {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -212,21 +212,21 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
    Renseigné par les méthodes `trackTimedAction`.
 
    * Données contextuelles Analytics/Paramètre Target : `a.action.time.total`
-   * Caractéristique d’Audience Manager : `c_a_action_time_total`
+   * Caractéristique d’Audience Manager : `c_a_action_time_total`
 
 * **Durée de l’action dans l’application**
 
    Renseigné par les méthodes `trackTimedAction`.
 
    * Données contextuelles Analytics/Paramètre Target : `a.action.time.inapp`
-   * Caractéristique d’Audience Manager : `c_a_action_time_inapp`
+   * Caractéristique d’Audience Manager : `c_a_action_time_inapp`
 
 * **Valeur de durée de vie (événement)**
 
    Renseigné par les méthodes `trackLifetimeValue`.
 
    * Données contextuelles Analytics/Paramètre Target : `a.ltv.amount`
-   * Caractéristique d’Audience Manager : `c_a_ltv_amount`
+   * Caractéristique d’Audience Manager : `c_a_ltv_amount`
 
 ### Dimensions
 
@@ -238,7 +238,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Caractéristiques d’Audience Manager :
+   * Caractéristiques d’Audience Manager :
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -252,7 +252,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Caractéristiques d’Audience Manager :
+   * Caractéristiques d’Audience Manager :
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -266,7 +266,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Caractéristiques d’Audience Manager :
+   * Caractéristiques d’Audience Manager :
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -277,60 +277,60 @@ Les mesures et dimensions suivantes sont capturées dans les variables des solut
    Renseigné par les méthodes trackLocation lorsque l’appareil se trouve dans le point ciblé défini.
 
    * Données contextuelles Analytics/Paramètres Target : `a.loc.poi`
-   * Caractéristique d’Audience Manager : `c_a_loc_poi`
+   * Caractéristique d’Audience Manager : `c_a_loc_poi`
 
 * **Distance jusqu’au centre du point ciblé**
 
    Renseigné par les méthodes trackLocation lorsque l’appareil se trouve dans le point ciblé défini.
 
    * Données contextuelles Analytics/Paramètres Target : `a.loc.dist`
-   * Caractéristique d’Audience Manager : `c_a_loc_dist`
+   * Caractéristique d’Audience Manager : `c_a_loc_dist`
 
 * **Valeur de durée de vie (variable de conversion)**
 
    Renseignée par les méthodes trackLifetimeValue.
 
    * Données contextuelles Analytics/Paramètres Target : `a.ltv.amount`
-   * Caractéristique d’Audience Manager : `c_a_ltv_amount`
+   * Caractéristique d’Audience Manager : `c_a_ltv_amount`
 
 * **Code de suivi**
 
    Renseigné par l’acquisition des applications mobiles et généré automatiquement par Adobe Mobile Services.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.trackingcode`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_trackingcode`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_trackingcode`
 
 * **Campaign**
 
    Nom de la campagne, également stocké dans la variable de campagne. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.name`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_name`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_name`
 
 * **Contenu de campagne**
 
    Le nom ou l’identifiant du contenu qui a affiché le lien. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.content`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_content`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_content`
 
 * **Support de campagne**
 
    Support marketing, une bannière ou un email par exemple. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.medium`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_medium`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_medium`
 
 * **Source de campagne**
 
    Référent original, comme une newsletter ou les médias sociaux. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.source`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_source`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_source`
 
 * **Termes de campagne**
 
    Mots-clés ou autres termes payés dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
 
    * Données contextuelles Analytics/Paramètres Target : `a.referrer.campaign.term`
-   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_term`
+   * Caractéristique d’Audience Manager : `c_a_referrer_campaign_term`

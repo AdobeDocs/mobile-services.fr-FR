@@ -1,11 +1,11 @@
 ---
 description: Cette section décrit comment migrer de la version 3.x d’un SDK Windows Mobile précédent vers le SDK Windows 8.1 Universal App Store 4.x pour les solutions Experience Cloud.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Migration vers les SDK 4.x
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 25%
@@ -22,7 +22,7 @@ Les sections suivantes vous guident tout au long de la migration de la version 3
 
 ## Suppression des propriétés non utilisées {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Vous avez probablement remarqué un nouveau fichier `ADBMobileConfig.json` inclus dans votre téléchargement. Ce fichier contient des paramètres globaux spécifiques à l’application et remplace la plupart des variables de configuration utilisées dans les versions précédentes. Voici un exemple de fichier `ADBMobileConfig.json` :
+Vous avez probablement remarqué une nouvelle `ADBMobileConfig.json` inclus avec votre téléchargement. Ce fichier contient des paramètres globaux spécifiques à l’application et remplace la plupart des variables de configuration utilisées dans les versions précédentes. Voici un exemple de fichier `ADBMobileConfig.json` :
 
 ```js
 { 
@@ -54,7 +54,7 @@ Les tableaux suivants répertorient les variables de configuration que vous deve
 
 ## Migration depuis la version 3.x
 
-| Variable/méthode de configuration | Variable du fichier `ADBMobileConfig.json`. |
+| Variable/méthode de configuration | Variable dans la variable `ADBMobileConfig.json` fichier . |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;rsids&quot; |
@@ -62,23 +62,23 @@ Les tableaux suivants répertorient les variables de configuration que vous deve
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
-| setOfflineHitLimit | Supprimer, n’est plus utilisé. |
-| linkTrackVars | Supprimer, n’est plus utilisé. |
-| linkTrackEvents | Supprimer, n’est plus utilisé. |
+| setOfflineHitLimit | À supprimer, n’est plus utilisée |
+| linkTrackVars | À supprimer, n’est plus utilisée |
+| linkTrackEvents | À supprimer, n’est plus utilisée |
 
 ## Mise à jour des appels et des variables de suivi {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-Au lieu d’utiliser les appels `Track` et `TrackLink` axés sur le web, le SDK version 4 utilise deux méthodes plus logiques dans le monde mobile :
+Au lieu d’utiliser les `Track` et `TrackLink` Pour les appels, le SDK version 4 utilise deux méthodes plus logiques dans le monde mobile :
 
 * `TrackState` Les états correspondent aux affichages disponibles dans l’application, par exemple &quot;tableau de bord d’accueil&quot;, &quot;paramètres de l’application&quot;, &quot;panier&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `trackState` incrémentent les pages vues.
 
 * `TrackAction` Les actions sont les événements qui se produisent dans l’application et que vous souhaitez mesurer, par exemple &quot;connexions&quot;, &quot;appuis sur la bannière&quot;, &quot;abonnements aux flux&quot; et d’autres mesures. Ces appels n’incrémentent pas les pages vues.
 
-Le paramètre `contextData` pour ces deux méthodes contient des paires nom-valeur envoyées en tant que données contextuelles.
+Le `contextData` pour ces deux méthodes, contient des paires nom-valeur envoyées en tant que données contextuelles.
 
 ## Événements, Props, eVars
 
-Si vous avez examiné les [méthodes du SDK](/help/windows-appstore/c-configuration/methods.md), vous vous demandez probablement où définir des événements, des eVars, des props, des héritiers et des listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
+Si vous avez examiné la variable [Méthodes SDK](/help/windows-appstore/c-configuration/methods.md), vous vous demandez probablement où définir les événements, eVars, props, héritiers et listes. Dans la version 4, vous ne pouvez plus affecter ces types de variables directement dans votre application. Au lieu de cela, le SDK utilise des données contextuelles et des règles de traitement pour mapper les données de votre application sur les variables Analytics à des fins de reporting.
 
 Les règles de traitement présentent plusieurs avantages :
 
@@ -86,19 +86,19 @@ Les règles de traitement présentent plusieurs avantages :
 * Vous pouvez utiliser des noms significatifs pour les données au lieu de définir des variables spécifiques à une suite de rapports.
 * L’envoi de données supplémentaires n’a que peu d’impact. Ces valeurs n’apparaîtront dans les rapports qu’après avoir été mappées à l’aide de règles de traitement.
 
-Pour plus d’informations, voir *Règles de traitement* dans [Analytics](/help/windows-appstore/analytics/analytics.md).
+Pour plus d’informations, voir *Règles de traitement* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
-Toutes les valeurs que vous assignez directement aux variables doivent être ajoutées aux données contextuelles à la place. Cela signifie que les appels à `SetProp`, `SetEvar` et les attributions à des données contextuelles persistantes doivent être supprimés et les valeurs ajoutées aux données contextuelles.
+Toutes les valeurs que vous assignez directement aux variables doivent être ajoutées aux données contextuelles à la place. Cela signifie que appelle à `SetProp`, `SetEvar`, les attributions à des données contextuelles persistantes doivent être supprimées et les valeurs ajoutées aux données contextuelles.
 
 **AppSection/Server, GeoZip, Transaction ID, Campaign et autres variables standard**
 
 Toutes les autres données que vous définissiez sur l’objet de mesure, y compris les variables répertoriées ci-dessus, doivent être ajoutées aux données contextuelles à la place.
 
-Pour le dire simplement, les seules données envoyées avec un appel `TrackState` ou `TrackAction` sont la charge utile dans le paramètre `data`.
+Pour le dire simplement, les seules données envoyées avec un `TrackState` ou `TrackAction` est la charge utile dans la variable `data` .
 
 ### Remplacement des appels de suivi
 
-Dans votre code, remplacez les méthodes suivantes par un appel à `trackState` ou `trackAction` :
+Dans votre code, remplacez les méthodes suivantes par un appel à `trackState` ou `trackAction`:
 
 ### Migration depuis la version 3.x
 
@@ -113,7 +113,7 @@ Remplacez la variable `visitorID` par un appel à `setUserIdentifier`.
 
 ## Suivi hors ligne {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Le suivi hors ligne est activé dans le fichier `ADBMobileConfig.json` . Toute autre configuration hors ligne est effectuée automatiquement.
+Le suivi hors ligne est activé dans la variable `ADBMobileConfig.json` fichier . Toute autre configuration hors ligne est effectuée automatiquement.
 
 Dans votre code, supprimez les appels aux méthodes suivantes :
 
@@ -136,4 +136,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-Dans cet exemple, la valeur de `"&&products"` est `";Cool Shoe`&quot; et doit respecter la syntaxe de la chaîne products pour le type d’événement dont vous effectuez le suivi.
+Dans cet exemple, la valeur de `"&&products"` is `";Cool Shoe`&quot; et doit suivre la syntaxe de la chaîne de produits pour le type d’événement dont vous effectuez le suivi.

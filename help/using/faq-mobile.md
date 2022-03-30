@@ -1,12 +1,12 @@
 ---
 description: Questions fréquentes et réponses relatives à Adobe Mobile Services ainsi qu’une description générale des fonctionnalités.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Questions fréquentes
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 96%
@@ -21,7 +21,7 @@ Le tableau suivant contient la liste des questions fréquentes sur Adobe Mobile 
 
 ### Quelle version de SDK dois-je avoir installée ?
 
-Nos SDK actuels sont sur la version 4.11. Pour plus d’informations, voir les [Notes de mise à jour](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
+Nos SDK actuels sont sur la version 4.11. Pour plus d’informations, voir la section [Notes de mise à jour](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr).
 
 ### Où puis-je télécharger les SDK ?
 
@@ -37,7 +37,7 @@ Les SDK Adobe Mobile utilisent les piles réseau iOS et Android standard. Pour 
 
 *Si vous rédigez une application côté client à l’aide des API réseau de haut niveau, telles que les structures NSURLSession et CFNetwork, et que vous ouvrez une session par nom, vous ne devriez avoir à changer aucun paramètre pour que votre application fonctionne avec les adresses IPv6.* Pour plus d’informations, voir l’article [Supporting IPv6 DNS64/NAT64 Networks](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1) (en anglais).
 
-## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
+## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Que sont les mesures de cycle de vie ?
 
@@ -45,7 +45,7 @@ Les mesures de cycle de vie sont des mesures prêtes à l’emploi qui sont auto
 
 ### Comment puis-je résoudre les problèmes liés aux règles de traitement ?
 
-Voir [Conseils et astuces sur les règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) dans la documentation Adobe Analytics.
+Voir [Astuces et conseils concernant les règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) dans la documentation Adobe Analytics.
 
 ### Puis-je envoyer mes données d’analyse à plusieurs suites de rapports ?
 

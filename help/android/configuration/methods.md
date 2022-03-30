@@ -1,17 +1,17 @@
 ---
 description: Liste des méthodes fournies par la bibliothèque Android.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes de configuration
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+exl-id: f35b9d32-f967-42e9-bd00-ad85f3bd6bc4
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 100%
 
 ---
-
 
 # Méthodes de configuration{#configuration-methods}
 
@@ -146,7 +146,7 @@ Sinon, les accès sont ignorés jusqu’à ce que l’état de confidentialité 
 
       >[!TIP]
       >
-      >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
+      >Si votre application est mise à niveau du SDK Experience Cloud 3.x vers 4.x, l’identifiant visiteur précédent (personnalisé ou généré automatiquement) est récupéré et stocké en tant qu’identifiant utilisateur personnalisé. Ceci permet de conserver les données visiteur entre les différentes mises à niveau du SDK. Pour les nouvelles installations sur le SDK 4.x, l’identifiant de l’utilisateur est `null` jusqu’à ce qu’il soit défini.
 
    * Voici la syntaxe de cette méthode :
 

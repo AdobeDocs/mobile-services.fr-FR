@@ -1,12 +1,11 @@
 ---
 description: Méthodes de configuration ADBMobile.cs
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Méthodes ADBMobile.cs
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 70%
@@ -89,7 +88,7 @@ ht-degree: 70%
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: si le suivi hors ligne est activé, les accès sont enregistrés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (les accès sont envoyés) ou sur exclusion (les accès sont ignorés).
 
       Si le suivi hors ligne n’est pas activé, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur inclusion (opt-in).
-La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+La valeur par défaut est définie dans la variable [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) fichier .
 
    * Voici la syntaxe de cette méthode :
 
@@ -105,7 +104,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **GetUserIdentifier**
 
-   Renvoie l’identifiant utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie la valeur null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
+   Renvoie l’identifiant d’utilisateur personnalisé si un identifiant personnalisé a été défini. Renvoie null si aucun identifiant personnalisé n’est défini. La valeur par défaut est `null`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -141,7 +140,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
    >[!TIP]
    >
-   >Cette méthode est destinée à être utilisée pour les applications qui s’inscrivent aux notifications en arrière-plan et doit uniquement être appelée à partir du code qui s’exécute pendant que votre application est en arrière-plan.
+   >Cette méthode est conçue pour les applications qui s’inscrivent aux notifications lorsqu’elles sont en arrière-plan et doit uniquement être appelée à partir du code qui s’exécute pendant que votre application se trouve en arrière-plan.
 
    * Voici la syntaxe de cette méthode :
 
@@ -157,7 +156,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **PauseCollectingLifecycleData (Android uniquement)**
 
-   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors d’une mise en pause, un horodatage est collecté pour déterminer la durée de session précédente. Ceci définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
+   Indique au SDK que l’application est suspendue, de sorte que les mesures de cycle de vie sont correctement calculées. Par exemple, lors de la mise en pause, collecte un horodatage pour déterminer la durée de la session précédente. Cela définit également un indicateur de sorte que le cycle de vie sache correctement que l’application n’a pas planté. Pour en savoir plus, voir la section [Mesures de cycle de vie](/help/android/metrics.md).
 
    * Voici la syntaxe de cette méthode :
 
@@ -173,7 +172,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **SetContext (Android uniquement)**
 
-   Indique au SDK qu’il doit définir son contexte d’application à partir de l’activité actuelle d’UnityPlayer.
+   Indique au SDK qu’il doit définir son contexte d’application à partir de l’activité active UnityPlayer.
 
    * Voici la syntaxe de cette méthode :
 
@@ -189,7 +188,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **SetDebugLogging**
 
-   Définit la préférence de journalisation du débogage sur Activé.
+   Définit la préférence de journalisation de débogage sur activée.
 
    * Voici la syntaxe de cette méthode :
 
@@ -205,7 +204,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **SetPrivacyStatus**
 
-   Définit l’état de confidentialité de l’utilisateur actuel. Valeurs possibles :
+   Définit l’état de confidentialité pour l’utilisateur actuel. Valeurs possibles :
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN` : les accès sont immédiatement envoyés.
    * `MOBILE_PRIVACY_STATUS_OPT_OUT` : les accès sont ignorés.
@@ -217,7 +216,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
-   * Voici un exemple de code pour cette syntaxe :
+   * Voici l’exemple de code pour cette syntaxe :
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -225,7 +224,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **SetUserIdentifier**
 
-   Définit l’identifiant utilisateur sur userId.
+   Définit l’identifiant de l’utilisateur sur userId.
 
    * Voici la syntaxe de cette méthode :
 
@@ -259,9 +258,9 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **TrackState**
 
-   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les vues disponibles dans votre application, telles que &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
+   Contrôle l’état d’une application avec les données contextuelles facultatives. Les états sont les affichages disponibles dans l’application, par exemple &quot;écran de titre&quot;, &quot;niveau 1&quot;, &quot;pause&quot;, etc. Ces états sont semblables aux pages d’un site web ; les appels `TrackState` incrémentent les pages vues.
 
-   Si l’état est vide, il s’affiche sous la forme *`app name app version (build)`* dans les rapports. Si cette valeur apparaît dans les rapports, veillez à définir l’état dans chaque appel `TrackState`.
+   Si l’état est vide, il s’affiche comme *`app name app version (build)`* dans les rapports. Si vous voyez cette valeur dans les rapports, veillez à définir l’état dans chaque `TrackState` appelez .
 
    >[!TIP]
    >
@@ -283,7 +282,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **TrackAction**
 
-   Effectue le suivi d’une action dans votre application. Les actions sont les éléments qui se produisent dans votre application que vous souhaitez mesurer, tels que &quot;décès&quot;, &quot;niveau de gain&quot;, &quot;abonnements de flux&quot; et d’autres mesures.
+   Effectue le suivi d’une action dans votre application. Les actions sont les événements qui se produisent dans votre application et que vous souhaitez mesurer, par exemple &quot;décès&quot;, &quot;niveau atteint&quot;, &quot;abonnements aux flux&quot;, etc.
 
    >[!TIP]
    >
@@ -323,7 +322,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **TrackLocation**
 
-   Envoie les coordonnées de latitude et de longitude actuelles. Utilise également les points ciblés définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point d’intérêt défini, une variable de données contextuelles est renseignée et envoyée avec l’appel TrackLocation.
+   Envoie les coordonnées de latitude et de longitude actuelles. Utilise également les points ciblés définis dans le fichier `ADBMobileConfig.json` pour déterminer si l’emplacement fourni comme paramètre se trouve dans l’un de vos points ciblés. Si les coordonnées actuelles se trouvent dans un point ciblé défini, une variable de données contextuelles est renseignée et envoyée avec l’appel TrackLocation .
 
    * Voici la syntaxe de cette méthode :
 
@@ -363,9 +362,9 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
       ADBMobile.TrackingClearCurrentBeacon();
       ```
 
-* **TrackLifetimeValueAugmentation**
+* **TrackLifetimeValueIncrease**
 
-   Les Ajoutes correspondent à la valeur de durée de vie de l’utilisateur.
+   Ajoute un montant à la valeur de durée de vie de l’utilisateur.
 
    * Voici la syntaxe de cette méthode :
 
@@ -401,7 +400,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **TrackTimedActionUpdate**
 
-   Transmettez les données pour mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont ajoutées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
+   Transmet des données pour mettre à jour les données contextuelles associées à l’action donnée. Les données transmises sont ajoutées aux données existantes pour l’action donnée et remplacent les données si la même clé est déjà définie pour l’action.
 
    >[!TIP]
    >
@@ -501,11 +500,11 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Méthodes d’identification des Experience Cloud
+## Méthodes d’ID Experience Cloud
 
 * **GetMarketingCloudID**
 
-   Récupère l’Experience Cloud ID du service d’identification.
+   Récupère l’Experience Cloud ID du service d’identification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -521,7 +520,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **VisitorSyncIdentifiers**
 
-   Avec l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API du Visiteur accepte plusieurs ID de client pour le même visiteur, ainsi qu’un identifiant de type de client afin de séparer la portée des différents ID de client. Cette méthode correspond aux setCustomerIDs dans la bibliothèque JavaScript.
+   Avec l’ID d’Experience Cloud, vous pouvez définir d’autres ID de client à associer à chaque visiteur. L’API visiteur accepte plusieurs ID de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents ID de client. Cette méthode correspond aux setCustomerIDs dans la bibliothèque JavaScript.
 
    * Voici la syntaxe de cette méthode :
 
@@ -541,7 +540,7 @@ La valeur par défaut est définie dans le fichier [ADBMobileConfig.json](/help/
 
 * **ProcessGooglePlayInstallReferrerUrl** *(Android uniquement)*
 
-   Transférez l’URL de parrain renvoyée par un appel à l’API du Parrain d’installation de Google Play à cette méthode.
+   Transmettez l’URL du référent renvoyée par un appel à l’API du référent d’installation de Google Play à cette méthode.
 
    * Voici la syntaxe de cette méthode :
 

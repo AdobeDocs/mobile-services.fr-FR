@@ -1,11 +1,11 @@
 ---
 description: Notes de mise à jour et problèmes connus pour les SDK iOS 4.x pour les solutions Experience Cloud.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Notes de mise à jour
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 99%
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # Notes de mise à jour {#release-notes}
 
-Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
+Voici les notes de mise à jour, les problèmes connus et les informations sur les correctifs pour les SDK iOS 4.x pour les solutions Experience Cloud :
 
 ## 13 avril 2021 : Version 4.21.2
 
@@ -71,7 +71,7 @@ Voici les notes de mise à jour, les problèmes connus et les informations sur l
 
 * Annulation d’une modification introduite dans la version 4.18.6, qui, dans certains environnements, provoquait un blocage sur les périphériques exécutant une version iOS antérieure à 11.0.
 
-* Adobe Target : Ajout de la propriété `requestLocationParameters` dans `ADBTargetRequestObject`, ce qui permet l’envoi de la valeur impressionId avec les requêtes Target.
+* Adobe Target : Ajout de la propriété `requestLocationParameters` dans `ADBTargetRequestObject`, ce qui permet l’envoi de la valeur impressionID avec les requêtes Target.
 
 ## 18 juillet 2019 : Version 4.18.6
 

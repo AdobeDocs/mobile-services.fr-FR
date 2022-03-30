@@ -1,30 +1,30 @@
 ---
-description: Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
-solution: Experience Cloud,Analytics
-title: Configuration de l’Experience Cloud ID
+description: Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
+solution: Experience Cloud Services,Analytics
+title: Configuration de l’Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 exl-id: 97dc6768-bf31-4a0d-a460-9caf9ecda5fb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
 
-# Configuration de l’Experience Cloud ID {#experience-cloud-id-configuration}
+# Configuration de l’Experience Cloud ID {#experience-cloud-id-configuration}
 
-Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
+Le service d’identification Adobe Experience Platform fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Il est requis par Analytics pour Target, la pulsation vidéo et les futures intégrations d’Experience Cloud.
 
 >[!TIP]
 >
->Il n’est pas nécessaire de renseigner cet ID, sauf si vous utilisez le service d’identification Adobe Experience Platform. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
+>Il n’est pas nécessaire de renseigner cet ID, sauf si vous utilisez le service d’identification Adobe Experience Platform. Pour plus d’informations, voir [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 
 >[!IMPORTANT]
 >
 >Pour utiliser cette fonctionnalité, vous devez disposer de la version 4.3 ou ultérieure du SDK
 
-Pour activer l’Experience Cloud ID, procédez comme suit :
+Pour activer l’Experience Cloud ID, procédez comme suit :
 
 1. Ajoutez la bibliothèque à votre projet et mettez en œuvre le cycle de vie.
 

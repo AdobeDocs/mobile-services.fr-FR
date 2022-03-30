@@ -1,11 +1,11 @@
 ---
-description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
-solution: Experience Cloud,Analytics
+description: Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
+solution: Experience Cloud Services,Analytics
 title: Méthodes de services d’identification Adobe Experience Platform
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 96%
@@ -14,11 +14,11 @@ ht-degree: 96%
 
 # Méthodes de services d’identification Adobe Experience Platform {#experience-cloud-id-service-methods}
 
-Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
+Vous trouverez ci-après les méthodes du service d’identification Adobe Experience Platform fournies par la bibliothèque iOS.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target, Audience Manager, ainsi que le service d’identification des visiteurs d’Experience Cloud.
 
-Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experience Cloud ID sont précédées du préfixe `visitor`. Pour plus d’informations, voir [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
+Un préfixe est attribué aux méthodes selon la solution. Les méthodes Experience Cloud ID sont précédées du préfixe `visitor`. Pour plus d’informations, voir [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
@@ -43,7 +43,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 
 * **visitorMarketingCloudID**
 
-   Récupère l’Experience Cloud ID du service d’identification.
+   Récupère l’Experience Cloud ID du service d’identification.
 
    * Voici la syntaxe de cette méthode :
 
@@ -138,7 +138,7 @@ Chaîne comportant les informations sur les visiteurs ajoutées.
 
 * **visitorgetUrlVariablesAsync**
 
-   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. Pour plus d’informations sur l’utilisation de cette méthode [Méthodes de services d’identification Adobe Experience Platform](/help/ios/reference/hybrid-app.md).
+   Introduite dans la version 4.16.0, cette méthode renvoie une chaîne correctement formée contenant des variables URL du service d’identification des visiteurs. Pour plus d’informations sur l’utilisation de cette méthode [Méthodes de services d’identification Adobe Experience Platform](/help/ios/reference/hybrid-app.md).
 
    * Voici la syntaxe de cette méthode :
 

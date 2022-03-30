@@ -1,11 +1,11 @@
 ---
 description: Si l’application ouvre un contenu de web mobile, assurez-vous que les visiteurs ne sont pas identifiés séparément lorsqu’ils se déplacent entre le web natif et le web mobile.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Suivi des visiteurs entre une application et le web mobile
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
@@ -69,11 +69,11 @@ Pour les accès depuis le contenu web mobile, vérifiez que le paramètre `mid` 
 
 Vérifiez que la version du SDK Adobe groupé dans l’application parente est 4.12.0 ou supérieure.
 
-**Je ne vois pas les identifiants Adobe ID dans mon URL.**
+**Je ne vois pas les identifiants Adobe ID dans mon URL.**
 
 * Vérifiez les éléments suivants :
    * La chaîne d’URL utilisée pour ouvrir l’affichage web a été générée par `Visitor.appendToURL(urlString)`.
-   * Les identifiants Adobe ID sont encodés. 
+   * Les identifiants Adobe ID sont encodés. 
 Pour vous assurer que les identifiants sont ajoutés à l’URL ouverte, vérifiez que le paramètre de requête `adobe_mc` apparaît dans l’URL.
 
 ### Mon `mid` est différent dans mon application et mon affichage web.

@@ -1,11 +1,11 @@
 ---
 description: Informations relatives à l’utilisation du fichier de configuration JSON ADBMobile.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Configuration de ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 42%
@@ -34,23 +34,23 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **server**
 
-   (**Requis par Analytics et gestion de l’audience**). Serveur Analytics ou de gestion de l’audience, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `"https://"` ou `"https://"`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl` .
+   (**Requis par Analytics et la gestion de l’audience**). Serveur Analytics ou de gestion de l’audience, en fonction du noeud parent. Cette variable doit être renseignée par le domaine du serveur, sans préfixe de protocole `"https://"` ou `"https://"`. Le préfixe de protocole est géré automatiquement par la bibliothèque en fonction de la variable `ssl` .
 
    Si `ssl` est`true` défini sur, une connexion sécurisée est établie avec le serveur. Si `ssl` est `false`défini sur, une connexion non sécurisée est établie avec le serveur.
 
 * **charset**
 
-   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir la variable [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
+   Définit le jeu de caractères que vous utilisez pour les données envoyées à Analytics. La variable charset est utilisée pour convertir des données entrantes au format UTF-8 pour stockage et création de rapports. Pour plus d’informations, voir [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=fr) dans la documentation Adobe Analytics.
 
 * **ssl**
 
-   Active (`true`) ou désactive (`false`) l’envoi de données de mesure via SSL (`HTTPS`). La valeur par défaut est `false`.
+   Active (`true`) ou désactive (`false`) envoyant des données de mesure via SSL (`HTTPS`). La valeur par défaut est `false`.
 
 * **offlineEnabled**
 
-   Lorsque cette option est activée (`true`), les accès sont placés en file d’attente lorsque l’appareil est hors ligne et envoyés ultérieurement lorsque l’appareil est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
+   Lorsque activé (`true`), les accès sont placés en file d’attente lorsque l’appareil est hors ligne et envoyés ultérieurement lorsque l’appareil est en ligne. La suite de rapports doit prendre en charge l’horodatage pour permettre l’utilisation du suivi hors ligne.
 
-   Si les horodatages sont activés sur votre suite de rapports, la `offlineEnabled` propriété de configuration *doit* être `true`. si l’horodatage de votre suite de rapports n’est pas activé, la `offlineEnabled` propriété de configuration *doit* être `false`.
+   Si les horodatages sont activés dans votre suite de rapports, votre `offlineEnabled` propriété de configuration *must* be `true`. si l’horodatage n’est pas activé pour votre suite de rapports, votre `offlineEnabled` propriété de configuration *must* be `false`.
 
    En cas de configuration incorrecte, les données seront perdues. Si vous ne savez pas si une suite de rapports est horodatée, contactez l’assistance clientèle. Si vous collectez actuellement des données AppMeasurement dans une suite de rapports qui collecte également des données de JavaScript, vous devrez peut-être configurer une suite de rapports distincte pour les données mobiles ou inclure un horodatage personnalisé pour tous les accès JavaScript à l’aide de la variable `s.timestamp` .
 
@@ -66,7 +66,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
    Envoyez les accès par lots.
 
-   Par exemple, si la valeur est `50`, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true` et la valeur par défaut est `0` (Pas de traitement par lot).
+   Par exemple, si la variable est définie sur `50`, les accès sont placés en file d’attente jusqu’à ce que 50 soient stockés, puis tous les accès en file d’attente sont envoyés. Nécessite `offlineEnabled=true`et la valeur par défaut est `0` (Pas de traitement par lot).
 
 * **privacyDefault**
 
@@ -95,13 +95,13 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 * **clientCode**
 
-   (**Requis par Target**) Votre code client affecté.
+   (**Requis par Target**) Le code client qui vous a été attribué.
 
 * **timeout**
 
    Détermine le délai pendant lequel la cible attend une réponse.
 
-Voici un exemple de fichier `ADBMobileConfig.json` :
+Voici un exemple d’une `ADBMobileConfig.json` fichier :
 
 ```js
 { 

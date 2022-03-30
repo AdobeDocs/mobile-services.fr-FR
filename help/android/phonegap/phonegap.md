@@ -1,12 +1,12 @@
 ---
 description: Ce module externe permet d’envoyer des appels AppMeasurement pour Android à partir de votre projet PhoneGap.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Présentation du module externe PhoneGap
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 97%
@@ -17,14 +17,14 @@ ht-degree: 97%
 
 Ce module externe permet d’envoyer des appels AppMeasurement pour Android à partir de votre projet PhoneGap. Pour créer un projet PhoneGap, voir [PhoneGap](https://helpx.adobe.com/fr/experience-manager/6-4/mobile/using/phonegap.html).
 
-## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
+## Nouvelle mise à jour du SDK Adobe Experience Platform Mobile
 
-Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
+Vous recherchez des informations et de la documentation concernant le SDK d’Adobe Experience Platform Mobile ? Cliquez [ici](https://aep-sdks.gitbook.io/docs/) pour consulter la documentation la plus récente.
 
-Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
+Nous avons lancé, en septembre 2018, une version majeure du SDK. Ces nouveaux SDK Adobe Experience Platform Mobile peuvent être configurés via [Experience Platform Launch](https://www.adobe.com/fr/experience-platform/launch.html).
 
-* Pour commencer, accédez à Adobe Experience Platform Launch.
-* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Pour commencer, accédez à Adobe Experience Platform Launch.
+* Pour consulter le contenu des dépôts du SDK Experience Platform, accédez à [Github : Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## Installation du module externe à l’aide de npm {#section_43229E57C16944C0B51531CB92089189}
@@ -68,7 +68,7 @@ cordova plugin add adobe-mobile-services
 
    Pour déplacer ce fichier, cliquez sur **[!UICONTROL OK]**.
 
-1. Cliquez avec le bouton droit sur le fichier `adobeMobileLibrary.jar` et sélectionnez **[!UICONTROL Ajouter en tant que bibliothèque]**.
+1. Cliquez avec le bouton droit de la souris sur le `adobeMobileLibrary.jar` et sélectionnez **[!UICONTROL Ajouter en tant que bibliothèque]**.
 1. Selon les exigences de votre projet, saisissez le nom, le niveau et l’emplacement de la bibliothèque.
 1. Faites glisser le fichier `ADBMobileConfig.json` vers le dossier `assets` de la racine de l’application.
 1. Confirmez que vous avez sélectionné l’application racine et **non** une application dans une application.

@@ -1,11 +1,11 @@
 ---
 description: Classes et méthodes fournies par la bibliothèque Plateforme Windows universelle.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Méthodes SDK
 topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 exl-id: 0aac477c-074d-457c-b117-bb205119c475
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 67%
@@ -18,7 +18,7 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universell
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
+>Lorsque vous consommez `winmd` à partir de winJS (JavaScript), toutes les méthodes voient automatiquement leur première lettre mise en minuscule.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Classes et méthodes fournies par la bibliothèque Plateforme Windows universell
    * `ADBMobilePrivacyStatusOptOut` - Les accès sont ignorés.
    * `ADBMobilePrivacyStatusUnknown` - Si la suite de rapports prend en charge l’horodatage, les accès sont enregistrés jusqu’à ce que l’état de confidentialité devienne « inclusion » (les accès sont envoyés) ou « exclusion » (les accès sont ignorés). Si la suite de rapports ne prend pas en charge l’horodatage, les accès sont ignorés jusqu’à ce que l’état de confidentialité soit défini sur « inclusion ».
 
-      La valeur par défaut est définie dans le fichier de configuration `ADBMobileConfig.json`. Pour plus d’informations, voir [Fichier de configuration ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
+      La valeur par défaut est définie dans la variable `ADBMobileConfig.json` fichier de configuration. Pour plus d’informations, voir [Fichier de configuration ADBMobileConfig.json](/help/universal-windows/c-configuration/c.json.md).
 
    * Voici la syntaxe de cette méthode :
 

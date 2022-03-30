@@ -1,12 +1,12 @@
 ---
 description: Informations sur la mesure des vidéos sur Android à l’aide de la solution de mesure vidéo.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analyses de vidéos
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 98%
@@ -19,7 +19,7 @@ Informations sur la mesure des vidéos sur Android à l’aide de la solution de
 
 >[!TIP]
 >
->Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations sur la solution de mesure vidéo d’Adobe, voir [Mesure des médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr).
+>Au cours de la lecture vidéo, de fréquents appels de « pulsation » sont envoyés à ce service afin de mesurer la durée de lecture. Ces appels de pulsation sont envoyés toutes les dix secondes, ce qui se traduit par des mesures d’engagement vidéo granulaires et par des rapports d’abandons vidéo plus précis. Pour plus d’informations sur la solution de mesure vidéo d’Adobe, voir [Mesure de médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr).
 
 Le processus général de mesure vidéo se ressemble sur toutes les plateformes. Ce contenu présente un aperçu des tâches des développeurs avec des exemples de codes. Le tableau suivant répertorie les données multimédias envoyées à Analytics. Les règles de traitement permettent de mettre en correspondance les données contextuelles avec des variables Analytics.
 

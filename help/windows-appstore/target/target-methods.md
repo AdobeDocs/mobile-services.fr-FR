@@ -1,11 +1,11 @@
 ---
-description: Liste des méthodes Target fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
-solution: Experience Cloud,Analytics
+description: Liste des méthodes Target fournies par la bibliothèque Windows 8.1 Universal App Store.
+solution: Experience Cloud Services,Analytics
 title: Méthodes Target
 topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 43%
@@ -14,7 +14,7 @@ ht-degree: 43%
 
 # Méthodes Target {#target-methods}
 
-Liste des méthodes Target fournies par la bibliothèque Boutique d’applications Windows 8.1 universelle.
+Liste des méthodes Target fournies par la bibliothèque Windows 8.1 Universal App Store.
 
 Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, notamment Analytics, Target et Audience Manager. Un préfixe est ajouté aux méthodes selon la solution. Les méthodes Analytics comportent le préfixe &quot;Target&quot;.
 
@@ -22,7 +22,7 @@ Le SDK prend actuellement en charge plusieurs solutions Adobe Experience Cloud, 
 
 >[!TIP]
 >
->Lorsque vous utilisez des méthodes `winmd` de winJS (JavaScript), la première lettre de toutes les méthodes est automatiquement mise en minuscule.
+>Lorsque vous consommez `winmd` à partir de winJS (JavaScript), toutes les méthodes voient automatiquement leur première lettre mise en minuscule.
 
 ## Référence de classe : TargetLocationRequest
 
@@ -70,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Envoie `request` au serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un bloc `callback`.
+   Envois `request` sur le serveur Target configuré et renvoie la valeur de chaîne de l’offre générée dans un bloc. `callback`.
 
    * Voici la syntaxe de cette méthode :
 
@@ -89,7 +89,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
+   Crée une `TargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 
@@ -106,7 +106,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS) : createOrder &#x200B; ConfirmRequest)**
 
-   Crée un objet `TargetLocationRequest` avec les paramètres donnés.
+   Crée une `TargetLocationRequest` avec les paramètres donnés.
 
    * Voici la syntaxe de cette méthode :
 

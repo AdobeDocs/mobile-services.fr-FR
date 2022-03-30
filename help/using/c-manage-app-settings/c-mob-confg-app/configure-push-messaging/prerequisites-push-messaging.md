@@ -1,15 +1,15 @@
 ---
 description: Avant de pouvoir configurer la messagerie push dans les applications, vous devez effectuer certaines tâches.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Conditions préalables requises pour activer la messagerie push
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Pour plus d’informations, voir la vidéo et les rubriques suivants :
    * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
    * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
-## Connectez-vous au service principal Mobile à l’aide de votre Adobe ID
+## Connectez-vous au service principal Mobile à l’aide de votre Adobe ID
 
 >[!IMPORTANT]
 >
@@ -49,13 +49,13 @@ Si les utilisateurs n’ont pas d’Adobe ID, procédez comme suit :
 
    Un message électronique est automatiquement envoyé à chaque utilisateur une fois que l’administrateur a accompli l’étape précédente.
 
-1. (**Utilisateurs**) Connexion à Mobile à l’aide de leur Adobe ID.
+1. (**Utilisateurs**) Connexion à Mobile à l’aide de leur Adobe ID.
 
 ## Liaison des comptes d’utilisateur dans Experience Cloud
 
 Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organisation Experience Cloud.
 
-1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com) avec un Adobe ID.
+1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com) avec une Adobe ID.
 
 1. Dans le coin supérieur droit, sélectionnez le nom de la société Analytics.
 
@@ -65,7 +65,7 @@ Chaque utilisateur doit lier le compte de la solution Analytics depuis l’organ
 
    L’Adobe ID est maintenant associé à votre compte, votre société et vos informations de connexion Analytics.
 
-Pour plus d’informations, voir [Organisations dans l’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) dans le guide Composants de l’interface centrale de l’Experience Cloud.
+Pour plus d’informations, voir [Organisations dans l’Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=fr) dans le guide des composants de l’interface centrale Experience Cloud.
 
 ## Configuration des services push et du service d’identification du SDK dans l’interface utilisateur de Mobile
 

@@ -1,12 +1,12 @@
 ---
 description: Ces informations vous aident à comprendre et à utiliser Adobe Mobile Services.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Prise en main
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 97%
@@ -103,7 +103,7 @@ Les **notifications in-app** offrent les fonctionnalités suivantes :
 * Sont déclenchées par des analyses en temps réel.
 * Autoriser les promotions croisées d’applications et de produits.
 * Encourager les utilisateurs à noter la boutique d’applications.
-* Diffuser des messages en temps réel et basés sur l’emplacement
+* Diffuser des messages en temps réel et selon l’emplacement.
 
 Pour plus d’informations sur la création de messages in-app, voir  [Création d’un message in-app](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
 
@@ -111,7 +111,7 @@ Pour plus d’informations sur la création de messages in-app, voir  [Création
 
 Dans *Optimize*, vous pouvez optimiser les conversions (abonnements, commerce, recettes publicitaires, etc.) et améliorer la fidélisation client. L’optimisation de l’expérience utilisateur dans votre application peut vous aider à personnaliser votre contenu afin d’augmenter le retour sur investissement et la conversion.
 
-Pour plus d’informations sur les tests et Adobe Target, consultez la [documentation Adobe Target](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html).
+Pour plus d’informations sur le test et Adobe Target, voir [Adobe Target](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html) documentation.
 
 ### Géociblage
 
@@ -158,4 +158,4 @@ Le SDK Adobe Mobile offre les fonctionnalités suivantes :
    * Réduit la charge de traitement de l’appareil pour l’envoi de données aux serveurs Adobe et aux systèmes tiers.
    * Le faible encombrement réduit la taille du package d’applications envoyé aux boutiques d’applications.
 
-Pour en savoir plus sur les SDK Adobe Mobile, voir [SDK Android 4.x pour solutions Experience Cloud](/help/android/overview.md) et [SDK iOS 4.x pour solutions Experience Cloud](/help/ios/overview.md).
+Pour en savoir plus sur les SDK Adobe Mobile, voir [SDK Android 4.x pour solutions Experience Cloud](/help/android/overview.md) et [SDK iOS 4.x pour solutions Experience Cloud](/help/ios/overview.md).

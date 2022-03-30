@@ -1,10 +1,10 @@
 ---
 description: Informations destinées à vous aider à envoyer des signaux et à récupérer des segments de visiteurs à partir de l’Audience Manager.
-solution: Experience Cloud,Analytics
-title: Audience Manager
+solution: Experience Cloud Services,Analytics
+title: Audience Manager
 topic-fix: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 25%
@@ -12,7 +12,7 @@ ht-degree: 25%
 ---
 
 
-# Audience Manager{#audience-manager}
+# Audience Manager{#audience-manager}
 
 Informations destinées à vous aider à envoyer des signaux et à récupérer des segments de visiteurs à partir de l’Audience Manager.
 

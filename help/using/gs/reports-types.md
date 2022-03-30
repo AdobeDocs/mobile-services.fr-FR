@@ -1,12 +1,12 @@
 ---
 description: Lorsque vous personnalisez des rapports, la grande flexibilité qui s’offre à vous peut rendre plus complexe le choix du type de rapport adapté à la collecte des données dont vous avez besoin.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Types de rapports
 topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
@@ -29,15 +29,15 @@ Avant de personnaliser les rapports, vous devez comprendre la différence entre 
 
 Voici les types de rapports que vous pouvez générer dans l’interface utilisateur d’Adobe Mobile :
 
-## Rapport de dépassement de délai {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
+## Rapport sur toute la durée {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 
-Les rapports de dépassement de délai montrent les performances des mesures sur une période afin que vous puissiez rapidement identifier les pics et les tendances. L’analyse débute souvent dans un rapport de dépassement de délai et passe aux rapports de tendance et de classement au fur et à mesure que vous analysez les facteurs susceptibles de contribuer à un pic de mesure ou à une tendance.
+Les rapports sur toute la durée montrent les performances des mesures sur une période afin que vous puissiez rapidement identifier les pics et les tendances. L’analyse débute souvent dans un rapport sur toute la durée et passe aux rapports de tendance et de classement au fur et à mesure que vous analysez les facteurs susceptibles de contribuer à un pic de mesure ou à une tendance.
 
 Par exemple, si vous constatez un pic de lancements, vous pouvez exécuter un rapport de tendance qui affiche les lancements des 5 principaux systèmes d’exploitation pour identifier ceux qui contribuent le plus au pic de lancements :
 
 ![](assets/overtime.png)
 
-Pour afficher des valeurs de dimension avec d’autres mesures sur un rapport de dépassement de délai, vous pouvez utiliser la mesure d’instances et définir un filtre de dimension.
+Pour afficher des valeurs de dimension avec d’autres mesures sur un rapport sur toute la durée, vous pouvez utiliser la mesure d’instances et définir un filtre de dimension.
 
 ## Rapport de tendances  {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
 
@@ -45,11 +45,11 @@ Les rapports de tendances vous aident à déterminer les performances des dimens
 
 ![](assets/trended.png)
 
-Pour voir un rapport de tendances pour une dimension, ajoutez un filtre bascule (par exemple, Système d’exploitation = iOS 6.0.1) à un rapport de dépassement de délai afin d’afficher les mêmes données. En outre, vous pouvez ajouter cinq mesures supplémentaires au rapport de dépassement de délai filtré.
+Pour voir un rapport de tendances pour une dimension, ajoutez un filtre bascule (par exemple, Système d’exploitation = iOS 6.0.1) à un rapport sur toute la durée afin d’afficher les mêmes données. En outre, vous pouvez ajouter cinq mesures supplémentaires au rapport sur toute la durée filtré.
 
-## Rapport de dépassement de délai filtré {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
+## Rapport sur toute la durée filtré {#section_F8FAF2A4496F449CA99EF1E052C71A2D}
 
-Si vous souhaitez afficher une valeur de dimension spécifique, vous pouvez ajouter un filtre bascule à un rapport de dépassement de délai. Le rapport suivant montre les lancements, les mises à niveau et les blocages sur une durée de 30 jours pour une version spécifique du système d’exploitation.
+Si vous souhaitez afficher une valeur de dimension spécifique, vous pouvez ajouter un filtre bascule à un rapport sur toute la durée. Le rapport suivant montre les lancements, les mises à niveau et les blocages sur une durée de 30 jours pour une version spécifique du système d’exploitation.
 
 ![](assets/overtime-filter.png)
 

@@ -1,12 +1,12 @@
 ---
 description: Mesures et dimensions pouvant être évaluées automatiquement par la bibliothèque mobile une fois le cycle de vie ainsi qu’un lien pour dépanner les données du cycle de vie mis en œuvre.
 keywords: android;library;mobile;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Mesures de cycle de vie
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 78%
@@ -240,7 +240,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Nom du point ciblé**
 
-   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
+   Renseigné par `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target :
 
@@ -252,7 +252,7 @@ Les mesures et dimensions suivantes sont capturées dans les variables de soluti
 
 * **Distance jusqu’au centre du point ciblé**
 
-   Renseigné par les méthodes `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
+   Renseigné par `trackLocation` lorsque l’appareil se trouve dans un point ciblé défini.
 
    * Données contextuelles Analytics/Paramètre Target :
 

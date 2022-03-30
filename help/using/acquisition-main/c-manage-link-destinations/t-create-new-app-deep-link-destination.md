@@ -1,12 +1,12 @@
 ---
 description: Vous pouvez créer une nouvelle destination de lien qui redirige les utilisateurs vers une page Web ou un lien profond dans votre application.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Création d’une destination de lien
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%

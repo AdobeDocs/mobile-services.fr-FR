@@ -1,14 +1,14 @@
 ---
 description: 'Avant de configurer une suite de rapports et de collecter les données des applications Android, effectuez les tâches prérequises suivantes '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Avant de commencer
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -47,15 +47,15 @@ Adobe Mobile Services est la principale interface de rapports pour l’analyse 
 
 Vous pouvez vous connecter à l’interface utilisateur d’Adobe Mobile Services de l’une des manières suivantes :
 
-### Experience Cloud
+### Experience Cloud
 
-Connectez-vous à [Experience Cloud](https://experiencecloud.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) dans le guide des composants de l’interface centrale Experience Cloud.
+Connectez-vous à [Experience Cloud](https://experiencecloud.adobe.com) à l’aide de votre Adobe ID. Cette méthode suppose que votre entreprise a reçu les privilèges d’accès dans Experience Cloud et que vous avez lié votre compte Analytics. Pour plus d’informations, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr) dans le guide des composants de l’interface centrale Experience Cloud.
 
 >[!TIP]
 >
 >Si vous ne savez pas si votre entreprise dispose de privilèges d’accès dans Experience Cloud, utilisez votre compte Adobe Analytics existant.
 
-### Adobe Analytics
+### Adobe Analytics
 
 Cliquez sur **[!UICONTROL Se connecter avec Analytics]** et entrez votre nom d’entreprise Analytics, votre nom d’utilisateur et votre mot de passe.
 

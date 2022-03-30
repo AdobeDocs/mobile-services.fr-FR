@@ -1,12 +1,12 @@
 ---
 description: En configurant manuellement les paramètres d’URL, vous pouvez créer des liens marketing permettant de gagner instantanément de nouveaux utilisateurs d’applications mobiles.
 keywords: mobile
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Création manuelle de liens Acquisition
 topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
