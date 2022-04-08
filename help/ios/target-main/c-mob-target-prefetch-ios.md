@@ -3,9 +3,9 @@ description: La fonctionnalité de prérécupération d’Adobe Target utilise 
 title: Prérécupération du contenu des offres dans iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 85%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 85%
 # Prérécupération du contenu des offres dans iOS {#prefetch-offer-content-in-ios}
 
 La fonctionnalité de prérécupération d’Adobe Target utilise les SDK iOS Mobile pour récupérer le contenu des offres aussi peu de fois que possible en mettant en cache les réponses du serveur.
-
->[!IMPORTANT]
->
->La fonctionnalité de prérécupération dans les SDK mobiles pour iOS n’est pas prise en charge pour les types d’activité Cible automatique, Allocation automatique et Personnalisation automatisée dans Adobe Target.
 
 Ce processus réduit le temps de chargement, empêche plusieurs appels réseau et permet à Adobe Target d’être informé de la mbox visitée par l’utilisateur de l’application mobile. Tout le contenu sera récupéré et mis en cache lors de l’appel de prérécupération. Ce contenu sera récupéré du cache pour tous les appels futurs contenant du contenu mis en cache pour le nom de mbox spécifié.
 
