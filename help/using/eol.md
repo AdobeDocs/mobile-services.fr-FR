@@ -1,10 +1,10 @@
 ---
 title: FAQ sur la fin de vie d’Adobe Mobile Services
-description: Obtenez des réponses aux questions courantes concernant l’annonce de fin de vie des services Mobile Adobe.
+description: Obtenez des réponses aux questions courantes concernant l’annonce de fin de vie d’Adobe Mobile Services.
 exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
+source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
@@ -19,13 +19,13 @@ Mobile Services arrive en fin de vie le 31 décembre 2022. Mobile Services, qui 
 
 ## Qu’est-ce qui est inclus et qu’est-ce qui n’est pas inclus ?
 
-Cette fin de vie comprend uniquement les services Mobile Adobe, la plateforme autonome au niveau de [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). Les SDK mobiles version 4 reposant sur cette interface ont été abandonnés le 31 août 2021.
+Cette fin de vie comprend uniquement Adobe Mobile Services, la plateforme autonome au niveau de [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). Les SDK mobiles version 4 reposant sur cette interface ont été abandonnés le 31 août 2021.
 
 Cette fin de vie n’inclut PAS Adobe Analytics pour les applications mobiles, qui font partie des SDK Adobe Experience Platform Mobile. Ces fonctionnalités, notamment le comportement in-app, l’analyse du cycle de vie, le suivi des interactions de messagerie et les profils d’audience, continuent de recevoir la prise en charge d’Adobe.
 
 ## Pourquoi cette fonctionnalité est-elle abandonnée ?
 
-À mesure que Adobe continue d’étendre ses fonctionnalités de marketing mobile, les fonctionnalités précédemment disponibles dans les services Mobile seront publiées dans les solutions Adobe Experience Cloud ou proposées par l’intermédiaire des partenaires Adobe Exchange Premier. Cette transition vous offre des fonctionnalités de marketing mobile plus puissantes et flexibles.
+À mesure que Adobe continue d’étendre ses fonctionnalités de marketing mobile, les fonctionnalités précédemment disponibles dans Mobile Services seront publiées dans les solutions Adobe Experience Cloud ou proposées par le biais de Adobe Exchange Premier Partners. Cette transition vous offre des fonctionnalités de marketing mobile plus puissantes et flexibles.
 
 ## Qu’advient-il des règles de traitement existantes créées dans Mobile Services ?
 
@@ -38,9 +38,9 @@ Une fois que Mobile Services est mis à l’écart, toutes les logiques de règl
 Adobe propose trois chemins de transition en fonction du cas d’utilisation de votre entreprise.
 
 1. **Messagerie in-app et notifications push**: Adobe peut transférer vos workflows de messagerie vers Adobe Journey Optimizer. Ce produit permet aux entreprises d’optimiser et de personnaliser les expériences sur l’ensemble du parcours client, y compris la messagerie mobile.
-1. **Acquisition et liens profonds**: Les acquisitions et les liens profonds sont proposés par le biais du programme Adobe Exchange Premier Partners. Parmi ces partenaires, citons Adjust, AppsFlyer et Branch, qui offrent de vastes capacités d’acquisition. L’équipe du partenariat d’Adobe peut faire des présentations appropriées pour vous assurer que vous trouvez la solution qui répond le mieux à vos besoins.
+1. **Acquisition et liens profonds**: Les acquisitions et les liens profonds sont proposés par le biais du programme Adobe Exchange Premier Partners. L’équipe du partenariat d’Adobe peut faire des présentations appropriées pour vous assurer que vous trouvez la solution qui répond le mieux à vos besoins.
 1. **Places Service**: Places Service offre des fonctionnalités de géolocalisation supplémentaires. Voir [Documentation de Places Service](https://experienceleague.adobe.com/docs/places/using/home.html?lang=fr).
 
 ## Où puis-je aller si j&#39;ai des questions ?
 
-Voir [Fin de vie de la page Spark des services Mobile Adobe](https://spark.adobe.com/page/C6D30y09zaRpD/) pour plus d’informations. Contactez votre représentant d’Adobe pour toute question supplémentaire.
+Voir [Page Spark de fin de vie d’Adobe Mobile Services](https://spark.adobe.com/page/C6D30y09zaRpD/) pour plus d’informations. Contactez votre représentant d’Adobe pour toute question supplémentaire.
