@@ -74,7 +74,7 @@ ht-degree: 99%
    + [Présentation de l’acquisition](acquisition-main/acquisition-main.md)
    + [Conditions préalables requises pour Acquisition ](acquisition-main/c-acquisition-prerequisites.md)
    + [Configuration d’Acquisition](acquisition-main/t-enable-acquisition.md)
-   + [Destinations ](acquisition-main/c-create-destinations.md)
+   + [Destinations](acquisition-main/c-create-destinations.md)
    + Création et gestion des destinations de lien {#create-manage-link-destination}
       + [Création et gestion des destinations de lien ](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
       + [Créer une destination de lien](acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
