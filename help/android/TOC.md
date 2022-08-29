@@ -2,16 +2,15 @@
 audience: end-user
 user-guide-title: Guide Android pour Mobile Services
 breadcrumb-title: Guide Android
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 99%
 
 ---
 
 
-# Guide Android pour Mobile Services {#android}
+# Guide Android pour Mobile Services{#android}
 
 + [SDK Android 4.x pour solutions Experience Cloud](overview.md)
 + [Notes de mise à jour](rel-notes.md)
@@ -19,7 +18,7 @@ ht-degree: 99%
    + [Prise en main](getting-started/getting-started.md)
    + [Avant de commencer](getting-started/requirements.md)
    + [Mise en œuvre principale et cycle de vie](getting-started/dev-qs.md)
-   + [Règles de traitement et données contextuelles](getting-started/proc-rules.md)
+   + [Règles de traitement et données contextuelles ](getting-started/proc-rules.md)
    + [Migration vers la bibliothèque Android 4.x](getting-started/migration-v3.md)
 + Configuration {#configuration-android}
    + [Présentation de la configuration](configuration/configuration.md)
@@ -31,7 +30,7 @@ ht-degree: 99%
 + Analytics {#analytics-android}
    + [Présentation d’Analytics](analytics-main/analytics-main.md)
    + [Suivi des états d’application](analytics-main/states.md)
-   + [Suivi des actions d’application](analytics-main/actions.md)
+   + [Suivi des actions de l’application](analytics-main/actions.md)
    + [Suivi des blocages d’application](analytics-main/crashes.md)
    + [Actions minutées](analytics-main/timed-actions.md)
    + [Valeur de durée de vie visiteur](analytics-main/lifetime-value.md)
@@ -39,7 +38,7 @@ ht-degree: 99%
       + [Variable products](analytics-main/products/products.md)
       + [Variable products avec des eVars de marchandisage et des événements spécifiques à un produit](analytics-main/products/products-variable-evars-events.md)
    + [Sérialisation d’événements](analytics-main/event-serialization.md)
-   + [Chemin ](analytics-main/video-qs.md)
+   + [Analyses de vidéos ](analytics-main/video-qs.md)
    + Postbacks {#postbacks}
       + [Présentation des postbacks](analytics-main/postbacks/postbacks.md)
       + [Exemple de postback](analytics-main/postbacks/postback-example.md)
@@ -53,21 +52,21 @@ ht-degree: 99%
       + [Suivi des liens profonds](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Suivi de liens profonds différés tiers](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [Évaluation de l’acquisition d’un lien marketing](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [Test de l’acquisition de V3](acquisition-main/t-testing-version-3-acquisition.md)
+   + [Test de l’acquisition de V3 ](acquisition-main/t-testing-version-3-acquisition.md)
    + [Test de l’acquisition héritée](acquisition-main/t-testing-acquisition.md)
-   + [Dépannage des tests d’acquisition](acquisition-main/troubleshoot-acquisition-testing.md)
+   + [Dépannage des tests d’Acquisition](acquisition-main/troubleshoot-acquisition-testing.md)
 + Messagerie {#messaging-android}
    + [Présentation de la messagerie](messaging-main/messaging-main-android.md)
    + Messagerie in-app {#inapp-messaging}
       + [Messagerie in-app](messaging-main/messaging/messaging.md)
-      + [Dépannage de la messagerie intégrée (in-app)](messaging-main/messaging/in-apps-ts.md)
+      + [Dépannage de la messagerie in-app ](messaging-main/messaging/in-apps-ts.md)
    + Messagerie Push {#push-messaging}
       + [Messagerie Push](messaging-main/push-messaging/push-messaging.md)
-      + [Mise en œuvre de la messagerie Push avec la création de liens profonds](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
+      + [Mise en œuvre de la messagerie push avec la création de liens profonds](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
       + [Réception de notifications push enrichies](messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
       + [Résolution des problèmes liés aux messages push](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
 + Emplacement {#location}
-   + [Présentation de l’emplacement](location/location.md)
+   + [Présentation de la fonctionnalité de position](location/location.md)
    + [Géolocalisation et points ciblés](location/geo-poi.md)
    + [Suivi des balises](location/beacon.md)
 + Target {#target-android}
@@ -76,23 +75,22 @@ ht-degree: 99%
    + [Méthodes Target](target-main/c-target-methods.md)
    + [Prérécupération du contenu des offres dans Android](target-main/c-mob-target-prefetch-android.md)
    + [Target Preview sous Android](target-main/c-mob-target-preview-android.md)
-+ Experience Cloud {#experience-cloud-android}
-   + [Présentation d’Experience Cloud](c-marketing-cloud/c-marketing-cloud.md)
-   + [Configuration de l’Experience Cloud ID](c-marketing-cloud/mcvid.md)
-   + [Méthodes de services d’identification Adobe Experience Platform](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
++ Experience Cloud{#experience-cloud-android}
+   + [Présentation d’Experience Cloud](c-marketing-cloud/c-marketing-cloud.md)
+   + [Configuration de l’Experience Cloud ID](c-marketing-cloud/mcvid.md)
+   + [Méthodes de services d’identification Adobe Experience Platform](c-marketing-cloud/mc-methods.md)
 + Audience Manager {#audience-manager-android}
-   + [Présentation d’Audience Manager](audience-manager/audience-manager.md)
+   + [Présentation d’Audience Manager](audience-manager/audience-manager.md)
    + [Configuration d’Audience Manager](audience-manager/audiencemgmt.md)
    + [Méthodes Audience Manager](audience-manager/c-audience-manager-methods.md)
 + Wearables {#wearables-android}
    + [Présentation du module Wearables](wearables/wearables.md)
-   + [Android Wearables : Prise en main](wearables/android-wearable.md)
-   + [Android Wearables : Remarques supplémentaires](wearables/c-android-wearables--additional-notes.md)
+   + [Android Wearables : Prise en main ](wearables/android-wearable.md)
+   + [Android Wearables : Remarques supplémentaires ](wearables/c-android-wearables--additional-notes.md)
 + Référence du SDK Android {#sdk-reference-android}
-   + [Présentation de la référence SDK Android](/help/android/reference/reference.md)
+   + [Présentation de la référence SDK Android](/help/android/reference/reference.md)
    + [ID d’application](/help/android/reference/app-ids.md)
-   + [Suivi des visiteurs entre une application et le web mobile](/help/android/reference/hybrid-app.md)
+   + [Suivi des visiteurs entre une application et le web mobile ](/help/android/reference/hybrid-app.md)
    + [Widgets Android](/help/android/reference/widgets.md)
 + Confidentialité et Règlement général sur la protection des données {#gdpr-privacy-android}
    + [Présentation de la confidentialité et du RGPD](c-mob-privacy-gdpr-android/c-mob-privacy-gdpr-android.md)

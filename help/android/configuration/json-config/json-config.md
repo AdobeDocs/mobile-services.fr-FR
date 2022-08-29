@@ -5,9 +5,9 @@ title: Fichier de configuration JSON ADBMobile
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1556'
 ht-degree: 100%
 
 ---
@@ -80,20 +80,6 @@ Voici la liste des variables du fichier JSON et la version minimale du SDK dont 
       >[!IMPORTANT]
       >
       >Cette variable est requise par Target.
-
-* **coopUnsafe**
-   * Version minimale du SDK : 4.16.1
-   * Propriété booléenne de l’objet `marketingCloud` qui, lorsqu’elle est définie sur `true`, entraîne l’exclusion du périphérique de la solution Device Co-op d’Experience Cloud.
-   * La valeur par défaut est `false`.
-   * Ce paramètre est utilisé **uniquement** pour les clients configurés pour Device Co-op.
-
-   Pour les membres de Device Co-op ayant besoin de cette valeur définie sur `true`, vous devez travailler avec l’équipe Device Co-op afin de demander un drapeau de liste de blocage sur votre compte Device Co-op. Il n’existe pas de chemin d’accès en libre-service pour activer ces drapeaux.
-
-   À noter :
-
-   * Si `coopUnsafe` est défini sur `true`, `coop_unsafe=1` sera toujours annexé aux accès Audience Manager et identifiants visiteur.
-   * Si vous activez le transfert côté serveur Analytics vers Audience Manager, `coop_unsafe=1` sera également annexé aux accès Analytics.
-
 
 * **environmentId**
    * Version minimale du SDK : 4.14
