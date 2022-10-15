@@ -1,12 +1,12 @@
 ---
-description: 'Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les types de modifications suivants '
+description: Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les types de modifications suivants
 title: Configuration de votre application
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 31%
+source-wordcount: '331'
+ht-degree: 33%
 
 ---
 
@@ -22,7 +22,7 @@ Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les
 
       >[!TIP]
       >
-      >Si vous avez créé la suite de rapports dans Adobe Analytics, vous devez activer les rapports du cycle de vie. Si vous avez créé la suite de rapports dans Adobe Mobile, cette option est activée par défaut.
+      >Si vous avez créé la suite de rapports dans Adobe Analytics, vous devez activer les rapports du cycle de vie. Si vous avez créé la suite de rapports dans Adobe Mobile, cette option est activée par défaut.
 
       Ce rapport vous permet de mesurer les mesures suivantes :
 
@@ -32,12 +32,8 @@ Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les
 
       * **Cycle de vie**
 
-         Effectuez le suivi des mesures et des dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile une fois le cycle de vie mis en oeuvre. Pour plus d’informations, voir les sections suivantes :
+         Effectuez le suivi des mesures et des dimensions qui peuvent être mesurées automatiquement par la bibliothèque mobile une fois le cycle de vie mis en oeuvre.
 
-         * [Mesures de cycle de vie du SDK iOS](/help/ios/metrics.md)
-         * [Mesures de cycle de vie Android](/help/android/metrics.md)
-         * [Mesures de cycle de vie Windows](/help/universal-windows/metrics.md)
-         * [Mesures de cycle de vie BlackBerry](/help/blackberry/metrics.md)
       * **Actions de l’application**
 
          Activez les rapports et le cheminement en fonction des actions in-app.
@@ -49,7 +45,6 @@ Sur la page Gérer les paramètres de l’application, vous pouvez effectuer les
       * **Événements minutés**
 
          Mesurez le temps qui s’écoule (dans l’application et durée totale) entre les actions clés de l’application, telles que le temps avant le premier achat.
-
 
 * **Rapports sur les emplacements**
 

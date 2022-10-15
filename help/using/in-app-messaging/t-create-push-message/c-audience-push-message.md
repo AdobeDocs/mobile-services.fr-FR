@@ -6,9 +6,9 @@ title: 'Audience : définition et configuration de segments d’audience pour l
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '958'
 ht-degree: 98%
 
 ---
@@ -85,11 +85,6 @@ Voici quelques exemples pour vous aider à comprendre comment définir correctem
       En d’autres termes, le SDK a renvoyé une valeur `True` pour l’eVar de souscription des messages push.
 
    * Même si l’appareil dispose d’un jeton d’appareil valide, le message n’est pas envoyé à l’appareil, sauf si Adobe Analytics a défini le drapeau de souscription.
-
-   * Pour de plus amples informations sur la résolution des problèmes liés aux messages push, consultez ceci :
-
-      * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. Renseignez les champs suivants :
 

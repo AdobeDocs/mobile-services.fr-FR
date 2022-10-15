@@ -6,9 +6,9 @@ title: Référence sur les dimensions et les mesures mobiles
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '609'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Voici la liste des mesures mobiles par défaut :
 
 * **Nom de l’appareil**
 
-   Stocke le nom de l’appareil. Sous iOS, une chaîne de deux chiffres séparée par une virgule identifie l’appareil iOS. Le premier chiffre représente généralement la génération de l’appareil, le second les différents membres de la famille d’appareils. Pour obtenir la liste complète des noms d’appareils courants, voir [Versions des appareils iOS](/help/ios/reference/device-versions.md).
+   Stocke le nom de l’appareil. Sous iOS, une chaîne de deux chiffres séparée par une virgule identifie l’appareil iOS. Le premier chiffre représente généralement la génération de l’appareil, le second les différents membres de la famille d’appareils.
 
 * **Nom de l’opérateur**
 

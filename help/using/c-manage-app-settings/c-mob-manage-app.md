@@ -6,10 +6,10 @@ title: Gestion de votre application
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -22,11 +22,6 @@ Vous pouvez suivre et gérer les données que vous recevez de l’application en
 * **Variables et mesures standard**
 
    Chaque application comprend des variables et des mesures pour effectuer le suivi des paniers et des activités d’achat. Certaines informations d’achat ne peuvent être traitées avec des règles de traitement, le SDK expose donc les données contextuelles `"&&products"` spéciales. Par exemple, vous pouvez avoir des variables telles que les ajouts au panier, les suppressions du panier, les passages en caisse, les commandes, etc. Les données contextuelles doivent être mises en correspondance avec les données dans Adobe Analytics. Si cette variable est renseignée par un mappage simple des données contextuelles, il s’agit de la clé qui mappe sur celui-ci. Laissez le champ vide si la variable est renseignée par des règles plus complexes dans les Outils d’administration Analytics.
-
-   Pour de plus amples informations sur les variables et mesures, veuillez consulter :
-
-   * [Variables de produit dans Android](/help/android/analytics-main/products/products.md)
-   * [Variables de produit dans iOS](/help/ios/analytics-main/products/products.md)
 
 * **Variables personnalisées**
 
@@ -47,7 +42,7 @@ Voici une liste des variables personnalisées que vous pouvez configurer :
    Lorsqu’une valeur est définie pour une propriété dans un appel de suivi (ou accès), elle s’applique uniquement à cet appel.
 
 * Le **[!UICONTROL Variables personnalisées]** (ou eVars) répondent également à la question &quot;laquelle ?&quot; Cependant, une valeur d’eVar peut s’appliquer non seulement à l’accès dans lequel elle est envoyée, mais aussi aux variables et mesures envoyées dans les accès suivants jusqu’à ce que la valeur expire ou qu’une nouvelle valeur soit définie.
-* Les **[!UICONTROL Variables de liste personnalisées (ou variables à valeurs multiples)]** se comportent comme les variables, mais permettent de capturer plusieurs valeurs sur un seul accès. Pour plus d’informations, voir [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) dans la documentation Adobe Analytics.
+* Les **[!UICONTROL Variables de liste personnalisées (ou variables à valeurs multiples)]** se comportent comme les variables, mais permettent de capturer plusieurs valeurs sur un seul accès. Pour plus d’informations, voir [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=fr) dans la documentation Adobe Analytics.
 
 Les mappages suivants s’affichent dans Analytics comme ayant été créés dans Mobile Services.
 

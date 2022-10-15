@@ -6,9 +6,9 @@ title: Dépannage de la messagerie intégrée (in-app)
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Avez-vous mis à jour votre fichier manifeste pour définir l’activité en ple
 
 ## Mon message de notification locale sous Android ne fonctionne pas.
 
-Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste. Pour plus d’informations, voir l’étape n°1 dans [Messagerie in-app](/help/android/messaging-main/messaging/messaging.md).
+Assurez-vous que le récepteur de diffusion de notifications locales est déclaré dans votre manifeste.
 
 ## Le message est-il actif ?
 
@@ -43,7 +43,7 @@ Vérifiez que ces paramètres sont corrects. Sur la page Audience, consultez les
 
 ## En cas d’utilisation d’un événement de lancement comme déclencheur…
 
-Le lancement se déclenche uniquement en cas de nouvelle session. Pour plus d’informations sur le moment où commence une session, voir  `lifecycleTimeout` Dans le fichier de [configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+Le lancement se déclenche uniquement en cas de nouvelle session.
 
 ## J’ai mis à jour mon message à distance, mais mon application affiche toujours l’ancien message.
 

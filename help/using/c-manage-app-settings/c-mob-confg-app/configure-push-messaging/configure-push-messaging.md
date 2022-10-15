@@ -6,9 +6,9 @@ title: Configuration de la messagerie push
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '272'
 ht-degree: 100%
 
 ---
@@ -48,9 +48,4 @@ Avant de configurer la messagerie push, effectuez les tâches préalables requis
 
       Spécifier une clé API valide. Pour plus d’informations sur l’obtention de la clé d’API, voir [Configuration d’une application pour l’utilisation du service APNS ou FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
-      Pour plus d’informations, voir les rubriques suivantes :
-
-      * [Messagerie push dans Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [Messagerie push dans iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+2. Cliquez sur **[!UICONTROL Enregistrer]**.

@@ -6,9 +6,9 @@ title: Questions fréquentes
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1013'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ Les SDK Adobe Mobile utilisent les piles réseau iOS et Android standard. Pour 
 
 ### Que sont les mesures de cycle de vie ?
 
-Les mesures de cycle de vie sont des mesures prêtes à l’emploi qui sont automatiquement collectées lors de la première mise en œuvre du SDK dans votre application. Pour plus d’informations, voir [Mesures de cycle de vie (Android)](/help/android/metrics.md) et [Mesures de cycle de vie (iOS)](/help/ios/metrics.md).
+Les mesures de cycle de vie sont des mesures prêtes à l’emploi qui sont automatiquement collectées lors de la première mise en œuvre du SDK dans votre application.
 
 ### Comment puis-je résoudre les problèmes liés aux règles de traitement ?
 
@@ -49,7 +49,7 @@ Voir [Astuces et conseils concernant les règles de traitement](https://experien
 
 ### Puis-je envoyer mes données d’analyse à plusieurs suites de rapports ?
 
-Oui. Les SDK permettent d’envoyer des données à plusieurs suites de rapports Adobe Analytics. Pour enregistrer les données issues de plusieurs suites de rapports à l’aide d’une demande d’image, définissez les ID de ces suites de rapports dans le champ **[!UICONTROL rsids]** dans la section **[!UICONTROL Analytics]** dans le fichier `ADBMobileConfig.json`, en les délimitant par des virgules, sans espaces. Pour plus d’informations, voir [Configuration JSON ADBMobile](/help/ios/configuration/json-config/json-config.md).
+Oui. Les SDK permettent d’envoyer des données à plusieurs suites de rapports Adobe Analytics. Pour enregistrer les données issues de plusieurs suites de rapports à l’aide d’une demande d’image, définissez les ID de ces suites de rapports dans le champ **[!UICONTROL rsids]** dans la section **[!UICONTROL Analytics]** dans le fichier `ADBMobileConfig.json`, en les délimitant par des virgules, sans espaces.
 
 ### En quoi les visites Mobile diffèrent-elles des lancements ?
 

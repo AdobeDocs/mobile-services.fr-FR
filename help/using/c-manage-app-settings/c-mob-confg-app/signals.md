@@ -3,9 +3,9 @@ description: Les postbacks permettent d’envoyer les données collectées par A
 title: Configuration des postbacks
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '421'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
 
 >[!IMPORTANT]
 >
->Pour utiliser des postbacks, vous devez installer le SDK version 4.6 ou ultérieure. Pour plus d’informations, voir [Android - Postbacks](/help/android/analytics-main/postbacks/postbacks.md) ou [iOS - Postbacks](/help/ios/analytics-main/postback/postback.md).
+>Pour utiliser des postbacks, vous devez installer le SDK version 4.6 ou ultérieure.
 
 1. Cliquez sur le nom de l’application souhaitée pour accéder à sa page Gérer les paramètres de l’application, puis cliquez sur le lien **[!UICONTROL Gérer les postbacks]** en haut à droite.
-1. Cliquez sur **[!UICONTROL Créer un postback]**.
-1. Saisissez les informations suivantes dans les champs :
+2. Cliquez sur **[!UICONTROL Créer un postback]**.
+3. Saisissez les informations suivantes dans les champs :
 
    * **[!UICONTROL Type de postback]**
 
@@ -32,7 +32,7 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
 
    * **[!UICONTROL URL]**
 
-      Spécifiez une adresse URL de point de terminaison valide (avec les paramètres de requête appropriés nécessaires pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point de terminaison). Par exemple `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Spécifiez une adresse URL de point de terminaison valide (avec les paramètres de requête appropriés nécessaires pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point de terminaison). Par exemple `https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Variable contextuelle]**
 
@@ -53,7 +53,7 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
    * **[!UICONTROL Caractéristique(s)]**
    Choisissez qui verra le message lorsqu’il est déclenché. Les options disponibles comprennent **[!UICONTROL Durée de la session]**, **[!UICONTROL Date du premier lancement]** et **[!UICONTROL ID d’application]**.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer le postback et l’ajouter à la liste **[!UICONTROL Gérer les postbacks]**.
+4. Cliquez sur **[!UICONTROL Enregistrer]** pour créer le postback et l’ajouter à la liste **[!UICONTROL Gérer les postbacks]**.
 
    Pour activer le postback ultérieurement, procédez de l’une des manières suivantes :
 
