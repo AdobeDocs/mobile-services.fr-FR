@@ -6,7 +6,7 @@ title: Création ou modification de liens marketing
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 96%
@@ -14,6 +14,8 @@ ht-degree: 96%
 ---
 
 # Création ou modification de liens marketing {#create-or-edit-marketing-links}
+
+{#eol}
 
 Vous pouvez créer ou modifier les liens marketing afin de fournir des liens profonds vers votre application mobile ou votre site Web. Pour plus d’informations, voir [Liens universels Apple et liens d’application Android](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 

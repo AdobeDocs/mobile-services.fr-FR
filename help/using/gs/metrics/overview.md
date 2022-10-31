@@ -6,7 +6,7 @@ title: Affichage des mesures mobiles
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Affichage des mesures mobiles {#display-mobile-metrics}
+
+{#eol}
 
 Vous pouvez afficher les mesures de performances clés des applications que vous avez consultées dernièrement. Par défaut, vous pouvez afficher jusqu’à 12 applications. Vous pouvez modifier la période et créer des filtres pour segmenter les données et modifier toute application sur la page Aperçu.
 

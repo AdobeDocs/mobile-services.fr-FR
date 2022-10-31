@@ -6,7 +6,7 @@ title: Rapports
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Rapports{#reports}
+
+{#eol}
 
 Les rapports d’utilisation affichent la durée de session moyenne, les utilisateurs actifs par jour et par mois, les mises à niveau et d’autres informations vous permettant de comprendre comment et à quelle fréquence votre application est utilisée. Les rapports de rétention indiquent rapidement les niveaux de fidélisation des utilisateurs 1 jour, 7 jours et 28 jours après le lancement initial.
 

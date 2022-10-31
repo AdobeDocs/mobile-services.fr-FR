@@ -6,7 +6,7 @@ title: 'Expérience : message push'
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 95%
@@ -14,6 +14,8 @@ ht-degree: 95%
 ---
 
 # Experience : message push {#experience-push-message}
+
+{#eol}
 
 Vous pouvez configurer des options d’expérience pour les messages push et les messages push enrichis, notamment le nom, le texte du message et les options de destination. Vous pouvez également configurer des options avancées, notamment des options de charge utile et des options personnalisées pour les périphériques iOS.
 

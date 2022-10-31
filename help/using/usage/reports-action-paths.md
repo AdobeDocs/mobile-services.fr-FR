@@ -6,7 +6,7 @@ title: Rapport Chemins d’accès des actions
 topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Rapport Chemins d’accès des actions{#action-paths}
+
+{#eol}
 
 Le rapport Chemins d’accès des actions est basé sur l’analyse des chemins d’accès et affiche un graphique des chemins représentant les voies empruntées par un état de l’application pour acquérir un autre état.
 

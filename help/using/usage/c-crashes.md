@@ -3,7 +3,7 @@ description: Le rapport Blocages présente un aperçu des blocages de votre appl
 title: Rapport Blocages
 uuid: 0c96190f-e16b-49d5-aaa5-b651780a7266
 exl-id: 38db5207-b3fd-49c8-98bd-d287d27738b7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # Rapport Blocages {#crashes}
+
+{#eol}
 
 Le rapport **[!UICONTROL Blocages]** présente un aperçu des blocages de votre application. Il répertorie le nombre de blocages et le taux de plantage, et vous pouvez vous connecter à l’interface utilisateur Apteligent.
 

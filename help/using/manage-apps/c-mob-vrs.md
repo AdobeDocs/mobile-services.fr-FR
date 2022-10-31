@@ -3,14 +3,16 @@ description: Une suite de rapports virtuelle (VRS) est une suite de rapports cr�
 title: Aperçu des suites de rapports
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
 # Suites de rapports virtuelles {#virtual-report-suites}
+
+{#eol}
 
 Une suite de rapports virtuelle (VRS) est une suite de rapports créée en appliquant une ou plusieurs définitions de segmentation à une suite de rapports. Grâce à cette fonctionnalité, les utilisateurs peuvent conserver leurs données dans une suite de rapports unique, et les gérer comme si elles se trouvaient dans des suites de rapports distinctes.
 
@@ -47,11 +49,11 @@ Une suite de rapports virtuelle peut vous aider à terminer les tâches suivante
 
    L’équipe régionale crée une application en utilisant le fichier de configuration issu de la suite de rapports virtuelle. Les données sont envoyées à la suite de rapports parente, mais les messages push/in-app, les points ciblés d’emplacement et les postbacks sont contrôlés dans l’application qui a été créée à partir de la suite de rapports virtuelle.
 
-## Création d’une suite de rapports virtuelle dans Adobe Analytics {#section_D56B90B2653847D68ECA1F9B39204330}
+## Création d’une suite de rapports virtuelle dans Adobe Analytics {#section_D56B90B2653847D68ECA1F9B39204330}
 
 >[!IMPORTANT]
 >
->Seuls les administrateurs Adobe Analytics peuvent créer et modifier des suites de rapports virtuelles dans Adobe Analytics. Pour créer une suite de rapports virtuelle, voir [Création de suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) dans la documentation Adobe Analytics.
+>Seuls les administrateurs Adobe Analytics peuvent créer et modifier des suites de rapports virtuelles dans Adobe Analytics. Pour créer une suite de rapports virtuelle, voir [Création de suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html?lang=fr) dans la documentation Adobe Analytics.
 
 Chaque suite de rapports virtuelle possède un ID unique. Pour afficher l’identifiant de la suite de rapports parente dans l’interface utilisateur d’Adobe Mobile Services, sur la page Gestion des paramètres de l’application, dans la section **[!UICONTROL Informations sur l’application]**, cliquez sur **[!UICONTROL Plus de détails]**.
 
@@ -119,5 +121,5 @@ Voici les propriétés des suites de rapports virtuelles :
 
 Voici quelques informations supplémentaires sur les suites de rapports virtuelles :
 
-* Pour plus d’informations sur les suites de rapports virtuelles, voir [Présentation des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+* Pour plus d’informations sur les suites de rapports virtuelles, voir [Suites de rapports virtuelles - Aperçu](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=fr).
 * Pour plus d’informations sur l’organisation de la mise en œuvre d’une suite de rapports virtuelle, voir [Processus de mise en œuvre des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

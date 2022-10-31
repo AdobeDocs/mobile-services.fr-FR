@@ -3,7 +3,7 @@ description: Dans Adobe Analytics, vous pouvez gérer les rôles sur la page d�
 title: Rôles et autorisations
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: 7b26c852dd9dba67a8b5e3228c1fecadfb465dca
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 46%
@@ -11,6 +11,8 @@ ht-degree: 46%
 ---
 
 # Rôles et autorisations{#roles-and-permissions}
+
+{#eol}
 
 Dans Adobe Analytics, vous pouvez gérer les rôles sur la page d’accueil des outils d’administration.
 
@@ -20,7 +22,7 @@ Les rôles suivants gèrent les autorisations dans l’interface utilisateur de 
 
 ### Administrateur Analytics
 
-An Analytics Admin manages user groups and assigns permissions, one of which is the Mobile App Admin. The Experience Cloud Admin links your Adobe ID to your Adobe Analytics account, which allows you to log in to the Mobile Services UI by using your Adobe ID. [](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr)
+Un administrateur Analytics gère les groupes d’utilisateurs et affecte des autorisations, dont l’un est l’administrateur des applications mobiles. L’administrateur Experience Cloud associe votre Adobe ID à votre compte Adobe Analytics, ce qui vous permet de vous connecter à l’interface utilisateur de Mobile Services à l’aide de votre Adobe ID. Pour plus d’informations sur l’administrateur Experience Cloud, voir [Gestion des utilisateurs et des produits Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr) dans le guide des composants de l’interface centrale Experience Cloud.
 
 >[!TIP]
 >
@@ -40,7 +42,7 @@ Voici quelques informations complémentaires sur l’accès aux options dans l�
 
 ### Applications et suites de rapports
 
-All Mobile Service apps are tied to report suites. If users do not have access to a report suite, they will not have access to that report suite&#39;s associated app.
+Toutes les applications Mobile Service sont liées à des suites de rapports. Si les utilisateurs n’ont pas accès à une suite de rapports, ils n’auront pas accès à l’application associée à cette suite.
 
 ### Fonctionnalités Mobile Services et Analytics
 
@@ -53,8 +55,8 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
 ### Administrateur Analytics autorisations
 
 * Affecter les autorisations d’administrateur pour tous les utilisateurs et toutes les applications mobiles
-* Create App with new report suite
-* Delete App from Mobile Services
+* Créer une application avec une nouvelle suite de rapports
+* Suppression d’une application de Mobile Services
 
    >[!IMPORTANT]
    >
@@ -62,57 +64,57 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
 
 * Gérer les paramètres de l’application
 
-   * Enable Lifecycle Reporting
-   * Enable Location Reporting
-   * Create/Update/Delete Variables and Metrics
+   * Activation des rapports du cycle de vie
+   * Activation des rapports d’emplacement
+   * Création/mise à jour/suppression de variables et de mesures
 
 ### Administrateur des applications mobiles autorisations
 
-* All User Permissions
-* Create App with existing report suite
+* Toutes les autorisations d’utilisateur
+* Créer une application avec une suite de rapports existante
 * Gérer les paramètres de l’application
 
-   * Configure App&#39;s Mobile SDK options
-   * Configure App&#39;s UI settings
-   * Configure linked App Store apps
-   * Configure App&#39;s Universal Link options
-   * Configure Push Services certs and API keys
-   * Create/Update/Activate/Deactivate/Duplicate/Archive/Delete Postbacks
-   * Create/Update/Archive/Delete Link Destinations
+   * Configuration des options du SDK Mobile de l’application
+   * Configuration des paramètres de l’interface utilisateur de l’application
+   * Configuration des applications App Store liées
+   * Configuration des options de lien universel de l’application
+   * Configuration des certificats de services push et des clés d’API
+   * Créer/mettre à jour/activer/désactiver/dupliquer/archiver/supprimer des postbacks
+   * Créer/mettre à jour/archiver/supprimer des destinations de lien
 
-* Create/Update/Archive Marketing Links
-* Create/Import/Update/Delete Legacy Acquisition Links
-* Create/Import/Update/Delete Places (Points of Interest) configuration
-* Create/Update/Send/Schedule/Cancel/Duplicate/Archive/Delete Push Messages
-* Create/Update/Activate/Deactivate/Duplicate/Archive/Delete In-App Messages
+* Créer/mettre à jour/archiver des liens marketing
+* Créer/importer/mettre à jour/supprimer des liens d’acquisition hérités
+* Configuration Créer/Importer/Mettre à jour/Supprimer des emplacements (points ciblés)
+* Créer/Mettre à jour/Envoyer/Planifier/Annuler/Dupliquer/Archiver/Supprimer des messages push
+* Créer/mettre à jour/activer/désactiver/dupliquer/archiver/supprimer des messages In-App
 
-For more information about groups and users, see the following content in the Adobe Analytics documentation:
+Pour plus d’informations sur les groupes et les utilisateurs, consultez le contenu suivant dans la documentation Adobe Analytics :
 
-* [](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=fr)
+* [Paramètres du groupe d’utilisateurs (hérités)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=fr)
 * [Ajout d’un utilisateur à un groupe](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Utilisateur de Mobile Services
 
-This role has view-only permissions and can provide feedback in the Mobile Services UI.
+Ce rôle dispose d’autorisations d’affichage uniquement et peut fournir des commentaires dans l’interface utilisateur de Mobile Services.
 
-* Provide Feedback on Mobile Services UI
-* View Apps
+* Fournir des commentaires sur l’interface utilisateur de Mobile Services
+* Afficher les applications
 
    >[!IMPORTANT]
    >
    >Les utilisateurs peuvent uniquement voir les suites de rapports auxquelles ils ont accès dans Adobe Analytics.
 
-* View App Settings
+* Afficher les paramètres de l’application
 
-   * Download App SDK configuration
-   * View all UI and SDK settings
-   * View Variables and Metrics configuration
-   * View Postbacks
-   * View Link Destinations
+   * Téléchargement de la configuration du SDK de l’application
+   * Affichage de tous les paramètres de l’interface utilisateur et du SDK
+   * Affichage de la configuration des variables et des mesures
+   * Afficher les postbacks
+   * Affichage des destinations de lien
 
 * Affichage et exécution des rapports
 * Afficher les liens marketing
-* View and Export Legacy Acquisition Links
-* View and Export Places (Points of Interest) configuration
-* View Push Messages
-* View In-App Messages
+* Affichage et exportation de liens d’acquisition hérités
+* Afficher et exporter la configuration des emplacements (points ciblés)
+* Affichage des messages push
+* Affichage des messages in-app

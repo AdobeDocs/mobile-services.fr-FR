@@ -6,7 +6,7 @@ title: Gestion des points ciblés
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Gestion des points ciblés {#manage-points-of-interest}
+
+{#eol}
 
 Vous pouvez créer et gérer des points ciblés, qui vous permettent de définir des emplacements géographiques que vous utiliserez aux fins de corrélation, de ciblage des messages in-app, etc. Lorsqu’un accès est envoyé dans un point d’accès, ce dernier est associé à l’accès.
 

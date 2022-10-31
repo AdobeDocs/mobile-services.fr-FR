@@ -6,7 +6,7 @@ title: Rapport Entonnoir
 topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Rapport Entonnoir{#funnel}
+
+{#eol}
 
 Le rapport **[!UICONTROL Entonnoir]** identifie le moment où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre application mobile. Vous pouvez également utiliser le rapport **[!UICONTROL Entonnoir]** pour comparer les actions de différents segments.
 

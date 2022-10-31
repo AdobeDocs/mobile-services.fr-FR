@@ -6,7 +6,7 @@ title: 'Planification : message push'
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Planification : messages push {#schedule-push-message}
+
+{#eol}
 
 Dans l’interface utilisateur d’Adobe Mobile Services, vous pouvez planifier la diffusion immédiate d’un message push, la diffusion ultérieure et la diffusion récurrente. Ces événements peuvent être planifiés sur une base quotidienne, hebdomadaire ou mensuelle.
 

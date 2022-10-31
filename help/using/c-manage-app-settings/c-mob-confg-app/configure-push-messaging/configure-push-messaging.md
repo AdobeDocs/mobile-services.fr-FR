@@ -6,7 +6,7 @@ title: Configuration de la messagerie push
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Configuration de la messagerie push {#configure-push-messaging}
+
+{#eol}
 
 Vous pouvez utiliser ces informations pour configurer les options des services push sur la page Gérer les paramètres de l’application lors de la création d’une application ou de la modification d’une application existante.
 

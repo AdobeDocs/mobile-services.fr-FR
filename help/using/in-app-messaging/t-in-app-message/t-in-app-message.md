@@ -6,7 +6,7 @@ title: Création d’un message in-app
 topic-fix: Metrics
 uuid: 15b52713-9ffc-4df9-b21a-6b0576a96a54
 exl-id: 40c5e9b0-9034-4226-9bca-486df8939d02
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Création d’un message in-app{#create-an-in-app-message}
+
+{#eol}
 
 Vous pouvez créer un message in-app pour la diffusion aux utilisateurs mobiles. Lors de la création du message, vous configurez le type du message, l’audience, l’expérience et la planification.
 

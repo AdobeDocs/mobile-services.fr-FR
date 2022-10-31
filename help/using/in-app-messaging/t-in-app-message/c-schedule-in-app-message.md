@@ -6,7 +6,7 @@ title: 'Planification : message in-app'
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 100%
@@ -15,11 +15,13 @@ ht-degree: 100%
 
 # Planification : message in-app {#schedule-in-app-message}
 
+{#eol}
+
 Vous pouvez configurer les options de planification des messages in-app, notamment la durée, les jours de la semaine et l’heure.
 
 >[!TIP]
 >
->Les plages de dates sont définies selon votre fuseau horaire. Les jours et les plages de dates spécifiques dépendent du périphérique de l’utilisateur.
+>Les périodes sont définies selon votre fuseau horaire. Les jours et les périodes spécifiques dépendent du périphérique de l’utilisateur.
 
 1. Dans votre application, cliquez sur **[!UICONTROL Messagerie]** > **[!UICONTROL Gestion des messages]** > **[!UICONTROL Créer un message]** > **[!UICONTROL Créer message in-app]**.
 1. Cliquez sur **[!UICONTROL Planifier]**.
