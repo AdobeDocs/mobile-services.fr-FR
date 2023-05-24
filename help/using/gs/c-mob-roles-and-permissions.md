@@ -91,7 +91,7 @@ Voici les rôles de l’interface utilisateur de Mobile Services, accompagnés 
 Pour plus d’informations sur les groupes et les utilisateurs, consultez le contenu suivant dans la documentation Adobe Analytics :
 
 * [Paramètres du groupe d’utilisateurs (hérités)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=fr)
-* [Ajout d’un utilisateur à un groupe](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Ajout d’un utilisateur à un groupe](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=fr)
 
 ### Utilisateur de Mobile Services
 

@@ -1,6 +1,8 @@
 ---
 source-git-commit: 78bf75971a4dd3c49dc180dd2d10b3b259f4c001
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 100%
 
 ---
 # Contribution
@@ -23,7 +25,7 @@ Toutes les contributions tierces à ce projet doivent être accompagnées d’un
 
 ## Révisions du code
 
-Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/articles/about-pull-requests/) pour en savoir plus sur l’envoi de requêtes de tirage.
+Toutes les soumissions doivent être effectuées sous la forme de requêtes de tirage et doivent être examinées par les responsables du projet. Lisez la [documentation sur la requête de tirage de GitHub](https://help.github.com/fr/articles/about-pull-requests/) pour en savoir plus sur l’envoi de requêtes de tirage.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -36,4 +38,4 @@ Nous apprécions les contributions de notre communauté ! Si vous souhaitez all
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans cet analyseur d’anomalies. Soulevez plutôt [un problème auprès de nos experts en sécurité.](https://helpx.adobe.com/security/alertus.html)
+Les problèmes de sécurité ne doivent pas être signalés dans cet analyseur d’anomalies. Soulevez plutôt [un problème auprès de nos experts en sécurité.](https://helpx.adobe.com/fr/security/alertus.html)

@@ -35,7 +35,7 @@ Pour configurer votre application Android afin d’utiliser FCM dans ce scénari
 
 1. Cliquez sur le projet créé pour afficher la page **[!UICONTROL Aperçu du projet]** pour le projet créé. Cliquez sur le bouton avec l’icône Android pour ajouter une application Android au projet.
 
-1. Si nécessaire, saisissez le nom du pack d’application, le surnom de l’application et le certificat de signature.
+1. Si nécessaire, saisissez le nom du package d’application, le surnom de l’application et le certificat de signature.
 
 1. Suivez les étapes supplémentaires suggérées par l’assistant de configuration. Après avoir vérifié la configuration de Firebase en testant la communication avec les serveurs Firebase, revenez à la page **[!UICONTROL Aperçu du projet]**.
 

@@ -25,11 +25,11 @@ Informations supplémentaires sur ce rapport :
 
 ## Navigation et utilisation {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
-Cette visualisation fournit, par exemple, le rapport de base avec des ventilations. La visualisation utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment ciblé dans la catégorie de l’anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
+Cette visualisation fournit, par exemple, le rapport de base avec des répartitions. La visualisation utilise la hauteur pour montrer la mesure sélectionnée et les différences de performances entre les mesures. Chaque anneau représente un segment ciblé dans la catégorie de l’anneau. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
 >[!TIP]
 >
->Outre ces informations, vous pouvez afficher un tutoriel interne au produit qui décrit le mode d’interaction avec le graphique radial. Pour lancer le tutoriel, cliquez sur **[!UICONTROL Ventilation géographique]** dans la barre de titre du rapport, puis cliquez sur l’icône **[!UICONTROL i]**.
+>Outre ces informations, vous pouvez afficher un tutoriel interne au produit qui décrit le mode d’interaction avec le graphique radial. Pour lancer le tutoriel, cliquez sur **[!UICONTROL Répartition géographique]** dans la barre de titre du rapport, puis cliquez sur l’icône **[!UICONTROL i]**.
 
 ![](assets/location.png)
 
@@ -55,19 +55,19 @@ Vous pouvez cliquer sur une mesure secondaire sur le côté droit pour l’ajout
 
 ![](assets/location_secondary.png)
 
-## Ajout de ventilations et de mesures {#section_15833511E82648869E7B1EFC24EF7B82}
+## Ajout de répartitions et de mesures {#section_15833511E82648869E7B1EFC24EF7B82}
 
-Vous pouvez ajouter des ventilations et des mesures secondaires qui modifient la hauteur de chaque audience par rapport aux autres audiences du graphique.
+Vous pouvez ajouter des répartitions et des mesures secondaires qui modifient la hauteur de chaque audience par rapport aux autres audiences du graphique.
 
 >[!TIP]
 >
 >Plus vous ajoutez d’anneaux, plus le traitement prend du temps.
 
-Pour ajouter des ventilations et des mesures secondaires, cliquez sur **[!UICONTROL Ventilation géographique]** dans la barre de titres du rapport, puis cliquez sur **[!UICONTROL Personnaliser]** pour ouvrir le rail de droite.
+Pour ajouter des répartitions et des mesures secondaires, cliquez sur **[!UICONTROL Répartition géographique]** dans la barre de titres du rapport, puis cliquez sur **[!UICONTROL Personnaliser]** pour ouvrir le rail de droite.
 
 ![](assets/location_rail.png)
 
-Lorsque vous cliquez sur **[!UICONTROL Ajouter une ventilation]** ou **[!UICONTROL Ajouter une mesure]**, un nouvel élément s’affiche avec le même nom que l’élément précédent dans la liste correspondante. Cliquez sur la ventilation ou la mesure nouvellement créée pour accéder à une liste déroulante à partir de laquelle sélectionner un nouvel élément.
+Lorsque vous cliquez sur **[!UICONTROL Ajouter une répartition]** ou **[!UICONTROL Ajouter une mesure]**, un nouvel élément s’affiche avec le même nom que l’élément précédent dans la liste correspondante. Cliquez sur la répartition ou la mesure nouvellement créée pour accéder à une liste déroulante à partir de laquelle sélectionner un nouvel élément.
 
 ## Création d’un filtre d’attractivité {#section_365999D49FC744ECBF9273132497E06C}
 

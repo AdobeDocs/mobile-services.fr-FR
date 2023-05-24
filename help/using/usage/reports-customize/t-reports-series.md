@@ -21,7 +21,7 @@ Ces informations vous aident à personnaliser les rapports intégrés par l’aj
 
 >[!IMPORTANT]
 >
->Les mesures d’application mobile sont également disponibles dans les rapports et analyses marketing, Analyses ad hoc, l’entrepôt de données et les autres interfaces de création de rapports Analytics. Si un type de rapport ou une ventilation n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
+>Les mesures d’application mobile sont également disponibles dans les rapports et analyses marketing, Analyses ad hoc, l’entrepôt de données et les autres interfaces de création de rapports Analytics. Si un type de rapport ou une répartition n’est pas disponible dans Adobe Mobile, il ou elle peut être généré(e) à l’aide d’une autre interface de création de rapports.
 
 Dans cet exemple, nous allons personnaliser le rapport **[!UICONTROL Utilisateurs et sessions]**, mais ces instructions peuvent s’appliquer à n’importe quel autre rapport.
 

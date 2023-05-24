@@ -63,7 +63,7 @@ Les rapports de classement indiquent la fréquence à laquelle les 50 première
 
 ## Rapport radial  {#section_17A9842039174DE094A6B1E9837E35BB}
 
-Les rapports radiaux fournissent, par exemple, le rapport de base avec les ventilations. La visualisation utilise la hauteur pour afficher la mesure et les différences de performances entre les mesures. Chaque cercle concentrique représente un segment ciblé dans la catégorie de ce cercle. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
+Les rapports radiaux fournissent, par exemple, le rapport de base avec les répartitions. La visualisation utilise la hauteur pour afficher la mesure et les différences de performances entre les mesures. Chaque cercle concentrique représente un segment ciblé dans la catégorie de ce cercle. Vous pouvez agir sur une audience, par exemple appliquer un filtre bascule, masquer une mesure et afficher des mesures.
 
 Vous pouvez afficher le rapport dans un tutoriel produit qui décrit comment interagir avec un graphique sous forme de cadran.
 
@@ -71,7 +71,7 @@ Pour commencer le tutoriel :
 
 1. Dans Gérer les paramètres de l’application, cliquez sur **[!UICONTROL Utilisation]**.
 
-1. Cliquez sur **[!UICONTROL Technologie]** > **[!UICONTROL Ventilation technologique]**.
+1. Cliquez sur **[!UICONTROL Technologie]** > **[!UICONTROL Répartition technologique]**.
 1. Dans la barre de titre du rapport, cliquez sur **[!UICONTROL Personnaliser]**, puis sur l’icône d’information.
 
 ![](assets/report_technology.png)

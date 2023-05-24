@@ -9,7 +9,7 @@ exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez suivre et gérer les données que vous recevez de l’application en
 
 Cliquez sur **[!UICONTROL Gérer les paramètres de l’application]** > **[!UICONTROL Gérer les variables et mesures]** > **[!UICONTROL Variables personnalisées]**.
 
-Ces mappages appellent la même API que [Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) dans Adobe Analytics.
+Ces mappages appellent la même API que [Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=fr) dans Adobe Analytics.
 
 ![Mappage des données contextuelles](assets/custom_data_content.png)
 

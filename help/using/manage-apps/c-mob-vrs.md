@@ -95,7 +95,7 @@ Voici les propriétés des suites de rapports virtuelles :
 >
 >Les propriétés en lecture seule sont héritées de la suite de rapports parente.
 
-| Propriété | Hérité de la suite de rapports parente | Modifiable ? | Notes |
+| Propriété | Hérité de la suite de rapports parente | Modifiable? | Notes |
 |--- |--- |--- |--- |
 | `target.clientCode` | Non | Oui |  |
 | `target.timeout` | Non | Oui |  |

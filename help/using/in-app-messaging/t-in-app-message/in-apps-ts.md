@@ -25,7 +25,7 @@ Si vous avez satisfait à toutes les exigences relatives à la messagerie in-app
 
 * Vérifiez que la version du SDK est 4.2 ou supérieure et que ce dernier est correctement configuré.
 
-* Assurez-vous que votre configuration comporte une section [Messagerie](/help/using/in-app-messaging/in-app-messaging.md) (fichier JSON téléchargé) ou un point de terminaison distant Messages afin qu’il puisse être récupéré depuis la gestion dynamique des balises.
+* Assurez-vous que votre configuration comporte une section [Messagerie](/help/using/in-app-messaging/in-app-messaging.md) (fichier JSON téléchargé) ou un point d’entrée distant Messages afin qu’il puisse être récupéré depuis la gestion dynamique des balises.
 
 ## Mon message en plein écran sous Android ne s’affiche pas. J’utilise le SDK et la configuration appropriés et mes déclencheurs sont respectés.
 
@@ -51,7 +51,7 @@ Le lancement se déclenche uniquement en cas de nouvelle session.
 
 Procédez de l’une des manières suivantes :
 
-* La gestion dynamique des balises peut nécessiter quelques minutes pour mettre à jour son point de terminaison avec votre nouvelle définition.
+* La gestion dynamique des balises peut nécessiter quelques minutes pour mettre à jour son point d’entrée avec votre nouvelle définition.
 
    Patientez quelques minutes et réessayez.
 

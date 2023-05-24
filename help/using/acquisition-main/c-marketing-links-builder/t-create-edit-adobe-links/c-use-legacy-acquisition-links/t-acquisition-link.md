@@ -66,14 +66,14 @@ Spécifiez les termes rémunérés ou les autres termes de recherche de l’anno
 
          Vous pouvez restreindre votre recherche en sélectionnant une région facultative dans la liste déroulante **[!UICONTROL Dans la région]**.
 
-      * Pour Google Play, si vous ne connaissez pas le Nom du module, vous pouvez rechercher l’application par son nom.
+      * Pour Google Play, si vous ne connaissez pas le Nom du package, vous pouvez rechercher l’application par son nom.
    * **[!UICONTROL ID d’application (Apple App Store uniquement)]**
 
       Si vous avez recherché l’application, ce champ est rempli automatiquement. Vous pouvez saisir la valeur ID application directement, plutôt que de rechercher l’application.
 
-   * **[!UICONTROL Nom de module (Google Play uniquement)]**
+   * **[!UICONTROL Nom de package (Google Play uniquement)]**
 
-      Si vous avez recherché l’application, ce champ est rempli automatiquement. Au lieu de chercher, vous pouvez également saisir directement la valeur Nom du module.
+      Si vous avez recherché l’application, ce champ est rempli automatiquement. Au lieu de chercher, vous pouvez également saisir directement la valeur Nom du package.
 
 
 

@@ -34,7 +34,7 @@ Les postbacks permettent d’envoyer les données collectées par Adobe Mobile 
 
    * **[!UICONTROL URL]**
 
-      Spécifiez une adresse URL de point de terminaison valide (avec les paramètres de requête appropriés nécessaires pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point de terminaison). Par exemple `https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Spécifiez une adresse URL de point d’entrée valide (avec les paramètres de requête appropriés nécessaires pour les requêtes GET). Cette adresse URL s’obtient auprès de la partie à laquelle vous envoyez les données (serveur publicitaire ou votre propre point d’entrée). Par exemple `https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Variable contextuelle]**
 

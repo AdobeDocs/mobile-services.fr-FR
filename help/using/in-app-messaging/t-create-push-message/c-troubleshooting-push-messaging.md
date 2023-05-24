@@ -75,8 +75,8 @@ Les types suivants de retards peuvent être associés aux messages push pour Mob
 
 Votre certificat APNS n’est peut-être pas valide pour les raisons suivantes :
 
-* Il est possible que vous utilisiez un certificat de test au lieu du certificat de production.
-* Vous utilisez un nouveau certificat de production ou de test qui n’est pas pris en charge.
+* Il est possible que vous utilisiez un certificat de sandbox au lieu du certificat de production.
+* Vous utilisez un nouveau certificat de production ou de sandbox qui n’est pas pris en charge.
 * Vous utilisez un fichier `.p8` au lieu d’un fichier `.p12`.
 
 ## Résolution des dysfonctionnements des messages push

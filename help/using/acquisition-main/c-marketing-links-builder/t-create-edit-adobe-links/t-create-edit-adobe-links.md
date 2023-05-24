@@ -9,7 +9,7 @@ exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez créer ou modifier les liens marketing afin de fournir des liens pro
       Les balises prédéfinies suivantes sont disponibles :
 
       * **Données contextuelles personnalisées**
-Indiquez la clé et la valeur. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir [Règles de traitement - Aperçu](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) dans la documentation Adobe Analytics.
+Indiquez la clé et la valeur. Si vous ajoutez des données contextuelles personnalisées, vous devez créer une règle de traitement. Pour plus d’informations, voir [Règles de traitement - Aperçu](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=fr) dans la documentation Adobe Analytics.
 
       * **Source**
 Spécifiez le référent original, tel que « newsletter » ou « page d’accueil ».

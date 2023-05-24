@@ -5,7 +5,7 @@ exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
 source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Cette fin de vie n’inclut PAS Adobe Analytics pour les applications mobiles, q
 
 ## Qu’advient-il des règles de traitement existantes créées dans Mobile Services ?
 
-[Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) créée ou générée dans l’interface utilisateur de Mobile Services migre automatiquement vers Adobe Analytics avant la date de fin de vie de Mobile Services. Les règles de traitement migrées se comportent de la même manière que les autres règles de traitement dans Adobe Analytics, où vous pouvez librement les afficher ou les modifier. Aucune action de l’utilisateur n’est requise pour cette migration.
+[Règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=fr) créée ou générée dans l’interface utilisateur de Mobile Services migre automatiquement vers Adobe Analytics avant la date de fin de vie de Mobile Services. Les règles de traitement migrées se comportent de la même manière que les autres règles de traitement dans Adobe Analytics, où vous pouvez librement les afficher ou les modifier. Aucune action de l’utilisateur n’est requise pour cette migration.
 
 Une fois que Mobile Services est mis à l’écart, toutes les logiques de règles de traitement sont traitées exclusivement dans Adobe Analytics, notamment l’utilisation de la fonction [Variables de données contextuelles](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=fr).
 

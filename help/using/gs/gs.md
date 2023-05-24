@@ -86,7 +86,7 @@ Dans *Engage*, vous pouvez utiliser des notifications push et des messages in-ap
 
 ### Messagerie Adobe Mobile
 
-Vous pouvez utiliser des notifications push et in-app pour communiquer avec vos utilisateurs. Les notifications push sont envoyées via le système d’exploitation sur l’appareil, tandis que les messages in-app sont envoyés dans l’application lorsqu’un utilisateur interagit activement avec l’application. Les messages in-app peuvent généralement inclure divers formats supplémentaires, tels que des fenêtres contextuelles et des spots.
+Vous pouvez utiliser des notifications push et in-app pour communiquer avec vos utilisateurs. Les notifications push sont envoyées via le système d’exploitation sur l’appareil, tandis que les messages in-app sont envoyés dans l’application lorsqu’un utilisateur interagit activement avec l’application. Les messages in-app peuvent généralement inclure divers formats supplémentaires, tels que des pop-ups et des spots.
 
 Dans Adobe Mobile, vous pouvez configurer les types de messages suivants :
 
@@ -113,7 +113,7 @@ Pour plus d’informations sur la création de messages in-app, voir  [Création
 
 Dans *Optimize*, vous pouvez optimiser les conversions (abonnements, commerce, recettes publicitaires, etc.) et améliorer la fidélisation client. L’optimisation de l’expérience utilisateur dans votre application peut vous aider à personnaliser votre contenu afin d’augmenter le retour sur investissement et la conversion.
 
-Pour plus d’informations sur le test et Adobe Target, voir [Adobe Target](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html) documentation.
+Pour plus d’informations sur le test et Adobe Target, voir [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) documentation.
 
 ### Géociblage
 
